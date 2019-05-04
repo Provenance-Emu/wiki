@@ -40,7 +40,7 @@ DO NOT expect to use a beta without issues, losing your saves, or bugs.
 ² USB ports have been discontinued on Apple TV 4K+.
 {% endhint %}
 
-💢 If you get stuck, check out Troubleshooting.
+💢 If you get stuck, check out [Troubleshooting](building-from-source.md#troubleshooting).
 
 ## Get Source
 
@@ -192,7 +192,7 @@ make help
    * Free Apple Developer: Hit the `▶︎` \(Run\) button.
 3. Provenance will compile and run on your device. Unless testing, hit `◼︎` \(Stop\). _Done._
 
-💢 If you get stuck, check out Troubleshooting.
+💢 If you get stuck, check out [Troubleshooting](building-from-source.md#troubleshooting).
 
 ## Advanced Features
 
@@ -340,6 +340,6 @@ If you are having trouble building or side-loading the app, check for your issue
 
 
 {% hint style="info" %}
-🗯 If you are still stuck ask for [help](https://discord.gg/NhzgrXh) on our Discord.
+🗯 If you are still stuck try [debugging](../../help/troubleshooting.md) it yourself or ask for [help](https://discord.gg/NhzgrXh) on our Discord.
 {% endhint %}
 
