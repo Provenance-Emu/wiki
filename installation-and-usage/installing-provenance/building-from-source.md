@@ -50,11 +50,11 @@ DO NOT expect to use a beta without issues, losing your saves, or bugs.
   * ![](https://user-images.githubusercontent.com/3118097/37563629-48ec3f26-2a42-11e8-9fd8-784e9e830ebe.png)  [Terminal](building-from-source.md#terminal)
   * ![](https://user-images.githubusercontent.com/3118097/37563630-4903ebbc-2a42-11e8-888a-09a94fc0058d.png)  [Tower](building-from-source.md#tower)
 
-### Clone
+#### Clone
 
 Cloning is how you pull the source code from GitHub. The primary way to do this is using Terminal; However, if you're a developer or familiar with powerful git clients like Tower, this is also an option as long as you enable for initializing submodules.
 
-#### **Terminal**
+**Terminal**
 
 {% hint style="info" %}
 The Terminal app can be found in: _/Applications/Utilities_
@@ -68,7 +68,7 @@ The Terminal app can be found in: _/Applications/Utilities_
 
 
 
-#### **Tower**
+**Tower**
 
 Tower is a powerful commercial git client that can automate a lot of the tasks you'd otherwise be using commandline for, such as stashing changes. It is however, _not free._
 
@@ -149,7 +149,7 @@ make help
 
      ⚠️ At minimum, sign up as a _free_ [Apple Developer](https://9to5mac.com/2016/03/27/how-to-create-free-apple-developer-account-sideload-apps/) and do no more than agree to the terms.
 
-     🛑 DO NOT enroll to join the Developer Program or you will be locked into a _Pending_ payment state, unable to code-sign unless you pay or contact Apple to cancel the enrollment.  
+     🛑 DO NOT enroll to join the full Developer Program or you will be locked into a _Pending_ payment state, unable to code-sign unless you pay or contact Apple to cancel the enrollment.  
 
 
      ![](https://user-images.githubusercontent.com/3118097/40101778-4dbc3fae-589d-11e8-916a-062202283aa1.gif)
@@ -166,10 +166,10 @@ make help
    * Change the Bundle IDs for your target by replacing only `provenance-emu` with something unique to you \(like your username\), and use the same replacement for _all_ of your targets and _all_ subsequent updates.  
 
 
-     🏍  You can install "sidecar" for testing by using a different bundle ID than your previous/main install.  
+     🏍 You can install "sidecar" for testing by using a different bundle ID than your previous/main install.  
      ![](https://user-images.githubusercontent.com/3118097/40105626-5b7e9bc2-58a8-11e8-8c39-3b1d8119979a.gif)
 
-     ⚠️  .gif outdated, refer to text instructions.
+     ⚠️ .gif outdated, refer to text instructions.
 
 * If using a free Apple Developer account, **Turn OFF** these Capabilities for _all_ targets:
   * ![](https://user-images.githubusercontent.com/3118097/48986708-22f14800-f0cd-11e8-98ec-6f093375d969.png)  App Groups 
@@ -192,7 +192,7 @@ make help
    * Free Apple Developer: Hit the `▶︎` \(Run\) button.
 3. Provenance will compile and run on your device. Unless testing, hit `◼︎` \(Stop\). _Done._
 
-💢  If you get stuck, check out Troubleshooting.
+💢 If you get stuck, check out Troubleshooting.
 
 ## Advanced Features
 
@@ -335,7 +335,7 @@ If you are having trouble building or side-loading the app, check for your issue
 * This means there have been changes to the database model which is no longer compatible with your previous build. In order to update you _**must**_ clean install \(delete app and re-install, not build or install over over existing app\). If you would like to migrate your save games and states, you can refer to [Restoring Files](https://github.com/Provenance-Emu/Provenance/wiki/Restoring-Files).  
 
 
-  🏍  You can install "sidecar" for testing by using a different bundle ID than your previous/main install.
+  🏍 You can install "sidecar" for testing by using a different bundle ID than your previous/main install.
 
 
 
