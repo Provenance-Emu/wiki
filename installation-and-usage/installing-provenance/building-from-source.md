@@ -1,5 +1,5 @@
 ---
-description: To get the very latest in-development build.
+description: 'Moderate: Install latest in-development build'
 ---
 
 # Building from Source
@@ -31,8 +31,6 @@ DO NOT expect to use a beta without issues, losing your saves, or bugs.
 
   🛑 **DO NOT** enroll to join the Developer Program or you will be locked into a _Pending_ payment state, unable to code-sign unless you pay or contact Apple to cancel the enrollment.  
 
-* Homebrew
-* RVM
 * Connections:
   * iPhone / iPad:    `Lightning` → `USB-A / USB-C` cable¹
   * Apple TV 4:      `USB-C` → `USB-A / USB-C` cable¹

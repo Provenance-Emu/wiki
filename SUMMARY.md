@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Welcome](README.md)
+* [Frequently Asked Questions](frequently-asked-questions.md)
 
 ## Installation & Usage
 
@@ -14,11 +15,19 @@
   * [Formatting ROMs](installation-and-usage/roms/formatting-roms.md)
   * [Customizing ROMs](installation-and-usage/roms/customizing-roms.md)
 
+## Info
+
+* [Supported Systems](info/supported-systems.md)
+* [Controllers & Controls](info/controllers-and-controls/README.md)
+  * [Controllers](info/controllers-and-controls/controllers.md)
+  * [Control Maps](info/controllers-and-controls/control-maps.md)
+
 ## Help
 
-* [Frequently Asked Questions](help/frequently-asked-questions.md)
-* [Controllers & Controls](help/controllers-and-controls/README.md)
-  * [Controllers](help/controllers-and-controls/controllers.md)
-  * [Control Maps](help/controllers-and-controls/control-maps.md)
 * [Troubleshooting](help/troubleshooting.md)
+* [Discord](https://discord.gg/pNARqEb)
+
+## Development
+
+* [Release Roadmap](https://github.com/Provenance-Emu/Provenance/milestones?direction=asc&sort=title&state=open)
 

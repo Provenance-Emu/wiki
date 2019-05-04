@@ -1,3 +1,7 @@
+---
+description: Installation instructions.
+---
+
 # Installing Provenance
 
 To install Provenance or update your existing installation follow one of the official guides below.

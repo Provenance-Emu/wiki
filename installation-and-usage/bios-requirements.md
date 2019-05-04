@@ -1,7 +1,5 @@
 ---
-description: >-
-  In Provenance, certain emulator cores require specific BIOS files in order to
-  play.
+description: Certain emulator cores require specific BIOS files in order to play.
 ---
 
 # BIOS Requirements
@@ -11,7 +9,7 @@ description: >-
 🛃  [**Importing**](bios-requirements.md#importing) BIOS files 
 
 {% hint style="warning" %}
-DO NOT ask us where to obtain BIOS files. Distributing BIOS files violates copyright law.
+**DO NOT** ask us where to obtain BIOS files. Distributing BIOS files violates copyright law.
 {% endhint %}
 
 ### Systems

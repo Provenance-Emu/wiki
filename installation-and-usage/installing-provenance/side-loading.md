@@ -1,10 +1,10 @@
 ---
-description: >-
-  Prebuilt .ipa releases can side-loaded onto your devices and must be re-signed
-  using your own developer profile(s).
+description: Easy. Install pre-built releases (or pre-releases).
 ---
 
 # Side-loading
+
+Prebuilt .ipa releases can side-loaded onto your devices and must be re-signed using your own developer profile\(s\).
 
 #### **Side-loading Options:**
 
