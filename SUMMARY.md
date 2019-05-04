@@ -26,11 +26,11 @@
 * [Miscellaneous](info/miscellaneous/README.md)
   * [Virtualizing macOS](info/miscellaneous/virtualizing-macos.md)
   * [Launch ROMs via URL](info/miscellaneous/launch-roms-via-url.md)
+  * [Restoring Files](info/miscellaneous/restoring-files.md)
 
 ## Help
 
-* [Troubleshooting](help/troubleshooting/README.md)
-  * [Restoring Files](help/troubleshooting/restoring-files.md)
+* [Troubleshooting](help/troubleshooting.md)
 * [Discord](https://discord.gg/pNARqEb)
 
 ## Development

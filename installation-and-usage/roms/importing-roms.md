@@ -115,7 +115,7 @@ Please refer to the [Known Issues](importing-roms.md#known-issues) regarding Imp
      \(if the folder doesn't exist inside `Documents`, create it\)  
 4. Drag your ROMs into the `roms` \(v1.4\) or `Imports` \(v1.5\) folder. Done.
 
-↩️ [Restoring](../../help/troubleshooting/restoring-files.md) files \(ROMs, saves, cover art\) is usually supported in these apps…   
+↩️ [Restoring](../../info/miscellaneous/restoring-files.md) files \(ROMs, saves, cover art\) is usually supported in these apps…   
   
 
 

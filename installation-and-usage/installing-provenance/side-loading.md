@@ -95,7 +95,7 @@ Free Apple developer provisioning expires _every 7 days_, requiring reloading, b
 
 #### **—application-identifier entitlement does not match…**
 
-* This means you need to match the Bundle IDs with the ones from your previous side-load or build on your device. If you don't know it, or used a 3rd party web-sign \(unsupported\), we recommend you [backup your files](../../help/troubleshooting/restoring-files.md), delete the app and try to clean-install.
+* This means you need to match the Bundle IDs with the ones from your previous side-load or build on your device. If you don't know it, or used a 3rd party web-sign \(unsupported\), we recommend you [backup your files](../../info/miscellaneous/restoring-files.md), delete the app and try to clean-install.
 
 #### **Your maximum App ID limit has been reached…**
 

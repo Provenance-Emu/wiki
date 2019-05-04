@@ -1,7 +1,5 @@
 # Frequently Asked Questions
 
-#### Disclaimer
-
 {% hint style="warning" %}
 _Before_ posting new issues on GitHub or asking the team or community, please look for your question here or search the 💢**Troubleshooting** sub-sections within each of the wikis.
 {% endhint %}
@@ -27,7 +25,47 @@ _Before_ posting new issues on GitHub or asking the team or community, please lo
 The 3rd-parties _**do not**_ help this community _whatsoever,_ causing us wasted time with limited resources…they also unrightly profit off of the work of this open source team that works for free.
 {% endhint %}
 
-##  <a id="skipped"></a>
+> #### [How do install or update Provenance?](frequently-asked-questions.md#install)
+
+> #### [Is jailbreak required?](frequently-asked-questions.md#jailbreak)
+
+> #### [Is there a Cydia repo?](frequently-asked-questions.md#cydia)
+
+> #### [Why does Provenance not install?](frequently-asked-questions.md#install-fail)
+
+> #### [What systems are supported?](frequently-asked-questions.md#systems)
+
+> #### [Can I use a controller?](frequently-asked-questions.md#controller)
+
+> #### [What controller\(s\) do you recommend?](https://github.com/Provenance-Emu/Provenance/wiki/Frequently-Asked-Questions#controllers)
+
+> #### [What are the controls?](frequently-asked-questions.md#controls)
+
+> #### [Where can I get ROMs, or BIOS?](frequently-asked-questions.md#roms)
+
+> #### [What if I don't have a Mac?](frequently-asked-questions.md#no-mac)
+
+> #### [Can I install without a computer?](frequently-asked-questions.md#no-computer)
+
+> #### [Will you release an .ipa of the beta?](frequently-asked-questions.md#prerelease)
+
+> #### [When is the \[next\] release?](frequently-asked-questions.md#release-date)
+
+> #### [Why is the app crashing at launch?](frequently-asked-questions.md#crash)
+
+> #### [Why does _\[insert game here\]_ not work or crash?](frequently-asked-questions.md#game-fail)
+
+> #### [What format do ROMs need to be?](frequently-asked-questions.md#format)
+
+> #### [How do I convert ROM or Memory Card formats?](frequently-asked-questions.md#convert)
+
+> #### [How do I enable dark mode on Apple TV?](frequently-asked-questions.md#dark-mode-atv)
+
+> #### [Why is the app running slow or stuttering?](frequently-asked-questions.md#slow)
+
+> #### [How can I contribute?](frequently-asked-questions.md#contribute)
+
+#### 
 
 ### How do I install or update Provenance? <a id="install"></a>
 
@@ -47,11 +85,11 @@ Make sure you follow _each_ and _every_ step when [Installing](installation-and-
 
 ### What systems are supported? <a id="systems"></a>
 
-A full list of currently supported systems can be found on the [Supported Systems](https://github.com/Provenance-Emu/Provenance/wiki/Supported-Systems) wiki.
+A full list of currently supported systems can be found on the [Supported Systems](info/supported-systems.md) wiki.
 
 ### Can I use a controller? <a id="controller"></a>
 
-Yes. Controllers using Apple's standardized MFi format are 100% supported. Provenance also supports some non-standard iCade-type controllers \(8bitdo, etc\) and Valve's Steam Controller. See [Controllers & Controls](https://github.com/Provenance-Emu/Provenance/wiki/Controllers-&-Controls).
+Yes. Controllers using Apple's standardized MFi format are 100% supported. Provenance also supports some non-standard iCade-type controllers \(8bitdo, etc\) and Valve's Steam Controller. See [Controllers & Controls](info/controllers-and-controls/).
 
 ### What are the controls? <a id="controls"></a>
 
@@ -71,8 +109,8 @@ Due to copyright law, we cannot share ROMs or where to obtain them. You are lega
 
 ### What if I don't have a Mac? <a id="no-mac"></a>
 
-* You don't need a Mac if you are [side-loading](https://github.com/Provenance-Emu/Provenance/wiki/Installing-Provenance/#side-loading) a release, which is cross-platform.
-* If [building from source](https://github.com/Provenance-Emu/Provenance/wiki/Installing-Provenance/#building), you don't technically need a Mac, just macOS. Using a custom built Hackintosh or virtual machine \([Virtualizing macOS](https://github.com/Provenance-Emu/Provenance/wiki/Virtualizing-macOS)\) with macOS would suffice. If these are not an option, side-load the current release or wait for the next release \(beta is build _only_\).
+* You don't need a Mac if you are [side-loading](installation-and-usage/installing-provenance/side-loading.md) a release, which is cross-platform.
+* If [building from source](installation-and-usage/installing-provenance/building-from-source.md), you don't technically need a Mac, just macOS. Using a custom built Hackintosh or virtual machine \([Virtualizing macOS](info/miscellaneous/virtualizing-macos.md)\) with macOS would suffice. If these are not an option, side-load the current release or wait for the next release \(beta is build _only_\).
 
 ### Can I install without a computer? <a id="no-computer"></a>
 
@@ -80,7 +118,7 @@ Currently, there _**is not a safe method**_ for you install the app to your devi
 
 ### Will you release an .ipa of the beta? <a id="prerelease"></a>
 
-No. We are a very small team, and managing various pre-releases at different states of development would only slow us down and complicate testing and bug-reporting with fragmentation. If you would like to contribute via beta-testing, it is required that you are able to keep pace with active development and build from source as we do. Otherwise, you'll have to wait for final release.
+Beta Pre-Releases can be found [builds.provenance-emu.com](https://builds.provenance-emu.com/), however may not host the very latest dev build which you can always get by [building from source.](installation-and-usage/installing-provenance/building-from-source.md)
 
 ### When is the \[next\] release? <a id="release-date"></a>
 
@@ -91,13 +129,13 @@ As a small team, we prefer to not make promises we will break with release dates
 This is usually due to one of the following reasons…
 
 * You are using a free Apple developer account, which requires you to re-sign every 7 days. You can…
-  * [Side-load](https://github.com/Provenance-Emu/Provenance/wiki/Installing-Provenance/#side-loading) using the same Apple ID used previously.
-  * [Build](https://github.com/Provenance-Emu/Provenance/wiki/Installing-Provenance/#building) over the app using the same Bundle IDs used previously.
+  * [Side-load](installation-and-usage/installing-provenance/side-loading.md) using the same Apple ID used previously.
+  * [Build](installation-and-usage/installing-provenance/building-from-source.md) over the app using the same Bundle IDs used previously.
   * [Upgrade](https://developer.apple.com/programs/) to a paid Apple developer account and use the app indefinitely.
 * You were using an unsupported 3rd party build of the app and Apple revoked the provisioning profile as it violates their terms of use. You should…
   1. Delete the 3rd-party app and any profiles they may have installed.
   2. Boycott them \(stop using, sharing, or supporting their sites\).
-  3. Re-install from the _official_ source _only:_ [Installing Provenance](https://github.com/jasarien/Provenance/wiki/Installing-Provenance)
+  3. Re-install from the _official_ source _only:_ [Installing Provenance](installation-and-usage/installing-provenance/)
 
 {% hint style="warning" %}
 If using beta this could be a bug… check the open [Issues](https://github.com/Provenance-Emu/Provenance/issues), specifically labelled: [crash](https://github.com/Provenance-Emu/Provenance/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Acrash)
@@ -105,15 +143,15 @@ If using beta this could be a bug… check the open [Issues](https://github.com/
 
 ### Why does _\[insert game here\]_ not work or crash? <a id="game-fail"></a>
 
-Could be any number of the following reasons: 1. You could have a _bad_ ROM. Replace it. 2. You might be attempting to load a ROM for an unsupported system. Check [Supported Systems](https://github.com/Provenance-Emu/Provenance/wiki/Supported-Systems). 3. Your ROMs might not be using a supported extension or file format \(such as `.bin` for Atari or Sega systems\). Refer to [Formatting ROMs](https://github.com/Provenance-Emu/Provenance/wiki/Formatting-ROMs). 4. If multi-file ROM \(ie. `.cue + .bin`\), check if the filenames match the .cue file contents. Refer to Formatting ROMs: [Multi-File ROMs](https://github.com/Provenance-Emu/Provenance/wiki/Formatting-ROMs/#multi-file-roms). 5. Multi-disc Games require an `.m3u` file in order to swap discs, specific filename formatting. Refer to Formatting ROMs: [Multi-Disc Games](https://github.com/Provenance-Emu/Provenance/wiki/Formatting-ROMs/#multi-disc-games). 6. Your BIOS files might be wrong, even if named correctly. Check md5 hashes of your BIOS files as compared to what is listed in [BIOS Requirements](https://github.com/Provenance-Emu/Provenance/wiki/BIOS-Requirements) to be certain. 5. Unfortunately, not all emulator cores feature 100% compatibility with all ROMs. If the system has more than one core option \[which is shown at launch \(ie. NES: `FCEUX` vs `mednafen`\), unless you've specified a preferred core for that particular ROM or system\], try the alternate core for that game specifically. Some emulation core teams have compiled and maintain compatibility lists \(such as Yabause \(Sega Saturn\)\), which can be found linked in our [Supported Systems](https://github.com/Provenance-Emu/Provenance/wiki/Supported-Systems) wiki.
+Could be any number of the following reasons: 1. You could have a _bad_ ROM. Replace it. 2. You might be attempting to load a ROM for an unsupported system. Check [Supported Systems](info/supported-systems.md). 3. Your ROMs might not be using a supported extension or file format \(such as `.bin` for Atari or Sega systems\). Refer to [Formatting ROMs](installation-and-usage/roms/formatting-roms.md). 4. If multi-file ROM \(ie. `.cue + .bin`\), check if the filenames match the .cue file contents. Refer to Formatting ROMs: [Multi-File ROMs](installation-and-usage/roms/formatting-roms.md#multi-file-roms). 5. Multi-disc Games require an `.m3u` file in order to swap discs, specific filename formatting. Refer to Formatting ROMs: [Multi-Disc Games](installation-and-usage/roms/formatting-roms.md#multi-disc-games). 6. Your BIOS files might be wrong, even if named correctly. Check md5 hashes of your BIOS files as compared to what is listed in [BIOS Requirements](https://github.com/Provenance-Emu/Provenance/wiki/BIOS-Requirements) to be certain. 5. Unfortunately, not all emulator cores feature 100% compatibility with all ROMs. If the system has more than one core option \[which is shown at launch \(ie. NES: `FCEUX` vs `mednafen`\), unless you've specified a preferred core for that particular ROM or system\], try the alternate core for that game specifically. Some emulation core teams have compiled and maintain compatibility lists \(such as Yabause \(Sega Saturn\)\), which can be found linked in our [Supported Systems](info/supported-systems.md) wiki.
 
 ### What format do ROMs need to be? <a id="format"></a>
 
-File format and/or filename requirements are specified in [Formatting ROMs](https://github.com/Provenance-Emu/Provenance/wiki/Formatting-ROMs).
+File format and/or filename requirements are specified in [Formatting ROMs](installation-and-usage/roms/formatting-roms.md).
 
 ### How do I convert ROM or Memory Card formats? <a id="convert"></a>
 
-Refer to Formatting ROMs: [Converting Formats](https://github.com/Provenance-Emu/Provenance/wiki/Formatting-ROMs/#converting-formats).
+Refer to Formatting ROMs: [Converting Formats](installation-and-usage/roms/formatting-roms.md#converting-formats).
 
 ### How do I enable dark mode on Apple TV? <a id="dark-mode-atv"></a>
 
@@ -121,7 +159,7 @@ Provenance supports the system-wide Dark mode of tvOS. To enable it go to tvOS `
 
 ### Why is the app running slow or stuttering? <a id="slow"></a>
 
-* You might have built the _debug version_ by mistake \(app will be named **Prov Debug** on Home Screen and the version displayed in Settings will be `DEBUG`\)… If so, [Re-build](https://github.com/Provenance-Emu/Provenance/wiki/Installing-Provenance/#building) using **Provenance-Release** \(iOS\) or **ProvenanceTV-Release** \(tvOS\) in Xcode.
+* You might have built the _debug version_ by mistake \(app will be named **Prov Debug** on Home Screen and the version displayed in Settings will be `DEBUG`\)… If so, [Re-build](installation-and-usage/installing-provenance/building-from-source.md#build-source) using **Provenance-Release** \(iOS\) or **ProvenanceTV-Release** \(tvOS\) in Xcode.
 * On older devices, to speed up N64, change `#define FORCE_RICE_VIDEO 0` to `#define FORCE_RICE_VIDEO 1` in [MupenGameCore.m](https://github.com/Provenance-Emu/Provenance/blob/574f6834573392b57d9b6c5b58d84620844700a8/PVMupen64Plus/MupenGameCore.m#L34)
 * All cores should run full speed on any generation Apple TV, or iPhone 7 or newer.
 * Turn off Smoothing and CRT effects in the application settings.
