@@ -123,7 +123,7 @@ Please refer to the [Known Issues](importing-roms.md#known-issues) regarding Imp
 
 * Multiple ROMs from one archive? You may be using a Region Pack ROMset, meaning more than one version of the same ROM is in your archive. Unarchive the set, isolate single region ROM file\(s\), \[[re-archive](formatting-roms.md#archiving), and…\] re-import the single region ROM, individually.
 
-### **⚠️ Known Issues**
+## **⚠️ Known Issues**
 
 * Sometimes _loose_ `.bin` for CD-based game files are picked up as Sega Genesis/MegaDrive ROMs. Please refer to [Multi-file ROMs](formatting-roms.md#multi-file-roms) and [Multi-disc Games](formatting-roms.md#multi-disc-games) \(v1.4\).
 * CD-based, or multi-file ROMs and especially multi-disc games need to be uploaded and processed _one at a time_, until the Game Importer can be built to handle these in a queue. If yours are broken, it's best to delete the game\(s\) from the app UI, and delete any file remnants in the file system in ROMs \(com.provenance.\[system\]\) and from Imports using the WebUI, WebDav or an iOS file manager, and re-upload.
