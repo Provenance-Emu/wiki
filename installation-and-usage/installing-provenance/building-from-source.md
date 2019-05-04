@@ -1,5 +1,5 @@
 ---
-description: 'Moderate: Install latest in-development build'
+description: 'Moderate: Install latest in-development build.'
 ---
 
 # Building from Source
@@ -29,7 +29,7 @@ DO NOT expect to use a beta without issues, losing your saves, or bugs.
 * Free [Apple Developer Account](https://9to5mac.com/2016/03/27/how-to-create-free-apple-developer-account-sideload-apps/) \(at a minimum\)  
 
 
-  🛑 **DO NOT** enroll to join the Developer Program or you will be locked into a _Pending_ payment state, unable to code-sign unless you pay or contact Apple to cancel the enrollment.  
+  🛑 **DO NOT** enroll to join the full Developer Program or you will be locked into a _Pending_ payment state, unable to code-sign unless you pay or contact Apple to cancel the enrollment.  
 
 * Connections:
   * iPhone / iPad:    `Lightning` → `USB-A / USB-C` cable¹
@@ -59,8 +59,6 @@ Cloning is how you pull the source code from GitHub. The primary way to do this 
 {% hint style="info" %}
 The Terminal app can be found in: _/Applications/Utilities_
 {% endhint %}
-
-![](https://user-images.githubusercontent.com/3118097/40098973-dc3642e4-5892-11e8-8248-eb7861acea23.gif)
 
 1. Make sure you have the latest version of the Xcode command-line tools installed: `xcode-select --install`
 2. _\(Optional\)_ Choose an install directory with `cd [path]` \(drag & drop a folder on Terminal after `cd`  to get directory path\).
@@ -133,7 +131,7 @@ make help
 
 
 
-💢 If you get stuck, check out Troubleshooting.
+💢 If you get stuck, check out [Troubleshooting](building-from-source.md#troubleshooting).
 
 ## Build Source
 
@@ -248,7 +246,7 @@ make help
 If all else fails, delete Provenance folder and start over.
 {% endhint %}
 
-## 💢  Troubleshooting
+## 💢 Troubleshooting
 
 If you are having trouble building or side-loading the app, check for your issue here or below in Known Issues.
 
@@ -267,7 +265,7 @@ If you are having trouble building or side-loading the app, check for your issue
 1. Check the Bundle IDs haven't been reset to the projects defaults.
 2. If not, select your team drop down and reselect your team / name. Sometimes Xcode gets out of sync with the identity being used after a merge / pull / branch change, especially in the extension targets.
 
-**Cycle in dependencies between targets… error**
+#### **Cycle in dependencies between targets… error**
 
 * Circular dependency error. Clean Build Folder \(⇧⌘K\) and/or nuke Xcode's derived data: `rm -rf ~/Library/Developer/Xcode/DerivedData` and restart Xcode.
 
@@ -275,19 +273,15 @@ If you are having trouble building or side-loading the app, check for your issue
 
 * This probably means you built the _debug version_ by mistake \(app will be named `Prov Debug` on Home Screen and the version displayed in Settings will be `DEBUG`\)… If so, Re-build using `Provenance-Release` \(iOS\) or `ProvenanceTV-Release` \(tvOS\) option in Xcode.
 
-#### Side-loading cannot authenticate
-
-* If using 2-Factor Authentication, you will need to go to [Apple ID](https://appleid.apple.com/) settings and make a key and save it for use in Cydia Impactor, type it verbatim.
-
-**—application-identifier entitlement does not match…**
+#### **—application-identifier entitlement does not match…**
 
 * This means you need to match the Bundle IDs with the ones from your previous side-load or build on your device. If you don't know it, or used a 3rd party web-sign \(unsupported\), we recommend you [backup your files](https://github.com/Provenance-Emu/Provenance/wiki/Restoring-Files), delete the app and try to clean-install.
 
-**Your maximum App ID limit has been reached…**
+#### **Your maximum App ID limit has been reached…**
 
 * You have made too many Bundle IDs \(App IDs\) in one week on a free Apple developer account. Stop making new Bundle IDs and revert to one you already made. You are chasing the wrong problem. If all else fails, use a different Apple ID, and make only one new, unique Bundle ID with it \(and save it for later when you need to re-sign in 7 days\).
 
-**something something …Mupen build error**
+#### **something something …Mupen build error**
 
 * You are missing submodules. **Do not** download .zip from GitHub. Use Terminal. Go back to Get Source and **do not** skip any steps. 
 
@@ -299,7 +293,7 @@ If you are having trouble building or side-loading the app, check for your issue
 
 * If app installs or updates as a duplicate app instead of updating existing installation, you need delete it and  use the _same_ Bundle ID as your original build or you'll end up with a double installation…
 
-**Linking…carthage/…Error: Permission denied @ dir\_s\_mkdir - /usr/local/Frameworks…**
+#### **Linking…carthage/…Error: Permission denied @ dir\_s\_mkdir - /usr/local/Frameworks…**
 
 * Just a permissions error with the directory, it can be fixed with:  
 
@@ -310,17 +304,17 @@ If you are having trouble building or side-loading the app, check for your issue
     brew link carthage
   ```
 
-  **Linking… Failed**
+#### **Linking… Failed**
 
-  * Fails when switching from one target to another. Try…
-    1. Delete `Build` folders in `Provenance/Carthage/` and `/Provenance/PVSupport/Carthage/`
-    2. In Xcode: Run `Clean` a/o `Clean Build Folder` and rebuild.
+* Fails when switching from one target to another. Try…
+  1. Delete `Build` folders in `Provenance/Carthage/` and `/Provenance/PVSupport/Carthage/`
+  2. In Xcode: Run `Clean` a/o `Clean Build Folder` and rebuild.
 
-**bundler: failed to load command… error**
+#### **bundler: failed to load command… error**
 
 * Carthage might have a dirty cache, clean with `rm -rf ~/Library/Caches/org.carthage.CarthageKit`
 
-**git@github.com: Permission denied \(publickey\)…**
+#### **git@github.com: Permission denied \(publickey\)…**
 
 * Setup an [SSH Key on your GitHub account](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/), or…
 * Add the following to your bash file via `nano ~/.gitconfig` \(save with Write Out `^O`\):
@@ -330,18 +324,22 @@ If you are having trouble building or side-loading the app, check for your issue
    insteadOf = ssh://git@github.com
   ```
 
-**conflicting provisioning settings…Distribution**
+#### **conflicting provisioning settings…Distribution**
 
 * In Build Settings for the targets with errors, manually reset all the Code Signing Identities that are `iOS Distribution` to be `iPhone Developer`, and try building again.
 
-## ⚠️  Known Issues
+## ⚠️ Known Issues
 
 **something about database build error**
 
 * This means there have been changes to the database model which is no longer compatible with your previous build. In order to update you _**must**_ clean install \(delete app and re-install, not build or install over over existing app\). If you would like to migrate your save games and states, you can refer to [Restoring Files](https://github.com/Provenance-Emu/Provenance/wiki/Restoring-Files).  
 
 
-  🏍  You can install "sidecar" for testing by using a different bundle ID than your previous/main install.  
+  🏍  You can install "sidecar" for testing by using a different bundle ID than your previous/main install.
 
+
+
+{% hint style="info" %}
 🗯 If you are still stuck ask for [help](https://discord.gg/NhzgrXh) on our Discord.
+{% endhint %}
 

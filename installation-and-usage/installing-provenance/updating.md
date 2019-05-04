@@ -14,11 +14,9 @@ When there is a new release or recent commits to a source branch you have a few 
   * ![](https://user-images.githubusercontent.com/3118097/37563630-4903ebbc-2a42-11e8-888a-09a94fc0058d.png)  [Tower](updating.md#update-with-tower)
 * ⏩  [**Update & Build**](updating.md#update-and-build)\*\*\*\*
 
-## 
+## Pull
 
-### Pull
-
-#### **Update with Terminal**
+### **Update with Terminal**
 
 {% hint style="info" %}
 The Terminal app can be found in: _/Applications/Utilities_
@@ -52,9 +50,7 @@ The Terminal app can be found in: _/Applications/Utilities_
    * If stashed changes above, just hit the `▶︎` \(Run\) button.
 5. Provenance will compile and run on your device. Unless testing, hit `◼︎` \(Stop\). _Done._ 
 
-## 
-
-#### **Update with Tower**
+### **Update with Tower**
 
 1. In `Repositories` double-click `Provenance` or select and click `Open`
 2. With 'develop' branch marked \(HEAD\), click `Fetch`
@@ -76,9 +72,7 @@ The Terminal app can be found in: _/Applications/Utilities_
 To learn more about stashing refer to Tower's [Using the Stash](https://www.git-tower.com/help/mac/working-copy/stash) documentation.
 {% endhint %}
 
-## 
-
-### Update & Build
+## Update & Build
 
 If you've already done the First-time Setup, then you can build from the command-line using the following commands. These commands will pull any updates and build, so you can opt to update and build using only the terminal in the future.
 
@@ -93,4 +87,12 @@ If you've already done the First-time Setup, then you can build from the command
   ```bash
     make tvos
   ```
+
+
+
+
+
+{% hint style="info" %}
+🗯 If you are still stuck ask for [help](https://discord.gg/NhzgrXh) on our Discord.
+{% endhint %}
 

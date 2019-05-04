@@ -12,7 +12,7 @@ description: Certain emulator cores require specific BIOS files in order to play
 **DO NOT** ask us where to obtain BIOS files. Distributing BIOS files violates copyright law.
 {% endhint %}
 
-### Systems
+## Systems
 
 **BIOS**:    ✅ =  Required     🔶 =  Optional
 
@@ -135,14 +135,20 @@ All 3 BIOS are required. Filenames online may vary. If the MD5s match, Provenanc
   All 3 BIOS are required for the mednafen core.
 {% endhint %}
 
-### Importing
+## Importing
 
-BIOS files are imported exactly the same as ROMs: [Importing ROMs](https://github.com/Provenance-Emu/Provenance/wiki/Importing-ROMs). When you have the correct BIOS successfully imported they will shown in Settings → Cores, otherwise they show as missing/red/required, otherwise you have the wrong files. You need the exact ROMs files matching the md5 hashes above.
+BIOS files are imported exactly the same as ROMs: [Importing ROMs](roms/importing-roms.md). When you have the correct BIOS successfully imported they will shown in Settings → Cores, otherwise they show as missing/red/required, otherwise you have the wrong files. You need the exact ROMs files matching the md5 hashes above.
 
 #### MD5
 
 Though not required, you can verify the md5 hashes of your files to be certain. To obtain the md5 hash checksum of your BIOS files, you can use `md5 [path to file, or drag and drop file here]` in Terminal. Check that it matches the md5 hash of the file listed above.
 
-Alternatively, BIOS files can be force [uploaded](https://github.com/Provenance-Emu/Provenance/wiki/Importing-ROMs#uploading) manually into `/BIOS/com.provenance.[system]` via [WebUI](https://github.com/Provenance-Emu/Provenance/wiki/Importing-ROMs#web-server-ui) or [WebDav](https://github.com/Provenance-Emu/Provenance/wiki/Importing-ROMs#webdav-clients), and via Apple Files app \(iOS only\).  
+Alternatively, BIOS files can be force [uploaded](roms/importing-roms.md#uploading) manually into `/BIOS/com.provenance.[system]` via WebUI or WebDav, and via Apple Files app \(iOS only\).  
 
+
+
+
+{% hint style="info" %}
+🗯 If you are still stuck ask for [help](https://discord.gg/NhzgrXh) on our Discord.
+{% endhint %}
 

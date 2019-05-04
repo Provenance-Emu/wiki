@@ -17,7 +17,7 @@ Prebuilt .ipa releases can side-loaded onto your devices and must be re-signed u
 * _Free_ [Apple Developer](https://9to5mac.com/2016/03/27/how-to-create-free-apple-developer-account-sideload-apps/) account \(at a minimum\)   
   ****
 
-  🛑 **DO NOT** enroll to join the Developer Program or you will be locked into a _Pending_ payment state, unable to code-sign unless you pay or contact Apple to cancel the enrollment.  
+  🛑 **DO NOT** enroll to join the full Developer Program or you will be locked into a _Pending_ payment state, unable to code-sign unless you pay or contact Apple to cancel the enrollment.  
 
 * Connections:
   * iPhone / iPad:    `Lightning` → `USB-A / USB-C` cable¹
@@ -32,13 +32,11 @@ Prebuilt .ipa releases can side-loaded onto your devices and must be re-signed u
 Side-loading from 3rd party sources _**is not supported**_.
 {% endhint %}
 
-💢  If you get stuck, check out Troubleshooting.
+💢  If you get stuck, check out [Troubleshooting](side-loading.md#troubleshooting).
 
+## Cydia Impactor
 
-
-### Cydia Impactor
-
-1. Download a [Release](https://github.com/Provenance-Emu/Provenance/releases) or [Prerelease](https://builds.provenance-emu.com/) of Provenance.
+1. Download a [Release](https://github.com/Provenance-Emu/Provenance/releases) or [Pre-Release](https://builds.provenance-emu.com/) of Provenance.
 2. Download and launch [Cydia Impactor](http://www.cydiaimpactor.com/).
 3. Connect your device \(you may need to launch iTunes and choose `Trust…` when it pops up\).
 4. Select your device in Impactor.
@@ -64,9 +62,9 @@ Side-loading from 3rd party sources _**is not supported**_.
 Free Apple developer provisioning expires _every 7 days_, requiring reloading, but you will not lose any data.
 {% endhint %}
 
-### iOS App Signer
+## iOS App Signer
 
-1. Download a [Release](https://github.com/Provenance-Emu/Provenance/releases) or [Prerelease](https://builds.provenance-emu.com/) of Provenance.
+1. Download a [Release](https://github.com/Provenance-Emu/Provenance/releases) or [Pre-Release](https://builds.provenance-emu.com/) of Provenance.
 2. Download and launch [iOS App Signer](https://dantheman827.github.io/ios-app-signer/).
 3. Select `.ipa` file and resign it to yourself, selecting the Provenance Bundle ID you've used in the past if you have one already have one. If you don't have one, try creating one here if it lets you or proceed to step 4 and return to this.    🆔 Bundle ID: `com.[change-this].provenance`  Replace `[change-this]` with something unique like your username. 
 4. Connect your device. ⚠️If you haven't yet, register your device to your Apple ID in Xcode. Easiest way to do this is to make dummy app in Xcode and have it automatically create the provisioning when you enter your Bundle ID  \([Example](https://dantheman827.github.io/ios-app-signer/#tab-bar)\).
@@ -79,6 +77,37 @@ Free Apple developer provisioning expires _every 7 days_, requiring reloading, b
 Free Apple developer provisioning expires _every 7 days_, requiring reloading, but you will not lose any data.
 {% endhint %}
 
-  
+## 💢 Troubleshooting
 
+#### Cannot authenticate
+
+* If using 2-Factor Authentication, you will need to go to [Apple ID](https://appleid.apple.com/) settings and make a key and save it for use in Cydia Impactor, type it verbatim.
+
+#### Unable to code-sign / install…
+
+* Change the Bundle IDs of the app targets and extensions, as described in Build Source steps.
+* If you are using a free Apple developer account, you can only install a total of 3 apps per Apple ID at a time. You must use delete some apps you are signing, or install with different Apple ID and Bundle IDs.
+* If you used to have a free Safari Developer Account which is no longer supported by Apple, you have two options: 
+
+  1\) Upgrade to a _paid_ [Apple Developer](https://developer.apple.com/programs/) account. 
+
+  2\) Use a different Apple ID that _is not_ an expired and deprecated Safari Developer account.
+
+#### **—application-identifier entitlement does not match…**
+
+* This means you need to match the Bundle IDs with the ones from your previous side-load or build on your device. If you don't know it, or used a 3rd party web-sign \(unsupported\), we recommend you [backup your files](../../help/troubleshooting/restoring-files.md), delete the app and try to clean-install.
+
+#### **Your maximum App ID limit has been reached…**
+
+* You have made too many Bundle IDs \(App IDs\) in one week on a free Apple developer account. Stop making new Bundle IDs and revert to one you already made. You are chasing the wrong problem. If all else fails, use a different Apple ID, and make only one new, unique Bundle ID with it \(and save it for later when you need to re-sign in 7 days\).
+
+#### Duplicate app
+
+* If app installs or updates as a duplicate app instead of updating existing installation, you need delete it and  use the _same_ Bundle ID as your original build or you'll end up with a double installation…
+
+
+
+{% hint style="info" %}
+🗯 If you are still stuck ask for [help](https://discord.gg/NhzgrXh) on our Discord.
+{% endhint %}
 

@@ -1,21 +1,20 @@
+---
+description: 'Supported, Classified and Rated Controllers/Gamepads'
+---
+
 # Controllers
 
-* **🖲 Controller Types**
-  * [MFi Controllers](./#mfi-controllers)
-    * [Gamepad Profiles](./#mfi-profiles)
-  * [Steam Controller](./#steam-controller-pseudo-mfi)
-  * [iCade Controllers](./#icade-controllers)
-* **🕹 Controller Forms**
-  * Form-fitting
-  * Standalone
-* **🎮 Controllers** · Supported, Classified & Rated
-* **🎛  Controls**
-  * MFi Controls
-  * iCade Controls  ·  _\(coming later…\)_
+* **🖲** [**Controller Types**](controllers.md#controller-types)\*\*\*\*
+  * [MFi ](./#mfi-controllers)
+  * [Steam](./#steam-controller-pseudo-mfi)
+  * [iCade](./#icade-controllers)
+* **🕹** [**Controller Forms**](controllers.md#controller-forms)\*\*\*\*
+* **🎮** [**Controllers**](controllers.md#profiles) · Supported, Classified & Rated
+* **🎛** [**Controls**](controllers.md#controls)\*\*\*\*
 
-### Controller Types
+## Controller Types
 
-#### MFi Controllers
+### MFi Controllers
 
 Certified MFi Controllers are the standard complying to Apple's Gamepad profile\(s\). They are the easiest and most compatible controllers to use not just for Provenance, but iOS and tvOS in general.
 
@@ -30,19 +29,21 @@ MFi controllers exist in a few different formats made distinct as profiles in Ap
 | Extended | ● | ● | ● | ● | ● | ● | ● | ● | ● |  |  |  |
 | Extended2\* | ● | ● | ● | ● | ● | ● | ● | ● | ● | ● |  |  |
 
-\*Technically, there is only one Extended profile in the SDK, but we make the previous generation distinct within Provenance.  
-
+{% hint style="info" %}
+Technically, there is only one Extended profile in the SDK, but we make the previous generation \(which excluded L3 and R3\) distinct within Provenance and refer to the updated profile as Extended2.
+{% endhint %}
 
 Due to Apple's shortsightedness, all MFi controllers lack certain buttons to be equivalent to any modern gaming standard \(PS4, Xbox, etc…\) made accessible in Provenance in various ways:
 
-1. For pre-PSX Systems: systems without Trigger buttons\): Using L2, R2 \(Select, Start\)
+1. For systems without trigger buttons:
+   * L2: Select, R2: Start
 2. For PSX, N64, and on… 
-   1. MFi+ Combos
-   2. Pause Menu
-3. \(iOS only\) Missing Buttons Always On-Screen _Beta, not all systems supported_
+   * MFi+ Combos
+   * UI Buttons within Pause Menu
+3. Missing Buttons Always On-Screen \(iOS only\) _Beta, not all systems supported_
 4. MFi Controls
 
-#### Steam Controller \(pseudo MFi\)
+### Steam Controller \(pseudo MFi\)
 
 Valve's Steam Controller uses its own protocol different from MFi, and not a virtual keyboard hack like iCade types, but we can conform it to the MFi Extended Gamepad protocol and still obtain input from the extra buttons as a sort of MFi hybrid, however limited to use only within the app \(cannot navigate the system such as MFi can do with tvOS\). 
 
@@ -50,9 +51,7 @@ Valve's Steam Controller uses its own protocol different from MFi, and not a vir
 Currently, Steam Controller will not reconnect automatically, requiring app relaunch.
 {% endhint %}
 
-Profile
-
-| ❚❚ | ✜ | A | B | X | Y | -- | == | ⓁⓇ | ③③ | ◀︎ | ▶︎ |  |
+| Profile | ❚❚ | ✜ | A | B | X | Y | -- | == | ⓁⓇ | ③③ | ◀︎ | ▶︎ |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Extended2+ | ● | ● | ● | ● | ● | ● | ● | ● | ● | ● | ● | ● |
 
@@ -77,25 +76,27 @@ Currently, ◀︎ \(Back\) / Select and ▶︎ \(Forward\) / Start will work wit
 * Requires [Steam Controller BLE firmware](https://support.steampowered.com/kb_article.php?ref=7728-QESJ-4420) via Steam Beta program.
 * [MFi Controls](https://bit.ly/2LDZNzI)
 
-#### iCade Controllers
+### iCade Controllers
 
 Before MFi, there were various controllers using non-standardized virtual keyboard hacks to get gamepad input. Because of this they are not as fluid or as granular as you can get from MFi or a Steam controller as they are using key mappings and not variable numerical data \(as would be needed for thumbstick coordinates and trigger sensitivity, etc…\), however they tend to have more buttons available. Another drawback is that you cannot use two iCades simultaneously, as Apple only allows one 'keyboard' connected at a time… 
 
 {% hint style="warning" %}
- iCade and MFi used simultaneously without conflict/bugs, currently.
+ iCade and MFi can **not** be used together simultaneously without conflict/bugs, currently.
 {% endhint %}
 
 * _iCade control maps coming later…_
 
-### Controller Forms
+## Controller Forms
 
-#### Form-fitting
+### Form-fitting
 
 Form fitting controllers attach to your devices, in either a PSP sort of way \(GameVice\) or with a clamp that mounts the device above the controller. Some are powered by the device, others self-powered via battery and connect over bluetooth. Great for iPhone. Decent for iPads. Generally useless for Apple TV, unless you have a bluetooth device with remove-able or collapse-able clamp.
 
-#### Standalone
+### Standalone
 
 Standalone controllers are familiar to that of Playstation or Xbox. Recommended for iPads, and the absolute for Apple TV.
+
+## Controllers
 
 ### Profiles
 
@@ -318,8 +319,14 @@ Standalone controllers are familiar to that of Playstation or Xbox. Recommended 
     </tr>
   </tbody>
 </table>^ Discontinued, some can still be obtained.  
- \* Requires [legacy firmware](http://support.8bitdo.com/) to work with iOS/tvOS.  
+\* Requires [legacy firmware](http://support.8bitdo.com/) to work with iOS/tvOS.  
 
 
 ⭐️Later adding specific controller reviews, pros/cons, retro-nostalgia recommendations…
+
+## Controls
+
+A full list of mapped controls for Standard and Extended MFi gamepad profiles per system can be found in [MFi Controls](https://bit.ly/2LDZNzI).
+
+_iCade control maps coming later…_
 

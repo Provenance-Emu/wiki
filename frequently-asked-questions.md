@@ -1,9 +1,9 @@
 # Frequently Asked Questions
 
-## Disclaimer
+#### Disclaimer
 
 {% hint style="warning" %}
-_Before_ posting new issues or asking the team or community, please check these Frequently Asked Questions or search the 💢[Troubleshooting](help/troubleshooting.md) and sub-sections within each of the wikis.
+_Before_ posting new issues on GitHub or asking the team or community, please look for your question here or search the 💢**Troubleshooting** sub-sections within each of the wikis.
 {% endhint %}
 
 ### Why—
@@ -27,7 +27,7 @@ _Before_ posting new issues or asking the team or community, please check these 
 The 3rd-parties _**do not**_ help this community _whatsoever,_ causing us wasted time with limited resources…they also unrightly profit off of the work of this open source team that works for free.
 {% endhint %}
 
-## Frequently Asked Questions <a id="skipped"></a>
+##  <a id="skipped"></a>
 
 ### How do I install or update Provenance? <a id="install"></a>
 
@@ -43,7 +43,7 @@ No.
 
 ### Why does Provenance not install? <a id="install-fail"></a>
 
-Make sure you follow _each_ and _every_ step when [Installing](https://github.com/jasarien/Provenance/wiki/Installing-Provenance). **Do not** skip anything or make any assumptions. If stuck, refer to [Troubleshooting](https://github.com/Provenance-Emu/Provenance/wiki/Installing-Provenance/#troubleshooting-alt). If still stuck…ask for [help](https://discord.gg/NhzgrXh) on our Discord.
+Make sure you follow _each_ and _every_ step when [Installing](installation-and-usage/installing-provenance/#installing-alt). **Do not** skip anything or make any assumptions. If stuck, refer to Troubleshooting. If still stuck…ask for [help](https://discord.gg/NhzgrXh) on our Discord.
 
 ### What systems are supported? <a id="systems"></a>
 
