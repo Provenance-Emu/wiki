@@ -325,7 +325,7 @@ Standalone controllers are familiar to that of Playstation or Xbox. Recommended 
         <td style="text-align:left">&#x25CF;</td>
         <td style="text-align:left">MFi</td>
         <td style="text-align:left">Extended</td>
-        <td style="text-align:left">&#x25CF;&#x25CF;&#x25D0;&#x25CB;&#x25CB;</td>
+        <td style="text-align:left">&#x25CF;&#x25CF;&#x25CB;&#x25CB;&#x25CB;</td>
     </tr>
   </tbody>
 </table>^ Discontinued, some can still be obtained.  
