@@ -9,7 +9,9 @@ description: 'Hacks, Patches, Translations, Mods'
 
 ## Patching
 
-A great resource for ROM hacks and translations can be found at [romhacking.net](https://www.romhacking.net). Note that usually the target ROM version needed is specified with md5 checksum for the exact ROM to patch - make sure it matches your target file. To apply the patches you will need a patcher for the various formats:
+A great resource for ROM hacks and translations can be found at [romhacking.net](https://www.romhacking.net). Note that usually the target ROM version needed is specified with MD5, CRC32 or SHA-1 checksum for the exact ROM to patch—make sure it matches your target file. 
+
+To apply the patches you will need a patcher for the various formats:
 
 * Mac: 
   * [MultiPatch](http://projects.sappharad.com/tools/multipatch.html): `.ips`, `.bps`, `.ups`, `.ppf`, `.bsdiff`, `.bdf`, `.xdelta`, `.dat`
@@ -17,7 +19,19 @@ A great resource for ROM hacks and translations can be found at [romhacking.net]
   * [Floating IPS](https://github.com/Alcaro/Flips): `.ips`, `.bps`
   * [XDelta](https://sourceforge.net/projects/xdelta3-gui): `.xdelta`
 
+#### Hash Checksums
 
+ To obtain the hash checksum of a ROM, you can use the following commands in Terminal… 
+
+```text
+md5 [path to file or drag and drop file here]
+crc32 [path to file or drag and drop file here]
+shasum [path to file or drag and drop file here]
+```
+
+{% hint style="info" %}
+Although it's best to use the exact ROM required as listed…_sometimes_ a patch will still work without an exact match, but cannot be guaranteed to work 100% even if it seems to have successfully patched. This might be necessary as there are some exact ROMs are nearly impossible to obtain, but _do this as a last resort and at your own risk._
+{% endhint %}
 
 ## **High Resolution Textures \(N64\)**
 
