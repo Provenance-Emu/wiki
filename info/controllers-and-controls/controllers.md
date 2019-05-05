@@ -332,6 +332,12 @@ Standalone controllers are familiar to that of Playstation or Xbox. Recommended 
 \* Requires [legacy firmware](http://support.8bitdo.com/) to work with iOS/tvOS.  
 
 
+{% hint style="info" %}
+Also, check out the Controller phone mounts made by [UtorCase](https://utorcase.com/).
+{% endhint %}
+
+
+
 ⭐️Later adding specific controller reviews, pros/cons, retro-nostalgia recommendations…
 
 ## Controls
