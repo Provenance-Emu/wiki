@@ -10,7 +10,7 @@ _Before_ posting new issues on GitHub or asking the team or community, please lo
 
 > #### Where did you install the app from?
 
-* **Official Provenance GitHub**: 👍 [_skip ahead_](frequently-asked-questions.md#skipped)\_\_
+* **Official Provenance GitHub**: 👍 [_skip ahead_](faqs.md#skipped)\_\_
 * **Elsewhere**: 👎 _read below…_
 
 🚫 3rd-party builds are NOT supported nor approved. They are… not current, probably buggy and generally unsafe _\(unapproved modifications, malware, adware and may require backdoor profiles\)_, and when Apple revokes their misused profiles, you will probably lose your games and saves: 
@@ -25,51 +25,51 @@ _Before_ posting new issues on GitHub or asking the team or community, please lo
 The 3rd-parties _**do not**_ help this community _whatsoever,_ causing us wasted time with limited resources…they also unrightly profit off of the work of this open source team that works for free.
 {% endhint %}
 
-> #### [How do install or update Provenance?](frequently-asked-questions.md#install)
+> #### [How do install or update Provenance?](faqs.md#install)
 
-> #### [Is jailbreak required?](frequently-asked-questions.md#jailbreak)
+> #### [Is jailbreak required?](faqs.md#jailbreak)
 
-> #### [Is there a Cydia repo?](frequently-asked-questions.md#cydia)
+> #### [Is there a Cydia repo?](faqs.md#cydia)
 
-> #### [Why does Provenance not install?](frequently-asked-questions.md#install-fail)
+> #### [Why does Provenance not install?](faqs.md#install-fail)
 
-> #### [What systems are supported?](frequently-asked-questions.md#systems)
+> #### [What systems are supported?](faqs.md#systems)
 
-> #### [Can I use a controller?](frequently-asked-questions.md#controller)
+> #### [Can I use a controller?](faqs.md#controller)
 
 > #### [What controller\(s\) do you recommend?](https://github.com/Provenance-Emu/Provenance/wiki/Frequently-Asked-Questions#controllers)
 
-> #### [What are the controls?](frequently-asked-questions.md#controls)
+> #### [What are the controls?](faqs.md#controls)
 
-> #### [Where can I get ROMs, or BIOS?](frequently-asked-questions.md#roms)
+> #### [Where can I get ROMs, or BIOS?](faqs.md#roms)
 
-> #### [What if I don't have a Mac?](frequently-asked-questions.md#no-mac)
+> #### [What if I don't have a Mac?](faqs.md#no-mac)
 
-> #### [Can I install without a computer?](frequently-asked-questions.md#no-computer)
+> #### [Can I install without a computer?](faqs.md#no-computer)
 
-> #### [Will you release an .ipa of the beta?](frequently-asked-questions.md#prerelease)
+> #### [Will you release an .ipa of the beta?](faqs.md#prerelease)
 
-> #### [When is the \[next\] release?](frequently-asked-questions.md#release-date)
+> #### [When is the \[next\] release?](faqs.md#release-date)
 
-> #### [Why is the app crashing at launch?](frequently-asked-questions.md#crash)
+> #### [Why is the app crashing at launch?](faqs.md#crash)
 
-> #### [Why does _\[insert game here\]_ not work or crash?](frequently-asked-questions.md#game-fail)
+> #### [Why does _\[insert game here\]_ not work or crash?](faqs.md#game-fail)
 
-> #### [What format do ROMs need to be?](frequently-asked-questions.md#format)
+> #### [What format do ROMs need to be?](faqs.md#format)
 
-> #### [How do I convert ROM or Memory Card formats?](frequently-asked-questions.md#convert)
+> #### [How do I convert ROM or Memory Card formats?](faqs.md#convert)
 
-> #### [How do I enable dark mode on Apple TV?](frequently-asked-questions.md#dark-mode-atv)
+> #### [How do I enable dark mode on Apple TV?](faqs.md#dark-mode-atv)
 
-> #### [Why is the app running slow or stuttering?](frequently-asked-questions.md#slow)
+> #### [Why is the app running slow or stuttering?](faqs.md#slow)
 
-> #### [How can I contribute?](frequently-asked-questions.md#contribute)
+> #### [How can I contribute?](faqs.md#contribute)
 
 #### 
 
 ### How do I install or update Provenance? <a id="install"></a>
 
-Refer to [Installing](installation-and-usage/installing-provenance/) or [Updating](installation-and-usage/installing-provenance/updating.md).
+Refer to [Installing Provenance](installation-and-usage/installing-provenance/).
 
 ### Is jailbreak required? <a id="jailbreak"></a>
 
@@ -143,7 +143,15 @@ If using beta this could be a bug… check the open [Issues](https://github.com/
 
 ### Why does _\[insert game here\]_ not work or crash? <a id="game-fail"></a>
 
-Could be any number of the following reasons: 1. You could have a _bad_ ROM. Replace it. 2. You might be attempting to load a ROM for an unsupported system. Check [Supported Systems](info/supported-systems.md). 3. Your ROMs might not be using a supported extension or file format \(such as `.bin` for Atari or Sega systems\). Refer to [Formatting ROMs](installation-and-usage/roms/formatting-roms.md). 4. If multi-file ROM \(ie. `.cue + .bin`\), check if the filenames match the .cue file contents. Refer to Formatting ROMs: [Multi-File ROMs](installation-and-usage/roms/formatting-roms.md#multi-file-roms). 5. Multi-disc Games require an `.m3u` file in order to swap discs, specific filename formatting. Refer to Formatting ROMs: [Multi-Disc Games](installation-and-usage/roms/formatting-roms.md#multi-disc-games). 6. Your BIOS files might be wrong, even if named correctly. Check md5 hashes of your BIOS files as compared to what is listed in [BIOS Requirements](https://github.com/Provenance-Emu/Provenance/wiki/BIOS-Requirements) to be certain. 5. Unfortunately, not all emulator cores feature 100% compatibility with all ROMs. If the system has more than one core option \[which is shown at launch \(ie. NES: `FCEUX` vs `mednafen`\), unless you've specified a preferred core for that particular ROM or system\], try the alternate core for that game specifically. Some emulation core teams have compiled and maintain compatibility lists \(such as Yabause \(Sega Saturn\)\), which can be found linked in our [Supported Systems](info/supported-systems.md) wiki.
+Could be any number of the following reasons: 
+
+* You could have a _bad_ ROM. Replace it. 
+* You might be attempting to load a ROM for an unsupported system. Check [Supported Systems](info/supported-systems.md). 
+* Your ROMs might not be using a supported extension or file format \(such as `.bin` for Atari or Sega systems\). Refer to [Formatting ROMs](installation-and-usage/roms/formatting-roms.md).
+* If multi-file ROM \(ie. `.cue + .bin`\), check if the filenames match the .cue file contents. Refer to Formatting ROMs: [Multi-File ROMs](installation-and-usage/roms/formatting-roms.md#multi-file-roms). 
+* Multi-disc Games require an `.m3u` file in order to swap discs, specific filename formatting. Refer to Formatting ROMs: [Multi-Disc Games](installation-and-usage/roms/formatting-roms.md#multi-disc-games). 
+* Your BIOS files might be wrong, even if named correctly. Check md5 hashes of your BIOS files as compared to what is listed in [BIOS Requirements](https://github.com/Provenance-Emu/Provenance/wiki/BIOS-Requirements) to be certain. 
+* Unfortunately, not all emulator cores feature 100% compatibility with all ROMs. If the system has more than one core option \[which is shown at launch \(ie. NES: `FCEUX` vs `mednafen`\), unless you've specified a preferred core for that particular ROM or system\], try the alternate core for that game specifically. Some emulation core teams have compiled and maintain compatibility lists \(such as Yabause \(Sega Saturn\)\), which can be found linked in our [Supported Systems](info/supported-systems.md) wiki.
 
 ### What format do ROMs need to be? <a id="format"></a>
 
@@ -181,9 +189,10 @@ Provenance supports the system-wide Dark mode of tvOS. To enable it go to tvOS `
 * **Moderators**: We are looking for moderators for our Discord to help maintain and moderate the community. If interested, start by joining our [Discord](https://discord.gg/4TK7PU5) and helping other users to boost your rank in the levels system that awards experience for user participation.
 * **Helpers**: You are welcome to offer assistance to new users in the [\#help](https://discord.gg/NhzgrXh) channel on our Discord.
 
-## 
 
-🗯 If you cannot find the answers you're looking for… you may ask for [help](https://discord.gg/NhzgrXh) on our Discord.
 
-### 
+{% hint style="info" %}
+If you cannot find the answers you're looking for…   
+🗯You may ask for [help](https://discord.gg/NhzgrXh) on our Discord.  
+{% endhint %}
 

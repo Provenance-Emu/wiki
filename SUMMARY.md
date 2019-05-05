@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Welcome](README.md)
-* [Frequently Asked Questions](frequently-asked-questions.md)
+* [Frequently Asked Questions](faqs.md)
 
 ## Installation & Usage
 
@@ -24,9 +24,9 @@
   * [Controls](https://bit.ly/2LDZNzI)
 * [Game Saves](info/saves.md)
 * [Miscellaneous](info/miscellaneous/README.md)
-  * [Virtualizing macOS](info/miscellaneous/virtualizing-macos.md)
-  * [Launch ROMs via URL](info/miscellaneous/launch-roms-via-url.md)
   * [Restoring Files](info/miscellaneous/restoring-files.md)
+  * [Launch ROMs via URL](info/miscellaneous/launch-roms-via-url.md)
+  * [Virtualizing macOS](info/miscellaneous/virtualizing-macos.md)
 
 ## Help
 

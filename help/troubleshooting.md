@@ -15,7 +15,7 @@ First check the [FAQs](https://github.com/Provenance-Emu/Provenance/wiki/Frequen
  If you're having issues with the app, the best help you'll get is your own debugging.  
  Don't be a special ❄, Provenance has an assortment of ways to help troubleshoot:
 
-* [Frequently Asked Questions](../frequently-asked-questions.md)
+* [Frequently Asked Questions](../faqs.md)
 * 💢Troubleshooting and ⚠️Known Issues sub-sections on the wiki pages.
 * Try debugging it yourself, see below…
 
