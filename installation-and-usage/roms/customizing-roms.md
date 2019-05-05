@@ -11,7 +11,7 @@ ROMs in Provenance can be modified with the following customizations: _Cover Art
 ](customizing-roms.md#renaming)\*\*\*\*[**Editing Game Info**](customizing-roms.md#editing-game-info) · v1.5, _iOS only_ 
 
 {% hint style="warning" %}
-Please refer to the [Known Issues](customizing-roms.md#known-issues) regarding customizing ROMs _before_ posting a new one. 
+Please refer to the [Known Issues](customizing-roms.md#known-issues) regarding Customizing ROMs _before_ posting a new one. 
 {% endhint %}
 
 ## Replacing Cover Art
