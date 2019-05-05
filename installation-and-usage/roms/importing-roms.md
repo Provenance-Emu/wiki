@@ -12,7 +12,7 @@ Provenance supports multiple ways to import ROMs and BIOSes, including _single-d
 * ⬇️  [**Downloading**](importing-roms.md#downloading) \(from Mobile Browsers\) · for iOS _only_
 * ➡️  [**Copying**](importing-roms.md#copying) · for iOS _only_
   * Mobile Apps
-  * AirDrop¹ · macOS → iOS _or_ iOS → iOS
+  * AirDrop · macOS → iOS¹ _or_  iOS → iOS
 * ⤵️  [**Injecting**](importing-roms.md#injecting) \(with Desktop Apps\) · for iOS and ATV4 _only_
   * ~~iTunes~~
   * Other Tools
