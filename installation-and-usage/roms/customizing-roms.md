@@ -73,7 +73,7 @@ There are a couple methods of getting custom or replacement artwork into the app
    * `Imports` 1.5+
 4. _\(Optional\)_ tvOS: Enable Background Web Server option in Settings, if preferred.
 
-¹ [Exporting](https://github.com/jasarien/Provenance/wiki/Exporting-Files) files \(ROMs, BIOS, Saves, Cover Art\) is also supported in both of the above methods.  
+¹ Exporting files \(ROMs, BIOS, Saves, Cover Art\) is also supported in both of the above methods.  
 
 
 **Mass-Replacing**
