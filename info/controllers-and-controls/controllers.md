@@ -333,7 +333,7 @@ Standalone controllers are familiar to that of Playstation or Xbox. Recommended 
 
 
 {% hint style="info" %}
-Also, check out the Controller phone mounts made by [UtorCase](https://utorcase.com/).
+Also, check out the controller phone mounts made by [UtorCase](https://utorcase.com/).
 {% endhint %}
 
 
