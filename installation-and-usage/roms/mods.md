@@ -36,7 +36,7 @@ shasum [path to file or drag and drop file here]
 ```
 
 {% hint style="info" %}
-Although it's best to use the exact ROM required as listed…_sometimes_ a patch will still work without an exact match, but cannot be guaranteed to work 100% even if it seems to have successfully patched. This might be necessary as there are some exact ROMs are nearly impossible to obtain, but _do this as a last resort and at your own risk._
+Although it's best to use the exact ROM required as listed…_sometimes_ a patch will still work without an exact match, but cannot be guaranteed to work 100% even if it seems to have successfully patched. This might be necessary as there are some exact ROMs that are nearly impossible to obtain, but _do this as a last resort and at your own risk._
 {% endhint %}
 
 ## **High Resolution Textures \(N64\)**

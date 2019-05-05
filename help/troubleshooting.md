@@ -5,11 +5,7 @@ description: 'Things to try if you run into trouble installing, etc…'
 # Troubleshooting
 
 {% hint style="warning" %}
-**Provenance-Emu is a small team of volunteers.**
-{% endhint %}
-
-{% hint style="info" %}
-First check the [FAQs](https://github.com/Provenance-Emu/Provenance/wiki/Frequently-Asked-Questions) to see if your problem has already been explained.
+**Provenance-Emu is a small team of volunteers.** First check [FAQs](https://github.com/Provenance-Emu/Provenance/wiki/Frequently-Asked-Questions) to see if your problem has already been explained.
 {% endhint %}
 
  If you're having issues with the app, the best help you'll get is your own debugging.  

@@ -317,6 +317,16 @@ Standalone controllers are familiar to that of Playstation or Xbox. Recommended 
         <td style="text-align:left">Extended</td>
         <td style="text-align:left">&#x25CF;&#x25CF;&#x25CF;&#x25D0;&#x25CB;</td>
     </tr>
+    <tr>
+      <td style="text-align:left"><a href="https://www.amazon.com/C-T-R-L-i-Mobile-Gamepad-not-machine-specific/dp/B00NSGA1K2">Mad Catz Micro C.T.R.L.i</a>^</td>
+      <td
+      style="text-align:left">&#x25CF;</td>
+        <td style="text-align:left">&#x25CF;</td>
+        <td style="text-align:left">&#x25CF;</td>
+        <td style="text-align:left">MFi</td>
+        <td style="text-align:left">Extended</td>
+        <td style="text-align:left">&#x25CF;&#x25CF;&#x25D0;&#x25CB;&#x25CB;</td>
+    </tr>
   </tbody>
 </table>^ Discontinued, some can still be obtained.  
 \* Requires [legacy firmware](http://support.8bitdo.com/) to work with iOS/tvOS.  

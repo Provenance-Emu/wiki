@@ -60,7 +60,7 @@ It makes things easier if you run the game at least once within Provenance so th
 7. Use the game's native in-game loading to load the game.
 
 {% hint style="warning" %}
- If the game does not show the save, make sure the file name is correct as described above. If it still does not show, then it's possible that the save was created with a different region, or version of a ROM that uses a different save format and will only be compatible with the ROM version/region it was created with.
+If the game does not show the save, make sure the file name is correct as described above. If it still does not show, then it's possible that the save was created with a different region, or version of a ROM that uses a different save format and will only be compatible with the ROM version/region it was created with.
 {% endhint %}
 
 ## Save States

@@ -54,7 +54,7 @@ description: Certain emulator cores require specific BIOS files in order to play
 ### Specifications
 
 {% hint style="info" %}
-Filenames are arbitrary as long as the MD5s match. Provenance will rename files on import if they match by MD5.
+Filenames are arbitrary as long as the MD5s match. Provenance will rename files on import.
 {% endhint %}
 
 #### Atari 5200
@@ -106,7 +106,7 @@ Game Boy Advance BIOS is optional.
 | `bios_CD_J.bin` | Mega-CD Model 1 \(JP 911217\) BIOS 1.00p | JP | 278a9397d192149e84e820ac621a8edd |
 
 {% hint style="success" %}
-  All 3 BIOS are required.
+All 3 BIOS are required.
 {% endhint %}
 
 #### 
@@ -132,18 +132,18 @@ All 3 BIOS are required. Filenames online may vary. If the MD5s match, Provenanc
 | `scph5502.bin` | SCPH-5502 / v3.0E | EU | `32736f17079d0b2b7024407c39bd3050` |
 
 {% hint style="success" %}
-  All 3 BIOS are required for the mednafen core.
+All 3 BIOS are required.
 {% endhint %}
 
 ## Importing
 
-BIOS files are imported exactly the same as ROMs: [Importing ROMs](roms/importing-roms.md). When you have the correct BIOS successfully imported they will shown in Settings → Cores, otherwise they show as missing/red/required, otherwise you have the wrong files. You need the exact ROMs files matching the md5 hashes above.
+BIOS files are imported exactly the same as ROMs: [Importing ROMs](roms/importing-roms.md). When you have the correct BIOS successfully imported they will shown in Settings → Cores or they show as missing/red/required, otherwise you have the wrong files. You need the exact ROMs files matching the MD5 hashes above.
 
 #### MD5
 
-Though not required, you can verify the md5 hashes of your files to be certain. To obtain the md5 hash checksum of your BIOS files, you can use `md5 [path to file, or drag and drop file here]` in Terminal. Check that it matches the md5 hash of the file listed above.
+Though not required, you can verify the MD5 hashes of your files to be certain. To obtain the MD5 hash  of your BIOS files, you can use `md5 [path to file, or drag and drop file here]` in Terminal. Check that it matches the MD5 hash of the file listed above.
 
-Alternatively, BIOS files can be force [uploaded](roms/importing-roms.md#uploading) manually into `/BIOS/com.provenance.[system]` via WebUI or WebDav, and via Apple Files app \(iOS only\).  
+Alternatively, BIOS files can be force [uploaded](roms/importing-roms.md#uploading) manually into `/BIOS/com.provenance.[system]` via WebUI or WebDav \(iOS, tvOS\) or the Apple Files app \(iOS only\).  
 
 
 

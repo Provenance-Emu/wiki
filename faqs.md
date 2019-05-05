@@ -10,7 +10,7 @@ _Before_ posting new issues on GitHub or asking the team or community, please lo
 
 > #### Where did you install the app from?
 
-* **Official Provenance GitHub**: 👍 [_skip ahead_](faqs.md#skipped)\_\_
+* **Official GitHub**: 👍 [_skip ahead_](faqs.md#frequently-asked-questions)\_\_
 * **Elsewhere**: 👎 _read below…_
 
 🚫 3rd-party builds are NOT supported nor approved. They are… not current, probably buggy and generally unsafe _\(unapproved modifications, malware, adware and may require backdoor profiles\)_, and when Apple revokes their misused profiles, you will probably lose your games and saves: 
@@ -24,6 +24,8 @@ _Before_ posting new issues on GitHub or asking the team or community, please lo
 {% hint style="info" %}
 The 3rd-parties _**do not**_ help this community _whatsoever,_ causing us wasted time with limited resources…they also unrightly profit off of the work of this open source team that works for free.
 {% endhint %}
+
+## Frequently Asked Questions
 
 > #### [How do install or update Provenance?](faqs.md#install)
 
@@ -192,7 +194,6 @@ Provenance supports the system-wide Dark mode of tvOS. To enable it go to tvOS `
 
 
 {% hint style="info" %}
-If you cannot find the answers you're looking for…   
-🗯You may ask for [help](https://discord.gg/NhzgrXh) on our Discord.  
+🗯 If you cannot find the answers you're looking for…you may ask for [help](https://discord.gg/NhzgrXh) on our Discord.  
 {% endhint %}
 
