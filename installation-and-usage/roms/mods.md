@@ -25,7 +25,13 @@ To apply the patches you will need a patcher for the various formats:
 
 ```text
 md5 [path to file or drag and drop file here]
+```
+
+```text
 crc32 [path to file or drag and drop file here]
+```
+
+```text
 shasum [path to file or drag and drop file here]
 ```
 
