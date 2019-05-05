@@ -29,10 +29,10 @@ description: Certain emulator cores require specific BIOS files in order to play
 |  | PC Engine Super CD-ROM² System / TurboGrafx-CD | ✅ |
 |  | PC Engine SuperGrafx |  |
 |  | PC-FX | ✅ |
-| Nintendo | Nintendo Entertainment System / Famicom |  |
+| Nintendo | Famicom / Nintendo Entertainment System |  |
 |  | Famicom Disk System | ✅ |
 |  | Game Boy |  |
-|  | Super Nintendo Entertainment System / Super Famicom |  |
+|  | Super Famicom / Super Nintendo Entertainment System |  |
 |  | Game Boy Color |  |
 |  | Virtual Boy |  |
 |  | Nintendo 64 |  |
@@ -40,9 +40,9 @@ description: Certain emulator cores require specific BIOS files in order to play
 |  | Pokemon mini |  |
 | Sega | SG-1000 |  |
 |  | Master System |  |
-|  | Genesis / Mega Drive |  |
+|  | Mega Drive / Genesis |  |
 |  | Game Gear |  |
-|  | Sega CD / Mega CD | ✅×3 |
+|  | Mega-CD / CD | ✅×3 |
 |  | 32X |  |
 |  | Saturn | ✅×3 |
 | SNK | Neo Geo Pocket |  |
@@ -97,7 +97,7 @@ Game Boy Advance BIOS is optional.
 | :--- | :--- |
 | `pcfx.rom` | 08e36edbea28a017f79f8d4f7ff9b6d7 |
 
-#### Sega CD / Mega CD
+#### Sega Mega-CD / CD
 
 | Filename | BIOS Name / Version | Region | MD5 Hash |
 | :--- | :--- | :--- | :--- |

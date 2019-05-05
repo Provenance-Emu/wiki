@@ -26,9 +26,9 @@
 |  | [Pokemon mini](https://en.wikipedia.org/wiki/Pokémon_Mini) | 11/16 · 2001 |
 | Sega | [SG-1000](https://en.wikipedia.org/wiki/SG-1000) | 7/15 · 1983 |
 |  | [Master System](https://en.wikipedia.org/wiki/Master_System) | 10/20 · 1985 |
-|  | [Genesis / Mega Drive](https://en.wikipedia.org/wiki/Sega_Genesis) | 10/29 · 1988 |
+|  | [Mega Drive / Genesis](https://en.wikipedia.org/wiki/Sega_Genesis) | 10/29 · 1988 |
 |  | [Game Gear](https://en.wikipedia.org/wiki/Game_Gear) | 10/6 · 1990 |
-|  | [CD / Mega-CD](https://en.wikipedia.org/wiki/Sega_CD) | 12/12 · 1991 |
+|  | [Mega-CD / CD](https://en.wikipedia.org/wiki/Sega_CD) | 12/12 · 1991 |
 |  | [32X](https://en.wikipedia.org/wiki/32X) | 11/21 · 1994 |
 |  | [Saturn](https://en.wikipedia.org/wiki/Sega_Saturn) _v1.5+ only_ \([Compatibility List](http://wiki.yabause.org/index.php5?title=Compatibility_list)\) | 11/22 · 1994 |
 | SNK | [Neo Geo Pocket](https://en.wikipedia.org/wiki/Neo_Geo_Pocket) | 10/28 · 1998 |

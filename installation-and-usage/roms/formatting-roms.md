@@ -284,7 +284,7 @@ Examples of \[game\].7z contents:
 ```
 
 {% hint style="warning" %}
- If 3x ROMsets **\(.ccd + .img + .sub\)** are not importing correctly. Move **.sub** file into its system directory, manually
+If 3x ROMsets **\(.ccd + .img + .sub\)** are not importing correctly. Move **.sub** file into its system directory, manually
 {% endhint %}
 
 {% hint style="danger" %}
@@ -295,7 +295,7 @@ Loose files _only_. DO NOT contain folder\(s\) within an archive \(this is a kno
 
 `.cue` files are plain text and will generally look something like this \(unless it specifies additional audio track details\). The name of the `.bin` specified file _**must**_ match verbatim the name of the actual `.bin` file.²
 
-Contents of \[game\].cue:
+**Contents of \[game\].cue**:
 
 ```text
 FILE "[game].bin" BINARY
@@ -416,30 +416,35 @@ _\(coming later…\)_
 
 ## Batching
 
-⚠️ This only applies to single file ROMs. DO NOT batch process multi-file ROMs.
+⚠️ This only applies to single file ROMs. DO NOT batch process multi-file ROMs using the methods below.
 
 **Mac**
 
 1. Setup and Requirements from Archiving.
 
-**If Unarchiving, first…** 1. In Finder, Select all \(`⌘A`\) ROM archives and File→Open \(`⌘O`\) to unarchive all. 2. When complete, the Finder should still have all the archives selected. Delete them all \(`⌘␡`\).
+**If Unarchiving, first…** 
 
-**If Renaming files…** 1. In Finder, Select all \(`⌘A`\) ROMs and Right-Click to `Rename items…`
+1. In Finder, Select all \(`⌘A`\) ROM archives and File→Open \(`⌘O`\) to unarchive all. 
+2. When complete, the Finder should still have all the archives selected. Delete them all \(`⌘␡`\).
 
-* _Example:_ `Replace Text:` Find: `.bin` Replace with… `.md`
+**If Renaming files…** 
 
-**If Re-archiving…** 1. In Keka, enable:
+1. In Finder, Select all \(`⌘A`\) ROMs and Right-Click to `Rename items…` _Example:_ `Replace Text:` Find: `.bin` Replace with… `.md`
 
-* [x] Archive as single files
-  1. In Finder, Select all \(`⌘A`\) ROMs and drop them all onto Keka. Done.
+**If Re-archiving…** 
+
+1. In Keka, enable:  ☑️Archive as single files
+2. In Finder, Select all \(`⌘A`\) ROMs and drop them all onto Keka. Done.
 
 
 
 #### Windows <a id="batching-windows"></a>
 
-**If Renaming files…** 1. Open the Command Prompt with `⊞R` and type `cmd` 2. Enter `cd` and the \[file-path\] to a set of ROMs.  
- \[file-path\]: right-click the folder and select "Properties" and apply via copy/paste.  
- 3. _Example:_ `rename *.bin *.md`
+**If Renaming files…** 
+
+1. Open the Command Prompt with `⊞R` and type `cmd` 
+2. Enter `cd` and the \[file-path\] to a set of ROMs.  \[file-path\]: right-click the folder and select "Properties" and apply via copy/paste.
+3. _Example:_ `rename *.bin *.md`
 
 \`\`
 

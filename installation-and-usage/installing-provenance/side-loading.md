@@ -85,7 +85,6 @@ Free Apple developer provisioning expires _every 7 days_, requiring reloading, b
 
 #### Unable to code-sign / install…
 
-* Change the Bundle IDs of the app targets and extensions, as described in Build Source steps.
 * If you are using a free Apple developer account, you can only install a total of 3 apps per Apple ID at a time. You must use delete some apps you are signing, or install with different Apple ID and Bundle IDs.
 * If you used to have a free Safari Developer Account which is no longer supported by Apple, you have two options: 
 
