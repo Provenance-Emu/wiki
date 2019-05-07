@@ -116,219 +116,28 @@ Standalone controllers are familiar to that of Playstation or Xbox. Recommended 
 
 **Key**:   ● = Supported / Ideal   \|   ○ = Supported
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Controller</th>
-      <th style="text-align:left">iPhone</th>
-      <th style="text-align:left">iPad</th>
-      <th style="text-align:left">aTV</th>
-      <th style="text-align:left">Type</th>
-      <th style="text-align:left">Profile</th>
-      <th style="text-align:left">Rating</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><a href="https://www.amazon.com/Gamevice-Controller-Gamepad-iPhone-Certified-Compatible/dp/B077LZJ679/">GameVice: iPhone</a> 
-        <br
-        />X&#x280; not supported</td>
-      <td style="text-align:left">&#x25CF;</td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">MFi</td>
-      <td style="text-align:left">Extended</td>
-      <td style="text-align:left">&#x25CF;&#x25CF;&#x25CF;&#x25CF;&#x25CB;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="https://www.amazon.com/Gamevice-Controller-Gamepad-12-9-inch-Certified-Accessories/dp/B01MFCXJZD/">GameVice: iPad Pro 12.9&quot;</a>
-      </td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">&#x25CF;</td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">MFi</td>
-      <td style="text-align:left">Extended</td>
-      <td style="text-align:left">&#x25CF;&#x25CF;&#x25CF;&#x25CB;&#x25CB;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="https://www.amazon.com/Controller-Gamepad-Gamevice-Certified-Accessories-Patented/dp/B01MR4VLJW/">GameVice: iPad Mini</a>
-      </td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">&#x25CF;</td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">MFi</td>
-      <td style="text-align:left">Extended</td>
-      <td style="text-align:left">&#x25CF;&#x25CF;&#x25CF;&#x25D0;&#x25CB;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="https://www.amazon.com/Rotor-Riot-Certified-Controller-Compatible/dp/B07J1J7D6Z/">Rotor Riot</a>
-      </td>
-      <td style="text-align:left">&#x25CF;</td>
-      <td style="text-align:left">&#x25CF;</td>
-      <td style="text-align:left">&#x25CF;</td>
-      <td style="text-align:left">MFi</td>
-      <td style="text-align:left">Extended2</td>
-      <td style="text-align:left">&#x25CF;&#x25CF;&#x25CF;&#x25CF;&#x25D0;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="https://www.amazon.com/Steam-Controller-SteamOS/dp/B016KBVBCS/">Steam Controller</a>
-      </td>
-      <td style="text-align:left">&#x25CB;</td>
-      <td style="text-align:left">&#x25CF;</td>
-      <td style="text-align:left">&#x25CF;</td>
-      <td style="text-align:left">pMFi</td>
-      <td style="text-align:left">Extended2+</td>
-      <td style="text-align:left">&#x25CF;&#x25CF;&#x25CF;&#x25CF;&#x25D0;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="https://www.amazon.com/SteelSeries-Nimbus-Wireless-Gaming-Controller/dp/B01AZC3III/">SteelSeries Nimbus</a> 
-        <br
-        />+ <a href="https://www.amazon.com/TPFOON-Smartphone-Cellphone-Steelseries-Controller/dp/B07DLY5PB4/">clamp</a>
-      </td>
-      <td style="text-align:left">&#x25CF;</td>
-      <td style="text-align:left">&#x25CF;</td>
-      <td style="text-align:left">&#x25CF;</td>
-      <td style="text-align:left">MFi</td>
-      <td style="text-align:left">Extended</td>
-      <td style="text-align:left">&#x25CF;&#x25CF;&#x25CF;&#x25CF;&#x25D0;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="https://www.amazon.com/SteelSeries-Bluetooth-Wireless-Controller-69026/dp/B00QTSR5GO/">SteelSeries Stratus XL: iOS</a>
-      </td>
-      <td style="text-align:left">&#x25CB;</td>
-      <td style="text-align:left">&#x25CF;</td>
-      <td style="text-align:left">&#x25CF;</td>
-      <td style="text-align:left">MFi</td>
-      <td style="text-align:left">Extended</td>
-      <td style="text-align:left">&#x25CF;&#x25CF;&#x25CF;&#x25CF;&#x25D0;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="https://www.amazon.com/SteelSeries-Stratus-Bluetooth-Wireless-Controller/dp/B015WKY3IM/">SteelSeries Stratus XL</a>
-      </td>
-      <td style="text-align:left">&#x25CB;</td>
-      <td style="text-align:left">&#x25CF;</td>
-      <td style="text-align:left">&#x25CF;</td>
-      <td style="text-align:left">iCade</td>
-      <td style="text-align:left">Extended+</td>
-      <td style="text-align:left">&#x25CF;&#x25CF;&#x25CF;&#x25D0;&#x25CB;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="https://www.amazon.com/SteelSeries-Stratus-Wireless-Gaming-Controller/dp/B00HSB2EZI/">SteelSeries Stratus</a>
-      </td>
-      <td style="text-align:left">&#x25CB;</td>
-      <td style="text-align:left">&#x25CF;</td>
-      <td style="text-align:left">&#x25CF;</td>
-      <td style="text-align:left">MFi</td>
-      <td style="text-align:left">Extended</td>
-      <td style="text-align:left">&#x25CF;&#x25CF;&#x25CF;&#x25CB;&#x25CB;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="https://www.amazon.com/HORI-HORIPAD-ULTIMATE-Wireless-Controller/dp/B06Y2512L8/">Horipad Ultimate</a>
-      </td>
-      <td style="text-align:left">&#x25CB;</td>
-      <td style="text-align:left">&#x25CF;</td>
-      <td style="text-align:left">&#x25CF;</td>
-      <td style="text-align:left">MFi</td>
-      <td style="text-align:left">Extended</td>
-      <td style="text-align:left">&#x25CF;&#x25CF;&#x25CF;&#x25D0;&#x25CB;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="https://www.amazon.com/Wireless-Controller-bluetooth-Android-windows/dp/B01N4M9LQY/">8bitdo N30</a> /
-        <a
-        href="https://www.amazon.com/FC30-Game-Controller-PC-Mac-Linux/dp/B00FEEGZVU/">F30</a>^*</td>
-      <td style="text-align:left">&#x25CB;</td>
-      <td style="text-align:left">&#x25CF;</td>
-      <td style="text-align:left">&#x25CF;</td>
-      <td style="text-align:left">iCade</td>
-      <td style="text-align:left">Standard+</td>
-      <td style="text-align:left">&#x25CF;&#x25CF;&#x25D0;&#x25CB;&#x25CB;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="https://www.amazon.com/8bitdo-Wireless-Bluetooth-Controller-Joystick/dp/B014QP2H1E/">8bitdo SN30</a> /
-        <a
-        href="https://www.amazon.com/8Bitdo-SF30-Controller-Windows-macOS-Android/dp/B0748S3GXG/">SF30</a>^*
-          <br />+ <a href="https://www.amazon.com/8Bitdo-Xstander-Holder-SFC30-SNES30/dp/B017SFNW0E/">clamp</a>
-      </td>
-      <td style="text-align:left">&#x25CF;</td>
-      <td style="text-align:left">&#x25CF;</td>
-      <td style="text-align:left">&#x25CF;</td>
-      <td style="text-align:left">iCade</td>
-      <td style="text-align:left">Standard+</td>
-      <td style="text-align:left">&#x25CF;&#x25CF;&#x25D0;&#x25CB;&#x25CB;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="https://www.amazon.com/Wireless-Bluetooth-Controller-Classic-Joystick/dp/B018K3Q4KS/">8bitdo N30</a> /
-        <a
-        href="https://www.amazon.com/FC30-Game-Controller-PC-Mac-Linux/dp/B00FEEGZVU/">F30Pro</a>^*
-          <br />+ <a href="https://www.amazon.com/Xtander-Wireless-8Bitdo-Controller-Gamepad/dp/B01N9PWDZ3/">clamp A</a> ,
-          <a
-          href="https://www.amazon.com/Gam3Gear-Xtander-Wireless-NES30-Pro-Controller/">B</a>
-      </td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">iCade</td>
-      <td style="text-align:left">Extended+</td>
-      <td style="text-align:left">&#x25CF;&#x25CF;&#x25CF;&#x25D0;&#x25CB;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="https://www.amazon.com/8BITDO-Wireless-Controller-Android-Windows/dp/B0156IC8M8/">8bitdo Zero</a>
-      </td>
-      <td style="text-align:left">&#x25CB;</td>
-      <td style="text-align:left">&#x25CF;</td>
-      <td style="text-align:left">&#x25CF;</td>
-      <td style="text-align:left">iCade</td>
-      <td style="text-align:left">Standard+</td>
-      <td style="text-align:left">&#x25CF;&#x25CF;&#x25CB;&#x25CB;&#x25CB;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="https://www.amazon.com/Logitech-PowerShell-Controller-Battery-Generation/dp/B00FHREO8K/">Logitech Powershell</a> 
-        <br
-        />5/5s/SE/iPod5T <em>only</em>
-      </td>
-      <td style="text-align:left">&#x25CB;</td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">MFi</td>
-      <td style="text-align:left">Standard</td>
-      <td style="text-align:left">&#x25CF;&#x25CF;&#x25D0;&#x25CB;&#x25CB;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <p><a href="https://www.amazon.com/PowerA-MOGA-Ace-Power-Electronic-Games/dp/B00H01EXM8/">MOGA Ace</a> 
-        </p>
-        <p>5/5c/5s/SE <em>only</em>
-        </p>
-      </td>
-      <td style="text-align:left">&#x25CF;</td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">MFi</td>
-      <td style="text-align:left">Standard</td>
-      <td style="text-align:left">&#x25CF;&#x25D0;&#x25CB;&#x25CB;&#x25CB;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="https://www.amazon.com/MOGA-Rebel-Premium-iOS-Gaming-Controller/dp/B00PG0C85Y">MOGA Rebel</a>^</td>
-      <td
-      style="text-align:left">&#x25CF;</td>
-        <td style="text-align:left">&#x25CF;</td>
-        <td style="text-align:left">&#x25CF;</td>
-        <td style="text-align:left">iCade</td>
-        <td style="text-align:left">Extended</td>
-        <td style="text-align:left">&#x25CF;&#x25CF;&#x25CF;&#x25D0;&#x25CB;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="https://www.amazon.com/C-T-R-L-i-Mobile-Gamepad-not-machine-specific/dp/B00NSGA1K2">Mad Catz Micro C.T.R.L.i</a>^</td>
-      <td
-      style="text-align:left">&#x25CF;</td>
-        <td style="text-align:left">&#x25CF;</td>
-        <td style="text-align:left">&#x25CF;</td>
-        <td style="text-align:left">MFi</td>
-        <td style="text-align:left">Extended</td>
-        <td style="text-align:left">&#x25CF;&#x25CF;&#x25CB;&#x25CB;&#x25CB;</td>
-    </tr>
-  </tbody>
-</table>^ Discontinued, some can still be obtained.  
+|Controller|iPhone|iPad|aTV|Type|Profile|Rating|
+|--- |--- |--- |--- |--- |--- |--- |
+|[GameVice: iPhone](https://www.amazon.com/Gamevice-Controller-Gamepad-iPhone-Certified-Compatible/dp/B077LZJ679/)<br>Xʀ not supported|●|||MFi|Extended|●●●●○|
+|[GameVice: iPad Pro 12.9"](https://www.amazon.com/Gamevice-Controller-Gamepad-12-9-inch-Certified-Accessories/dp/B01MFCXJZD/)||●||MFi|Extended|●●●○○|
+|[GameVice: iPad Mini](https://www.amazon.com/Controller-Gamepad-Gamevice-Certified-Accessories-Patented/dp/B01MR4VLJW/)||●||MFi|Extended|●●●◐○|
+|[Rotor Riot](https://www.amazon.com/Rotor-Riot-Certified-Controller-Compatible/dp/B07J1J7D6Z/)|●|●|●|MFi|Extended2|●●●●◐|
+|[Steam Controller](https://www.amazon.com/Steam-Controller-SteamOS/dp/B016KBVBCS/)|○|●|●|pMFi|Extended2+|●●●●◐|
+|[SteelSeries Nimbus](https://www.amazon.com/SteelSeries-Nimbus-Wireless-Gaming-Controller/dp/B01AZC3III/)<br>+ [clamp](https://www.amazon.com/TPFOON-Smartphone-Cellphone-Steelseries-Controller/dp/B07DLY5PB4/)|●|●|●|MFi|Extended|●●●●◐|
+|[SteelSeries Stratus XL: iOS](https://www.amazon.com/SteelSeries-Bluetooth-Wireless-Controller-69026/dp/B00QTSR5GO/)|○|●|●|MFi|Extended|●●●●◐|
+|[SteelSeries Stratus XL](https://www.amazon.com/SteelSeries-Stratus-Bluetooth-Wireless-Controller/dp/B015WKY3IM/)|○|●|●|iCade|Extended+|●●●◐○|
+|[SteelSeries Stratus](https://www.amazon.com/SteelSeries-Stratus-Wireless-Gaming-Controller/dp/B00HSB2EZI/)|○|●|●|MFi|Extended|●●●○○|
+|[Horipad Ultimate](https://www.amazon.com/HORI-HORIPAD-ULTIMATE-Wireless-Controller/dp/B06Y2512L8/)|○|●|●|MFi|Extended|●●●◐○|
+|[8bitdo N30](https://www.amazon.com/Wireless-Controller-bluetooth-Android-windows/dp/B01N4M9LQY/) / [F30](https://www.amazon.com/FC30-Game-Controller-PC-Mac-Linux/dp/B00FEEGZVU/)^\*|○|●|●|iCade|Standard+|●●◐○○|
+|[8bitdo SN30](https://www.amazon.com/8bitdo-Wireless-Bluetooth-Controller-Joystick/dp/B014QP2H1E/) / [SF30](https://www.amazon.com/8Bitdo-SF30-Controller-Windows-macOS-Android/dp/B0748S3GXG/)^\*<br>+ [clamp](https://www.amazon.com/8Bitdo-Xstander-Holder-SFC30-SNES30/dp/B017SFNW0E/)|●|●|●|iCade|Standard+|●●◐○○|
+|[8bitdo N30](https://www.amazon.com/Wireless-Bluetooth-Controller-Classic-Joystick/dp/B018K3Q4KS/) / [F30Pro](https://www.amazon.com/FC30-Game-Controller-PC-Mac-Linux/dp/B00FEEGZVU/)^\*<br>+ [clamp A](https://www.amazon.com/Xtander-Wireless-8Bitdo-Controller-Gamepad/dp/B01N9PWDZ3/) , [B](https://www.amazon.com/Gam3Gear-Xtander-Wireless-NES30-Pro-Controller/)||||iCade|Extended+|●●●◐○|
+|[8bitdo Zero](https://www.amazon.com/8BITDO-Wireless-Controller-Android-Windows/dp/B0156IC8M8/)|○|●|●|iCade|Standard+|●●○○○|
+|[Logitech Powershell](https://www.amazon.com/Logitech-PowerShell-Controller-Battery-Generation/dp/B00FHREO8K/)<br>5/5s/SE/iPod5T only|○|||MFi|Standard|●●◐○○|
+|[MOGA Ace](https://www.amazon.com/PowerA-MOGA-Ace-Power-Electronic-Games/dp/B00H01EXM8/)<br>5/5c/5s/SE only|●|||MFi|Standard|●◐○○○|
+|[MOGA Rebel](https://www.amazon.com/MOGA-Rebel-Premium-iOS-Gaming-Controller/dp/B00PG0C85Y)^|●|●|●|iCade|Extended|●●●◐○|
+|[Mad Catz Micro C.T.R.L.i](https://www.amazon.com/C-T-R-L-i-Mobile-Gamepad-not-machine-specific/dp/B00NSGA1K2)^|●|●|●|MFi|Extended|●●○○○|
+
+^ Discontinued, some can still be obtained.  
 \* Requires [legacy firmware](http://support.8bitdo.com/) to work with iOS/tvOS.  
 
 
