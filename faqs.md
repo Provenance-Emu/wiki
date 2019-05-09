@@ -99,7 +99,7 @@ A full list of mapped controls for MFi gamepad profiles per system can be found 
 
 ### What controller\(s\) do you recommend? <a id="controllers"></a>
 
-An ongoing list of supported and recommended controllers and reviews can be found in [Controllers](info/controllers-and-controls/controllers.md).
+An ongoing list of supported and recommended controllers and reviews can be found in [Controllers](info/controllers-and-controls/controllers/).
 
 ### Where can I get ROMs, or BIOS? <a id="roms"></a>
 
@@ -111,7 +111,7 @@ Due to copyright law, we cannot share ROMs or where to obtain them. You are lega
 
 ### What if I don't have a Mac? <a id="no-mac"></a>
 
-* You don't need a Mac if you are [side-loading](installation-and-usage/installing-provenance/side-loading.md) a release, which is cross-platform.
+* You don't need a Mac if you are [side-loading](installation-and-usage/installing-provenance/sideloading.md) a release, which is cross-platform.
 * If [building from source](installation-and-usage/installing-provenance/building-from-source.md), you don't technically need a Mac, just macOS. Using a custom built Hackintosh or virtual machine \([Virtualizing macOS](info/miscellaneous/virtualizing-macos.md)\) with macOS would suffice. If these are not an option, side-load the current release or wait for the next release \(beta is build _only_\).
 
 ### Can I install without a computer? <a id="no-computer"></a>
@@ -131,7 +131,8 @@ As a small team, we prefer to not make promises we will break with release dates
 This is usually due to one of the following reasons…
 
 * You are using a free Apple developer account, which requires you to re-sign every 7 days. You can…
-  * [Side-load](installation-and-usage/installing-provenance/side-loading.md) using the same Apple ID used previously.
+  * [Side](installation-and-usage/installing-provenance/sideloading.md)
+  * [load](installation-and-usage/installing-provenance/sideloading.md) using the same Apple ID used previously.
   * [Build](installation-and-usage/installing-provenance/building-from-source.md) over the app using the same Bundle IDs used previously.
   * [Upgrade](https://developer.apple.com/programs/) to a paid Apple developer account and use the app indefinitely.
 * You were using an unsupported 3rd party build of the app and Apple revoked the provisioning profile as it violates their terms of use. You should…

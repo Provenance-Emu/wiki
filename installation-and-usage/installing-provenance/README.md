@@ -15,7 +15,7 @@ There are two approved methods to install Provenance: The easiest or less techni
 
 **Installation Options:**
 
-* ⤵️  [**Side-Loading**](side-loading.md) · using _official_ pre-built .ipa
+* ⤵️  [**Side-Loading**](sideloading.md) · using _official_ pre-built .ipa
 * ▶️  [**Building**](building-from-source.md) · from latest source
 
 {% hint style="info" %}

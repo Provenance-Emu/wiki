@@ -1,5 +1,5 @@
 ---
-description: 'How to format, convert, patch and edit ROMs.'
+description: 'How to format, convert, archive, or batch process ROMs.'
 ---
 
 # Formatting ROMs
@@ -258,13 +258,9 @@ Loose files _only_. DO NOT contain folder\(s\) within an archive \(this is a kno
 
 A ROM consisting of multiple files such as `.bin` + `.cue` for CD-based games \(Sega CD, Playstation, etc…\) _**must**_ be contained together in a _single_ `.zip` or `.7z` archive as a ROMset _before_ importing and _both files are required_.¹
 
-{% hint style="info" %}
-For a quick way to preview **.cue** files on macOS, install the [qlstephen QuickLook plugin](https://github.com/whomwah/qlstephen/releases).
-{% endhint %}
-
 #### **ROMsets:**
 
-Examples of \[game\].7z contents:
+**Examples of \[game\].7z contents:**
 
 ```text
     [game].bin
@@ -284,7 +280,7 @@ Examples of \[game\].7z contents:
 ```
 
 {% hint style="warning" %}
-If 3x ROMsets **\(.ccd + .img + .sub\)** are not importing correctly. Move **.sub** file into its system directory, manually
+If **.ccd** based ROMsets are not importing correctly. Move **.sub** file into its system directory, manually, if they were mistakenly been left behind in Imports or Conflicts.
 {% endhint %}
 
 {% hint style="danger" %}
@@ -293,7 +289,7 @@ Loose files _only_. DO NOT contain folder\(s\) within an archive \(this is a kno
 
 #### **.cue Files:**
 
-`.cue` files are plain text and will generally look something like this \(unless it specifies additional audio track details\). The name of the `.bin` specified file _**must**_ match verbatim the name of the actual `.bin` file.²
+`.cue` files are plain text and will generally look something like this \(unless it specifies additional audio track details\). The name of the referenced file: `.bin`, `.img`, `.iso`… specified file _**must**_ match verbatim the name of the actual file.²
 
 **Contents of \[game\].cue**:
 
@@ -304,9 +300,14 @@ FILE "[game].bin" BINARY
 ```
 
 ¹ If you need to restore a missing/damaged `.cue` file, check out the archives at [redump.org](http://redump.org).  
-² If you rename `.bin + .cue` files, you _**must**_ change the contents of the `.cue` file _or they won't work._  
+² If you rename any `.cue` based files in a ROMset, you _**must**_ change the contents of the `.cue` file _or they won't work._  
      
-…archive filenames, however, are irrelevant as they are discarded after unarchiving.  
+…archive filenames, however, are irrelevant as they are discarded after unarchiving.
+
+{% hint style="info" %}
+For a quick way to preview **.cue** files on macOS, install the [qlstephen QuickLook plugin](https://github.com/whomwah/qlstephen/releases).
+{% endhint %}
+
 
 
 ### Multi-disc Games
@@ -314,11 +315,7 @@ FILE "[game].bin" BINARY
 All multi-disc games _**must**_ include a `.m3u` file _in_ their `.zip` or `.7z` ROMset \(multi-file\) archive. Disc numbering in filenames needs to be formatted _exactly_ as: `…(Disc #).ext`
 
 {% hint style="warning" %}
-If renaming and using **.bin + .cue** ROMset make sure to read the requirements for **.cue** files in [Multi-file ROMs](formatting-roms.md#multi-file-roms).
-{% endhint %}
-
-{% hint style="info" %}
- For a quick way to preview **.m3u** files on macOS, install the [qlstephen QuickLook plugin](https://github.com/whomwah/qlstephen/releases).
+If renaming and using ****a **.cue** based ****ROMset make sure to read the requirements for **.cue** files in [Multi-file ROMs](formatting-roms.md#multi-file-roms).
 {% endhint %}
 
 **Contents of Final Fantasy VII \(USA\).7z**:
@@ -333,7 +330,7 @@ If renaming and using **.bin + .cue** ROMset make sure to read the requirements 
     Final Fantasy VII (USA).m3u
 ```
 
-`.m3u` files can be created as plain text and _**must**_ _contain_ and _match exactly_ the names of _all_ and _only_ the `.cue` files for the game.³
+`.m3u` files can be created as plain text and _**must**_ _contain_ and _match exactly_ the names of _all_ and _only_ the `.cue` or `.ccd` files for the game.³
 
 **Contents of Final Fantasy VII \(USA\).m3u**:
 
@@ -343,9 +340,11 @@ If renaming and using **.bin + .cue** ROMset make sure to read the requirements 
     Final Fantasy VII (USA) (Disc 3).cue
 ```
 
-³ `.m3u` filenames are independent of the `.bin/.cue` files, but a truncated name is recommended, removing " \(Disc \#\)" from the .m3u filename \(including the space\).  
-   
+³ `.m3u` filenames are independent of the `.bin/.cue` files, but a truncated name is recommended, removing " \(Disc \#\)" from the .m3u filename \(including the space\).
 
+{% hint style="info" %}
+ For a quick way to preview **.m3u** files on macOS, install the [qlstephen QuickLook plugin](https://github.com/whomwah/qlstephen/releases).
+{% endhint %}
 
 ## Converting Formats
 

@@ -6,7 +6,7 @@
 ## Installation & Usage
 
 * [Installing Provenance](installation-and-usage/installing-provenance/README.md)
-  * [Side-loading](installation-and-usage/installing-provenance/side-loading.md)
+  * [Sideloading](installation-and-usage/installing-provenance/sideloading.md)
   * [Building from Source](installation-and-usage/installing-provenance/building-from-source.md)
   * [Updating](installation-and-usage/installing-provenance/updating.md)
 * [BIOS Requirements](installation-and-usage/bios-requirements.md)
@@ -20,7 +20,8 @@
 
 * [Supported Systems](info/supported-systems.md)
 * [Controllers & Controls](info/controllers-and-controls/README.md)
-  * [Controllers](info/controllers-and-controls/controllers.md)
+  * [Controllers](info/controllers-and-controls/controllers/README.md)
+    * [Controller Reviews](info/controllers-and-controls/controllers/controller-reviews.md)
   * [Controls](https://bit.ly/2LDZNzI)
 * [Game Saves](info/saves.md)
 * [Miscellaneous](info/miscellaneous/README.md)

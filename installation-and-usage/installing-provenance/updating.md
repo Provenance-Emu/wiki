@@ -4,11 +4,11 @@ description: Update your existing installation.
 
 # Updating
 
-When there is a new release or recent commits to a source branch you have a few options for updating. You can _side-load_ a prebuild over your existing side-loaded installation or you can _pull_ the local source and build over your existing built-from-source installation. _**New:**_ Update & Build via `make` \(untested\).
+When there is a new release or recent commits to a source branch you have a few options for updating. You can _sideload_ a prebuild over your existing sideloaded installation or you can _pull_ the local source and build over your existing built-from-source installation. _**New:**_ Update & Build via `make` \(untested\).
 
 **Update Options:**
 
-* ⤵️  [**Sideload**](side-loading.md)\*\*\*\*
+* ⤵️  [**Sideload**](sideloading.md)\*\*\*\*
 * 🔃  [**Pull**](updating.md#pull) latest changes using…
   * ![](https://user-images.githubusercontent.com/3118097/37563629-48ec3f26-2a42-11e8-9fd8-784e9e830ebe.png)  [Terminal](updating.md#update-with-terminal)
   * ![](https://user-images.githubusercontent.com/3118097/37563630-4903ebbc-2a42-11e8-888a-09a94fc0058d.png)  [Tower](updating.md#update-with-tower)
