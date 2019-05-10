@@ -112,7 +112,7 @@ Standalone controllers are familiar to that of Playstation or Xbox. Recommended 
 | Extended2 | ● | ● | ● | ● | ● | ● | ● | ● | ● | ● |  |  |
 | Extended2+ | ● | ● | ● | ● | ● | ● | ● | ● | ● | ● | ● | ● |
 
-### Controllers
+### Compatability Info and Ratings
 
 **Key**: ● = Supported / Ideal \| ○ = Supported
 
