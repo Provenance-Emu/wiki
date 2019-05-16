@@ -177,7 +177,7 @@ make help
   * ![](https://user-images.githubusercontent.com/3118097/48986708-22f14800-f0cd-11e8-98ec-6f093375d969.png)  Multipath
   * ![](https://user-images.githubusercontent.com/3118097/48986708-22f14800-f0cd-11e8-98ec-6f093375d969.png)  Push Notifications
   * ![](https://user-images.githubusercontent.com/3118097/48986708-22f14800-f0cd-11e8-98ec-6f093375d969.png)  Siri
-* Turn on `☑️Automatically manage signing` and select your Development Team for your targets.
+* Turn ON ☑️**Automatically manage signing** and select your Development Team for your targets.
 
   ![](https://user-images.githubusercontent.com/3118097/40101989-0a73fa7e-589e-11e8-8f73-7f99195133a1.png)  
 
