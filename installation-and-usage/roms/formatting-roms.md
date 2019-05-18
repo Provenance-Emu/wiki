@@ -256,11 +256,9 @@ Loose files _only_. DO NOT contain folder\(s\) within an archive \(this is a kno
 
 ### Multi-file ROMs
 
-A ROM consisting of multiple files such as `.bin` + `.cue` for CD-based games \(Sega CD, Playstation, etc…\) _**must**_ be contained together in a _single_ `.zip` or `.7z` archive as a ROMset _before_ importing and _both files are required_.¹
+A ROM consisting of multiple files such as `.bin` + `.cue` for CD-based games \(Sega CD, Playstation, etc…\) _**must**_ be contained together in a _single_ `.zip` or `.7z` archive _before_ importing and _both files are required_.¹
 
-#### **ROMsets:**
-
-**Examples of \[game\].7z contents:**
+**Examples of ROM archive contents:**
 
 ```text
     [game].bin
@@ -280,7 +278,7 @@ A ROM consisting of multiple files such as `.bin` + `.cue` for CD-based games \(
 ```
 
 {% hint style="warning" %}
-If **.ccd** based ROMsets are not importing correctly, move files into the system directory, manually, when left behind in Imports or Conflicts.
+If **.ccd** based ROMs are not importing correctly, move files into the system directory, manually, when left behind in Imports or Conflicts.
 {% endhint %}
 
 {% hint style="danger" %}
@@ -300,7 +298,7 @@ FILE "[game].bin" BINARY
 ```
 
 ¹ If you need to restore a missing/damaged `.cue` file, check out the archives at [redump.org](http://redump.org).  
-² If you rename any `.cue` based files in a ROMset, you _**must**_ change the contents of the `.cue` file _or they won't work._  
+² If you rename any files of a`.cue` based multi-file ROM, you _**must**_ change the contents of the `.cue` file _or they won't work._  
      
 …archive filenames, however, are irrelevant as they are discarded after unarchiving.
 
@@ -312,10 +310,10 @@ For a quick way to preview **.cue** files on macOS, install the [qlstephen Quick
 
 ### Multi-disc Games
 
-All multi-disc games _**must**_ include a `.m3u` file _in_ their `.zip` or `.7z` ROMset \(multi-file\) archive. Disc numbering in filenames needs to be formatted _exactly_ as: `…(Disc #).ext`
+All multi-disc games _**must**_ include a `.m3u` file _in_ their `.zip` or `.7z` multi-file ROM archive. Disc numbering in filenames needs to be formatted _exactly_ as: `…(Disc #).ext`
 
 {% hint style="warning" %}
-If renaming and using ****a **.cue** based ****ROMset make sure to read the requirements for **.cue** files in [Multi-file ROMs](formatting-roms.md#multi-file-roms).
+If renaming and using ****a **.cue** based ****ROM make sure to read the requirements for **.cue** files in [Multi-file ROMs](formatting-roms.md#multi-file-roms).
 {% endhint %}
 
 **Contents of Final Fantasy VII \(USA\).7z**:
