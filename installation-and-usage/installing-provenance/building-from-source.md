@@ -26,7 +26,7 @@ DO NOT expect to use a beta without issues, losing your saves, or bugs.
   * on a Mac, Hackintosh or virtual machine \([Virtualizing macOS](https://github.com/Provenance-Emu/Provenance/wiki/Virtualizing-macOS)\)
 * [Xcode](https://itunes.apple.com/us/app/xcode/id497799835) 10.2+
 * iOS 10+ a/o tvOS 10+ SDKs
-* Free [Apple Developer Account](https://9to5mac.com/2016/03/27/how-to-create-free-apple-developer-account-sideload-apps/) \(at a minimum\)  
+* _Free_ [Apple Developer](https://9to5mac.com/2016/03/27/how-to-create-free-apple-developer-account-sideload-apps/) account \(at a minimum\) or a _paid_ account.  
 
 
   🛑 **DO NOT** enroll to join the full Developer Program or you will be locked into a _Pending_ payment state, unable to code-sign unless you pay or contact Apple to cancel the enrollment.  
@@ -193,6 +193,12 @@ make help
 3. Provenance will compile and run on your device. Unless testing, hit `◼︎` \(Stop\). _Done._
 
 💢 If you get stuck, check out [Troubleshooting](building-from-source.md#troubleshooting).
+
+{% hint style="info" %}
+Free Apple developer provisioning expires _every 7 days_, requiring reloading, but you will not lose any data.
+
+_Paid_ Apple Developer provisioning may only require re-signing once a year.
+{% endhint %}
 
 ## Advanced Features
 

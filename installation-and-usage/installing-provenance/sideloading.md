@@ -14,7 +14,7 @@ Prebuilt .ipa releases can sideloaded onto your devices and must be re-signed us
 {% hint style="success" %}
 **Requirements**
 
-* _Free_ [Apple Developer](https://9to5mac.com/2016/03/27/how-to-create-free-apple-developer-account-sideload-apps/) account \(at a minimum\)   
+* _Free_ [Apple Developer](https://9to5mac.com/2016/03/27/how-to-create-free-apple-developer-account-sideload-apps/) account \(at a minimum\) or a _paid_ account.  
   ****
 
   🛑 **DO NOT** enroll to join the full Developer Program or you will be locked into a _Pending_ payment state, unable to code-sign unless you pay or contact Apple to cancel the enrollment.  
@@ -62,6 +62,8 @@ Sideloading from 3rd party sources _**is not supported**_.
 
 {% hint style="info" %}
 Free Apple developer provisioning expires _every 7 days_, requiring reloading, but you will not lose any data.
+
+_Paid_ Apple Developer provisioning may only require re-signing once a year.
 {% endhint %}
 
 ## iOS App Signer

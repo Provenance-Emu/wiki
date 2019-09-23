@@ -19,7 +19,9 @@ There are two approved methods to install Provenance: The easiest or less techni
 * ▶️  [**Building**](building-from-source.md) · from latest source
 
 {% hint style="info" %}
-**Requires** _free_ [Apple Developer](https://9to5mac.com/2016/03/27/how-to-create-free-apple-developer-account-sideload-apps/) account, at a minimum. Free account provisioning expires _every 7 days_, requiring reloading/rebuilding, but you will not lose any data.
+**Requires** _free_ [Apple Developer](https://9to5mac.com/2016/03/27/how-to-create-free-apple-developer-account-sideload-apps/) account, at a minimum. _Free_ account provisioning expires _every 7 days_, requiring reloading/rebuilding, but you will not lose any data.  
+  
+_Paid_ Apple Developer provisioning may only require re-signing once a year.
 {% endhint %}
 
 
