@@ -36,7 +36,9 @@ Sideloading from 3rd party sources _**is not supported**_.
 
 ## Cydia Impactor
 
-1. Download a [Release](https://github.com/Provenance-Emu/Provenance/releases) or [Pre-Release](https://builds.provenance-emu.com/) of Provenance.
+1. Download a [Release](https://github.com/Provenance-Emu/Provenance/releases) or [Pre-Release](https://builds.provenance-emu.com/) of Provenance. _Pre-Release build server is not working but the last \[somewhat stable\] prebuilt files are still reachable here…_
+   1. _\*\*\*\*_[_**Provenance v1.5b 2660 - iOS**_](https://builds.provenance-emu.com/iOS/Latest/Develop/Provenance-ios-develop-2770.ipa) _**** \(.ipa\)_
+   2. \_\_[_**Provenance v1.5b 2660 - tvOS**_](https://builds.provenance-emu.com/tvOS/Latest/Develop/Provenance-tvos-develop-2770.ipa) _****\(.ipa\)_
 2. Download and launch [Cydia Impactor](http://www.cydiaimpactor.com/).
 3. Connect your device \(you may need to launch iTunes and choose `Trust…` when it pops up\).
 4. Select your device in Impactor.

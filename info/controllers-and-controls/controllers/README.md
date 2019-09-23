@@ -125,7 +125,7 @@ Standalone controllers are familiar to that of Playstation or Xbox. Recommended 
 | [Steam Controller](https://www.amazon.com/Steam-Controller-SteamOS/dp/B016KBVBCS/) | ○ | ● | ● | pMFi | Extended2+ | ●●●●◐ |
 | [SteelSeries Nimbus](https://www.amazon.com/SteelSeries-Nimbus-Wireless-Gaming-Controller/dp/B01AZC3III/) + [clamp](https://www.amazon.com/TPFOON-Smartphone-Cellphone-Steelseries-Controller/dp/B07DLY5PB4/) | ● | ● | ● | MFi | Extended | ●●●●◐ |
 | [SteelSeries Stratus XL: iOS](https://www.amazon.com/SteelSeries-Bluetooth-Wireless-Controller-69026/dp/B00QTSR5GO/) | ○ | ● | ● | MFi | Extended | ●●●●◐ |
-| [SteelSeries Stratus XL](https://www.amazon.com/SteelSeries-Stratus-Bluetooth-Wireless-Controller/dp/B015WKY3IM/) | ○ | ● | ● | iCade | Extended+ | ●●●◐○ |
+| [SteelSeries Stratus XL](https://www.amazon.com/SteelSeries-Stratus-Bluetooth-Wireless-Controller/dp/B015WKY3IM/)\* | ○ | ● | ● | iCade | Extended+ | ●●●◐○ |
 | [SteelSeries Stratus](https://www.amazon.com/SteelSeries-Stratus-Wireless-Gaming-Controller/dp/B00HSB2EZI/) | ○ | ● | ● | MFi | Extended | ●●●○○ |
 | [Horipad Ultimate](https://www.amazon.com/HORI-HORIPAD-ULTIMATE-Wireless-Controller/dp/B06Y2512L8/) | ○ | ● | ● | MFi | Extended | ●●●◐○ |
 | [8bitdo N30](https://www.amazon.com/Wireless-Controller-bluetooth-Android-windows/dp/B01N4M9LQY/) / [F30](https://www.amazon.com/FC30-Game-Controller-PC-Mac-Linux/dp/B00FEEGZVU/)^\* | ○ | ● | ● | iCade | Standard+ | ●●◐○○ |

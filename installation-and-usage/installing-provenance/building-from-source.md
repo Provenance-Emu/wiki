@@ -24,7 +24,7 @@ DO NOT expect to use a beta without issues, losing your saves, or bugs.
 
 * macOS 10.13.6+ 
   * on a Mac, Hackintosh or virtual machine \([Virtualizing macOS](https://github.com/Provenance-Emu/Provenance/wiki/Virtualizing-macOS)\)
-* [Xcode](https://itunes.apple.com/us/app/xcode/id497799835) 10+
+* [Xcode](https://itunes.apple.com/us/app/xcode/id497799835) 10.2+
 * iOS 10+ a/o tvOS 10+ SDKs
 * Free [Apple Developer Account](https://9to5mac.com/2016/03/27/how-to-create-free-apple-developer-account-sideload-apps/) \(at a minimum\)  
 
@@ -121,7 +121,7 @@ The Terminal app can be found in: _/Applications/Utilities_
     make open
    ```
 
-3. Continue to [Build Source](building-from-source.md#build-source)… 
+3. Continue to Build Source… 
 
 You can get a list of all commands by running…
 
@@ -326,7 +326,15 @@ If you are having trouble building or sideloading the app, check for your issue 
 
 #### **conflicting provisioning settings…Distribution**
 
-* In Build Settings for the targets with errors, manually reset all the Code Signing Identities that are `iOS Distribution` to be `iPhone Developer`, and try building again.
+* In Build Settings for the targets with errors, manually reset all the Code Signing Identities that are `iOS Distribution` to be `iOS Developer`, and try building again.
+
+**…can't find header files for ruby at …/…ruby.h**
+
+* Try reinstalling ruby via RVM in [Setup](building-from-source.md#setup) instructions, or try…
+
+  ```bash
+  gem update --system
+  ```
 
 ## ⚠️ Known Issues
 
