@@ -121,7 +121,7 @@ Please refer to the [Known Issues](importing-roms.md#known-issues) regarding Imp
 
 ## **💢 Troubleshooting**
 
-* Multiple ROMs from one archive? You may be using a Region Pack ROMset, meaning more than one version of the same ROM is in your archive. Unarchive the set, isolate single region ROM file\(s\), \[[re-archive](formatting-roms.md#archiving), and…\] re-import the single region ROM, individually.
+* Multiple ROMs from one archive? You may be using a Region Pack ROM, meaning more than one version of the same ROM is in your archive. Unarchive the set, isolate single region ROM file\(s\), \[[re-archive](formatting-roms.md#archiving), and…\] re-import the single region ROM, individually.
 
 ## **⚠️ Known Issues**
 

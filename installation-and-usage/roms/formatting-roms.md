@@ -249,18 +249,16 @@ Please refer to the [Known Issues](formatting-roms.md#known-issues) regarding Fo
 | `.zip`, `.7z` |
 
 {% hint style="danger" %}
-Loose files _only_. DO NOT contain folder\(s\) within an archive \(this is a known issue and will result in crash\)!
+Loose files _only_. DO NOT contain folder\(s\) within an archive \(this is a known issue and will result in a crash\)!
 {% endhint %}
 
 ## 
 
 ### Multi-file ROMs
 
-A ROM consisting of multiple files such as `.bin` + `.cue` for CD-based games \(Sega CD, Playstation, etc…\) _**must**_ be contained together in a _single_ `.zip` or `.7z` archive as a ROMset _before_ importing and _both files are required_.¹
+A ROM consisting of multiple files such as `.bin` + `.cue` for CD-based games \(Sega CD, Playstation, etc…\) _**must**_ be contained together in a _single_ `.zip` or `.7z` archive _before_ importing and _both files are required_.¹
 
-#### **ROMsets:**
-
-**Examples of \[game\].7z contents:**
+**Examples of ROM archive contents:**
 
 ```text
     [game].bin
@@ -280,11 +278,11 @@ A ROM consisting of multiple files such as `.bin` + `.cue` for CD-based games \(
 ```
 
 {% hint style="warning" %}
-If **.ccd** based ROMsets are not importing correctly. Move **.sub** file into its system directory, manually, if they were mistakenly been left behind in Imports or Conflicts.
+If **.ccd** based ROMs are not importing correctly, move files into the system directory, manually, when left behind in Imports or Conflicts.
 {% endhint %}
 
 {% hint style="danger" %}
-Loose files _only_. DO NOT contain folder\(s\) within an archive \(this is a known issue and will result in crash\)!
+Loose files _only_. DO NOT contain folder\(s\) within an archive \(this is a known issue and will result in a crash\)!
 {% endhint %}
 
 #### **.cue Files:**
@@ -300,7 +298,7 @@ FILE "[game].bin" BINARY
 ```
 
 ¹ If you need to restore a missing/damaged `.cue` file, check out the archives at [redump.org](http://redump.org).  
-² If you rename any `.cue` based files in a ROMset, you _**must**_ change the contents of the `.cue` file _or they won't work._  
+² If you rename any files of a`.cue` based multi-file ROM, you _**must**_ change the contents of the `.cue` file _or they won't work._  
      
 …archive filenames, however, are irrelevant as they are discarded after unarchiving.
 
@@ -312,10 +310,10 @@ For a quick way to preview **.cue** files on macOS, install the [qlstephen Quick
 
 ### Multi-disc Games
 
-All multi-disc games _**must**_ include a `.m3u` file _in_ their `.zip` or `.7z` ROMset \(multi-file\) archive. Disc numbering in filenames needs to be formatted _exactly_ as: `…(Disc #).ext`
+All multi-disc games _**must**_ include a `.m3u` file _in_ their `.zip` or `.7z` multi-file ROM archive. Disc numbering in filenames needs to be formatted _exactly_ as: `…(Disc #).ext`
 
 {% hint style="warning" %}
-If renaming and using ****a **.cue** based ****ROMset make sure to read the requirements for **.cue** files in [Multi-file ROMs](formatting-roms.md#multi-file-roms).
+If renaming and using ****a **.cue** based ****ROM make sure to read the requirements for **.cue** files in [Multi-file ROMs](formatting-roms.md#multi-file-roms).
 {% endhint %}
 
 **Contents of Final Fantasy VII \(USA\).7z**:
@@ -350,10 +348,11 @@ If renaming and using ****a **.cue** based ****ROMset make sure to read the requ
 
 ### Converting ROMs
 
-* **Cartridge-based ROMs** generally do not need converting. Formats like `.bin` vs `.md` or `gen` \(Sega Genesis\) or `.sfc` vs `.smc` \(Super Nintendo\) are generally just different filename extensions for the same format to simplify identifying shared formats across systems and avoid conflicts. They are basically interchangeable and you can simply rename them to a supported extension.
-* _**CD-based ROMs**_ ****require certain supported formats…
-  * If supported, you may just be missing an additional file like a `.cue` file for a multi-file rom. If so, you may want to check out the archives at [redump.org](http://redump.org) in order to restore it properly.
-  * If your filetypes are not supported \(`.iso`, `.mds`, `.nrg`, etc…\) or have been restructured via `ecm` \(ie. `.bin.ecm`\) you may need to convert them with a disc image conversion app.
+* **Cartridge-based ROMs** generally do not need converting. Formats like `.bin` vs `.md` or `.gen` \(Sega Genesis\) or `.sfc` vs `.smc` \(Super Nintendo\) are generally just different filename extensions for the same format to simplify identifying shared formats across systems and avoid conflicts. They are basically interchangeable and you can simply rename them to a supported extension.
+* **CD-based ROMs** require certain supported formats…
+  * If you have part of a supported multi-file ROM, but are missing the additional file\(s\) such as `.cue` , `.ccd`, `.sub`… to complete it, you may want to check out the archives at [redump.org](http://redump.org) in order to restore it properly, or try replacing the ROM entirely from a different source.
+  * If your filetypes are not supported, you may need to convert them with a disc image conversion app.
+  * If your files have been restructured via **ecm** \(ie. `.bin.ecm`\) they will need to be reverted: [unECM](formatting-roms.md#unecm).
 
 ### Converting & Editing Memory Cards
 
@@ -363,17 +362,16 @@ If renaming and using ****a **.cue** based ****ROMset make sure to read the requ
 
 **Mac**
 
-1. Install [Homebrew](https://brew.sh) _\(if you don't have it\)_ in Terminal¹ with:  
-
+1. Install [Homebrew](https://brew.sh) _\(if you don't have it\)_ in Terminal with:
 
    `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
 2. Install via Homebrew with: `brew install ecm`
 3. Use `unecm [path to .ecm file]` to restore the original format. 
 
-¹ The Terminal app can be found in: _/Applications/Utilities_  
- 💢  If you get stuck or run into any errors, check out Troubleshooting.  
-
+{% hint style="info" %}
+ The Terminal app can be found in: _/Applications/Utilities_
+{% endhint %}
 
 **Windows**
 
@@ -394,17 +392,20 @@ Use these [Instructions](https://www.lifewire.com/ecm-file-2620956), for now.
 1. Set your default app unarchiving \(`.zip`, `.7z`, `.rar`, etc…\) to Keka:
    1. Select a single archive per filetype and File→Get Info \(`⌘I`\)
    2. Change `Open with:` to Keka and hit `Change All…`.
-2. Open Keka and select `.7z` and the following settings: 
-   * [x] Solid archive  
-   * [x] Exclude Mac resource forks
-   * [x] Delete file\(s\) after compression
+2. Open Keka and select `.7z` or .`zip` and the following settings: 
+
+   ☑️Solid archive `.7z`
+
+   ☑️Exclude Mac resource forks
+
+   ☑️Delete file\(s\) after compression
 
 **Archive**
 
 1. Drag & Drop ROM file \(or files if multi-file ROM, such as `.cue + .bin`\) onto Keka. Done.
 
 {% hint style="danger" %}
-Loose files _only_. DO NOT contain folder\(s\) within an archive \(this is a known issue and will result in crash\)!
+Loose files _only_. DO NOT contain folder\(s\) within an archive \(this is a known issue and will result in a crash\)!
 {% endhint %}
 
 #### Windows <a id="archiving-windows"></a>
@@ -445,7 +446,7 @@ _\(coming later…\)_
 2. Enter `cd` and the \[file-path\] to a set of ROMs.  \[file-path\]: right-click the folder and select "Properties" and apply via copy/paste.
 3. _Example:_ `rename *.bin *.md`
 
-\`\`
+
 
 ## **⚠️ Known Issues**
 

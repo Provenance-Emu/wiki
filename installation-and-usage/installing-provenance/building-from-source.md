@@ -24,9 +24,9 @@ DO NOT expect to use a beta without issues, losing your saves, or bugs.
 
 * macOS 10.13.6+ 
   * on a Mac, Hackintosh or virtual machine \([Virtualizing macOS](https://github.com/Provenance-Emu/Provenance/wiki/Virtualizing-macOS)\)
-* [Xcode](https://itunes.apple.com/us/app/xcode/id497799835) 10+
+* [Xcode](https://itunes.apple.com/us/app/xcode/id497799835) 10.2+
 * iOS 10+ a/o tvOS 10+ SDKs
-* Free [Apple Developer Account](https://9to5mac.com/2016/03/27/how-to-create-free-apple-developer-account-sideload-apps/) \(at a minimum\)  
+* _Free_ [Apple Developer](https://9to5mac.com/2016/03/27/how-to-create-free-apple-developer-account-sideload-apps/) account \(at a minimum\) or a _paid_ account.  
 
 
   🛑 **DO NOT** enroll to join the full Developer Program or you will be locked into a _Pending_ payment state, unable to code-sign unless you pay or contact Apple to cancel the enrollment.  
@@ -108,7 +108,7 @@ The Terminal app can be found in: _/Applications/Utilities_
 2. Install [RVM](https://rvm.io/):
 
    ```bash
-    \curl -sSL https://get.rvm.io | bash -s stable --ruby source ~/.rvm/scripts/rvm
+    \curl -sSL https://get.rvm.io | bash -s stable --ruby && source ~/.rvm/scripts/rvm
    ```
 
 #### First-time Setup
@@ -177,7 +177,7 @@ make help
   * ![](https://user-images.githubusercontent.com/3118097/48986708-22f14800-f0cd-11e8-98ec-6f093375d969.png)  Multipath
   * ![](https://user-images.githubusercontent.com/3118097/48986708-22f14800-f0cd-11e8-98ec-6f093375d969.png)  Push Notifications
   * ![](https://user-images.githubusercontent.com/3118097/48986708-22f14800-f0cd-11e8-98ec-6f093375d969.png)  Siri
-* Turn on `☑️Automatically manage signing` and select your Development Team for your targets.
+* Turn ON ☑️**Automatically manage signing** and select your Development Team for your targets.
 
   ![](https://user-images.githubusercontent.com/3118097/40101989-0a73fa7e-589e-11e8-8f73-7f99195133a1.png)  
 
@@ -193,6 +193,12 @@ make help
 3. Provenance will compile and run on your device. Unless testing, hit `◼︎` \(Stop\). _Done._
 
 💢 If you get stuck, check out [Troubleshooting](building-from-source.md#troubleshooting).
+
+{% hint style="info" %}
+Free Apple developer provisioning expires _every 7 days_, requiring reloading, but you will not lose any data.
+
+_Paid_ Apple Developer provisioning may only require re-signing once a year.
+{% endhint %}
 
 ## Advanced Features
 
@@ -326,7 +332,15 @@ If you are having trouble building or sideloading the app, check for your issue 
 
 #### **conflicting provisioning settings…Distribution**
 
-* In Build Settings for the targets with errors, manually reset all the Code Signing Identities that are `iOS Distribution` to be `iPhone Developer`, and try building again.
+* In Build Settings for the targets with errors, manually reset all the Code Signing Identities that are `iOS Distribution` to be `iOS Developer`, and try building again.
+
+**…can't find header files for ruby at …/…ruby.h**
+
+* Try reinstalling ruby via RVM in [Setup](building-from-source.md#setup) instructions, or try…
+
+  ```bash
+  gem update --system
+  ```
 
 ## ⚠️ Known Issues
 

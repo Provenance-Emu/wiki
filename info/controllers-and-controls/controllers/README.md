@@ -135,7 +135,7 @@ Standalone controllers are familiar to that of Playstation or Xbox. Recommended 
 | [Steam Controller](https://www.amazon.com/Steam-Controller-SteamOS/dp/B016KBVBCS/) | ○ | ● | ● | pMFi | Extended2+ | ●●●●◐ |
 | [SteelSeries Nimbus](https://www.amazon.com/SteelSeries-Nimbus-Wireless-Gaming-Controller/dp/B01AZC3III/) + [clamp](https://www.amazon.com/TPFOON-Smartphone-Cellphone-Steelseries-Controller/dp/B07DLY5PB4/) | ● | ● | ● | MFi | Extended | ●●●●◐ |
 | [SteelSeries Stratus](https://www.amazon.com/SteelSeries-Stratus-Wireless-Gaming-Controller/dp/B00HSB2EZI/) | ○ | ● | ● | MFi | Extended | ●●●○○ |
-| [SteelSeries Stratus XL](https://www.amazon.com/SteelSeries-Stratus-Bluetooth-Wireless-Controller/dp/B015WKY3IM/) | ○ | ● | ● | iCade | Extended+ | ●●●◐○ |
+| [SteelSeries Stratus XL](https://www.amazon.com/SteelSeries-Stratus-Bluetooth-Wireless-Controller/dp/B015WKY3IM/)\* | ○ | ● | ● | iCade | Extended+ | ●●●◐○ |
 | [SteelSeries Stratus XL: iOS](https://www.amazon.com/SteelSeries-Bluetooth-Wireless-Controller-69026/dp/B00QTSR5GO/) | ○ | ● | ● | MFi | Extended | ●●●●◐ |
 
 ^ Discontinued, some can still be obtained.  
