@@ -22,12 +22,11 @@ DO NOT expect to use a beta without issues, losing your saves, or bugs.
 {% hint style="success" %}
 **Requirements**
 
-* macOS 10.13.6+ 
+* macOS 10.13.6+
   * on a Mac, Hackintosh or virtual machine \([Virtualizing macOS](https://github.com/Provenance-Emu/Provenance/wiki/Virtualizing-macOS)\)
 * [Xcode](https://itunes.apple.com/us/app/xcode/id497799835) 10.2+
 * iOS 10+ a/o tvOS 10+ SDKs
 * _Free_ [Apple Developer](https://9to5mac.com/2016/03/27/how-to-create-free-apple-developer-account-sideload-apps/) account \(at a minimum\) or a _paid_ account.  
-
 
   🛑 **DO NOT** enroll to join the full Developer Program or you will be locked into a _Pending_ payment state, unable to code-sign unless you pay or contact Apple to cancel the enrollment.  
 
@@ -50,7 +49,7 @@ DO NOT expect to use a beta without issues, losing your saves, or bugs.
   * ![](https://user-images.githubusercontent.com/3118097/37563629-48ec3f26-2a42-11e8-9fd8-784e9e830ebe.png)  [Terminal](building-from-source.md#terminal)
   * ![](https://user-images.githubusercontent.com/3118097/37563630-4903ebbc-2a42-11e8-888a-09a94fc0058d.png)  [Tower](building-from-source.md#tower)
 
-#### Clone
+### Clone
 
 Cloning is how you pull the source code from GitHub. The primary way to do this is using Terminal; However, if you're a developer or familiar with powerful git clients like Tower, this is also an option as long as you enable for initializing submodules.
 
@@ -66,11 +65,9 @@ The Terminal app can be found in: _/Applications/Utilities_
    * HTTPS: `git clone --recurse-submodules -j4 https://github.com/Provenance-Emu/Provenance.git`
 4. Continue to [Setup](building-from-source.md#setup)…
 
-
-
 **Tower**
 
-Tower is a powerful commercial git client that can automate a lot of the tasks you'd otherwise be using commandline for, such as stashing changes. It is however, _not free._
+Tower is a powerful commercial git client that can automate a lot of the tasks you'd otherwise be using command-line for, such as stashing changes. It is however, _not free._
 
 1. Purchase/Download [Tower](https://www.git-tower.com/mac/)
 2. Launch Tower and Add Your Service Account: `GitHub`
@@ -83,7 +80,7 @@ Tower is a powerful commercial git client that can automate a lot of the tasks y
 
 ~~**Download**~~
 
-🚫 Due to the inclusion of submodules this method no longer works. **Do not** manually download source as `.zip`… 
+🚫 Due to the inclusion of submodules this method no longer works. **Do not** manually download source as `.zip`…
 
 {% hint style="danger" %}
 If building from active develop branch, we _will not_ be held responsible for any loss of your game data! Install _**at your own risk!**_ …and back up your files.
@@ -97,7 +94,7 @@ Using Terminal install the following requirements. If already set up, skip to [B
 The Terminal app can be found in: _/Applications/Utilities_
 {% endhint %}
 
-#### Install Requirements
+### Install Requirements
 
 1. Install [Homebrew](https://brew.sh/) _\(if you don't have it\)_:
 
@@ -111,7 +108,7 @@ The Terminal app can be found in: _/Applications/Utilities_
     \curl -sSL https://get.rvm.io | bash -s stable --ruby && source ~/.rvm/scripts/rvm
    ```
 
-#### First-time Setup
+### First-time Setup
 
 1. Navigate to the 'Provenance' directory with: `cd [path]` \(can drag & drop a folder on Terminal after `cd` to get directory path\) 
 2. Install Submodules, Setup & Launch
@@ -121,15 +118,13 @@ The Terminal app can be found in: _/Applications/Utilities_
     make open
    ```
 
-3. Continue to Build Source… 
+3. Continue to Build Source…
 
 You can get a list of all commands by running…
 
 ```bash
 make help
 ```
-
-
 
 💢 If you get stuck, check out [Troubleshooting](building-from-source.md#troubleshooting).
 
@@ -144,13 +139,10 @@ make help
 2. Go to Preferences via Menubar: `Xcode` → `Preferences` or use `⌘,` shortcut.
    * Select Accounts tab.
    * Click `+`
-   * Sign in with your personal or developer Apple ID. If you don't have one, click `Create Apple ID` or go to [appleid.apple.com](https://appleid.apple.com/).  
-
-
+   * Sign in with your personal or developer Apple ID. If you don't have one, click `Create Apple ID` or go to [appleid.apple.com](https://appleid.apple.com/).
      ⚠️ At minimum, sign up as a _free_ [Apple Developer](https://9to5mac.com/2016/03/27/how-to-create-free-apple-developer-account-sideload-apps/) and do no more than agree to the terms.
 
-     🛑 DO NOT enroll to join the full Developer Program or you will be locked into a _Pending_ payment state, unable to code-sign unless you pay or contact Apple to cancel the enrollment.  
-
+     🛑 DO NOT enroll to join the full Developer Program or you will be locked into a _Pending_ payment state, unable to code-sign unless you pay or contact Apple to cancel the enrollment.
 
      ![](https://user-images.githubusercontent.com/3118097/40101778-4dbc3fae-589d-11e8-916a-062202283aa1.gif)
 3. In Project Settings, edit _all_ of the targets for your device:
@@ -164,7 +156,6 @@ make help
      * **TopShelf**
      * **ProvenanceShared-tvOS**
    * Change the Bundle IDs for your target by replacing only `provenance-emu` with something unique to you \(like your username\), and use the same replacement for _all_ of your targets and _all_ subsequent updates.  
-
 
      🏍 You can install "sidecar" for testing by using a different bundle ID than your previous/main install.  
      ![](https://user-images.githubusercontent.com/3118097/40105626-5b7e9bc2-58a8-11e8-8c39-3b1d8119979a.gif)
@@ -260,20 +251,20 @@ If you are having trouble building or sideloading the app, check for your issue 
 
 * Change the Bundle IDs of the app targets and extensions, as described in Build Source steps.
 * If you are using a free Apple developer account, you can only install a total of 3 apps per Apple ID at a time. You must use delete some apps you are signing, or install with different Apple ID and Bundle IDs.
-* If you used to have a free Safari Developer Account which is no longer supported by Apple, you have two options: 
+* If you used to have a free Safari Developer Account which is no longer supported by Apple, you have two options:
 
-  1\) Upgrade to a _paid_ [Apple Developer](https://developer.apple.com/programs/) account. 
+  1\) Upgrade to a _paid_ [Apple Developer](https://developer.apple.com/programs/) account.
 
   2\) Use a different Apple ID that _is not_ an expired and deprecated Safari Developer account.
 
 #### Can't install after changing fork / pulling…
 
 1. Check the Bundle IDs haven't been reset to the projects defaults.
-2. If not, select your team drop down and reselect your team / name. Sometimes Xcode gets out of sync with the identity being used after a merge / pull / branch change, especially in the extension targets.
+2. If not, select your team drop down and reselect your team / name. Sometimes XCode gets out of sync with the identity being used after a merge / pull / branch change, especially in the extension targets.
 
 #### **Cycle in dependencies between targets… error**
 
-* Circular dependency error. Clean Build Folder \(⇧⌘K\) and/or nuke Xcode's derived data: `rm -rf ~/Library/Developer/Xcode/DerivedData` and restart Xcode.
+* Circular dependency error. Clean Build Folder \(⇧⌘K\) and/or nuke XCode's derived data: `rm -rf ~/Library/Developer/Xcode/DerivedData` and restart Xcode.
 
 #### Stuttering sound or lag
 
@@ -281,7 +272,7 @@ If you are having trouble building or sideloading the app, check for your issue 
 
 #### **—application-identifier entitlement does not match…**
 
-* This means you need to match the Bundle IDs with the ones from your previous sideload or build on your device. If you don't know it, or used a 3rd party web-sign \(unsupported\), we recommend you [backup your files](https://github.com/Provenance-Emu/Provenance/wiki/Restoring-Files), delete the app and try to clean-install.
+* This means you need to match the Bundle IDs with the ones from your previous side-load or build on your device. If you don't know it, or used a 3rd party web-sign \(unsupported\), we recommend you [backup your files](https://github.com/Provenance-Emu/Provenance/wiki/Restoring-Files), delete the app and try to clean-install.
 
 #### **Your maximum App ID limit has been reached…**
 
@@ -289,7 +280,7 @@ If you are having trouble building or sideloading the app, check for your issue 
 
 #### **something something …Mupen build error**
 
-* You are missing submodules. **Do not** download .zip from GitHub. Use Terminal. Go back to Get Source and **do not** skip any steps. 
+* You are missing submodules. **Do not** download .zip from GitHub. Use Terminal. Go back to Get Source and **do not** skip any steps.
 
 #### Unsupported arch
 
@@ -301,8 +292,7 @@ If you are having trouble building or sideloading the app, check for your issue 
 
 #### **Linking…carthage/…Error: Permission denied @ dir\_s\_mkdir - /usr/local/Frameworks…**
 
-* Just a permissions error with the directory, it can be fixed with:  
-
+* Just a permissions error with the directory, it can be fixed with:
 
   ```bash
     sudo mkdir /usr/local/Frameworks
@@ -346,14 +336,10 @@ If you are having trouble building or sideloading the app, check for your issue 
 
 **something about database build error**
 
-* This means there have been changes to the database model which is no longer compatible with your previous build. In order to update you _**must**_ clean install \(delete app and re-install, not build or install over over existing app\). If you would like to migrate your save games and states, you can refer to [Restoring Files](https://github.com/Provenance-Emu/Provenance/wiki/Restoring-Files).  
-
+* This means there have been changes to the database model which is no longer compatible with your previous build. In order to update you _**must**_ clean install \(delete app and re-install, not build or install over over existing app\). If you would like to migrate your save games and states, you can refer to [Restoring Files](https://github.com/Provenance-Emu/Provenance/wiki/Restoring-Files).
 
   🏍 You can install "sidecar" for testing by using a different bundle ID than your previous/main install.
-
-
 
 {% hint style="info" %}
 🗯 If you are still stuck try [debugging](../../help/troubleshooting.md) it yourself or ask for [help](https://discord.gg/NhzgrXh) on our Discord.
 {% endhint %}
-

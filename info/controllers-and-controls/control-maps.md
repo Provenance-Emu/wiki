@@ -4,7 +4,7 @@ description: Controller mappings for gamepad profiles per system.
 
 # Control Maps
 
-### MFi Controller Maps
+## MFi Controller Maps
 
 {% tabs %}
 {% tab title="Extended2" %}
@@ -49,4 +49,3 @@ description: Controller mappings for gamepad profiles per system.
 _iCade control maps coming later…_
 
 \_\_
-

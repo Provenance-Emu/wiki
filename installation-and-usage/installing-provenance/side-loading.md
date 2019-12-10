@@ -6,7 +6,7 @@ description: Easy. Install pre-built releases (or pre-releases).
 
 Prebuilt .ipa releases can side-loaded onto your devices and must be re-signed using your own developer profile\(s\).
 
-#### **Side-loading Options:**
+## **Side-loading Options:**
 
 * 🔨  [**Cydia Impactor** ](side-loading.md#cydia-impactor)· macOS/Windows
 * 🖋  [**iOS App Signer**](side-loading.md#ios-app-signer) · macOS + Xcode a/o Configurator
@@ -14,17 +14,17 @@ Prebuilt .ipa releases can side-loaded onto your devices and must be re-signed u
 {% hint style="success" %}
 **Requirements**
 
-* _Free_ [Apple Developer](https://9to5mac.com/2016/03/27/how-to-create-free-apple-developer-account-sideload-apps/) account \(at a minimum\)   
+* _Free_ [Apple Developer](https://9to5mac.com/2016/03/27/how-to-create-free-apple-developer-account-sideload-apps/) account \(at a minimum\)
   ****
 
-  🛑 **DO NOT** enroll to join the full Developer Program or you will be locked into a _Pending_ payment state, unable to code-sign unless you pay or contact Apple to cancel the enrollment.  
+  🛑 **DO NOT** enroll to join the full Developer Program or you will be locked into a _Pending_ payment state, unable to code-sign unless you pay or contact Apple to cancel the enrollment.
 
 * Connections:
   * iPhone / iPad:    `Lightning` → `USB-A / USB-C` cable¹
   * Apple TV 4:      `USB-C` → `USB-A / USB-C` cable¹
   * Apple TV 4K:     `WiFi`²  \([Instructions](http://www.redmondpie.com/how-to-wirelessly-connect-apple-tv-4k-to-xcode-on-mac/)\)
 
-¹ Depends on which [ports](https://support.apple.com/en-us/HT201736) you have. WiFi can be setup after.  
+¹ Depends on which [ports](https://support.apple.com/en-us/HT201736) you have. WiFi can be setup after.
 ² USB ports have been discontinued on Apple TV 4K+.
 {% endhint %}
 
@@ -34,7 +34,7 @@ Side-loading from 3rd party sources _**is not supported**_.
 
 💢  If you get stuck, check out [Troubleshooting](side-loading.md#troubleshooting).
 
-## Cydia Impactor
+### Cydia Impactor
 
 1. Download a [Release](https://github.com/Provenance-Emu/Provenance/releases) or [Pre-Release](https://builds.provenance-emu.com/) of Provenance.
 2. Download and launch [Cydia Impactor](http://www.cydiaimpactor.com/).
@@ -47,13 +47,12 @@ Side-loading from 3rd party sources _**is not supported**_.
    1. _\(If you haven't yet\),_ login to your [Apple ID](https://appleid.apple.com/) online and `Generate` an App-Specific Password, under Security section \(and write it down somewhere for later use\).
    2. Enter your App-Specific Password in Cydia Impactor, verbatim.
 
-  
    ⚠️ If it fails to verify code signature, try resigning the .ipa with…
 
    * Web: [appsigner.io](https://appsigner.io/) \(free devs only\)
-   * macOS \(only\): [iOS App Signer](https://dantheman827.github.io/ios-app-signer/)  —return to step 5.  🆔 Bundle ID: `com.[change-this].provenance`  Replace `[change-this]` with something unique like your username. 
+   * macOS \(only\): [iOS App Signer](https://dantheman827.github.io/ios-app-signer/)  —return to step 5.  🆔 Bundle ID: `com.[change-this].provenance`  Replace `[change-this]` with something unique like your username.s
 
-   🚸 If Impactor still fails, try [Option 2](side-loading.md#ios-app-signer) \(macOS only\).  
+   🚸 If Impactor still fails, try [Option 2](side-loading.md#ios-app-signer) \(macOS only\).
 
 8. On device: Go to `Settings` → `General` → `Profiles & Device Management`, tap on your certificate and then `Trust`
 9. _Done._  \(If using a free developer account, repeat from step 3 after it _**expires in 7 days**_\)
@@ -62,7 +61,7 @@ Side-loading from 3rd party sources _**is not supported**_.
 Free Apple developer provisioning expires _every 7 days_, requiring reloading, but you will not lose any data.
 {% endhint %}
 
-## iOS App Signer
+### iOS App Signer
 
 1. Download a [Release](https://github.com/Provenance-Emu/Provenance/releases) or [Pre-Release](https://builds.provenance-emu.com/) of Provenance.
 2. Download and launch [iOS App Signer](https://dantheman827.github.io/ios-app-signer/).
@@ -79,34 +78,31 @@ Free Apple developer provisioning expires _every 7 days_, requiring reloading, b
 
 ## 💢 Troubleshooting
 
-#### Cannot authenticate
+### Cannot authenticate
 
 * If using 2-Factor Authentication, you will need to go to [Apple ID](https://appleid.apple.com/) settings and make a key and save it for use in Cydia Impactor, type it verbatim.
 
-#### Unable to code-sign / install…
+### Unable to code-sign / install…
 
 * If you are using a free Apple developer account, you can only install a total of 3 apps per Apple ID at a time. You must use delete some apps you are signing, or install with different Apple ID and Bundle IDs.
 * If you used to have a free Safari Developer Account which is no longer supported by Apple, you have two options: 
 
-  1\) Upgrade to a _paid_ [Apple Developer](https://developer.apple.com/programs/) account. 
+  1\) Upgrade to a _paid_ [Apple Developer](https://developer.apple.com/programs/) account.
 
   2\) Use a different Apple ID that _is not_ an expired and deprecated Safari Developer account.
 
-#### **—application-identifier entitlement does not match…**
+### **—application-identifier entitlement does not match…**
 
 * This means you need to match the Bundle IDs with the ones from your previous side-load or build on your device. If you don't know it, or used a 3rd party web-sign \(unsupported\), we recommend you [backup your files](../../info/miscellaneous/restoring-files.md), delete the app and try to clean-install.
 
-#### **Your maximum App ID limit has been reached…**
+### **Your maximum App ID limit has been reached…**
 
 * You have made too many Bundle IDs \(App IDs\) in one week on a free Apple developer account. Stop making new Bundle IDs and revert to one you already made. You are chasing the wrong problem. If all else fails, use a different Apple ID, and make only one new, unique Bundle ID with it \(and save it for later when you need to re-sign in 7 days\).
 
-#### Duplicate app
+### Duplicate app
 
 * If app installs or updates as a duplicate app instead of updating existing installation, you need delete it and  use the _same_ Bundle ID as your original build or you'll end up with a double installation…
-
-
 
 {% hint style="info" %}
 🗯 If you are still stuck ask for [help](https://discord.gg/NhzgrXh) on our Discord.
 {% endhint %}
-
