@@ -108,7 +108,7 @@ The Terminal app can be found in: _/Applications/Utilities_
 2. Install [RVM](https://rvm.io/):
 
    ```bash
-    \curl -sSL https://get.rvm.io | bash -s stable --ruby source ~/.rvm/scripts/rvm
+    \curl -sSL https://get.rvm.io | bash -s stable --ruby && source ~/.rvm/scripts/rvm
    ```
 
 #### First-time Setup
