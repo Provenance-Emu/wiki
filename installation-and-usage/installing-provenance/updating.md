@@ -4,7 +4,7 @@ description: Update your existing installation.
 
 # Updating
 
-When there is a new release or recent commits to a source branch you have a few options for updating. You can _side-load_ a prebuild over your existing side-loaded installation or you can _pull_ the local source and build over your existing built-from-source installation. _**New:**_ Update & Build via `make` \(untested\).
+When there is a new release or recent commits to a source branch you have a few options for updating. You can _sideload_ a prebuild over your existing sideloaded installation or you can _pull_ the local source and build over your existing built-from-source installation. _**New:**_ Update & Build via `make` \(untested\).
 
 **Update Options:**
 
@@ -48,7 +48,7 @@ The Terminal app can be found in: _/Applications/Utilities_
 4. Return to Xcode and…
    * Return to Build: Step 3 to reapply your settings, else…
    * If stashed changes above, just hit the `▶︎` \(Run\) button.
-5. Provenance will compile and run on your device. Unless testing, hit `◼︎` \(Stop\). _Done._
+5. Provenance will compile and run on your device. Unless testing, hit `◼︎` \(Stop\). _Done._ 
 
 ### **Update with Tower**
 
@@ -56,7 +56,7 @@ The Terminal app can be found in: _/Applications/Utilities_
 2. With 'develop' branch marked \(HEAD\), click `Fetch`
 3. If develop branch shows a number next to it, click `Pull`
 4. Click `Stash Changes`
-5. After changes are pulled, click `Apply Stash`, select stash and click `Apply Stash`
+5. After changes are pulled, click `Apply Stash`, select stash and click `Apply Stash` 
 6. In Terminal:
 
    ```bash
@@ -65,7 +65,7 @@ The Terminal app can be found in: _/Applications/Utilities_
     make open
    ```
 
-7. Return to XCode: Hit the `▶︎` \(Run\) button.
+7. Return to Xcode: Hit the `▶︎` \(Run\) button.
 8. Provenance will compile and run on your device. Unless testing, hit `◼︎` \(Stop\). _Done._
 
 {% hint style="info" %}
@@ -88,6 +88,11 @@ If you've already done the First-time Setup, then you can build from the command
     make tvos
   ```
 
+
+
+
+
 {% hint style="info" %}
 🗯 If you are still stuck ask for [help](https://discord.gg/NhzgrXh) on our Discord.
 {% endhint %}
+

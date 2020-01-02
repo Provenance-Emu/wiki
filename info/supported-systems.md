@@ -1,8 +1,6 @@
----
-description: Systems and cores supported by Provenance.
----
-
 # Supported Systems
+
+
 
 | Manufacturer | System | Released |
 | :--- | :--- | :--- |
@@ -37,5 +35,6 @@ description: Systems and cores supported by Provenance.
 |  | [Neo Geo Pocket Color](https://en.wikipedia.org/wiki/Neo_Geo_Pocket_Color) | 3/16 · 1999 |
 | Sony | [PlayStation](https://en.wikipedia.org/wiki/PlayStation_) | 12/3 · 1994 |
 
-For system requirements, refer to [BIOS Requirements](../installation-and-usage/bios-requirements.md).
+For system requirements, refer to [BIOS Requirements](../installation-and-usage/bios-requirements.md).  
 For supported file formats, refer to [Formatting ROMs](../installation-and-usage/roms/formatting-roms.md).
+

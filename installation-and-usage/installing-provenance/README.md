@@ -9,13 +9,13 @@ To install Provenance or update your existing installation follow one of the off
 * ⬇️  [**Installing**](./#installing-alt) · initial installation
 * 🔄  [**Updating**](updating.md) · update existing installation
 
-## Installing <a id="installing-alt"></a>
+### Installing <a id="installing-alt"></a>
 
 There are two approved methods to install Provenance: The easiest or less technical method is to _side-load_ an official prebuilt `.ipa` file to your device\(s\). The more advanced method \(generally developers, contributors, testers…\) is to _build from source_ directly to your device\(s\).
 
 **Installation Options:**
 
-* ⤵️  [**Side-Loading**](sideloading.md) · using _official_ pre-built .ipa
+* ⤵️  [**Sideloading**](sideloading.md) · using _official_ pre-built .ipa
 * ▶️  [**Building**](building-from-source.md) · from latest source
 
 {% hint style="info" %}
@@ -23,3 +23,6 @@ There are two approved methods to install Provenance: The easiest or less techni
   
 _Paid_ Apple Developer provisioning may only require re-signing once a year.
 {% endhint %}
+
+
+

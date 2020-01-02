@@ -87,8 +87,13 @@ To load from an existing save state, press the menu button after loading a ROM. 
 
 From the Save States screen, tap on an existing state and choose Delete from the menu. This cannot be undone, so be sure to backup the save if you want to keep it before deleting it from Provenance.
 
+
+
 {% hint style="warning" %}
 Save states are generally limited to the emulator core they were created with — if you change cores, your old save states will no longer work. If an emulator core is updated by an app update, there is a possibility that save states may not be compatible with the new version if it changed the way it handles save states.
 
 This should also be considered when exporting save states and attempting to play them in another emulator -- unless the other emulator is exactly the same core and version, it is highly unlikely that the save state will work. For this case, battery saves should be used.
 {% endhint %}
+
+#### 
+

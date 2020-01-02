@@ -111,8 +111,8 @@ Due to copyright law, we cannot share ROMs or where to obtain them. You are lega
 
 ### What if I don't have a Mac? <a id="no-mac"></a>
 
-* You don't need a Mac if you are [side-loading](installation-and-usage/installing-provenance/sideloading.md) a release, which is cross-platform.
-* If [building from source](installation-and-usage/installing-provenance/building-from-source.md), you don't technically need a Mac, just macOS. Using a custom built Hackintosh or virtual machine \([Virtualizing macOS](info/miscellaneous/virtualizing-macos.md)\) with macOS would suffice. If these are not an option, side-load the current release or wait for the next release \(beta is build _only_\).
+* You don't need a Mac if you are [sideloading](installation-and-usage/installing-provenance/sideloading.md) a release, which is cross-platform.
+* If [building from source](installation-and-usage/installing-provenance/building-from-source.md), you don't technically need a Mac, just macOS. Using a custom built Hackintosh or virtual machine \([Virtualizing macOS](info/miscellaneous/virtualizing-macos.md)\) with macOS would suffice. If these are not an option, sideload the current release or wait for the next release \(beta is build _only_\).
 
 ### Can I install without a computer? <a id="no-computer"></a>
 
@@ -120,7 +120,7 @@ Currently, there _**is not a safe method**_ for you install the app to your devi
 
 ### Will you release an .ipa of the beta? <a id="prerelease"></a>
 
-Beta Pre-Releases can be found at [builds.provenance-emu.com](https://builds.provenance-emu.com/), however they may not host the very latest dev build which you can always get by [building from source.](installation-and-usage/installing-provenance/building-from-source.md)
+Beta Pre-Releases can be found [builds.provenance-emu.com](https://builds.provenance-emu.com/), however may not host the very latest dev build which you can always get by [building from source.](installation-and-usage/installing-provenance/building-from-source.md)
 
 ### When is the \[next\] release? <a id="release-date"></a>
 

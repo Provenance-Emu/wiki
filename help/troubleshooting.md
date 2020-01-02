@@ -22,7 +22,7 @@ description: 'Things to try if you run into trouble installing, etc…'
 #### **Crash logs**
 
 1. Go to `Settings app -> Privacy -> Analytics -> Analytics Data`.
-2. Search for Provenance log files and tap.
+2. Search for Provenance log files and tap. 
 
 > _You can use the share button to send the log data to our Discord \#help channel if you have the Discord iOS app installed._
 
@@ -48,7 +48,7 @@ _Tips_
 * You can filter by specific severity code classes on the bottom right button `All levels | All tags`
   * Level 0 is Error, &lt;= 1 Error & Warning, &lt;= 2 Errors, Warnings and Info... up to 3 Debug, 4 Verbose.
   * Command + 0 through 4 to quickly change the severity filter
-* You can view the exactly File + Line number the log lines are generated from by making the the _f_ button on the bottom toolbar is highlight as selected.
+* You can view the exactly File + Line number the log lines are genered from by making the the _f_ button on the bottom toolbar is highlight as selected.
 
 ![NSLogger screenshot](https://cdn-images-1.medium.com/max/800/1*bscivru9GJ_NwuDFeYg2YA.png)
 
@@ -65,8 +65,9 @@ _Tips_
 
 1. Build and run the app via XCode
 2. If the console \(bottom shelf of XCode\) isn't displayed, clock `View -> Debug Area -> Show Debug Area`
-3. If the right panel of the console isn't visible click the icon on the far lower right of the bottom debug shelf.
+3. If the right panel of the console isn't visable click the icon on the far lower right of the bottom debug shelf.
 
 You should see Provenance debugging statements as you run the app.
 
 > _App must be started from within XCode for text to appear._
+
