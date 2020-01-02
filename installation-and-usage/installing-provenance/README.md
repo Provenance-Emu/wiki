@@ -15,8 +15,8 @@ There are two approved methods to install Provenance: The easiest or less techni
 
 **Installation Options:**
 
-* ⤵️  [**Sideloading**](https://github.com/Provenance-Emu/wiki/tree/44c17cabbd2ea8974dd992b6c2d33432fcf4c46a/installation-and-usage/installing-provenance/sideloading.md) · using _official_ pre-built .ipa
-* ▶️  [**Building**](building-from-source.md) · from latest source
+* ⤵️  [**Sideloading**](sideloading.md) · using _official_ pre-built .ipa
+* ▶️  [**Building**](building-from-source.md) · from latest source
 
 {% hint style="info" %}
 **Requires** _free_ [Apple Developer](https://9to5mac.com/2016/03/27/how-to-create-free-apple-developer-account-sideload-apps/) account, at a minimum. _Free_ account provisioning expires _every 7 days_, requiring reloading/rebuilding, but you will not lose any data.  
