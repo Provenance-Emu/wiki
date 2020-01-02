@@ -4,7 +4,7 @@ description: Update your existing installation.
 
 # Updating
 
-When there is a new release or recent commits to a source branch you have a few options for updating. You can _sideload_ a prebuild over your existing sideloaded installation or you can _pull_ the local source and build over your existing built-from-source installation. _**New:**_ Update & Build via `make` \(untested\).
+When there is a new release or recent commits to a source branch you have a few options for updating. You can _side-load_ a prebuild over your existing sideloaded installation or you can _pull_ the local source and build over your existing built-from-source installation. _**New:**_ Update & Build via `make` \(untested\).
 
 **Update Options:**
 
