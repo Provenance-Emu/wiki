@@ -4,13 +4,13 @@ description: 'Supported, Classified and Rated Controllers/Gamepads'
 
 # Controllers
 
-* **🖲** [**Controller Types**](./#controller-types)\*\*\*\*
+* **🖲** [**Controller Types**](./#controller-types)
   * [MFi ](../#mfi-controllers)
   * [Steam](../#steam-controller-pseudo-mfi)
   * [iCade](../#icade-controllers)
-* **🕹** [**Controller Forms**](./#controller-forms)\*\*\*\*
+* **🕹** [**Controller Forms**](./#controller-forms)
 * **🎮** [**Controllers**](./#profiles) · Supported, Classified & Rated
-* **🎛** [**Controls**](./#controls)\*\*\*\*
+* **🎛** [**Controls**](./#controls)
 
 ## Controller Types
 
@@ -130,7 +130,7 @@ Standalone controllers are familiar to that of Playstation or Xbox. Recommended 
 | [Mad Catz Micro C.T.R.L.i](https://www.amazon.com/C-T-R-L-i-Mobile-Gamepad-not-machine-specific/dp/B00NSGA1K2)^ | ● | ● | ● | MFi | Extended | ●●○○○ |
 | [MOGA Ace](https://www.amazon.com/PowerA-MOGA-Ace-Power-Electronic-Games/dp/B00H01EXM8/) 5/5c/5s/SE only | ● |  |  | MFi | Standard | ●◐○○○ |
 | [MOGA Rebel](https://www.amazon.com/MOGA-Rebel-Premium-iOS-Gaming-Controller/dp/B00PG0C85Y)^ | ● | ● | ● | iCade | Extended | ●●●◐○ |
-| [PXN 6603 (Speedy)](https://www.amazon.com/Certified-Controller-YF2009-Adjustable-Compatible/dp/B06Y6K8S4D)| ● | ● | ● | MFi | Extended | ●●●◐○ |
+| [PXN 6603 \(Speedy\)](https://www.amazon.com/Certified-Controller-YF2009-Adjustable-Compatible/dp/B06Y6K8S4D) | ● | ● | ● | MFi | Extended | ●●●◐○ |
 | [Rotor Riot](https://www.amazon.com/Rotor-Riot-Certified-Controller-Compatible/dp/B07J1J7D6Z/) | ● | ● | ● | MFi | Extended2 | ●●●●◐ |
 | [Steam Controller](https://www.amazon.com/Steam-Controller-SteamOS/dp/B016KBVBCS/) | ○ | ● | ● | pMFi | Extended2+ | ●●●●◐ |
 | [SteelSeries Nimbus](https://www.amazon.com/SteelSeries-Nimbus-Wireless-Gaming-Controller/dp/B01AZC3III/) + [clamp](https://www.amazon.com/TPFOON-Smartphone-Cellphone-Steelseries-Controller/dp/B07DLY5PB4/) | ● | ● | ● | MFi | Extended | ●●●●◐ |

@@ -6,10 +6,10 @@ description: 'Moderate: Install latest in-development build.'
 
 To get the very latest in-development build, you will need to build from source with Xcode. There are no shortcuts. Provenance is a large project with required dependencies and submodules that help enable efficient development. Check that you meet the requirements. Follow each and every step. Make no assumptions. **Do not** skip _anything._
 
-1. \*\*\*\*[**Get Source**](building-from-source.md#get-source)\*\*\*\*
-2. \*\*\*\*[**Setup**](building-from-source.md#setup) \(install requirements and dependencies\)
-3. \*\*\*\*[**Build Source**](building-from-source.md#build-source) to device \(Xcode\)
-4. _\(Optional\)_ [**Enable Advanced Features**](building-from-source.md#advanced-features)\*\*\*\*
+1. [**Get Source**](building-from-source.md#get-source)
+2. [**Setup**](building-from-source.md#setup) \(install requirements and dependencies\)
+3. [**Build Source**](building-from-source.md#build-source) to device \(Xcode\)
+4. _\(Optional\)_ [**Enable Advanced Features**](building-from-source.md#advanced-features)
 
 {% hint style="warning" %}
 The beta is in active-development.
@@ -26,14 +26,14 @@ DO NOT expect to use a beta without issues, losing your saves, or bugs.
   * on a Mac, Hackintosh or virtual machine \([Virtualizing macOS](https://github.com/Provenance-Emu/Provenance/wiki/Virtualizing-macOS)\)
 * [Xcode](https://itunes.apple.com/us/app/xcode/id497799835) 10.2+
 * iOS 10+ a/o tvOS 10+ SDKs
-* _Free_ [Apple Developer](https://9to5mac.com/2016/03/27/how-to-create-free-apple-developer-account-sideload-apps/) account \(at a minimum\) or a _paid_ account.  
+* _Free_ [Apple Developer](https://9to5mac.com/2016/03/27/how-to-create-free-apple-developer-account-sideload-apps/) account \(at a minimum\) or a _paid_ account.
 
-  🛑 **DO NOT** enroll to join the full Developer Program or you will be locked into a _Pending_ payment state, unable to code-sign unless you pay or contact Apple to cancel the enrollment.  
+  🛑 **DO NOT** enroll to join the full Developer Program or you will be locked into a _Pending_ payment state, unable to code-sign unless you pay or contact Apple to cancel the enrollment.
 
 * Connections:
-  * iPhone / iPad:    `Lightning` → `USB-A / USB-C` cable¹
-  * Apple TV 4:      `USB-C` → `USB-A / USB-C` cable¹
-  * Apple TV 4K:     `WiFi`²  \([Instructions](http://www.redmondpie.com/how-to-wirelessly-connect-apple-tv-4k-to-xcode-on-mac/)\)
+  * iPhone / iPad:    `Lightning` → `USB-A / USB-C` cable¹
+  * Apple TV 4:      `USB-C` → `USB-A / USB-C` cable¹
+  * Apple TV 4K:     `WiFi`²  \([Instructions](http://www.redmondpie.com/how-to-wirelessly-connect-apple-tv-4k-to-xcode-on-mac/)\)
 
 ¹ Depends on which [ports](https://support.apple.com/en-us/HT201736) you have. WiFi can be setup after.  
 ² USB ports have been discontinued on Apple TV 4K+.
@@ -45,9 +45,9 @@ DO NOT expect to use a beta without issues, losing your saves, or bugs.
 
 **Source Options**
 
-* 🔃  [**Clone**](building-from-source.md#clone) using…
-  * ![](https://user-images.githubusercontent.com/3118097/37563629-48ec3f26-2a42-11e8-9fd8-784e9e830ebe.png)  [Terminal](building-from-source.md#terminal)
-  * ![](https://user-images.githubusercontent.com/3118097/37563630-4903ebbc-2a42-11e8-888a-09a94fc0058d.png)  [Tower](building-from-source.md#tower)
+* 🔃  [**Clone**](building-from-source.md#clone) using…
+  * ![](https://user-images.githubusercontent.com/3118097/37563629-48ec3f26-2a42-11e8-9fd8-784e9e830ebe.png)  [Terminal](building-from-source.md#terminal)
+  * ![](https://user-images.githubusercontent.com/3118097/37563630-4903ebbc-2a42-11e8-888a-09a94fc0058d.png)  [Tower](building-from-source.md#tower)
 
 ### Clone
 
@@ -132,15 +132,14 @@ make help
 
 1. Open the Provenance Xcode workspace: ![](https://user-images.githubusercontent.com/3118097/37574056-3e07abe2-2adb-11e8-948c-acb4d539e658.png) `Provenance.xcworkspace`
 
-   ⚠️  **Do not** use the .xcodeproj file or you will have build errors!
+   ⚠️ **Do not** use the .xcodeproj file or you will have build errors!
 
-    ![](https://user-images.githubusercontent.com/3118097/37563995-73fdd65e-2a4a-11e8-949f-5aa8351dcbb2.png)
+   ![](https://user-images.githubusercontent.com/3118097/37563995-73fdd65e-2a4a-11e8-949f-5aa8351dcbb2.png)
 
 2. Go to Preferences via Menubar: `Xcode` → `Preferences` or use `⌘,` shortcut.
    * Select Accounts tab.
    * Click `+`
-   * Sign in with your personal or developer Apple ID. If you don't have one, click `Create Apple ID` or go to [appleid.apple.com](https://appleid.apple.com/).
-     ⚠️ At minimum, sign up as a _free_ [Apple Developer](https://9to5mac.com/2016/03/27/how-to-create-free-apple-developer-account-sideload-apps/) and do no more than agree to the terms.
+   * Sign in with your personal or developer Apple ID. If you don't have one, click `Create Apple ID` or go to [appleid.apple.com](https://appleid.apple.com/). ⚠️ At minimum, sign up as a _free_ [Apple Developer](https://9to5mac.com/2016/03/27/how-to-create-free-apple-developer-account-sideload-apps/) and do no more than agree to the terms.
 
      🛑 DO NOT enroll to join the full Developer Program or you will be locked into a _Pending_ payment state, unable to code-sign unless you pay or contact Apple to cancel the enrollment.
 
@@ -155,33 +154,32 @@ make help
      * **ProvenanceTV**
      * **TopShelf**
      * **ProvenanceShared-tvOS**
-   * Change the Bundle IDs for your target by replacing only `provenance-emu` with something unique to you \(like your username\), and use the same replacement for _all_ of your targets and _all_ subsequent updates.  
+   * Change the Bundle IDs for your target by replacing only `provenance-emu` with something unique to you \(like your username\), and use the same replacement for _all_ of your targets and _all_ subsequent updates.
 
      🏍 You can install "sidecar" for testing by using a different bundle ID than your previous/main install.  
      ![](https://user-images.githubusercontent.com/3118097/40105626-5b7e9bc2-58a8-11e8-8c39-3b1d8119979a.gif)
 
-     ⚠️ .gif outdated, refer to text instructions.
+     ⚠️ .gif outdated, refer to text instructions.
+4. If using a free Apple Developer account, **Turn OFF** these Capabilities for _all_ targets:
+   * ![](https://user-images.githubusercontent.com/3118097/48986708-22f14800-f0cd-11e8-98ec-6f093375d969.png)  App Groups 
+   * ![](https://user-images.githubusercontent.com/3118097/48986708-22f14800-f0cd-11e8-98ec-6f093375d969.png)  iCloud
+   * ![](https://user-images.githubusercontent.com/3118097/48986708-22f14800-f0cd-11e8-98ec-6f093375d969.png)  Multipath
+   * ![](https://user-images.githubusercontent.com/3118097/48986708-22f14800-f0cd-11e8-98ec-6f093375d969.png)  Push Notifications
+   * ![](https://user-images.githubusercontent.com/3118097/48986708-22f14800-f0cd-11e8-98ec-6f093375d969.png)  Siri
+5. Turn ON ☑️**Automatically manage signing** and select your Development Team for your targets.
 
-* If using a free Apple Developer account, **Turn OFF** these Capabilities for _all_ targets:
-  * ![](https://user-images.githubusercontent.com/3118097/48986708-22f14800-f0cd-11e8-98ec-6f093375d969.png)  App Groups 
-  * ![](https://user-images.githubusercontent.com/3118097/48986708-22f14800-f0cd-11e8-98ec-6f093375d969.png)  iCloud
-  * ![](https://user-images.githubusercontent.com/3118097/48986708-22f14800-f0cd-11e8-98ec-6f093375d969.png)  Multipath
-  * ![](https://user-images.githubusercontent.com/3118097/48986708-22f14800-f0cd-11e8-98ec-6f093375d969.png)  Push Notifications
-  * ![](https://user-images.githubusercontent.com/3118097/48986708-22f14800-f0cd-11e8-98ec-6f093375d969.png)  Siri
-* Turn ON ☑️**Automatically manage signing** and select your Development Team for your targets.
+   ![](https://user-images.githubusercontent.com/3118097/40101989-0a73fa7e-589e-11e8-8f73-7f99195133a1.png)
 
-  ![](https://user-images.githubusercontent.com/3118097/40101989-0a73fa7e-589e-11e8-8f73-7f99195133a1.png)  
+6. Select a `-Release` profile from the Scheme Menu and connect your device\(s\) and select in the Destination Menu:
 
-1. Select a `-Release` profile from the Scheme Menu and connect your device\(s\) and select in the Destination Menu:
+   ![](https://user-images.githubusercontent.com/3118097/41824506-165731fc-77c6-11e8-965d-ac56b65e560c.png)
 
-    ![](https://user-images.githubusercontent.com/3118097/41824506-165731fc-77c6-11e8-965d-ac56b65e560c.png)
+   ![](https://user-images.githubusercontent.com/3118097/41824642-6fc72e52-77c8-11e8-88ad-7d4a464974ef.png)
 
-    ![](https://user-images.githubusercontent.com/3118097/41824642-6fc72e52-77c8-11e8-88ad-7d4a464974ef.png)  
-
-2. If you are…
+7. If you are…
    * Paid Apple Developer: Continue to Enable Advanced Features…
    * Free Apple Developer: Hit the `▶︎` \(Run\) button.
-3. Provenance will compile and run on your device. Unless testing, hit `◼︎` \(Stop\). _Done._
+8. Provenance will compile and run on your device. Unless testing, hit `◼︎` \(Stop\). _Done._
 
 💢 If you get stuck, check out [Troubleshooting](building-from-source.md#troubleshooting).
 
@@ -202,31 +200,32 @@ _Paid_ Apple Developer provisioning may only require re-signing once a year.
 
    * **iOS:**
      * Provenance:
-       * ![](https://user-images.githubusercontent.com/3118097/48986709-2389de80-f0cd-11e8-8d98-119792b0bc4f.png)  App Groups
+       * ![](https://user-images.githubusercontent.com/3118097/48986709-2389de80-f0cd-11e8-8d98-119792b0bc4f.png)  App Groups
          * 🔲 `group.provenance-emu.provenance`
          * ☑️ `group.[change-this].provenance`
-       * ![](https://user-images.githubusercontent.com/3118097/48986709-2389de80-f0cd-11e8-8d98-119792b0bc4f.png)  iCloud
-       * ![](https://user-images.githubusercontent.com/3118097/48986709-2389de80-f0cd-11e8-8d98-119792b0bc4f.png)  Multipath
-       * ![](https://user-images.githubusercontent.com/3118097/48986709-2389de80-f0cd-11e8-8d98-119792b0bc4f.png)  Push Notifications
-       * ![](https://user-images.githubusercontent.com/3118097/48986709-2389de80-f0cd-11e8-8d98-119792b0bc4f.png)  Siri 
+       * ![](https://user-images.githubusercontent.com/3118097/48986709-2389de80-f0cd-11e8-8d98-119792b0bc4f.png)  iCloud
+       * ![](https://user-images.githubusercontent.com/3118097/48986709-2389de80-f0cd-11e8-8d98-119792b0bc4f.png)  Multipath
+       * ![](https://user-images.githubusercontent.com/3118097/48986709-2389de80-f0cd-11e8-8d98-119792b0bc4f.png)  Push Notifications
+       * ![](https://user-images.githubusercontent.com/3118097/48986709-2389de80-f0cd-11e8-8d98-119792b0bc4f.png)  Siri 
      * Spotlight:
-       * ![](https://user-images.githubusercontent.com/3118097/48986709-2389de80-f0cd-11e8-8d98-119792b0bc4f.png)  App Groups
-       * ![](https://user-images.githubusercontent.com/3118097/48986709-2389de80-f0cd-11e8-8d98-119792b0bc4f.png)  iCloud
+       * ![](https://user-images.githubusercontent.com/3118097/48986709-2389de80-f0cd-11e8-8d98-119792b0bc4f.png)  App Groups
+       * ![](https://user-images.githubusercontent.com/3118097/48986709-2389de80-f0cd-11e8-8d98-119792b0bc4f.png) iCloud
          * 🔘Specify custom containers:
 
-                🔲 `iCloud.com.provenance-emu.provenance`
+           ```text
+            🔲 `iCloud.com.provenance-emu.provenance`
 
-                ☑️ `iCloud.com.[change-this].provenance`
+            ☑️ `iCloud.com.[change-this].provenance`
+           ```
    * **tvOS:**
      * ProvenanceTV:
-       * ![](https://user-images.githubusercontent.com/3118097/48986709-2389de80-f0cd-11e8-8d98-119792b0bc4f.png)  App Groups
+       * ![](https://user-images.githubusercontent.com/3118097/48986709-2389de80-f0cd-11e8-8d98-119792b0bc4f.png)  App Groups
          * 🔲 `group.provenance-emu.provenance`
          * ☑️ `group.[change-this].provenance`
-       * ![](https://user-images.githubusercontent.com/3118097/48986709-2389de80-f0cd-11e8-8d98-119792b0bc4f.png)  iCloud
-       * ![](https://user-images.githubusercontent.com/3118097/48986709-2389de80-f0cd-11e8-8d98-119792b0bc4f.png)  Push Notifications 
+       * ![](https://user-images.githubusercontent.com/3118097/48986709-2389de80-f0cd-11e8-8d98-119792b0bc4f.png)  iCloud
+       * ![](https://user-images.githubusercontent.com/3118097/48986709-2389de80-f0cd-11e8-8d98-119792b0bc4f.png)  Push Notifications 
      * TopShelf:
-       * ![](https://user-images.githubusercontent.com/3118097/48986709-2389de80-f0cd-11e8-8d98-119792b0bc4f.png)  App Groups
-
+       * ![](https://user-images.githubusercontent.com/3118097/48986709-2389de80-f0cd-11e8-8d98-119792b0bc4f.png) App Groups
          * 🔲 `group.provenance-emu.provenance`
          * ☑️ `group.[change-this].provenance`
 
@@ -332,7 +331,7 @@ If you are having trouble building or sideloading the app, check for your issue 
   gem update --system
   ```
 
-## ⚠️ Known Issues
+## ⚠️ Known Issues
 
 **something about database build error**
 
@@ -343,3 +342,4 @@ If you are having trouble building or sideloading the app, check for your issue 
 {% hint style="info" %}
 🗯 If you are still stuck try [debugging](../../help/troubleshooting.md) it yourself or ask for [help](https://discord.gg/NhzgrXh) on our Discord.
 {% endhint %}
+

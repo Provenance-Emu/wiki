@@ -8,11 +8,11 @@ When there is a new release or recent commits to a source branch you have a few 
 
 **Update Options:**
 
-* ⤵️  [**Sideload**](sideloading.md)\*\*\*\*
-* 🔃  [**Pull**](updating.md#pull) latest changes using…
-  * ![](https://user-images.githubusercontent.com/3118097/37563629-48ec3f26-2a42-11e8-9fd8-784e9e830ebe.png)  [Terminal](updating.md#update-with-terminal)
-  * ![](https://user-images.githubusercontent.com/3118097/37563630-4903ebbc-2a42-11e8-888a-09a94fc0058d.png)  [Tower](updating.md#update-with-tower)
-* ⏩  [**Update & Build**](updating.md#update-and-build)\*\*\*\*
+* ⤵️  [**Sideload**](https://github.com/Provenance-Emu/wiki/tree/44c17cabbd2ea8974dd992b6c2d33432fcf4c46a/installation-and-usage/installing-provenance/sideloading.md)
+* 🔃  [**Pull**](updating.md#pull) latest changes using…
+  * ![](https://user-images.githubusercontent.com/3118097/37563629-48ec3f26-2a42-11e8-9fd8-784e9e830ebe.png)  [Terminal](updating.md#update-with-terminal)
+  * ![](https://user-images.githubusercontent.com/3118097/37563630-4903ebbc-2a42-11e8-888a-09a94fc0058d.png)  [Tower](updating.md#update-with-tower)
+* ⏩  [**Update & Build**](updating.md#update-and-build)
 
 ## Pull
 
@@ -91,3 +91,4 @@ If you've already done the First-time Setup, then you can build from the command
 {% hint style="info" %}
 🗯 If you are still stuck ask for [help](https://discord.gg/NhzgrXh) on our Discord.
 {% endhint %}
+
