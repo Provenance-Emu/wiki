@@ -10,12 +10,12 @@ description: Game Saves and Saves States.
 
 There are two ways to save your progress in Provenance: the native in-game save, known as _Battery Saves_, and freezing the state of the emulator anywhere in a game called _Save States_.
 
-* [**Battery Saves**](saves.md#battery-saves)
+* \*\*\*\*[**Battery Saves**](saves.md#battery-saves)\*\*\*\*
   * [Saving Games](saves.md#saving-games)
   * [Supported Formats](saves.md#supported-formats)
   * [Converting Formats](saves.md#converting-formats)
   * [Importing Saves](saves.md#importing-saves)
-* [**Save States**](saves.md#save-states)
+* \*\*\*\*[**Save States**](saves.md#save-states)\*\*\*\*
   * [Saving States](saves.md#saving-states)
   * [Importing States](saves.md#importing-saves)
 
@@ -48,7 +48,8 @@ If you have memory card files from another emulator you can convert them to `.mc
 
 Since these files are created and managed by the game, you are able to move them between emulator implementations and they should still work as intended, unlike save states which are emulator dependent, unless they are of a different format, and will require conversion.
 
-It makes things easier if you run the game at least once within Provenance so that it can create the required directories and filename structures.
+It makes things easier if you run the game at least once within Provenance so that it can create the required directories and filename structures.  
+
 
 1. Start the web server in Provenance.
 2. Navigate to `Battery States/[ROM-Filename]/`
@@ -91,4 +92,3 @@ Save states are generally limited to the emulator core they were created with â€
 
 This should also be considered when exporting save states and attempting to play them in another emulator -- unless the other emulator is exactly the same core and version, it is highly unlikely that the save state will work. For this case, battery saves should be used.
 {% endhint %}
-
