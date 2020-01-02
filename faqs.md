@@ -120,7 +120,7 @@ Currently, there _**is not a safe method**_ for you install the app to your devi
 
 ### Will you release an .ipa of the beta? <a id="prerelease"></a>
 
-Beta Pre-Releases can be found [builds.provenance-emu.com](https://builds.provenance-emu.com/), however may not host the very latest dev build which you can always get by [building from source.](installation-and-usage/installing-provenance/building-from-source.md)
+Beta Pre-Releases can be found at [builds.provenance-emu.com](https://builds.provenance-emu.com/), however they may not host the very latest dev build which you can always get by [building from source.](installation-and-usage/installing-provenance/building-from-source.md)
 
 ### When is the \[next\] release? <a id="release-date"></a>
 
@@ -131,8 +131,7 @@ As a small team, we prefer to not make promises we will break with release dates
 This is usually due to one of the following reasons…
 
 * You are using a free Apple developer account, which requires you to re-sign every 7 days. You can…
-  * [Side](installation-and-usage/installing-provenance/sideloading.md)
-  * [load](installation-and-usage/installing-provenance/sideloading.md) using the same Apple ID used previously.
+  * [Side](installation-and-usage/installing-provenance/sideloading.md)-[load](installation-and-usage/installing-provenance/sideloading.md) using the same Apple ID used previously.
   * [Build](installation-and-usage/installing-provenance/building-from-source.md) over the app using the same Bundle IDs used previously.
   * [Upgrade](https://developer.apple.com/programs/) to a paid Apple developer account and use the app indefinitely.
 * You were using an unsupported 3rd party build of the app and Apple revoked the provisioning profile as it violates their terms of use. You should…
