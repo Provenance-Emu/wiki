@@ -74,7 +74,7 @@ _Paid_ Apple Developer provisioning may only require re-signing once a year.
 4. Connect your device. ⚠️If you haven't yet, register your device to your Apple ID in Xcode. Easiest way to do this is to make dummy app in Xcode and have it automatically create the provisioning when you enter your Bundle ID  \([Example](https://dantheman827.github.io/ios-app-signer/#tab-bar)\).
 5. Install:
    * [Xcode](https://itunes.apple.com/us/app/xcode/id497799835): Window → Devices and Simulators: Select your device. Drop the new `.ipa` file onto Installed Apps.
-   * [Configurator](https://support.apple.com/apple-configurator): Double-click your device → Apps: Drop the new `.ipa` file here. \(Configurator sideloading no longer works on macOS Catalina\)
+   * [Configurator](https://support.apple.com/apple-configurator): Double-click your device → Apps: Drop the new `.ipa` file here.
 6. _Done._ \(If using a free developer account, repeat from step 4 after it _**expires in 7 days**_\)
 
 {% hint style="info" %}
