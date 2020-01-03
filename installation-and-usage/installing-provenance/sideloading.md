@@ -9,7 +9,7 @@ Prebuilt .ipa releases can sideloaded onto your devices and must be re-signed us
 #### **Sideloading Options:**
 
 * 🔨  [**Cydia Impactor** ](sideloading.md#cydia-impactor)· macOS/Windows
-* 🖋  [**iOS App Signer**](sideloading.md#ios-app-signer) · macOS + Xcode a/o Configurator
+* 🖋  [**iOS App Signer**](sideloading.md#ios-app-signer) · macOS + Xcode or Configurator
 
 {% hint style="success" %}
 **Requirements**
@@ -36,7 +36,7 @@ Sideloading from 3rd party sources _**is not supported**_.
 
 ## Cydia Impactor
 
-1. Download a [Release](https://github.com/Provenance-Emu/Provenance/releases) or [Pre-Release](https://builds.provenance-emu.com/) of Provenance. The _prerelease build server is not working but the latest prebuilt files can be found here for now…_
+1. Download a [Release](https://github.com/Provenance-Emu/Provenance/releases) or [Prerelease](https://builds.provenance-emu.com/) of Provenance. The _prerelease build server is not working but the latest prebuilt files can be found here for now…_
    1. _\*\*\*\*_[_**Provenance v1.5b 2773 - iOS**_ ](https://drive.google.com/a/sevand.co/file/d/1-H-uXjcA56Hgmi_GXcaxn6kLQmCi4q1k/view?usp=sharing) _\(.ipa\)_
    2. \_\_[_**Provenance v1.5b 2773 - tvOS**_](https://drive.google.com/a/sevand.co/file/d/1-ORX0wIcd6TgDVW_Ywo8WcnkOoLVzXD6/view?usp=sharing) _****\(.ipa\)_
 2. Download and launch [Cydia Impactor](http://www.cydiaimpactor.com/).
@@ -68,14 +68,17 @@ _Paid_ Apple Developer provisioning may only require re-signing once a year.
 
 ## iOS App Signer
 
-1. Download a [Release](https://github.com/Provenance-Emu/Provenance/releases) or [Pre-Release](https://builds.provenance-emu.com/) of Provenance.
+1. Download a [Release](https://github.com/Provenance-Emu/Provenance/releases) or [Prerelease](https://builds.provenance-emu.com/) of Provenance. The _prerelease build server is not working but the latest prebuilt files can be found here for now…_
+   1. _\*\*\*\*_[_**Provenance v1.5b 2773 - iOS**_ ](https://drive.google.com/a/sevand.co/file/d/1-H-uXjcA56Hgmi_GXcaxn6kLQmCi4q1k/view?usp=sharing) _\(.ipa\)_
+   2. \_\_[_**Provenance v1.5b 2773 - tvOS**_](https://drive.google.com/a/sevand.co/file/d/1-ORX0wIcd6TgDVW_Ywo8WcnkOoLVzXD6/view?usp=sharing) _****\(.ipa\)_
 2. Download and launch [iOS App Signer](https://dantheman827.github.io/ios-app-signer/).
-3. Select `.ipa` file and resign it to yourself, selecting the Provenance Bundle ID you've used in the past if you have one already have one. If you don't have one, try creating one here if it lets you or proceed to step 4 and return to this.    🆔 Bundle ID: `com.[change-this].provenance`  Replace `[change-this]` with something unique like your username. 
+3. Select `.ipa` file and resign it to yourself, selecting the Provenance Bundle ID you've used in the past if you already have one. If you don't have one, try creating one here if it lets you or proceed to step 4 and return to this.    🆔 Bundle ID: `com.[change-this].provenance`  Replace `[change-this]` with something unique like your username. 
 4. Connect your device. ⚠️If you haven't yet, register your device to your Apple ID in Xcode. Easiest way to do this is to make dummy app in Xcode and have it automatically create the provisioning when you enter your Bundle ID  \([Example](https://dantheman827.github.io/ios-app-signer/#tab-bar)\).
 5. Install:
    * [Xcode](https://itunes.apple.com/us/app/xcode/id497799835): Window → Devices and Simulators: Select your device. Drop the new `.ipa` file onto Installed Apps.
    * [Configurator](https://support.apple.com/apple-configurator): Double-click your device → Apps: Drop the new `.ipa` file here.
-6. _Done._ \(If using a free developer account, repeat from step 4 after it _**expires in 7 days**_\)
+6. On device: Go to `Settings` → `General` → `Profiles & Device Management`, tap on your certificate and then `Trust`
+7. _Done._ \(If using a free developer account, repeat from step 4 after it _**expires in 7 days**_\)
 
 {% hint style="info" %}
 Free Apple developer provisioning expires _every 7 days_, requiring reloading, but you will not lose any data.
@@ -106,7 +109,7 @@ Free Apple developer provisioning expires _every 7 days_, requiring reloading, b
 
 #### Duplicate app
 
-* If app installs or updates as a duplicate app instead of updating existing installation, you need delete it and  use the _same_ Bundle ID as your original build or you'll end up with a double installation…
+* If app installs or updates as a duplicate app instead of updating existing installation, you need to delete it and use the _same_ Bundle ID as your original build or you'll end up with a double installation…
 
 
 
