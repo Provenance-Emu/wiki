@@ -41,7 +41,6 @@ Due to Apple's shortsightedness, all MFi controllers lack certain buttons to be 
    * MFi+ Combos
    * UI Buttons within Pause Menu
 3. Missing Buttons Always On-Screen \(iOS only\) _Beta, not all systems supported_
-4. MFi Controls
 
 ### Steam Controller \(pseudo MFi\)
 
