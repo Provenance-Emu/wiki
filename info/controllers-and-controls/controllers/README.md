@@ -72,8 +72,9 @@ Stick Toggle = ◉ Stick Click + ◀︎ (Back)
 
 Currently, ◀︎ \(Back\) / Select and ▶︎ \(Forward\) / Start will work with PSX, and N64 via MFi+ \(full support coming later…\)
 
-* Requires [Steam Controller BLE firmware](https://support.steampowered.com/kb_article.php?ref=7728-QESJ-4420) via Steam Beta program.
-* [MFi Controls](https://bit.ly/2LDZNzI)
+{% hint style="info" %}
+Requires [Steam Controller BLE firmware](https://support.steampowered.com/kb_article.php?ref=7728-QESJ-4420) via Steam Beta program.
+{% endhint %}
 
 ### iCade Controllers
 

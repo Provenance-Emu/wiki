@@ -4,7 +4,7 @@ description: 'Hacks, Patches, Translations, Mods'
 
 # Modding ROMs
 
-**\#️⃣**  [**Patching**](formatting-roms.md#patching) ****· _applying translations, hacks, etc…_  
+**\#️⃣**  [**Patching**](mods.md#patching) ****· _applying translations, hacks, etc…_  
 ❇️  [**High Resolution Textures**](mods.md#high-resolution-textures-n-64) \(N64\)
 
 ## Patching
