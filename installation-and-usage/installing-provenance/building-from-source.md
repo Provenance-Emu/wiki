@@ -121,7 +121,7 @@ The Terminal app can be found in: _/Applications/Utilities_
     make open
    ```
 
-3. Continue to Build Source… 
+3. Continue to [Build Source…](building-from-source.md#build-source) 
 
 You can get a list of all commands by running…
 
@@ -188,7 +188,7 @@ make help
     ![](https://user-images.githubusercontent.com/3118097/41824642-6fc72e52-77c8-11e8-88ad-7d4a464974ef.png)  
 
 2. If you are…
-   * Paid Apple Developer: Continue to Enable Advanced Features…
+   * Paid Apple Developer: Continue to [Enable Advanced Features…](building-from-source.md#advanced-features)
    * Free Apple Developer: Hit the `▶︎` \(Run\) button.
 3. Provenance will compile and run on your device. Unless testing, hit `◼︎` \(Stop\). _Done._
 
