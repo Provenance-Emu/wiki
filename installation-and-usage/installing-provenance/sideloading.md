@@ -24,7 +24,7 @@ Prebuilt .ipa releases can sideloaded onto your devices and must be re-signed us
   * Apple TV 4:      `USB-C` → `USB-A / USB-C` cable¹
   * Apple TV 4K:     `WiFi`²  \([Instructions](http://www.redmondpie.com/how-to-wirelessly-connect-apple-tv-4k-to-xcode-on-mac/)\)
 
-¹ Depends on which [ports](https://support.apple.com/en-us/HT201736) you have. WiFi can be setup after.  
+¹ Depends on which [ports](https://support.apple.com/en-us/HT201736) you have. _WiFi can be setup after._  
 ² USB ports have been discontinued on Apple TV 4K+.
 {% endhint %}
 
