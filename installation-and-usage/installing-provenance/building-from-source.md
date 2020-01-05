@@ -282,7 +282,7 @@ If you are having trouble building or sideloading the app, check for your issue 
 
 #### **—application-identifier entitlement does not match…**
 
-* This means you need to match the Bundle IDs with the ones from your previous sideload or build on your device. If you don't know it, or used a 3rd party web-sign \(unsupported\), we recommend you [backup your files](https://github.com/Provenance-Emu/Provenance/wiki/Restoring-Files), delete the app and try to clean-install.
+* This means you need to match the Bundle IDs with the ones from your previous sideload or build on your device. If you don't know it, or used a 3rd party web-sign \(unsupported\), we recommend you[ backup your files](../../info/miscellaneous/restoring-files.md), delete the app and try to clean-install.
 
 #### **Your maximum App ID limit has been reached…**
 
@@ -290,7 +290,7 @@ If you are having trouble building or sideloading the app, check for your issue 
 
 #### **something something …Mupen build error**
 
-* You are missing submodules. **Do not** download .zip from GitHub. Use Terminal. Go back to Get Source and **do not** skip any steps. 
+* You are missing submodules. **Do not** download .zip from GitHub. Use Terminal. Go back to [Get Source](building-from-source.md#get-source) and **do not** skip any steps. 
 
 #### Unsupported arch
 
