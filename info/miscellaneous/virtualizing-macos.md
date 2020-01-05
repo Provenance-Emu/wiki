@@ -64,5 +64,5 @@ If you are having trouble getting things to work on a virtual machine, check for
 
 #### Cannot detect Apple TV 4K over wifi…
 
-* Try changing he network adapter from `NAT` to custom and choose example `VMnet0` so it connects directly to your local network for broadcasting \(solution found in [KODI forum](https://forum.kodi.tv/archive/index.php?thread-325982.html) discussion\).
+* Try changing the network adapter from `NAT` to `custom` and choose example `VMnet0` so it connects directly to your local network for broadcasting \(solution found in [KODI forum](https://forum.kodi.tv/archive/index.php?thread-325982.html) discussion\).
 
