@@ -17,7 +17,7 @@ At the moment exporting or restoring files such can only be done manually…
 {% endhint %}
 
 {% hint style="warning" %}
-**DO NOT** rely solely on Save States, they are not guaranteed to be compatible between app versions due to core updates, etc… Before updating the app, launch the games you want to salvage and create in-game saves to be safe.
+**DO NOT** rely solely on Save States, they are not guaranteed to be compatible between app versions due to core updates, etc… Before updating the app, launch the games you to salvage and create in-game saves to be safe.
 {% endhint %}
 
 ### Exporting & Restoring Files
