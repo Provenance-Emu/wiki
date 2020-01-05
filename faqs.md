@@ -120,7 +120,7 @@ Currently, there _**is not a safe method**_ for you install the app to your devi
 
 ### Will you release an .ipa of the beta? <a id="prerelease"></a>
 
-Beta Pre-Releases can be found [builds.provenance-emu.com](https://builds.provenance-emu.com/), however may not host the very latest dev build which you can always get by [building from source.](installation-and-usage/installing-provenance/building-from-source.md)
+~~Beta prereleases can be found~~ [~~builds.provenance-emu.com~~](https://builds.provenance-emu.com/)~~,~~ however may not host the very latest dev build which you can always get by [building from source.](installation-and-usage/installing-provenance/building-from-source.md)
 
 ### When is the \[next\] release? <a id="release-date"></a>
 

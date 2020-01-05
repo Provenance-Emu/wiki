@@ -22,11 +22,10 @@ Prebuilt .ipa releases can sideloaded onto your devices and must be re-signed us
 * Connections:
   * iPhone / iPad:    `Lightning` → `USB-A / USB-C` cable¹
   * Apple TV 4:      `USB-C` → `USB-A / USB-C` cable¹
-  * Apple TV 4K:     `WiFi`²  \([Instructions](http://www.redmondpie.com/how-to-wirelessly-connect-apple-tv-4k-to-xcode-on-mac/)\)³
+  * Apple TV 4K:     `WiFi`²  \([Instructions](http://www.redmondpie.com/how-to-wirelessly-connect-apple-tv-4k-to-xcode-on-mac/)\)
 
-¹ Depends on which [ports](https://support.apple.com/en-us/HT201736) you have. _WiFi can be setup after._  
-² USB ports have been discontinued on Apple TV 4K+.  
-³ If using a virtual machine, you may need to [configure your network settings](../../info/miscellaneous/virtualizing-macos.md#cannot-detect-apple-tv-4k-over-wifi).
+¹ Depends on which [ports](https://support.apple.com/en-us/HT201736) you have. WiFi can be setup after.  
+² USB ports have been discontinued on Apple TV 4K+.
 {% endhint %}
 
 {% hint style="danger" %}
@@ -37,7 +36,7 @@ Sideloading from 3rd party sources _**is not supported**_.
 
 ## Cydia Impactor
 
-1. Download a [Release](https://github.com/Provenance-Emu/Provenance/releases) or Prerelease of Provenance. The _prerelease build server is not working but the latest prebuilt files can be found here for now…_
+1. Download a [Release](https://github.com/Provenance-Emu/Provenance/releases) or [Prerelease](https://builds.provenance-emu.com/) of Provenance. The _prerelease build server is not working but the latest prebuilt files can be found here for now…_
    1. _\*\*\*\*_[_**Provenance v1.5b 2773 - iOS**_ ](https://app.box.com/s/9kalo3vyg6giciaegkvlvpdcqzrpp5o0) _\(.ipa\)_
    2. \_\_[_**Provenance v1.5b 2773 - tvOS**_](https://app.box.com/s/o2uqtwthc6fgevocspa93bl6k2dvdlsf) _****\(.ipa\)_
 2. Download and launch [Cydia Impactor](http://www.cydiaimpactor.com/).
@@ -69,7 +68,7 @@ _Paid_ Apple Developer provisioning may only require re-signing once a year.
 
 ## iOS App Signer
 
-1. Download a [Release](https://github.com/Provenance-Emu/Provenance/releases) or Prerelease of Provenance. The _prerelease build server is not working but the latest prebuilt files can be found here for now…_
+1. Download a [Release](https://github.com/Provenance-Emu/Provenance/releases) or [Prerelease](https://builds.provenance-emu.com/) of Provenance. The _prerelease build server is not working but the latest prebuilt files can be found here for now…_
    1. _\*\*\*\*_[_**Provenance v1.5b 2773 - iOS**_ ](https://drive.google.com/a/sevand.co/file/d/1-H-uXjcA56Hgmi_GXcaxn6kLQmCi4q1k/view?usp=sharing) _\(.ipa\)_
    2. \_\_[_**Provenance v1.5b 2773 - tvOS**_](https://drive.google.com/a/sevand.co/file/d/1-ORX0wIcd6TgDVW_Ywo8WcnkOoLVzXD6/view?usp=sharing) _****\(.ipa\)_
 2. Download and launch [iOS App Signer](https://dantheman827.github.io/ios-app-signer/).
