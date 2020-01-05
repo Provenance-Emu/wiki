@@ -36,7 +36,7 @@ DO NOT expect to use a beta without issues, losing your saves, or bugs.
   * Apple TV 4:      `USB-C` → `USB-A / USB-C` cable¹
   * Apple TV 4K:     `WiFi`²  \([Instructions](http://www.redmondpie.com/how-to-wirelessly-connect-apple-tv-4k-to-xcode-on-mac/)\)
 
-¹ Depends on which [ports](https://support.apple.com/en-us/HT201736) you have. _WiFi can be setup after._  
+¹ Depends on which [ports](https://support.apple.com/en-us/HT201736) you have. WiFi can be setup after.  
 ² USB ports have been discontinued on Apple TV 4K+.
 {% endhint %}
 
@@ -121,7 +121,7 @@ The Terminal app can be found in: _/Applications/Utilities_
     make open
    ```
 
-3. Continue to [Build Source…](building-from-source.md#build-source) 
+3. Continue to Build Source… 
 
 You can get a list of all commands by running…
 
@@ -188,7 +188,7 @@ make help
     ![](https://user-images.githubusercontent.com/3118097/41824642-6fc72e52-77c8-11e8-88ad-7d4a464974ef.png)  
 
 2. If you are…
-   * Paid Apple Developer: Continue to [Enable Advanced Features…](building-from-source.md#advanced-features)
+   * Paid Apple Developer: Continue to Enable Advanced Features…
    * Free Apple Developer: Hit the `▶︎` \(Run\) button.
 3. Provenance will compile and run on your device. Unless testing, hit `◼︎` \(Stop\). _Done._
 

@@ -57,8 +57,8 @@ There are a couple methods of getting custom or replacement artwork into the app
 
 1. On computer, go to the URL `http://[deviceip]` in the pop-up dialog.
 2. Open the directory corresponding to your build…
-   * `Cover Art` v1.4, previous
-   * `Imports` 1.5+
+   * `Cover Art` \(v1.4, previous\)
+   * `Imports` \(v1.5+\)
 3. Upload your images…
    * `Upload Files…` _button allows multiple file selections._
    * _Drag & Drop is also supported._
@@ -69,8 +69,8 @@ There are a couple methods of getting custom or replacement artwork into the app
    * macOS Finder: `Menu Bar` → `Go` → `Connect to Server...`
 2. Enter `http://[deviceip]:81` → `Connect as Guest` → Provenance mounts as a new drive.
 3. Drag & Drop or Copy/Paste your images into:
-   * `Cover Art` v1.4, previous
-   * `Imports` 1.5+
+   * `Cover Art` \(v1.4, previous\)
+   * `Imports` \(v1.5+\)
 4. _\(Optional\)_ tvOS: Enable Background Web Server option in Settings, if preferred.
 
 ¹ Exporting files \(ROMs, BIOS, Saves, Cover Art\) is also supported in both of the above methods.  
@@ -80,8 +80,8 @@ There are a couple methods of getting custom or replacement artwork into the app
 
 1. On Computer, store all your Custom Art files in _one folder._²
 2. Update all ROMs with Custom Art all in one single drop into…
-   * `Cover Art` v1.4, previous
-   * `Imports` 1.5+
+   * `Cover Art` \(v1.4, previous\)
+   * `Imports` \(v1.5+\)
 
 ² Requires all the correct formatting requirements be met _before_ uploading.  
 
@@ -139,7 +139,7 @@ If images _do not_ have a matching ROM they will stay in the directory until it 
 2. Tap & Hold \(Long Press\) on a field.
 3. Type, Paste, or Reset.² `Done`
 
-¹ Game Info requires 1.5+, Editing is supported in iOS _only_  
+¹ Game Info requires v1.5+, Editing is supported in iOS _only_  
 ² Play History \(Play Count, Time Spent Playing\) can be reset, but not edited.  
    
 
