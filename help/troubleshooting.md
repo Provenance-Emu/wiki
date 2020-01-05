@@ -5,7 +5,7 @@ description: 'Things to try if you run into trouble installing, etc…'
 # Troubleshooting
 
 {% hint style="warning" %}
-**Provenance-Emu is a small team of volunteers.** First check [FAQs](../faqs.md) to see if your problem has already been explained.
+**Provenance-Emu is a small team of volunteers.** First check [FAQs](https://github.com/Provenance-Emu/Provenance/wiki/Frequently-Asked-Questions) to see if your problem has already been explained.
 {% endhint %}
 
  If you're having issues with the app, the best help you'll get is your own debugging.  
@@ -36,10 +36,10 @@ Provenance uses [CocoaLumberjack](https://github.com/CocoaLumberjack/CocoaLumber
 
 NSLogger runs on both OS X and iOS devices and can be used to see log data from Provence in real time provided both the viewer and device running Provenance are reachable on the same network via Bonjour.
 
-1. Download the latest releases of [NSLogger.app](https://github.com/fpillet/NSLogger/releases).
-2. Open the downloaded app on desktop.
-3. Make sure device\(s\) are on the same network as your computer.
-4. Open Provenance app on your device.
+1. Download the latest releases of NSLogger.app [here](https://github.com/fpillet/NSLogger/releases)
+2. Open the downloaded app on desktop
+3. Make sure iPhone / Apple TV are on the same network as your desktop
+4. Open Provenance app on your device
 5. The NSLogger window will automatically appear.
 
 _Tips_

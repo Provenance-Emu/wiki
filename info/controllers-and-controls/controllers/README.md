@@ -4,13 +4,13 @@ description: 'Supported, Classified and Rated Controllers/Gamepads'
 
 # Controllers
 
-* **🖲** [**Controller Types**](./#controller-types)
+* **🖲** [**Controller Types**](./#controller-types)\*\*\*\*
   * [MFi ](../#mfi-controllers)
   * [Steam](../#steam-controller-pseudo-mfi)
   * [iCade](../#icade-controllers)
-* **🕹** [**Controller Forms**](./#controller-forms)
+* **🕹** [**Controller Forms**](./#controller-forms)\*\*\*\*
 * **🎮** [**Controllers**](./#profiles) · Supported, Classified & Rated
-* **🎛** [**Controls**](./#controls)
+* **🎛** [**Controls**](./#controls)\*\*\*\*
 
 ## Controller Types
 
