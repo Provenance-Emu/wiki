@@ -13,7 +13,7 @@ To avoid any issues with [Importing ROMs](https://github.com/Provenance-Emu/Prov
   * [Multi-disc Games](formatting-roms.md#multi-disc-games)
 * 🔀  [**Converting Formats**](formatting-roms.md#converting-formats)\*\*\*\*
   * [Converting ROMs](formatting-roms.md#converting-roms)
-  * [Editing Memory Cards](formatting-roms.md#converting-and-editing-memory-cards)
+  * [Editing Memory Cards](formatting-roms.md#editing-cards)
   * [UnECM](formatting-roms.md#unecm) · _restore original format from_ `.ecm` _files_
 * ⏬  [**Archiving**](formatting-roms.md#archiving)\*\*\*\*
 * ⏩  [**Batching**](formatting-roms.md#batching) · _batch renaming and \(re\)archiving_

@@ -44,15 +44,15 @@ Please refer to the [Known Issues](importing-roms.md#known-issues) regarding Imp
    * WebDav: `http://[device-ip]:81`
 
 ⏬ Mass-uploading ROM libraries or uploading multiple ROMs simultaneously is supported.  
-↩️ [Restoring](https://github.com/Provenance-Emu/Provenance/wiki/Restoring-Files) files \(ROMs, BIOS, Saves, Cover Art\) is also supported in both methods.  
+↩️ [Restoring](../../info/miscellaneous/restoring-files.md) files \(ROMs, BIOS, Saves, Cover Art\) is also supported in both methods.  
 
 
 ### Web Server UI
 
 1. On computer, go to the URL `http://[device-ip]` in the pop-up dialog.
 2. Open the directory corresponding to your build…
-   * `roms` v1.4, previous
-   * `Imports` 1.5+
+   * `roms` \(v1.4, previous\)
+   * `Imports` \(v1.5+\)
 3. Upload your ROMs…
    * `Upload Files…` _button allows multiple file selections._
    * _Drag & Drop is also supported._
@@ -63,8 +63,8 @@ Please refer to the [Known Issues](importing-roms.md#known-issues) regarding Imp
    * macOS Finder: `Menu Bar` → `Go` → `Connect to Server...`
 2. Enter `http://[deviceip]:81` → `Connect as Guest` → Provenance mounts as a new drive.
 3. Drag & Drop or Copy/Paste your ROMs into:
-   * `roms` v1.4, previous
-   * `Imports` 1.5+
+   * `roms` \(v1.4, previous\)
+   * `Imports` \(v1.5+\)
 4. _\(Optional\)_ tvOS: Enable Background Web Server option in Settings, if preferred.
 
 {% hint style="info" %}
@@ -109,7 +109,7 @@ Please refer to the [Known Issues](importing-roms.md#known-issues) regarding Imp
 2. Locate Provenance App.
 3. Navigate to… 
    * `Documents/roms`  \(v1.4, previous…\)
-   * `Documents/Imports`  \(1.5+\)  
+   * `Documents/Imports`  \(v1.5+\)  
 
 
      \(if the folder doesn't exist inside `Documents`, create it\)  

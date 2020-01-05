@@ -57,8 +57,8 @@ There are a couple methods of getting custom or replacement artwork into the app
 
 1. On computer, go to the URL `http://[deviceip]` in the pop-up dialog.
 2. Open the directory corresponding to your build…
-   * `Cover Art` v1.4, previous
-   * `Imports` 1.5+
+   * `Cover Art` \(v1.4, previous\)
+   * `Imports` \(v1.5+\)
 3. Upload your images…
    * `Upload Files…` _button allows multiple file selections._
    * _Drag & Drop is also supported._
@@ -69,8 +69,8 @@ There are a couple methods of getting custom or replacement artwork into the app
    * macOS Finder: `Menu Bar` → `Go` → `Connect to Server...`
 2. Enter `http://[deviceip]:81` → `Connect as Guest` → Provenance mounts as a new drive.
 3. Drag & Drop or Copy/Paste your images into:
-   * `Cover Art` v1.4, previous
-   * `Imports` 1.5+
+   * `Cover Art` \(v1.4, previous\)
+   * `Imports` \(v1.5+\)
 4. _\(Optional\)_ tvOS: Enable Background Web Server option in Settings, if preferred.
 
 ¹ Exporting files \(ROMs, BIOS, Saves, Cover Art\) is also supported in both of the above methods.  
@@ -80,8 +80,8 @@ There are a couple methods of getting custom or replacement artwork into the app
 
 1. On Computer, store all your Custom Art files in _one folder._²
 2. Update all ROMs with Custom Art all in one single drop into…
-   * `Cover Art` v1.4, previous
-   * `Imports` 1.5+
+   * `Cover Art` \(v1.4, previous\)
+   * `Imports` \(v1.5+\)
 
 ² Requires all the correct formatting requirements be met _before_ uploading.  
 
@@ -139,17 +139,17 @@ If images _do not_ have a matching ROM they will stay in the directory until it 
 2. Tap & Hold \(Long Press\) on a field.
 3. Type, Paste, or Reset.² `Done`
 
-¹ Game Info requires 1.5+, Editing is supported in iOS _only_  
+¹ Game Info requires v1.5+, Editing is supported in iOS _only_  
 ² Play History \(Play Count, Time Spent Playing\) can be reset, but not edited.  
    
 
 
 ## **⚠️ Known Issues**
 
-* Custom Cover Art [is not retained](https://github.com/jasarien/Provenance/issues/730) on Refresh Library option in Settings, _use at own risk._ \(you can always Mass Upload all of your custom artwork in one drop if you are using the Upload method \(instead of Pasting\), which is recommended, especially for large Custom Art libraries.
+* Custom Cover Art [is not retained](https://github.com/Provenance-Emu/Provenance/issues/730) on Refresh Library option in Settings, _use at own risk._ \(you can always Mass Upload all of your custom artwork in one drop if you are using the Upload method \(instead of Pasting\), which is recommended, especially for large Custom Art libraries.
 * Uploading ROMs + Custom Cover Art in one _archive_ may not yield a replacement until next Provenance quit/launch is cycled.
 * Uploading Cover Art _before_ ROMs may not yield a replacement until next Provenance quit/launch is cycled.
-* Custom Game Names are [not currently considered](https://github.com/jasarien/Provenance/issues/514) when doing Refresh Library.
+* Custom Game Names are [not currently considered](https://github.com/Provenance-Emu/Provenance/issues/514) when doing Refresh Library.
 * Exhaustive meta data web-scraping fallbacks to additional sources are _not_ currently implemented.
 * Option to match ROMs manually or Search for Covers from within app is _not_ currently supported.
 * Files with extra `.` in filename will cause a crash.
