@@ -4,13 +4,13 @@ description: 'Supported, Classified and Rated Controllers/Gamepads'
 
 # Controllers
 
-* **🖲** [**Controller Types**](./#controller-types)
-  * [MFi ](./#mfi-controllers)
-  * [Steam](./#steam-controller-pseudo-mfi)
-  * [iCade](./#icade-controllers)
-* **🕹** [**Controller Forms**](./#controller-forms)
+* **🖲** [**Controller Types**](./#controller-types)\*\*\*\*
+  * [MFi ](../#mfi-controllers)
+  * [Steam](../#steam-controller-pseudo-mfi)
+  * [iCade](../#icade-controllers)
+* **🕹** [**Controller Forms**](./#controller-forms)\*\*\*\*
 * **🎮** [**Controllers**](./#profiles) · Supported, Classified & Rated
-* **🎛** [**Controls**](./#controls)
+* **🎛** [**Controls**](./#controls)\*\*\*\*
 
 ## Controller Types
 
@@ -72,9 +72,8 @@ Stick Toggle = ◉ Stick Click + ◀︎ (Back)
 
 Currently, ◀︎ \(Back\) / Select and ▶︎ \(Forward\) / Start will work with PSX, and N64 via MFi+ \(full support coming later…\)
 
-{% hint style="info" %}
-Requires [Steam Controller BLE firmware](https://support.steampowered.com/kb_article.php?ref=7728-QESJ-4420) via Steam Beta program.
-{% endhint %}
+* Requires [Steam Controller BLE firmware](https://support.steampowered.com/kb_article.php?ref=7728-QESJ-4420) via Steam Beta program.
+* [MFi Controls](https://bit.ly/2LDZNzI)
 
 ### iCade Controllers
 
