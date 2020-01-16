@@ -17,6 +17,7 @@ Prebuilt .ipa releases can sideloaded onto your devices and must be re-signed us
 
 * 🔨  [**Cydia Impactor** ](sideloading.md#cydia-impactor)· macOS/Windows
 * 🖋  [**iOS App Signer**](sideloading.md#ios-app-signer) · macOS + Xcode or Configurator
+* 🧪  [**AltDeploy**](sideloading.md#altdeploy) · macOS
 
 {% hint style="success" %}
 **Requirements**
@@ -43,6 +44,10 @@ Sideloading from 3rd party sources _**is not supported**_.
 💢  If you get stuck, check out [Troubleshooting](sideloading.md#troubleshooting).
 
 ## Cydia Impactor
+
+{% hint style="warning" %}
+Cydia Impactor hasn't been updated in a while and no longer works for Free Apple developers. Paid accounts should still work.
+{% endhint %}
 
 1. Download and launch [Cydia Impactor](http://www.cydiaimpactor.com/).
 2. Connect your device \(you may need to launch iTunes and choose `Trust…` when it pops up\).
@@ -81,6 +86,26 @@ _Paid_ Apple Developer provisioning may only require re-signing once a year.
    * [Configurator](https://support.apple.com/apple-configurator): Double-click your device → Apps: Drop the new `.ipa` file here.
 5. On device: Go to `Settings` → `General` → `Profiles & Device Management`, tap on your certificate and then `Trust`
 6. _Done._ \(If using a free developer account, repeat from step 4 after it _**expires in 7 days**_\)
+
+{% hint style="info" %}
+Free Apple developer provisioning expires _every 7 days_, requiring reloading, but you will not lose any data.
+{% endhint %}
+
+## AltDeploy
+
+1. Download and launch [AltDeploy](https://github.com/pixelomer/AltDeploy/releases).
+2. Connect your device \(you may need to launch iTunes and choose `Trust…` when it pops up\).
+3. Select your device in Impactor.
+4. Drag & drop `.ipa` file onto Impactor.
+5. Enter your Apple ID.
+6. If _not_ using 2-Factor Authentication, enter your account password, otherwise…
+   1. _\(If you haven't yet\),_ login to your [Apple ID](https://appleid.apple.com/) online and `Generate` an App-Specific Password, under Security section \(and write it down somewhere for later use\).
+   2. Enter your App-Specific Password in AltDeploy, verbatim.
+7. Install:
+   * [Xcode](https://itunes.apple.com/us/app/xcode/id497799835): Window → Devices and Simulators: Select your device. Drop the new `.ipa` file onto Installed Apps.
+   * [Configurator](https://support.apple.com/apple-configurator): Double-click your device → Apps: Drop the new `.ipa` file here.
+8. On device: Go to `Settings` → `General` → `Profiles & Device Management`, tap on your certificate and then `Trust`
+9. _Done._ \(If using a free developer account, repeat from step 4 after it _**expires in 7 days**_\)
 
 {% hint style="info" %}
 Free Apple developer provisioning expires _every 7 days_, requiring reloading, but you will not lose any data.
