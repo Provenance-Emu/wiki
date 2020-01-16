@@ -1,6 +1,6 @@
 # Launch ROMs via URL
 
-Provenance registers a URL scheme that you can use to open ROMS.
+Provenance registers a URL scheme that you can use to open ROMS. \(This also allows you to add ROMs to your iOS home screen\)
 
 **URL Options:**
 
