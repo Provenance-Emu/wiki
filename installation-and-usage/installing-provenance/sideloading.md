@@ -6,6 +6,13 @@ description: Easy. Install pre-built releases (or pre-releases).
 
 Prebuilt .ipa releases can sideloaded onto your devices and must be re-signed using your own developer profile\(s\).
 
+## **Download Provenance**
+
+1. First, download a [Release](https://github.com/Provenance-Emu/Provenance/releases) or Prerelease of Provenance. The _prerelease build server is not working but the latest prebuilt files can be found here for now…_
+   1. _\*\*\*\*_[_**Provenance v1.5b 2774 - iOS**_ ](https://app.box.com/s/arr21gz1tc97wf5dyfcmm2z9ohtj5c7g) _\(.ipa\)_
+   2. \_\_[_**Provenance v1.5b 2774 - tvOS**_](https://app.box.com/s/bfllwntsdnkjxlmk387tox6tphg4bavv) _****\(.ipa\)_
+2. Choose a sideloading method:
+
 #### **Sideloading Options:**
 
 * 🔨  [**Cydia Impactor** ](sideloading.md#cydia-impactor)· macOS/Windows
@@ -22,10 +29,11 @@ Prebuilt .ipa releases can sideloaded onto your devices and must be re-signed us
 * Connections:
   * iPhone / iPad:    `Lightning` → `USB-A / USB-C` cable¹
   * Apple TV 4:      `USB-C` → `USB-A / USB-C` cable¹
-  * Apple TV 4K:     `WiFi`²  \([Instructions](http://www.redmondpie.com/how-to-wirelessly-connect-apple-tv-4k-to-xcode-on-mac/)\)
+  * Apple TV 4K:     `WiFi`²  \([Instructions](http://www.redmondpie.com/how-to-wirelessly-connect-apple-tv-4k-to-xcode-on-mac/)\)³
 
-¹ Depends on which [ports](https://support.apple.com/en-us/HT201736) you have. WiFi can be setup after.  
-² USB ports have been discontinued on Apple TV 4K+.
+¹ Depends on which [ports](https://support.apple.com/en-us/HT201736) you have. _WiFi can be setup after._  
+² USB ports have been discontinued on Apple TV 4K+.  
+³ If using a virtual machine, you may need to [configure your network settings](../../info/miscellaneous/virtualizing-macos.md#cannot-detect-apple-tv-4k-over-wifi).
 {% endhint %}
 
 {% hint style="danger" %}
@@ -36,15 +44,12 @@ Sideloading from 3rd party sources _**is not supported**_.
 
 ## Cydia Impactor
 
-1. Download a [Release](https://github.com/Provenance-Emu/Provenance/releases) or [Prerelease](https://builds.provenance-emu.com/) of Provenance. The _prerelease build server is not working but the latest prebuilt files can be found here for now…_
-   1. _\*\*\*\*_[_**Provenance v1.5b 2773 - iOS**_ ](https://app.box.com/s/9kalo3vyg6giciaegkvlvpdcqzrpp5o0) _\(.ipa\)_
-   2. \_\_[_**Provenance v1.5b 2773 - tvOS**_](https://app.box.com/s/o2uqtwthc6fgevocspa93bl6k2dvdlsf) _****\(.ipa\)_
-2. Download and launch [Cydia Impactor](http://www.cydiaimpactor.com/).
-3. Connect your device \(you may need to launch iTunes and choose `Trust…` when it pops up\).
-4. Select your device in Impactor.
-5. Drag & drop `.ipa` file onto Impactor.
-6. Enter your Apple ID.
-7. If _not_ using 2-Factor Authentication, enter your account password, otherwise…
+1. Download and launch [Cydia Impactor](http://www.cydiaimpactor.com/).
+2. Connect your device \(you may need to launch iTunes and choose `Trust…` when it pops up\).
+3. Select your device in Impactor.
+4. Drag & drop `.ipa` file onto Impactor.
+5. Enter your Apple ID.
+6. If _not_ using 2-Factor Authentication, enter your account password, otherwise…
 
    1. _\(If you haven't yet\),_ login to your [Apple ID](https://appleid.apple.com/) online and `Generate` an App-Specific Password, under Security section \(and write it down somewhere for later use\).
    2. Enter your App-Specific Password in Cydia Impactor, verbatim.
@@ -57,8 +62,8 @@ Sideloading from 3rd party sources _**is not supported**_.
 
    🚸 If Impactor still fails, try [Option 2](sideloading.md#ios-app-signer) \(macOS only\).  
 
-8. On device: Go to `Settings` → `General` → `Profiles & Device Management`, tap on your certificate and then `Trust`
-9. _Done._  \(If using a free developer account, repeat from step 3 after it _**expires in 7 days**_\)
+7. On device: Go to `Settings` → `General` → `Profiles & Device Management`, tap on your certificate and then `Trust`
+8. _Done._  \(If using a free developer account, repeat from step 3 after it _**expires in 7 days**_\)
 
 {% hint style="info" %}
 Free Apple developer provisioning expires _every 7 days_, requiring reloading, but you will not lose any data.
@@ -68,17 +73,14 @@ _Paid_ Apple Developer provisioning may only require re-signing once a year.
 
 ## iOS App Signer
 
-1. Download a [Release](https://github.com/Provenance-Emu/Provenance/releases) or [Prerelease](https://builds.provenance-emu.com/) of Provenance. The _prerelease build server is not working but the latest prebuilt files can be found here for now…_
-   1. _\*\*\*\*_[_**Provenance v1.5b 2773 - iOS**_ ](https://drive.google.com/a/sevand.co/file/d/1-H-uXjcA56Hgmi_GXcaxn6kLQmCi4q1k/view?usp=sharing) _\(.ipa\)_
-   2. \_\_[_**Provenance v1.5b 2773 - tvOS**_](https://drive.google.com/a/sevand.co/file/d/1-ORX0wIcd6TgDVW_Ywo8WcnkOoLVzXD6/view?usp=sharing) _****\(.ipa\)_
-2. Download and launch [iOS App Signer](https://dantheman827.github.io/ios-app-signer/).
-3. Select `.ipa` file and resign it to yourself, selecting the Provenance Bundle ID you've used in the past if you already have one. If you don't have one, try creating one here if it lets you or proceed to step 4 and return to this.    🆔 Bundle ID: `com.[change-this].provenance`  Replace `[change-this]` with something unique like your username. 
-4. Connect your device. ⚠️If you haven't yet, register your device to your Apple ID in Xcode. Easiest way to do this is to make dummy app in Xcode and have it automatically create the provisioning when you enter your Bundle ID  \([Example](https://dantheman827.github.io/ios-app-signer/#tab-bar)\).
-5. Install:
+1. Download and launch [iOS App Signer](https://dantheman827.github.io/ios-app-signer/).
+2. Select `.ipa` file and resign it to yourself, selecting the Provenance Bundle ID you've used in the past if you already have one. If you don't have one, try creating one here if it lets you or proceed to step 4 and return to this.    🆔 Bundle ID: `com.[change-this].provenance`  Replace `[change-this]` with something unique like your username. 
+3. Connect your device. ⚠️If you haven't yet, register your device to your Apple ID in Xcode. Easiest way to do this is to make dummy app in Xcode and have it automatically create the provisioning when you enter your Bundle ID  \([Example](https://dantheman827.github.io/ios-app-signer/#tab-bar)\).
+4. Install:
    * [Xcode](https://itunes.apple.com/us/app/xcode/id497799835): Window → Devices and Simulators: Select your device. Drop the new `.ipa` file onto Installed Apps.
    * [Configurator](https://support.apple.com/apple-configurator): Double-click your device → Apps: Drop the new `.ipa` file here.
-6. On device: Go to `Settings` → `General` → `Profiles & Device Management`, tap on your certificate and then `Trust`
-7. _Done._ \(If using a free developer account, repeat from step 4 after it _**expires in 7 days**_\)
+5. On device: Go to `Settings` → `General` → `Profiles & Device Management`, tap on your certificate and then `Trust`
+6. _Done._ \(If using a free developer account, repeat from step 4 after it _**expires in 7 days**_\)
 
 {% hint style="info" %}
 Free Apple developer provisioning expires _every 7 days_, requiring reloading, but you will not lose any data.
