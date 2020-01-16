@@ -46,7 +46,7 @@ Sideloading from 3rd party sources _**is not supported**_.
 ## Cydia Impactor
 
 {% hint style="warning" %}
-Cydia Impactor hasn't been updated in a while and no longer works for Free Apple developers. Paid accounts should still work.
+Cydia Impactor hasn't been updated in a while and no longer works for _free_ Apple developers. Paid accounts should still work.
 {% endhint %}
 
 1. Download and launch [Cydia Impactor](http://www.cydiaimpactor.com/).
