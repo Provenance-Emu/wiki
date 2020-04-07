@@ -62,3 +62,7 @@ If you are having trouble getting things to work on a virtual machine, check for
 
 * Before you plug in your device, make sure that VMWare is in focus and macOS active \(mouse clicked within macOS screen\)—or it won't get picked up by the VM and will be fighting for it with the host system.
 
+#### Cannot detect Apple TV 4K over wifi…
+
+* Try changing the network adapter from `NAT` to `custom` and choose example `VMnet0` so it connects directly to your local network for broadcasting \(solution found in [KODI forum](https://forum.kodi.tv/archive/index.php?thread-325982.html) discussion\).
+

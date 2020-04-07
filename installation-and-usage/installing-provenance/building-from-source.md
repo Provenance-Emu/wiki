@@ -34,10 +34,11 @@ DO NOT expect to use a beta without issues, losing your saves, or bugs.
 * Connections:
   * iPhone / iPad:    `Lightning` → `USB-A / USB-C` cable¹
   * Apple TV 4:      `USB-C` → `USB-A / USB-C` cable¹
-  * Apple TV 4K:     `WiFi`²  \([Instructions](http://www.redmondpie.com/how-to-wirelessly-connect-apple-tv-4k-to-xcode-on-mac/)\)
+  * Apple TV 4K:     `WiFi`²  \([Instructions](http://www.redmondpie.com/how-to-wirelessly-connect-apple-tv-4k-to-xcode-on-mac/)\)³
 
-¹ Depends on which [ports](https://support.apple.com/en-us/HT201736) you have. WiFi can be setup after.  
-² USB ports have been discontinued on Apple TV 4K+.
+¹ Depends on which [ports](https://support.apple.com/en-us/HT201736) you have. _WiFi can be setup after._  
+² USB ports have been discontinued on Apple TV 4K+.  
+³ If using a virtual machine, you may need to [configure your network settings](../../info/miscellaneous/virtualizing-macos.md#cannot-detect-apple-tv-4k-over-wifi).
 {% endhint %}
 
 💢 If you get stuck, check out [Troubleshooting](building-from-source.md#troubleshooting).
@@ -54,7 +55,7 @@ DO NOT expect to use a beta without issues, losing your saves, or bugs.
 
 Cloning is how you pull the source code from GitHub. The primary way to do this is using Terminal; However, if you're a developer or familiar with powerful git clients like Tower, this is also an option as long as you enable for initializing submodules.
 
-**Terminal**
+#### **Terminal**
 
 {% hint style="info" %}
 The Terminal app can be found in: _/Applications/Utilities_
@@ -68,7 +69,7 @@ The Terminal app can be found in: _/Applications/Utilities_
 
 
 
-**Tower**
+#### **Tower**
 
 Tower is a powerful commercial git client that can automate a lot of the tasks you'd otherwise be using commandline for, such as stashing changes. It is however, _not free._
 
@@ -108,20 +109,18 @@ The Terminal app can be found in: _/Applications/Utilities_
 2. Install [RVM](https://rvm.io/):
 
    ```bash
-    \curl -sSL https://get.rvm.io | bash -s stable --ruby source ~/.rvm/scripts/rvm
+   \curl -sSL https://get.rvm.io | bash -s stable --ruby && source ~/.rvm/scripts/rvm
    ```
 
-#### First-time Setup
-
-1. Navigate to the 'Provenance' directory with: `cd [path]` \(can drag & drop a folder on Terminal after `cd` to get directory path\) 
-2. Install Submodules, Setup & Launch
+3. Navigate to the 'Provenance' directory with: `cd [path]` \(can drag & drop a folder on Terminal after `cd` to get directory path\) 
+4. Install Submodules, Setup & Launch
 
    ```bash
     make setup
     make open
    ```
 
-3. Continue to Build Source… 
+5. Continue to [Build Source…](building-from-source.md#build-source) 
 
 You can get a list of all commands by running…
 
@@ -188,7 +187,7 @@ make help
     ![](https://user-images.githubusercontent.com/3118097/41824642-6fc72e52-77c8-11e8-88ad-7d4a464974ef.png)  
 
 2. If you are…
-   * Paid Apple Developer: Continue to Enable Advanced Features…
+   * Paid Apple Developer: Continue to [Enable Advanced Features…](building-from-source.md#advanced-features)
    * Free Apple Developer: Hit the `▶︎` \(Run\) button.
 3. Provenance will compile and run on your device. Unless testing, hit `◼︎` \(Stop\). _Done._
 
@@ -281,7 +280,7 @@ If you are having trouble building or sideloading the app, check for your issue 
 
 #### **—application-identifier entitlement does not match…**
 
-* This means you need to match the Bundle IDs with the ones from your previous sideload or build on your device. If you don't know it, or used a 3rd party web-sign \(unsupported\), we recommend you [backup your files](https://github.com/Provenance-Emu/Provenance/wiki/Restoring-Files), delete the app and try to clean-install.
+* This means you need to match the Bundle IDs with the ones from your previous sideload or build on your device. If you don't know it, or used a 3rd party web-sign \(unsupported\), we recommend you[ backup your files](../../info/miscellaneous/restoring-files.md), delete the app and try to clean-install.
 
 #### **Your maximum App ID limit has been reached…**
 
@@ -289,7 +288,7 @@ If you are having trouble building or sideloading the app, check for your issue 
 
 #### **something something …Mupen build error**
 
-* You are missing submodules. **Do not** download .zip from GitHub. Use Terminal. Go back to Get Source and **do not** skip any steps. 
+* You are missing submodules. **Do not** download .zip from GitHub. Use Terminal. Go back to [Get Source](building-from-source.md#get-source) and **do not** skip any steps. 
 
 #### Unsupported arch
 
