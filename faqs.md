@@ -91,7 +91,7 @@ A full list of currently supported systems can be found on the [Supported System
 
 ### Can I use a controller? <a id="controller"></a>
 
-Yes. Controllers using Apple's standardized MFi format are 100% supported. Provenance also supports some non-standard iCade-type controllers \(8bitdo, etc\) and Valve's Steam Controller. See [Controllers & Controls](info/controllers-and-controls/).
+Yes. Controllers using Apple's standardized MFi format are 100% supported. Provenance also supports some non-standard iCade-type controllers \(8bitdo, etc\) and Valve's Steam Controller. As of iOS/iPadOS 13, Xbox One and Playstation 4 controllers are also now supported. See [Controllers & Controls](info/controllers-and-controls/).
 
 ### What are the controls? <a id="controls"></a>
 
