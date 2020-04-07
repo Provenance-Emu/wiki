@@ -165,7 +165,7 @@ make help
    * Change the Bundle IDs for your target by replacing only `provenance-emu` with something unique to you \(like your username\), and use the same replacement for _all_ of your targets and _all_ subsequent updates.  
 
 
-     🏍 You can install "sidecar" for testing by using a different bundle ID than your previous/main install.  
+     🏍 You can install a duplicate app for testing by using a different bundle ID than your previous/main install.  
      ![](https://user-images.githubusercontent.com/3118097/40105626-5b7e9bc2-58a8-11e8-8c39-3b1d8119979a.gif)
 
      ⚠️ .gif outdated, refer to text instructions.
@@ -348,7 +348,7 @@ If you are having trouble building or sideloading the app, check for your issue 
 * This means there have been changes to the database model which is no longer compatible with your previous build. In order to update you _**must**_ clean install \(delete app and re-install, not build or install over over existing app\). If you would like to migrate your save games and states, you can refer to [Restoring Files](https://github.com/Provenance-Emu/Provenance/wiki/Restoring-Files).  
 
 
-  🏍 You can install "sidecar" for testing by using a different bundle ID than your previous/main install.
+  🏍 You can install a duplicate app for testing by using a different bundle ID than your previous/main install.
 
 
 
