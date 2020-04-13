@@ -18,6 +18,7 @@ Prebuilt .ipa releases can sideloaded onto your devices and must be re-signed us
 * 🔨  [**Cydia Impactor** ](sideloading.md#cydia-impactor)· macOS/Windows
 * 🖋  [**iOS App Signer**](sideloading.md#ios-app-signer) · macOS + Xcode or Configurator
 * 🧪  [**AltDeploy**](sideloading.md#altdeploy) · macOS
+* ❇️  [**AltStore**](sideloading.md#altstore) · macOS/Windows \(Provenance for iOS _only_\)
 
 {% hint style="success" %}
 **Requirements**
@@ -109,6 +110,21 @@ Free Apple developer provisioning expires _every 7 days_, requiring reloading, b
 
 {% hint style="info" %}
 Free Apple developer provisioning expires _every 7 days_, requiring reloading, but you will not lose any data.
+{% endhint %}
+
+## AltStore
+
+1. Download and launch [AltStore](https://altstore.io).
+2. Connect your device \(you may need to launch iTunes and choose `Trust…` when it pops up\).
+3. …Follow instructions via altstore.io and the app as it guides you. 
+4. You'll need to put Provenance .ipa in your iCloud Drive somewhere and install via AltStore app by using the `+` button in the upper left of the My Apps screen to select and sideload it to your device.
+
+{% hint style="warning" %}
+…Full walkthrough coming later, but it's pretty straight forward as is. Windows AltStore is considered beta and has not been tested by Provenance team yet. Feel free to give it a try.
+{% endhint %}
+
+{% hint style="info" %}
+Free Apple developer provisioning expires _every 7 days_, requiring reloading \(which AltStore can keep track of and handle for you\). Re-sideloading to renew will not cause you to lose any data.
 {% endhint %}
 
 ## 💢 Troubleshooting
