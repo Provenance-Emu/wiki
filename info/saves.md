@@ -25,7 +25,7 @@ A Battery Save is the term used to describe a save file that is created by a gam
 
 ### Saving Games
 
-A battery save file is created by the game when you use the game's built-in save functionality. For example, if you are playing Pokemon for Gameboy, and you choose to save the game from the game's main menu, it will create a save file in `Battery Saves/[ROM-Filename]/[ROM-Filename].sav`.
+A battery save file is created by the game when you use the game's built-in save functionality. For example, if you are playing Pokemon for Gameboy, and you choose to save the game from the game's main menu, it will create a save file in `Battery States/[ROM-Filename]/[ROM-Filename].sav`.
 
 ### Supported Formats
 
