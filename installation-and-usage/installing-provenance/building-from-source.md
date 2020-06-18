@@ -122,14 +122,6 @@ The Terminal app can be found in: _/Applications/Utilities_
 
 5. Continue to [Build Source…](building-from-source.md#build-source) 
 
-You can get a list of all commands by running…
-
-```bash
-make help
-```
-
-
-
 💢 If you get stuck, check out [Troubleshooting](building-from-source.md#troubleshooting).
 
 ## Build Source
