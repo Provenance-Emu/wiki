@@ -41,7 +41,7 @@ Please refer to the [Known Issues](importing-roms.md#known-issues) regarding Imp
    * In Settings, select the `Import/Export` option.\)
 3. Web Server Active. Make note of the `[device-ip]` 
    * Web UI: `http://[device-ip]`
-   * WebDav: `http://[device-ip]:81`
+   * WebDAV: `http://[device-ip]:81`
 
 ⏬ Mass-uploading ROM libraries or uploading multiple ROMs simultaneously is supported.  
 ↩️ [Restoring](../../info/miscellaneous/restoring-files.md) files \(ROMs, BIOS, Saves, Cover Art\) is also supported in both methods.  
@@ -57,9 +57,9 @@ Please refer to the [Known Issues](importing-roms.md#known-issues) regarding Imp
    * `Upload Files…` _button allows multiple file selections._
    * _Drag & Drop is also supported._
 
-### WebDav Clients
+### WebDAV Clients
 
-1. On computer, open a WebDav Client…
+1. On computer, open a WebDAV Client…
    * macOS Finder: `Menu Bar` → `Go` → `Connect to Server...`
 2. Enter `http://[deviceip]:81` → `Connect as Guest` → Provenance mounts as a new drive.
 3. Drag & Drop or Copy/Paste your ROMs into:
