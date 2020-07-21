@@ -50,7 +50,7 @@ There are a couple methods of getting custom or replacement artwork into the app
    * Select the `+` button in the Game Library, or…
    * In Settings, select the `Import/Export` option.¹
 
-   This is similar to [Importing ROMs](https://github.com/Provenance-Emu/Provenance/wiki/Importing-ROMs).  
+   This is similar to [Importing ROMs](https://wiki.provenance-emu.com/installation-and-usage/roms/importing-roms).  
 
 
 #### Web Server UI <a id="exporting-footnote"></a>
