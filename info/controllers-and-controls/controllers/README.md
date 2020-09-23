@@ -118,6 +118,7 @@ Standalone controllers are familiar to that of Playstation or Xbox. Recommended 
 
 | Controller | iPhone | iPad | aTV | Type | Profile | Rating |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| [Razer Kishi Controller for iPhone](https://www.amazon.com/Razer-Kishi-Controller-iPhone-Passthrough-mac/dp/B08FFPKRYW) | ● |  |  | MFi | Extended2+ | ●●●●◐ |
 | [GameVice: iPhone](https://www.amazon.com/Gamevice-Controller-Gamepad-iPhone-Certified-Compatible/dp/B077LZJ679/) Xʀ not supported | ● |  |  | MFi | Extended | ●●●●○ |
 | [GameVice: iPad Pro 12.9"](https://www.amazon.com/Gamevice-Controller-Gamepad-12-9-inch-Certified-Accessories/dp/B01MFCXJZD/) |  | ● |  | MFi | Extended | ●●●○○ |
 | [GameVice: iPad Mini](https://www.amazon.com/Controller-Gamepad-Gamevice-Certified-Accessories-Patented/dp/B01MR4VLJW/) |  | ● |  | MFi | Extended | ●●●◐○ |
