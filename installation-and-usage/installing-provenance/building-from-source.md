@@ -112,7 +112,7 @@ The Terminal app can be found in: _/Applications/Utilities_
    \curl -sSL https://get.rvm.io | bash -s stable --ruby && source ~/.rvm/scripts/rvm
    ```
    
-3. Install Carthage from using Homebrew
+3. Install Carthage using Homebrew
 
    ```
    brew install carthage
