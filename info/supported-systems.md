@@ -30,7 +30,7 @@
 |  | [Game Gear](https://en.wikipedia.org/wiki/Game_Gear) | 10/6 · 1990 |
 |  | [Mega-CD / CD](https://en.wikipedia.org/wiki/Sega_CD) | 12/12 · 1991 |
 |  | [32X](https://en.wikipedia.org/wiki/32X) | 11/21 · 1994 |
-|  | [Saturn](https://en.wikipedia.org/wiki/Sega_Saturn) _v1.5+ only_ \([Compatibility List](http://wiki.yabause.org/index.php5?title=Compatibility_list)\) | 11/22 · 1994 |
+|  | [Saturn](https://en.wikipedia.org/wiki/Sega_Saturn) _v1.5+ only_ | 11/22 · 1994 |
 | SNK | [Neo Geo Pocket](https://en.wikipedia.org/wiki/Neo_Geo_Pocket) | 10/28 · 1998 |
 |  | [Neo Geo Pocket Color](https://en.wikipedia.org/wiki/Neo_Geo_Pocket_Color) | 3/16 · 1999 |
 | Sony | [PlayStation](https://en.wikipedia.org/wiki/PlayStation_) | 12/3 · 1994 |
