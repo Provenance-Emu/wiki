@@ -103,7 +103,7 @@ Game Boy Advance BIOS is optional.
 | :--- | :--- | :--- | :--- |
 | `bios_CD_U.bin` | Sega CD Model 1 \(US 921011\) BIOS 1.10 | US | 2efd74e3232ff260e371b99f84024f7f |
 | `bios_CD_E.bin` | Mega-CD Model 1 \(EU 921027\) BIOS 1.00 | EU | e66fa1dc5820d254611fdcdba0662372 |
-| `bios_CD_J.bin` | Mega-CD Model 1 \(JP 911217\) BIOS 1.00p | JP | 278a9397d192149e84e820ac621a8edd |
+| `bios_CD_J.bin` | Mega-CD Model 1 \(JP 911217\) BIOS 1.00p | JP | bdeb4c47da613946d422d97d98b21cda |
 
 {% hint style="success" %}
 All 3 BIOS are required.
