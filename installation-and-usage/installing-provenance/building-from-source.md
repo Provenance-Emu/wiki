@@ -111,9 +111,15 @@ The Terminal app can be found in: _/Applications/Utilities_
    ```bash
    \curl -sSL https://get.rvm.io | bash -s stable --ruby && source ~/.rvm/scripts/rvm
    ```
+   
+3. Install Carthage using Homebrew
 
-3. Navigate to the 'Provenance' directory with: `cd [path]` \(can drag & drop a folder on Terminal after `cd` to get directory path\) 
-4. Install and build the relevant Submodules, Setup & Launch
+   ```
+   brew install carthage
+   ```
+
+4. Navigate to the 'Provenance' directory with: `cd [path]` \(can drag & drop a folder on Terminal after `cd` to get directory path\) 
+5. Install and build the relevant Submodules, Setup & Launch
 
    ```bash
     ./carthage.sh bootstrap --platform iOS
