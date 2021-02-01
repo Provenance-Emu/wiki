@@ -333,9 +333,9 @@ If renaming and using ****a **.cue** based ****ROM make sure to read the require
 **Contents of Final Fantasy VII \(USA\).m3u**:
 
 ```text
-    Final Fantasy VII (USA) (Disc 1).cue
-    Final Fantasy VII (USA) (Disc 2).cue
-    Final Fantasy VII (USA) (Disc 3).cue
+Final Fantasy VII (USA) (Disc 1).cue
+Final Fantasy VII (USA) (Disc 2).cue
+Final Fantasy VII (USA) (Disc 3).cue
 ```
 
 ³ `.m3u` filenames are independent of the `.bin/.cue` files, but a truncated name is recommended, removing " \(Disc \#\)" from the .m3u filename \(including the space\).
