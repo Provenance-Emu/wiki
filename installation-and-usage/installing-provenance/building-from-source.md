@@ -119,15 +119,15 @@ The Terminal app can be found in: _/Applications/Utilities_
 5. Install and build the relevant Submodules, Setup & Launch, using…
 
    ```bash
-   carthage bootstrap --platform iOS 
-   carthage bootstrap --platform tvOS 
+   ./carthage.sh bootstrap --platform iOS 
+   ./carthage.sh bootstrap --platform tvOS 
    ```
 
    or…
 
    ```bash
-   carthage bootstrap --platform iOS --use-xcframeworks
-   carthage bootstrap --platform tvOS --use-xcframeworks
+   ./carthage.sh bootstrap --platform iOS --use-xcframeworks
+   ./carthage.sh bootstrap --platform tvOS --use-xcframeworks
    ```
 
 6. Continue to [Build Source…](building-from-source.md#build-source)
