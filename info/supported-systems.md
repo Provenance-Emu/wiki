@@ -1,7 +1,5 @@
 # Supported Systems
 
-
-
 | Manufacturer | System | Released |
 | :--- | :--- | :--- |
 | Atari | [2600 / Video Computer System](https://en.wikipedia.org/wiki/Atari_2600) | 9/11 · 1977 |

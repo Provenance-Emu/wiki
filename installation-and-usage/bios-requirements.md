@@ -4,9 +4,9 @@ description: Certain emulator cores require specific BIOS files in order to play
 
 # BIOS Requirements
 
-✅  [**Systems**](bios-requirements.md#systems) requiring/utilizing BIOS  
-ℹ️  [**Specifications**](bios-requirements.md#specifications) per System  
-🛃  [**Importing**](bios-requirements.md#importing) BIOS files 
+✅ [**Systems**](bios-requirements.md#systems) requiring/utilizing BIOS  
+ℹ️ [**Specifications**](bios-requirements.md#specifications) per System  
+🛃 [**Importing**](bios-requirements.md#importing) BIOS files
 
 {% hint style="warning" %}
 **DO NOT** ask us where to obtain BIOS files. Distributing BIOS files violates copyright law.
@@ -14,7 +14,7 @@ description: Certain emulator cores require specific BIOS files in order to play
 
 ## Systems
 
-**BIOS**:    ✅ =  Required     🔶 =  Optional
+**BIOS**: ✅ = Required 🔶 = Optional
 
 | Manufacturer | System | BIOS |
 | :--- | :--- | :--- |
@@ -48,8 +48,6 @@ description: Certain emulator cores require specific BIOS files in order to play
 | SNK | Neo Geo Pocket |  |
 |  | Neo Geo Pocket Color |  |
 | Sony | PlayStation | ✅×3 |
-
-### 
 
 ### Specifications
 
@@ -109,8 +107,6 @@ Game Boy Advance BIOS is optional.
 All 3 BIOS are required.
 {% endhint %}
 
-#### 
-
 #### Sega Saturn
 
 | Filename | BIOS Name / Version | Region | MD5 Hash |
@@ -141,12 +137,9 @@ BIOS files are imported exactly the same as ROMs: [Importing ROMs](roms/importin
 
 #### MD5
 
-Though not required, you can verify the MD5 hashes of your files to be certain. To obtain the MD5 hash  of your BIOS files, you can use `md5 [path to file, or drag and drop file here]` in Terminal. Check that it matches the MD5 hash of the file listed above.
+Though not required, you can verify the MD5 hashes of your files to be certain. To obtain the MD5 hash of your BIOS files, you can use `md5 [path to file, or drag and drop file here]` in Terminal. Check that it matches the MD5 hash of the file listed above.
 
-Alternatively, BIOS files can be force [uploaded](roms/importing-roms.md#uploading) manually into `/BIOS/com.provenance.[system]` via WebUI or WebDav \(iOS, tvOS\) or the Apple Files app \(iOS only\).  
-
-
-
+Alternatively, BIOS files can be force [uploaded](roms/importing-roms.md#uploading) manually into `/BIOS/com.provenance.[system]` via WebUI or WebDav \(iOS, tvOS\) or the Apple Files app \(iOS only\).
 
 {% hint style="info" %}
 🗯 If you are still stuck ask for [help](https://discord.gg/NhzgrXh) on our Discord.

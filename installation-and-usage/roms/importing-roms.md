@@ -6,18 +6,18 @@ description: How to import ROMs into Provenance.
 
 Provenance supports multiple ways to import ROMs and BIOSes, including _single-drop_ mass-uploading:
 
-* ⬆️  [**Uploading**](importing-roms.md#uploading)¹ \(via built-in Web Server\) · for iOS & tvOS
+* ⬆️  [**Uploading**](importing-roms.md#uploading)¹ \(via built-in Web Server\) · for iOS & tvOS
   * Web Server UI
   * WebDav Clients
-* ⬇️  [**Downloading**](importing-roms.md#downloading) \(from Mobile Browsers\) · for iOS _only_
-* ➡️  [**Copying**](importing-roms.md#copying) · for iOS _only_
+* ⬇️  [**Downloading**](importing-roms.md#downloading) \(from Mobile Browsers\) · for iOS _only_
+* ➡️  [**Copying**](importing-roms.md#copying) · for iOS _only_
   * Mobile Apps
   * AirDrop · macOS → iOS¹ _or_  iOS → iOS
-* ⤵️  [**Injecting**](importing-roms.md#injecting) \(with Desktop Apps\) · for iOS and ATV4 _only_
+* ⤵️  [**Injecting**](importing-roms.md#injecting) \(with Desktop Apps\) · for iOS and ATV4 _only_
   * ~~iTunes~~
   * Other Tools
 
-¹ Mass-uploading ROM libraries or uploading multiple ROMs simultaneously is supported.²   
+¹ Mass-uploading ROM libraries or uploading multiple ROMs simultaneously is supported.²  
 ² Avoid mass-uploading multi-disc ROMs.
 
 {% hint style="success" %}
@@ -44,8 +44,7 @@ Please refer to the [Known Issues](importing-roms.md#known-issues) regarding Imp
    * WebDAV: `http://[device-ip]:81`
 
 ⏬ Mass-uploading ROM libraries or uploading multiple ROMs simultaneously is supported.  
-↩️ [Restoring](../../info/miscellaneous/restoring-files.md) files \(ROMs, BIOS, Saves, Cover Art\) is also supported in both methods.  
-
+↩️ [Restoring](../../info/miscellaneous/restoring-files.md) files \(ROMs, BIOS, Saves, Cover Art\) is also supported in both methods.
 
 ### Web Server UI
 
@@ -68,7 +67,7 @@ Please refer to the [Known Issues](importing-roms.md#known-issues) regarding Imp
 4. _\(Optional\)_ tvOS: Enable Background Web Server option in Settings, if preferred.
 
 {% hint style="info" %}
-⏬ Mass-uploading is supported, just drag & drop multiple files.
+⏬ Mass-uploading is supported, just drag & drop multiple files.
 {% endhint %}
 
 ## Downloading
@@ -95,7 +94,7 @@ Please refer to the [Known Issues](importing-roms.md#known-issues) regarding Imp
 3. Locate and tap `Copy to Provenance` option. Done.
 
 👤 If you don't see yourself in AirDrop, try setting to `Contacts Only` or `Everyone` on both devices.  
-⏬ Mass-copying is supported, just drag & drop multiple files.
+⏬ Mass-copying is supported, just drag & drop multiple files.
 
 ## Injecting
 
@@ -111,27 +110,25 @@ Please refer to the [Known Issues](importing-roms.md#known-issues) regarding Imp
    * `Documents/roms`  \(v1.4, previous…\)
    * `Documents/Imports`  \(v1.5+\)  
 
+```text
+ \(if the folder doesn't exist inside `Documents`, create it\)  
+```
 
-     \(if the folder doesn't exist inside `Documents`, create it\)  
-4. Drag your ROMs into the `roms` \(v1.4\) or `Imports` \(v1.5\) folder. Done.
+1. Drag your ROMs into the `roms` \(v1.4\) or `Imports` \(v1.5\) folder. Done.
 
-↩️ [Restoring](../../info/miscellaneous/restoring-files.md) files \(ROMs, saves, cover art\) is usually supported in these apps…   
-  
+↩️ [Restoring](../../info/miscellaneous/restoring-files.md) files \(ROMs, saves, cover art\) is usually supported in these apps…
 
-
-## **💢 Troubleshooting**
+## **💢 Troubleshooting**
 
 * Multiple ROMs from one archive? You may be using a Region Pack ROM, meaning more than one version of the same ROM is in your archive. Unarchive the set, isolate single region ROM file\(s\), \[[re-archive](formatting-roms.md#archiving), and…\] re-import the single region ROM, individually.
 
-## **⚠️ Known Issues**
+## **⚠️ Known Issues**
 
 * Sometimes _loose_ `.bin` for CD-based game files are picked up as Sega Genesis/MegaDrive ROMs. Please refer to [Multi-file ROMs](formatting-roms.md#multi-file-roms) and [Multi-disc Games](formatting-roms.md#multi-disc-games) \(v1.4\).
 * CD-based, or multi-file ROMs and especially multi-disc games need to be uploaded and processed _one at a time_, until the Game Importer can be built to handle these in a queue. If yours are broken, it's best to delete the game\(s\) from the app UI, and delete any file remnants in the file system in ROMs \(com.provenance.\[system\]\) and from Imports using the WebUI, WebDav or an iOS file manager, and re-upload.
 * Failed checksum ROMs \(translations, hacks, etc…\) will not be matched automatically.
 * Exhaustive meta data web-scraping fallbacks to additional sources for meta data are _not_ currently implemented.
 * Uploading ROMs + [Custom Cover Art](customizing-roms.md) in _one archive_ may not yield a replacement until the next time Provenance is quit \(with App Switcher\) and relaunched.
-
-
 
 {% hint style="info" %}
 🗯 If you are still stuck ask for [help](https://discord.gg/NhzgrXh) on our Discord.
