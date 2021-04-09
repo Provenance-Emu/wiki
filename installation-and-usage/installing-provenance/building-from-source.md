@@ -116,11 +116,18 @@ The Terminal app can be found in: _/Applications/Utilities_
    ```
 
 4. Navigate to the 'Provenance' directory with: `cd [path]` \(can drag & drop a folder on Terminal after `cd` to get directory path\)
-5. Install and build the relevant Submodules, Setup & Launch
+5. Install and build the relevant Submodules, Setup & Launch, using…
 
    ```bash
-   carthage bootstrap --platform iOS
-   carthage bootstrap --platform tvOS
+   carthage bootstrap --platform iOS 
+   carthage bootstrap --platform tvOS 
+   ```
+
+   or…
+
+   ```bash
+   carthage bootstrap --platform iOS --use-xcframeworks
+   carthage bootstrap --platform tvOS --use-xcframeworks
    ```
 
 6. Continue to [Build Source…](building-from-source.md#build-source)
