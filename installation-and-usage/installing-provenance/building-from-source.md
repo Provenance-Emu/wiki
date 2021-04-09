@@ -54,7 +54,7 @@ DO NOT expect to use a beta without issues, losing your saves, or bugs.
 
 Cloning is how you pull the source code from GitHub. The primary way to do this is using Terminal; However, if you're a developer or familiar with powerful git clients like Tower, this is also an option as long as you enable for initializing submodules.
 
-### **Terminal**
+#### **Terminal**
 
 {% hint style="info" %}
 The Terminal app can be found in: _/Applications/Utilities_
@@ -66,7 +66,7 @@ The Terminal app can be found in: _/Applications/Utilities_
    * HTTPS: `git clone --recurse-submodules -j4 https://github.com/Provenance-Emu/Provenance.git`
 4. Continue to [Setup](building-from-source.md#setup)…
 
-### **Tower**
+#### **Tower**
 
 Tower is a powerful commercial git client that can automate a lot of the tasks you'd otherwise be using commandline for, such as stashing changes. It is however, _not free._
 
@@ -142,10 +142,8 @@ The Terminal app can be found in: _/Applications/Utilities_
 
 {% hint style="warning" %}
 At minimum, sign up as a free [Apple Developer](https://9to5mac.com/2016/03/27/how-to-create-free-apple-developer-account-sideload-apps/) and do no more than agree to the terms.
-{% endhint %}
 
-{% hint style="danger" %}
-DO NOT enroll to join the full Developer Program or you will be locked into a _Pending_ payment state, unable to code-sign unless you pay or contact Apple to cancel the enrollment.  
+🛑 DO NOT enroll to join the full Developer Program or you will be locked into a _Pending_ payment state, unable to code-sign unless you pay or contact Apple to cancel the enrollment.  
 {% endhint %}
 
 1. In Project Settings, edit _all_ of the targets for your device:
