@@ -123,13 +123,6 @@ The Terminal app can be found in: _/Applications/Utilities_
    ./carthage.sh bootstrap --platform tvOS 
    ```
 
-   or…
-
-   ```bash
-   ./carthage.sh bootstrap --platform iOS --use-xcframeworks
-   ./carthage.sh bootstrap --platform tvOS --use-xcframeworks
-   ```
-
 6. Continue to [Build Source…](building-from-source.md#build-source)
 
 💢 If you get stuck, check out [Troubleshooting](building-from-source.md#troubleshooting).
