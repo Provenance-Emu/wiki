@@ -346,3 +346,32 @@ If you are having trouble building or sideloading the app, check for your issue 
 🗯 If you are still stuck try [debugging](../../help/troubleshooting.md) it yourself or ask for [help](https://discord.gg/NhzgrXh) on our Discord.
 {% endhint %}
 
+**Issues with dependencies and building on Apple Silicon**
+
+Currently there's a couple of issues with dependencies and building for Apple Silicon machines, [as documented here](https://github.com/Provenance-Emu/Provenance/issues/1514) but there are a couple of workarounds which should work.
+
+1) When bootstrapping you may receive build errors in building lipo, such as:
+
+```
+Building universal frameworks with common architectures is not possible. The device and simulator slices for "CocoaLumberjack" both build for: arm64
+Rebuild with --use-xcframeworks to create an xcframework bundle instead.
+```
+
+If you see this error, you should be able to run the `./carthage.sh` script under Rosetta2, IE:
+
+```
+arch -x86_64 ./carthage.sh bootstrap --platform iOS
+arch -x86_64 ./carthage.sh bootstrap --platform tvOS
+```
+
+2) Depending on how you installed `brew` you may also run into an error in the final step of building, with an error message like:
+
+```
+/usr/local/bin/carthage: No such file or directory
+```
+
+This is because the install location for Apple Silicon brew binaries is `/opt/homebrew/bin/carthage`. You can work around this with with a symlink:
+
+```
+sudo ln -s /opt/homebrew/bin/carthage /usr/local/bin/carthage
+```
