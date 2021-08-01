@@ -24,8 +24,8 @@ DO NOT expect to use a beta without issues, losing your saves, or bugs.
 
 * macOS 10.13.6+ 
   * on a Mac, Hackintosh or virtual machine \([Virtualizing macOS](https://wiki.provenance-emu.com/info/miscellaneous/virtualizing-macos)\)
-* [Xcode](https://itunes.apple.com/us/app/xcode/id497799835) 10.2+
-* iOS 10+ a/o tvOS 10+ SDKs
+* [Xcode](https://itunes.apple.com/us/app/xcode/id497799835) 12.4+
+* iOS 11+ a/o tvOS 10+ SDKs
 * _Free_ [Apple Developer](https://9to5mac.com/2016/03/27/how-to-create-free-apple-developer-account-sideload-apps/) account \(at a minimum\) or a _paid_ account.  
 
 🛑 **DO NOT** enroll to join the full Developer Program or you will be locked into a _Pending_ payment state, unable to code-sign unless you pay or contact Apple to cancel the enrollment.
@@ -94,38 +94,6 @@ Using Terminal install the following requirements. If already set up, skip to [B
 {% hint style="info" %}
 The Terminal app can be found in: _/Applications/Utilities_
 {% endhint %}
-
-### Install Requirements
-
-1. Install [Homebrew](https://brew.sh/) _\(if you don't have it\)_:
-
-   ```bash
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-   ```
-
-2. Install [RVM](https://rvm.io/):
-
-   ```bash
-   \curl -sSL https://get.rvm.io | bash -s stable --ruby && source ~/.rvm/scripts/rvm
-   ```
-
-3. Install Carthage using Homebrew
-
-   ```text
-   brew install carthage
-   ```
-
-4. Navigate to the 'Provenance' directory with: `cd [path]` \(can drag & drop a folder on Terminal after `cd` to get directory path\)
-5. Install and build the relevant Submodules, Setup & Launch, using…
-
-   ```bash
-   ./carthage.sh bootstrap --platform iOS 
-   ./carthage.sh bootstrap --platform tvOS 
-   ```
-
-6. Continue to [Build Source…](building-from-source.md#build-source)
-
-💢 If you get stuck, check out [Troubleshooting](building-from-source.md#troubleshooting).
 
 ## Build Source
 
@@ -292,25 +260,10 @@ If you are having trouble building or sideloading the app, check for your issue 
 
 * If app installs or updates as a duplicate app instead of updating existing installation, you need delete it and  use the _same_ Bundle ID as your original build or you'll end up with a double installation…
 
-### **Linking…carthage/…Error: Permission denied @ dir\_s\_mkdir - /usr/local/Frameworks…**
-
-* Just a permissions error with the directory, it can be fixed with:  
-
-```bash
-    sudo mkdir /usr/local/Frameworks
-    sudo chown $(whoami):admin /usr/local/Frameworks
-    brew link carthage
-```
-
 ### **Linking… Failed**
 
 * Fails when switching from one target to another. Try…
-  1. Delete `Build` folders in `Provenance/Carthage/` and `/Provenance/PVSupport/Carthage/`
-  2. In Xcode: Run `Clean` a/o `Clean Build Folder` and rebuild.
-
-### **bundler: failed to load command… error**
-
-* Carthage might have a dirty cache, clean with `rm -rf ~/Library/Caches/org.carthage.CarthageKit`
+  1. In Xcode: Run `Clean` a/o `Clean Build Folder` and rebuild.
 
 ### **git@github.com: Permission denied \(publickey\)…**
 
@@ -326,14 +279,6 @@ If you are having trouble building or sideloading the app, check for your issue 
 
 * In Build Settings for the targets with errors, manually reset all the Code Signing Identities that are `iOS Distribution` to be `iOS Developer`, and try building again.
 
-**…can't find header files for ruby at …/…ruby.h**
-
-* Try reinstalling ruby via RVM in [Setup](building-from-source.md#setup) instructions, or try…
-
-  ```bash
-  gem update --system
-  ```
-
 ## ⚠️ Known Issues
 
 **something about database build error**
@@ -345,33 +290,3 @@ If you are having trouble building or sideloading the app, check for your issue 
 {% hint style="info" %}
 🗯 If you are still stuck try [debugging](../../help/troubleshooting.md) it yourself or ask for [help](https://discord.gg/NhzgrXh) on our Discord.
 {% endhint %}
-
-**Issues with dependencies and building on Apple Silicon**
-
-Currently there's a couple of issues with dependencies and building for Apple Silicon machines, [as documented here](https://github.com/Provenance-Emu/Provenance/issues/1514) but there are a couple of workarounds which should work.
-
-1) When bootstrapping you may receive build errors in building lipo, such as:
-
-```
-Building universal frameworks with common architectures is not possible. The device and simulator slices for "CocoaLumberjack" both build for: arm64
-Rebuild with --use-xcframeworks to create an xcframework bundle instead.
-```
-
-If you see this error, you should be able to run the `./carthage.sh` script under Rosetta2, IE:
-
-```
-arch -x86_64 ./carthage.sh bootstrap --platform iOS
-arch -x86_64 ./carthage.sh bootstrap --platform tvOS
-```
-
-2) Depending on how you installed `brew` you may also run into an error in the final step of building, with an error message like:
-
-```
-/usr/local/bin/carthage: No such file or directory
-```
-
-This is because the install location for Apple Silicon brew binaries is `/opt/homebrew/bin/carthage`. You can work around this with with a symlink:
-
-```
-sudo ln -s /opt/homebrew/bin/carthage /usr/local/bin/carthage
-```
