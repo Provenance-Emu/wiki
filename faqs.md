@@ -177,7 +177,7 @@ Provenance supports the system-wide Dark mode of tvOS. To enable it go to tvOS `
 
 ### How can I contribute? <a id="contribute"></a>
 
-* **Development**: We are always looking for new devs. The best way to get started is to browse the open [Issues](https://github.com/Provenance-Emu/Provenance/issues) and submit code as a [PR \(Pull Request\)](https://github.com/Provenance-Emu/Provenance/pulls) to our GitHub with a fix.
+* **Development**: We are always looking for new devs. The best way to get started is to browse the open [Issues](https://github.com/Provenance-Emu/Provenance/issues) and submit code as a [PR \(Pull Request\)](https://github.com/Provenance-Emu/Provenance/pulls) to our GitHub with a fix. See our [Contribution](info/contribute.md) page for further information.
 * **Beta-testing**: Testers¹ are welcome, but _only_ when following these rules: 
 
 1. Read [Issues Usage](https://github.com/Provenance-Emu/Provenance/wiki/Issues-Usage)
