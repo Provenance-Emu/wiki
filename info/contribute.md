@@ -58,7 +58,7 @@ git reset --soft develop
 # Add all of the changes in your git repo directory, to the new commit that is going to be created
 git add -A
 
-# Commit the same with a message
+# Commit the same changes with a new commit message
 git commit -m "commit message goes here"
 
 # As you re-wrote the git history, we need to force push to update the remote branch
