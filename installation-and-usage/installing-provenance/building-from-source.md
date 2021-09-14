@@ -118,12 +118,9 @@ At minimum, sign up as a free [Apple Developer](https://9to5mac.com/2016/03/27/h
    * iOS
      * **Provenance**
      * **Spotlight**
-     * **ProvenanceShared**
-     * **ProvenanceSharedTests**
    * tvOS
      * **ProvenanceTV**
      * **TopShelf**
-     * **ProvenanceShared-tvOS**
    * Change the Bundle IDs for your target by replacing only `provenance-emu` with something unique to you \(like your username\), and use the same replacement for _all_ of your targets and _all_ subsequent updates.  
 
 {% hint style="info" %}
