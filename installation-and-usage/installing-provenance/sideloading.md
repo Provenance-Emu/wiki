@@ -8,17 +8,15 @@ Prebuilt .ipa releases can sideloaded onto your devices and must be re-signed us
 
 ## **Download Provenance**
 
-1. First, download a [Release](https://github.com/Provenance-Emu/Provenance/releases) or Prerelease of Provenance. The _prerelease build server is not working but the latest prebuilt files can be found here for now…_
-   1. _\*\*\*\*_[_**Provenance v1.5b 2774 - iOS**_ ](https://mega.nz/file/d9tFiS6R#K-Bc50Sy-SuATwf1-jFEo5y_Lv2Q_6X9VaUMk4i7-3s) _\(.ipa\)_
-   2. _\*\*\*\*_[_**Provenance v1.5b 2774 - tvOS**_](https://mega.nz/file/lo9VlSSR#7muy4bpuSqE_D7YuGjVX0QYlvJ2Sk3-rWR3v-1EGpF4) _****\(.ipa\)_
+1. First, download a [Release](https://github.com/Provenance-Emu/Provenance/releases) or Prerelease of Provenance.
 2. Choose a sideloading method:
 
 #### **Sideloading Options:**
 
+* ❇️  [**AltStore**](sideloading.md#altstore) · macOS/Window)
 * 🔨  [**Cydia Impactor** ](sideloading.md#cydia-impactor)· macOS/Windows
 * 🖋  [**iOS App Signer**](sideloading.md#ios-app-signer) · macOS + Xcode or Configurator
 * 🧪  [**AltDeploy**](sideloading.md#altdeploy) · macOS
-* ❇️  [**AltStore**](sideloading.md#altstore) · macOS/Windows \(Provenance for iOS _only_\)
 
 {% hint style="success" %}
 **Requirements**
@@ -113,6 +111,9 @@ Free Apple developer provisioning expires _every 7 days_, requiring reloading, b
 {% endhint %}
 
 ## AltStore
+
+AltStore source is availble at [this link](altstore://source?url=https://provenance-emu.com/apps.json)
+Click in Mobile Safari once you have AltStore installed.
 
 1. Download and launch [AltStore](https://altstore.io).
 2. Connect your device \(you may need to launch iTunes and choose `Trust…` when it pops up\).
