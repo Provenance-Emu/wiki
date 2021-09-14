@@ -8,7 +8,7 @@ Prebuilt .ipa releases can sideloaded onto your devices and must be re-signed us
 
 ## **Download Provenance**
 
-1. First, download a [Release](https://github.com/Provenance-Emu/Provenance/releases) or Prerelease of Provenance.
+1. First, download a [Release](https://github.com/Provenance-Emu/Provenance/releases) or Prerelease of Provenance (unless using AltStore, direct source download link in AltStore insructions).
 2. Choose a sideloading method:
 
 #### **Sideloading Options:**
