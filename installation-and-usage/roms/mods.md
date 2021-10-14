@@ -1,5 +1,6 @@
 ---
 description: 'Hacks, Patches, Translations, Mods'
+tags: ["mod", "modding", "patching", "patches", "n64", "psx", "sbi", "ips"]
 ---
 
 # Modding ROMs
@@ -38,6 +39,27 @@ shasum [path to file or drag and drop file here]
 {% hint style="info" %}
 Although it's best to use the exact ROM required as listed…_sometimes_ a patch will still work without an exact match, but cannot be guaranteed to work 100% even if it seems to have successfully patched. This might be necessary as there are some exact ROMs that are nearly impossible to obtain, but _do this as a last resort and at your own risk._
 {% endhint %}
+
+## **SBI Files \(PSX\)**
+
+SBI Files are archives that contains the protection information that those PAL games got and that are needed to run those protected games in emulators. 
+
+SBI Files are not copyrighted, as they're not the ROM itself.
+
+### Obtaining
+
+These are supplied by a 3rd party, use at your own risk.
+
+https://psxdatacenter.com/sbifiles.html
+
+### Usage
+
+Simply copy the obtained .SBI file and place it in the same directory as the game you wish to patch, with matching filename.
+```sh
+My Game.bin
+My Game.cue
+My Game.sbi
+```
 
 ## **High Resolution Textures \(N64\)**
 
