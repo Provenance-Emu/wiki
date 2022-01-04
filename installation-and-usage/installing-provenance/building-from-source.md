@@ -114,14 +114,13 @@ At minimum, sign up as a free [Apple Developer](https://9to5mac.com/2016/03/27/h
 🛑 DO NOT enroll to join the full Developer Program or you will be locked into a _Pending_ payment state, unable to code-sign unless you pay or contact Apple to cancel the enrollment.  
 {% endhint %}
 
-1. In Project Settings, edit _all_ of the targets for your device:
-   * iOS
-     * **Provenance**
-     * **Spotlight**
-   * tvOS
-     * **ProvenanceTV**
-     * **TopShelf**
-   * Change the Bundle IDs for your target by replacing only `provenance-emu` with something unique to you \(like your username\), and use the same replacement for _all_ of your targets and _all_ subsequent updates.  
+Copy `CodeSigning.xcconfig.sample` to `CodeSigning.xcconfig` and modify the file replacing `DEVELOPMENT_TEAM` with your Team ID and `PRODUCT_BUNDLE_PREFIX` with a bundle identifier that is registered to you.
+
+If you have a paid Apple Developer account, you can find your Team ID at https://developer.apple.com/account/#/membership
+
+If you have a free Apple Developer account, you need to generate a new signing certificate. To do so, follow the steps in [iOS App Signer][3] to create a new Xcode project and generate a provisioning profile. After saving the project, open `project.pbxproj` inside your newly created `.xcproj` and look for `DEVELOPMENT_TEAM`. Copy this value to `CodeSigning.xcconfig` and your unique identifier to `PRODUCT_BUNDLE_PREFIX`.
+
+Set `DEVELOPER_ACCOUNT_PAID = YES` if you used a paid Apple Developer account in order to automatically request the increased memory limit entitlement from Apple.
 
 {% hint style="info" %}
  You can install a duplicate app for testing by using a different bundle ID than your previous/main install.  
@@ -133,9 +132,6 @@ At minimum, sign up as a free [Apple Developer](https://9to5mac.com/2016/03/27/h
   * ![](https://user-images.githubusercontent.com/3118097/48986708-22f14800-f0cd-11e8-98ec-6f093375d969.png)  Multipath
   * ![](https://user-images.githubusercontent.com/3118097/48986708-22f14800-f0cd-11e8-98ec-6f093375d969.png)  Push Notifications
   * ![](https://user-images.githubusercontent.com/3118097/48986708-22f14800-f0cd-11e8-98ec-6f093375d969.png)  Siri
-* Turn ON ☑️**Automatically manage signing** and select your Development Team for your targets.
-
-  ![](https://user-images.githubusercontent.com/3118097/40101989-0a73fa7e-589e-11e8-8f73-7f99195133a1.png)
 
 * Select a `-Release` profile from the Scheme Menu and connect your device\(s\) and select in the Destination Menu:
 
