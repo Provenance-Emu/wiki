@@ -32,7 +32,7 @@
 ## Help
 
 * [Troubleshooting](help/troubleshooting.md)
-* [Contributing](help/contributing.md)
+* [Contributing](help/contribute.md)
 * [Discord](https://discord.gg/pNARqEb)
 
 ## Development
