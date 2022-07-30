@@ -1,3 +1,7 @@
+---
+description: Contributing.
+---
+
 All contributions on GitHub are made using fork workflow instead of branchy workflow - which you might be used to. The reason behind this is that the project maintainer do not need to grant you write access to their repository. The following instructions are based on the "GitHub Standard Fork & Pull Request Workflow" by Chase Pettit (Chaser324, see https://gist.github.com/Chaser324/ce0505fbed06b947d962) and have been adapted to suit the Provenance project.
 
 ## Creating a Fork
