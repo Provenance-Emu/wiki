@@ -29,13 +29,17 @@
 |  | [Mega-CD / CD](https://en.wikipedia.org/wiki/Sega_CD) | 12/12 · 1991 | | ✔️ | N/A | N/A | N/A | N/A |
 |  | [32X](https://en.wikipedia.org/wiki/32X) | 11/21 · 1994 | PicoDrive | ✔️ | N/A | N/A | N/A | N/A |
 |  | [Saturn](https://en.wikipedia.org/wiki/Sega_Saturn) | 11/22 · 1994 | Mednafen | ✔️ | N/A | N/A | N/A | N/A |
-|  | [Dreamcast](https://en.wikipedia.org/wiki/Sega_Dreamcast) | | Reicast/Flycast | A/V Sync fail | N/A | N/A | N/A | N/A |
 | SNK | [Neo Geo Pocket](https://en.wikipedia.org/wiki/Neo_Geo_Pocket) | 10/28 · 1998 | | ✔️ | N/A | N/A | N/A | N/A |
 |  | [Neo Geo Pocket Color](https://en.wikipedia.org/wiki/Neo_Geo_Pocket_Color) | 3/16 · 1999 | | ✔️ | N/A | N/A | N/A | N/A |
 | Sony | [PlayStation](https://en.wikipedia.org/wiki/PlayStation_) | 12/3 · 1994 | Mednafen | ✔️ | ✔️ | ❌ | ❌ | ❌ |
-| | [PlayStation 2](https://en.wikipedia.org/wiki/PlayStation_2) | 3/4 · 2000 | Play! | Won't build |  ❌ | ❌ | ❌ | ❌ |
-| | [PlayStation Portable (PSP)](https://en.wikipedia.org/wiki/PlayStation_Portable) | 12/12 · 2005 | PPSSPP | No video |  ❌ | ❌ | ❌ | ❌ |
 | Manufacturer | System | Released | Emulator | Saves | Rumble | Microphone | Camera | Gyro |
 
 For system requirements, refer to [BIOS Requirements](../installation-and-usage/bios-requirements.md).
 For supported file formats, refer to [Formatting ROMs](../installation-and-usage/roms/formatting-roms.md).
+
+<!--
+| | [PlayStation 2](https://en.wikipedia.org/wiki/PlayStation_2) | 3/4 · 2000 | Play! | Won't build |  ❌ | ❌ | ❌ | ❌ |
+| | [PlayStation Portable (PSP)](https://en.wikipedia.org/wiki/PlayStation_Portable) | 12/12 · 2005 | PPSSPP | No video |  ❌ | ❌ | ❌ | ❌ |
+|  | [Dreamcast](https://en.wikipedia.org/wiki/Sega_Dreamcast) | | Reicast/Flycast | A/V Sync fail | N/A | N/A | N/A | N/A |
+
+-->
