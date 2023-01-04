@@ -10,8 +10,8 @@ When there is a new release or recent commits to a source branch you have a few 
 
 * ⤵️  [**Sideload**](sideloading.md)\*\*\*\*
 * 🔃  [**Pull**](updating.md#pull) latest changes using…
-  * ![](https://user-images.githubusercontent.com/3118097/37563629-48ec3f26-2a42-11e8-9fd8-784e9e830ebe.png)  [Terminal](updating.md#update-with-terminal)
-  * ![](https://user-images.githubusercontent.com/3118097/37563630-4903ebbc-2a42-11e8-888a-09a94fc0058d.png)  [Tower](updating.md#update-with-tower)
+  * ![](https://user-images.githubusercontent.com/3118097/37563629-48ec3f26-2a42-11e8-9fd8-784e9e830ebe.png) [Terminal](updating.md#update-with-terminal)
+  * ![](https://user-images.githubusercontent.com/3118097/37563630-4903ebbc-2a42-11e8-888a-09a94fc0058d.png) [Tower](updating.md#update-with-tower)
 * ⏩  [**Update & Build**](updating.md#update-and-build)\*\*\*\*
 
 ## Pull
@@ -38,6 +38,7 @@ The Terminal app can be found in: _/Applications/Utilities_
        git pull origin develop
        git stash pop
      ```
+
 3. Update submodules and frameworks
 
    ```bash
@@ -48,7 +49,7 @@ The Terminal app can be found in: _/Applications/Utilities_
 4. Return to Xcode and…
    * Return to Build: Step 3 to reapply your settings, else…
    * If stashed changes above, just hit the `▶︎` \(Run\) button.
-5. Provenance will compile and run on your device. Unless testing, hit `◼︎` \(Stop\). _Done._ 
+5. Provenance will compile and run on your device. Unless testing, hit `◼︎` \(Stop\). _Done._
 
 ### **Update with Tower**
 
@@ -56,7 +57,7 @@ The Terminal app can be found in: _/Applications/Utilities_
 2. With 'develop' branch marked \(HEAD\), click `Fetch`
 3. If develop branch shows a number next to it, click `Pull`
 4. Click `Stash Changes`
-5. After changes are pulled, click `Apply Stash`, select stash and click `Apply Stash` 
+5. After changes are pulled, click `Apply Stash`, select stash and click `Apply Stash`
 6. In Terminal:
 
    ```bash
@@ -88,11 +89,6 @@ If you've already done the First-time Setup, then you can build from the command
     make tvos
   ```
 
-
-
-
-
 {% hint style="info" %}
 🗯 If you are still stuck ask for [help](https://discord.gg/NhzgrXh) on our Discord.
 {% endhint %}
-

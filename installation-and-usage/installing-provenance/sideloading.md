@@ -11,7 +11,7 @@ Prebuilt .ipa releases can sideloaded onto your devices and must be re-signed us
 1. First, download a [Release](https://github.com/Provenance-Emu/Provenance/releases) or Prerelease of Provenance (unless using AltStore, direct source download link in AltStore insructions).
 2. Choose a sideloading method:
 
-#### **Sideloading Options:**
+### **Sideloading Options:**
 
 * ❇️  [**AltStore**](sideloading.md#altstore) · macOS/Window)
 * 🖋  [**iOS App Signer**](sideloading.md#ios-app-signer) · macOS + Xcode or Configurator
@@ -20,18 +20,18 @@ Prebuilt .ipa releases can sideloaded onto your devices and must be re-signed us
 {% hint style="success" %}
 **Requirements**
 
-* _Free_ [Apple Developer](https://9to5mac.com/2016/03/27/how-to-create-free-apple-developer-account-sideload-apps/) account \(at a minimum\) or a _paid_ account.  
+* _Free_ [Apple Developer](https://9to5mac.com/2016/03/27/how-to-create-free-apple-developer-account-sideload-apps/) account \(at a minimum\) or a _paid_ account.
   ****
 
-  🛑 **DO NOT** enroll to join the full Developer Program or you will be locked into a _Pending_ payment state, unable to code-sign unless you pay or contact Apple to cancel the enrollment.  
+  🛑 **DO NOT** enroll to join the full Developer Program or you will be locked into a _Pending_ payment state, unable to code-sign unless you pay or contact Apple to cancel the enrollment.
 
 * Connections:
   * iPhone / iPad:    `Lightning` → `USB-A / USB-C` cable¹
   * Apple TV 4:      `USB-C` → `USB-A / USB-C` cable¹
   * Apple TV 4K:     `WiFi`²  \([Instructions](http://www.redmondpie.com/how-to-wirelessly-connect-apple-tv-4k-to-xcode-on-mac/)\)³
 
-¹ Depends on which [ports](https://support.apple.com/en-us/HT201736) you have. _WiFi can be setup after._  
-² USB ports have been discontinued on Apple TV 4K+.  
+¹ Depends on which [ports](https://support.apple.com/en-us/HT201736) you have. _WiFi can be setup after._
+² USB ports have been discontinued on Apple TV 4K+.
 ³ If using a virtual machine, you may need to [configure your network settings](../../info/miscellaneous/virtualizing-macos.md#cannot-detect-apple-tv-4k-over-wifi).
 {% endhint %}
 
@@ -44,7 +44,7 @@ Sideloading from 3rd party sources _**is not supported**_.
 ## iOS App Signer
 
 1. Download and launch [iOS App Signer](https://dantheman827.github.io/ios-app-signer/).
-2. Select `.ipa` file and resign it to yourself, selecting the Provenance Bundle ID you've used in the past if you already have one. If you don't have one, try creating one here if it lets you or proceed to step 4 and return to this.    🆔 Bundle ID: `com.[change-this].provenance`  Replace `[change-this]` with something unique like your username. 
+2. Select `.ipa` file and resign it to yourself, selecting the Provenance Bundle ID you've used in the past if you already have one. If you don't have one, try creating one here if it lets you or proceed to step 4 and return to this.    🆔 Bundle ID: `com.[change-this].provenance`  Replace `[change-this]` with something unique like your username.
 3. Connect your device. ⚠️If you haven't yet, register your device to your Apple ID in Xcode. Easiest way to do this is to make dummy app in Xcode and have it automatically create the provisioning when you enter your Bundle ID  \([Example](https://dantheman827.github.io/ios-app-signer/#tab-bar)\).
 4. Install:
    * [Xcode](https://itunes.apple.com/us/app/xcode/id497799835): Window → Devices and Simulators: Select your device. Drop the new `.ipa` file onto Installed Apps.
@@ -83,7 +83,7 @@ Click in Mobile Safari once you have AltStore installed.
 
 1. Download and launch [AltStore](https://altstore.io).
 2. Connect your device \(you may need to launch iTunes and choose `Trust…` when it pops up\).
-3. …Follow instructions via altstore.io and the app as it guides you. 
+3. …Follow instructions via altstore.io and the app as it guides you.
 4. You'll need to put Provenance .ipa in your iCloud Drive somewhere and install via AltStore app by using the `+` button in the upper left of the My Apps screen to select and sideload it to your device.
 
 {% hint style="warning" %}
@@ -96,34 +96,31 @@ Free Apple developer provisioning expires _every 7 days_, requiring reloading \(
 
 ## 💢 Troubleshooting
 
-#### Cannot authenticate
+### Cannot authenticate
 
 * If using 2-Factor Authentication, you will need to go to [Apple ID](https://appleid.apple.com/) settings and make a key and save it for use in Cydia Impactor, type it verbatim.
 
-#### Unable to code-sign / install…
+### Unable to code-sign / install…
 
 * If you are using a free Apple developer account, you can only install a total of 3 apps per Apple ID at a time. You must use delete some apps you are signing, or install with different Apple ID and Bundle IDs.
-* If you used to have a free Safari Developer Account which is no longer supported by Apple, you have two options: 
+* If you used to have a free Safari Developer Account which is no longer supported by Apple, you have two options:
 
-  1\) Upgrade to a _paid_ [Apple Developer](https://developer.apple.com/programs/) account. 
+  1\) Upgrade to a _paid_ [Apple Developer](https://developer.apple.com/programs/) account.
 
   2\) Use a different Apple ID that _is not_ an expired and deprecated Safari Developer account.
 
-#### **—application-identifier entitlement does not match…**
+### **—application-identifier entitlement does not match…**
 
 * This means you need to match the Bundle IDs with the ones from your previous sideload or build on your device. If you don't know it, or used a 3rd party web-sign \(unsupported\), we recommend you [backup your files](../../info/miscellaneous/restoring-files.md), delete the app and try to clean-install.
 
-#### **Your maximum App ID limit has been reached…**
+### **Your maximum App ID limit has been reached…**
 
 * You have made too many Bundle IDs \(App IDs\) in one week on a free Apple developer account. Stop making new Bundle IDs and revert to one you already made. You are chasing the wrong problem. If all else fails, use a different Apple ID, and make only one new, unique Bundle ID with it \(and save it for later when you need to re-sign in 7 days\).
 
-#### Duplicate app
+### Duplicate app
 
 * If app installs or updates as a duplicate app instead of updating existing installation, you need to delete it and use the _same_ Bundle ID as your original build or you'll end up with a double installation…
-
-
 
 {% hint style="info" %}
 🗯 If you are still stuck ask for [help](https://discord.gg/NhzgrXh) on our Discord.
 {% endhint %}
-

@@ -39,4 +39,3 @@
 
 * [GitHub](https://github.com/Provenance-Emu/Provenance)
 * [Release Roadmap](https://github.com/Provenance-Emu/Provenance/milestones?direction=asc&sort=title&state=open)
-

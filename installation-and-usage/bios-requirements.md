@@ -4,8 +4,8 @@ description: Certain emulator cores require specific BIOS files in order to play
 
 # BIOS Requirements
 
-✅ [**Systems**](bios-requirements.md#systems) requiring/utilizing BIOS  
-ℹ️ [**Specifications**](bios-requirements.md#specifications) per System  
+✅ [**Systems**](bios-requirements.md#systems) requiring/utilizing BIOS
+ℹ️ [**Specifications**](bios-requirements.md#specifications) per System
 🛃 [**Importing**](bios-requirements.md#importing) BIOS files
 
 {% hint style="warning" %}
@@ -49,31 +49,31 @@ description: Certain emulator cores require specific BIOS files in order to play
 |  | Neo Geo Pocket Color |  |
 | Sony | PlayStation | ✅×3 |
 
-### Specifications
+## Specifications
 
 {% hint style="info" %}
 Filenames are arbitrary as long as the MD5s match. Provenance will rename files on import.
 {% endhint %}
 
-#### Atari 5200
+### Atari 5200
 
 | Filename | MD5 Hash |
 | :--- | :--- |
 | `5200.rom` | 281f20ea4320404ec820fb7ec0693b38 |
 
-#### Atari Lynx
+### Atari Lynx
 
 | Filename | MD5 Hash |
 | :--- | :--- |
 | `lynxboot.img` | fcd403db69f54290b51035d82f835e7b |
 
-#### Nintendo Famicom Disk System
+### Nintendo Famicom Disk System
 
 | Filename | MD5 Hash |
 | :--- | :--- |
 | `disksys.rom` | ca30b50f880eb660a320674ed365ef7a |
 
-#### Nintendo Game Boy Advance
+### Nintendo Game Boy Advance
 
 | Filename | MD5 Hash |
 | :--- | :--- |
@@ -83,19 +83,19 @@ Filenames are arbitrary as long as the MD5s match. Provenance will rename files 
 Game Boy Advance BIOS is optional.
 {% endhint %}
 
-#### NEC PC Engine Super CD-ROM² System / TurboGrafx-CD
+### NEC PC Engine Super CD-ROM² System / TurboGrafx-CD
 
 | Filename | MD5 Hash |
 | :--- | :--- |
 | `syscard3.pce` | ff1a674273fe3540ccef576376407d1d |
 
-#### NEC PC-FX
+### NEC PC-FX
 
 | Filename | MD5 Hash |
 | :--- | :--- |
 | `pcfx.rom` | 08e36edbea28a017f79f8d4f7ff9b6d7 |
 
-#### Sega Mega-CD / CD
+### Sega Mega-CD / CD
 
 | Filename | BIOS Name / Version | Region | MD5 Hash |
 | :--- | :--- | :--- | :--- |
@@ -107,7 +107,7 @@ Game Boy Advance BIOS is optional.
 All 3 BIOS are required.
 {% endhint %}
 
-#### Sega Saturn
+### Sega Saturn
 
 | Filename | BIOS Name / Version | Region | MD5 Hash |
 | :--- | :--- | :--- | :--- |
@@ -119,7 +119,7 @@ All 3 BIOS are required.
 All 3 BIOS are required. Filenames online may vary. If the MD5s match, Provenance will correctly rename for you on import.
 {% endhint %}
 
-#### Sony PlayStation
+### Sony PlayStation
 
 | Filename | BIOS Name / Version | Region | MD5 Hash |
 | :--- | :--- | :--- | :--- |
@@ -135,7 +135,7 @@ All 3 BIOS are required.
 
 BIOS files are imported exactly the same as ROMs: [Importing ROMs](roms/importing-roms.md). When you have the correct BIOS successfully imported they will shown in Settings → Cores or they show as missing/red/required, otherwise you have the wrong files. You need the exact ROMs files matching the MD5 hashes above.
 
-#### MD5
+### MD5
 
 Though not required, you can verify the MD5 hashes of your files to be certain. To obtain the MD5 hash of your BIOS files, you can use `md5 [path to file, or drag and drop file here]` in Terminal. Check that it matches the MD5 hash of the file listed above.
 
@@ -144,4 +144,3 @@ Alternatively, BIOS files can be force [uploaded](roms/importing-roms.md#uploadi
 {% hint style="info" %}
 🗯 If you are still stuck ask for [help](https://discord.gg/NhzgrXh) on our Discord.
 {% endhint %}
-

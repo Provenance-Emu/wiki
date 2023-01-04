@@ -4,19 +4,19 @@
 _Before_ posting new issues on GitHub or asking the team or community, please look for your question here or search the 💢**Troubleshooting** sub-sections within each of the wikis.
 {% endhint %}
 
-### Why—
+## Why—
 
 🛑 **STOP!** _Before you continue…_
 
-> #### Where did you install the app from?
+> ### Where did you install the app from?
 
 * **Official GitHub**: 👍 [_skip ahead_](faqs.md#frequently-asked-questions)\_\_
 * **Elsewhere**: 👎 _read below…_
 
 🚫 3rd-party builds are NOT supported nor approved. They are… not current, probably buggy and generally unsafe _\(unapproved modifications, malware, adware and may require backdoor profiles\)_, and when Apple revokes their misused profiles, you will probably lose your games and saves: 
 
-1. Delete the 3rd-party app and any profiles they may have installed. 
-2. Boycott them _\(stop using, sharing, or supporting their sites\)._ 
+1. Delete the 3rd-party app and any profiles they may have installed.
+2. Boycott them _\(stop using, sharing, or supporting their sites\)._
 3. Re-install from the _official_ source _only_: [Installing Provenance](installation-and-usage/installing-provenance/)
 
 —or we cannot help you.
@@ -145,14 +145,14 @@ If using beta this could be a bug… check the open [Issues](https://github.com/
 
 ### Why does _\[insert game here\]_ not work or crash? <a id="game-fail"></a>
 
-Could be any number of the following reasons: 
+Could be any number of the following reasons:
 
-* You could have a _bad_ ROM. Replace it. 
-* You might be attempting to load a ROM for an unsupported system. Check [Supported Systems](info/supported-systems.md). 
+* You could have a _bad_ ROM. Replace it.
+* You might be attempting to load a ROM for an unsupported system. Check [Supported Systems](info/supported-systems.md).
 * Your ROMs might not be using a supported extension or file format \(such as `.bin` for Atari or Sega systems\). Refer to [Formatting ROMs](installation-and-usage/roms/formatting-roms.md).
-* If multi-file ROM \(ie. `.cue + .bin`\), check if the filenames match the .cue file contents. Refer to Formatting ROMs: [Multi-File ROMs](installation-and-usage/roms/formatting-roms.md#multi-file-roms). 
-* Multi-disc Games require an `.m3u` file in order to swap discs, specific filename formatting. Refer to Formatting ROMs: [Multi-Disc Games](installation-and-usage/roms/formatting-roms.md#multi-disc-games). 
-* Your BIOS files might be wrong, even if named correctly. Check md5 hashes of your BIOS files as compared to what is listed in [BIOS Requirements](https://github.com/Provenance-Emu/Provenance/wiki/BIOS-Requirements) to be certain. 
+* If multi-file ROM \(ie. `.cue + .bin`\), check if the filenames match the .cue file contents. Refer to Formatting ROMs: [Multi-File ROMs](installation-and-usage/roms/formatting-roms.md#multi-file-roms).
+* Multi-disc Games require an `.m3u` file in order to swap discs, specific filename formatting. Refer to Formatting ROMs: [Multi-Disc Games](installation-and-usage/roms/formatting-roms.md#multi-disc-games).
+* Your BIOS files might be wrong, even if named correctly. Check md5 hashes of your BIOS files as compared to what is listed in [BIOS Requirements](https://github.com/Provenance-Emu/Provenance/wiki/BIOS-Requirements) to be certain.
 * Unfortunately, not all emulator cores feature 100% compatibility with all ROMs. If the system has more than one core option \[which is shown at launch \(ie. NES: `FCEUX` vs `mednafen`\), unless you've specified a preferred core for that particular ROM or system\], try the alternate core for that game specifically. Some emulation core teams have compiled and maintain compatibility lists \(such as Yabause \(Sega Saturn\)\), which can be found linked in our [Supported Systems](info/supported-systems.md) wiki.
 
 ### What format do ROMs need to be? <a id="format"></a>
@@ -178,12 +178,12 @@ Provenance supports the system-wide Dark mode of tvOS. To enable it go to tvOS `
 ### How can I contribute? <a id="contribute"></a>
 
 * **Development**: We are always looking for new devs. The best way to get started is to browse the open [Issues](https://github.com/Provenance-Emu/Provenance/issues) and submit code as a [PR \(Pull Request\)](https://github.com/Provenance-Emu/Provenance/pulls) to our GitHub with a fix. See our [Contribution](info/contribute.md) page for further information.
-* **Beta-testing**: Testers¹ are welcome, but _only_ when following these rules: 
+* **Beta-testing**: Testers¹ are welcome, but _only_ when following these rules:
 
 1. Read [Issues Usage](https://github.com/Provenance-Emu/Provenance/wiki/Issues-Usage)
-2. Only report against the very latest `develop` build² 
-3. Pay attention to \#git-updates activity on Discord or the [commit history](https://github.com/Provenance-Emu/Provenance/commits/develop) on GitHub. 
-4. Check the [Issues](https://github.com/Provenance-Emu/Provenance/issues) and [PRs](https://github.com/Provenance-Emu/Provenance/pulls) on our GitHub, before reporting bugs. 
+2. Only report against the very latest `develop` build²
+3. Pay attention to \#git-updates activity on Discord or the [commit history](https://github.com/Provenance-Emu/Provenance/commits/develop) on GitHub.
+4. Check the [Issues](https://github.com/Provenance-Emu/Provenance/issues) and [PRs](https://github.com/Provenance-Emu/Provenance/pulls) on our GitHub, before reporting bugs.
 5. Be very conscious of the active conversations in the \#bugs channel on Discord.  ¹ There is a major difference in just 'using' the beta and actually participating in beta-testing. ² You can install the beta alongside of stable release if you use an alternate Bundle ID.
 
 * **Web**: We are looking for a web dev \(preferably a dev/designer hybrid\) that can help us upgrade and maintain our .com \(WordPress\).
@@ -194,5 +194,5 @@ Provenance supports the system-wide Dark mode of tvOS. To enable it go to tvOS `
 
 
 {% hint style="info" %}
-🗯 If you cannot find the answers you're looking for…you may ask for [help](https://discord.gg/NhzgrXh) on our Discord.  
+🗯 If you cannot find the answers you're looking for…you may ask for [help](https://discord.gg/NhzgrXh) on our Discord.
 {% endhint %}

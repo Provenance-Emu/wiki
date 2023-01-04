@@ -22,11 +22,11 @@ DO NOT expect to use a beta without issues, losing your saves, or bugs.
 {% hint style="success" %}
 **Requirements**
 
-* macOS 12 
+* macOS 12
   * on a Mac, Hackintosh or virtual machine \([Virtualizing macOS](https://wiki.provenance-emu.com/info/miscellaneous/virtualizing-macos)\)
 * [Xcode](https://itunes.apple.com/us/app/xcode/id497799835) 13.3+
 * iOS 11+ a/o tvOS 10+ SDKs
-* _Free_ [Apple Developer](https://9to5mac.com/2016/03/27/how-to-create-free-apple-developer-account-sideload-apps/) account \(at a minimum\) or a _paid_ account.  
+* _Free_ [Apple Developer](https://9to5mac.com/2016/03/27/how-to-create-free-apple-developer-account-sideload-apps/) account \(at a minimum\) or a _paid_ account.
 
 🛑 **DO NOT** enroll to join the full Developer Program or you will be locked into a _Pending_ payment state, unable to code-sign unless you pay or contact Apple to cancel the enrollment.
 
@@ -35,8 +35,8 @@ DO NOT expect to use a beta without issues, losing your saves, or bugs.
   * Apple TV 4:      `USB-C` → `USB-A / USB-C` cable¹
   * Apple TV 4K:     `WiFi`²  \([Instructions](http://www.redmondpie.com/how-to-wirelessly-connect-apple-tv-4k-to-xcode-on-mac/)\)³
 
-¹ Depends on which [ports](https://support.apple.com/en-us/HT201736) you have. _WiFi can be setup after._  
-² USB ports have been discontinued on Apple TV 4K+.  
+¹ Depends on which [ports](https://support.apple.com/en-us/HT201736) you have. _WiFi can be setup after._
+² USB ports have been discontinued on Apple TV 4K+.
 ³ If using a virtual machine, you may need to [configure your network settings](../../info/miscellaneous/virtualizing-macos.md#cannot-detect-apple-tv-4k-over-wifi).
 {% endhint %}
 
@@ -47,8 +47,8 @@ DO NOT expect to use a beta without issues, losing your saves, or bugs.
 **Source Options**
 
 * 🔃  [**Clone**](building-from-source.md#clone) using…
-  * ![](https://user-images.githubusercontent.com/3118097/37563629-48ec3f26-2a42-11e8-9fd8-784e9e830ebe.png)  [Terminal](building-from-source.md#terminal)
-  * ![](https://user-images.githubusercontent.com/3118097/37563630-4903ebbc-2a42-11e8-888a-09a94fc0058d.png)  [Tower](building-from-source.md#tower)
+  * ![](https://user-images.githubusercontent.com/3118097/37563629-48ec3f26-2a42-11e8-9fd8-784e9e830ebe.png) [Terminal](building-from-source.md#terminal)
+  * ![](https://user-images.githubusercontent.com/3118097/37563630-4903ebbc-2a42-11e8-888a-09a94fc0058d.png) [Tower](building-from-source.md#tower)
 
 ### Clone
 
@@ -106,12 +106,12 @@ The Terminal app can be found in: _/Applications/Utilities_
 2. Go to Preferences via Menubar: `Xcode` → `Preferences` or use `⌘,` shortcut.
    * Select Accounts tab.
    * Click `+`
-   * Sign in with your personal or developer Apple ID. If you don't have one, click `Create Apple ID` or go to [appleid.apple.com](https://appleid.apple.com/).  
+   * Sign in with your personal or developer Apple ID. If you don't have one, click `Create Apple ID` or go to [appleid.apple.com](https://appleid.apple.com/).
 
 {% hint style="warning" %}
 At minimum, sign up as a free [Apple Developer](https://9to5mac.com/2016/03/27/how-to-create-free-apple-developer-account-sideload-apps/) and do no more than agree to the terms.
 
-🛑 DO NOT enroll to join the full Developer Program or you will be locked into a _Pending_ payment state, unable to code-sign unless you pay or contact Apple to cancel the enrollment.  
+🛑 DO NOT enroll to join the full Developer Program or you will be locked into a _Pending_ payment state, unable to code-sign unless you pay or contact Apple to cancel the enrollment.
 {% endhint %}
 
 Copy `CodeSigning.xcconfig.sample` to `CodeSigning.xcconfig` and modify the file replacing `DEVELOPMENT_TEAM` with your Team ID and `PRODUCT_BUNDLE_PREFIX` with a bundle identifier that is registered to you.
@@ -123,11 +123,11 @@ If you have a free Apple Developer account, you need to generate a new signing c
 Set `DEVELOPER_ACCOUNT_PAID = YES` if you used a paid Apple Developer account in order to automatically request the increased memory limit entitlement from Apple.
 
 {% hint style="info" %}
- You can install a duplicate app for testing by using a different bundle ID than your previous/main install.  
+ You can install a duplicate app for testing by using a different bundle ID than your previous/main install.
 {% endhint %}
 
 * If using a free Apple Developer account, **Turn OFF** these Capabilities for _all_ targets:
-  * ![](https://user-images.githubusercontent.com/3118097/48986708-22f14800-f0cd-11e8-98ec-6f093375d969.png)  App Groups 
+  * ![](https://user-images.githubusercontent.com/3118097/48986708-22f14800-f0cd-11e8-98ec-6f093375d969.png)  App Groups
   * ![](https://user-images.githubusercontent.com/3118097/48986708-22f14800-f0cd-11e8-98ec-6f093375d969.png)  iCloud
   * ![](https://user-images.githubusercontent.com/3118097/48986708-22f14800-f0cd-11e8-98ec-6f093375d969.png)  Multipath
   * ![](https://user-images.githubusercontent.com/3118097/48986708-22f14800-f0cd-11e8-98ec-6f093375d969.png)  Push Notifications
@@ -169,7 +169,7 @@ _Paid_ Apple Developer provisioning may only require re-signing once a year.
        * ![](https://user-images.githubusercontent.com/3118097/48986709-2389de80-f0cd-11e8-8d98-119792b0bc4f.png)  iCloud
        * ![](https://user-images.githubusercontent.com/3118097/48986709-2389de80-f0cd-11e8-8d98-119792b0bc4f.png)  Multipath
        * ![](https://user-images.githubusercontent.com/3118097/48986709-2389de80-f0cd-11e8-8d98-119792b0bc4f.png)  Push Notifications
-       * ![](https://user-images.githubusercontent.com/3118097/48986709-2389de80-f0cd-11e8-8d98-119792b0bc4f.png)  Siri 
+       * ![](https://user-images.githubusercontent.com/3118097/48986709-2389de80-f0cd-11e8-8d98-119792b0bc4f.png)  Siri
      * Spotlight:
        * ![](https://user-images.githubusercontent.com/3118097/48986709-2389de80-f0cd-11e8-8d98-119792b0bc4f.png)  App Groups
        * ![](https://user-images.githubusercontent.com/3118097/48986709-2389de80-f0cd-11e8-8d98-119792b0bc4f.png) iCloud
@@ -183,7 +183,7 @@ _Paid_ Apple Developer provisioning may only require re-signing once a year.
          * 🔲 `group.provenance-emu.provenance`
          * ☑️ `group.[change-this].provenance`
        * ![](https://user-images.githubusercontent.com/3118097/48986709-2389de80-f0cd-11e8-8d98-119792b0bc4f.png)  iCloud
-       * ![](https://user-images.githubusercontent.com/3118097/48986709-2389de80-f0cd-11e8-8d98-119792b0bc4f.png)  Push Notifications 
+       * ![](https://user-images.githubusercontent.com/3118097/48986709-2389de80-f0cd-11e8-8d98-119792b0bc4f.png)  Push Notifications
      * TopShelf:
        * ![](https://user-images.githubusercontent.com/3118097/48986709-2389de80-f0cd-11e8-8d98-119792b0bc4f.png) App Groups
          * 🔲 `group.provenance-emu.provenance`
@@ -276,7 +276,7 @@ If you are having trouble building or sideloading the app, check for your issue 
 
 **something about database build error**
 
-* This means there have been changes to the database model which is no longer compatible with your previous build. In order to update you _**must**_ clean install \(delete app and re-install, not build or install over over existing app\). If you would like to migrate your save games and states, you can refer to [Restoring Files](https://github.com/Provenance-Emu/Provenance/wiki/Restoring-Files).  
+* This means there have been changes to the database model which is no longer compatible with your previous build. In order to update you _**must**_ clean install \(delete app and re-install, not build or install over over existing app\). If you would like to migrate your save games and states, you can refer to [Restoring Files](https://github.com/Provenance-Emu/Provenance/wiki/Restoring-Files).
 
 🏍 You can install a duplicate app for testing by using a different bundle ID than your previous/main install.
 
