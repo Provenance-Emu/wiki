@@ -50,3 +50,13 @@ You can get it here: https://get.udid.io/.
 3. Select your iOS device
 4. On the next screen, a window should appear listing your phone’s Capacity, Phone Number, and Serial Number.
 5. By clicking on Serial Number once, the prompt should change to display your UDID.
+
+## Linux
+
+### Method 1 (cli)
+
+1. Connect device to USB
+2. Run this shell command
+```sh
+lsusb -v 2> /dev/null | grep -e "Apple Inc" -A 2
+```
