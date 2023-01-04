@@ -196,4 +196,3 @@ Provenance supports the system-wide Dark mode of tvOS. To enable it go to tvOS `
 {% hint style="info" %}
 🗯 If you cannot find the answers you're looking for…you may ask for [help](https://discord.gg/NhzgrXh) on our Discord.  
 {% endhint %}
-

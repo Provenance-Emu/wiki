@@ -19,6 +19,8 @@
 |  | [Super Famicom / Super Nintendo Entertainment System](https://en.wikipedia.org/wiki/Super_Nintendo_Entertainment_System) | 11/21 · 1990 | Snes9x | ✔️ | ✔️ | N/A | N/A | N/A | N/A |
 |  | [Game Boy Color](https://en.wikipedia.org/wiki/Game_Boy_Color) | 10/21 · 1998 | | ✔️ | N/A | N/A | N/A | N/A | N/A |
 |  | [Virtual Boy](https://en.wikipedia.org/wiki/Virtual_Boy) | 7/21 · 1995 | Stella | ✔️ | N/A | N/A | N/A | N/A | N/A |
+|  | [GameCube](https://en.wikipedia.org/wiki/GameCube) | TODO | Dolphin | ✔️ | ✔️ | N/A | N/A | N/A | N/A |
+|  | [Wii](https://en.wikipedia.org/wiki/Wii) | TODO | Dolphin | ✔️ | ✔️ | N/A | N/A | N/A | N/A |
 |  | [Nintendo 64](https://en.wikipedia.org/wiki/Nintendo_64) | 6/23 · 1996 | Mupen64Plus/GLideN64 | ✔️ | ✔️ | N/A | N/A | N/A | N/A |
 |  | [Game Boy Advance](https://en.wikipedia.org/wiki/Game_Boy_Advance) | 3/21 · 2001 | | ✔️ | N/A | N/A | N/A | N/A | N/A |
 |  | [Pokemon mini](https://en.wikipedia.org/wiki/Pokémon_Mini) | 11/16 · 2001 | PokeMini | ✔️ | N/A | N/A | N/A | N/A | N/A |
@@ -46,6 +48,7 @@ __⚠️ Please do not ask when these will be ready ⚠️__
 | CBS | [ColecoVision](https://en.wikipedia.org/wiki/ColecoVision) | 8/1 · 1992 | CrabEMU | Loads, Blank screen |  ❌ | ❌ | ❌ | ❌ | N/A |
 | Mattel | [Intellivison](https://en.wikipedia.org/wiki/Intellivision) | 1/1 · 1990 | FreeIntv & Bliss | Loads, GLES, Metal corrupted GFX |  ❌ | ❌ | ❌ | ❌ | N/A |
 | Magnaxov | [Odyssey2](https://en.wikipedia.org/wiki/Magnavox_Odyssey_2) | 9/1 · 1978 | O2EM | Duplicate symbols when linking, need to fix statics in headers |  ❌ | ❌ | ❌ | ❌ | N/A |
+| Nintendo | [DS](https://en.wikipedia.org/wiki/Nintendo_DS) | 9/1 · 2004 | Desmume2015 | Graphics issues |  ❌ | ❌ | ❌ | ❌ | N/A |
 | Panasonic | [3DO](https://en.wikipedia.org/wiki/3DO_Interactive_Multiplayer) | 3/4 · 1993 | FreeDO/3DO | Loads, GLES no GFX, Metal corrupted GFX |  ❌ | ❌ | ❌ | ❌ | N/A |
 | Sega | [Dreamcast](https://en.wikipedia.org/wiki/Sega_Dreamcast) | 11/27 · 1998 | Reicast/Flycast | A/V Sync fail when it did build | ❌ | ❌ | ❌ | ❌ | N/A |
 | Smith Engineering | [Vexctrex](https://en.wikipedia.org/wiki/Vectrex) | 11/1 · 1982 | VecX | Builds, doesn't load rom. GPU linking broken |  ❌ | ❌ | ❌ | ❌ | ❌ |
