@@ -65,9 +65,11 @@ The 3rd-parties _**do not**_ help this community _whatsoever,_ causing us wasted
 
 > #### [Why is the app running slow or stuttering?](faqs.md#slow)
 
+> #### [How to improve tvOS Latency?](faqs.md#tvos-latency)
+
 > #### [How can I contribute?](faqs.md#contribute)
 
-#### 
+####
 
 ### How do I install or update Provenance? <a id="install"></a>
 
@@ -174,6 +176,14 @@ Provenance supports the system-wide Dark mode of tvOS. To enable it go to tvOS `
 * All cores should run full speed on any generation Apple TV, or iPhone 7 or newer.
 * Turn off Smoothing and CRT effects in the application settings.
 * Devices as old as iPad 2 should run up to 16 bit generation systems at full speed. A complete performance comparison has not been done but this is a general guideline based on user reports and developer testing.
+
+### How to improve Apple TV latency? <a id="tvos-latency"></a>
+
+* Use a hardwired ethernet instead of WiFi for imporoved Bluetooth performance.
+* Use your TV's low latency or "game mode".
+* Turn off Dolby Vision.
+* Disconnect / unpair any unused bluetooth devices.
+* Remove any solid metal or thick walls from around Apple TV device to improve Bluetooth signal. Try to store not too close to anything using WiFi.
 
 ### How can I contribute? <a id="contribute"></a>
 
