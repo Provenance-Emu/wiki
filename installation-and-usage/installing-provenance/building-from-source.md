@@ -114,6 +114,8 @@ If you have a free Apple Developer account, you need to generate a new signing c
 
 Set `DEVELOPER_ACCOUNT_PAID = YES` if you used a paid Apple Developer account in order to automatically request the increased memory limit entitlement from Apple.
 
+After updating `CodeSigning.xcconfig`, re-open the project (remember to use `Provenance.xcworkspace` when opening the project).
+
 {% hint style="info" %}
  You can install a duplicate app for testing by using a different bundle ID than your previous/main install.
 {% endhint %}
