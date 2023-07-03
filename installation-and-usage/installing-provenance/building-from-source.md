@@ -87,14 +87,6 @@ Tower is a powerful commercial git client that can automate a lot of the tasks y
 If building from active develop branch, we _will not_ be held responsible for any loss of your game data! Install _**at your own risk!**_ …and back up your files.
 {% endhint %}
 
-## Setup
-
-Using Terminal install the following requirements. If already set up, skip to [Build Source](building-from-source.md#build-source).
-
-{% hint style="info" %}
-The Terminal app can be found in: _/Applications/Utilities_
-{% endhint %}
-
 ## Build Source
 
 1. Open the Provenance Xcode workspace: ![](https://user-images.githubusercontent.com/3118097/37574056-3e07abe2-2adb-11e8-948c-acb4d539e658.png) `Provenance.xcworkspace`
