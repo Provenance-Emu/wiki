@@ -40,7 +40,7 @@
 | Smith Engineering | [Vexctrex](https://en.wikipedia.org/wiki/Vectrex) | 11/1 · 1982 | VecX / Retroarch | ✔️ |  ✔️ | ❌ | ❌ | ❌ | ❌ |
 | SNK | [Neo Geo Pocket](https://en.wikipedia.org/wiki/Neo_Geo_Pocket) | 10/28 · 1998 | | ✔️ | N/A | N/A | N/A | N/A | N/A |
 |     | [Neo Geo Pocket Color](https://en.wikipedia.org/wiki/Neo_Geo_Pocket_Color) | 3/16 · 1999 | | ✔️ | N/A | N/A | N/A | N/A | N/A |
-| Sony | [PlayStation](https://en.wikipedia.org/wiki/PlayStation_) | 12/3 · 1994 | Mednafen | ✔️ | ✔️ | ❌ | ❌ | ❌ | N/A |
+| Sony | [PlayStation](https://en.wikipedia.org/wiki/PlayStation_(console)) | 12/3 · 1994 | Mednafen | ✔️ | ✔️ | ❌ | ❌ | ❌ | N/A |
 |      | [PlayStation Portable (PSP)](https://en.wikipedia.org/wiki/PlayStation_Portable) | 12/12 · 2005 | PPSSPP | ✔️ |  ✔️ | ❌ | ❌ | ❌ | ❌ |
 | **Manufacturer** | **System** | **Released** | **Emulator** | **Status** | **Saves** | **Rumble** | **Microphone** | **Camera** | **Gyro** |
 
