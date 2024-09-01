@@ -25,6 +25,7 @@ description: Certain emulator cores require specific BIOS files in order to play
 |  | Jaguar |  |
 | Bandai | WonderSwan |  |
 |  | WonderSwan Color |  |
+| CBS| ColecoVision | ✅ |
 | NEC | PC Engine / TurboGrafx-16 |  |
 |  | PC Engine Super CD-ROM² System / TurboGrafx-CD | ✅ |
 |  | PC Engine SuperGrafx |  |
@@ -66,6 +67,12 @@ Filenames are arbitrary as long as the MD5s match. Provenance will rename files 
 | Filename | MD5 Hash |
 | :--- | :--- |
 | `lynxboot.img` | fcd403db69f54290b51035d82f835e7b |
+
+### CBS ColecoVision
+
+| Filename | MD5 Hash |
+| :--- | :--- |
+| `colecovision.rom` | 2c66f5911e5b42b8ebe113403548eee7 |
 
 ### Nintendo Famicom Disk System
 
