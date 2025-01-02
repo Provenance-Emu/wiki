@@ -1,6 +1,6 @@
 # Welcome
 
-Welcome to the new Provenance wiki. Here you can find instructions on how to install and use Provenance, import ROMs, apply ROM patches, translations and hacks, get controller recommendations, or contribute to the project. We recommend you start with [**Frequently Asked Questions**](faqs.md).
+Welcome to the new Provenance wiki. Here you can find instructions on installing and using Provenance, importing ROMs, applying ROM patches, translating and hacks, getting controller recommendations, or contributing to the project. We recommend you start with [**Frequently Asked Questions**](faqs.md).
 
 💬 Join us and the rest of our community on the [Provenence-Emu Discord](https://discord.gg/4TK7PU5)
 
