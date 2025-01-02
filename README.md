@@ -9,7 +9,7 @@ Welcome to the new Provenance wiki. Here you can find instructions on how to ins
 * Chat on [Discord](https://discord.gg/4TK7PU5)
 * Follow on [Patreon](https://www.patreon.com/provenance) or [open collective](https://opencollective.com/provenanceemu)
 * Watch videos on [YouTube](https://www.patreon.com/provenance)
-* Livestream of development and testing on [Twitch](https://www.twitch.tv/joemattiello)
+* Livestream of development and testing on [Twitch](https://www.twitch.tv/joe__codes)
 * Like our page on [Facebook](https://www.facebook.com/provenance.emu)
 * Follow our announcements on [Twitter](https://twitter.com/provenanceapp)
 
