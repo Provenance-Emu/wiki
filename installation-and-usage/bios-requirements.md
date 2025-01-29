@@ -37,6 +37,7 @@ description: Certain emulator cores require specific BIOS files in order to play
 |              | Nintendo 64                                         |      |
 |              | Game Boy Advance                                    | 🔶   |
 |              | Pokemon mini                                        |      |
+| Palm         | PalmOS                                              | ✅    |
 | Philips      | CD-i                                                | ✅    |
 | Sega         | SG-1000                                             |      |
 |              | Master System                                       |      |
@@ -100,6 +101,20 @@ Game Boy Advance BIOS is optional.
 | Filename   | MD5 Hash                         |
 | ---------- | -------------------------------- |
 | `pcfx.rom` | 08e36edbea28a017f79f8d4f7ff9b6d7 |
+
+### Palm PalmOS
+
+| Filename               | BIOS Name / Version                    | MD5 Hash                         |
+| ---------------------- | -------------------------------------- | -------------------------------- |
+| `palmos41-en-m515.rom` | Palm OS 4.1                            |                                  |
+| `palmos40-en-m500.rom` | Palm OS 4.0                            |                                  |
+| `palmos52-en-t3.rom`   | Palm OS 5.2                            |                                  |
+| `palmos60-en-t3.rom`   | Palm OS 6.0                            |                                  |
+| `bootloader-dbvz.rom`  | UART Bootloader                        |                                  |
+
+{% hint style="info" %}
+Only `palmos41-en-m515.rom` is required
+{% endhint %}
 
 ### Philips CD-i
 
