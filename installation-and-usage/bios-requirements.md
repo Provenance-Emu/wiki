@@ -21,6 +21,7 @@ description: Certain emulator cores require specific BIOS files in order to play
 |              | 7800                                                |      |
 |              | Lynx                                                | ✅    |
 |              | Jaguar                                              |      |
+|              | ST                                                  | ✅    |
 | Bandai       | WonderSwan                                          |      |
 |              | WonderSwan Color                                    |      |
 | CBS          | ColecoVision                                        | ✅    |
