@@ -24,8 +24,6 @@ _📱 Note: Systems that require JIT or are banned by Apple, such as Apple II or
 |  | [Super Famicom / Super Nintendo Entertainment System](https://en.wikipedia.org/wiki/Super_Nintendo_Entertainment_System) | 11/21 · 1990 | Snes9x | ✔️ | ✔️ | N/A | N/A | N/A | N/A |
 |  | [Game Boy Color](https://en.wikipedia.org/wiki/Game_Boy_Color) | 10/21 · 1998 | | ✔️ | N/A | N/A | N/A | N/A | N/A |
 |  | [Virtual Boy](https://en.wikipedia.org/wiki/Virtual_Boy) | 7/21 · 1995 | Stella | ✔️ | N/A | N/A | N/A | N/A | N/A |
-|  | [GameCube](https://en.wikipedia.org/wiki/GameCube) | 9/14 · 2001 | Dolphin | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
-|  | [Wii](https://en.wikipedia.org/wiki/Wii) | 11/19 · 2006 | Dolphin | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 |  | [Nintendo 64](https://en.wikipedia.org/wiki/Nintendo_64) | 6/23 · 1996 | Mupen64Plus/GLideN64 | ✔️ | ✔️ | N/A | N/A | N/A | N/A |
 |  | [Game Boy Advance](https://en.wikipedia.org/wiki/Game_Boy_Advance) | 3/21 · 2001 | | ✔️ | N/A | N/A | N/A | N/A | N/A | N/A |
 |  | [Pokemon mini](https://en.wikipedia.org/wiki/Pokémon_Mini) | 11/16 · 2001 | PokeMini | ✔️ | N/A | N/A | N/A | N/A | N/A |
