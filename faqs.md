@@ -51,6 +51,7 @@ Welcome to Provenance! Whether you just downloaded from the App Store or are a l
 ✅ Save states (freeze time, resume anywhere)  
 ✅ Battery saves (in-game progress)  
 ✅ Custom artwork and metadata  
+✅ Skins (controller overlays)  
 ✅ BIOS files
 
 **Pricing:** $3.99/month, $39.99/year, or $99.99 lifetime (with free trial)
