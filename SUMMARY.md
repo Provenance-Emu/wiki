@@ -24,6 +24,7 @@
 ## Technical Reference
 
 * [Supported Systems](info/supported-systems.md)
+* [Apple TV / tvOS Guide](info/tvos-guide.md)
 * [Controllers & Controls](info/controllers-and-controls/README.md)
   * [Supported Controllers](info/controllers-and-controls/supported-controllers.md)
   * [Controller Reviews](info/controllers-and-controls/controller-reviews.md)
