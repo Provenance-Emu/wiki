@@ -1,6 +1,6 @@
 # Supported Systems
 
-_📱 Note: Systems that require JIT or are banned by Apple, such as Apple II or Macintosh, are NOT available in the app store._
+_📱 Note: Most systems are available in the App Store. Some systems have limitations on certain devices due to performance requirements._
 
 | Manufacturer | System | Released | Emulator | Working Status | Saves | Rumble | Microphone | Camera | Gyro |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
