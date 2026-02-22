@@ -191,9 +191,9 @@ Welcome to Provenance! Whether you just downloaded from the App Store or are a l
 4. Wait for initial sync (may take hours for large libraries)
 5. Enable on all devices with the same Apple ID
 
-**What syncs:** ROMs, save states, battery saves, custom artwork, BIOS files
+**What syncs:** ROMs, save states, battery saves, custom artwork, skins, BIOS files
 
-**What doesn't sync:** Skins, app settings
+**What doesn't sync:** App settings only
 
 **Full guide:** [Advanced ROM Management - iCloud Sync](installation-and-usage/roms/advanced-management.md#icloud-sync-for-large-collections)
 
