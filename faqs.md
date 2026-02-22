@@ -20,7 +20,17 @@ Welcome to Provenance! Whether you just downloaded from the App Store or are a l
 
 ### What is Provenance Plus?
 
-Provenance Plus is an **optional subscription** that unlocks premium features:
+**Provenance Plus is your ticket to seamless multi-device gaming.**
+
+**The experience:**
+- Start playing on your Apple TV (big screen, couch gaming)
+- Save your progress (automatic cloud backup)
+- Pick up your iPhone on the commute
+- Continue exactly where you left off
+
+**How it works:**
+- **Apple TV:** FREE CloudKit sync (no permanent storage, needs cloud backup)
+- **iPhone/iPad/Mac:** Provenance Plus unlocks sync ($3.99/month)
 
 | Feature | Free | Provenance Plus |
 |---------|------|-----------------|
@@ -29,11 +39,19 @@ Provenance Plus is an **optional subscription** that unlocks premium features:
 | Save states | ✅ | ✅ |
 | Controller support | ✅ | ✅ |
 | Skins | ✅ | ✅ |
-| **iCloud library sync** | ❌ | ✅ |
-| **iCloud save sync** | ❌ | ✅ |
+| **Apple TV CloudKit sync** | ✅ FREE | ✅ |
+| **iPhone/iPad/Mac CloudKit sync** | ❌ | ✅ |
+| **Multi-device save sync** | ❌ | ✅ |
 | **Early access to new cores** | ❌ | ✅ |
 | **TestFlight beta access** | ❌ | ✅ |
 | **Priority support** | ❌ | ✅ |
+
+**What syncs:**
+✅ Your entire game library  
+✅ Save states (freeze time, resume anywhere)  
+✅ Battery saves (in-game progress)  
+✅ Custom artwork and metadata  
+✅ BIOS files
 
 **Pricing:** $3.99/month, $39.99/year, or $99.99 lifetime (with free trial)
 
@@ -310,20 +328,36 @@ Provenance uses **system-wide Dark Mode**:
 
 ## Provenance Plus
 
+### Why is CloudKit sync free on Apple TV but paid on iOS?
+
+**Great question!** It's about the platform constraints:
+
+**Apple TV has no permanent storage** - when you delete Provenance, your games and saves are gone. We include FREE CloudKit sync on tvOS so you never lose progress. It's not a premium feature, it's a necessity.
+
+**iPhone/iPad have permanent storage** - your games and saves persist even if you delete the app. CloudKit sync is a premium convenience feature that lets you access your library on multiple devices.
+
+**The upsell:**  
+Love the seamless experience on Apple TV? Unlock that same magic on your iPhone and iPad with Provenance Plus. Start on your couch, continue on your commute. That's the premium experience we're selling.
+
+**Bottom line:** tvOS sync = survival feature (free). iOS sync = premium multi-device experience (Plus).
+
 ### Is Provenance Plus worth it?
 
 **Worth it if you:**
-- ✅ Own multiple Apple devices (iPhone + iPad + Mac + Apple TV)
-- ✅ Have a large ROM library (100+ games)
-- ✅ Want seamless sync (start on iPhone, continue on iPad)
+- ✅ **Own an Apple TV + iPhone/iPad** (seamless gaming across devices)
+- ✅ Want to start games on your couch, continue on your commute
+- ✅ Never want to lose save progress (automatic cloud backup)
+- ✅ Have multiple Apple devices (library syncs to all of them)
 - ✅ Want early access to new features
 
 **Not worth it if you:**
-- ❌ Only use one device
-- ❌ Small library (manually transferring is fine)
-- ❌ Don't mind manual backups
+- ❌ Only use Apple TV (sync is already free!)
+- ❌ Only use one iOS device (manual backups work fine)
+- ❌ Don't care about multi-device gaming
 
-**Try it free:** App Store trial available before subscribing.
+**The killer feature:** Start Final Fantasy VII on your TV, pick it up on your iPhone during lunch break, continue on your iPad in bed. All without manually transferring saves.
+
+**Try it free:** We offer an App Store trial so you can experience seamless multi-device gaming before subscribing.
 
 ### How do I cancel Provenance Plus?
 
