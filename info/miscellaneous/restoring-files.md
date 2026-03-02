@@ -4,10 +4,6 @@ description: How to restore files if lost or deleted.
 
 # Restoring Files
 
-{% hint style="info" %}
-ROUGH DRAFT ··· Follow the [Doc Updates](https://github.com/Provenance-Emu/Provenance/projects/7) project for status
-{% endhint %}
-
 If you are moving from v1.4 to v1.5b, changing your Bundle ID, or upgrading builds that have undergone database changes which require the app to be clean installed, **you will need to backup your save games and ROMs or you will lose them all!** 
 
 At the moment exporting or restoring files such can only be done manually…
