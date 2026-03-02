@@ -16,7 +16,7 @@ Welcome to Provenance! Whether you just downloaded from the App Store or are a l
 
 **Yes, 100% free!** You can download from the App Store and play all 38 systems without paying a cent.
 
-**Provenance Plus** is an optional subscription ($3.99/month, $39.99/year, or $99.99 lifetime) that adds premium features like iCloud sync, but it's not required to enjoy the full emulation experience.
+**Provenance Plus** is an optional subscription or lifetime purchase ($3.99/month, $39.99/year, or $99.99 lifetime) that adds premium features like iCloud sync, but it's not required to enjoy the full emulation experience.
 
 ### What is Provenance Plus?
 
