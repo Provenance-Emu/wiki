@@ -1,5 +1,5 @@
 ---
-description: Using controllers and physical controls with Provenance
+description: Connect and configure controllers for Provenance
 ---
 
 # Controllers & Controls

@@ -200,13 +200,13 @@ See the dedicated **[Apple TV / tvOS Guide](tvos-guide.md#performance-tips)** fo
 **Performance:** 🔴 Requires iPhone 11 or newer
 
 **Tips:**
-- Use **Reicast core**
+- Use **Flycast JIT-less core**
 - Apple TV 4K recommended for best experience
 - Not all games are compatible (core still in development)
 
 **Game-Specific:**
-- ✅ **Works well:** Sonic Adventure, Crazy Taxi, Soulcalibur
-- ⚠️ **Slow/buggy:** Shenmue, Jet Set Radio
+- ✅ **Works well:** Sonic Adventure, Shenmue, Soulcalibur, Jet Set Radio, THPS 1+2
+- ⚠️ **Slow/buggy:** Crazy Taxi 1 & 2, DOA2
 - ❌ **Incompatible:** Some titles don't boot
 
 **Optimization:**

@@ -133,4 +133,4 @@ You can switch between installation methods, but note:
 
 ---
 
-**Last updated:** February 2026
+**Last updated:** March 2026

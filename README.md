@@ -79,7 +79,7 @@ Seamlessly sync your library, saves, and settings across all your devices (Prove
 
 ## 🌟 Provenance Plus
 
-**Optional subscription** to support development and unlock premium features:
+**Optional Provenance Plus upgrade** – $3.99/month, $39.99/year, or a $99.99 one-time lifetime purchase to support development and unlock premium features:
 
 - ☁️ **iCloud Sync** - Seamless library and save sync across devices
 - 🧪 **Beta Access** - Test new features early via TestFlight
@@ -112,6 +112,6 @@ Use the sidebar navigation to explore, or search for specific topics.
 
 ---
 
-**Last updated:** February 2026  
+**Last updated:** March 2026
 **Provenance version:** Latest (App Store)  
 **Wiki maintained by:** Provenance community
