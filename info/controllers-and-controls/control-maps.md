@@ -52,10 +52,10 @@ Extended gamepad with dual analog sticks and triggers, but without clickable thu
 | NEC | PC Engine \(TurboGrafx-16\) | ✜ | II | I | | | | | | | | | Select | Run |
 |  | PC Engine CD / TurboGrafx-CD | ✜ | II | I | | | | | | | | | Select | Run |
 |  | SuperGrafx | ✜ | II | I | | | | | | | | | Select | Run |
-| Nintendo | Nintendo Entertainment System / Famicom | ✜ | A | B | | | | | | | | | Select | Start |
-|  | Famicom Disk System | ✜ | A | B | | | | | | | | | Select | Start |
-|  | Game Boy | ✜ | A | B | | | | | | | | | Select | Start |
-|  | Super Famicom \(Super Nintendo Entertainment System\) | ✜ | B | A | X | Y | L | R | | | | | Select | Start |
+| Nintendo | Nintendo Entertainment System / Famicom | ✜ | A | B | | | | | Select | Start | | | | | | |
+|  | Famicom Disk System | ✜ | A | B | | | | | Select | Start | | | | | | |
+|  | Game Boy | ✜ | A | B | | | | | Select | Start | | | | | | |
+|  | Super Famicom \(Super Nintendo Entertainment System\) | ✜ | B | A | X | Y | L | R | Select | Start | | | | | | |
 | Sega | SG-1000 | ✜ | Button 2 | Button 1 | | | | | | | | | | Start |
 |  | Master System | ✜ | Button 2 | Button 1 | | | | | | | | | | Pause |
 |  | Mega Drive / Genesis | ✜ | B | C | A | X | Y | Z | | | | | Mode | Start |
