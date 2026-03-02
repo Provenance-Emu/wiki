@@ -1,12 +1,8 @@
 ---
-description: Game Saves and Saves States.
+description: Game Saves and Save States.
 ---
 
 # Game Saves
-
-{% hint style="warning" %}
-**ROUGH DRAFT**
-{% endhint %}
 
 There are two ways to save your progress in Provenance: the native in-game save, known as _Battery Saves_, and freezing the state of the emulator anywhere in a game called _Save States_.
 
@@ -14,10 +10,14 @@ There are two ways to save your progress in Provenance: the native in-game save,
   * [Saving Games](saves.md#saving-games)
   * [Supported Formats](saves.md#supported-formats)
   * [Converting Formats](saves.md#converting-formats)
-  * [Importing Saves](saves.md#importing-saves)
+  * [Importing Battery Saves](saves.md#importing-battery-saves)
+  * [Exporting Battery Saves](saves.md#exporting-battery-saves)
 * [**Save States**](saves.md#save-states)
   * [Saving States](saves.md#saving-states)
-  * [Importing States](saves.md#importing-saves)
+  * [Loading States](saves.md#loading-states)
+  * [Deleting States](saves.md#deleting-states)
+  * [Importing Save States](saves.md#importing-save-states)
+* [**iCloud Sync**](saves.md#icloud-sync)
 
 ## Battery Saves
 
@@ -25,42 +25,90 @@ A Battery Save is the term used to describe a save file that is created by a gam
 
 ### Saving Games
 
-A battery save file is created by the game when you use the game's built-in save functionality. For example, if you are playing Pokemon for Gameboy, and you choose to save the game from the game's main menu, it will create a save file in `Battery States/[ROM-Filename]/[ROM-Filename].sav`.
+A battery save file is created by the game when you use the game's built-in save functionality. For example, if you are playing Pokemon for Game Boy, and you choose to save the game from the game's main menu, Provenance stores the save file at `Battery States/[ROM-Filename]/[ROM-Filename].sav`.
 
 ### Supported Formats
 
-| Manufacturer | System | Supported Format\(s\) / Extensions |
+| Manufacturer | System | Supported Format\(s\) / Extension\(s\) |
 | :--- | :--- | :--- |
-| Sony | Playsation | `.mcr` |
-| Others… |  | `.sav` |
-
-_\(more details coming…\)_
+| Sony | PlayStation \(PS1\) | `.mcr` |
+| Sony | PlayStation Portable \(PSP\) | `.VMP` |
+| Nintendo | NES | `.sav` |
+| Nintendo | Super NES \(SNES\) | `.srm` |
+| Nintendo | Nintendo 64 | `.srm`, `.eep`, `.fla`, `.mpk`, `.sra` |
+| Nintendo | Game Boy / Game Boy Color | `.sav` |
+| Nintendo | Game Boy Advance | `.sav` |
+| Sega | Genesis / Mega Drive | `.srm` |
+| Sega | Game Gear | `.sav` |
+| Sega | Saturn | `.bcr` |
+| Atari | Lynx | `.sav` |
+| SNK | Neo Geo Pocket / Color | `.sav` |
+| Others | Most systems | `.sav` |
 
 ### Converting Formats
 
-#### PSX/PS1
+#### PSX / PS1
 
-If you have memory card files from another emulator you can convert them to `.mcr` via:
+If you have memory card files from another emulator, you can convert them to `.mcr` using:
 
 * Windows: [MemcardRex](https://github.com/ShendoXT/memcardrex)
+* Mac / Linux: [mymc](http://www.csclub.uwaterloo.ca:11068/mymc/) \(primarily PS2, but supports PS1 cards\)
 
-### Importing Saves
+### Importing Battery Saves
 
-Since these files are created and managed by the game, you are able to move them between emulator implementations and they should still work as intended, unlike save states which are emulator dependent, unless they are of a different format, and will require conversion.
+Since battery saves are created and managed by the game, you can move them between emulator implementations and they should still work as intended — unlike save states, which are emulator-dependent.
 
-It makes things easier if you run the game at least once within Provenance so that it can create the required directories and filename structures.
+It makes things easier if you run the game at least once within Provenance so that it can create the required directories and filename structure.
 
-1. Start the web server in Provenance.
-2. Navigate to `Battery States/[ROM-Filename]/`
+The save filename must match your ROM's filename \(without extension\). For example, if your ROM is `Pokemon Red (USA).gb`, the battery save must be named `Pokemon Red (USA).sav`.
+
+#### Via Files App or iCloud Drive \(Recommended\)
+
+1. Open the **Files** app on your iPhone, iPad, or Mac.
+2. Navigate to **On My iPhone/iPad** → **Provenance** → **Battery States**.
+3. Open the folder named after your ROM.
+4. Copy your save file into this folder, renaming it to `[ROM-Filename].sav` \(or `.mcr` for PlayStation\) if needed.
+5. Launch the ROM in Provenance and use the game's native in-game load to load your save.
+
+#### Via Web Server
+
+1. Start the web server in Provenance \(`+` button in Game Library, or **Settings → Import/Export**\).
+2. On your computer, open the URL shown in the dialog and navigate to `Battery States/[ROM-Filename]/`.
 3. Upload your save file into this folder.
-4. Make sure the save's filename is `[ROM-Filename].sav` \(rename it to match if it is not\).
+4. Rename the file to `[ROM-Filename].sav` if it doesn't already match.
 5. Stop the web server.
-6. Load the ROM.
-7. Use the game's native in-game loading to load the game.
+6. Load the ROM and use the game's native in-game load to access your save.
+
+#### Via Mac Finder \(USB\)
+
+1. Connect your iOS device to your Mac via USB.
+2. Open **Finder** and select your device in the sidebar.
+3. Click the **Files** tab and expand **Provenance**.
+4. Navigate to **Battery States** → **\[ROM-Filename\]**.
+5. Drag your save file into this folder, renaming it to `[ROM-Filename].sav` if needed.
+6. Load the ROM in Provenance and use the game's native in-game load.
 
 {% hint style="warning" %}
-If the game does not show the save, make sure the file name is correct as described above. If it still does not show, then it's possible that the save was created with a different region, or version of a ROM that uses a different save format and will only be compatible with the ROM version/region it was created with.
+If the game does not show the save, make sure the filename matches your ROM filename exactly \(case-sensitive\). If it still doesn't work, the save may have been created with a different region or version of the ROM and will only be compatible with that exact ROM version/region.
 {% endhint %}
+
+### Exporting Battery Saves
+
+To back up your battery saves or move them to another emulator:
+
+#### Via Files App
+
+1. Open the **Files** app on your device.
+2. Navigate to **On My iPhone/iPad** → **Provenance** → **Battery States**.
+3. Open the folder for your game.
+4. Long-press the save file and choose **Copy** or **Share** to export it to iCloud Drive, AirDrop, or another destination.
+
+#### Via Mac Finder \(USB\)
+
+1. Connect your iOS device to your Mac via USB.
+2. Open **Finder**, select your device, and click the **Files** tab.
+3. Expand **Provenance** → **Battery States** → **\[ROM-Filename\]**.
+4. Drag the save file to your Mac.
 
 ## Save States
 
@@ -74,21 +122,69 @@ Save state compatibility between updates is _**NOT**_ a guarantee as they can br
 
 ### Saving States
 
-To create a save state, press the menu button while playing a game. Choose the Save States option. From here you can press the `+` button to create a new save state. You can also tap on an existing save state and choose to overwrite that state with a new one. This cannot be undone, so be sure that you either backup the save state before doing this if you wish to keep it.
+To create a save state, press the menu button while playing a game. Choose the **Save States** option. From here you can press the `+` button to create a new save state. You can also tap on an existing save state and choose to overwrite it. This cannot be undone, so back up the save state before overwriting if you want to keep it.
 
-Provenance can automatically create a save state whenever the app is backgrounded, or when you return to the Game Library. The next time you run the game, you will have the option of re-loading from the most recent automatic save state or not. \(If you don't see this, you may have already told it not to display the dialogue anymore.\) The option to auto-load a save state is in the Settings menu.
+Provenance can automatically create a save state whenever the app is backgrounded or when you return to the Game Library. The next time you run the game, you will have the option of reloading from the most recent automatic save state. \(If you don't see this prompt, you may have already told it not to display the dialog anymore.\) The auto-save and auto-load options are configurable in **Settings**.
 
 ### Loading States
 
-To load from an existing save state, press the menu button after loading a ROM. Here you will find all of the save states you've manually created, as well as the automatic states. Tapping on a save state will present a menu allowing you to load the state.
+To load from an existing save state, press the menu button after loading a ROM. Here you will find all of the save states you've manually created, as well as automatic states. Tapping on a save state will present a menu allowing you to load the state.
 
 ### Deleting States
 
-From the Save States screen, tap on an existing state and choose Delete from the menu. This cannot be undone, so be sure to backup the save if you want to keep it before deleting it from Provenance.
+From the Save States screen, tap on an existing state and choose **Delete** from the menu. This cannot be undone, so be sure to back up the save state before deleting if you want to keep it.
+
+### Importing Save States
+
+Save states are emulator-specific. Importing a save state from another emulator will only work reliably if it was created with an identical core and version.
+
+#### Via Web Server
+
+1. Start the web server in Provenance.
+2. Navigate to `Save States/[ROM-Filename]/`.
+3. Upload your save state file into this folder.
+4. Stop the web server, then load the ROM.
+5. Open the **Save States** menu to load your imported state.
+
+#### Via Mac Finder \(USB\)
+
+1. Connect your iOS device to your Mac via USB.
+2. Open **Finder**, select your device, and click the **Files** tab.
+3. Expand **Provenance** → **Save States** → **\[ROM-Filename\]**.
+4. Drag your save state file into this folder.
+5. Load the ROM in Provenance and access the Save States menu to load it.
 
 {% hint style="warning" %}
-Save states are generally limited to the emulator core they were created with — if you change cores, your old save states will no longer work. If an emulator core is updated by an app update, there is a possibility that save states may not be compatible with the new version if it changed the way it handles save states.
+Save states are generally limited to the emulator core they were created with — if you change cores, your old save states will no longer work. If an emulator core is updated by an app update, save states may not be compatible with the new version if it changed the way it handles save states.
 
-This should also be considered when exporting save states and attempting to play them in another emulator -- unless the other emulator is exactly the same core and version, it is highly unlikely that the save state will work. For this case, battery saves should be used.
+This should also be considered when exporting save states to use in another emulator — unless the other emulator is exactly the same core and version, it is highly unlikely that the save state will work. For cross-emulator compatibility, battery saves should be used instead.
 {% endhint %}
 
+## iCloud Sync
+
+Provenance can sync both battery saves and save states across your devices using iCloud.
+
+**Apple TV:** iCloud sync via CloudKit is **free** for all tvOS users. Since Apple TV has no permanent local storage, saves are automatically backed up to the cloud so you never lose progress.
+
+**iPhone, iPad, and Mac:** iCloud sync requires a **Provenance Plus** subscription \($3.99/month or $39.99/year\).
+
+### What Syncs
+
+| Data | Free | Provenance Plus |
+| :--- | :--- | :--- |
+| Battery saves \(local\) | ✅ | ✅ |
+| Save states \(local\) | ✅ | ✅ |
+| Apple TV CloudKit sync | ✅ FREE | ✅ |
+| iPhone / iPad / Mac sync | ❌ | ✅ |
+| Multi-device save sync | ❌ | ✅ |
+
+### Enable iCloud Sync
+
+1. Subscribe to **Provenance Plus** in-app \(**Settings → Provenance Plus**\).
+2. Go to **Settings → iCloud Sync** and toggle **ON**.
+3. Enable on all your devices using the same Apple ID.
+4. Wait for the initial sync to complete \(may take a while for large save libraries\).
+
+{% hint style="info" %}
+For troubleshooting iCloud sync issues or managing large synced libraries, see [Advanced ROM Management — iCloud Sync](../installation-and-usage/roms/advanced-management.md#icloud-sync-for-large-collections).
+{% endhint %}
