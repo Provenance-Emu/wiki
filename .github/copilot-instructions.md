@@ -16,7 +16,7 @@ This is the documentation wiki for **Provenance**, a multi-system emulator for i
 ## Content Conventions
 
 - **App Store first**: The App Store is the recommended installation method. Sideloading and building from source are "Advanced" alternatives.
-- **Provenance Plus**: Optional subscription ($3.99/mo). Apple TV gets free CloudKit sync; other platforms require Plus.
+- **Provenance Plus**: Optional subscription ($3.99/month, $39.99/year, or $99.99 lifetime). Apple TV gets free CloudKit sync; other platforms require Plus.
 - **Internal links**: Always use relative paths (e.g., `[FAQ](faqs.md)`).
 - **Frontmatter**: Some pages have YAML frontmatter with a `description` field. Preserve it when editing.
 - **Supported systems**: Currently 38+ systems. Verify count against `info/supported-systems.md`.

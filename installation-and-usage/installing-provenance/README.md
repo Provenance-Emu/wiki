@@ -46,7 +46,7 @@ For advanced users who want more control or need specific features:
 Yes! Provenance is 100% free to download and use. Provenance Plus is an optional subscription that adds premium features like iCloud sync and beta access.
 
 **What's Provenance Plus?**  
-An optional subscription ($3.99/month or $39.99/year) that unlocks:
+An optional subscription ($3.99/month, $39.99/year, or $99.99 lifetime) that unlocks:
 - ☁️ iCloud library and save sync across devices
 - 🔔 Early access to new cores and features
 - 🎮 Priority support
