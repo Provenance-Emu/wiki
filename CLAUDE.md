@@ -34,3 +34,13 @@ Work item tags like `W003`, `W008`, `W012` are sometimes appended.
 ## Contribution Workflow
 
 The main Provenance project uses a **fork-and-PR workflow** (not branch-based). PRs should squash changes into a single commit. See `help/contribute.md` for details.
+
+## GitHub Automation (Claude Code Agent)
+
+This repo has a GitHub Actions workflow (`.github/workflows/claude-code.yml`) that runs Claude Code autonomously:
+
+- **Triggers:** `@claude` mentions in issue/PR comments, issues labeled `agent-work`, PR review comments mentioning `@claude`, and change-requested reviews on `[Agent]` PRs.
+- **Agent PRs** are prefixed with `[Agent]` and target the `master` branch.
+- **Issue template:** `.github/ISSUE_TEMPLATE/agent-task.md` — use this for well-scoped documentation tasks.
+- **Label:** Add `agent-work` to an issue to trigger the agent automatically.
+- **`/claude-fix`** in a PR comment triggers the agent to fix all pending review comments.
