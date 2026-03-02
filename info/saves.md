@@ -64,7 +64,7 @@ The save filename must match your ROM's filename \(without extension\). For exam
 
 #### Via Files App or iCloud Drive \(Recommended\)
 
-1. Open the **Files** app on your iPhone, iPad, or Mac.
+1. Open the **Files** app on your iPhone or iPad.
 2. Navigate to **On My iPhone/iPad** → **Provenance** → **Battery States**.
 3. Open the folder named after your ROM.
 4. Copy your save file into this folder, renaming it to `[ROM-Filename].sav` \(or `.mcr` for PlayStation\) if needed.
