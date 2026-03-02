@@ -36,7 +36,7 @@ On your iOS device:
 - ✅ Apple Vision Pro (visionOS 1.0+)
 - ✅ Mac (macOS 13.0+ with Apple Silicon)
 
-**Note:** Some systems (like 3DS, PSP, Dreamcast) require more powerful devices for good performance.
+**Note:** Some systems (like 3DS and PSP) require more powerful devices for good performance.
 
 ---
 

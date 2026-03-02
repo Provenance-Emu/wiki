@@ -126,7 +126,6 @@ These systems were designed for TVs and translate perfectly to Apple TV:
 
 - 🎮 **Nintendo 64** (1996-2002) - *Super Mario 64, GoldenEye 007, The Legend of Zelda: Ocarina of Time*
 - 🎮 **PlayStation** (1994-2006) - *Final Fantasy VII, Crash Bandicoot, Metal Gear Solid*
-- 🎮 **Sega Dreamcast** (1998-2001) - *Sonic Adventure, Shenmue, Crazy Taxi*
 - 🎮 **SNES** (1990-2003) - *Super Metroid, Chrono Trigger, Super Mario World*
 - 🎮 **Sega Genesis** (1988-1997) - *Sonic the Hedgehog, Streets of Rage 2, Phantasy Star IV*
 
@@ -161,14 +160,14 @@ These systems were designed for TVs and translate perfectly to Apple TV:
 **System-Specific:**
 - **N64 on older Apple TV HD:** Some games may need frameskip enabled
 - **PlayStation:** Runs full speed on all Apple TV models
-- **Dreamcast:** Requires Apple TV 4K for best performance
+- **Dreamcast:** Currently in development (not officially supported — expect A/V sync issues)
 
 ### Expected Performance
 
 | Apple TV Model | Recommended Systems | Performance Notes |
 |---------------|---------------------|-------------------|
-| **Apple TV 4K (2nd/3rd gen)** | All systems up to PlayStation/N64/Dreamcast | Full speed, no compromises |
-| **Apple TV 4K (1st gen)** | All systems up to PlayStation/N64 | Dreamcast playable, some slowdown |
+| **Apple TV 4K (2nd/3rd gen)** | All systems up to PlayStation/N64 | Full speed, no compromises |
+| **Apple TV 4K (1st gen)** | All systems up to PlayStation/N64 | Full speed, minor slowdown on demanding games |
 | **Apple TV HD (4th gen)** | All systems up to PlayStation | N64 mostly full speed with minor slowdown |
 
 ---
