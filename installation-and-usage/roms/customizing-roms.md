@@ -146,6 +146,6 @@ If images _do not_ have a matching ROM they will stay in the directory until it 
 * Files with extra `.` in filename will cause a crash.
 
 {% hint style="info" %}
-🗯 If you are still stuck ask for [help](https://discord.gg/NhzgrXh) on our Discord.
+🗯 If you are still stuck ask for [help](https://discord.gg/provenance) on our Discord.
 {% endhint %}
 

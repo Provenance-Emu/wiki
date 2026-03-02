@@ -90,5 +90,5 @@ If you've already done the First-time Setup, then you can build from the command
   ```
 
 {% hint style="info" %}
-🗯 If you are still stuck ask for [help](https://discord.gg/NhzgrXh) on our Discord.
+🗯 If you are still stuck ask for [help](https://discord.gg/provenance) on our Discord.
 {% endhint %}

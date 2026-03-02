@@ -122,5 +122,5 @@ Free Apple developer provisioning expires _every 7 days_, requiring reloading \(
 * If app installs or updates as a duplicate app instead of updating existing installation, you need to delete it and use the _same_ Bundle ID as your original build or you'll end up with a double installation…
 
 {% hint style="info" %}
-🗯 If you are still stuck ask for [help](https://discord.gg/NhzgrXh) on our Discord.
+🗯 If you are still stuck ask for [help](https://discord.gg/provenance) on our Discord.
 {% endhint %}

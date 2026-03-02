@@ -131,6 +131,6 @@ Please refer to the [Known Issues](importing-roms.md#known-issues) regarding Imp
 * Uploading ROMs + [Custom Cover Art](customizing-roms.md) in _one archive_ may not yield a replacement until the next time Provenance is quit \(with App Switcher\) and relaunched.
 
 {% hint style="info" %}
-🗯 If you are still stuck ask for [help](https://discord.gg/NhzgrXh) on our Discord.
+🗯 If you are still stuck ask for [help](https://discord.gg/provenance) on our Discord.
 {% endhint %}
 
