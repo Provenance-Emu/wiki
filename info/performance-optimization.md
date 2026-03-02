@@ -205,7 +205,7 @@ See the dedicated **[Apple TV / tvOS Guide](tvos-guide.md#performance-tips)** fo
 - Not all games are compatible (core still in development)
 
 **Game-Specific:**
-- ✅ **Works well:** Sonic Adventure, Crazy Taxi, Soulcalibur
+- ✅ **Works well:** Sonic Adventure, Shenmue, Soulcalibur, Jet Set Radio, THPS 1+2
 - ⚠️ **Slow/buggy:** Shenmue, Jet Set Radio
 - ❌ **Incompatible:** Some titles don't boot
 
