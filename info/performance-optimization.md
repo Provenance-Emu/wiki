@@ -200,7 +200,7 @@ See the dedicated **[Apple TV / tvOS Guide](tvos-guide.md#performance-tips)** fo
 **Performance:** 🔴 Requires iPhone 11 or newer
 
 **Tips:**
-- Use **Reicast core**
+- Use **Flycast JIT-less core**
 - Apple TV 4K recommended for best experience
 - Not all games are compatible (core still in development)
 
