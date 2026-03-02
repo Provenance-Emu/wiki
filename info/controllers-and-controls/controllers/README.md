@@ -147,6 +147,9 @@ Standalone controllers are familiar to that of Playstation or Xbox. Recommended 
 Check out the controller phone mounts made by [UtorCase](https://utorcase.com/).
 {% endhint %}
 
+See [Controller Reviews](controller-reviews.md) for individual reviews, pros/cons, and recommendations.
+
+
 ## Controls
 
 A full list of mapped controls for Standard and Extended MFi gamepad profiles per system can be found in [MFi Controls](https://bit.ly/2LDZNzI).

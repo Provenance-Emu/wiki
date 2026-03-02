@@ -27,7 +27,7 @@ Provenance is the premier multi-system emulator for Apple TV, bringing classic g
 1. Open the **App Store** on your Apple TV
 2. Search for **"Provenance"**
 3. Download and install (100% free)
-4. Optional: Subscribe to **Provenance Plus** for iCloud sync ($3.99/month, $39.99/year, or $99.99 lifetime)
+4. Optional: Upgrade to **Provenance Plus** for iCloud sync ($3.99/month, $39.99/year, or $99.99 lifetime)
 
 **Alternative:** [Sideload from Xcode](../installation-and-usage/installing-provenance/sideloading.md) (requires Mac + Apple Developer account)
 
@@ -126,6 +126,7 @@ These systems were designed for TVs and translate perfectly to Apple TV:
 
 - 🎮 **Nintendo 64** (1996-2002) - *Super Mario 64, GoldenEye 007, The Legend of Zelda: Ocarina of Time*
 - 🎮 **PlayStation** (1994-2006) - *Final Fantasy VII, Crash Bandicoot, Metal Gear Solid*
+- 🎮 **Sega Dreamcast** (1998-2001) - *Sonic Adventure, Shenmue, Crazy Taxi*
 - 🎮 **SNES** (1990-2003) - *Super Metroid, Chrono Trigger, Super Mario World*
 - 🎮 **Sega Genesis** (1988-1997) - *Sonic the Hedgehog, Streets of Rage 2, Phantasy Star IV*
 
@@ -160,14 +161,14 @@ These systems were designed for TVs and translate perfectly to Apple TV:
 **System-Specific:**
 - **N64 on older Apple TV HD:** Some games may need frameskip enabled
 - **PlayStation:** Runs full speed on all Apple TV models
-- **Dreamcast:** Currently in development (not officially supported — expect A/V sync issues)
+- **Dreamcast:** Requires Apple TV 4K for best performance
 
 ### Expected Performance
 
 | Apple TV Model | Recommended Systems | Performance Notes |
 |---------------|---------------------|-------------------|
-| **Apple TV 4K (2nd/3rd gen)** | All systems up to PlayStation/N64 | Full speed, no compromises |
-| **Apple TV 4K (1st gen)** | All systems up to PlayStation/N64 | Full speed, minor slowdown on demanding games |
+| **Apple TV 4K (2nd/3rd gen)** | All systems up to PlayStation/N64/Dreamcast | Full speed, no compromises |
+| **Apple TV 4K (1st gen)** | All systems up to PlayStation/N64 | Dreamcast playable, some slowdown |
 | **Apple TV HD (4th gen)** | All systems up to PlayStation | N64 mostly full speed with minor slowdown |
 
 ---
@@ -185,7 +186,7 @@ These systems were designed for TVs and translate perfectly to Apple TV:
 - 🛠️ Priority support
 - 📬 TestFlight beta access
 
-**Cost:** $3.99/month, $39.99/year, or $99.99 lifetime (with free trial)
+**Cost:** $3.99/month or $39.99/year (App Store free trial available for subscriptions), or $99.99 lifetime
 
 ---
 

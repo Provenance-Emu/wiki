@@ -37,6 +37,7 @@ _📱 Note: Most systems are available in the App Store. Some systems have limit
 |  | [Mega-CD / CD](https://en.wikipedia.org/wiki/Sega_CD) | 12/12 · 1991 | | ✔️ | N/A | N/A | N/A | N/A | N/A |
 |  | [32X](https://en.wikipedia.org/wiki/32X) | 11/21 · 1994 | PicoDrive | ✔️ | N/A | N/A | N/A | N/A | N/A |
 |  | [Saturn](https://en.wikipedia.org/wiki/Sega_Saturn) | 11/22 · 1994 | Mednafen | ✔️ | N/A | N/A | N/A | N/A | N/A |
+|  | [Dreamcast](https://en.wikipedia.org/wiki/Sega_Dreamcast) | 11/27 · 1998 | Reicast | ⚠️ Demanding — requires iPhone 11+ or Apple TV 4K | ✔️ | ❌ | ❌ | ❌ | N/A |
 | Smith Engineering | [Vexctrex](https://en.wikipedia.org/wiki/Vectrex) | 11/1 · 1982 | VecX / Retroarch | ✔️ |  ✔️ | ❌ | ❌ | ❌ | ❌ |
 | SNK | [Neo Geo Pocket](https://en.wikipedia.org/wiki/Neo_Geo_Pocket) | 10/28 · 1998 | | ✔️ | N/A | N/A | N/A | N/A | N/A |
 |     | [Neo Geo Pocket Color](https://en.wikipedia.org/wiki/Neo_Geo_Pocket_Color) | 3/16 · 1999 | | ✔️ | N/A | N/A | N/A | N/A | N/A |
@@ -61,5 +62,4 @@ __⚠️ Please do not ask when these will be ready ⚠️__
 | Welback Holdings | [Mega Duck / Cougar Boy](https://en.wikipedia.org/wiki/Mega_Duck) | N/A | SameDuck | ⚠️ In Development | ❌ | ❌ | ❌ | ❌ | N/A |
 | Atari | [Atari ST](https://en.wikipedia.org/wiki/Atari_ST) | 6/ · 1985 | Hatari | ⚠️ In Development | ❌ | ❌ | ❌ | ❌ | N/A |
 | Sony | [PlayStation 2](https://en.wikipedia.org/wiki/PlayStation_2) | 3/4 · 2000 | Play! | ⚠️ (Requires JIT, Graphical Glithces) |  ✔️ | ❌ | ❌ | ❌ | ❌ |
-| Sega | [Dreamcast](https://en.wikipedia.org/wiki/Sega_Dreamcast) | 11/27 · 1998 | Reicast/Flycast | A/V Sync fail when it did build | ❌ | ❌ | ❌ | ❌ | N/A |
 | **Manufacturer** | **System** | **Released** | **Emulator** | **Status** | **Saves** | **Rumble** | **Microphone** | **Camera** | **Gyro** |
