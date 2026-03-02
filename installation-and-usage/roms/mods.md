@@ -80,6 +80,6 @@ Hi-Res texture pack don't seem to noticeably degrade performance \(on original A
 
 
 {% hint style="info" %}
-🗯 If you are still stuck ask for [help](https://discord.gg/NhzgrXh) on our Discord.
+🗯 If you are still stuck ask for [help](https://discord.gg/provenance) on our Discord.
 {% endhint %}
 

@@ -275,5 +275,5 @@ If you are having trouble building or sideloading the app, check for your issue 
 🏍 You can install a duplicate app for testing by using a different bundle ID than your previous/main install.
 
 {% hint style="info" %}
-🗯 If you are still stuck try [debugging](../../help/troubleshooting.md) it yourself or ask for [help](https://discord.gg/NhzgrXh) on our Discord.
+🗯 If you are still stuck try [debugging](../../help/troubleshooting.md) on your own or ask for [help](https://discord.gg/provenance) on our Discord.
 {% endhint %}

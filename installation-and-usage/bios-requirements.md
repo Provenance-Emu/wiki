@@ -172,5 +172,5 @@ Though not required, you can verify the MD5 hashes of your files to be certain. 
 Alternatively, BIOS files can be force [uploaded](roms/importing-roms.md#uploading) manually into `/BIOS/com.provenance.[system]` via WebUI or WebDav (iOS, tvOS) or the Apple Files app (iOS only).
 
 {% hint style="info" %}
-🗯 If you are still stuck ask for [help](https://discord.gg/NhzgrXh) on our Discord.
+🗯 If you are still stuck ask for [help](https://discord.gg/provenance) on our Discord.
 {% endhint %}
