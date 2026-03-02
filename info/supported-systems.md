@@ -22,12 +22,13 @@
 |  | [Super Famicom / Super Nintendo Entertainment System](https://en.wikipedia.org/wiki/Super_Nintendo_Entertainment_System) | 11/21 · 1990 | Snes9x | ✔️ | ✔️ | N/A | N/A | N/A | N/A |
 |  | [Game Boy Color](https://en.wikipedia.org/wiki/Game_Boy_Color) | 10/21 · 1998 | | ✔️ | N/A | N/A | N/A | N/A | N/A |
 |  | [Virtual Boy](https://en.wikipedia.org/wiki/Virtual_Boy) | 7/21 · 1995 | Stella | ✔️ | N/A | N/A | N/A | N/A | N/A |
-|  | [GameCube](https://en.wikipedia.org/wiki/GameCube) | TODO | Dolphin | ✔️ | ✔️ | N/A | N/A | N/A | N/A |
-|  | [Wii](https://en.wikipedia.org/wiki/Wii) | TODO | Dolphin | ✔️ | ✔️ | N/A | N/A | N/A | N/A |
 |  | [Nintendo 64](https://en.wikipedia.org/wiki/Nintendo_64) | 6/23 · 1996 | Mupen64Plus/GLideN64 | ✔️ | ✔️ | N/A | N/A | N/A | N/A |
 |  | [Game Boy Advance](https://en.wikipedia.org/wiki/Game_Boy_Advance) | 3/21 · 2001 | | ✔️ | N/A | N/A | N/A | N/A | N/A |
+|  | [GameCube](https://en.wikipedia.org/wiki/GameCube) | 11/18 · 2001 | Dolphin | ✔️ | ✔️ | N/A | N/A | N/A | N/A |
 |  | [Pokemon mini](https://en.wikipedia.org/wiki/Pokémon_Mini) | 11/16 · 2001 | PokeMini | ✔️ | N/A | N/A | N/A | N/A | N/A |
 |  | [DS](https://en.wikipedia.org/wiki/Nintendo_DS) | 9/1 · 2004 | threeDS | ✔️ |  ✔️ | ❌ | ❌ | ❌ | N/A |
+|  | [Wii](https://en.wikipedia.org/wiki/Wii) | 11/19 · 2006 | Dolphin | ✔️ | ✔️ | N/A | N/A | N/A | N/A |
+|  | [3DS](https://en.wikipedia.org/wiki/Nintendo_3DS) | 2/26 · 2011 | Citra | ✔️ | ✔️ | ❌ | ❌ | ❌ | ❌ |
 | Panasonic | [3DO](https://en.wikipedia.org/wiki/3DO_Interactive_Multiplayer) | 3/4 · 1993 | FreeDO/3DO / Retroarch | ✔️ |  ✔️ | ❌ | ❌ | ❌ | N/A |
 | Sega | [SG-1000](https://en.wikipedia.org/wiki/SG-1000) | 7/15 · 1983 | | ✔️ | N/A | N/A | N/A | N/A | N/A |
 |  | [Master System](https://en.wikipedia.org/wiki/Master_System) | 10/20 · 1985 | | ✔️ | N/A | N/A | N/A | N/A | N/A |
@@ -36,7 +37,7 @@
 |  | [Mega-CD / CD](https://en.wikipedia.org/wiki/Sega_CD) | 12/12 · 1991 | | ✔️ | N/A | N/A | N/A | N/A | N/A |
 |  | [32X](https://en.wikipedia.org/wiki/32X) | 11/21 · 1994 | PicoDrive | ✔️ | N/A | N/A | N/A | N/A | N/A |
 |  | [Saturn](https://en.wikipedia.org/wiki/Sega_Saturn) | 11/22 · 1994 | Mednafen | ✔️ | N/A | N/A | N/A | N/A | N/A |
-|  | [Dreamcast](https://en.wikipedia.org/wiki/Sega_Dreamcast) | 11/27 · 1998 | Reicast/Flycast | A/V Sync fail when it did build | ❌ | ❌ | ❌ | ❌ | N/A |
+|  | [Dreamcast](https://en.wikipedia.org/wiki/Sega_Dreamcast) | 11/27 · 1998 | Reicast/Flycast | ✔️ (JIT disabled by default; enable via Settings → Enable Unsupported Cores; WinCE games supported) | ✔️ | ❌ | ❌ | ❌ | N/A |
 | Smith Engineering | [Vexctrex](https://en.wikipedia.org/wiki/Vectrex) | 11/1 · 1982 | VecX / Retroarch | ✔️ |  ✔️ | ❌ | ❌ | ❌ | ❌ |
 | SNK | [Neo Geo Pocket](https://en.wikipedia.org/wiki/Neo_Geo_Pocket) | 10/28 · 1998 | | ✔️ | N/A | N/A | N/A | N/A | N/A |
 |     | [Neo Geo Pocket Color](https://en.wikipedia.org/wiki/Neo_Geo_Pocket_Color) | 3/16 · 1999 | | ✔️ | N/A | N/A | N/A | N/A | N/A |
@@ -53,10 +54,10 @@ __⚠️ Please do not ask when these will be ready ⚠️__
 
 | Manufacturer | System | Released | Emulator | Status | Saves | Rumble | Microphone | Camera | Gyro |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Tic80 | [Tic80](https://en.wikipedia.org/wiki/TIC-80) | TODO | TODO | TODO | TODO | ❌ | ❌ | ❌ | N/A |
-| FBNeo | [FBNeo](https://en.wikipedia.org/wiki/PlayStation_) | TODO | FinalBurn Neo | TODO | TODO | ❌ | ❌ | ❌ | N/A |
-| Sameduck | [Sameduck](https://en.wikipedia.org/wiki/Sameduck) | TODO | Sameduck | TODO | TODO | ❌ | ❌ | ❌ | N/A |
-| Atari | [Atari ST](https://en.wikipedia.org/wiki/PlayStation_) | TODO | Hatari | TODO | TODO | ❌ | ❌ | ❌ | N/A |
+| Various | [TIC-80](https://en.wikipedia.org/wiki/TIC-80) | 4/4 · 2017 | TIC-80 | ⚠️ In Development | ❌ | ❌ | ❌ | ❌ | N/A |
+| Various | [FinalBurn Neo](https://en.wikipedia.org/wiki/FinalBurn_Neo) | N/A | FinalBurn Neo | ⚠️ In Development | ❌ | ❌ | ❌ | ❌ | N/A |
+| Welback Holdings | [Mega Duck / Cougar Boy](https://en.wikipedia.org/wiki/Mega_Duck) | N/A | SameDuck | ⚠️ In Development | ❌ | ❌ | ❌ | ❌ | N/A |
+| Atari | [Atari ST](https://en.wikipedia.org/wiki/Atari_ST) | 6/ · 1985 | Hatari | ⚠️ In Development | ❌ | ❌ | ❌ | ❌ | N/A |
 | Sony | [PlayStation 2](https://en.wikipedia.org/wiki/PlayStation_2) | 3/4 · 2000 | Play! | ⚠️ (Requires JIT, Graphical Glithces) |  ✔️ | ❌ | ❌ | ❌ | ❌ |
 | **Manufacturer** | **System** | **Released** | **Emulator** | **Status** | **Saves** | **Rumble** | **Microphone** | **Camera** | **Gyro** |
 <!--
