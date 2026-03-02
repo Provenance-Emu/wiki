@@ -342,7 +342,7 @@ Skins are stored on your device in Provenance's app container.
 
 ## Frequently Asked Questions
 
-**Q: Do skins work on Apple TV?**
+**Q: Do skins work on Apple TV?**  
 A: Yes, for most systems! Skins render on Apple TV when using touch-based systems (though most users prefer physical controllers). Note: Nintendo 3DS skins are not supported on tvOS.
 
 **Q: Can I use the same skin on multiple systems?**  
