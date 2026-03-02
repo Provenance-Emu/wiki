@@ -31,8 +31,8 @@ Skins change the visual appearance of your on-screen controller buttons and d-pa
 ## Supported Systems
 
 Skins work with **all systems except**:
-- ❌ Nintendo 3DS (coming soon)
-- ❌ Nintendo DS (coming soon)
+- ❌ Nintendo 3DS (not currently supported)
+- ❌ Nintendo DS (not currently supported)
 
 **Fully supported systems include:**
 - ✅ NES, SNES, N64
@@ -273,7 +273,7 @@ Common system identifiers for `info.json`:
 
 **Solutions:**
 1. ✅ **Check file extension** - Must be `.deltaskin` (not `.zip`)
-2. ✅ **Verify system** - Skin must match a supported system (3DS/DS not yet supported)
+2. ✅ **Verify system** - Skin must match a supported system (3DS/DS skins are not supported)
 3. ✅ **Restart Provenance** - Force quit app and reopen
 4. ✅ **Re-import** - Delete and re-download the skin
 

@@ -329,7 +329,16 @@ Loose files _only_. DO NOT contain folder\(s\) within an archive \(this is a kno
 
 #### Windows <a id="archiving-windows"></a>
 
-_\(coming later…\)_
+Use [7-Zip](https://www.7-zip.org/) (free) to create `.7z` archives:
+
+1. Download and install [7-Zip](https://www.7-zip.org/).
+2. Right-click your ROM file(s) → **7-Zip** → **Add to archive…**
+3. Set **Archive format** to `7z`.
+4. Click **OK**. Done.
+
+{% hint style="danger" %}
+Loose files _only_. DO NOT include folder\(s\) inside the archive \(this will cause a crash\)!
+{% endhint %}
 
 \_\_
 

@@ -70,7 +70,7 @@ R-Pad Toggle = ◉ R-Pad Click + ▶︎ (Forward)
 Stick Toggle = ◉ Stick Click + ◀︎ (Back)
 ```
 
-Currently, ◀︎ \(Back\) / Select and ▶︎ \(Forward\) / Start will work with PSX, and N64 via MFi+ \(full support coming later…\)
+Currently, ◀︎ \(Back\) / Select and ▶︎ \(Forward\) / Start are supported for PSX and N64 via MFi+.
 
 {% hint style="info" %}
 Requires [Steam Controller BLE firmware](https://support.steampowered.com/kb_article.php?ref=7728-QESJ-4420) via Steam Beta program.
@@ -84,7 +84,9 @@ Before MFi, there were various controllers using non-standardized virtual keyboa
 iCade and MFi can **not** be used together simultaneously without conflict/bugs, currently.
 {% endhint %}
 
-* _iCade control maps coming later…_
+{% hint style="info" %}
+iCade controllers use key mappings rather than variable numerical data, so thumbstick coordinates and trigger sensitivity are not supported. See [Control Maps](../control-maps.md) for available iCade button mappings.
+{% endhint %}
 
 ## Controller Forms
 
@@ -145,11 +147,9 @@ Standalone controllers are familiar to that of Playstation or Xbox. Recommended 
 Check out the controller phone mounts made by [UtorCase](https://utorcase.com/).
 {% endhint %}
 
-⭐️Later adding specific controller reviews, pros/cons, retro-nostalgia recommendations…
+See [Controller Reviews](controllers/controller-reviews.md) for individual reviews, pros/cons, and recommendations.
 
 ## Controls
 
 A full list of mapped controls for Standard and Extended MFi gamepad profiles per system can be found in [MFi Controls](https://bit.ly/2LDZNzI).
-
-_iCade control maps coming later…_
 
