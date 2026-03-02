@@ -46,6 +46,8 @@ description: Controller mappings for gamepad profiles per system.
 
 ### iCade Controller Maps
 
-_iCade control maps coming later…_
+iCade controllers use key mappings rather than analog data. They support basic directional input and buttons, but do not support analog thumbsticks or variable trigger sensitivity.
+
+For iCade-mode controllers (e.g., 8bitdo N30, SteelSeries Stratus XL\*), refer to your controller's manual for the key mapping layout, as iCade mappings vary per device.
 
 \_\_
