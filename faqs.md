@@ -125,7 +125,7 @@ Welcome to Provenance! Whether you just downloaded from the App Store or are a l
 **38+ systems** including:
 - Nintendo: NES, SNES, N64, Game Boy, GBA, GameCube, 3DS, DS
 - PlayStation: PS1, PSP
-- Sega: Genesis, Dreamcast, Saturn, Game Gear, Sega CD
+- Sega: Genesis, Saturn, Game Gear, Sega CD
 - Atari, Neo Geo, TurboGrafx-16, and many more!
 
 **Full list:** [Supported Systems](info/supported-systems.md)
@@ -135,7 +135,8 @@ Welcome to Provenance! Whether you just downloaded from the App Store or are a l
 **iPhone/iPad:**
 - ✅ **Perfect:** NES, SNES, GB, GBA, Genesis (all supported devices — iPhone 8 or iPhone SE (2nd/3rd gen) or newer)
 - ✅ **Great:** PlayStation, N64 (iPhone 8 or iPhone SE (2nd/3rd gen) or newer)
-- ⚠️ **Demanding:** GameCube, Dreamcast, PSP (iPhone 11+ or M1 iPad)
+- ⚠️ **Demanding:** GameCube, PSP (iPhone 11+ or M1 iPad)
+- 🚧 **In Development:** Dreamcast (not officially supported; see [Supported Systems](info/supported-systems.md#systems-in-development))
 
 **Apple TV:**
 - ✅ **All systems** run great on Apple TV 4K
