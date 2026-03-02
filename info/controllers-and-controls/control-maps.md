@@ -109,9 +109,9 @@ Micro gamepad (e.g., Apple TV Siri Remote). Only D-pad, A, X, and Menu button av
 |  | Lynx | ✜ | A | B | Start |
 |  | Jaguar | ✜ | B | A | Pause |
 | Bandai | WonderSwan, WonderSwan Color | X Buttons | A | B | Start |
-| NEC | PC Engine \(TurboGrafx-16\) | ✜ | I | II | Run |
-|  | PC Engine CD / TurboGrafx-CD | ✜ | I | II | Run |
-|  | SuperGrafx | ✜ | I | II | Run |
+| NEC | PC Engine \(TurboGrafx-16\) | ✜ | II | I | Run |
+|  | PC Engine CD / TurboGrafx-CD | ✜ | II | I | Run |
+|  | SuperGrafx | ✜ | II | I | Run |
 | Nintendo | Nintendo Entertainment System / Famicom | ✜ | A | B | Start |
 |  | Famicom Disk System | ✜ | A | B | Start |
 |  | Game Boy | ✜ | A | B | Start |
