@@ -60,8 +60,8 @@ Free Apple developer provisioning expires _every 7 days_, requiring reloading, b
 
 1. Download and launch [AltDeploy](https://github.com/pixelomer/AltDeploy/releases).
 2. Connect your device \(you may need to open Finder and choose `Trust…` when it pops up\).
-3. Select your device in Impactor.
-4. Drag & drop `.ipa` file onto Impactor.
+3. In AltDeploy, select your connected device from the device menu.
+4. In AltDeploy, choose the Provenance `.ipa` file \(or drag & drop the `.ipa` onto the AltDeploy window\).
 5. Enter your Apple ID.
 6. If _not_ using 2-Factor Authentication, enter your account password, otherwise…
    1. _\(If you haven't yet\),_ login to your [Apple ID](https://appleid.apple.com/) online and `Generate` an App-Specific Password, under Security section \(and write it down somewhere for later use\).
