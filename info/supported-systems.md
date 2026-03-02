@@ -58,7 +58,7 @@ __⚠️ Please do not ask when these will be ready ⚠️__
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Tic80 | [TIC-80](https://en.wikipedia.org/wiki/TIC-80) | 2017 | TIC-80 | ⚠️ In development | ❌ | ❌ | ❌ | ❌ | N/A |
 | FBNeo | [FinalBurn Neo](https://en.wikipedia.org/wiki/FinalBurn_Neo) | N/A | FinalBurn Neo | ⚠️ In development | ❌ | ❌ | ❌ | ❌ | N/A |
-| Sameduck | Sameduck | — | Sameduck | ⚠️ In development | ❌ | ❌ | ❌ | ❌ | N/A |
+| Sameduck | Sameduck | N/A | Sameduck | ⚠️ In development | ❌ | ❌ | ❌ | ❌ | N/A |
 | Atari | [Atari ST](https://en.wikipedia.org/wiki/Atari_ST) | 1985 | Hatari | ⚠️ In development | ❌ | ❌ | ❌ | ❌ | N/A |
 | Sony | [PlayStation 2](https://en.wikipedia.org/wiki/PlayStation_2) | 3/4 · 2000 | Play! | ⚠️ (Requires JIT, Graphical Glithces) |  ✔️ | ❌ | ❌ | ❌ | ❌ |
 | Sega | [Dreamcast](https://en.wikipedia.org/wiki/Sega_Dreamcast) | 11/27 · 1998 | Reicast/Flycast | A/V Sync fail when it did build | ❌ | ❌ | ❌ | ❌ | N/A |
