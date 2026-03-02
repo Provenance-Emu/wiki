@@ -4,7 +4,7 @@ description: Managing your ROM library in Provenance
 
 # ROMs
 
-Provenance can play ROMs from 30+ retro systems. This section covers everything you need to get your game library up and running.
+Provenance can play ROMs from [38+ retro systems](../../info/supported-systems.md). This section covers everything you need to get your game library up and running.
 
 ## Getting Started
 
