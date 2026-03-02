@@ -28,10 +28,10 @@ Full extended gamepad with dual analog sticks, triggers, and thumbstick buttons 
 |  | Super Famicom \(Super Nintendo Entertainment System\) | ✜ | B | A | X | Y | L | R | | | | | | | Select | Start |
 | Sega | SG-1000 | ✜ | Button 2 | Button 1 | | | | | | | | | | | | Start |
 |  | Master System | ✜ | Button 2 | Button 1 | | | | | | | | | | | | Pause |
-|  | Mega Drive / Genesis | ✜ | B | C | A | X | Y | Z | | Mode | | | | | Mode | Start |
+|  | Mega Drive / Genesis | ✜ | B | C | A | X | Y | Z | | Mode | | | | | | Start |
 |  | Game Gear | ✜ | Button 2 | Button 1 | | | | | | | | | | | | Start |
-|  | Mega-CD / Sega CD | ✜ | B | C | A | X | Y | Z | | Mode | | | | | Mode | Start |
-|  | 32X | ✜ | B | C | A | X | Y | Z | | Mode | | | | | Mode | Start |
+|  | Mega-CD / Sega CD | ✜ | B | C | A | X | Y | Z | | Mode | | | | | | Start |
+|  | 32X | ✜ | B | C | A | X | Y | Z | | Mode | | | | | | Start |
 |  | Saturn | ✜ | B | C | A | Y | L | R | Z | X | | | | | | Start |
 
 \_\_
