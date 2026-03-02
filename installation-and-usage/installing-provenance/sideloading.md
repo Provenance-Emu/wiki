@@ -47,7 +47,7 @@ Sideloading from 3rd party sources _**is not supported**_.
 2. Select `.ipa` file and resign it to yourself, selecting the Provenance Bundle ID you've used in the past if you already have one. If you don't have one, try creating one here if it lets you or proceed to step 4 and return to this.    🆔 Bundle ID: `com.[change-this].provenance`  Replace `[change-this]` with something unique like your username.
 3. Connect your device. ⚠️If you haven't yet, register your device to your Apple ID in Xcode. Easiest way to do this is to make dummy app in Xcode and have it automatically create the provisioning when you enter your Bundle ID  \([Example](https://dantheman827.github.io/ios-app-signer/#tab-bar)\).
 4. Install:
-   * [Xcode](https://itunes.apple.com/us/app/xcode/id497799835): Window → Devices and Simulators: Select your device. Drop the new `.ipa` file onto Installed Apps.
+   * [Xcode](https://apps.apple.com/us/app/xcode/id497799835): Window → Devices and Simulators: Select your device. Drop the new `.ipa` file onto Installed Apps.
    * [Configurator](https://support.apple.com/apple-configurator): Double-click your device → Apps: Drop the new `.ipa` file here.
 5. On device: Go to `Settings` → `General` → `Profiles & Device Management`, tap on your certificate and then `Trust`
 6. _Done._ \(If using a free developer account, repeat from step 4 after it _**expires in 7 days**_\)
@@ -59,7 +59,7 @@ Free Apple developer provisioning expires _every 7 days_, requiring reloading, b
 ## AltDeploy
 
 1. Download and launch [AltDeploy](https://github.com/pixelomer/AltDeploy/releases).
-2. Connect your device \(you may need to launch iTunes and choose `Trust…` when it pops up\).
+2. Connect your device \(you may need to open Finder and choose `Trust…` when it pops up\).
 3. Select your device in Impactor.
 4. Drag & drop `.ipa` file onto Impactor.
 5. Enter your Apple ID.
@@ -67,7 +67,7 @@ Free Apple developer provisioning expires _every 7 days_, requiring reloading, b
    1. _\(If you haven't yet\),_ login to your [Apple ID](https://appleid.apple.com/) online and `Generate` an App-Specific Password, under Security section \(and write it down somewhere for later use\).
    2. Enter your App-Specific Password in AltDeploy, verbatim.
 7. Install:
-   * [Xcode](https://itunes.apple.com/us/app/xcode/id497799835): Window → Devices and Simulators: Select your device. Drop the new `.ipa` file onto Installed Apps.
+   * [Xcode](https://apps.apple.com/us/app/xcode/id497799835): Window → Devices and Simulators: Select your device. Drop the new `.ipa` file onto Installed Apps.
    * [Configurator](https://support.apple.com/apple-configurator): Double-click your device → Apps: Drop the new `.ipa` file here.
 8. On device: Go to `Settings` → `General` → `Profiles & Device Management`, tap on your certificate and then `Trust`
 9. _Done._ \(If using a free developer account, repeat from step 4 after it _**expires in 7 days**_\)
@@ -82,7 +82,7 @@ AltStore source is availble at [this link](altstore://source?url=https://provena
 Click in Mobile Safari once you have AltStore installed.
 
 1. Download and launch [AltStore](https://altstore.io).
-2. Connect your device \(you may need to launch iTunes and choose `Trust…` when it pops up\).
+2. Connect your device \(you may need to open Finder and choose `Trust…` when it pops up\).
 3. …Follow instructions via altstore.io and the app as it guides you.
 4. You'll need to put Provenance .ipa in your iCloud Drive somewhere and install via AltStore app by using the `+` button in the upper left of the My Apps screen to select and sideload it to your device.
 

@@ -83,7 +83,7 @@ Please refer to the [Known Issues](importing-roms.md#known-issues) regarding Imp
 ### Mobile Apps
 
 1. Open app where ROMs are stored or accessible…
-   * _Apple Files \(_[_iCloud Drive_](https://www.apple.com/icloud/icloud-drive)_,_ [_Dropbox_](https://itunes.apple.com/us/app/dropbox/id327630330)_,_ [_Google Drive_](https://itunes.apple.com/us/app/google-drive/id507874739)_,_ [_Nextcloud_](https://itunes.apple.com/us/app/nextcloud/id1125420102)_,_ [_FileBrowser_](https://itunes.apple.com/us/app/filebrowser-computers-cloud/id364738545)_, etc…\)_
+   * _Apple Files \(_[_iCloud Drive_](https://www.apple.com/icloud/icloud-drive)_,_ [_Dropbox_](https://apps.apple.com/us/app/dropbox/id327630330)_,_ [_Google Drive_](https://apps.apple.com/us/app/google-drive/id507874739)_,_ [_Nextcloud_](https://apps.apple.com/us/app/nextcloud/id1125420102)_,_ [_FileBrowser_](https://apps.apple.com/us/app/filebrowser-computers-cloud/id364738545)_, etc…\)_
 2. Navigate to your ROMs directory and tap the ROM you wish to copy to Provenance _or_ its button that gets you to a `Share` or `Export` option, depending on the app.
 3. Locate and tap `Copy to Provenance` option. Done.
 
