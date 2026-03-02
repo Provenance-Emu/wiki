@@ -99,9 +99,9 @@ Standard gamepad with D-pad, four face buttons, and two shoulder buttons. No ana
 
 {% tab title="Micro" %}
 
-Micro gamepad (e.g., Apple TV Siri Remote). Only D-pad, A, X, and Menu button available. Limited to basic gameplay.
+Micro gamepad (e.g., Apple TV Siri Remote). Only D-pad, A, B, and Menu (▶︎) button available. Limited to basic gameplay.
 
-| System |  | ✜ | A | X | ▶︎ |
+| System |  | ✜ | A | B | Menu (▶︎) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Atari | 2600 | Joystick | Fire | | Reset |
 |  | 5200 | ✜ | Fire | | Start |
