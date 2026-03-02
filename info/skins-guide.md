@@ -315,7 +315,7 @@ Common system identifiers for `info.json`:
 
 Skins are stored on your device in Provenance's app container.
 
-**iCloud sync:** With **Provenance Plus**, skins sync via iCloud along with your game library, save states, BIOS files, and custom artwork. [Learn more about Provenance Plus →](../faqs.md#what-is-provenance-plus)
+**iCloud sync:** On Apple TV (tvOS), iCloud/CloudKit sync is included for free. On iPhone, iPad, and Mac, **Provenance Plus** is required for iCloud sync of skins, your game library, save states, BIOS files, and custom artwork. [Learn more about Provenance Plus →](../faqs.md#what-is-provenance-plus)
 
 **File size:** Most skins are 500KB - 2MB each (negligible storage impact).
 
