@@ -28,10 +28,10 @@ Full extended gamepad with dual analog sticks, triggers, and thumbstick buttons 
 |  | Super Famicom \(Super Nintendo Entertainment System\) | ✜ | B | A | X | Y | L | R | | | | | | | Select | Start |
 | Sega | SG-1000 | ✜ | Button 2 | Button 1 | | | | | | | | | | | | Start |
 |  | Master System | ✜ | Button 2 | Button 1 | | | | | | | | | | | | Pause |
-|  | Mega Drive / Genesis | ✜ | B | C | A | X | Y | Z | | | | | | | Mode | Start |
+|  | Mega Drive / Genesis | ✜ | B | C | A | X | Y | Z | | Mode | | | | | | Start |
 |  | Game Gear | ✜ | Button 2 | Button 1 | | | | | | | | | | | | Start |
-|  | Mega-CD / Sega CD | ✜ | B | C | A | X | Y | Z | | | | | | | Mode | Start |
-|  | 32X | ✜ | B | C | A | X | Y | Z | | | | | | | Mode | Start |
+|  | Mega-CD / Sega CD | ✜ | B | C | A | X | Y | Z | | Mode | | | | | | Start |
+|  | 32X | ✜ | B | C | A | X | Y | Z | | Mode | | | | | | Start |
 |  | Saturn | ✜ | B | C | A | Y | L | R | Z | X | | | | | | Start |
 
 \_\_
@@ -51,7 +51,7 @@ Extended gamepad with dual analog sticks and triggers, but without clickable thu
 | Bandai | WonderSwan, WonderSwan Color | X Buttons | A | B | | | | | | | | Y Buttons | | Start |
 | NEC | PC Engine \(TurboGrafx-16\) | ✜ | II | I | | | | | | | | | Select | Run |
 |  | PC Engine CD / TurboGrafx-CD | ✜ | II | I | | | | | | | | | Select | Run |
-|  | PC Engine SuperGrafx | ✜ | II | I | | | | | | | | | Select | Run |
+|  | SuperGrafx | ✜ | II | I | | | | | | | | | Select | Run |
 | Nintendo | Nintendo Entertainment System / Famicom | ✜ | A | B | | | | | | | | | Select | Start |
 |  | Famicom Disk System | ✜ | A | B | | | | | | | | | Select | Start |
 |  | Game Boy | ✜ | A | B | | | | | | | | | Select | Start |
@@ -81,7 +81,7 @@ Standard gamepad with D-pad, four face buttons, and two shoulder buttons. No ana
 | Bandai | WonderSwan, WonderSwan Color | X Buttons | A | B | | | | | | Start |
 | NEC | PC Engine \(TurboGrafx-16\) | ✜ | II | I | | | | | Select | Run |
 |  | PC Engine CD / TurboGrafx-CD | ✜ | II | I | | | | | Select | Run |
-|  | PC Engine SuperGrafx | ✜ | II | I | | | | | Select | Run |
+|  | SuperGrafx | ✜ | II | I | | | | | Select | Run |
 | Nintendo | Nintendo Entertainment System / Famicom | ✜ | A | B | | | | | Select | Start |
 |  | Famicom Disk System | ✜ | A | B | | | | | Select | Start |
 |  | Game Boy | ✜ | A | B | | | | | Select | Start |
@@ -99,9 +99,9 @@ Standard gamepad with D-pad, four face buttons, and two shoulder buttons. No ana
 
 {% tab title="Micro" %}
 
-Micro gamepad (e.g., Apple TV Siri Remote). Only D-pad, A, B, and Menu (▶︎) button available. Limited to basic gameplay.
+Micro gamepad (e.g., Apple TV Siri Remote). Only D-pad, A, X, and Menu button available. Limited to basic gameplay.
 
-| System |  | ✜ | A | B | Menu (▶︎) |
+| System |  | ✜ | A | X | ▶︎ |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Atari | 2600 | Joystick | Fire | | Reset |
 |  | 5200 | ✜ | Fire | | Start |
@@ -111,7 +111,7 @@ Micro gamepad (e.g., Apple TV Siri Remote). Only D-pad, A, B, and Menu (▶︎) 
 | Bandai | WonderSwan, WonderSwan Color | X Buttons | A | B | Start |
 | NEC | PC Engine \(TurboGrafx-16\) | ✜ | II | I | Run |
 |  | PC Engine CD / TurboGrafx-CD | ✜ | II | I | Run |
-|  | PC Engine SuperGrafx | ✜ | II | I | Run |
+|  | SuperGrafx | ✜ | II | I | Run |
 | Nintendo | Nintendo Entertainment System / Famicom | ✜ | A | B | Start |
 |  | Famicom Disk System | ✜ | A | B | Start |
 |  | Game Boy | ✜ | A | B | Start |
