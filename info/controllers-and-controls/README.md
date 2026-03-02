@@ -24,7 +24,7 @@ Provenance supports a wide range of physical controllers and input methods acros
 
 * **MFi controllers** are the easiest to set up — just pair via Bluetooth and play.
 * **iCade and MFi controllers cannot be used simultaneously** — only one type at a time.
-* On **Apple TV**, a standalone MFi controller (e.g., SteelSeries Nimbus, Razer Kishi) is strongly recommended.
+* On **Apple TV**, a standalone MFi controller is strongly recommended.
 * For systems with more buttons than your controller provides, use the **on-screen pause menu** to access missing inputs (Select, Start, etc.).
 
 See [Control Maps](control-maps.md) for the full button layout reference for each emulated system.
