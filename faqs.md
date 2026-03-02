@@ -458,4 +458,4 @@ We're always looking for help!
 
 ---
 
-*Last updated: March 2, 2026*
+*Last updated: March 2026*
