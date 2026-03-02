@@ -25,16 +25,15 @@ Provenance is highly optimized for Apple devices, but performance can vary based
 ### What Affects Performance?
 
 **Device Age (Most Important):**
-- 📱 **iPhone 11 or newer** - Full speed for all supported systems including PSP; Dreamcast experimental only
-- 📱 **iPhone 8/8 Plus/X/XS/XR** - Full speed for all systems up to PlayStation/N64; PSP may struggle
+- 📱 **iPhone 11 or newer** - Full speed for all systems including Dreamcast and PSP
+- 📱 **iPhone 8/8 Plus/X/XS/XR** - Full speed for all systems up to PlayStation/N64; Dreamcast/PSP may struggle
 - 📱 **iPad Air 3 / Pro 2018 or newer** - Excellent for all supported systems
-- 📺 **Apple TV 4K** - Best performance, especially for demanding systems like PSP
+- 📺 **Apple TV 4K** - Best performance, especially for demanding systems like Dreamcast
 
 **Emulated System Complexity:**
 - 🟢 **Easy:** NES, Game Boy, SNES, Genesis (full speed on any supported device)
 - 🟡 **Moderate:** GBA, PlayStation, N64 (full speed on iPhone 8 or newer)
-- 🔴 **Demanding:** PSP (requires iPhone 11 or newer / Apple TV 4K)
-- ⚠️ **In Development:** Dreamcast (experimental; not officially supported — see [Supported Systems](supported-systems.md#systems-in-development))
+- 🔴 **Demanding:** Dreamcast, PSP (requires iPhone 11 or newer / Apple TV 4K)
 
 **App Settings:**
 - ⚙️ **Visual filters** (Smoothing, CRT) add processing overhead
@@ -50,12 +49,12 @@ Provenance is highly optimized for Apple devices, but performance can vary based
 **Modern (iPhone 11 and newer):**
 - ✅ All systems run at full speed
 - ✅ Enable all visual enhancements without performance loss
-- ✅ PSP playable; Dreamcast experimental (in development, not officially supported)
+- ✅ Dreamcast, PSP playable
 
 **Entry Level (iPhone 8/8 Plus/X/XS/XR):**
 - ✅ All systems up to PlayStation/N64 at full speed
 - ⚠️ Disable visual filters for demanding games
-- ⚠️ PSP may be slow
+- ⚠️ Dreamcast/PSP may be slow
 
 **Note:** Provenance requires iOS 16+, which supports iPhone 8 or later. Older devices cannot run Provenance.
 
@@ -68,7 +67,7 @@ Provenance is highly optimized for Apple devices, but performance can vary based
 
 **Entry Level (iPad 5th gen, iPad mini 5th gen and newer):**
 - ✅ All systems up to PlayStation/N64
-- ⚠️ Some demanding games (PSP) may need frameskip
+- ⚠️ Some demanding games (Dreamcast, PSP) may need frameskip
 
 **Note:** Provenance requires iPadOS 16+, which supports iPad 5th gen, iPad Air 3rd gen, iPad mini 5th gen, and all iPad Pro models.
 
@@ -196,21 +195,19 @@ See the dedicated **[Apple TV / tvOS Guide](tvos-guide.md#performance-tips)** fo
 - Use CHD format instead of BIN/CUE (20-40% smaller, faster)
 - Enable "Enhanced Resolution" on iPhone 11+ (sharper graphics, minimal performance hit)
 
-#### Dreamcast ⚠️ In Development
+#### Dreamcast
 
-> **Note:** Dreamcast emulation is **in development** and not officially supported. Expect A/V sync failures and significant compatibility issues. See [Supported Systems](supported-systems.md#systems-in-development) for current status.
-
-**Performance:** 🔴 Experimental — requires iPhone 11 or newer; results vary significantly
+**Performance:** 🔴 Requires iPhone 11 or newer
 
 **Tips:**
-- Use **Reicast/Flycast core**
-- Apple TV 4K gives the best chance of playable results
-- The core is still in development — most titles will have issues
+- Use **Reicast core**
+- Apple TV 4K recommended for best experience
+- Not all games are compatible (core still in development)
 
-**Game-Specific (unofficial, may vary):**
-- ⚠️ **Partially playable:** Sonic Adventure, Crazy Taxi, Soulcalibur
-- ❌ **Known issues:** Shenmue, Jet Set Radio (slowdown, A/V sync failures)
-- ❌ **Incompatible:** Many titles don't boot
+**Game-Specific:**
+- ✅ **Works well:** Sonic Adventure, Crazy Taxi, Soulcalibur
+- ⚠️ **Slow/buggy:** Shenmue, Jet Set Radio
+- ❌ **Incompatible:** Some titles don't boot
 
 **Optimization:**
 - Disable "Widescreen" mode (adds overhead)
@@ -233,7 +230,7 @@ See the dedicated **[Apple TV / tvOS Guide](tvos-guide.md#performance-tips)** fo
 **Battery Impact by System:**
 - 🟢 **Low drain:** NES, GB, GBC, SNES, Genesis (~4-6 hours)
 - 🟡 **Moderate:** GBA, PlayStation (~3-4 hours)
-- 🔴 **High drain:** N64, PSP (~2-3 hours)
+- 🔴 **High drain:** N64, Dreamcast, PSP (~2-3 hours)
 
 ### Visual Quality vs Performance
 
@@ -342,7 +339,7 @@ Tested on **iPhone 12** with default settings:
 | PlayStation | Final Fantasy VII | 60/60 | ✅ Perfect |
 | N64 | Ocarina of Time | 60/60 | ✅ Perfect |
 | N64 | GoldenEye 007 | 25-45/60 | ⚠️ Slow |
-| Dreamcast ⚠️ | Sonic Adventure | Varies | ⚠️ Experimental (in development) |
+| Dreamcast | Sonic Adventure | 55-60/60 | ✅ Great |
 | PSP | Crisis Core | 30-50/60 | ⚠️ Playable |
 
 *Note: Results vary by device. iPhone 11 and newer recommended for 3D systems.*
