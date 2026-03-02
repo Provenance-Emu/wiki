@@ -36,7 +36,7 @@ On your iOS device:
 - ✅ Apple Vision Pro (visionOS 1.0+)
 - ✅ Mac (macOS 13.0+ with Apple Silicon)
 
-**Note:** Some systems (like 3DS and PSP) require more powerful devices for good performance.
+**Note:** Some systems (like 3DS, PSP, Dreamcast) require more powerful devices for good performance.
 
 ---
 
@@ -140,7 +140,7 @@ Provenance is ~2.5 GB and needs additional space for games:
 | **Installation** | One-tap from App Store | Requires AltStore or computer |
 | **Updates** | Automatic | Manual re-sideload |
 | **Revocation risk** | None (official app) | Possible (7-day limit with free AltStore) |
-| **Provenance Plus** | $3.99/mo, $39.99/yr, or $99.99 lifetime | Not available (all features free) |
+| **Provenance Plus** | $3.99/month, $39.99/year, or $99.99 lifetime | Not available (all features free) |
 | **iCloud Sync** | Requires Plus subscription | Requires custom setup |
 | **Best for** | Most users (easiest) | Power users, free alternative |
 
