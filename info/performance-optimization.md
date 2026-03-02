@@ -206,7 +206,7 @@ See the dedicated **[Apple TV / tvOS Guide](tvos-guide.md#performance-tips)** fo
 
 **Game-Specific:**
 - ✅ **Works well:** Sonic Adventure, Shenmue, Soulcalibur, Jet Set Radio, THPS 1+2
-- ⚠️ **Slow/buggy:** Shenmue, Jet Set Radio
+- ⚠️ **Slow/buggy:** Crazy Taxi 1 & 2, DOA2
 - ❌ **Incompatible:** Some titles don't boot
 
 **Optimization:**
