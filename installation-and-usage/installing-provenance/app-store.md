@@ -148,5 +148,5 @@ Provenance is ~2.5 GB and needs additional space for games:
 
 ---
 
-**Last updated:** February 2026  
+**Last updated:** March 2026
 **Provenance App Store version:** Latest
