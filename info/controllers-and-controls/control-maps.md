@@ -21,7 +21,7 @@ Full extended gamepad with dual analog sticks, triggers, and thumbstick buttons 
 | Bandai | WonderSwan, WonderSwan Color | X Buttons | A | B | | | | | | | | Y Buttons | | | | Start |
 | NEC | PC Engine \(TurboGrafx-16\) | ✜ | II | I | | | | | | | | | | | Select | Run |
 |  | PC Engine CD / TurboGrafx-CD | ✜ | II | I | | | | | | | | | | | Select | Run |
-|  | SuperGrafx | ✜ | II | I | | | | | | | | | | | Select | Run |
+|  | PC Engine SuperGrafx | ✜ | II | I | | | | | | | | | | | Select | Run |
 | Nintendo | Nintendo Entertainment System / Famicom | ✜ | A | B | | | | | | | | | | | Select | Start |
 |  | Famicom Disk System | ✜ | A | B | | | | | | | | | | | Select | Start |
 |  | Game Boy | ✜ | A | B | | | | | | | | | | | Select | Start |
