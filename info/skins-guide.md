@@ -17,13 +17,13 @@ Skins change the visual appearance of your on-screen controller buttons and d-pa
 - 🎮 **Game-themed** - Styled after specific games (Pokémon, Mario, Sonic)
 - 👻 **Invisible** - For Backbone/Kishi users who want physical controls only
 
-## ✨ What's New (Version 3.2.0+)
+## ✨ Key Features
 
-**Skins are now 100% FREE for all users!** No Provenance Plus subscription required.
+**Skins are 100% FREE for all users!** No Provenance Plus subscription required.
 
-**Key improvements:**
-- ⚡ Dramatically faster rendering and loading
-- 🔄 Fixed rotation issues (smooth orientation changes)
+**Highlights:**
+- ⚡ Fast rendering and loading
+- 🔄 Smooth orientation changes
 - 💾 Optimized memory usage
 - 🎮 Full support for all RetroArch cores
 - 📱 Works on iPhone, iPad, and Apple TV
@@ -31,12 +31,12 @@ Skins change the visual appearance of your on-screen controller buttons and d-pa
 ## Supported Systems
 
 Skins work with **all systems except**:
-- ❌ Nintendo 3DS (not currently supported)
 - ❌ Nintendo DS (not currently supported)
 
 **Fully supported systems include:**
 - ✅ NES, SNES, N64
 - ✅ Game Boy, GBC, GBA
+- ✅ Nintendo 3DS (iOS/iPadOS/macOS only — not supported on tvOS)
 - ✅ Genesis, Sega CD, Dreamcast
 - ✅ PlayStation, PSP
 - ✅ Atari, Neo Geo, TurboGrafx-16
@@ -152,7 +152,7 @@ Provenance includes a built-in **skin browser** for managing your collection:
 - 🌟 **Mark favorites** - Star your most-used skins for quick access
 - 📂 **Organize by system** - Automatic sorting by console
 
-**Performance tip:** The skin browser in version 3.2.0+ is dramatically faster than previous versions. Scrolling through large collections is now smooth and responsive.
+**Performance tip:** The skin browser features smooth, responsive scrolling even with large collections.
 
 ---
 
@@ -273,7 +273,7 @@ Common system identifiers for `info.json`:
 
 **Solutions:**
 1. ✅ **Check file extension** - Must be `.deltaskin` (not `.zip`)
-2. ✅ **Verify system** - Skin must match a supported system (3DS/DS skins are not supported)
+2. ✅ **Verify system** - Skin must match a supported system (DS not yet supported; 3DS not supported on tvOS)
 3. ✅ **Restart Provenance** - Force quit app and reopen
 4. ✅ **Re-import** - Delete and re-download the skin
 
@@ -284,7 +284,7 @@ Common system identifiers for `info.json`:
 **Solutions:**
 1. ✅ **Re-download skin** - File may have been corrupted during download
 2. ✅ **Check device compatibility** - Some skins are iPhone-only or iPad-only
-3. ✅ **Update Provenance** - Older versions had skin rendering bugs (fixed in 3.2.0+)
+3. ✅ **Update Provenance** - Ensure you're on the latest version from the App Store
 4. ✅ **Report to skin creator** - Leave feedback on DeltaStyles or GitHub
 
 ### Buttons Don't Respond
@@ -303,7 +303,7 @@ Common system identifiers for `info.json`:
 
 **Solutions:**
 1. ✅ **Use simpler skins** - Complex, high-resolution graphics add overhead
-2. ✅ **Update to 3.2.0+** - Massive skin performance improvements
+2. ✅ **Update to the latest version** - Contains skin performance improvements
 3. ✅ **Close background apps** - Free up memory
 4. ✅ **Disable visual filters** - Turn off CRT/Smoothing in settings
 
@@ -313,9 +313,9 @@ Common system identifiers for `info.json`:
 
 ### Where Are Skins Stored?
 
-**Local storage only** - Skins are stored on your device in Provenance's app container.
+Skins are stored on your device in Provenance's app container.
 
-**iCloud sync:** Skins do **not** currently sync via iCloud (ROMs and saves do, but not skins).
+**iCloud sync:** On Apple TV (tvOS), iCloud/CloudKit sync is included for free. On iPhone, iPad, and Mac, **Provenance Plus** is required for iCloud sync of skins, your game library, save states, BIOS files, and custom artwork. [Learn more about Provenance Plus →](../faqs.md#what-is-provenance-plus)
 
 **File size:** Most skins are 500KB - 2MB each (negligible storage impact).
 
@@ -343,7 +343,7 @@ Common system identifiers for `info.json`:
 ## Frequently Asked Questions
 
 **Q: Do skins work on Apple TV?**  
-A: Yes! Skins render on Apple TV when using touch-based systems (though most users prefer physical controllers).
+A: Yes, for most systems! Skins render on Apple TV when using touch-based systems (though most users prefer physical controllers). Note: Nintendo 3DS skins are not supported on tvOS.
 
 **Q: Can I use the same skin on multiple systems?**  
 A: No - each skin is designed for a specific system's button layout (SNES skins won't work for GBA).
@@ -352,7 +352,7 @@ A: No - each skin is designed for a specific system's button layout (SNES skins 
 A: Not currently - only static PNG images.
 
 **Q: Do skins affect game performance?**  
-A: Minimal impact in version 3.2.0+ thanks to optimized rendering. Older versions had more overhead.
+A: Minimal impact thanks to optimized rendering in current versions.
 
 **Q: Can I disable skins entirely?**  
 A: Yes - select the default "Standard" skin for any system to use Provenance's built-in controls.
@@ -373,4 +373,4 @@ A: Check the [Provenance Discord](https://discord.gg/provenance) or r/EmulationO
 
 **Have an amazing skin to share?** Join the [Provenance community on Discord](https://discord.gg/provenance) and show off your creations! 🎨
 
-*Skins feature available in Provenance 3.2.0 and later. Update to the latest version for best performance.*
+*Update to the latest version from the App Store for the best skins experience.*

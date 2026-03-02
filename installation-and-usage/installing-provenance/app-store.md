@@ -30,13 +30,13 @@ On your iOS device:
 ## 📱 Supported Devices
 
 **Provenance works on:**
-- ✅ iPhone (iOS 16.0+)
-- ✅ iPad (iPadOS 16.0+)
-- ✅ Apple TV (tvOS 16.0+)
+- ✅ iPhone (iOS 16.0+) — iPhone 8 or newer, including iPhone SE (2nd & 3rd generation)
+- ✅ iPad (iPadOS 16.0+) — iPad 5th gen, iPad Air 3rd gen, iPad mini 5th gen, or any iPad Pro
+- ✅ Apple TV (tvOS 16.0+) — Apple TV HD (4th gen) or Apple TV 4K
 - ✅ Apple Vision Pro (visionOS 1.0+)
 - ✅ Mac (macOS 13.0+ with Apple Silicon)
 
-**Note:** Some systems (like 3DS) require more powerful devices for good performance.
+**Note:** Some systems (like 3DS, PSP, Dreamcast) require more powerful devices for good performance.
 
 ---
 
