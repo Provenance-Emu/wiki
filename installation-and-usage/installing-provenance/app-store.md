@@ -49,7 +49,7 @@ On your iOS device:
 - Save states and battery saves
 - Local library management
 
-**Provenance Plus ($3.99/mo, $39.99/yr, or $99.99 lifetime):**
+**Provenance Plus ($3.99/mo or $39.99/yr):**
 - ☁️ **iCloud Sync** - Library, saves, and settings across all devices
 - 🧪 **Beta Access** - Test new features early via TestFlight
 - 🎯 **Priority Support** - Get help faster
@@ -140,7 +140,7 @@ Provenance is ~2.5 GB and needs additional space for games:
 | **Installation** | One-tap from App Store | Requires AltStore or computer |
 | **Updates** | Automatic | Manual re-sideload |
 | **Revocation risk** | None (official app) | Possible (7-day limit with free AltStore) |
-| **Provenance Plus** | $3.99/mo or lifetime purchase | Not available (all features free) |
+| **Provenance Plus** | $3.99/mo or $39.99/yr | Not available (all features free) |
 | **iCloud Sync** | Requires Plus subscription | Requires custom setup |
 | **Best for** | Most users (easiest) | Power users, free alternative |
 
@@ -148,5 +148,5 @@ Provenance is ~2.5 GB and needs additional space for games:
 
 ---
 
-**Last updated:** February 2026  
+**Last updated:** March 2026
 **Provenance App Store version:** Latest
