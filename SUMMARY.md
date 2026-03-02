@@ -22,9 +22,9 @@
   * [Advanced ROM Management](installation-and-usage/roms/advanced-management.md)
   * [Applying Mods / Patches](installation-and-usage/roms/mods.md)
 * [Controllers & Controls](info/controllers-and-controls/README.md)
-  * [Supported Controllers](info/controllers-and-controls/supported-controllers.md)
-  * [Controller Reviews](info/controllers-and-controls/controller-reviews.md)
-  * [Control Maps](info/control-maps.md)
+  * [Supported Controllers](info/controllers-and-controls/controllers/README.md)
+  * [Controller Reviews](info/controllers-and-controls/controllers/controller-reviews.md)
+  * [Control Maps](info/controllers-and-controls/control-maps.md)
 * [Skins](info/skins-guide.md)
 * [Game Saves](info/saves.md)
 
@@ -37,6 +37,8 @@
 ## Advanced
 
 * [Virtualizing macOS](info/miscellaneous/virtualizing-macos.md)
+* [Launch ROMs via URL](info/miscellaneous/launch-roms-via-url.md)
+* [Restoring Files](info/miscellaneous/restoring-files.md)
 * [Advanced Installation FAQ](installation-and-usage/installing-provenance/faqs-advanced.md)
 
 ## Help & Community
