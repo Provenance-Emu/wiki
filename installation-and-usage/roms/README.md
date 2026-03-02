@@ -53,4 +53,4 @@ Provenance makes it easy to build and manage your game library. This section cov
 - **All ROMs must be formatted correctly** before importing — see [Formatting ROMs](formatting-roms.md).
 - **Some systems require BIOS files** — see [BIOS Requirements](../bios-requirements.md).
 - **Multi-file ROMs** (CD-based games) must be zipped into a single archive before import.
-- **Stuck?** See [Troubleshooting](../../help/troubleshooting.md) or ask on [Discord](https://discord.gg/NhzgrXh).
+- **Stuck?** See [Troubleshooting](../../help/troubleshooting.md) or ask on [Discord](https://discord.gg/provenance).
