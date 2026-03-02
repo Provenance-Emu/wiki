@@ -31,8 +31,8 @@ Skins change the visual appearance of your on-screen controller buttons and d-pa
 ## Supported Systems
 
 Skins work with **all systems except**:
-- ❌ Nintendo 3DS (coming soon)
-- ❌ Nintendo DS (coming soon)
+- ❌ Nintendo 3DS (not yet supported)
+- ❌ Nintendo DS (not yet supported)
 
 **Fully supported systems include:**
 - ✅ NES, SNES, N64

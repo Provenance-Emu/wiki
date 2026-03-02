@@ -329,9 +329,20 @@ Loose files _only_. DO NOT contain folder\(s\) within an archive \(this is a kno
 
 #### Windows <a id="archiving-windows"></a>
 
-_\(coming later…\)_
+**Requirements:**
 
-\_\_
+* [7-Zip](https://www.7-zip.org) \(free\)
+
+**Archive**
+
+1. Install 7-Zip and right-click a ROM file in File Explorer.
+2. Select **7-Zip → Add to archive…**
+3. Set **Archive format** to `7z` \(or `zip`\).
+4. Click **OK**. Done.
+
+{% hint style="danger" %}
+Loose files _only_. DO NOT contain folder\(s\) within an archive \(this is a known issue and will result in a crash\)!
+{% endhint %}
 
 ## Batching
 

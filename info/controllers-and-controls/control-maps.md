@@ -46,6 +46,4 @@ description: Controller mappings for gamepad profiles per system.
 
 ### iCade Controller Maps
 
-_iCade control maps coming later…_
-
-\_\_
+_iCade control maps are not yet documented._

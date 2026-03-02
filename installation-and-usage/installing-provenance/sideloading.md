@@ -87,7 +87,7 @@ Click in Mobile Safari once you have AltStore installed.
 4. You'll need to put Provenance .ipa in your iCloud Drive somewhere and install via AltStore app by using the `+` button in the upper left of the My Apps screen to select and sideload it to your device.
 
 {% hint style="warning" %}
-…Full walkthrough coming later, but it's pretty straight forward as is. Windows AltStore is considered beta and has not been tested by Provenance team yet. Feel free to give it a try.
+Windows AltStore is considered beta and has not been tested by the Provenance team. Follow the instructions at [altstore.io](https://altstore.io) to get started.
 {% endhint %}
 
 {% hint style="info" %}
