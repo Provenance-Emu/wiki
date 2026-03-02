@@ -25,14 +25,14 @@ Provenance is highly optimized for Apple devices, but performance can vary based
 ### What Affects Performance?
 
 **Device Age (Most Important):**
-- 📱 **iPhone 7 or newer** - Full speed for all systems up to PlayStation/N64
-- 📱 **iPhone 6 or older** - Good for 8-bit and 16-bit systems, struggles with 3D
-- 📱 **iPad Air 2 or newer** - Excellent for all supported systems
+- 📱 **iPhone 11 or newer** - Full speed for all systems including Dreamcast and PSP
+- 📱 **iPhone 8/8 Plus/X/XS/XR** - Full speed for all systems up to PlayStation/N64; Dreamcast/PSP may struggle
+- 📱 **iPad Air 3 / Pro 2018 or newer** - Excellent for all supported systems
 - 📺 **Apple TV 4K** - Best performance, especially for demanding systems like Dreamcast
 
 **Emulated System Complexity:**
-- 🟢 **Easy:** NES, Game Boy, SNES, Genesis (full speed on any device)
-- 🟡 **Moderate:** GBA, PlayStation, N64 (requires iPhone 6s or newer)
+- 🟢 **Easy:** NES, Game Boy, SNES, Genesis (full speed on any supported device)
+- 🟡 **Moderate:** GBA, PlayStation, N64 (full speed on iPhone 8 or newer)
 - 🔴 **Demanding:** Dreamcast, PSP (requires iPhone 11 or newer / Apple TV 4K)
 
 **App Settings:**
@@ -51,15 +51,12 @@ Provenance is highly optimized for Apple devices, but performance can vary based
 - ✅ Enable all visual enhancements without performance loss
 - ✅ Dreamcast, PSP playable
 
-**Mid-Range (iPhone 7-10):**
+**Entry Level (iPhone 8/8 Plus/X/XS/XR):**
 - ✅ All systems up to PlayStation/N64 at full speed
 - ⚠️ Disable visual filters for demanding games
 - ⚠️ Dreamcast/PSP may be slow
 
-**Older (iPhone 6 and earlier):**
-- ✅ 8-bit and 16-bit systems (NES, SNES, GB, GBA, Genesis)
-- ⚠️ PlayStation and N64 require frameskip
-- ❌ Dreamcast/PSP not recommended
+**Note:** Provenance requires iOS 16+, which supports iPhone 8 or later. Older devices cannot run Provenance.
 
 ### iPad
 
@@ -68,13 +65,11 @@ Provenance is highly optimized for Apple devices, but performance can vary based
 - ✅ Best screen size for retro gaming
 - ✅ No compromises needed
 
-**Mid-Range (iPad Air 2, iPad Mini 4, iPad 2017-2019):**
+**Entry Level (iPad 5th gen, iPad mini 5th gen and newer):**
 - ✅ All systems up to PlayStation/N64
-- ⚠️ Some Dreamcast games may need frameskip
+- ⚠️ Some demanding games (Dreamcast, PSP) may need frameskip
 
-**Older (iPad 2, iPad Mini 1-3):**
-- ✅ 8-bit and 16-bit systems only
-- ❌ 3D systems (PlayStation, N64) too slow
+**Note:** Provenance requires iPadOS 16+, which supports iPad 5th gen, iPad Air 3rd gen, iPad mini 5th gen, and all iPad Pro models.
 
 ### Apple TV
 
@@ -93,28 +88,27 @@ See the dedicated **[Apple TV / tvOS Guide](tvos-guide.md#performance-tips)** fo
 
 **Systems:** NES, Game Boy, Game Boy Color, Sega Master System, Game Gear, Atari 2600, Atari 7800, Atari Lynx
 
-**Performance:** ✅ Full speed on all devices, including iPhone 5s and older
+**Performance:** ✅ Full speed on all supported devices (iPhone 8 or newer)
 
 **Tips:**
 - No optimization needed
 - All visual filters work without slowdown
-- Perfect for older devices and battery life
+- Lowest impact on battery life
 
 ---
 
-### 16-Bit Systems (Full Speed on iPhone 6+)
+### 16-Bit Systems (Full Speed on All Supported Devices)
 
 **Systems:** SNES, Genesis/Mega Drive, Sega CD, TurboGrafx-16, Neo Geo Pocket, WonderSwan
 
-**Performance:** ✅ Full speed on iPhone 6 and newer
+**Performance:** ✅ Full speed on all supported devices (iPhone 8 or newer)
 
 **Tips:**
-- **SNES:** Some special chip games (Star Fox, Yoshi's Island) may be slow on older devices
+- **SNES:** Some special chip games (Star Fox, Yoshi's Island) may need minor tweaks on entry-level devices
 - **Genesis:** Multiple cores available - use "Genesis Plus GX" for best compatibility
 - **Sega CD:** Requires BIOS + CHD format for multi-disc games
 
 **Optimization:**
-- Disable CRT filter on iPhone 6/6s for consistent 60fps
 - Use save states instead of in-game saves (faster loading)
 
 ---
@@ -123,7 +117,7 @@ See the dedicated **[Apple TV / tvOS Guide](tvos-guide.md#performance-tips)** fo
 
 #### Game Boy Advance
 
-**Performance:** ✅ Full speed on iPhone 6s and newer
+**Performance:** ✅ Full speed on all supported devices (iPhone 8 or newer)
 
 **Tips:**
 - **Core:** Use "mGBA" core (most accurate, good performance)
@@ -139,7 +133,7 @@ See the dedicated **[Apple TV / tvOS Guide](tvos-guide.md#performance-tips)** fo
 
 **Tips:**
 - **3D games** (Mario 64 DS, Mario Kart DS) need iPhone 11+ for smooth play
-- **2D games** (Pokémon, Advance Wars) run well on iPhone 8-10
+- **2D games** (Pokémon, Advance Wars) run well on iPhone 8/8 Plus/X/XS/XR
 - **Screen layout:** Vertical layout recommended (one screen above the other)
 
 **Optimization:**
@@ -167,12 +161,12 @@ See the dedicated **[Apple TV / tvOS Guide](tvos-guide.md#performance-tips)** fo
 
 #### Nintendo 64
 
-**Performance:** 🟡 Full speed on iPhone 7 and newer
+**Performance:** 🟡 Full speed on iPhone 8 and newer
 
 **Tips:**
 - **Multiple cores available:** "Mupen64Plus" (recommended) and "ParaLLEl"
 - **ParaLLEl core:** Better accuracy, requires iPhone 11+ for full speed
-- **Mupen64Plus:** Faster, works on older devices
+- **Mupen64Plus:** Faster, works on all supported devices
 
 **Game-Specific:**
 - ✅ **Works great:** Super Mario 64, Ocarina of Time, Mario Kart 64
@@ -180,13 +174,13 @@ See the dedicated **[Apple TV / tvOS Guide](tvos-guide.md#performance-tips)** fo
 - ❌ **Problematic:** GoldenEye 007 (slowdown even on newest devices)
 
 **Optimization:**
-- Use "Rice" video plugin for older devices (faster but less accurate)
+- Use "Rice" video plugin on entry-level devices (faster but less accurate)
 - Disable "widescreen hack" for performance
 - Lower resolution multiplier: 2x → 1x (native N64 resolution)
 
 #### PlayStation
 
-**Performance:** ✅ Full speed on iPhone 7 and newer
+**Performance:** ✅ Full speed on iPhone 8 and newer
 
 **Tips:**
 - **Best core:** "PCSX-ReARMed" (excellent compatibility + speed)
@@ -246,12 +240,12 @@ See the dedicated **[Apple TV / tvOS Guide](tvos-guide.md#performance-tips)** fo
 - ✅ Enhanced resolution (PlayStation, N64)
 - ✅ Shader effects (specific cores)
 
-**Balanced (iPhone 7-10):**
+**Balanced (iPhone 8/8 Plus/X/XS/XR):**
 - ⚙️ Smoothing: OFF
 - ⚙️ CRT filter: OFF
 - ⚙️ Enhanced resolution: ON (PlayStation only)
 
-**Maximum Performance (iPhone 6 and older):**
+**Maximum Performance (entry-level supported devices):**
 - ❌ All filters OFF
 - ❌ Native resolution only
 - ❌ Frameskip: Auto

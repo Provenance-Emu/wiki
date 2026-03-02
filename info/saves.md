@@ -34,16 +34,17 @@ A battery save file is created by the game when you use the game's built-in save
 | Sony | PlayStation \(PS1\) | `.mcr` |
 | Sony | PlayStation Portable \(PSP\) | `.VMP` |
 | Nintendo | NES | `.sav` |
-| Nintendo | Super NES \(SNES\) | `.srm` |
-| Nintendo | Nintendo 64 | `.srm`, `.eep`, `.fla`, `.mpk`, `.sra` |
+| Nintendo | Super NES / Super Famicom \(SNES\) | `.srm`, `.sav` |
+| Nintendo | Nintendo 64 | `.eep`, `.sra`, `.fla`, `.mpk` |
+| Nintendo | Nintendo DS | `.sav`, `.dsv` |
 | Nintendo | Game Boy / Game Boy Color | `.sav` |
 | Nintendo | Game Boy Advance | `.sav` |
-| Sega | Genesis / Mega Drive | `.srm` |
+| Sega | Genesis / Mega Drive | `.srm`, `.sav` |
 | Sega | Game Gear | `.sav` |
 | Sega | Saturn | `.bcr` |
 | Atari | Lynx | `.sav` |
 | SNK | Neo Geo Pocket / Color | `.sav` |
-| Others | Most systems | `.sav` |
+| Most systems | — | `.sav` |
 
 ### Converting Formats
 

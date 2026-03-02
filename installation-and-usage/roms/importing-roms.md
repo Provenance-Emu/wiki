@@ -14,7 +14,7 @@ Provenance supports multiple ways to import ROMs and BIOSes, including _single-d
   * Mobile Apps
   * AirDrop · macOS → iOS¹ _or_  iOS → iOS
 * ⤵️  [**Injecting**](importing-roms.md#injecting) \(with Desktop Apps\) · for iOS and ATV4 _only_
-  * ~~iTunes~~
+  * ~~iTunes~~ (discontinued; use Finder on macOS or third-party tools)
   * Other Tools
 
 ¹ Mass-uploading ROM libraries or uploading multiple ROMs simultaneously is supported.²  
@@ -83,7 +83,7 @@ Please refer to the [Known Issues](importing-roms.md#known-issues) regarding Imp
 ### Mobile Apps
 
 1. Open app where ROMs are stored or accessible…
-   * _Apple Files \(_[_iCloud Drive_](https://www.apple.com/icloud/icloud-drive)_,_ [_Dropbox_](https://itunes.apple.com/us/app/dropbox/id327630330)_,_ [_Google Drive_](https://itunes.apple.com/us/app/google-drive/id507874739)_,_ [_Nextcloud_](https://itunes.apple.com/us/app/nextcloud/id1125420102)_,_ [_FileBrowser_](https://itunes.apple.com/us/app/filebrowser-computers-cloud/id364738545)_, etc…\)_
+   * _Apple Files \(_[_iCloud Drive_](https://www.apple.com/icloud/icloud-drive)_,_ [_Dropbox_](https://apps.apple.com/us/app/dropbox/id327630330)_,_ [_Google Drive_](https://apps.apple.com/us/app/google-drive/id507874739)_,_ [_Nextcloud_](https://apps.apple.com/us/app/nextcloud/id1125420102)_,_ [_FileBrowser_](https://apps.apple.com/us/app/filebrowser-computers-cloud/id364738545)_, etc…\)_
 2. Navigate to your ROMs directory and tap the ROM you wish to copy to Provenance _or_ its button that gets you to a `Share` or `Export` option, depending on the app.
 3. Locate and tap `Copy to Provenance` option. Done.
 
@@ -98,9 +98,9 @@ Please refer to the [Known Issues](importing-roms.md#known-issues) regarding Imp
 
 ## Injecting
 
-### ~~iTunes~~
+### ~~iTunes~~ (Discontinued)
 
-⚠️ iTunes File Sharing support is currently unsupported…
+⚠️ iTunes was discontinued with macOS Catalina (2019). iTunes File Sharing is no longer supported. Use **Finder** on macOS Catalina and later (connect device via USB, open Finder, select device, go to the Files tab), or use a third-party tool listed below.
 
 ### Other Tools
 
