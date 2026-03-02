@@ -31,12 +31,12 @@ Skins change the visual appearance of your on-screen controller buttons and d-pa
 ## Supported Systems
 
 Skins work with **all systems except**:
-- ❌ Nintendo 3DS (coming soon)
 - ❌ Nintendo DS (coming soon)
 
 **Fully supported systems include:**
 - ✅ NES, SNES, N64
 - ✅ Game Boy, GBC, GBA
+- ✅ Nintendo 3DS (iOS/iPadOS/macOS only — not supported on tvOS)
 - ✅ Genesis, Sega CD, Dreamcast
 - ✅ PlayStation, PSP
 - ✅ Atari, Neo Geo, TurboGrafx-16
@@ -273,7 +273,7 @@ Common system identifiers for `info.json`:
 
 **Solutions:**
 1. ✅ **Check file extension** - Must be `.deltaskin` (not `.zip`)
-2. ✅ **Verify system** - Skin must match a supported system (3DS/DS not yet supported)
+2. ✅ **Verify system** - Skin must match a supported system (DS not yet supported; 3DS not supported on tvOS)
 3. ✅ **Restart Provenance** - Force quit app and reopen
 4. ✅ **Re-import** - Delete and re-download the skin
 
@@ -342,8 +342,8 @@ Skins are stored on your device in Provenance's app container.
 
 ## Frequently Asked Questions
 
-**Q: Do skins work on Apple TV?**  
-A: Yes! Skins render on Apple TV when using touch-based systems (though most users prefer physical controllers).
+**Q: Do skins work on Apple TV?**
+A: Yes, for most systems! Skins render on Apple TV when using touch-based systems (though most users prefer physical controllers). Note: Nintendo 3DS skins are not supported on tvOS.
 
 **Q: Can I use the same skin on multiple systems?**  
 A: No - each skin is designed for a specific system's button layout (SNES skins won't work for GBA).
