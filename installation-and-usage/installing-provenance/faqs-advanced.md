@@ -55,7 +55,7 @@ This FAQ is for advanced users who are sideloading or building Provenance from s
    - Or upgrade to paid account ($99/year)
 
 4. **AltStore/Sideloadly errors**
-   - Make sure iTunes/iCloud are installed (Windows)
+   - Make sure the [Apple Devices app](https://apps.microsoft.com/detail/9NP83LWLPZ9K) (formerly iTunes) and iCloud are installed (Windows)
    - Update AltServer to latest version
    - Check firewall isn't blocking connection
 

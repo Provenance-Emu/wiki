@@ -14,7 +14,7 @@ Provenance supports multiple ways to import ROMs and BIOSes, including _single-d
   * Mobile Apps
   * AirDrop · macOS → iOS¹ _or_  iOS → iOS
 * ⤵️  [**Injecting**](importing-roms.md#injecting) \(with Desktop Apps\) · for iOS and ATV4 _only_
-  * ~~iTunes~~
+  * ~~iTunes~~ (discontinued; use Finder on macOS or third-party tools)
   * Other Tools
 
 ¹ Mass-uploading ROM libraries or uploading multiple ROMs simultaneously is supported.²  
@@ -98,9 +98,9 @@ Please refer to the [Known Issues](importing-roms.md#known-issues) regarding Imp
 
 ## Injecting
 
-### ~~iTunes~~
+### ~~iTunes~~ (Discontinued)
 
-⚠️ iTunes File Sharing support is currently unsupported…
+⚠️ iTunes was discontinued with macOS Catalina (2019). iTunes File Sharing is no longer supported. Use **Finder** on macOS Catalina and later (connect device via USB, open Finder, select device, go to the Files tab), or use a third-party tool listed below.
 
 ### Other Tools
 

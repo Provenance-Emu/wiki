@@ -45,13 +45,12 @@ You can get it here: https://get.udid.io/.
 
 ## Windows
 
-### Method 1 (iTunes)
+### Method 1 (Apple Devices app)
 
-1. Open up the latest version of iTunes and connect your iOS device to your computer.
-2. Select your iOS device by clicking the device’s image located at the upper-left corner of iTunes’s UI.
-3. Select your iOS device
-4. On the next screen, a window should appear listing your phone’s Capacity, Phone Number, and Serial Number.
-5. By clicking on Serial Number once, the prompt should change to display your UDID.
+1. Install the [Apple Devices app](https://apps.microsoft.com/detail/9NP83LWLPZ9K) (formerly iTunes) from the Microsoft Store and connect your iOS device to your computer.
+2. Select your iOS device by clicking the device’s image in the Apple Devices app.
+3. On the next screen, a window should appear listing your phone’s Capacity, Phone Number, and Serial Number.
+4. By clicking on Serial Number once, the prompt should change to display your UDID.
 
 ## Linux
 

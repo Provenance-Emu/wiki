@@ -46,7 +46,7 @@ Technically, a Mac is not required to install Provenance. Only macOS is, which y
      * `` Menu → `System Preferences`
    * Select Display, then `Default for Display` \(Adjustments can also be made in the `View` menu of VMWare `Autosize`\)
 
-2. Update: Open App Store and select `Updates`. Update macOS \(this may take a while\). If running macOS Mojave or earlier, also update iTunes from here. \(iTunes was removed in macOS Catalina and replaced by Finder for device management.\)
+2. Update: Open App Store and select `Updates`. Update macOS \(this may take a while\). If running macOS Mojave or earlier, also update iTunes from here. \(iTunes was discontinued in macOS Catalina 2019 and replaced by Finder for device management.\)
 3. Install Xcode: After updating, download Xcode via App Store \(free\).
 4. Locate Terminal in `Applications/Utilities/Terminal` \(remember this location or drag the app to the Dock for later\).
 

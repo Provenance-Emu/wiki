@@ -59,7 +59,7 @@ Free Apple developer provisioning expires _every 7 days_, requiring reloading, b
 ## AltDeploy
 
 1. Download and launch [AltDeploy](https://github.com/pixelomer/AltDeploy/releases).
-2. Connect your device \(you may need to open Finder and choose `Trust…` when it pops up\).
+2. Connect your device \(you may need to open **Finder** and choose `Trust…` when it pops up\).
 3. In AltDeploy, select your connected device from the device menu.
 4. In AltDeploy, choose the Provenance `.ipa` file \(or drag & drop the `.ipa` onto the AltDeploy window\).
 5. Enter your Apple ID.
@@ -82,7 +82,7 @@ AltStore source is availble at [this link](altstore://source?url=https://provena
 Click in Mobile Safari once you have AltStore installed.
 
 1. Download and launch [AltStore](https://altstore.io).
-2. Connect your device \(you may need to open Finder and choose `Trust…` when it pops up\).
+2. Connect your device \(you may need to open **Finder** and choose `Trust…` when it pops up\).
 3. …Follow instructions via altstore.io and the app as it guides you.
 4. You'll need to put Provenance .ipa in your iCloud Drive somewhere and install via AltStore app by using the `+` button in the upper left of the My Apps screen to select and sideload it to your device.
 

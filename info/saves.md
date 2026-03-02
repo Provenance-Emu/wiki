@@ -4,10 +4,6 @@ description: Game Saves and Saves States.
 
 # Game Saves
 
-{% hint style="warning" %}
-**ROUGH DRAFT**
-{% endhint %}
-
 There are two ways to save your progress in Provenance: the native in-game save, known as _Battery Saves_, and freezing the state of the emulator anywhere in a game called _Save States_.
 
 * [**Battery Saves**](saves.md#battery-saves)
@@ -17,7 +13,8 @@ There are two ways to save your progress in Provenance: the native in-game save,
   * [Importing Saves](saves.md#importing-saves)
 * [**Save States**](saves.md#save-states)
   * [Saving States](saves.md#saving-states)
-  * [Importing States](saves.md#importing-saves)
+  * [Loading States](saves.md#loading-states)
+  * [Deleting States](saves.md#deleting-states)
 
 ## Battery Saves
 
@@ -29,12 +26,16 @@ A battery save file is created by the game when you use the game's built-in save
 
 ### Supported Formats
 
-| Manufacturer | System | Supported Format\(s\) / Extensions |
+| Manufacturer | System | Supported Format(s) / Extensions |
 | :--- | :--- | :--- |
-| Sony | Playsation | `.mcr` |
-| Others… |  | `.sav` |
-
-_\(more details coming…\)_
+| Sony | PlayStation 1 | `.mcr` |
+| Nintendo | Game Boy / Game Boy Color | `.sav` |
+| Nintendo | Game Boy Advance | `.sav` |
+| Nintendo | SNES / Super Famicom | `.srm`, `.sav` |
+| Nintendo | Nintendo 64 | `.eep`, `.sra`, `.fla`, `.mpk` |
+| Nintendo | Nintendo DS | `.sav`, `.dsv` |
+| Sega | Genesis / Mega Drive | `.srm`, `.sav` |
+| Most systems | — | `.sav` |
 
 ### Converting Formats
 
