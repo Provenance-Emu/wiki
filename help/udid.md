@@ -33,23 +33,24 @@ You can get it here: https://get.udid.io/.
 4. Under the USB 3.0 Bus, you’ll see your iPhone between all the other USB devices connected to your Mac.
 5. Select your iPhone from the bottom part of the window, copy the Serial Number (you may need to add a dash (-) after the eighth digit in the serial number).
 
-### Method 2 (iTunes)
+### Method 2 (Finder)
 
-1. Open up the latest version of iTunes and connect your iOS device to your computer.
-2. Select your iOS device by clicking the device’s image located at the upper-left corner of iTunes’s UI.
-3. Select your iOS device
-4. On the next screen, a window should appear listing your phone’s Capacity, Phone Number, and Serial Number.
+1. Connect your iOS device to your Mac.
+2. Open **Finder** and select your device in the sidebar under "Locations".
+3. Click on the device name at the top of the pane.
+4. A window should appear listing your phone’s Capacity, Phone Number, and Serial Number.
 5. By clicking on Serial Number once, the prompt should change to display your UDID.
+
+> **Note:** iTunes was discontinued with macOS Catalina (2019). On macOS Catalina and later, use Finder instead.
 
 ## Windows
 
-### Method 1 (iTunes)
+### Method 1 (Apple Devices app)
 
-1. Open up the latest version of iTunes and connect your iOS device to your computer.
-2. Select your iOS device by clicking the device’s image located at the upper-left corner of iTunes’s UI.
-3. Select your iOS device
-4. On the next screen, a window should appear listing your phone’s Capacity, Phone Number, and Serial Number.
-5. By clicking on Serial Number once, the prompt should change to display your UDID.
+1. Install the [Apple Devices app](https://apps.microsoft.com/detail/9NP83LWLPZ9K) (formerly iTunes) from the Microsoft Store and connect your iOS device to your computer.
+2. Select your iOS device by clicking the device’s image in the Apple Devices app.
+3. On the next screen, a window should appear listing your phone’s Capacity, Phone Number, and Serial Number.
+4. By clicking on Serial Number once, the prompt should change to display your UDID.
 
 ## Linux
 

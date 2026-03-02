@@ -347,9 +347,15 @@ Your data is already backed up to iCloud. To export:
 2. Copy folder to external drive
 3. Store as secondary backup
 
-**Method 3: iTunes File Sharing (Legacy)**
+**Method 3: File Sharing via Finder (or iTunes on older Macs)**
 
-On older Macs with iTunes:
+On macOS Catalina and later (iTunes was removed in 2019):
+1. Connect iOS device to Mac via USB
+2. Open **Finder** → Select device in sidebar
+3. **Files** tab → **Provenance**
+4. Save files to Mac
+
+On older Macs with iTunes (macOS Mojave and earlier):
 1. iTunes → Device → **File Sharing**
 2. Select **Provenance**
 3. Save files to Mac

@@ -24,7 +24,7 @@ DO NOT expect to use a beta without issues, losing your saves, or bugs.
 
 * macOS 12
   * on a Mac, Hackintosh or virtual machine \([Virtualizing macOS](https://wiki.provenance-emu.com/info/miscellaneous/virtualizing-macos)\)
-* [Xcode](https://itunes.apple.com/us/app/xcode/id497799835) 13.3+
+* [Xcode](https://apps.apple.com/us/app/xcode/id497799835) 13.3+
 * iOS 11+ a/o tvOS 10+ SDKs
 * _Free_ [Apple Developer](https://9to5mac.com/2016/03/27/how-to-create-free-apple-developer-account-sideload-apps/) account \(at a minimum\) or a _paid_ account.
 

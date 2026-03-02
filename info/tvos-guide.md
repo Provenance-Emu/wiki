@@ -99,7 +99,7 @@ If you have Provenance Plus and multiple Apple devices:
 2. AirDrop to your Apple TV
 3. Open files in Provenance
 
-**Via File Sharing (iTunes):**
+**Via File Sharing (Finder):**
 1. Connect Apple TV to Mac via USB-C
 2. Open **Finder** → Select Apple TV
 3. **Files** tab → Drag ROMs to **Provenance**
