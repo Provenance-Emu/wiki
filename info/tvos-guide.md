@@ -186,7 +186,7 @@ These systems were designed for TVs and translate perfectly to Apple TV:
 - 🛠️ Priority support
 - 📬 TestFlight beta access
 
-**Cost:** $3.99/month, $39.99/year, or $99.99 lifetime (try free with App Store trial)
+**Cost:** $3.99/month or $39.99/year (App Store free trial available for subscriptions), or $99.99 lifetime
 
 ---
 
