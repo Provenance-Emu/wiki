@@ -25,22 +25,7 @@ description: Controller mappings for gamepad profiles per system.
 |  | Famicom Disk System |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 |  | Game Boy |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 |  | Super Famicom \(Super Nintendo Entertainment System\) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| Sega |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-
 \_\_
-{% endtab %}
-
-{% tab title="Extended" %}
-
-{% endtab %}
-
-{% tab title="Standard" %}
-
-{% endtab %}
-
-{% tab title="Micro" %}
-
 {% endtab %}
 {% endtabs %}
 
