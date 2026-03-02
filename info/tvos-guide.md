@@ -27,7 +27,7 @@ Provenance is the premier multi-system emulator for Apple TV, bringing classic g
 1. Open the **App Store** on your Apple TV
 2. Search for **"Provenance"**
 3. Download and install (100% free)
-4. Optional: Subscribe to **Provenance Plus** for iCloud sync ($3.99/month, $39.99/year, or $99.99 lifetime)
+4. Optional: Upgrade to **Provenance Plus** for iCloud sync ($3.99/month, $39.99/year, or $99.99 lifetime)
 
 **Alternative:** [Sideload from Xcode](../installation-and-usage/installing-provenance/sideloading.md) (requires Mac + Apple Developer account)
 
