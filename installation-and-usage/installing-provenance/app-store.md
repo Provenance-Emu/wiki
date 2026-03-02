@@ -49,7 +49,7 @@ On your iOS device:
 - Save states and battery saves
 - Local library management
 
-**Provenance Plus ($3.99/mo, $39.99/yr, or $99.99 lifetime):**
+**Provenance Plus ($3.99/month, $39.99/year, or $99.99 lifetime):**
 - ☁️ **iCloud Sync** - Library, saves, and settings across all devices
 - 🧪 **Beta Access** - Test new features early via TestFlight
 - 🎯 **Priority Support** - Get help faster
