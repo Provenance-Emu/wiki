@@ -22,10 +22,10 @@ DO NOT expect to use a beta without issues, losing your saves, or bugs.
 {% hint style="success" %}
 **Requirements**
 
-* macOS 12
+* macOS 13.5+ (Ventura) minimum; macOS 14.0+ (Sonoma) recommended
   * on a Mac, Hackintosh or virtual machine \([Virtualizing macOS](https://wiki.provenance-emu.com/info/miscellaneous/virtualizing-macos)\)
-* [Xcode](https://apps.apple.com/us/app/xcode/id497799835) 13.3+
-* iOS 11+ a/o tvOS 10+ SDKs
+* [Xcode](https://apps.apple.com/us/app/xcode/id497799835) 15.0+
+* iOS 16+ / tvOS 16+ SDKs
 * _Free_ [Apple Developer](https://9to5mac.com/2016/03/27/how-to-create-free-apple-developer-account-sideload-apps/) account \(at a minimum\) or a _paid_ account.
 
 🛑 **DO NOT** enroll to join the full Developer Program or you will be locked into a _Pending_ payment state, unable to code-sign unless you pay or contact Apple to cancel the enrollment.

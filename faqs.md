@@ -133,8 +133,8 @@ Welcome to Provenance! Whether you just downloaded from the App Store or are a l
 ### Which systems work best on my device?
 
 **iPhone/iPad:**
-- ✅ **Perfect:** NES, SNES, GB, GBA, Genesis (all devices)
-- ✅ **Great:** PlayStation, N64 (iPhone 7 or newer)
+- ✅ **Perfect:** NES, SNES, GB, GBA, Genesis (all supported devices — iPhone 8 or iPhone SE (2nd/3rd gen) or newer)
+- ✅ **Great:** PlayStation, N64 (iPhone 8 or iPhone SE (2nd/3rd gen) or newer)
 - ⚠️ **Demanding:** GameCube, Dreamcast, PSP (iPhone 11+ or M1 iPad)
 
 **Apple TV:**
