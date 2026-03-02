@@ -21,7 +21,7 @@ Provenance can play ROMs from [38+ retro systems](../../info/supported-systems.m
 ## Key Requirements
 
 * ROMs must use a [supported format](formatting-roms.md) for their system.
-* Multi-file ROMs (CD-based games with `.cue` + `.bin`) must be zipped into a single archive before importing.
+* Multi-file ROMs (CD-based games with `.cue` + `.bin`) must be archived into a single `.zip` or `.7z` file before importing.
 * Multi-disc games require an `.m3u` playlist file inside the archive.
 * Some systems require [BIOS files](../bios-requirements.md) to boot.
 
