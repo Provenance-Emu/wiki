@@ -35,9 +35,10 @@
 
 ## Advanced
 
-* [Virtualizing macOS](info/miscellaneous/virtualizing-macos.md)
-* [Launch ROMs via URL](info/miscellaneous/launch-roms-via-url.md)
-* [Restoring Files](info/miscellaneous/restoring-files.md)
+* [Miscellaneous](info/miscellaneous/README.md)
+  * [Virtualizing macOS](info/miscellaneous/virtualizing-macos.md)
+  * [Launch ROMs via URL](info/miscellaneous/launch-roms-via-url.md)
+  * [Restoring Files](info/miscellaneous/restoring-files.md)
 * [Advanced Installation FAQ](installation-and-usage/installing-provenance/faqs-advanced.md)
 
 ## Help & Community
