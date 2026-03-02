@@ -351,7 +351,7 @@ A: No - each skin is designed for a specific system's button layout (SNES skins 
 **Q: Are animated skins supported?**  
 A: Not currently - only static PNG images.
 
-**Q: Do skins affect game performance?**
+**Q: Do skins affect game performance?**  
 A: Minimal impact thanks to optimized rendering in current versions.
 
 **Q: Can I disable skins entirely?**  
