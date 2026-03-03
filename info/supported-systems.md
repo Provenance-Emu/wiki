@@ -6,6 +6,10 @@ description: Complete list of 38+ supported gaming systems with compatibility an
 
 _📱 Note: Most systems are available in the App Store. Some systems have limitations on certain devices due to performance requirements._
 
+{% hint style="info" %}
+**Interactive Reference:** [eduo.info/pvl](https://eduo.info/pvl/) — Community-built searchable database of all Provenance systems, cores, BIOS requirements, and supported file extensions (parsed directly from Provenance's source code).
+{% endhint %}
+
 | Manufacturer | System | Released | Emulator | Working Status | Saves | Rumble | Microphone | Camera | Gyro |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Atari | [2600 / Video Computer System](https://en.wikipedia.org/wiki/Atari_2600) | 9/11 · 1977 | Stella | ✔️ | ✔️ | N/A | N/A | N/A | N/A |

@@ -22,6 +22,10 @@ To avoid any issues with [Importing ROMs](https://github.com/Provenance-Emu/Prov
 Please refer to the [Known Issues](formatting-roms.md#known-issues) regarding Formatting ROMs, and read [Issues Usage](https://github.com/Provenance-Emu/Provenance/wiki/Issues-Usage) _before_ posting a new one.
 {% endhint %}
 
+{% hint style="info" %}
+**Interactive Reference:** [eduo.info/pvl](https://eduo.info/pvl/) — Community-built searchable database of all Provenance systems, cores, BIOS requirements, and supported file extensions (parsed directly from Provenance's source code).
+{% endhint %}
+
 ## Supported Formats
 
 ### ROMs

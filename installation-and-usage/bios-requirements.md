@@ -10,6 +10,10 @@ description: Certain emulator cores require specific BIOS files in order to play
 **DO NOT** ask us where to obtain BIOS files. Distributing BIOS files violates copyright law.
 {% endhint %}
 
+{% hint style="info" %}
+**Interactive Reference:** [eduo.info/pvl](https://eduo.info/pvl/) — Community-built searchable database of all Provenance systems, cores, BIOS requirements, and supported file extensions (parsed directly from Provenance's source code).
+{% endhint %}
+
 ## Systems
 
 **BIOS**: ✅ = Required 🔶 = Optional
