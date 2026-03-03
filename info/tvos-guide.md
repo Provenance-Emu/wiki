@@ -305,7 +305,7 @@ Provenance respects tvOS system-wide Dark Mode:
 - 📖 **[BIOS Requirements](../installation-and-usage/bios-requirements.md)** - Required system files
 - 🎮 **[Importing ROMs](../installation-and-usage/roms/importing-roms.md)** - Add games to your library
 - ⚙️ **[Customizing ROMs](../installation-and-usage/roms/customizing-roms.md)** - Edit game metadata and artwork
-- 🎮 **[Supported Controllers](controllers-and-controls/controllers/README.md)** - Full controller compatibility list
+- 🎮 **[Supported Controllers](../info/controllers-and-controls/controllers/README.md)** - Full controller compatibility list
 - ❓ **[Troubleshooting](../help/troubleshooting.md)** - Common issues and solutions
 
 ---

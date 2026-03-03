@@ -24,6 +24,7 @@
 * [Controllers & Controls](info/controllers-and-controls/README.md)
   * [Supported Controllers](info/controllers-and-controls/controllers/README.md)
   * [Controller Reviews](info/controllers-and-controls/controllers/controller-reviews.md)
+  * [Smart Keyboard Mapping](info/controllers-and-controls/controllers/smartkeyboard.md)
   * [Control Maps](info/controllers-and-controls/control-maps.md)
 * [Skins](info/skins-guide.md)
 * [Game Saves](info/saves.md)

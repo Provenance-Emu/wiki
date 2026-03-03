@@ -147,7 +147,7 @@ Standalone controllers are familiar to that of Playstation or Xbox. Recommended 
 Check out the controller phone mounts made by [UtorCase](https://utorcase.com/).
 {% endhint %}
 
-See [Controller Reviews](controllers/controller-reviews.md) for individual reviews, pros/cons, and recommendations.
+See [Controller Reviews](controller-reviews.md) for recommendations by use case and platform.
 
 ## Controls
 
