@@ -142,6 +142,10 @@ After updating `CodeSigning.xcconfig`, re-open the project (remember to use `Pro
   * Free Apple Developer: Hit the `▶︎` \(Run\) button.
 * Provenance will compile and run on your device. Unless testing, hit `◼︎` \(Stop\). _Done._
 
+{% hint style="success" %}
+**Build successful!** Provenance is now installed on your device. Free Apple developer provisioning expires every 7 days, but your data is preserved when re-signing.
+{% endhint %}
+
 💢 If you get stuck, check out [Troubleshooting](building-from-source.md#troubleshooting).
 
 {% hint style="info" %}

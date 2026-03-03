@@ -10,7 +10,9 @@ This FAQ is for advanced users who are sideloading or building Provenance from s
 
 ## Sideloading
 
-### What if I don't have a Mac? {#no-mac}
+<a id="no-mac"></a>
+<details>
+<summary><strong>What if I don't have a Mac?</strong></summary>
 
 **Sideloading (cross-platform):**
 - ✅ Windows, Mac, Linux all supported
@@ -22,7 +24,11 @@ This FAQ is for advanced users who are sideloading or building Provenance from s
 - ✅ Use a Hackintosh or macOS virtual machine ([Virtualizing macOS](../../info/miscellaneous/virtualizing-macos.md))
 - ✅ Or sideload the pre-built release instead
 
-### Can I install without a computer? {#no-computer}
+</details>
+
+<a id="no-computer"></a>
+<details>
+<summary><strong>Can I install without a computer?</strong></summary>
 
 **Officially: No safe method exists.**
 
@@ -37,7 +43,11 @@ This FAQ is for advanced users who are sideloading or building Provenance from s
 2. ✅ **Borrow a friend's computer** - Sideload once, re-sign every 7 days
 3. ✅ **Use a paid Apple Developer account** - Provisioning lasts 1 year
 
-### Why does Provenance not install? {#install-fail}
+</details>
+
+<a id="install-fail"></a>
+<details>
+<summary><strong>Why does Provenance not install?</strong></summary>
 
 **Common issues:**
 
@@ -61,7 +71,10 @@ This FAQ is for advanced users who are sideloading or building Provenance from s
 
 **Full guide:** [Sideloading](sideloading.md)
 
-### How do I re-sign every 7 days?
+</details>
+
+<details>
+<summary><strong>How do I re-sign every 7 days?</strong></summary>
 
 **Free Apple Developer accounts** expire provisioning profiles every 7 days.
 
@@ -81,9 +94,10 @@ This FAQ is for advanced users who are sideloading or building Provenance from s
    - $99/year Apple Developer Program
    - Provisioning lasts 1 year (re-sign annually)
 
-### What is a provisioning profile?
+</details>
 
-**Technical explanation:**
+<details>
+<summary><strong>What is a provisioning profile?</strong></summary>
 
 A **provisioning profile** is a file that allows an app to run on a specific device. It contains:
 - Your Apple Developer certificate
@@ -103,11 +117,15 @@ A **provisioning profile** is a file that allows an app to run on a specific dev
 
 **Where to find:** Xcode → Preferences → Accounts → [Your Apple ID] → Manage Certificates
 
+</details>
+
 ---
 
 ## Building from Source
 
-### Is there a Cydia repo? {#cydia}
+<a id="cydia"></a>
+<details>
+<summary><strong>Is there a Cydia repo?</strong></summary>
 
 **No.** Provenance is not distributed via Cydia.
 
@@ -116,7 +134,11 @@ If you're jailbroken, you can still install Provenance via:
 - Sideloading (works on jailbroken devices)
 - Building from source
 
-### Will you release an .ipa of the beta? {#prerelease}
+</details>
+
+<a id="prerelease"></a>
+<details>
+<summary><strong>Will you release an .ipa of the beta?</strong></summary>
 
 **Beta builds are available** on GitHub:
 - [Releases](https://github.com/Provenance-Emu/Provenance/releases) - Stable releases
@@ -126,7 +148,11 @@ If you're jailbroken, you can still install Provenance via:
 
 **App Store users:** Subscribe to Provenance Plus for TestFlight beta access (official, stable betas).
 
-### When is the next release? {#release-date}
+</details>
+
+<a id="release-date"></a>
+<details>
+<summary><strong>When is the next release?</strong></summary>
 
 **Check development status:**
 - [Milestones](https://github.com/Provenance-Emu/Provenance/milestones) - Planned releases
@@ -137,7 +163,10 @@ If you're jailbroken, you can still install Provenance via:
 
 **App Store users:** Updates are automatic - no need to track releases!
 
-### Why is my build slower than the App Store version?
+</details>
+
+<details>
+<summary><strong>Why is my build slower than the App Store version?</strong></summary>
 
 **You probably built the DEBUG version.**
 
@@ -157,11 +186,14 @@ If you're jailbroken, you can still install Provenance via:
 - Memory leak detection overhead
 - Designed for development, not gameplay
 
+</details>
+
 ---
 
 ## Developer Workflows
 
-### How do I use Provenance Plus features when sideloading?
+<details>
+<summary><strong>How do I use Provenance Plus features when sideloading?</strong></summary>
 
 **Requirement:** Use a **unique bundle ID** when building.
 
@@ -178,7 +210,10 @@ If you're jailbroken, you can still install Provenance via:
 
 **Why?** App Store version uses the default bundle ID. Sideloaded apps with the same ID can't verify subscriptions.
 
-### Can I run beta and stable side-by-side?
+</details>
+
+<details>
+<summary><strong>Can I run beta and stable side-by-side?</strong></summary>
 
 **Yes!** Use different bundle IDs for each.
 
@@ -190,6 +225,8 @@ If you're jailbroken, you can still install Provenance via:
 **Result:** Two separate apps, independent data.
 
 **Note:** Only enable iCloud sync on ONE version to avoid conflicts.
+
+</details>
 
 ### Where did you install the app from?
 
@@ -292,7 +329,8 @@ If you're jailbroken, you can still install Provenance via:
 
 ## Beta Testing
 
-### How do I become a beta tester?
+<details>
+<summary><strong>How do I become a beta tester?</strong></summary>
 
 **Option 1: Provenance Plus (recommended)**
 - Subscribe to Provenance Plus
@@ -314,11 +352,13 @@ If you're jailbroken, you can still install Provenance via:
 
 **Note:** Using beta ≠ beta testing. Active participation required!
 
+</details>
+
 ---
 
 ## Still Need Help?
 
-{% hint style="info" %}
+{% hint style="success" %}
 💬 Join our [Discord](https://discord.gg/provenance) - \#advanced-help channel
 
 🐛 Found a bug? Report on [GitHub Issues](https://github.com/Provenance-Emu/Provenance/issues)
