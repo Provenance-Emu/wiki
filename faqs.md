@@ -14,7 +14,9 @@ Welcome to Provenance! Whether you just downloaded from the App Store or are a l
 
 ### Is Provenance really free?
 
+{% hint style="success" %}
 **Yes, 100% free!** You can download from the App Store and play all 38 systems without paying a cent.
+{% endhint %}
 
 **Provenance Plus** is an optional subscription or lifetime purchase ($3.99/month, $39.99/year, or $99.99 lifetime) that adds premium features like iCloud sync, but it's not required to enjoy the full emulation experience.
 
@@ -47,11 +49,11 @@ Welcome to Provenance! Whether you just downloaded from the App Store or are a l
 | **Priority support** | ❌ | ✅ |
 
 **What syncs:**
-✅ Your entire game library  
-✅ Save states (freeze time, resume anywhere)  
-✅ Battery saves (in-game progress)  
-✅ Custom artwork and metadata  
-✅ Skins (controller overlays)  
+✅ Your entire game library
+✅ Save states (freeze time, resume anywhere)
+✅ Battery saves (in-game progress)
+✅ Custom artwork and metadata
+✅ Skins (controller overlays)
 ✅ BIOS files
 
 **Pricing:** $3.99/month, $39.99/year, or $99.99 lifetime (with free trial)
@@ -84,24 +86,33 @@ Welcome to Provenance! Whether you just downloaded from the App Store or are a l
 
 ### How do I import ROMs?
 
-**4 easy methods:**
+{% tabs %}
+{% tab title="AirDrop" %}
+**Easiest method:**
+1. AirDrop ROM files from Mac/iPhone to your device
+2. Tap files → Open in Provenance
+3. Games appear in your library automatically
+{% endtab %}
 
-1. **AirDrop** (easiest)
-   - AirDrop ROM files from Mac/iPhone to your device
-   - Tap files → Open in Provenance
+{% tab title="Files App" %}
+1. Save ROMs to iCloud Drive or local Files
+2. Navigate to the ROM file
+3. Tap Share → Open in Provenance
+{% endtab %}
 
-2. **Files App**
-   - Save ROMs to iCloud Drive or local Files
-   - Navigate to ROM → Share → Provenance
+{% tab title="Safari Download" %}
+1. Download ROM file in Safari
+2. Tap the downloaded file in the downloads menu
+3. Choose Open in Provenance
+{% endtab %}
 
-3. **Safari Download**
-   - Download ROM in Safari
-   - Tap downloaded file → Open in Provenance
-
-4. **Mac Finder** (USB connection)
-   - Connect device to Mac via USB
-   - Finder → Device → Files → Provenance
-   - Drag ROMs into the folder
+{% tab title="Mac Finder (USB)" %}
+1. Connect device to Mac via USB
+2. Open **Finder** → Select your device
+3. **Files** tab → **Provenance**
+4. Drag ROMs into the folder
+{% endtab %}
+{% endtabs %}
 
 **Full guide:** [Importing ROMs](installation-and-usage/roms/importing-roms.md)
 
@@ -114,7 +125,7 @@ Welcome to Provenance! Whether you just downloaded from the App Store or are a l
 - ✅ Homebrew ROMs (free, legal games created by fans)
 - ✅ Public domain titles
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 **DO NOT** ask us or the community where to obtain copyrighted ROMs or BIOS files.
 {% endhint %}
 
@@ -132,17 +143,23 @@ Welcome to Provenance! Whether you just downloaded from the App Store or are a l
 
 ### Which systems work best on my device?
 
-**iPhone/iPad:**
+{% tabs %}
+{% tab title="iPhone / iPad" %}
 - ✅ **Perfect:** NES, SNES, GB, GBA, Genesis (all supported devices — iPhone 8 or iPhone SE (2nd/3rd gen) or newer)
 - ✅ **Great:** PlayStation, N64 (iPhone 8 or iPhone SE (2nd/3rd gen) or newer)
 - ⚠️ **Demanding:** GameCube, Dreamcast, PSP (iPhone 11+ or M1 iPad)
+{% endtab %}
 
-**Apple TV:**
+{% tab title="Apple TV" %}
 - ✅ **All systems** run great on Apple TV 4K
-- ⚠️ **Apple TV HD** - stick to 16-bit and earlier for best performance
+- ⚠️ **Apple TV HD** — stick to 16-bit and earlier for best performance
+{% endtab %}
 
-**Mac (Apple Silicon):**
-- ✅ All systems run perfectly on M1/M2/M3 Macs
+{% tab title="Mac (Apple Silicon)" %}
+- ✅ All systems run perfectly on M1/M2/M3/M4 Macs
+- No performance concerns on any Apple Silicon Mac
+{% endtab %}
+{% endtabs %}
 
 **Full guide:** [Performance Optimization](info/performance-optimization.md)
 
@@ -201,7 +218,8 @@ Welcome to Provenance! Whether you just downloaded from the App Store or are a l
 
 ## Troubleshooting
 
-### Why is the app crashing?
+<details>
+<summary><strong>Why is the app crashing?</strong></summary>
 
 **Common fixes:**
 
@@ -220,7 +238,10 @@ Welcome to Provenance! Whether you just downloaded from the App Store or are a l
 
 **Still crashing?** Join our [Discord](https://discord.gg/provenance) for live help.
 
-### Why is [specific game] slow or stuttering?
+</details>
+
+<details>
+<summary><strong>Why is [specific game] slow or stuttering?</strong></summary>
 
 **Quick fixes:**
 
@@ -232,7 +253,10 @@ Welcome to Provenance! Whether you just downloaded from the App Store or are a l
 
 **Detailed guide:** [Performance Optimization](info/performance-optimization.md)
 
-### Controller not working / buttons not responding
+</details>
+
+<details>
+<summary><strong>Controller not working / buttons not responding</strong></summary>
 
 **Solutions:**
 
@@ -252,7 +276,10 @@ Welcome to Provenance! Whether you just downloaded from the App Store or are a l
 
 **Full guide:** [Controllers & Controls](info/controllers-and-controls/)
 
-### ROMs won't import / games missing from library
+</details>
+
+<details>
+<summary><strong>ROMs won't import / games missing from library</strong></summary>
 
 **Checklist:**
 
@@ -264,7 +291,10 @@ Welcome to Provenance! Whether you just downloaded from the App Store or are a l
 
 **Multi-disc games:** Create M3U playlists - see [Advanced ROM Management](installation-and-usage/roms/advanced-management.md#multi-disc-games-advanced)
 
-### iCloud sync not working
+</details>
+
+<details>
+<summary><strong>iCloud sync not working</strong></summary>
 
 **Requirements:**
 - ✅ Provenance Plus active subscription
@@ -279,7 +309,10 @@ Welcome to Provenance! Whether you just downloaded from the App Store or are a l
 
 **Full guide:** [iCloud Sync Troubleshooting](installation-and-usage/roms/advanced-management.md#troubleshooting-icloud-issues)
 
-### Dark mode not working on Apple TV
+</details>
+
+<details>
+<summary><strong>Dark mode not working on Apple TV</strong></summary>
 
 Provenance uses **system-wide Dark Mode**:
 
@@ -287,11 +320,14 @@ Provenance uses **system-wide Dark Mode**:
 2. Select **Dark ✓**
 3. Provenance will update automatically
 
+</details>
+
 ---
 
 ## Migration & Switching
 
-### Can I migrate from Delta or RetroArch?
+<details>
+<summary><strong>Can I migrate from Delta or RetroArch?</strong></summary>
 
 **Yes!** Your ROMs and saves are compatible.
 
@@ -306,7 +342,10 @@ Provenance uses **system-wide Dark Mode**:
 2. Import ROMs into Provenance
 3. Copy saves to Provenance saves folder (via Finder)
 
-### Can I switch from sideloaded Provenance to App Store version?
+</details>
+
+<details>
+<summary><strong>Can I switch from sideloaded Provenance to App Store version?</strong></summary>
 
 **Yes!** Your data transfers automatically:
 
@@ -316,7 +355,10 @@ Provenance uses **system-wide Dark Mode**:
 
 **iCloud note:** If using Provenance Plus, only enable sync on ONE version to avoid conflicts.
 
-### Can I use both App Store and sideloaded versions?
+</details>
+
+<details>
+<summary><strong>Can I use both App Store and sideloaded versions?</strong></summary>
 
 **Yes, but not recommended** - can cause iCloud sync conflicts.
 
@@ -325,24 +367,27 @@ Provenance uses **system-wide Dark Mode**:
 - Only enable iCloud sync on ONE version
 - Data won't automatically transfer between versions
 
+</details>
+
 ---
 
 ## Provenance Plus
 
-### Why is CloudKit sync free on Apple TV but paid on iOS?
+<details>
+<summary><strong>Why is CloudKit sync free on Apple TV but paid on iOS?</strong></summary>
 
-**Great question!** It's about the platform constraints:
+It's about the platform constraints:
 
 **Apple TV has no permanent storage** - when you delete Provenance, your games and saves are gone. We include FREE CloudKit sync on tvOS so you never lose progress. It's not a premium feature, it's a necessity.
 
 **iPhone/iPad have permanent storage** - your games and saves persist even if you delete the app. CloudKit sync is a premium convenience feature that lets you access your library on multiple devices.
 
-**The upsell:**  
-Love the seamless experience on Apple TV? Unlock that same magic on your iPhone and iPad with Provenance Plus. Start on your couch, continue on your commute. That's the premium experience we're selling.
-
 **Bottom line:** tvOS sync = survival feature (free). iOS sync = premium multi-device experience (Plus).
 
-### Is Provenance Plus worth it?
+</details>
+
+<details>
+<summary><strong>Is Provenance Plus worth it?</strong></summary>
 
 **Worth it if you:**
 - ✅ **Own an Apple TV + iPhone/iPad** (seamless gaming across devices)
@@ -360,7 +405,10 @@ Love the seamless experience on Apple TV? Unlock that same magic on your iPhone 
 
 **Try it free:** We offer an App Store trial so you can experience seamless multi-device gaming before subscribing.
 
-### How do I cancel Provenance Plus?
+</details>
+
+<details>
+<summary><strong>How do I cancel Provenance Plus?</strong></summary>
 
 **iOS/iPadOS:**
 1. Settings → [Your Name] → Subscriptions
@@ -374,7 +422,10 @@ Love the seamless experience on Apple TV? Unlock that same magic on your iPhone 
 
 **Your subscription remains active until the end of the billing period.**
 
-### Does Provenance Plus work when sideloading?
+</details>
+
+<details>
+<summary><strong>Does Provenance Plus work when sideloading?</strong></summary>
 
 **Yes!** But you need to use a **unique bundle ID** when building from Xcode.
 
@@ -386,31 +437,45 @@ Love the seamless experience on Apple TV? Unlock that same magic on your iPhone 
 
 **Default bundle ID:** Won't work - app thinks it's App Store version but can't verify subscription.
 
+</details>
+
 ---
 
 ## Advanced Topics
 
-### What if I don't have a Mac?
+<details>
+<summary><strong>What if I don't have a Mac?</strong></summary>
 
 **App Store users:** No Mac needed! Just install from the App Store on your device.
 
 **Advanced users:** See [Advanced Installation FAQ](installation-and-usage/installing-provenance/faqs-advanced.md) for sideloading without a Mac.
 
-### Is jailbreak required?
+</details>
+
+<details>
+<summary><strong>Is jailbreak required?</strong></summary>
 
 **No.** Provenance works on all non-jailbroken devices via the App Store.
 
-### Can I install without a computer?
+</details>
+
+<details>
+<summary><strong>Can I install without a computer?</strong></summary>
 
 **Yes!** Just download from the App Store directly on your device.
 
 **Sideloading without a computer:** See [Advanced Installation FAQ](installation-and-usage/installing-provenance/faqs-advanced.md#no-computer) for alternative methods.
 
-### When is the next release?
+</details>
+
+<details>
+<summary><strong>When is the next release?</strong></summary>
 
 Check our [GitHub Releases](https://github.com/Provenance-Emu/Provenance/releases) and [Milestones](https://github.com/Provenance-Emu/Provenance/milestones) for development status.
 
 **App Store users:** Updates are automatic - no need to track releases manually!
+
+</details>
 
 ---
 
@@ -447,7 +512,7 @@ We're always looking for help!
 
 ## Still Have Questions?
 
-{% hint style="info" %}
+{% hint style="success" %}
 💬 Join our [Discord](https://discord.gg/provenance) for live community support!
 
 🐛 Found a bug? Report it on [GitHub Issues](https://github.com/Provenance-Emu/Provenance/issues)

@@ -222,7 +222,8 @@ If you're jailbroken, you can still install Provenance via:
 
 ## Troubleshooting Advanced Installation
 
-### App crashes at launch after 7 days
+<details>
+<summary><strong>App crashes at launch after 7 days</strong></summary>
 
 **Cause:** Free Apple Developer provisioning expired.
 
@@ -233,27 +234,22 @@ If you're jailbroken, you can still install Provenance via:
 
 **Data safe?** Yes! Saves/ROMs are preserved when re-signing.
 
-### "Unable to install Provenance"
+</details>
+
+<details>
+<summary><strong>"Unable to install Provenance"</strong></summary>
 
 **Fixes:**
 
-1. **Check storage space**
-   - Provenance is 2.5 GB
-   - Need ~5 GB free for installation
+1. **Check storage space** — Provenance is 2.5 GB, need ~5 GB free for installation
+2. **Delete existing version** — Remove old Provenance first, or use different bundle ID
+3. **Update Xcode / signing tools** — Xcode → Check for Updates; Update AltStore/Sideloadly
+4. **Verify Apple ID** — Xcode → Preferences → Accounts → Remove and re-add Apple ID
 
-2. **Delete existing version**
-   - Remove old Provenance first
-   - Or use different bundle ID
+</details>
 
-3. **Update Xcode / signing tools**
-   - Xcode → Check for Updates
-   - Update AltStore/Sideloadly
-
-4. **Verify Apple ID**
-   - Xcode → Preferences → Accounts
-   - Remove and re-add Apple ID
-
-### Xcode says "Signing certificate expired"
+<details>
+<summary><strong>Xcode says "Signing certificate expired"</strong></summary>
 
 **Cause:** Your Apple Developer certificate expired.
 
@@ -271,7 +267,10 @@ If you're jailbroken, you can still install Provenance via:
 3. Create new certificate
 4. Download and install in Xcode
 
-### Can't find my UDID
+</details>
+
+<details>
+<summary><strong>Can't find my UDID</strong></summary>
 
 **UDID** = Unique Device Identifier (only needed for sideloading/development)
 
@@ -286,6 +285,8 @@ If you're jailbroken, you can still install Provenance via:
 - [udid.tech](https://udid.tech)
 
 **Full guide:** [UDID Registration](../../help/udid.md)
+
+</details>
 
 ---
 

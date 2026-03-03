@@ -70,8 +70,8 @@ Skins work with **all systems except**:
 
 ## How to Import Skins
 
-### Method 1: Direct Download (Safari)
-
+{% tabs %}
+{% tab title="Safari Download" %}
 1. **Visit DeltaStyles.com** on your iPhone/iPad
 2. **Browse by system** (e.g., Game Boy Advance)
 3. **Tap "Download"** on a skin you like
@@ -79,35 +79,37 @@ Skins work with **all systems except**:
 5. **Tap the downloaded file** in Safari's download manager
 6. **Select "Open in Provenance"**
 7. ✅ Skin is now imported!
+{% endtab %}
 
-### Method 2: AirDrop
-
+{% tab title="AirDrop" %}
 1. Download skins on your Mac/another device
 2. **AirDrop the `.deltaskin` files** to your iPhone/iPad
 3. **Tap the file** when it arrives
 4. **Select "Open in Provenance"**
+{% endtab %}
 
-### Method 3: Files App
-
+{% tab title="Files App" %}
 1. Save `.deltaskin` files to iCloud Drive or local storage
 2. Open **Files app**
 3. Navigate to the skin file
 4. **Tap and hold** → **Share** → **Provenance**
+{% endtab %}
 
-### Method 4: Import via Settings
-
+{% tab title="Import via Settings" %}
 1. Open **Provenance**
 2. Tap **Settings** (gear icon)
 3. Scroll to **Controller Skins**
 4. Tap a system (e.g., "Game Boy Advance")
 5. Tap **"+"** to import from Files app
+{% endtab %}
+{% endtabs %}
 
 ---
 
 ## How to Apply Skins
 
-### Set a Global Default (Per System)
-
+{% tabs %}
+{% tab title="Global Default (Per System)" %}
 Apply a skin to **all games** for a specific system:
 
 1. Open **Provenance**
@@ -116,9 +118,9 @@ Apply a skin to **all games** for a specific system:
 4. **Tap the skin** you want to use
 5. **Select "Set as Default"**
 6. ✅ This skin will now be used for all SNES games
+{% endtab %}
 
-### Set a Skin for One Game
-
+{% tab title="Per-Game Skin" %}
 Apply a unique skin to a **specific game only**:
 
 1. **Long-press a game** in your library
@@ -126,9 +128,9 @@ Apply a unique skin to a **specific game only**:
 3. Scroll to **Controller Skin**
 4. **Select a skin** from the list
 5. ✅ This game will now use that skin (overrides global default)
+{% endtab %}
 
-### Switch Skins Mid-Game
-
+{% tab title="Switch Mid-Game" %}
 Change skins without exiting your game:
 
 1. While playing, **open the pause menu** (pause button)
@@ -136,6 +138,8 @@ Change skins without exiting your game:
 3. Tap **Controller Skin**
 4. **Select a new skin**
 5. Resume playing with the new skin applied
+{% endtab %}
+{% endtabs %}
 
 ---
 
@@ -267,7 +271,8 @@ Common system identifiers for `info.json`:
 
 ## Troubleshooting
 
-### Skin Not Showing in Browser
+<details>
+<summary><strong>Skin Not Showing in Browser</strong></summary>
 
 **Problem:** Imported skin doesn't appear in the skin list
 
@@ -277,7 +282,10 @@ Common system identifiers for `info.json`:
 3. ✅ **Restart Provenance** - Force quit app and reopen
 4. ✅ **Re-import** - Delete and re-download the skin
 
-### Skin Looks Corrupted or Glitchy
+</details>
+
+<details>
+<summary><strong>Skin Looks Corrupted or Glitchy</strong></summary>
 
 **Problem:** Buttons are misaligned, missing, or stretched
 
@@ -287,7 +295,10 @@ Common system identifiers for `info.json`:
 3. ✅ **Update Provenance** - Ensure you're on the latest version from the App Store
 4. ✅ **Report to skin creator** - Leave feedback on DeltaStyles or GitHub
 
-### Buttons Don't Respond
+</details>
+
+<details>
+<summary><strong>Buttons Don't Respond</strong></summary>
 
 **Problem:** Tapping skin buttons doesn't register input
 
@@ -297,7 +308,10 @@ Common system identifiers for `info.json`:
 3. ✅ **Try a different skin** - Test if the issue is skin-specific
 4. ✅ **Restart game** - Close and relaunch the game
 
-### Performance Slowdown with Skins
+</details>
+
+<details>
+<summary><strong>Performance Slowdown with Skins</strong></summary>
 
 **Problem:** Game lags or stutters after applying a skin
 
@@ -306,6 +320,8 @@ Common system identifiers for `info.json`:
 2. ✅ **Update to the latest version** - Contains skin performance improvements
 3. ✅ **Close background apps** - Free up memory
 4. ✅ **Disable visual filters** - Turn off CRT/Smoothing in settings
+
+</details>
 
 ---
 
@@ -342,23 +358,47 @@ Skins are stored on your device in Provenance's app container.
 
 ## Frequently Asked Questions
 
-**Q: Do skins work on Apple TV?**  
-A: Yes, for most systems! Skins render on Apple TV when using touch-based systems (though most users prefer physical controllers). Note: Nintendo 3DS skins are not supported on tvOS.
+<details>
+<summary><strong>Do skins work on Apple TV?</strong></summary>
 
-**Q: Can I use the same skin on multiple systems?**  
-A: No - each skin is designed for a specific system's button layout (SNES skins won't work for GBA).
+Yes, for most systems! Skins render on Apple TV when using touch-based systems (though most users prefer physical controllers). Note: Nintendo 3DS skins are not supported on tvOS.
 
-**Q: Are animated skins supported?**  
-A: Not currently - only static PNG images.
+</details>
 
-**Q: Do skins affect game performance?**  
-A: Minimal impact thanks to optimized rendering in current versions.
+<details>
+<summary><strong>Can I use the same skin on multiple systems?</strong></summary>
 
-**Q: Can I disable skins entirely?**  
-A: Yes - select the default "Standard" skin for any system to use Provenance's built-in controls.
+No — each skin is designed for a specific system's button layout (SNES skins won't work for GBA).
 
-**Q: Where can I request a specific skin design?**  
-A: Check the [Provenance Discord](https://discord.gg/provenance) or r/EmulationOniOS - community designers often take requests!
+</details>
+
+<details>
+<summary><strong>Are animated skins supported?</strong></summary>
+
+Not currently — only static PNG images.
+
+</details>
+
+<details>
+<summary><strong>Do skins affect game performance?</strong></summary>
+
+Minimal impact thanks to optimized rendering in current versions.
+
+</details>
+
+<details>
+<summary><strong>Can I disable skins entirely?</strong></summary>
+
+Yes — select the default "Standard" skin for any system to use Provenance's built-in controls.
+
+</details>
+
+<details>
+<summary><strong>Where can I request a specific skin design?</strong></summary>
+
+Check the [Provenance Discord](https://discord.gg/provenance) or r/EmulationOniOS — community designers often take requests!
+
+</details>
 
 ---
 

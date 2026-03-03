@@ -52,32 +52,36 @@ DO NOT expect to use a beta without issues, losing your saves, or bugs.
 
 ### Clone
 
-Cloning is how you pull the source code from GitHub. The primary way to do this is using Terminal; However, if you're a developer or familiar with powerful git clients like Tower, this is also an option as long as you enable for initializing submodules.
+Cloning is how you pull the source code from GitHub. Choose your preferred method:
 
-#### **Terminal**
-
+{% tabs %}
+{% tab title="Terminal" %}
 {% hint style="info" %}
 The Terminal app can be found in: _/Applications/Utilities_
 {% endhint %}
 
 1. Make sure you have the latest version of the Xcode command-line tools installed: `xcode-select --install`
-2. _\(Optional\)_ Choose an install directory with `cd [path]` \(drag & drop a folder on Terminal after `cd`  to get directory path\).
-3. Download source with…
-   * HTTPS: `git clone --recurse-submodules -j4 https://github.com/Provenance-Emu/Provenance.git`
+2. _(Optional)_ Choose an install directory with `cd [path]` (drag & drop a folder on Terminal after `cd` to get directory path).
+3. Download source with HTTPS:
+   ```
+   git clone --recurse-submodules -j4 https://github.com/Provenance-Emu/Provenance.git
+   ```
 4. Continue to [Setup](building-from-source.md#setup)…
+{% endtab %}
 
-#### **Tower**
-
+{% tab title="Tower (Git Client)" %}
 Tower is a powerful commercial git client that can automate a lot of the tasks you'd otherwise be using commandline for, such as stashing changes. It is however, _not free._
 
 1. Purchase/Download [Tower](https://www.git-tower.com/mac/)
 2. Launch Tower and Add Your Service Account: `GitHub`
-3. _\(Optional\)_ In Menubar: Select `Tower` → `Preferences` \(or use `⌘,` shortcut\):
+3. _(Optional)_ In Menubar: Select `Tower` → `Preferences` (or use `⌘,` shortcut):
    * Set a 'default directory for clone repositories' such as `~Documents/GitHub`
-4. In Menubar: Select `File` → `Clone Git Repository` \(or use `⌃⌘C` shortcut\):
+4. In Menubar: Select `File` → `Clone Git Repository` (or use `⌃⌘C` shortcut):
    * Remote URL: `https://github.com/Provenance-Emu/Provenance.git`
    * ☑️ Initialize Submodules
 5. Continue to [Setup](building-from-source.md#setup)…
+{% endtab %}
+{% endtabs %}
 
 ~~**Download**~~
 
@@ -196,75 +200,110 @@ _Paid_ Apple Developer provisioning may only require re-signing once a year.
 If all else fails, delete Provenance folder and start over.
 {% endhint %}
 
-## 💢 Troubleshooting
+## Troubleshooting
 
 If you are having trouble building or sideloading the app, check for your issue here or below in Known Issues.
 
-### xcrun: error: unable to find utility "xcodebuild", not a developer tool or in PATH
+<details>
+<summary><strong>xcrun: error: unable to find utility "xcodebuild"</strong></summary>
 
-* Go to Xcode Preferences&gt;Locations, and make sure to select an Xcode version for Command Line Tools.
+Go to Xcode Preferences → Locations, and make sure to select an Xcode version for Command Line Tools.
 
-### Unable to code-sign / install…
+</details>
+
+<details>
+<summary><strong>Unable to code-sign / install</strong></summary>
 
 * Change the Bundle IDs of the app targets and extensions, as described in Build Source steps.
-* If you are using a free Apple developer account, you can only install a total of 3 apps per Apple ID at a time. You must use delete some apps you are signing, or install with different Apple ID and Bundle IDs.
-* If you used to have a free Safari Developer Account which is no longer supported by Apple, you have two options:
+* If you are using a free Apple developer account, you can only install a total of 3 apps per Apple ID at a time. You must delete some apps you are signing, or install with different Apple ID and Bundle IDs.
+* If you used to have a free Safari Developer Account which is no longer supported by Apple:
+  1. Upgrade to a _paid_ [Apple Developer](https://developer.apple.com/programs/) account, or
+  2. Use a different Apple ID that _is not_ an expired and deprecated Safari Developer account.
 
-  1\) Upgrade to a _paid_ [Apple Developer](https://developer.apple.com/programs/) account.
+</details>
 
-  2\) Use a different Apple ID that _is not_ an expired and deprecated Safari Developer account.
+<details>
+<summary><strong>Can't install after changing fork / pulling</strong></summary>
 
-### Can't install after changing fork / pulling…
+1. Check the Bundle IDs haven't been reset to the project defaults.
+2. If not, select your team dropdown and reselect your team/name. Sometimes Xcode gets out of sync with the identity being used after a merge/pull/branch change, especially in the extension targets.
 
-1. Check the Bundle IDs haven't been reset to the projects defaults.
-2. If not, select your team drop down and reselect your team / name. Sometimes Xcode gets out of sync with the identity being used after a merge / pull / branch change, especially in the extension targets.
+</details>
 
-### **Cycle in dependencies between targets… error**
+<details>
+<summary><strong>Cycle in dependencies between targets… error</strong></summary>
 
-* Circular dependency error. Clean Build Folder \(⇧⌘K\) and/or nuke Xcode's derived data: `rm -rf ~/Library/Developer/Xcode/DerivedData` and restart Xcode.
+Circular dependency error. Clean Build Folder (⇧⌘K) and/or nuke Xcode's derived data: `rm -rf ~/Library/Developer/Xcode/DerivedData` and restart Xcode.
 
-### Stuttering sound or lag
+</details>
 
-* This probably means you built the _debug version_ by mistake \(app will be named `Prov Debug` on Home Screen and the version displayed in Settings will be `DEBUG`\)… If so, Re-build using `Provenance-Release` \(iOS\) or `ProvenanceTV-Release` \(tvOS\) option in Xcode.
+<details>
+<summary><strong>Stuttering sound or lag</strong></summary>
 
-### **—application-identifier entitlement does not match…**
+This probably means you built the _debug version_ by mistake (app will be named `Prov Debug` on Home Screen and Settings will show `DEBUG`). Re-build using `Provenance-Release` (iOS) or `ProvenanceTV-Release` (tvOS) option in Xcode.
 
-* This means you need to match the Bundle IDs with the ones from your previous sideload or build on your device. If you don't know it, or used a 3rd party web-sign \(unsupported\), we recommend you[ backup your files](../../info/miscellaneous/restoring-files.md), delete the app and try to clean-install.
+</details>
 
-### **Your maximum App ID limit has been reached…**
+<details>
+<summary><strong>—application-identifier entitlement does not match…</strong></summary>
 
-* You have made too many Bundle IDs \(App IDs\) in one week on a free Apple developer account. Stop making new Bundle IDs and revert to one you already made. You are chasing the wrong problem. If all else fails, use a different Apple ID, and make only one new, unique Bundle ID with it \(and save it for later when you need to re-sign in 7 days\).
+This means you need to match the Bundle IDs with the ones from your previous sideload or build on your device. If you don't know it, or used a 3rd party web-sign (unsupported), we recommend you [backup your files](../../info/miscellaneous/restoring-files.md), delete the app and try to clean-install.
 
-### **something something …Mupen build error**
+</details>
 
-* You are missing submodules. **Do not** download .zip from GitHub. Use Terminal. Go back to [Get Source](building-from-source.md#get-source) and **do not** skip any steps. 
+<details>
+<summary><strong>Your maximum App ID limit has been reached…</strong></summary>
 
-### Unsupported arch
+You have made too many Bundle IDs (App IDs) in one week on a free Apple developer account. Stop making new Bundle IDs and revert to one you already made. If all else fails, use a different Apple ID, and make only one new, unique Bundle ID with it (and save it for later when you need to re-sign in 7 days).
 
-* You are probably trying to build for a 32-bit device. Provenance only support 64bit devices at this time.  as only mupen64plus requires 64-bit at this time, try this as a **workaround**: Remove the mupen64plus framework from the apps `Embed` and `Link` stages and from the `Build → Targets` list in the `Edit Scheme…` settings.
+</details>
 
-### Duplicate app
+<details>
+<summary><strong>Mupen build error / missing submodules</strong></summary>
 
-* If app installs or updates as a duplicate app instead of updating existing installation, you need delete it and  use the _same_ Bundle ID as your original build or you'll end up with a double installation…
+You are missing submodules. **Do not** download .zip from GitHub. Use Terminal. Go back to [Get Source](building-from-source.md#get-source) and **do not** skip any steps.
 
-### **Linking… Failed**
+</details>
 
-* Fails when switching from one target to another. Try…
-  1. In Xcode: Run `Clean` a/o `Clean Build Folder` and rebuild.
+<details>
+<summary><strong>Unsupported arch</strong></summary>
 
-### **git@github.com: Permission denied \(publickey\)…**
+You are probably trying to build for a 32-bit device. Provenance only supports 64-bit devices. As a **workaround**: Remove the mupen64plus framework from the app's `Embed` and `Link` stages and from the `Build → Targets` list in the `Edit Scheme…` settings.
 
-* Setup an [SSH Key on your GitHub account](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/), or…
-* Add the following to your bash file via `nano ~/.gitconfig` \(save with Write Out `^O`\):
+</details>
 
-  ```bash
-   [url "https://github.com"]
-   insteadOf = ssh://git@github.com
-  ```
+<details>
+<summary><strong>Duplicate app</strong></summary>
 
-### **conflicting provisioning settings…Distribution**
+If app installs or updates as a duplicate app instead of updating existing installation, you need to delete it and use the _same_ Bundle ID as your original build or you'll end up with a double installation.
 
-* In Build Settings for the targets with errors, manually reset all the Code Signing Identities that are `iOS Distribution` to be `iOS Developer`, and try building again.
+</details>
+
+<details>
+<summary><strong>Linking… Failed</strong></summary>
+
+Fails when switching from one target to another. In Xcode: Run `Clean` and/or `Clean Build Folder` and rebuild.
+
+</details>
+
+<details>
+<summary><strong>git@github.com: Permission denied (publickey)</strong></summary>
+
+Setup an [SSH Key on your GitHub account](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/), or add the following to your git config via `nano ~/.gitconfig`:
+
+```bash
+[url "https://github.com"]
+insteadOf = ssh://git@github.com
+```
+
+</details>
+
+<details>
+<summary><strong>conflicting provisioning settings…Distribution</strong></summary>
+
+In Build Settings for the targets with errors, manually reset all the Code Signing Identities that are `iOS Distribution` to be `iOS Developer`, and try building again.
+
+</details>
 
 ## ⚠️ Known Issues
 

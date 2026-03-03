@@ -41,85 +41,100 @@ Sideloading from 3rd party sources _**is not supported**_.
 
 💢  If you get stuck, check out [Troubleshooting](sideloading.md#troubleshooting).
 
-## iOS App Signer
+{% tabs %}
+{% tab title="❇️ AltStore" %}
+AltStore source is available at [this link](altstore://source?url=https://provenance-emu.com/apps.json) — click in Mobile Safari once you have AltStore installed.
 
+1. Download and launch [AltStore](https://altstore.io).
+2. Connect your device (you may need to open **Finder** and choose `Trust…` when it pops up).
+3. Follow instructions via altstore.io and the app as it guides you.
+4. Put the Provenance .ipa in your iCloud Drive somewhere and install via AltStore app by using the `+` button in the upper left of the My Apps screen.
+
+{% hint style="info" %}
+Free Apple developer provisioning expires _every 7 days_, but AltStore can keep track of and handle renewal for you. Re-sideloading will not cause you to lose any data.
+{% endhint %}
+
+{% hint style="warning" %}
+Windows AltStore has not been tested by the Provenance team. Support may be limited.
+{% endhint %}
+{% endtab %}
+
+{% tab title="🖋 iOS App Signer" %}
 1. Download and launch [iOS App Signer](https://dantheman827.github.io/ios-app-signer/).
-2. Select `.ipa` file and resign it to yourself, selecting the Provenance Bundle ID you've used in the past if you already have one. If you don't have one, try creating one here if it lets you or proceed to step 4 and return to this.    🆔 Bundle ID: `com.[change-this].provenance`  Replace `[change-this]` with something unique like your username.
-3. Connect your device. ⚠️If you haven't yet, register your device to your Apple ID in Xcode. Easiest way to do this is to make dummy app in Xcode and have it automatically create the provisioning when you enter your Bundle ID  \([Example](https://dantheman827.github.io/ios-app-signer/#tab-bar)\).
+2. Select `.ipa` file and resign it to yourself, selecting the Provenance Bundle ID you've used in the past. If you don't have one, create one:
+   🆔 Bundle ID: `com.[change-this].provenance` — replace `[change-this]` with something unique like your username.
+3. Connect your device. ⚠️ If you haven't yet, register your device to your Apple ID in Xcode. Easiest way is to make a dummy app in Xcode and have it automatically create the provisioning ([Example](https://dantheman827.github.io/ios-app-signer/#tab-bar)).
 4. Install:
-   * [Xcode](https://apps.apple.com/us/app/xcode/id497799835): Window → Devices and Simulators: Select your device. Drop the new `.ipa` file onto Installed Apps.
-   * [Configurator](https://support.apple.com/apple-configurator): Double-click your device → Apps: Drop the new `.ipa` file here.
-5. On device: Go to `Settings` → `General` → `Profiles & Device Management`, tap on your certificate and then `Trust`
-6. _Done._ \(If using a free developer account, repeat from step 4 after it _**expires in 7 days**_\)
+   * [Xcode](https://apps.apple.com/us/app/xcode/id497799835): Window → Devices and Simulators → Select your device → Drop the `.ipa` onto Installed Apps.
+   * [Configurator](https://support.apple.com/apple-configurator): Double-click your device → Apps → Drop the `.ipa` here.
+5. On device: Go to `Settings` → `General` → `Profiles & Device Management`, tap on your certificate and then `Trust`.
+6. _Done._ (If using a free developer account, repeat from step 4 after it **expires in 7 days**)
 
 {% hint style="info" %}
 Free Apple developer provisioning expires _every 7 days_, requiring reloading, but you will not lose any data.
 {% endhint %}
+{% endtab %}
 
-## AltDeploy
-
+{% tab title="🧪 AltDeploy" %}
 1. Download and launch [AltDeploy](https://github.com/pixelomer/AltDeploy/releases).
-2. Connect your device \(you may need to open **Finder** and choose `Trust…` when it pops up; on older macOS with iTunes, launch iTunes instead\).
+2. Connect your device (you may need to open **Finder** and choose `Trust…` when it pops up).
 3. Select your device in Impactor.
 4. Drag & drop `.ipa` file onto Impactor.
 5. Enter your Apple ID.
-6. If _not_ using 2-Factor Authentication, enter your account password, otherwise…
-   1. _\(If you haven't yet\),_ login to your [Apple ID](https://appleid.apple.com/) online and `Generate` an App-Specific Password, under Security section \(and write it down somewhere for later use\).
+6. If _not_ using 2-Factor Authentication, enter your account password, otherwise:
+   1. Login to your [Apple ID](https://appleid.apple.com/) online and `Generate` an App-Specific Password under Security section.
    2. Enter your App-Specific Password in AltDeploy, verbatim.
 7. Install:
-   * [Xcode](https://apps.apple.com/us/app/xcode/id497799835): Window → Devices and Simulators: Select your device. Drop the new `.ipa` file onto Installed Apps.
-   * [Configurator](https://support.apple.com/apple-configurator): Double-click your device → Apps: Drop the new `.ipa` file here.
-8. On device: Go to `Settings` → `General` → `Profiles & Device Management`, tap on your certificate and then `Trust`
-9. _Done._ \(If using a free developer account, repeat from step 4 after it _**expires in 7 days**_\)
+   * [Xcode](https://apps.apple.com/us/app/xcode/id497799835): Window → Devices and Simulators → Select your device → Drop the `.ipa` onto Installed Apps.
+   * [Configurator](https://support.apple.com/apple-configurator): Double-click your device → Apps → Drop the `.ipa` here.
+8. On device: Go to `Settings` → `General` → `Profiles & Device Management`, tap on your certificate and then `Trust`.
+9. _Done._ (If using a free developer account, repeat from step 4 after it **expires in 7 days**)
 
 {% hint style="info" %}
 Free Apple developer provisioning expires _every 7 days_, requiring reloading, but you will not lose any data.
 {% endhint %}
-
-## AltStore
-
-AltStore source is availble at [this link](altstore://source?url=https://provenance-emu.com/apps.json)
-Click in Mobile Safari once you have AltStore installed.
-
-1. Download and launch [AltStore](https://altstore.io).
-2. Connect your device \(you may need to open **Finder** and choose `Trust…` when it pops up; on older macOS with iTunes, launch iTunes instead\).
-3. …Follow instructions via altstore.io and the app as it guides you.
-4. You'll need to put Provenance .ipa in your iCloud Drive somewhere and install via AltStore app by using the `+` button in the upper left of the My Apps screen to select and sideload it to your device.
-
-{% hint style="warning" %}
-Windows AltStore has not been tested by the Provenance team. Feel free to give it a try, but support may be limited.
-{% endhint %}
-
-{% hint style="info" %}
-Free Apple developer provisioning expires _every 7 days_, requiring reloading \(which AltStore can keep track of and handle for you\). Re-sideloading to renew will not cause you to lose any data.
-{% endhint %}
+{% endtab %}
+{% endtabs %}
 
 ## 💢 Troubleshooting
 
-### Cannot authenticate
+<details>
+<summary><strong>Cannot authenticate</strong></summary>
 
-* If using 2-Factor Authentication, you will need to go to [Apple ID](https://appleid.apple.com/) settings and make a key and save it for use in Cydia Impactor, type it verbatim.
+If using 2-Factor Authentication, you will need to go to [Apple ID](https://appleid.apple.com/) settings and generate an App-Specific Password. Enter it verbatim in your sideloading tool.
 
-### Unable to code-sign / install…
+</details>
 
-* If you are using a free Apple developer account, you can only install a total of 3 apps per Apple ID at a time. You must use delete some apps you are signing, or install with different Apple ID and Bundle IDs.
-* If you used to have a free Safari Developer Account which is no longer supported by Apple, you have two options:
+<details>
+<summary><strong>Unable to code-sign / install</strong></summary>
 
-  1\) Upgrade to a _paid_ [Apple Developer](https://developer.apple.com/programs/) account.
+* If you are using a free Apple developer account, you can only install a total of 3 apps per Apple ID at a time. Delete some apps you are signing, or install with a different Apple ID and Bundle IDs.
+* If you used to have a free Safari Developer Account (no longer supported by Apple):
+  1. Upgrade to a _paid_ [Apple Developer](https://developer.apple.com/programs/) account, or
+  2. Use a different Apple ID that _is not_ an expired and deprecated Safari Developer account.
 
-  2\) Use a different Apple ID that _is not_ an expired and deprecated Safari Developer account.
+</details>
 
-### **—application-identifier entitlement does not match…**
+<details>
+<summary><strong>—application-identifier entitlement does not match…</strong></summary>
 
-* This means you need to match the Bundle IDs with the ones from your previous sideload or build on your device. If you don't know it, or used a 3rd party web-sign \(unsupported\), we recommend you [backup your files](../../info/miscellaneous/restoring-files.md), delete the app and try to clean-install.
+This means you need to match the Bundle IDs with the ones from your previous sideload or build on your device. If you don't know it, or used a 3rd party web-sign (unsupported), we recommend you [backup your files](../../info/miscellaneous/restoring-files.md), delete the app and try to clean-install.
 
-### **Your maximum App ID limit has been reached…**
+</details>
 
-* You have made too many Bundle IDs \(App IDs\) in one week on a free Apple developer account. Stop making new Bundle IDs and revert to one you already made. You are chasing the wrong problem. If all else fails, use a different Apple ID, and make only one new, unique Bundle ID with it \(and save it for later when you need to re-sign in 7 days\).
+<details>
+<summary><strong>Your maximum App ID limit has been reached…</strong></summary>
 
-### Duplicate app
+You have made too many Bundle IDs (App IDs) in one week on a free Apple developer account. Stop making new Bundle IDs and revert to one you already made. If all else fails, use a different Apple ID, and make only one new, unique Bundle ID with it (and save it for later when you need to re-sign in 7 days).
 
-* If app installs or updates as a duplicate app instead of updating existing installation, you need to delete it and use the _same_ Bundle ID as your original build or you'll end up with a double installation…
+</details>
+
+<details>
+<summary><strong>Duplicate app</strong></summary>
+
+If app installs or updates as a duplicate instead of updating existing installation, you need to delete it and use the _same_ Bundle ID as your original build or you'll end up with a double installation.
+
+</details>
 
 {% hint style="info" %}
 🗯 If you are still stuck ask for [help](https://discord.gg/provenance) on our Discord.

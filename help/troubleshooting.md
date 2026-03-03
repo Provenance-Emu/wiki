@@ -14,7 +14,8 @@ description: Solutions for common issues with Provenance on iOS, iPadOS, macOS, 
 
 ## App Crashes
 
-### Crashes on Launch
+<details>
+<summary><strong>Crashes on Launch</strong></summary>
 
 **App Store users:**
 1. Ensure your device is on **iOS 16.0+** (Settings → General → About)
@@ -24,33 +25,45 @@ description: Solutions for common issues with Provenance on iOS, iPadOS, macOS, 
 
 **Sideloaders:** If the app worked before but crashes after ~7 days, your provisioning profile has expired. Free Apple Developer accounts expire every 7 days — re-sign with AltStore or Sideloadly. Your saves and ROMs are safe. See [Advanced Installation FAQ](../installation-and-usage/installing-provenance/faqs-advanced.md) for details.
 
-### Crashes When Importing ROMs
+</details>
+
+<details>
+<summary><strong>Crashes When Importing ROMs</strong></summary>
 
 - **Archives containing folders will crash the app.** Archive only loose files — do not include folder structure inside a .zip.
 - **Filenames with extra periods** (e.g., `Game.v1.2.rom`) can cause crashes. Rename to remove extra dots before the extension.
 - **CD-based / multi-file ROMs** should be uploaded one at a time. If importing breaks, delete the game from the app and from the file system (ROMs and Imports folders), then re-upload.
 
-### Crashes on Library Screen
+</details>
+
+<details>
+<summary><strong>Crashes on Library Screen</strong></summary>
 
 This may indicate a **corrupted database**. Symptoms:
 - Games appear duplicated
 - Metadata or artwork missing
 - Consistent crashes when browsing library
 
-**Fix:** See [Corrupted Database](#corrupted-database) under Advanced Debugging.
+**Fix:** See [Corrupted Database](#corrupted-database) under Large Library Issues.
 
-### General Crash Steps
+</details>
+
+<details>
+<summary><strong>General Crash Steps</strong></summary>
 
 1. **Force quit and restart** — Double-tap Home → Swipe up on Provenance → Relaunch
 2. **Update to latest version** — App Store → Provenance → Update
 3. **Restart device** — Full power cycle
 4. **Reinstall** — Delete app → Reinstall from App Store (saves in iCloud are preserved with Provenance Plus)
 
+</details>
+
 ---
 
 ## Performance Issues
 
-### Game is Slow or Stuttering
+<details>
+<summary><strong>Game is Slow or Stuttering</strong></summary>
 
 Try these fixes in order:
 
@@ -63,14 +76,20 @@ Try these fixes in order:
 
 **Check your build:** If the app is named "Prov Debug" on the Home Screen or Settings shows "DEBUG", you built the debug version by mistake. Debug builds have extra logging and no compiler optimizations — they're significantly slower. Rebuild using the `Provenance-Release` (iOS) or `ProvenanceTV-Release` (tvOS) scheme.
 
-### Specific Game is Slow, Others Are Fine
+</details>
+
+<details>
+<summary><strong>Specific Game is Slow, Others Are Fine</strong></summary>
 
 - Some games are inherently demanding (e.g., GoldenEye 007, Conker's Bad Fur Day on N64)
 - Try a different ROM dump — bad/corrupted ROMs can hurt performance
 - Check online compatibility lists for the emulator core
 - Update Provenance — cores improve with each release
 
-### Audio Crackling or Popping
+</details>
+
+<details>
+<summary><strong>Audio Crackling or Popping</strong></summary>
 
 This means the CPU can't keep up with the audio buffer.
 
@@ -78,6 +97,8 @@ This means the CPU can't keep up with the audio buffer.
 2. Close apps playing background audio
 3. Switch from Bluetooth to wired headphones/speakers (Bluetooth audio adds latency)
 4. Disable in-game audio settings if available
+
+</details>
 
 ### Device Performance Guide
 
@@ -96,7 +117,8 @@ This means the CPU can't keep up with the audio buffer.
 
 ## ROM and Import Issues
 
-### ROMs Won't Import
+<details>
+<summary><strong>ROMs Won't Import</strong></summary>
 
 1. **Check file format** — See [Formatting ROMs](../installation-and-usage/roms/formatting-roms.md) for supported formats per system
 2. **Don't include folders in archives** — Zip only the ROM files, not a folder containing them
@@ -104,14 +126,20 @@ This means the CPU can't keep up with the audio buffer.
 4. **Verify the ROM isn't corrupted** — Re-download if the file hash doesn't match known good dumps
 5. **Restart Provenance** — Force quit and relaunch after importing
 
-### Games Missing from Library After Import
+</details>
+
+<details>
+<summary><strong>Games Missing from Library After Import</strong></summary>
 
 - **Wrong file format** — Loose `.bin` files from CD-based games may be detected as Sega Genesis ROMs. Use `.cue + .bin` pairs or `.chd` format instead.
 - **Missing BIOS** — Some systems won't show games without BIOS files. See [BIOS Requirements](../installation-and-usage/bios-requirements.md).
 - **ROM in Conflicts folder** — If auto-detection fails, the ROM may be in the Conflicts folder. Check via the web server or Files app and move it to the correct system folder.
 - **Re-import** — Delete the game from the library, then re-add the ROM.
 
-### Multi-Disc Games Not Working
+</details>
+
+<details>
+<summary><strong>Multi-Disc Games Not Working</strong></summary>
 
 Multi-disc games (e.g., Final Fantasy VII on PS1) require an M3U playlist file:
 
@@ -126,22 +154,31 @@ Multi-disc games (e.g., Final Fantasy VII on PS1) require an M3U playlist file:
 
 **Full guide:** [Advanced ROM Management](../installation-and-usage/roms/advanced-management.md#multi-disc-games-advanced)
 
-### Region Pack ROMs (Multiple Versions in One Archive)
+</details>
+
+<details>
+<summary><strong>Region Pack ROMs (Multiple Versions in One Archive)</strong></summary>
 
 If importing an archive creates multiple identical-looking games, the archive likely contains multiple region versions. Extract the archive, keep only the region you want, re-archive, and re-import.
 
-### Black Screen After Launching Game
+</details>
+
+<details>
+<summary><strong>Black Screen After Launching Game</strong></summary>
 
 1. **Missing BIOS** — PlayStation, Sega CD, Saturn, and Dreamcast require BIOS files. Check [BIOS Requirements](../installation-and-usage/bios-requirements.md).
 2. **Corrupted ROM** — Try a different dump of the same game.
 3. **Wrong core** — If multiple cores are available, try switching to an alternate core.
 4. **Report it** — If the issue persists, report on [GitHub Issues](https://github.com/Provenance-Emu/Provenance/issues) with the game name and system.
 
+</details>
+
 ---
 
 ## Controller Issues
 
-### Controller Won't Pair
+<details>
+<summary><strong>Controller Won't Pair</strong></summary>
 
 **PlayStation / Xbox controllers:**
 1. Put controller in pairing mode:
@@ -152,19 +189,27 @@ If importing an archive creates multiple identical-looking games, the archive li
 
 **MFi controllers:** Usually pair automatically when turned on near the device. If not, check Settings → Bluetooth.
 
-### Controller Keeps Disconnecting
+</details>
+
+<details>
+<summary><strong>Controller Keeps Disconnecting</strong></summary>
 
 1. **Check battery** — Low battery is the #1 cause of disconnects
 2. **Reduce Bluetooth interference** — Move WiFi routers, microwave ovens, and other Bluetooth devices away
 3. **Apple TV: Use Ethernet** — Wired internet frees up the WiFi/Bluetooth antenna, improving stability
 4. **Forget and re-pair** — Settings → Bluetooth → Tap (i) on controller → Forget This Device → Re-pair
 
-### Buttons Not Responding or Wrong Mapping
+</details>
+
+<details>
+<summary><strong>Buttons Not Responding or Wrong Mapping</strong></summary>
 
 1. **Update controller firmware** — Connect to PS5/Xbox console to update, or use the manufacturer's app (8BitDo Firmware Updater, etc.)
 2. **Check MFi profile limitations** — MFi controllers lack Select/Start; Provenance maps L2 = Select, R2 = Start for systems that need them
 3. **iCade controllers** — These use keyboard hacks and have limitations. Only one iCade controller can be used at a time. Cannot use iCade and MFi simultaneously.
 4. **Restart the game** — Close and relaunch the current game
+
+</details>
 
 **Full guide:** [Controllers & Controls](../info/controllers-and-controls/controllers/README.md) | [Controller Recommendations](../info/controllers-and-controls/controllers/controller-reviews.md)
 
@@ -172,7 +217,8 @@ If importing an archive creates multiple identical-looking games, the archive li
 
 ## iCloud Sync Issues
 
-### Sync Not Working
+<details>
+<summary><strong>Sync Not Working</strong></summary>
 
 **Requirements:**
 - Active **Provenance Plus** subscription (Apple TV gets free CloudKit sync)
@@ -186,7 +232,10 @@ If importing an archive creates multiple identical-looking games, the archive li
 3. Check iCloud storage — Settings → [Your Name] → iCloud (may be full)
 4. Wait 10-15 minutes — Large libraries take time to sync initially
 
-### Sync is Stuck or Slow
+</details>
+
+<details>
+<summary><strong>Sync is Stuck or Slow</strong></summary>
 
 1. Force quit Provenance
 2. Disable iCloud Sync in Provenance settings
@@ -194,18 +243,26 @@ If importing an archive creates multiple identical-looking games, the archive li
 4. Restart device
 5. Wait 10-15 minutes for the queue to process
 
-### "Not Enough iCloud Storage"
+</details>
+
+<details>
+<summary><strong>"Not Enough iCloud Storage"</strong></summary>
 
 1. Check usage: Settings → [Your Name] → iCloud → Manage Storage
 2. Delete old device backups you no longer need
 3. Upgrade iCloud plan ($0.99/month for 50 GB)
 4. Disable sync for less-played systems to reduce usage
 
-### Sync Conflicts Between Devices
+</details>
+
+<details>
+<summary><strong>Sync Conflicts Between Devices</strong></summary>
 
 - Only enable iCloud sync on **one version** of Provenance (don't sync both App Store and sideloaded versions)
 - If using multiple devices, let one device finish syncing before starting the other
 - If saves conflict, the most recent save wins
+
+</details>
 
 **Full guide:** [iCloud Sync Troubleshooting](../installation-and-usage/roms/advanced-management.md#troubleshooting-icloud-issues)
 
@@ -213,15 +270,19 @@ If importing an archive creates multiple identical-looking games, the archive li
 
 ## Save Issues
 
-### Battery Save Not Loading
+<details>
+<summary><strong>Battery Save Not Loading</strong></summary>
 
 - Filename must match exactly: `[ROM-Filename].sav`
 - The save must be from the same region/version of the ROM — saves are not compatible across different ROM versions
 - Try re-importing the save file
 
-### Save States Not Working After Update
+</details>
 
-{% hint style="warning" %}
+<details>
+<summary><strong>Save States Not Working After Update</strong></summary>
+
+{% hint style="danger" %}
 **Save state compatibility between app updates is NOT guaranteed.** Core updates can change how save states are stored, making old states incompatible.
 {% endhint %}
 
@@ -230,9 +291,14 @@ If importing an archive creates multiple identical-looking games, the archive li
 - Save states are tied to the specific emulator core version — switching cores means old states won't load
 - Battery saves (`.sav` / `.srm`) are the safest long-term save format
 
-### Save States from Other Emulators
+</details>
+
+<details>
+<summary><strong>Save States from Other Emulators</strong></summary>
 
 Save states from RetroArch or other emulators generally won't work unless they use the **exact same core version**. Battery saves (`.srm`, `.sav`) are much more compatible across emulators.
+
+</details>
 
 **Full guide:** [Game Saves](../info/saves.md)
 
@@ -240,30 +306,42 @@ Save states from RetroArch or other emulators generally won't work unless they u
 
 ## Skin Issues
 
-### Skin Not Showing in Browser
+<details>
+<summary><strong>Skin Not Showing in Browser</strong></summary>
 
 1. Check file extension — must be `.deltaskin`, not `.zip`
 2. Verify system compatibility — not all skins support all systems (DS not supported; 3DS not supported on tvOS)
 3. Force quit Provenance and reopen
 4. Re-import the skin
 
-### Skin Looks Corrupted or Glitchy
+</details>
+
+<details>
+<summary><strong>Skin Looks Corrupted or Glitchy</strong></summary>
 
 1. Re-download the skin (may have been corrupted during download)
 2. Check device compatibility (some skins are iPhone-only or iPad-only)
 3. Update Provenance to the latest version
 4. Report to the skin creator via DeltaStyles or GitHub
 
-### Buttons Don't Respond with Custom Skin
+</details>
+
+<details>
+<summary><strong>Buttons Don't Respond with Custom Skin</strong></summary>
 
 1. Check that the skin's `info.json` has correct button mappings
 2. Toggle "Touch Controls" off and back on in Settings
 3. Try a different skin to isolate if it's skin-specific
 4. Restart the game
 
-### Performance Slowdown with Skins
+</details>
+
+<details>
+<summary><strong>Performance Slowdown with Skins</strong></summary>
 
 Complex skins with detailed graphics can add overhead. Try a simpler skin, close background apps, and disable CRT/Smoothing filters.
+
+</details>
 
 **Full guide:** [Skins Guide](../info/skins-guide.md)
 
@@ -271,17 +349,17 @@ Complex skins with detailed graphics can add overhead. Try a simpler skin, close
 
 ## Installation Issues
 
-### App Store
-
+{% tabs %}
+{% tab title="App Store" %}
 | Problem | Solution |
 |---------|----------|
 | "Not available in your region" | Use different Apple ID from supported region, or sideload instead |
 | "Not enough storage" | Provenance needs ~2.5 GB + space for games. Free up 10+ GB recommended |
 | Installation stuck | Force-close App Store → Restart device → Try again. Check [Apple System Status](https://www.apple.com/support/systemstatus/) |
 | Crashes immediately on launch | Ensure iOS 16.0+ → Restart device → Delete and reinstall |
+{% endtab %}
 
-### Sideloading
-
+{% tab title="Sideloading" %}
 | Problem | Solution |
 |---------|----------|
 | "Untrusted Developer" | Settings → General → VPN & Device Management → Trust your profile |
@@ -290,9 +368,9 @@ Complex skins with detailed graphics can add overhead. Try a simpler skin, close
 | Cannot authenticate (2FA) | Create an App-Specific Password at appleid.apple.com → Security |
 | Max App ID limit reached | Too many bundle IDs this week. Reuse an existing one, or use a different Apple ID |
 | Duplicate app installed | Use the **same** bundle ID as original build to update in place |
+{% endtab %}
 
-### Building from Source
-
+{% tab title="Building from Source" %}
 | Problem | Solution |
 |---------|----------|
 | `xcrun: error: unable to find utility "xcodebuild"` | Xcode → Preferences → Locations → Select Command Line Tools |
@@ -301,6 +379,8 @@ Complex skins with detailed graphics can add overhead. Try a simpler skin, close
 | Missing submodules / Mupen error | Don't download .zip from GitHub. Clone with `git clone --recursive` |
 | `Linking... Failed` | Clean Build Folder (Shift+Cmd+K) and rebuild |
 | Signing certificate issues | Xcode → Preferences → Accounts → Manage Certificates → Delete old → Create new |
+{% endtab %}
+{% endtabs %}
 
 **Full guides:** [Building from Source](../installation-and-usage/installing-provenance/building-from-source.md) | [Sideloading](../installation-and-usage/installing-provenance/sideloading.md) | [Advanced FAQ](../installation-and-usage/installing-provenance/faqs-advanced.md)
 
@@ -308,7 +388,8 @@ Complex skins with detailed graphics can add overhead. Try a simpler skin, close
 
 ## Large Library Issues
 
-### Library Loading is Slow
+<details>
+<summary><strong>Library Loading is Slow</strong></summary>
 
 1. Delete ROMs you no longer play
 2. Optimize artwork — compress cover images under 500 KB
@@ -316,19 +397,28 @@ Complex skins with detailed graphics can add overhead. Try a simpler skin, close
 4. Restart device
 5. Temporarily disable iCloud sync while loading
 
-### Corrupted Database
+</details>
+
+<details>
+<summary><strong>Corrupted Database</strong></summary>
 
 **Symptoms:** Duplicated games, missing metadata, crashes on library screen.
 
-**Fix (last resort — rebuilds your library index):**
+{% hint style="danger" %}
+**Last resort** — this rebuilds your entire library index. Only do this if other fixes haven't worked.
+{% endhint %}
+
+**Fix:**
 1. Force quit Provenance
 2. Open Files app → On My Device → Provenance
 3. Delete the `Provenance.realm` file
 4. Restart Provenance — the library will rebuild automatically (may take 10-30 minutes for large collections)
 
-{% hint style="warning" %}
+{% hint style="info" %}
 This does NOT delete your ROMs or saves — only the library index. Your games will be re-scanned and re-imported.
 {% endhint %}
+
+</details>
 
 ---
 
@@ -336,13 +426,17 @@ This does NOT delete your ROMs or saves — only the library index. Your games w
 
 If you're comfortable with developer tools, you can dig deeper into issues:
 
-### Viewing Crash Logs (iPhone/iPad)
+<details>
+<summary><strong>Viewing Crash Logs (iPhone/iPad)</strong></summary>
 
 1. Go to **Settings → Privacy & Security → Analytics & Improvements → Analytics Data**
 2. Search for `Provenance` log files and tap to view
 3. Use the share button to send logs to the [Discord](https://discord.gg/provenance) #help channel
 
-### Live Logging with NSLogger (Preferred)
+</details>
+
+<details>
+<summary><strong>Live Logging with NSLogger (Preferred)</strong></summary>
 
 Provenance uses [CocoaLumberjack](https://github.com/CocoaLumberjack/CocoaLumberjack) for logging. You can view logs in real time using [NSLogger](https://github.com/fpillet/NSLogger/):
 
@@ -357,14 +451,20 @@ Provenance uses [CocoaLumberjack](https://github.com/CocoaLumberjack/CocoaLumber
 - Filter by severity: Cmd+0 through Cmd+4 (0 = Error, 1 = Warning, 2 = Info, 3 = Debug, 4 = Verbose)
 - Toggle the **f** button on the bottom toolbar to see source file and line numbers
 
-### Crash Reports via Xcode
+</details>
+
+<details>
+<summary><strong>Crash Reports via Xcode</strong></summary>
 
 1. Open Xcode
 2. **Window → Devices and Simulators**
 3. Select your device (connect via USB if not available over WiFi)
 4. Click **View Device Logs** (may take a minute to download)
 
-### Live Logging via Xcode
+</details>
+
+<details>
+<summary><strong>Live Logging via Xcode</strong></summary>
 
 1. Build and run Provenance from Xcode
 2. If the console isn't visible: **View → Debug Area → Show Debug Area**
@@ -374,14 +474,16 @@ Provenance uses [CocoaLumberjack](https://github.com/CocoaLumberjack/CocoaLumber
 The app must be started from within Xcode for live logging to work.
 {% endhint %}
 
+</details>
+
 ---
 
 ## Still Need Help?
 
+{% hint style="success" %}
+**We're here to help!**
+
 1. **Search [GitHub Issues](https://github.com/Provenance-Emu/Provenance/issues)** — Your problem may already be reported
 2. **Join [Discord](https://discord.gg/provenance)** — Live community support in the #help channel
-3. **Report a bug** — Open a [new GitHub Issue](https://github.com/Provenance-Emu/Provenance/issues/new) with:
-   - Device model and OS version
-   - Provenance version (Settings → About)
-   - Steps to reproduce the issue
-   - Crash logs if available (see [Advanced Debugging](#advanced-debugging))
+3. **Report a bug** — Open a [new GitHub Issue](https://github.com/Provenance-Emu/Provenance/issues/new) with your device model, OS version, Provenance version, steps to reproduce, and crash logs if available
+{% endhint %}
