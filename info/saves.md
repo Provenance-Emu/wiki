@@ -1,95 +1,141 @@
 ---
-description: Game Saves and Saves States.
+description: Battery saves, save states, and syncing your game progress
 ---
 
 # Game Saves
 
-There are two ways to save your progress in Provenance: the native in-game save, known as _Battery Saves_, and freezing the state of the emulator anywhere in a game called _Save States_.
+There are two ways to save progress in Provenance:
 
-* [**Battery Saves**](saves.md#battery-saves)
-  * [Saving Games](saves.md#saving-games)
-  * [Supported Formats](saves.md#supported-formats)
-  * [Converting Formats](saves.md#converting-formats)
-  * [Importing Saves](saves.md#importing-saves)
-* [**Save States**](saves.md#save-states)
-  * [Saving States](saves.md#saving-states)
-  * [Loading States](saves.md#loading-states)
-  * [Deleting States](saves.md#deleting-states)
+- **Battery Saves** — The game's native save system (in-game save). Portable and reliable across updates.
+- **Save States** — Emulator snapshots that freeze the exact state of the game at any moment. Powerful but fragile across updates.
+
+---
 
 ## Battery Saves
 
-A Battery Save is the term used to describe a save file that is created by a game \(as opposed to a Save State which is created by the emulator\). The format of a battery save is determined by the developers of the game when it was originally programmed, so it does not change if an emulator core is updated or changed.
+A **battery save** is created by the game itself when you use its built-in save feature (e.g., saving at a save point in an RPG, or choosing "Save" from a game's menu). These are the most reliable way to preserve progress.
 
-### Saving Games
+### How to Save
 
-A battery save file is created by the game when you use the game's built-in save functionality. For example, if you are playing Pokemon for Gameboy, and you choose to save the game from the game's main menu, it will create a save file in `Battery States/[ROM-Filename]/[ROM-Filename].sav`.
+Use the game's own save menu — this varies by game. For example:
+- **Pokemon (Game Boy):** Start menu → Save
+- **Legend of Zelda (SNES):** In-game save screen
+- **Final Fantasy (PlayStation):** Save at a save point
+
+The save file is stored at: `Battery States/[ROM-Filename]/[ROM-Filename].sav`
 
 ### Supported Formats
 
-| Manufacturer | System | Supported Format(s) / Extensions |
-| :--- | :--- | :--- |
-| Sony | PlayStation 1 | `.mcr` |
-| Nintendo | Game Boy / Game Boy Color | `.sav` |
-| Nintendo | Game Boy Advance | `.sav` |
-| Nintendo | SNES / Super Famicom | `.srm`, `.sav` |
-| Nintendo | Nintendo 64 | `.eep`, `.sra`, `.fla`, `.mpk` |
-| Nintendo | Nintendo DS | `.sav`, `.dsv` |
-| Sega | Genesis / Mega Drive | `.srm`, `.sav` |
-| Most systems | — | `.sav` |
+| System | Save Format(s) |
+|--------|---------------|
+| Game Boy / Game Boy Color | `.sav` |
+| Game Boy Advance | `.sav` |
+| SNES / Super Famicom | `.srm`, `.sav` |
+| Nintendo 64 | `.eep`, `.sra`, `.fla`, `.mpk` |
+| Nintendo DS | `.sav`, `.dsv` |
+| Genesis / Mega Drive | `.srm`, `.sav` |
+| PlayStation | `.mcr` (memory card) |
+| Most other systems | `.sav` |
 
-### Converting Formats
+### Importing Saves from Other Emulators
 
-#### PSX/PS1
+Battery saves are portable — you can move them between emulators (unlike save states):
 
-If you have memory card files from another emulator you can convert them to `.mcr` via:
-
-* Windows: [MemcardRex](https://github.com/ShendoXT/memcardrex)
-
-### Importing Saves
-
-Since these files are created and managed by the game, you are able to move them between emulator implementations and they should still work as intended, unlike save states which are emulator dependent, unless they are of a different format, and will require conversion.
-
-It makes things easier if you run the game at least once within Provenance so that it can create the required directories and filename structures.
-
-1. Start the web server in Provenance.
+1. Start the Web Server in Provenance (tap **+** or Settings → Import/Export)
 2. Navigate to `Battery States/[ROM-Filename]/`
-3. Upload your save file into this folder.
-4. Make sure the save's filename is `[ROM-Filename].sav` \(rename it to match if it is not\).
-5. Stop the web server.
-6. Load the ROM.
-7. Use the game's native in-game loading to load the game.
+3. Upload your save file into this folder
+4. Rename it to `[ROM-Filename].sav` (must match the ROM filename exactly)
+5. Stop the Web Server and load the game
+6. Use the game's in-game **Load** option
 
 {% hint style="warning" %}
-If the game does not show the save, make sure the file name is correct as described above. If it still does not show, then it's possible that the save was created with a different region, or version of a ROM that uses a different save format and will only be compatible with the ROM version/region it was created with.
+If the game doesn't recognize the save, verify the filename matches exactly. Saves from a different ROM region or version may be incompatible.
 {% endhint %}
+
+### Converting PlayStation Memory Cards
+
+If you have PlayStation memory card files from another emulator, convert them to `.mcr` format:
+
+- **Windows:** [MemcardRex](https://github.com/ShendoXT/memcardrex)
+- **Cross-platform:** [MemCard PRO](https://8bitmods.com/) or similar tools
+
+---
 
 ## Save States
 
-Save states are 'snapshots' of a game's progress. Save states differ from the save functionality built into most games \(Battery Saves\) — because they are produced by the emulator itself, they carry none of the limitations that the game or console may otherwise impose. You can create any number of save states you like, as frequently as you like, and loading them will take you back to precisely where you were in the game when they were taken \(even in the middle of a battle or cut-scene\).
-
-You may use a game's built-in save mechanism instead of or in addition to save states, if you like, however…
+**Save states** are emulator-level snapshots that capture the exact state of the game — every pixel, every register, every byte of memory. They let you save anywhere, even mid-battle or during a cutscene.
 
 {% hint style="danger" %}
-Save state compatibility between updates is _**NOT**_ a guarantee as they can break due to changes in an emulator core implementation.
+**Save states are NOT guaranteed to survive app updates.** Emulator core changes can break compatibility. Always keep **battery saves** (in-game saves) for your important progress.
 {% endhint %}
 
-### Saving States
+### Saving a State
 
-To create a save state, press the menu button while playing a game. Choose the Save States option. From here you can press the `+` button to create a new save state. You can also tap on an existing save state and choose to overwrite that state with a new one. This cannot be undone, so be sure that you either backup the save state before doing this if you wish to keep it.
+1. While playing, tap the **pause/menu** button
+2. Select **Save States**
+3. Tap **+** to create a new save state
+4. Or tap an existing state → **Overwrite** to replace it
 
-Provenance can automatically create a save state whenever the app is backgrounded, or when you return to the Game Library. The next time you run the game, you will have the option of re-loading from the most recent automatic save state or not. \(If you don't see this, you may have already told it not to display the dialogue anymore.\) The option to auto-load a save state is in the Settings menu.
+**Auto-save:** Provenance can automatically create a save state when the app is backgrounded or when you return to the library. Enable this in Settings.
 
-### Loading States
+### Loading a State
 
-To load from an existing save state, press the menu button after loading a ROM. Here you will find all of the save states you've manually created, as well as the automatic states. Tapping on a save state will present a menu allowing you to load the state.
+1. While playing, tap the **pause/menu** button
+2. Select **Save States**
+3. Tap a save state → **Load**
 
-### Deleting States
+When launching a game, Provenance may offer to resume from the most recent auto-save state.
 
-From the Save States screen, tap on an existing state and choose Delete from the menu. This cannot be undone, so be sure to backup the save if you want to keep it before deleting it from Provenance.
+### Deleting a State
+
+1. Open **Save States** from the pause menu
+2. Tap a state → **Delete**
 
 {% hint style="warning" %}
-Save states are generally limited to the emulator core they were created with — if you change cores, your old save states will no longer work. If an emulator core is updated by an app update, there is a possibility that save states may not be compatible with the new version if it changed the way it handles save states.
-
-This should also be considered when exporting save states and attempting to play them in another emulator -- unless the other emulator is exactly the same core and version, it is highly unlikely that the save state will work. For this case, battery saves should be used.
+Deleting a save state is permanent. Back up important states before deleting — see [Restoring Files](../info/miscellaneous/restoring-files.md).
 {% endhint %}
 
+---
+
+## Syncing Saves Across Devices
+
+{% tabs %}
+{% tab title="Provenance Plus (iCloud)" %}
+**Provenance Plus** subscribers get automatic iCloud sync of:
+- Battery saves
+- Save states
+- ROM library
+- Settings and preferences
+
+Enable in Settings → **iCloud Sync**. Progress syncs automatically across iPhone, iPad, Mac, and Apple TV.
+
+{% hint style="info" %}
+**Apple TV users:** iCloud sync is included free — no Provenance Plus subscription required.
+{% endhint %}
+{% endtab %}
+
+{% tab title="Manual Sync" %}
+Without Provenance Plus, you can manually transfer saves:
+
+1. **Export** saves via Web Server, Files app, or AirDrop
+2. **Import** on the other device using the same method
+
+Full guide: [Restoring Files](../info/miscellaneous/restoring-files.md)
+{% endtab %}
+{% endtabs %}
+
+---
+
+## Best Practices
+
+1. **Use battery saves for important progress** — They survive app updates and core changes
+2. **Use save states for convenience** — Quick-save before a hard boss fight, risky decision, etc.
+3. **Don't rely solely on save states** — Create an in-game save periodically as a safety net
+4. **Back up before updating** — Especially if you have save states you can't afford to lose
+5. **Enable iCloud Sync** — If you have Provenance Plus, let it handle backups automatically
+
+---
+
+{% hint style="info" %}
+Need help with save management? See [Restoring Files](../info/miscellaneous/restoring-files.md) for backup/restore instructions, or ask on [Discord](https://discord.gg/provenance).
+{% endhint %}

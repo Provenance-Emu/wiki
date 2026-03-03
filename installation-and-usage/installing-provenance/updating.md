@@ -1,94 +1,108 @@
 ---
-description: Update your existing installation.
+description: How to update your Provenance installation
 ---
 
-# Updating
+# Updating Provenance
 
-When there is a new release or recent commits to a source branch you have a few options for updating. You can _sideload_ a prebuild over your existing sideloaded installation or you can _pull_ the local source and build over your existing built-from-source installation. _**New:**_ Update & Build via `make` \(untested\).
+How you update depends on how you installed Provenance:
 
-**Update Options:**
+{% tabs %}
+{% tab title="App Store (Automatic)" %}
+**App Store updates are automatic** — no action needed.
 
-* ⤵️  [**Sideload**](sideloading.md)\*\*\*\*
-* 🔃  [**Pull**](updating.md#pull) latest changes using…
-  * ![](https://user-images.githubusercontent.com/3118097/37563629-48ec3f26-2a42-11e8-9fd8-784e9e830ebe.png) [Terminal](updating.md#update-with-terminal)
-  * ![](https://user-images.githubusercontent.com/3118097/37563630-4903ebbc-2a42-11e8-888a-09a94fc0058d.png) [Tower](updating.md#update-with-tower)
-* ⏩  [**Update & Build**](updating.md#update-and-build)\*\*\*\*
+To verify you're on the latest version:
+1. Open the **App Store**
+2. Tap your profile icon (top right)
+3. Scroll to Provenance — tap **Update** if available
 
-## Pull
+**Tip:** Make sure **Automatic Downloads** is enabled in Settings → App Store so updates install in the background.
+{% endtab %}
 
-### **Update with Terminal**
+{% tab title="Sideloaded (.ipa)" %}
+To update a sideloaded installation:
+
+1. Download the latest `.ipa` from [GitHub Releases](https://github.com/Provenance-Emu/Provenance/releases)
+2. Re-sign and install using your sideloading tool ([AltStore](sideloading.md), Sideloadly, iOS App Signer)
+3. Install **over** your existing version — use the **same Bundle ID** to preserve data
 
 {% hint style="info" %}
-The Terminal app can be found in: _/Applications/Utilities_
+Installing over an existing sideloaded version preserves your ROMs, saves, and settings. Using a different Bundle ID creates a separate installation.
 {% endhint %}
 
-1. Navigate to the 'Provenance' directory with: `cd [path]` \(drag & drop a folder on Terminal after `cd`  to get directory path\)
-2. Update latest source _\(Options\)_:
-   * Overwrite Changes: If you haven't yet made _any_ changes to source files or don't mind overwriting them and reapplying your Bundle IDs, App Groups from the original installation:
+Full guide: [Sideloading](sideloading.md)
+{% endtab %}
 
-     ```bash
-       git pull origin develop
-     ```
+{% tab title="Built from Source (Terminal)" %}
+If you built from source, pull the latest changes and rebuild:
 
-   * Stash Changes: If want to reapply your changes to source files \(especially any PRs you are working on or simply your Bundle IDs App Groups\), you will need to stash and re-apply them with:
-
-     ```bash
-       git stash
-       git reset --hard HEAD
-       git pull origin develop
-       git stash pop
-     ```
-
-3. Update submodules and frameworks
-
+1. Navigate to your Provenance directory:
    ```bash
-    make update
-    make open
+   cd /path/to/Provenance
    ```
 
-4. Return to Xcode and…
-   * Return to Build: Step 3 to reapply your settings, else…
-   * If stashed changes above, just hit the `▶︎` \(Run\) button.
-5. Provenance will compile and run on your device. Unless testing, hit `◼︎` \(Stop\). _Done._
+2. Pull the latest source:
 
-### **Update with Tower**
+   **Option A — Overwrite local changes** (easiest, reapply Bundle ID after):
+   ```bash
+   git pull origin develop
+   ```
 
-1. In `Repositories` double-click `Provenance` or select and click `Open`
-2. With 'develop' branch marked \(HEAD\), click `Fetch`
-3. If develop branch shows a number next to it, click `Pull`
-4. Click `Stash Changes`
-5. After changes are pulled, click `Apply Stash`, select stash and click `Apply Stash`
+   **Option B — Preserve local changes** (keeps your Bundle ID and code modifications):
+   ```bash
+   git stash
+   git reset --hard HEAD
+   git pull origin develop
+   git stash pop
+   ```
+
+3. Update submodules and open in Xcode:
+   ```bash
+   make update
+   make open
+   ```
+
+4. In Xcode:
+   - If you used Option A, reapply your Bundle ID and signing settings
+   - If you used Option B, just press **Run** (your settings are preserved)
+5. Provenance compiles and installs on your device
+{% endtab %}
+
+{% tab title="Built from Source (Tower)" %}
+If you use [Tower](https://www.git-tower.com/) as your Git client:
+
+1. Open Provenance in Tower (Repositories → double-click **Provenance**)
+2. With the `develop` branch selected (HEAD), click **Fetch**
+3. If the branch shows pending changes, click **Pull**
+4. Click **Stash Changes** if you have local modifications
+5. After pulling, click **Apply Stash** to restore your changes
 6. In Terminal:
-
    ```bash
-    cd [path to Provenance]
-    make update
-    make open
+   cd /path/to/Provenance
+   make update
+   make open
    ```
+7. In Xcode, press **Run** to build and install
+{% endtab %}
+{% endtabs %}
 
-7. Return to Xcode: Hit the `▶︎` \(Run\) button.
-8. Provenance will compile and run on your device. Unless testing, hit `◼︎` \(Stop\). _Done._
+---
 
-{% hint style="info" %}
-To learn more about stashing refer to Tower's [Using the Stash](https://www.git-tower.com/help/mac/working-copy/stash) documentation.
-{% endhint %}
+## Command-Line Build Shortcuts
 
-## Update & Build
+If you've already completed the [first-time setup](building-from-source.md), you can update and build entirely from Terminal:
 
-If you've already done the First-time Setup, then you can build from the command-line using the following commands. These commands will pull any updates and build, so you can opt to update and build using only the terminal in the future.
+```bash
+# iPhone / iPad
+make ios
 
-* **iOS \(iPhone, iPad\):**
+# Apple TV
+make tvos
+```
 
-  ```bash
-    make ios
-  ```
+These commands pull the latest source, update submodules, and build in one step.
 
-* **tvOS \(Apple TV\):**
-
-  ```bash
-    make tvos
-  ```
+---
 
 {% hint style="info" %}
-🗯 If you are still stuck ask for [help](https://discord.gg/provenance) on our Discord.
+Need help? Ask on [Discord](https://discord.gg/provenance).
 {% endhint %}

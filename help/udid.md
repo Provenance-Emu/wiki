@@ -1,63 +1,111 @@
 ---
-description: Locating your UDID.
+description: How to find your device's UDID for development or beta testing
 ---
 
-Your iDevice UDID may be requested for inclusion in OTA (over-the-air) builds.
+# UDID Registration
 
-Here is how you can locate that UDID.
+A **UDID** (Unique Device Identifier) is a 40-character string that uniquely identifies your Apple device. You may need it for:
 
-## On device
+- Joining OTA (over-the-air) beta distributions
+- Registering your device on an Apple Developer account for sideloading
+- Troubleshooting device-specific issues
 
-### Method 1
+---
 
-You can get it here: https://get.udid.io/.
+## How to Find Your UDID
 
-1. Click install
-2. <img src="https://messapps.com/wp-content/uploads/2016/08/Install.png"/>
-3. Enter passcode
-    <img src="https://messapps.com/wp-content/uploads/2016/08/passcode.png"/>
-4. Click on “Install”
-    <img src="https://messapps.com/wp-content/uploads/2016/08/Install-again.png"/>
-5. Tap to find UDID
-6. Repeat again points 1-3
-7. You will get your UDID
-    <img src="https://messapps.com/wp-content/uploads/2016/08/udid.png"/>
+{% tabs %}
+{% tab title="iPhone / iPad (On-Device)" %}
+### Using a web tool
 
-## macOS
+1. Open Safari on your device and visit [udid.tech](https://udid.tech) or [ipsw.me/device-finder](https://ipsw.me/device-finder)
+2. Follow the prompts to install a temporary configuration profile
+3. Your UDID will be displayed — tap to copy it
+4. The profile can be removed afterward in Settings → General → VPN & Device Management
 
-### Method 1 (About this Mac)
+{% hint style="info" %}
+These tools install a temporary profile to read your UDID. The profile can be safely removed after you've copied the identifier.
+{% endhint %}
+{% endtab %}
 
-1. Connect your iPhone to Mac.
-2. Go to About This Mac.
-3. Click on System Report and by USB.
-4. Under the USB 3.0 Bus, you’ll see your iPhone between all the other USB devices connected to your Mac.
-5. Select your iPhone from the bottom part of the window, copy the Serial Number (you may need to add a dash (-) after the eighth digit in the serial number).
+{% tab title="macOS (Finder)" %}
+### Using Finder (macOS Catalina and later)
 
-### Method 2 (Finder)
+1. Connect your iPhone/iPad to your Mac via USB
+2. Open **Finder** and select your device under **Locations** in the sidebar
+3. Click the **device name** or **model** at the top of the pane
+4. A summary appears showing Capacity, Phone Number, and **Serial Number**
+5. **Click on Serial Number** — it cycles through: Serial Number → UDID → ECID → Model Number
+6. When UDID is displayed, **right-click** → **Copy UDID**
 
-1. Connect your iOS device to your Mac.
-2. Open **Finder** and select your device in the sidebar under "Locations".
-3. Click on the device name at the top of the pane.
-4. A window should appear listing your phone’s Capacity, Phone Number, and Serial Number.
-5. By clicking on Serial Number once, the prompt should change to display your UDID.
+### Using System Information
 
-> **Note:** iTunes was discontinued with macOS Catalina (2019). On macOS Catalina and later, use Finder instead.
+1. Connect your device via USB
+2. Click  → **About This Mac** → **More Info** → **System Report**
+3. Select **USB** in the sidebar
+4. Find your device under the USB bus
+5. The **Serial Number** shown here is your UDID (you may need to add a dash after the 8th character)
+{% endtab %}
 
-## Windows
+{% tab title="Windows" %}
+### Using Apple Devices app
 
-### Method 1 (Apple Devices app)
+1. Install the [Apple Devices app](https://apps.microsoft.com/detail/9NP83LWLPZ9K) from the Microsoft Store
+2. Connect your iOS device via USB
+3. Select your device by clicking its image
+4. A summary shows Capacity, Phone Number, and **Serial Number**
+5. **Click on Serial Number** — it changes to display your UDID
+6. Right-click to copy
+{% endtab %}
 
-1. Install the [Apple Devices app](https://apps.microsoft.com/detail/9NP83LWLPZ9K) (formerly iTunes) from the Microsoft Store and connect your iOS device to your computer.
-2. Select your iOS device by clicking the device’s image in the Apple Devices app.
-3. On the next screen, a window should appear listing your phone’s Capacity, Phone Number, and Serial Number.
-4. By clicking on Serial Number once, the prompt should change to display your UDID.
+{% tab title="Linux" %}
+### Using lsusb
 
-## Linux
-
-### Method 1 (cli)
-
-1. Connect device to USB
-2. Run this shell command
+1. Connect your device via USB
+2. Run:
 ```sh
 lsusb -v 2> /dev/null | grep -e "Apple Inc" -A 2
 ```
+3. The serial number shown is your UDID
+
+### Using libimobiledevice
+
+For more reliable detection, install `libimobiledevice`:
+```sh
+# Debian/Ubuntu
+sudo apt install libimobiledevice-utils
+
+# Fedora
+sudo dnf install libimobiledevice-utils
+
+# Then run:
+idevice_id -l
+```
+{% endtab %}
+{% endtabs %}
+
+---
+
+## Registering Your UDID
+
+Once you have your UDID, it needs to be registered on an Apple Developer account:
+
+**If you're a developer:**
+1. Log in to [developer.apple.com](https://developer.apple.com)
+2. Go to **Certificates, Identifiers & Profiles** → **Devices**
+3. Click **+** to register a new device
+4. Enter a name and paste your UDID
+5. Click **Continue** → **Register**
+
+**If you're joining a beta:**
+- Send your UDID to the developer who invited you (they'll register it on their account)
+
+{% hint style="warning" %}
+Free Apple Developer accounts can register up to **10 devices per year** (across all device types). Paid accounts support up to 100 devices per device type.
+{% endhint %}
+
+---
+
+{% hint style="info" %}
+Need help? Ask on [Discord](https://discord.gg/provenance).
+{% endhint %}
