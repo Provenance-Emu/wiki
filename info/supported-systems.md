@@ -1,3 +1,7 @@
+---
+description: Complete list of 38+ supported gaming systems with compatibility and feature details
+---
+
 # Supported Systems
 
 _📱 Note: Most systems are available in the App Store. Some systems have limitations on certain devices due to performance requirements._

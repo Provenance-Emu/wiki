@@ -1,3 +1,7 @@
+---
+description: Sideloading and building from source as alternatives to the App Store
+---
+
 # Alternative Installation Methods
 
 **For advanced users who prefer alternatives to the App Store.**
@@ -133,4 +137,6 @@ You can switch between installation methods, but note:
 
 ---
 
-**Last updated:** March 2026
+{% hint style="info" %}
+Need help? Check the [Advanced Installation FAQ](faqs-advanced.md) or ask on [Discord](https://discord.gg/provenance).
+{% endhint %}

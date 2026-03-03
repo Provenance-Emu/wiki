@@ -1,3 +1,7 @@
+---
+description: Install Provenance for free from the App Store — the easiest method
+---
+
 # Installing from the App Store (Recommended)
 
 **The easiest way to get Provenance on your iPhone, iPad, or Apple TV.**
@@ -148,5 +152,6 @@ Provenance is ~2.5 GB and needs additional space for games:
 
 ---
 
-**Last updated:** March 2026
-**Provenance App Store version:** Latest
+{% hint style="info" %}
+Need help? Check the [Troubleshooting Guide](../../help/troubleshooting.md) or ask on [Discord](https://discord.gg/provenance).
+{% endhint %}

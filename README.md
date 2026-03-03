@@ -46,6 +46,7 @@ Seamlessly sync your library, saves, and settings across all your devices (Prove
 ## 📖 Quick Navigation
 
 ### Getting Started
+- [Getting Started Guide](installation-and-usage/getting-started.md) - Install, import, and play in under 10 minutes
 - [Installing Provenance](installation-and-usage/installing-provenance/) - App Store, sideloading, building
 - [BIOS Requirements](installation-and-usage/bios-requirements.md) - Required files for certain systems
 - [Importing ROMs](installation-and-usage/roms/importing-roms.md) - Add games to your library
