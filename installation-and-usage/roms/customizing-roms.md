@@ -1,151 +1,169 @@
 ---
-description: 'How to rename, replace covert art and change other game info…'
+description: Rename games, replace cover art, and edit game metadata
 ---
 
 # Customizing ROMs
 
-ROMs in Provenance can be modified with the following customizations: _Cover Art, Title, Descriptions, Genre, Publisher, Release Date, Region, Play History_ — all fully editable from the Game Info View \(v1.5\) or with the following methods:
+Provenance lets you personalize your game library. You can replace cover art, rename games, and edit detailed game metadata — all from within the app.
 
-\*\*\*\*[**Replacing Cover Art**](customizing-roms.md#replacing-cover-art)  
-**\*\*\[**Renaming Games  
-**\]\(customizing-roms.md\#renaming\)\*\*\*\*\[**Editing Game Info\*\*\]\(customizing-roms.md\#editing-game-info\) · v1.5, _iOS only_
+**Customizable fields:** Cover Art, Title, Description, Genre, Publisher, Release Date, Region, Play History
 
 {% hint style="warning" %}
-Please refer to the [Known Issues](customizing-roms.md#known-issues) regarding Customizing ROMs _before_ posting a new one.
+Please refer to the [Known Issues](customizing-roms.md#known-issues) regarding customizing ROMs before posting a new one.
 {% endhint %}
+
+---
 
 ## Replacing Cover Art
 
-There are a couple methods of getting custom or replacement artwork into the app for iOS, and one for tvOS users, with a couple options, including single-drop mass-replacement:
+{% tabs %}
+{% tab title="Paste from Clipboard (iOS)" %}
+The quickest way to replace a single game's artwork:
 
-* \*\*\*\*[**Pasting**](customizing-roms.md#pasting) \(from Mobile Browsers\) · for iOS _only_
-* \*\*\*\*[**Uploading**](customizing-roms.md#uploading) \(via built-in Web Server\)° · for iOS & tvOS
-  * Web Server UI 
-  * WebDav Clients
+1. **Find an image** in Safari, Photos, Files, or any app
+2. **Tap and hold** the image → **Copy**
+3. Open **Provenance** → **long-press** the game you want to update
+4. Select **Paste Custom Artwork**
+5. The cover art updates immediately
+{% endtab %}
 
-° Mass-Replacing to restore Custom Art libraries or update multiple ROMs simultaneously is supported via Uploading _only_.
+{% tab title="Upload via Web Server" %}
+Best for **bulk replacement** and **tvOS** (which doesn't support pasting).
 
-{% hint style="success" %}
-**Requirements:**
+1. Start the Web Server in Provenance:
+   - Tap the **+** button in the Game Library, or
+   - Settings → **Import/Export**
+2. On your computer, open `http://[device-ip]` in a browser
+3. Open the **Imports** folder
+4. Upload your image files (`.png` or `.jpg`)
+5. Provenance matches images to ROMs by filename
 
-* When uploading, _all_ of your image filenames _**must**_ match° your ROM filenames. \([Formatting](customizing-roms.md#images-left-behind2)\)
-* _All_ image uploads _**must**_ be either `.png` or `.jpg` formats
+**WebDAV alternative:**
+1. Connect to `http://[device-ip]:81` via Finder (Mac) or a WebDAV client
+2. Drop images into the **Imports** folder
+{% endtab %}
+
+{% tab title="Mass Replacement" %}
+Replace artwork for your entire library at once:
+
+1. On your computer, gather all cover art files in **one folder**
+2. Name each image to match its ROM filename (see [Formatting](#formatting) below)
+3. Upload all images to the **Imports** folder via Web Server or WebDAV
+4. Provenance auto-matches images to games
+
+{% hint style="info" %}
+Mass replacement via upload is the recommended method for large libraries. Pasting works one game at a time.
 {% endhint %}
-
-° Images _without_ a matching ROM will stay in the directory until matched or deleted manually.
-
-### Pasting
-
-1. In iOS, locate an image 
-   * _Mobile Browser, Apple Photos, Files \(iCloud Drive, Other Clouds, Remote Files apps, etc…_
-   * Tap and hold or use whatever button gets you to… `Copy to Clipboard`
-2. In Provenance \(iOS _only_\), lightly tap and hold for long press on the ROM you want to apply the replacement.
-3. Select `Paste Custom Artwork`. Done.
-
-### Uploading
-
-1. Make sure your device's WiFi is turned on and connected to the _same network as your computer._
-2. In Provenance: Turn on the Web Server:
-
-   * Select the `+` button in the Game Library, or…
-   * In Settings, select the `Import/Export` option.¹
-
-   This is similar to [Importing ROMs](https://wiki.provenance-emu.com/installation-and-usage/roms/importing-roms).
-
-#### Web Server UI <a id="exporting-footnote"></a>
-
-1. On computer, go to the URL `http://[deviceip]` in the pop-up dialog.
-2. Open the directory corresponding to your build…
-   * `Cover Art` \(v1.4, previous\)
-   * `Imports` \(v1.5+\)
-3. Upload your images…
-   * `Upload Files…` _button allows multiple file selections._
-   * _Drag & Drop is also supported._
-
-#### WebDav Clients
-
-1. On computer, open a WebDav Client…
-   * macOS Finder: `Menu Bar` → `Go` → `Connect to Server...`
-2. Enter `http://[deviceip]:81` → `Connect as Guest` → Provenance mounts as a new drive.
-3. Drag & Drop or Copy/Paste your images into:
-   * `Cover Art` \(v1.4, previous\)
-   * `Imports` \(v1.5+\)
-4. _\(Optional\)_ tvOS: Enable Background Web Server option in Settings, if preferred.
-
-¹ Exporting files \(ROMs, BIOS, Saves, Cover Art\) is also supported in both of the above methods.
-
-**Mass-Replacing**
-
-1. On Computer, store all your Custom Art files in _one folder._²
-2. Update all ROMs with Custom Art all in one single drop into…
-   * `Cover Art` \(v1.4, previous\)
-   * `Imports` \(v1.5+\)
-
-² Requires all the correct formatting requirements be met _before_ uploading.
+{% endtab %}
+{% endtabs %}
 
 ### Formatting
 
-* When uploading, _all_ of your image filenames _**must**_ match° your ROM filenames.
-* _All_ image uploads _**must**_ be either `.png` or `.jpg` formats
+For cover art to auto-match, image filenames must correspond to ROM filenames:
 
-**ROM\(s\):**
-
-```text
-[game].[romext]
+**ROM file:**
+```
+Super Mario World.sfc
 ```
 
-**Image\(s\):**
-
-Provenance v1.4, previous…
-
-```text
-[game].[romext].[imgext]
+**Matching cover art:**
+```
+Super Mario World.png
 ```
 
-Provenance v1.5+:
+**Requirements:**
+- Image format must be `.png` or `.jpg`
+- Filename (minus extension) must match the ROM filename exactly
+- Images without a matching ROM will remain in the directory until matched or manually deleted
 
-```text
-[game].[romext].[imgext] (Legacy format broken in beta. Do not use!)
-or…
-[game].[imgext]
-```
+---
 
-{% hint style="info" %}
-If images _do not_ have a matching ROM they will stay in the directory until it has a match or deleted manually.
-{% endhint %}
+## Renaming Games
 
-## Renaming
+{% tabs %}
+{% tab title="iOS" %}
+1. **Long-press** the game in your library
+2. Select **Rename**
+3. Type the new name → tap **Done**
+{% endtab %}
 
-1. In Provenance…
-   * iOS: Tap & Hold for Long Press on the ROM you want to apply rename…
-   * tvOS: Select ROM and Click/Press & Hold Remote or Controller Action Button…
-2. Select `Rename` 
-3. Type new name. `Done`
+{% tab title="tvOS" %}
+1. **Select** the game and **press and hold** the Remote or Controller action button
+2. Select **Rename**
+3. Type the new name → select **Done**
+{% endtab %}
 
-…or alternatively you can edit the game title the Game Info View _\(iOS only\)_
+{% tab title="Via Game Info (iOS)" %}
+1. **Long-press** the game → select **Game Info**
+2. **Long-press** the Title field
+3. Edit the title → tap **Done**
+{% endtab %}
+{% endtabs %}
+
+---
 
 ## Editing Game Info
 
-1. In Provenance… on the ROM you wish to edit: 
-   * Tap & Hold \(Long Press\), or… 
-   * 3D Touch and Swipe Up to bring up Game Info¹
-2. Tap & Hold \(Long Press\) on a field.
-3. Type, Paste, or Reset.² `Done`
+Edit detailed metadata for any game (iOS only):
 
-¹ Game Info requires v1.5+, Editing is supported in iOS _only_  
-² Play History \(Play Count, Time Spent Playing\) can be reset, but not edited.
-
-## **⚠️ Known Issues**
-
-* Custom Cover Art [is not retained](https://github.com/Provenance-Emu/Provenance/issues/730) on Refresh Library option in Settings, _use at own risk._ \(you can always Mass Upload all of your custom artwork in one drop if you are using the Upload method \(instead of Pasting\), which is recommended, especially for large Custom Art libraries.
-* Uploading ROMs + Custom Cover Art in one _archive_ may not yield a replacement until next Provenance quit/launch is cycled.
-* Uploading Cover Art _before_ ROMs may not yield a replacement until next Provenance quit/launch is cycled.
-* Custom Game Names are [not currently considered](https://github.com/Provenance-Emu/Provenance/issues/514) when doing Refresh Library.
-* Exhaustive meta data web-scraping fallbacks to additional sources are _not_ currently implemented.
-* Option to match ROMs manually or Search for Covers from within app is _not_ currently supported.
-* Files with extra `.` in filename will cause a crash.
+1. **Long-press** a game in your library
+2. Select **Game Info** (or 3D Touch and swipe up)
+3. **Long-press** any editable field:
+   - Title
+   - Description
+   - Genre
+   - Publisher
+   - Release Date
+   - Region
+4. Type, paste, or reset the field → tap **Done**
 
 {% hint style="info" %}
-🗯 If you are still stuck ask for [help](https://discord.gg/provenance) on our Discord.
+**Play History** (play count, time spent) can be **reset** but not manually edited.
 {% endhint %}
 
+---
+
+## Known Issues
+
+<details>
+<summary><strong>Cover art lost on "Refresh Library"</strong></summary>
+
+Custom cover art [is not retained](https://github.com/Provenance-Emu/Provenance/issues/730) when using the Refresh Library option in Settings. If you use custom artwork, keep backups of your image files so you can re-upload them via the Web Server after a refresh.
+
+</details>
+
+<details>
+<summary><strong>Cover art doesn't appear after uploading</strong></summary>
+
+- Upload **ROMs first**, then cover art — uploading art before its matching ROM may not match immediately
+- Uploading ROMs + cover art in a single archive may delay matching
+- **Fix:** Force quit Provenance and relaunch to trigger re-matching
+
+</details>
+
+<details>
+<summary><strong>Custom game names reset on Refresh Library</strong></summary>
+
+Custom names are [not currently preserved](https://github.com/Provenance-Emu/Provenance/issues/514) during Refresh Library. Avoid refreshing if you've renamed many games.
+
+</details>
+
+<details>
+<summary><strong>Files with extra dots in filename cause a crash</strong></summary>
+
+Filenames with multiple `.` characters (e.g., `Game.v2.1.zip`) can cause issues. Rename the file to use only one dot before the extension (e.g., `Game v2-1.zip`).
+
+</details>
+
+<details>
+<summary><strong>Metadata not auto-matching for some ROMs</strong></summary>
+
+ROMs that fail checksum matching (translations, hacks, homebrew) won't auto-populate metadata. You can manually edit game info from the Game Info view.
+
+</details>
+
+---
+
+{% hint style="info" %}
+Need help? Ask on [Discord](https://discord.gg/provenance).
+{% endhint %}
