@@ -136,6 +136,15 @@ Full guide: [Restoring Files](../info/miscellaneous/restoring-files.md)
 
 ---
 
+## See Also
+
+- [Quick Continue](quick-continue.md) — Save state previews and core picker on game launch
+- [In-Game Menu](in-game-menu.md) — Create and load save states from the pause menu
+- [Provenance Plus](provenance-plus.md) — iCloud sync for saves across devices
+- [Restoring Files](miscellaneous/restoring-files.md) — Backup and restore instructions
+
+---
+
 {% hint style="info" %}
-Need help with save management? See [Restoring Files](../info/miscellaneous/restoring-files.md) for backup/restore instructions, or ask on [Discord](https://discord.gg/provenance).
+Need help with save management? Ask on [Discord](https://discord.gg/provenance).
 {% endhint %}

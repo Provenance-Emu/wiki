@@ -311,7 +311,7 @@ In Build Settings for the targets with errors, manually reset all the Code Signi
 
 ## ⚠️ Known Issues
 
-**something about database build error**
+**Database model incompatibility error**
 
 * This means there have been changes to the database model which is no longer compatible with your previous build. In order to update you _**must**_ clean install \(delete app and re-install, not build or install over over existing app\). If you would like to migrate your save games and states, you can refer to [Restoring Files](https://github.com/Provenance-Emu/Provenance/wiki/Restoring-Files).
 

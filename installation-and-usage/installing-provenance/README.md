@@ -4,7 +4,7 @@ description: How to install Provenance on your Apple device
 
 # Installing Provenance
 
-Provenance is available on **38+ Apple platforms** including iPhone, iPad, Apple TV, Apple Vision Pro, and Mac. Choose the installation method that works best for you.
+Provenance supports **38+ retro gaming systems** and runs on iPhone, iPad, Apple TV, and Mac. Choose the installation method that works best for you.
 
 ## 📱 Recommended: App Store (Easiest)
 

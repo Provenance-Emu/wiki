@@ -131,6 +131,15 @@ Some cheat codes are unstable or incompatible with certain core versions. Disabl
 
 ---
 
+## See Also
+
+- [In-Game Menu](in-game-menu.md) — Pause menu features and shortcuts
+- [Game Saves](saves.md) — Save before enabling cheats
+- [RetroAchievements](retroachievements.md) — Earn achievements (cheats may disable achievements in Hardcore mode)
+- [Performance Optimization](performance-optimization.md) — If cheats cause slowdown
+
+---
+
 {% hint style="info" %}
 Need help with cheats? Ask on [Discord](https://discord.gg/provenance).
 {% endhint %}

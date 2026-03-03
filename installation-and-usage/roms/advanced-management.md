@@ -273,7 +273,6 @@ Provenance uses **OpenVGDB** to automatically fetch:
 - 📁 BIOS files
 
 ❌ **Not synced:**
-- 🎨 Skins (local only)
 - ⚙️ App settings
 - 🎮 Controller mappings
 

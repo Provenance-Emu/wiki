@@ -128,7 +128,7 @@ Provenance is ~2.5 GB and needs additional space for games:
 
 **Already using a sideloaded version?** You can switch:
 
-1. **Backup your data** (library, saves) - see [BIOS Requirements](../bios-requirements.md#backup)
+1. **Backup your data** (library, saves) - see [Restoring Files](../../info/miscellaneous/restoring-files.md)
 2. Delete the sideloaded app
 3. Install from App Store
 4. Restore your data

@@ -168,6 +168,14 @@ Some filters (like CRT scanlines) are orientation-dependent. The filter adjusts 
 
 ---
 
+## See Also
+
+- [In-Game Menu](in-game-menu.md) — Change filters mid-game from the pause menu
+- [Performance Optimization](performance-optimization.md) — Filter impact on performance
+- [Skins Guide](skins-guide.md) — Customize on-screen controls
+
+---
+
 {% hint style="info" %}
 Need help? Ask on [Discord](https://discord.gg/provenance).
 {% endhint %}

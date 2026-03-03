@@ -67,11 +67,11 @@ The option is enabled by default since if it doesn't find textures for the curre
 
 Hi-Res packs come in folders with sub-folders. Just copy all the folders in the path as described above, mupen will find the right textures in sub folders.‌
 
-Texture packs can be downloaded at [http://textures.emulation64.com/index.php?id=downloads](https://app.gitbook.com/@provenance-emu/s/wiki/~/edit/drafts/-Le3FDXuv92E0WS9Zcsa/info/url)​‌
+Texture packs can be downloaded at [textures.emulation64.com](http://textures.emulation64.com/index.php?id=downloads)‌
 
 For some reason this site splits larger texture packs into multiple zips. Just download all the zips and copy all their contents into the directory for your ROM as described above.‌
 
-Hi-Res texture pack don't seem to noticeably degrade performance \(on original ATV4 testing\). For me Mario 64 runs at 100% with dips here and there, and with the hi-res texture pack from [http://eazyhax.com/pitime/SUPER%20MARIO%2064.zip](https://app.gitbook.com/@provenance-emu/s/wiki/~/edit/drafts/-Le3FDXuv92E0WS9Zcsa/info/url) and frame rates were the same as far as I could tell but visually everything was crisper. It seems that texture handling is not the bottle neck of performance for glupen64plus on iOS.‌
+Hi-Res texture pack don't seem to noticeably degrade performance \(on original ATV4 testing\). For me Mario 64 runs at 100% with dips here and there, and with hi-res texture packs applied, frame rates were the same as far as I could tell but visually everything was crisper. It seems that texture handling is not the bottle neck of performance for glupen64plus on iOS.‌
 
 ![Texture structure and WebDav in Finder](https://i.imgur.com/esrYOyl.jpg)
 

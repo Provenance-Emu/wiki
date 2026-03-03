@@ -54,11 +54,25 @@ Seamlessly sync your library, saves, and settings across all your devices (Prove
 
 ### Using Provenance
 - [Supported Systems](info/supported-systems.md) - Full compatibility list
+- [In-Game Menu](info/in-game-menu.md) - Pause menu features and shortcuts
 - [Controllers & Controls](info/controllers-and-controls/) - Supported controllers and setup
+- [Skins Guide](info/skins-guide.md) - Custom controller overlays
 - [Game Saves](info/saves.md) - Save states and battery saves
-- [Customizing ROMs](installation-and-usage/roms/customizing-roms.md) - Artwork, metadata, organization
+- [Quick Continue](info/quick-continue.md) - Core picker and save previews
+- [Screen Filters & Shaders](info/shaders-and-filters.md) - CRT, LCD, VHS effects
+- [Cheats](info/cheats.md) - Game Genie, Action Replay, GameShark
+- [Fast Forward](info/fast-forward.md) - Speed up gameplay
+- [Multiplayer](info/multiplayer.md) - Local and online play
+- [RetroAchievements](info/retroachievements.md) - Earn achievements in retro games
+
+### Platforms
+- [Performance Optimization](info/performance-optimization.md) - Get the best experience
+- [Apple TV / tvOS Guide](info/tvos-guide.md) - Big-screen gaming
+- [iPad Features](info/ipad-features.md) - CRT bezel skins and keyboard support
+- [Provenance Plus](info/provenance-plus.md) - iCloud sync and premium features
 
 ### Advanced
+- [System-Specific Guides](info/system-guides/) - N64, 3DS, GameCube/Wii deep dives
 - [Building from Source](installation-and-usage/installing-provenance/building-from-source.md) - For developers
 - [Contributing](help/contribute.md) - Help improve Provenance
 - [Troubleshooting](help/troubleshooting.md) - Fix common issues
@@ -68,11 +82,13 @@ Seamlessly sync your library, saves, and settings across all your devices (Prove
 ## 🆕 What's New
 
 ### Recent Features
-- 🎨 **Skins** - Customize on-screen controls per system
-- ⚡ **Performance HUD** - Real-time FPS monitoring
-- 🎮 **Enhanced Save States** - Improved save state selection UI
-- 🔧 **Core Updates** - Latest emulation cores with better accuracy
-- 🎬 **Shader Filters** - Visual enhancements for RetroArch/PPSSPP/Dolphin cores
+- 🎨 **Skins** — Custom controller overlays from DeltaStyles.com (free for all users)
+- 🎬 **Metal Shader Filters** — 7 built-in filters: Simple CRT, Complex CRT, Mega Tron, ulTron, LCD, Game Boy, VHS
+- 🏆 **RetroAchievements** — Earn achievements in retro games
+- ⏩ **Fast Forward** — Speed up gameplay with a pause menu toggle or controller shortcut
+- 🎮 **Multiplayer** — Local multiplayer with up to 4 controllers
+- 🧩 **Cheats** — Game Genie, GameShark, Action Replay across 12+ native cores
+- 🔄 **Quick Continue** — Save state previews and core picker on game launch
 
 [See full changelog →](https://github.com/Provenance-Emu/Provenance/releases)
 

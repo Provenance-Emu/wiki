@@ -358,12 +358,14 @@ Tested on **iPhone 12** with default settings:
 
 ---
 
-## Next Steps
+## See Also
 
-- ⚙️ **[Troubleshooting Guide](../help/troubleshooting.md)** - Fix common issues
-- 🎮 **[Supported Systems](supported-systems.md)** - Full system compatibility list
-- 📺 **[Apple TV Performance](tvos-guide.md#performance-tips)** - tvOS-specific optimization
-- 📖 **[ROM Formatting](../installation-and-usage/roms/formatting-roms.md)** - Convert ROMs to optimal formats
+- [Screen Filters & Shaders](shaders-and-filters.md) — Filter types and their performance impact
+- [Fast Forward](fast-forward.md) — Speed up gameplay in supported cores
+- [System-Specific Guides](system-guides/) — N64 texture packs, 3DS settings, GameCube/Wii optimization
+- [Apple TV / tvOS Guide](tvos-guide.md#performance-tips) — tvOS-specific optimization
+- [Troubleshooting](../help/troubleshooting.md) — Fix common issues
+- [ROM Formatting](../installation-and-usage/roms/formatting-roms.md) — Convert ROMs to optimal formats (CHD)
 
 ---
 

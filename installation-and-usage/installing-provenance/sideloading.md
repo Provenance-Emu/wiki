@@ -4,16 +4,16 @@ description: Easy. Install pre-built releases (or pre-releases).
 
 # Sideloading
 
-Prebuilt .ipa releases can sideloaded onto your devices and must be re-signed using your own developer profile\(s\).
+Prebuilt .ipa releases can be sideloaded onto your devices and must be re-signed using your own developer profile\(s\).
 
 ## **Download Provenance**
 
-1. First, download a [Release](https://github.com/Provenance-Emu/Provenance/releases) or Prerelease of Provenance (unless using AltStore, direct source download link in AltStore insructions).
+1. First, download a [Release](https://github.com/Provenance-Emu/Provenance/releases) or Prerelease of Provenance (unless using AltStore, direct source download link in AltStore instructions).
 2. Choose a sideloading method:
 
 ### **Sideloading Options:**
 
-* ❇️  [**AltStore**](sideloading.md#altstore) · macOS/Window)
+* ❇️  [**AltStore**](sideloading.md#altstore) · macOS/Windows
 * 🖋  [**iOS App Signer**](sideloading.md#ios-app-signer) · macOS + Xcode or Configurator
 * 🧪  [**AltDeploy**](sideloading.md#altdeploy) · macOS
 
@@ -78,7 +78,7 @@ Free Apple developer provisioning expires _every 7 days_, requiring reloading, b
 {% tab title="🧪 AltDeploy" %}
 1. Download and launch [AltDeploy](https://github.com/pixelomer/AltDeploy/releases).
 2. Connect your device (you may need to open **Finder** and choose `Trust…` when it pops up).
-3. Select your device in Impactor.
+3. Select your device in AltDeploy.
 4. Drag & drop `.ipa` file onto Impactor.
 5. Enter your Apple ID.
 6. If _not_ using 2-Factor Authentication, enter your account password, otherwise:

@@ -32,3 +32,9 @@ Provenance supports a wide range of physical controllers on iPhone, iPad, Apple 
 - For systems requiring more buttons than your controller has (PSX, N64), Provenance provides **MFi+ combos** and on-screen UI buttons to cover missing inputs.
 - On Apple TV, a **standalone Bluetooth controller** (not form-fitting) is recommended.
 - See [Skins](../skins-guide.md) to customize the on-screen overlay for touch controls.
+
+---
+
+{% hint style="info" %}
+Need help? Ask on [Discord](https://discord.gg/provenance).
+{% endhint %}
