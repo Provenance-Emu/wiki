@@ -241,6 +241,10 @@ Common system identifiers for `info.json`:
 - **Delta Skin Editor** (web-based tool) - Simplifies mapping button coordinates
 - **Skin Template PSDs** - Pre-made Photoshop templates (search GitHub/Reddit)
 
+**External skin creation guides:**
+- **[Manic EMU Homemade Skin Guide](https://manicemu.site/Homemade-Skin-Guide-EN/)** — Extremely detailed guide covering press animations, custom function buttons, and advanced skin features (uses the same `.deltaskin` format)
+- **[DeltaCore Skins Spec](https://github.com/rileytestut/DeltaCore/wiki/Skins)** — Official technical specification for the `.deltaskin` format (JSON schema, coordinate systems, image requirements)
+
 ---
 
 ## Tips & Best Practices

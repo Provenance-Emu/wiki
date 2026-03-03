@@ -22,6 +22,9 @@
   * [Customizing ROMs](installation-and-usage/roms/customizing-roms.md)
   * [Advanced ROM Management](installation-and-usage/roms/advanced-management.md)
   * [Applying Mods / Patches](installation-and-usage/roms/mods.md)
+* [In-Game Menu](info/in-game-menu.md)
+* [Quick Continue](info/quick-continue.md)
+* [Fast Forward](info/fast-forward.md)
 * [Controllers & Controls](info/controllers-and-controls/README.md)
   * [Supported Controllers](info/controllers-and-controls/controllers/README.md)
   * [Controller Reviews](info/controllers-and-controls/controllers/controller-reviews.md)
@@ -37,8 +40,14 @@
 ## Platforms & Performance
 
 * [Supported Systems](info/supported-systems.md)
+* [System-Specific Guides](info/system-guides/README.md)
+  * [Nintendo 64](info/system-guides/n64.md)
+  * [Nintendo 3DS](info/system-guides/3ds.md)
+  * [GameCube & Wii](info/system-guides/gamecube-wii.md)
 * [Performance Optimization](info/performance-optimization.md)
 * [Apple TV / tvOS Guide](info/tvos-guide.md)
+* [iPad Features](info/ipad-features.md)
+* [Provenance Plus](info/provenance-plus.md)
 
 ## Advanced
 
@@ -52,3 +61,4 @@
 * [Troubleshooting](help/troubleshooting.md)
 * [Contributing](help/contribute.md)
 * [UDID Registration](help/udid.md)
+* [Release Notes](https://github.com/Provenance-Emu/Provenance/releases)
