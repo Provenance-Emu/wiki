@@ -47,13 +47,13 @@ Please refer to the [Known Issues](importing-roms.md#known-issues) regarding Imp
 
 **Web Server UI:**
 1. On computer, go to `http://[device-ip]` in your browser.
-2. Open `Imports` (v1.5+) or `roms` (v1.4).
+2. Open the `Imports` folder.
 3. Upload ROMs — `Upload Files…` button supports multiple file selections, and Drag & Drop works too.
 
 **WebDAV Clients:**
 1. macOS Finder: `Menu Bar` → `Go` → `Connect to Server...`
 2. Enter `http://[device-ip]:81` → `Connect as Guest` → Provenance mounts as a new drive.
-3. Drag & Drop or Copy/Paste ROMs into `Imports` (v1.5+) or `roms` (v1.4).
+3. Drag & Drop or Copy/Paste ROMs into the `Imports` folder.
 
 ↩️ [Restoring](../../info/miscellaneous/restoring-files.md) files (ROMs, BIOS, Saves, Cover Art) is also supported via both methods.
 {% endtab %}
@@ -93,7 +93,7 @@ Please refer to the [Known Issues](importing-roms.md#known-issues) regarding Imp
 **Third-party tools:**
 1. Connect device to computer and open [DiskAid](https://imazing.com/diskaid), [iExplorer](https://macroplant.com/iexplorer), [iPhone Explorer](https://www.macblurayplayer.com/iphone-explorer-mac.htm), or similar app.
 2. Locate Provenance App.
-3. Navigate to `Documents/Imports` (v1.5+) or `Documents/roms` (v1.4). Create the folder if it doesn't exist.
+3. Navigate to `Documents/Imports`. Create the folder if it doesn't exist.
 4. Drag your ROMs into the folder. Done.
 
 ↩️ [Restoring](../../info/miscellaneous/restoring-files.md) files (ROMs, saves, cover art) is usually supported in these apps.
