@@ -16,26 +16,14 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Check internal markdown links
+        shell: bash
         run: |
-          #!/bin/bash
-          set -uo pipefail
+          errors=0
 
-          error_log=$(mktemp)
-          trap 'rm -f "$error_log"' EXIT
-
-          # Collect all markdown files
-          mapfile -t md_files < <(find . -name '*.md' -not -path './.git/*')
-
-          echo "Checking internal links in ${#md_files[@]} markdown files..."
-          echo ""
-
-          for file in "${md_files[@]}"; do
+          while IFS= read -r file; do
             dir=$(dirname "$file")
 
             # Extract markdown links: [text](path) — skip external URLs, anchors-only, and images
-            matches=$(grep -oP '\[(?!\!)[^\]]*\]\((?!https?://|mailto:|#)[^)]+\)' "$file" 2>/dev/null || true)
-            [ -z "$matches" ] && continue
-
             while IFS= read -r match; do
               # Extract the path from [text](path#anchor)
               link=$(echo "$match" | sed 's/.*](\([^)]*\))/\1/' | sed 's/#.*//' | sed 's/?.*//')
@@ -46,18 +34,13 @@ jobs:
               # Resolve relative path
               target="$dir/$link"
 
-              # Normalize path (remove ./ and resolve ../)
-              target=$(cd "$(dirname "$target")" 2>/dev/null && echo "$(pwd)/$(basename "$target")" || echo "$target")
-
               if [ ! -f "$target" ] && [ ! -d "$target" ]; then
-                echo "::error file=${file#./}::Broken link: $match -> target not found"
-                echo "BROKEN" >> "$error_log"
+                echo "::error file=${file#./}::Broken link: $match -> target not found: $target"
+                errors=$((errors + 1))
               fi
-            done <<< "$matches"
-          done
+            done < <(grep -oP '\[(?!\!)[^\]]*\]\((?!https?://|mailto:|#)[^)]+\)' "$file" 2>/dev/null || true)
+          done < <(find . -name '*.md' -not -path './.git/*')
 
-          errors=$(wc -l < "$error_log" | tr -d ' ')
-          echo ""
           echo "---"
           if [ "$errors" -gt 0 ]; then
             echo "Found $errors broken internal link(s)"
