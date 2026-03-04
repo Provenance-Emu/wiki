@@ -3,9 +3,10 @@ name: Link Checker
 on:
   push:
     branches: [master]
-    paths: ['**/*.md']
+    paths: ['**/*.md', '.github/workflows/link-checker.yml', '.cspell/**']
   pull_request:
-    paths: ['**/*.md']
+    paths: ['**/*.md', '.github/workflows/link-checker.yml']
+  workflow_dispatch:
 
 jobs:
   check-links:
