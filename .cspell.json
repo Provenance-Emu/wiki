@@ -13,7 +13,8 @@
     ".git",
     ".github",
     "node_modules",
-    ".gitbook"
+    ".gitbook",
+    "CLAUDE.md"
   ],
   "ignoreRegExpList": [
     "https?://[^\\s)]+",

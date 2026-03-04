@@ -17,10 +17,10 @@ jobs:
       - name: Check internal markdown links
         run: |
           #!/bin/bash
-          set -euo pipefail
+          set -uo pipefail
 
-          errors=0
-          warnings=0
+          error_log=$(mktemp)
+          trap 'rm -f "$error_log"' EXIT
 
           # Collect all markdown files
           mapfile -t md_files < <(find . -name '*.md' -not -path './.git/*')
@@ -32,7 +32,10 @@ jobs:
             dir=$(dirname "$file")
 
             # Extract markdown links: [text](path) — skip external URLs, anchors-only, and images
-            grep -oP '\[(?!\!)[^\]]*\]\((?!https?://|mailto:|#)[^)]+\)' "$file" 2>/dev/null | while read -r match; do
+            matches=$(grep -oP '\[(?!\!)[^\]]*\]\((?!https?://|mailto:|#)[^)]+\)' "$file" 2>/dev/null || true)
+            [ -z "$matches" ] && continue
+
+            while IFS= read -r match; do
               # Extract the path from [text](path#anchor)
               link=$(echo "$match" | sed 's/.*](\([^)]*\))/\1/' | sed 's/#.*//' | sed 's/?.*//')
 
@@ -47,11 +50,12 @@ jobs:
 
               if [ ! -f "$target" ] && [ ! -d "$target" ]; then
                 echo "::error file=${file#./}::Broken link: $match -> target not found"
-                errors=$((errors + 1))
+                echo "BROKEN" >> "$error_log"
               fi
-            done
+            done <<< "$matches"
           done
 
+          errors=$(wc -l < "$error_log" | tr -d ' ')
           echo ""
           echo "---"
           if [ "$errors" -gt 0 ]; then
