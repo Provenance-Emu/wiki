@@ -40,6 +40,7 @@
 ## Platforms & Performance
 
 * [Supported Systems](info/supported-systems.md)
+* [System Reference (Auto-Generated)](info/system-reference.md)
 * [System-Specific Guides](info/system-guides/README.md)
   * [Nintendo 64](info/system-guides/n64.md)
   * [Nintendo 3DS](info/system-guides/3ds.md)

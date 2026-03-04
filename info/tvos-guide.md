@@ -285,6 +285,7 @@ Provenance respects tvOS system-wide Dark Mode:
 - 🎮 **Pair multiple controllers** - Up to 4 players (system-dependent)
 - 👥 **Use same controller types** - Mixing controllers can cause mapping issues
 - 🔋 **Check all batteries** - Nothing worse than dying mid-game!
+- 📖 **Full guide:** [Multiplayer](multiplayer.md)
 
 ### For Save States
 
@@ -300,13 +301,15 @@ Provenance respects tvOS system-wide Dark Mode:
 
 ---
 
-## Next Steps
+## See Also
 
-- 📖 **[BIOS Requirements](../installation-and-usage/bios-requirements.md)** - Required system files
-- 🎮 **[Importing ROMs](../installation-and-usage/roms/importing-roms.md)** - Add games to your library
-- ⚙️ **[Customizing ROMs](../installation-and-usage/roms/customizing-roms.md)** - Edit game metadata and artwork
-- 🎮 **[Supported Controllers](../info/controllers-and-controls/controllers/README.md)** - Full controller compatibility list
-- ❓ **[Troubleshooting](../help/troubleshooting.md)** - Common issues and solutions
+- [BIOS Requirements](../installation-and-usage/bios-requirements.md) — Required system files
+- [Importing ROMs](../installation-and-usage/roms/importing-roms.md) — Add games to your library
+- [Controllers & Controls](controllers-and-controls/) — Full controller compatibility list
+- [Multiplayer](multiplayer.md) — Local and online play guide
+- [Performance Optimization](performance-optimization.md) — System-specific optimization
+- [Provenance Plus](provenance-plus.md) — iCloud sync details
+- [Troubleshooting](../help/troubleshooting.md) — Common issues and solutions
 
 ---
 

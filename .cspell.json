@@ -1,0 +1,30 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "dictionaries": ["custom-wiki"],
+  "dictionaryDefinitions": [
+    {
+      "name": "custom-wiki",
+      "path": ".cspell/custom-dictionary.txt",
+      "addWords": true
+    }
+  ],
+  "ignorePaths": [
+    ".git",
+    ".github",
+    "node_modules",
+    ".gitbook"
+  ],
+  "ignoreRegExpList": [
+    "https?://[^\\s)]+",
+    "\\!\\[.*?\\]\\(.*?\\)",
+    "`[^`]+`",
+    "```[\\s\\S]*?```",
+    "\\{%.*?%\\}",
+    "\\b[a-f0-9]{32}\\b",
+    "\\b[A-Fa-f0-9]{40}\\b"
+  ],
+  "words": [],
+  "flagWords": [],
+  "minWordLength": 4
+}

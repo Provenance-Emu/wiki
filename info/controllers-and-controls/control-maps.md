@@ -34,7 +34,6 @@ Full extended gamepad with dual analog sticks, triggers, and thumbstick buttons 
 |  | 32X | ✜ | B | C | A | X | Y | Z | | Mode | | | | | | Start |
 |  | Saturn | ✜ | B | C | A | Y | L | R | Z | X | | | | | | Start |
 
-\_\_
 {% endtab %}
 
 {% tab title="Extended" %}
@@ -64,7 +63,6 @@ Extended gamepad with dual analog sticks and triggers, but without clickable thu
 |  | 32X | ✜ | B | C | A | X | Y | Z | | | | | Mode | Start |
 |  | Saturn | ✜ | B | C | A | Y | L | R | Z | X | | | | Start |
 
-\_\_
 {% endtab %}
 
 {% tab title="Standard" %}
@@ -94,7 +92,6 @@ Standard gamepad with D-pad, four face buttons, and two shoulder buttons. No ana
 |  | 32X | ✜ | B | C | A | X | Y | Z | Mode | Start |
 |  | Saturn | ✜ | B | C | A | Y | L | R | | Start |
 
-\_\_
 {% endtab %}
 
 {% tab title="Micro" %}
@@ -124,7 +121,6 @@ Micro gamepad (e.g., Apple TV Siri Remote). Only D-pad, A, X, and Menu button av
 |  | 32X | ✜ | B | A | Start |
 |  | Saturn | ✜ | B | A | Start |
 
-\_\_
 {% endtab %}
 {% endtabs %}
 
@@ -134,4 +130,3 @@ iCade controllers use key mappings rather than analog data. They support basic d
 
 For iCade-mode controllers (e.g., 8bitdo N30, SteelSeries Stratus XL\*), refer to your controller's manual for the key mapping layout, as iCade mappings vary per device.
 
-\_\_

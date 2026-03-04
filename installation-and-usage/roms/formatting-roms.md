@@ -344,7 +344,6 @@ Use [7-Zip](https://www.7-zip.org/) (free) to create `.7z` archives:
 Loose files _only_. DO NOT include folder\(s\) inside the archive \(this will cause a crash\)!
 {% endhint %}
 
-\_\_
 
 ## Batching
 
@@ -380,7 +379,6 @@ Loose files _only_. DO NOT include folder\(s\) inside the archive \(this will ca
 
 * Folders within an archive will result in crash. Archive loose files _only._
 
-\_\_
 
 {% hint style="info" %}
 🗯 If you are still stuck ask for [help](https://discord.gg/provenance) on our Discord.
