@@ -80,7 +80,7 @@ The GBxCart RW is an open-source, lower-cost alternative. It uses the **FlashGBX
 
 **What you need:**
 - GBxCart RW device
-- FlashGBX app (available at https://github.com/lesserkuma/FlashGBX)
+- FlashGBX app (available at [github.com/lesserkuma/FlashGBX](https://github.com/lesserkuma/FlashGBX))
 - USB cable (included with device)
 
 **Steps:**
@@ -223,20 +223,11 @@ For **DS cartridges** inserted into a 3DS, the same process applies — GodMode9
 
 ## PSP (UMD)
 
-PSP games use Universal Media Disc (UMD), an optical format — not a cartridge. Dumping UMDs requires a PSP with custom firmware (CFW) such as PRO CFW, ME CFW, or ARK.
+PSP games use Universal Media Disc (UMD), an optical format — not a cartridge. UMD dumping requires a PSP with custom firmware (CFW).
 
-{% hint style="warning" %}
-CFW installation on PSP is outside the scope of this guide. See the PSP hacking communities for CFW setup instructions. For additional UMD dumping methods (FTP, Recovery Menu), see the [PSP + Custom Firmware](#psp--custom-firmware) section below.
+{% hint style="info" %}
+Full instructions — including Recovery Menu and FTP methods — are in the [PSP + Custom Firmware](#psp--custom-firmware) section below.
 {% endhint %}
-
-With CFW installed:
-
-1. Insert your UMD into the PSP.
-2. Launch a UMD-dump homebrew such as **ISO Dumper** (available via the Homebrew Browser or PSP homebrew sites).
-3. Dump the UMD — the resulting `.iso` file is saved to the `ISO/` folder on your Memory Stick.
-4. Connect the PSP to your computer via USB (hold **Select** in XMB to enter USB mode) and copy the `.iso` file to your computer.
-
-The resulting `.iso` file is directly compatible with Provenance's PSP emulation (PPSSPP).
 
 ---
 
@@ -244,7 +235,7 @@ The resulting `.iso` file is directly compatible with Provenance's PSP emulation
 
 <details><summary><strong>Other systems with OSCR adapter support</strong></summary>
 
-The OSCR ([github.com/sanni/cartreader](https://github.com/sanni/cartreader)) supports adapters for many additional systems:
+The OSCR ([GitHub](https://github.com/sanni/cartreader)) supports adapters for many additional systems:
 
 | System | Method | Notes |
 |---|---|---|
