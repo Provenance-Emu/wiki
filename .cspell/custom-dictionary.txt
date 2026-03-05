@@ -272,5 +272,4 @@ myshopify
 FAT32
 Epilogue
 cartreader
-pspunk
 pinouts
