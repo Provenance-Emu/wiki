@@ -361,6 +361,8 @@ Use ImgBurn in **Mode → Read Disc**. Output format: **ISO**. No special subcha
 {% endtab %}
 {% tab title="Linux" %}
 ```bash
+# Install (Debian/Ubuntu): sudo apt install gddrescue
+# Then run:
 ddrescue -d -r3 /dev/sr0 game.iso game.log
 ```
 `ddrescue` handles read errors better than a simple `dd`, which is important for dual-layer discs.
