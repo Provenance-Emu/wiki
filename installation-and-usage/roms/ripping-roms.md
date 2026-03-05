@@ -701,7 +701,9 @@ chdman createcd -i "game.gdi" -o "game.chd"
 For batch conversion of a folder of Dreamcast GDI dumps:
 
 ```bash
-for f in */*.gdi; do chdman createcd -i "$f" -o "${f%.gdi}.chd"; done
+find . -type f -name '*.gdi' -print0 | while IFS= read -r -d '' f; do
+  chdman createcd -i "$f" -o "${f%.gdi}.chd"
+done
 ```
 
 ### Multi-Disc M3U Playlists
