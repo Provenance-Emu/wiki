@@ -4,7 +4,7 @@ description: How to legally dump ROMs, disc images, and save data from your own 
 
 # Ripping ROMs
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 Dumping ROMs from media you own is legal in many jurisdictions. Downloading ROMs for games you do not own is not covered by this guide. Always check the laws in your region.
 {% endhint %}
 
@@ -137,7 +137,7 @@ See [GameCube & Wii Guide](../../info/system-guides/gamecube-wii.md) for Dolphin
 5. Output: folder of disc contents; use **UMDGen** or **PSP ISO Tools** to repack as `.iso` if needed
 
 {% hint style="info" %}
-PSX-on-PSP games (`.eboot.pbp` format) are a different format. See [Formatting ROMs](formatting-roms.md) for conversion details.
+PSX-on-PSP games (`.eboot.pbp` format) are a different format. Convert these back to standard PlayStation disc images (e.g. `.iso` or `.bin/.cue`) using tools such as **PSP ISO Tools** on your computer before using them with Provenance.
 {% endhint %}
 
 ### Original Xbox (Softmod)
@@ -228,8 +228,8 @@ N64 Controller Pak (memory pak) saves require a cart reader with a Controller Pa
 
 ## See Also
 
-* [Formatting ROMs](formatting-roms.md) — converting between formats (`.chd`, `.pbp`, etc.)
-* [Importing ROMs](../importing-roms.md) — getting ROMs into Provenance
+* [Formatting ROMs](formatting-roms.md) — converting between disc image formats (e.g., `.chd`, `.bin`/`.cue`, `.ecm`)
+* [Importing ROMs](importing-roms.md) — getting ROMs into Provenance
 * [Game Saves](../../info/saves.md) — managing and importing save data
 * [GameCube & Wii Guide](../../info/system-guides/gamecube-wii.md) — Dolphin folder structure
 
