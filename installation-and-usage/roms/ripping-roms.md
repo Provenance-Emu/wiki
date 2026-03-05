@@ -105,10 +105,12 @@ ImgBurn automatically names tracks and generates a valid `.cue` file for multi-t
 **For damaged or scratched discs**, use `ddrescue` for better error recovery:
 ```bash
 sudo apt install gddrescue
-ddrescue -d -r3 /dev/sr0 game.img game.log
+ddrescue -d -r3 /dev/sr0 game.bin game.log
 ```
 
-**Output:** `game.bin` + `game.cue`
+`ddrescue` produces a single raw binary image. For multi-track discs (e.g., PS1 games with audio tracks), you will need to create a `.cue` file manually or use cdrdao instead, as `ddrescue` alone does not generate subchannel/cue data.
+
+**Output:** `game.bin` (raw image; use cdrdao for proper `.bin` + `.cue` with subchannel data)
 {% endtab %}
 {% endtabs %}
 
@@ -133,7 +135,7 @@ ddrescue -d -r3 /dev/sr0 game.img game.log
 
 ### PlayStation 2
 
-PS2 games are pressed on DVD-9 (dual-layer) discs. Most modern PC DVD drives can read them, though macOS optical drives are unreliable for dual-layer media.
+PS2 games are typically pressed on DVD discs (mostly single-layer DVD-5, with some dual-layer DVD-9), and a smaller number were released on CD-ROM. Most modern PC DVD drives can read these discs, though macOS optical drives are often unreliable with dual-layer (DVD-9) media.
 
 **Method A: DVD drive on PC (Recommended)**
 
@@ -170,7 +172,7 @@ Replace `disk2` with the correct disk identifier from `diskutil list`.
 {% endtab %}
 {% endtabs %}
 
-**Method B: Network dump via OPL/FreeMcBoot** — See the [Network Dump](#network-dump) section below. Requires a softmodded PS2.
+**Method B: Network dump via OPL/FreeMcBoot** — Requires a softmodded PS2 running Open PS2 Loader (OPL) with network access. This allows dumping games over your local network without a PC DVD drive.
 
 **Output:** `.iso`
 
@@ -188,7 +190,7 @@ Only a handful of drives can read the full GD-ROM:
 - **Yamaha CRW2200** (most commonly cited)
 - **Plextor PX-W4012**
 
-These drives are rare and typically cost $100–$300+ on the used market. If you have one, use **Friidump** or a GD-ROM ripping script to extract all tracks. This method is not practical for most users.
+These drives are rare and typically cost $100–$300+ on the used market. If you have one, use compatible GD-ROM ripping software or scripts (as documented by the Dreamcast preservation community) to extract all tracks. This method is not practical for most users.
 
 **Method B: Network dump via httpd-ism (Recommended)**
 
@@ -203,7 +205,7 @@ This method requires a Dreamcast with a Broadband Adapter (BBA) or LAN Adapter a
 - A web browser on the PC
 
 **Steps:**
-1. Boot the `httpd-ism` disc on your Dreamcast (it works on unmodded hardware via the disc swap trick or a burned copy).
+1. Boot the `httpd-ism` disc on your Dreamcast. If you have homebrew access (e.g., via SD card adapter or other legitimate homebrew boot method), boot it from there.
 2. When prompted, insert the GD-ROM game you want to dump.
 3. The Dreamcast's IP address will appear on screen.
 4. On your PC, open a browser and navigate to `http://[dreamcast-ip]/` (e.g., `http://192.168.1.100/`).
@@ -263,7 +265,7 @@ GameCube and Wii discs use a proprietary format that standard PC drives cannot r
 5. When complete, the `.iso` file will be on your SD card or USB drive.
 6. Transfer the file to your computer.
 
-**Note:** Wii games are dual-layer and result in files up to 8.5 GB. Ensure your SD card is formatted as FAT32 with 32 KB cluster size, or use a USB drive formatted as FAT32 or NTFS.
+**Note:** Wii game ISOs vary in size — many titles are single-layer and smaller, while some dual-layer games can be up to 8.5 GB. Ensure your SD card is formatted as FAT32 with 32 KB cluster size, or use a USB drive formatted as FAT32 or NTFS.
 
 </details>
 
@@ -295,7 +297,24 @@ After ripping, see [GameCube & Wii System Guide](../../info/system-guides/gamecu
 
 ### PSP UMD
 
-PSP UMD discs use a proprietary format that cannot be read by any PC drive. Dumping requires Custom Firmware (CFW) running on the PSP itself. See the [Network Dump / Softmod](#network-dump) section for how to dump PSP UMDs using the PSP's own hardware.
+PSP UMD discs use a proprietary format that cannot be read by any PC drive. Dumping requires Custom Firmware (CFW) running on the PSP itself.
+
+<details><summary><strong>Dumping PSP UMDs via Custom Firmware (CFW)</strong></summary>
+
+**Requirements:**
+- PSP console with Custom Firmware installed (e.g., PRO, ME, or Infinity CFW for PSP 1000/2000/3000; HEN for PSP Go)
+- Memory Stick Pro Duo or microSD with adapter (sufficient space for game — most UMDs are 100 MB–1.8 GB)
+
+**Steps:**
+1. Boot your PSP with CFW enabled.
+2. Navigate to **Game → Memory Stick** and locate the **ISO Tool** or **UMD Dumper** homebrew, or use the built-in UMD dumping feature in your CFW.
+3. Insert the UMD you want to dump.
+4. Select **Dump UMD** (or equivalent). The game will be saved as an `.iso` file on your Memory Stick.
+5. Transfer the `.iso` to your computer via USB.
+
+**Output:** `.iso`
+
+</details>
 
 ---
 
