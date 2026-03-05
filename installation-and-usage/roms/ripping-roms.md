@@ -1,238 +1,352 @@
 ---
-description: How to legally dump ROMs, disc images, and save data from your own physical media
+description: How to legally dump ROMs, disc images, and save data from physical media you own.
 ---
 
-# Ripping ROMs
+# Ripping ROMs from Physical Media
 
 {% hint style="danger" %}
-Dumping ROMs from media you own is legal in many jurisdictions. Downloading ROMs for games you do not own is not covered by this guide. Always check the laws in your region.
+**Legal notice.** Dumping games you own for personal use is generally considered fair use. Sharing dumps online, downloading dumps you don't own, or distributing copyrighted files violates copyright law. This guide covers only backing up physical media you own. Provenance and its contributors take no responsibility for illegal use.
 {% endhint %}
 
-This guide covers methods to dump game data directly from physical cartridges, discs, and memory cards you own. Methods are organized by hardware approach.
+**Quick links:** [Cartridge Dumping](#cartridge-dumping) | [Disc Ripping](#disc-ripping) | [Network / Softmod Ripping](#network-softmod-ripping) | [Save Data Dumping](#save-data-dumping) | [Format Conversion](#format-conversion)
 
 ---
 
-## Cart Ripping
+## Cartridge Dumping
 
-Cartridge-based games can be dumped using dedicated USB cart readers connected to a PC.
+Cartridge-based systems (NES, SNES, Game Boy, GBA, N64, Sega, etc.) require a physical cartridge reader to dump ROMs.
 
-### Game Boy / GBA
+### Recommended Hardware
 
-* **GB Operator** (Epilogue) — plug-and-play USB reader; companion software handles dumping and save backup. Output: `.gb`, `.gbc`, `.gba`
-* **GBxCart RW** (insideGadgets) — open-source reader/writer for GB, GBC, GBA; supports save read/write. Output: `.gb`, `.gbc`, `.gba`
-* **Joey Jr** (BennVenn) — budget-friendly GBA reader. Output: `.gba`
+{% tabs %}
+{% tab title="GB / GBC / GBA" %}
+**[GB Operator](https://www.epilogue.co/product/gb-operator)** (Epilogue) — USB device for Game Boy, Game Boy Color, and Game Boy Advance cartridges.
 
-### SNES / NES / Genesis
+- Software: Epilogue desktop app (Mac, Windows, Linux)
+- Dumps ROM and save data
+- Also supports flashing flash carts
 
-* **Retrode 2** — USB adapter supporting SNES and Genesis cartridges natively; NES, N64, and other adapters available separately. Output: `.sfc`, `.smc`, `.gen`, `.bin`
-* **INLretro** — programmer/dumper board supporting many systems including NES, SNES, Genesis, and more. Output varies by system.
+**[GBxCart RW](https://www.gbxcart.com/)** (insideGadgets) — Open-source USB cartridge reader/writer.
 
-### Nintendo DS
+- Compatible with GB, GBC, GBA, and many flash carts
+- Software: **FlashGBX** (cross-platform, open-source)
+- Dumps ROM, RAM/save data, and RTC data
+{% endtab %}
 
-* **NDS Backup Tool** via flashcart — run on original DS hardware to dump to microSD.
-* **dumpTool** — open-source NDS dumping homebrew. Output: `.nds`
+{% tab title="Multi-System" %}
+**[Retrode 2](https://www.retrode.com/)** — USB cartridge reader for SNES and Sega Genesis/Mega Drive.
+
+- Adapter modules available for N64, Game Boy, Game Gear, Master System
+- Appears as a USB mass storage device — no special software needed
+- Dumps ROM files directly
+
+**[INLretro Dumper](https://www.infiniteneslives.com/inlretro.php)** (Infinite NES Lives) — Supports a wide range of cartridge formats including NES, SNES, N64, Game Boy, Sega, and more.
+
+- Open-source software
+- Requires more technical setup than Retrode
+{% endtab %}
+
+{% tab title="NES / Famicom" %}
+**[INLretro Dumper](https://www.infiniteneslives.com/inlretro.php)** — NES/Famicom focused with broad support.
+
+**[Kazzo / USBSNES](https://github.com/snes9xgit/snes9x)** — Various open-source NES dumpers exist for different mappers.
+
+Many NES dumper projects are community-built — search the NesDev forums for the latest recommendations for specific mappers.
+{% endtab %}
+{% endtabs %}
+
+### Dumping Process (General)
+
+1. Install the reader's software on your Mac or PC.
+2. Insert your cartridge into the reader.
+3. Connect the reader to your computer via USB.
+4. Follow the software's dump/backup procedure.
+5. The output will be a ROM file (e.g., `.gb`, `.gba`, `.sfc`, `.n64`).
+6. [Import the ROM](importing-roms.md) into Provenance.
+
+{% hint style="info" %}
+Some cartridges use battery-backed SRAM for saves. Dump your save data **before** the battery dies — see [Save Data Dumping](#save-data-dumping) below.
+{% endhint %}
+
+### OSCR (Open Source Cartridge Reader)
+
+The **[OSCR](https://github.com/sanni/cartreader)** (formerly Cart Reader by sanni) is an Arduino-based open-source cartridge reader that supports dozens of systems — NES, SNES, N64, Game Boy, Sega Genesis, Sega Master System, Game Gear, WonderSwan, and more.
+
+- Requires assembly and some soldering
+- Extensive community support on the GitHub repository
+- One of the most comprehensive multi-system options available
 
 ---
 
 ## Disc Ripping
 
-Optical discs require either a standard PC optical drive (for some formats) or console-side homebrew.
+CD, DVD, and other optical disc-based games can be dumped using optical drives or dedicated hardware.
 
-### PS1 / PS2
+### CD-Based Systems (PS1, Saturn, Sega CD, TurboGrafx-CD, PC-FX)
 
-* Any standard PC CD/DVD drive + **ImgBurn** or **CloneCD** — rip directly to `.bin`/`.cue` or `.iso`
+{% tabs %}
+{% tab title="macOS" %}
+**cdrdao** — Command-line tool that creates `.bin` + `.toc` disc images with subchannel data.
 
-### GameCube / Wii — CleanRip
+```bash
+# Install via Homebrew
+brew install cdrdao
 
-1. Install the **Homebrew Channel** on your Wii
-2. Download **CleanRip** and place it on an SD card
-3. Launch CleanRip via HBC
-4. Select output destination (SD or USB)
-5. Insert disc and follow on-screen prompts
-6. Output: `.iso` (for both GameCube and Wii discs)
+# Dump a disc (replace /dev/disk2 with your drive)
+cdrdao read-cd --read-raw --datafile game.bin --device /dev/disk2 --driver generic-mmc-raw game.toc
+```
 
-See [GameCube & Wii Guide](../../info/system-guides/gamecube-wii.md) for folder structure requirements.
+**ddrescue** — For scratched or damaged discs, `ddrescue` retries bad sectors:
 
-### Dreamcast — GD-ROM Dumping
+```bash
+brew install ddrescue
+ddrescue -d -r3 /dev/disk2 game.iso game.log
+```
 
-Dreamcast GD-ROM discs can be dumped using specialized methods:
+After dumping, convert `.toc` to `.cue` using `toc2cue` (included with cdrdao):
 
-1. **GDEmu ODE method** — use a GDEmu or similar optical drive emulator device to dump via `GDmenu` or similar homebrew
-2. **Broadband Adapter + httpd-ism method** — use a broadband adapter and the `httpd-ism` FTP homebrew to dump over network (see [Network / Softmod Ripping](#network--softmod-ripping) below)
+```bash
+toc2cue game.toc game.cue
+```
+{% endtab %}
 
-Output: `.gdi` + track files, or `.chd`
+{% tab title="Windows" %}
+**[ImgBurn](https://www.imgburn.com/)** — Free disc imaging tool.
 
-### PSP UMD — PC Method
+1. Insert disc → Select **Read** mode.
+2. Choose output format: `.bin` + `.cue`.
+3. Enable subchannel data reading for PS1 games (required for copy-protected titles).
 
-Standard PC optical drives cannot read UMD discs. Use the [PSP CFW method](#psp--custom-firmware) in the Network section below.
+**[IsoBuster](https://www.isobuster.com/)** — Advanced disc recovery and imaging tool (paid, with free tier).
+
+- Handles damaged discs
+- Supports many disc formats
+{% endtab %}
+
+{% tab title="Linux" %}
+**cdrdao** — Available in most package managers:
+
+```bash
+sudo apt install cdrdao
+cdrdao read-cd --read-raw --datafile game.bin --device /dev/sr0 --driver generic-mmc-raw game.toc
+toc2cue game.toc game.cue
+```
+
+**ddrescue** — For damaged discs:
+
+```bash
+sudo apt install gddrescue
+ddrescue -d -r3 /dev/sr0 game.iso game.log
+```
+{% endtab %}
+{% endtabs %}
+
+{% hint style="warning" %}
+PS1 games require subchannel data for accurate dumps. Always use raw mode (`--read-raw`) with cdrdao or enable subchannel reading in ImgBurn.
+{% endhint %}
+
+### DVD-Based Systems (PS2, GameCube, Wii)
+
+{% tabs %}
+{% tab title="GameCube / Wii" %}
+**CleanRip** (Wii homebrew) — The recommended method for GameCube and Wii disc dumping.
+
+1. Install the [Homebrew Channel](https://wii.guide/) on your Wii.
+2. Download **CleanRip** and place it in `sd:/apps/CleanRip/`.
+3. Launch CleanRip from the Homebrew Channel.
+4. Select your source (Disc Drive), output device (SD/USB), and dump format.
+5. CleanRip produces `.iso` files (or split files for games over 4 GB).
+
+For Provenance's Dolphin core, see the [GameCube & Wii Guide](../../info/system-guides/gamecube-wii.md) for the correct folder structure.
+{% endtab %}
+
+{% tab title="PS2" %}
+**[FreeMcBoot](https://www.ps2-home.com/forum/page/freemc-boot-fmcb-1-966)** + **uLaunchELF** — Softmod method for PS2.
+
+1. Install FreeMcBoot on a memory card.
+2. Use **uLaunchELF** to access the DVD drive.
+3. Use **dvd2usb** or similar ELF homebrew to dump discs to USB.
+
+Alternatively, use a PC DVD drive with **ImgBurn** (Windows) or **ddrescue** (macOS/Linux) — PS2 discs are standard DVDs.
+{% endtab %}
+{% endtabs %}
+
+### PSP (UMD)
+
+PSP UMD discs cannot be read by standard PC drives. Use the PSP itself:
+
+1. Enable USB mode on your PSP (Settings → USB Connection).
+2. Use **[PPSSPP](https://www.ppsspp.org/)** or custom firmware to dump UMDs.
+3. With custom firmware (CFW) installed, use **UMDGen** or the built-in ISO dumper in CFW.
+
+Alternatively, enable **USB ISO** mode in CFW settings to dump directly over USB to your computer.
+
+### Dreamcast (GD-ROM)
+
+GD-ROM discs are a proprietary format that standard drives cannot read. Options:
+
+- **[GDEMU](https://gdemu.wordpress.com/)** or **[USB-GDROM](http://www.dreamcast-talk.com/)** — ODE (Optical Drive Emulator) hardware that can dump GD-ROMs.
+- **Dreamshell** — Homebrew environment for Dreamcast that supports disc dumping to SD card via an SD adapter.
+- Many Dreamcast games are available as **CDI** or **GDI** dumps — check [Formatting ROMs](formatting-roms.md) for compatible formats.
 
 ---
 
 ## Network / Softmod Ripping
 
-{% hint style="warning" %}
-These methods require modifying or exploiting your console's software. Refer to community guides for custom firmware installation. This guide only covers the ROM dumping step after homebrew is in place.
-{% endhint %}
+Several consoles can dump games over a network or via homebrew software without additional hardware.
 
-Some consoles can dump their own media using homebrew software and networking or USB storage — no specialized PC hardware needed.
+### Nintendo 3DS
 
-### PS2 + FreeMcBoot + OPL
+{% tabs %}
+{% tab title="GodMode9" %}
+**[GodMode9](https://github.com/d0k3/GodMode9)** — Full-access file system browser for 3DS with custom firmware.
 
-**Prerequisites:** PS2 with FreeMcBoot memory card, OPL installed, Ethernet connection and PC with SMB shared folder.
+1. Install custom firmware ([Luma3DS](https://github.com/LumaTeam/Luma3DS)) following [3ds.hacks.guide](https://3ds.hacks.guide/).
+2. Boot into GodMode9 (hold START while powering on).
+3. Navigate to `[C:] GAMECART` for cartridges or `[A:] SYSNAND SD` for installed titles.
+4. Select the game → NCSD image options → Dump to `.cia` or `.3ds`.
 
-**Method A — ETH Disc Dump via OPL:**
+For Provenance's emuThreeDS core, see the [3DS Guide](../../info/system-guides/3ds.md) for decrypted ROM requirements.
+{% endtab %}
+{% endtabs %}
 
-1. Boot your PS2 with the FreeMcBoot memory card inserted
-2. Launch **OPL** (Open PS2 Loader)
-3. Go to **Settings → ETH Settings** and configure your network/SMB share
-4. Navigate to **Apps** or use the disc dump option in OPL's menu
-5. Insert the PS2 disc and select "ETH disc dump"
-6. OPL streams the disc image directly to your PC's shared folder
-7. Output: `.iso`
+### Nintendo DS
 
-**Method B — USB via uLaunchELF:**
+NDS cartridges can be dumped using:
 
-1. Boot FreeMcBoot and launch **uLaunchELF**
-2. Navigate to `cdrom0:/` (the disc drive)
-3. Copy the disc contents to `mass:/` (USB storage) — this copies the disc files, not a single image
-4. Transfer the USB drive to your PC
-5. Output: extracted disc files (use an ISO creation tool on your PC if you need a `.iso` image)
+- **[GoodDS](https://gbatemp.net/)** or **DSOrganize** on a DS with homebrew.
+- A **3DS with GodMode9** — insert DS cartridge and dump via `[C:] GAMECART`.
+- **Flashcart-based dumpers** available from the GBAtemp community.
 
-### Dreamcast + Broadband Adapter
+### PS1 / PS2 (via FreeMcBoot)
 
-The Dreamcast broadband adapter combined with FTP homebrew allows network-based disc dumping. See the [Disc Ripping — Dreamcast GD-ROM section](#dreamcast--gd-rom-dumping) above for the full method, which also covers the network/FTP approach.
+With **FreeMcBoot** installed on a PS2 memory card:
 
-### Wii + Homebrew Channel
+1. Boot with FreeMcBoot memory card inserted.
+2. Launch **uLaunchELF**.
+3. Use `mass:` (USB) as output destination with disc dumping homebrew.
 
-The Wii Homebrew Channel enables two disc-dumping methods:
+### SNES Classic / NES Classic (hakchi)
 
-* **CleanRip** — see the [Disc Ripping — GameCube / Wii section](#gamecube--wii--cleanrip) above for full instructions
-* **USB Loader GX** — can dump Wii and GameCube discs directly to a USB drive:
-  1. Launch USB Loader GX from the Homebrew Channel
-  2. Insert disc
-  3. Select the game and choose **Install** or **Dump**
-  4. Wii discs output as `.wbfs`; GameCube discs output as `.iso`
-
-See [GameCube & Wii Guide](../../info/system-guides/gamecube-wii.md) for Dolphin folder structure requirements.
-
-### PSP + Custom Firmware
-
-**Prerequisites:** PSP with custom firmware installed (6.61 PRO-C or LME recommended).
-
-**Method A — Recovery Menu ISO Dump:**
-
-1. Hold **R** while booting to enter the CFW Recovery Menu
-2. Navigate to **Tools → Create ISO from UMD**
-3. Insert the UMD disc and confirm
-4. The ISO is written to your Memory Stick Duo (`ms0:/ISO/`)
-5. Connect PSP to PC via USB; copy the `.iso` file
-6. Output: `.iso`
-
-**Method B — FTP over Wi-Fi:**
-
-1. Enable the FTP server in your CFW (location varies; common in PRO/LME plugins or apps like **FTPhost**)
-2. Connect from your PC using an FTP client (e.g., FileZilla) using the PSP's IP address shown on screen
-3. Navigate to `disc0:/` to browse the mounted UMD
-4. Download all files to your PC
-5. Output: folder of disc contents; use **UMDGen** or **PSP ISO Tools** to repack as `.iso` if needed
-
-{% hint style="info" %}
-PSX-on-PSP games use the `.eboot.pbp` format. Provenance natively supports `.pbp` files for PlayStation, so you may be able to use them directly. If a `.pbp` file does not load correctly, convert it back to a standard disc image (`.iso` or `.bin/.cue`) using tools such as **PSP ISO Tools** on your computer.
-{% endhint %}
-
-### Original Xbox (Softmod)
-
-Softmodded original Xbox consoles running a custom dashboard (Avalaunch, EvoX, UnleashX) expose an FTP server on the local network:
-
-1. Note the IP address shown in the dashboard network settings
-2. Connect from a PC FTP client
-3. Browse to the game partition (typically `E:\Games\` or `F:\Games\`)
-4. Copy game folders to your PC
-
-{% hint style="info" %}
-Original Xbox emulation is **not supported** in Provenance. This method is documented for collection archiving and preservation purposes only.
-{% endhint %}
+Games installed on SNES/NES Classic can be extracted using **[hakchi2 CE](https://github.com/TeamShinkansen/hakchi2)** on Windows.
 
 ---
 
 ## Save Data Dumping
 
-{% hint style="success" %}
-Provenance uses standard save formats (`.sav`, `.mcr`, `.srm`, `.eep`) compatible with other emulators. Saves dumped from real hardware work directly. See [Game Saves](../../info/saves.md) for import instructions.
-{% endhint %}
+Back up your save files from physical media before batteries die or hardware fails.
 
-Transfer existing save data from physical memory cards and cartridges to Provenance.
+### Game Boy / GBA Saves
 
-### GB / GBC / GBA Saves
+Most GB/GBC/GBA cartridges store saves in battery-backed SRAM.
 
-The same cart readers used for ROM dumping (GB Operator, GBxCart RW, Joey Jr) also read and write save data:
-
-* All three readers dump the save RAM alongside or separately from the ROM
-* Use the companion software to export the save file before transferring the ROM to Provenance
-* Output: `.sav`
+- **GB Operator** — Dumps save data alongside ROM. Use the "Backup Save" function.
+- **GBxCart RW + FlashGBX** — Reads and writes save RAM. Supports `.sav` format compatible with Provenance.
 
 {% hint style="warning" %}
-Back up your saves before transferring. Old cartridge batteries may fail during the read process. Some carts (especially GBA) have aging batteries — if the cart reader reports a blank save, the battery may have already died.
+GB/GBC cartridge batteries typically last 15–20 years. If your cartridge is from the 1990s or early 2000s, dump your saves soon.
 {% endhint %}
 
-### PlayStation Memory Cards
+### PS1 Memory Cards
 
-**Method A — PS3 + Memory Card Adaptor:**
+- **[MemcardRex](https://github.com/ShendoXT/memcardrex)** — Windows app for reading PS1 memory cards via a USB memory card reader.
+- **[GCMM](https://github.com/suloku/gcmm)** (GameCube Memory Card Manager) — Wii homebrew for backing up GameCube memory cards to SD.
+- **[MCMM Mod](https://gbatemp.net/)** — Wii/GC homebrew alternatives exist for various memory card formats.
 
-The official Sony Memory Card Adaptor (model CECHMCA) lets a PS3 read PS1/PS2 memory cards:
+Raw memory card dumps are `.mcr` files. Individual save files can be exported as `.mcs` or `.srm` format. See [Game Saves](../../info/saves.md) for importing save files into Provenance.
 
-1. Insert the PS1/PS2 memory card into the adaptor and plug into a PS3
-2. Copy saves using the PS3's **Saved Data Utility**
-3. Transfer the save data to PC and use tools such as **PSXMemTool** or **MemcardRex** to extract individual saves and convert to `.mcr`
+### PS2 Saves
 
-**Method B (Recommended) — FreeMcBoot + uLaunchELF:**
+- **[Open PS2 Loader (OPL)](https://github.com/ps2homebrew/Open-PS2-Loader)** — Includes memory card backup utilities.
+- **uLaunchELF** — Allows copying save files from PS2 memory card to USB storage.
+- Save files can be imported/exported using **MyMC** on PC.
 
-<details>
-<summary><strong>Step-by-step: Dump PS1/PS2 memory card with FreeMcBoot</strong></summary>
+### N64 Saves (Controller Pak)
 
-1. Boot your PS2 with the FreeMcBoot memory card and launch **uLaunchELF**
-2. Navigate to `mc0:/` for Memory Card 1 or `mc1:/` for Memory Card 2
-3. Select all save folders you want to back up
-4. Copy them to `mass:/` (USB drive) using the file manager
-5. On your PC, use **MemcardRex** (Windows) or **mymc** (cross-platform) to open the memory card image or individual save folders
-6. Export saves to `.mcr` format (Provenance compatible)
+N64 Controller Pak (memory card) saves can be backed up using:
 
-</details>
+- **[64drive](https://64drive.retroactive.be/)** or **[EverDrive-64](https://krikzz.com/)** — Flashcarts with Controller Pak backup support.
+- **N64 save dumpers** — Various community tools on GBAtemp.
 
-Output: `.mcr`
+SRAM/EEPROM/FlashRAM saves stored on cartridges can be dumped with the INLretro or OSCR hardware mentioned above.
 
-See [Game Saves](../../info/saves.md) for instructions on importing `.mcr` files into Provenance.
+---
 
-### GameCube Memory Cards
+## Format Conversion
 
-**GCMM (GameCube Memory Manager)** homebrew running on a Wii can back up GameCube memory cards to SD card:
+After dumping, you may need to convert files to formats Provenance supports.
 
-1. Install **GCMM** via the Homebrew Channel on your Wii
-2. Insert an SD card and launch GCMM from HBC
-3. Insert your GameCube memory card into Slot A or Slot B
-4. Select **Backup All** to export all saves
-5. GCMM saves individual `.gci` files (one per game save) or a full memory card image to the SD card
-6. Copy the SD card files to your PC, then import into Provenance
+### CHD (Compressed Hunks of Data)
 
-Output: `.gci` files or full memory card image
+CHD is highly recommended for disc-based games — it reduces file sizes by 40–70% while maintaining perfect accuracy.
 
-See [GameCube & Wii Guide](../../info/system-guides/gamecube-wii.md) for information on Dolphin's save and folder structure.
+```bash
+# Install chdman (part of MAME tools)
+# macOS:
+brew install mame
 
-### N64 Controller Pak
+# Convert BIN/CUE to CHD
+chdman createcd -i game.cue -o game.chd
 
-N64 Controller Pak (memory pak) saves require a cart reader with a Controller Pak adapter:
+# Convert ISO to CHD
+chdman createcd -i game.iso -o game.chd
 
-* **Retrode 2 + N64 Adapter** — insert the Controller Pak into the Retrode's controller port; it appears as a readable file on your PC. Output: `.mpk`
-* **INLretro + N64 Adapter** — similar approach using the INLretro programmer's N64 controller port adapter. Output: `.mpk`
+# Verify CHD integrity
+chdman verify -i game.chd
+```
+
+See [Advanced ROM Management](advanced-management.md) for batch CHD conversion workflows.
+
+### Converting Other Image Formats
+
+Some tools produce formats Provenance doesn't directly support:
+
+| Source Format | Tool | Output Format |
+|---|---|---|
+| `.nrg` (Nero) | `nrg2iso` | `.iso` |
+| `.mdf` + `.mds` (Alcohol) | `mdf2iso` | `.iso` |
+| `.img` + `.ccd` | ImgBurn (re-burn or convert) | `.bin` + `.cue` |
+| `.ecm` | `unecm` | `.bin` |
+| `.cdi` (Dreamcast) | `cdirip` | `.bin` + `.cue` |
+
+```bash
+# macOS — install conversion tools
+brew install ecm-tools
+
+# Convert ECM-compressed file
+unecm game.bin.ecm
+```
+
+### Multi-Disc Games and M3U Playlists
+
+For games with multiple discs, create an `.m3u` playlist file so Provenance can handle disc swapping:
+
+```
+# game.m3u
+game_disc1.chd
+game_disc2.chd
+game_disc3.chd
+```
+
+See [Formatting ROMs](formatting-roms.md) for complete M3U instructions and supported formats per system.
+
+### Supported Formats Reference
+
+After conversion, check [Formatting ROMs](formatting-roms.md) to confirm your output format is supported by Provenance for your target system.
 
 ---
 
 ## See Also
 
-* [Formatting ROMs](formatting-roms.md) — converting between disc image formats (e.g., `.chd`, `.bin`/`.cue`, `.ecm`)
-* [Importing ROMs](importing-roms.md) — getting ROMs into Provenance
-* [Game Saves](../../info/saves.md) — managing and importing save data
-* [GameCube & Wii Guide](../../info/system-guides/gamecube-wii.md) — Dolphin folder structure
+- [Importing ROMs](importing-roms.md) — Get your dumped ROMs into Provenance
+- [Formatting ROMs](formatting-roms.md) — Supported formats, multi-file ROMs, archiving
+- [Advanced ROM Management](advanced-management.md) — CHD conversion, library organization
+- [BIOS Requirements](../bios-requirements.md) — Required BIOS files for disc-based systems
+- [Game Saves](../../info/saves.md) — Importing dumped save files
+- [GameCube & Wii Guide](../../info/system-guides/gamecube-wii.md) — Dolphin memory card structure
+- [3DS Guide](../../info/system-guides/3ds.md) — Decrypted ROM notes
+
+---
 
 {% hint style="info" %}
 Need help? Ask on [Discord](https://discord.gg/provenance).
