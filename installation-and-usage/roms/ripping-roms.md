@@ -1,5 +1,5 @@
 ---
-description: How to legally dump your own cartridges and discs for use in Provenance
+description: How to legally dump ROMs, disc images, and save data from your own physical media for use with Provenance.
 ---
 
 # Ripping & Dumping Physical Media
@@ -24,221 +24,222 @@ This guide covers how to create digital backups of game cartridges and discs you
 
 Cartridge-based games require dedicated hardware — a "cart dumper" — to read the ROM data. Most dumpers connect to your computer via USB and come with software to save the game file.
 
-### Choosing a Dumper
+### Hardware Overview
 
-Different hardware covers different systems. Below is a quick-reference table of popular, accessible dumpers.
-
-| Dumper | Supported Systems | Price Range | Notes |
-|--------|------------------|-------------|-------|
-| **GB Operator** (Epilogue) | Game Boy, GBC, GBA | ~$50 | macOS/Windows/Linux, also backs up saves |
-| **GBxCart RW** (insideGadgets) | Game Boy, GBC, GBA | ~$30–$45 | Open-source firmware, flash cart support |
-| **Retrode 2** | SNES, Genesis/Mega Drive, N64\*, Game Gear, SMS | ~$80+ (used) | USB plug-and-play, adapters available |
-| **INLretro Dumper** | NES, SNES, N64, Game Boy, Genesis, and more | ~$60–$90 | Widest system support, open-source |
-| **64drive** | Nintendo 64 | ~$100+ | Also a flash cart; dumping via PC software |
-| **Krikzz Dumper** | Various | Varies | From the maker of Everdrive flash carts |
-
-\*N64 support on Retrode 2 requires the optional N64 adapter.
-
-{% hint style="info" %}
-**Recommendation for beginners:** The **GB Operator** is the easiest option for Game Boy/GBC/GBA — plug in, launch the app, click Dump. For multi-system coverage, the **INLretro Dumper** offers the broadest support.
-{% endhint %}
+| Hardware | Systems Supported | Approx. Price | Open Source | URL |
+|---|---|---|---|---|
+| **GB Operator** (Epilogue) | GB, GBC, GBA | ~$50 | No | [epilogue.co](https://epilogue.co) |
+| **GBxCart RW** (insideGadgets) | GB, GBC, GBA | ~$35 | Yes | [insidegadgets.com](https://insidegadgets.com) |
+| **Joey Jr** (BennVenn) | GB, GBC, GBA | ~$45 | No | [bennvenn.myshopify.com](https://bennvenn.myshopify.com) |
+| **Retrode 2** | SNES, Genesis, N64/GB/GBA (adapters) | ~$80 used | Yes | [retrode.org](https://retrode.org) |
+| **INLretro Dumper-Programmer** | NES, SNES, N64, Genesis, GB, GBA+ | ~$80 | Yes | [inlretro.com](https://inlretro.com) |
+| **Open Source Cart Reader (OSCR)** | 50+ systems (NES, SNES, N64, Genesis, GB, GBA, etc.) | ~$50 DIY | Yes | [github.com/sanni/cartreader](https://github.com/sanni/cartreader) |
+| **GodMode9** (3DS CFW) | DS, 3DS | Free (software) | Yes | [github.com/d0k3/GodMode9](https://github.com/d0k3/GodMode9) |
 
 ---
 
-### Game Boy / Game Boy Color / Game Boy Advance
+### Game Boy / GBC / GBA
+
+Three well-supported options exist for dumping Game Boy family cartridges. All produce standard `.gb`, `.gbc`, or `.gba` ROM files and `.sav` save files compatible with Provenance.
 
 <details>
-<summary><strong>Using the GB Operator (Epilogue) — Easiest Method</strong></summary>
+<summary><strong>GB Operator (Epilogue) — Recommended for beginners</strong></summary>
 
-The GB Operator is a USB device that reads GB, GBC, and GBA cartridges directly on macOS, Windows, and Linux.
+The GB Operator is the easiest plug-and-play solution. It connects via USB-C and uses Epilogue's desktop app (macOS/Windows/Linux).
 
 **What you need:**
 - GB Operator device
-- [Epilogue app](https://www.epilogue.co/operator) (free download)
-- A USB-C or USB-A port on your computer
+- Epilogue desktop app
+- USB-C cable
 
 **Steps:**
-1. Download and install the Epilogue app from epilogue.co
-2. Insert your cartridge into the GB Operator slot
-3. Connect the GB Operator to your computer via USB
-4. Open the Epilogue app — your cartridge details appear automatically
-5. Click **Dump ROM** and choose a save location
-6. Wait for the dump to complete (usually under a minute)
-7. The resulting `.gb`, `.gbc`, or `.gba` file is ready to import into Provenance
 
-**Save backup:** The Epilogue app can also dump your in-game save data. Use **Dump Save** to back it up before dumping — useful for preserving Pokémon saves.
+1. Download and install the Epilogue app.
+2. Insert your Game Boy, GBC, or GBA cartridge into the GB Operator.
+3. Connect the GB Operator to your computer via USB-C.
+4. Open the Epilogue app — your cartridge should be detected automatically.
+5. Click **Backup ROM** to dump the game ROM to your computer.
+6. Optionally click **Backup Save** to dump any existing save data.
+
+The app saves files to a folder of your choice. ROM files use standard extensions (`.gb`, `.gbc`, `.gba`) and save files use `.sav`.
+
+{% hint style="success" %}
+`.sav` files dumped from a cartridge are directly compatible with Provenance's save system. Copy them alongside your ROM file when importing.
+{% endhint %}
 
 </details>
 
 <details>
-<summary><strong>Using GBxCart RW (insideGadgets) — Budget Option</strong></summary>
+<summary><strong>GBxCart RW (insideGadgets) — Open source option</strong></summary>
 
-The GBxCart RW is an open-source USB flasher/dumper for GB, GBC, and GBA.
+The GBxCart RW is an open-source, lower-cost alternative. It uses the **FlashGBX** software (community-developed, cross-platform).
 
 **What you need:**
 - GBxCart RW device
-- [FlashGBX software](https://github.com/lesserkuma/FlashGBX) (free, cross-platform)
+- FlashGBX app (available at [github.com/lesserkuma/FlashGBX](https://github.com/lesserkuma/FlashGBX))
+- USB cable (included with device)
 
 **Steps:**
-1. Install FlashGBX on your computer
-2. Insert your cartridge into the GBxCart RW
-3. Connect via USB to your computer
-4. Open FlashGBX — the cartridge is detected automatically
-5. Select **Read ROM** and choose an output folder
-6. Click **Start** and wait for the dump to complete
-7. Import the `.gb`, `.gbc`, or `.gba` file into Provenance
 
-</details>
+1. Download FlashGBX from the GitHub releases page.
+2. Insert your cartridge into the GBxCart RW and connect to your computer.
+3. Open FlashGBX — the device should be auto-detected.
+4. Select **Backup ROM** to dump the game.
+5. Select **Backup Save Data** if you want to preserve the cartridge save.
 
----
-
-### NES / Famicom
-
-<details>
-<summary><strong>Using the INLretro Dumper</strong></summary>
-
-The INLretro Dumper supports NES, Famicom, and many other cartridge types through swappable adapters.
-
-**What you need:**
-- INLretro Dumper with NES adapter
-- [INLretro software](https://www.infiniteneslives.com/inlretro.php) (Windows; runs under Wine on macOS/Linux)
-
-**Steps:**
-1. Attach the NES cartridge adapter to the INLretro board
-2. Insert your NES cartridge
-3. Connect the device to your computer via USB
-4. Open the INLretro software
-5. Select **NES** as the system and choose the appropriate mapper (auto-detect works for most common games)
-6. Click **Dump ROM** and select an output location
-7. The resulting `.nes` file is ready for Provenance
-
-{% hint style="info" %}
-The INLretro software includes a mapper database. If auto-detect fails, look up the mapper for your specific game on [NESdev Wiki](https://www.nesdev.org/).
-{% endhint %}
-
-</details>
-
----
-
-### SNES / Super Famicom
-
-<details>
-<summary><strong>Using the Retrode 2</strong></summary>
-
-The Retrode 2 mounts SNES (and Genesis) cartridges as a USB mass storage device — no software install required on modern operating systems.
-
-**What you need:**
-- Retrode 2
-
-**Steps:**
-1. Insert your SNES cartridge into the top slot of the Retrode 2
-2. Connect the Retrode 2 to your computer via USB
-3. Your computer mounts the Retrode as a drive
-4. Open the drive — you will see a `.smc` or `.sfc` file representing your ROM
-5. Copy this file to your computer
-6. Import into Provenance
+FlashGBX also supports writing ROMs and saves back to cartridges (useful for restoring saves).
 
 </details>
 
 <details>
-<summary><strong>Using the INLretro Dumper</strong></summary>
+<summary><strong>Joey Jr (BennVenn) — Windows-focused</strong></summary>
 
-1. Attach the SNES adapter to the INLretro board
-2. Insert your SNES cartridge
-3. Open the INLretro software
-4. Select **SNES** as the system
-5. Click **Dump ROM** and wait for completion
-6. Import the `.smc` or `.sfc` file into Provenance
-
-</details>
-
----
-
-### Sega Genesis / Mega Drive
-
-<details>
-<summary><strong>Using the Retrode 2</strong></summary>
-
-Genesis cartridges are supported natively in the Retrode 2's bottom slot.
+The Joey Jr is a compact USB dumper from BennVenn. It uses BennVenn's own companion software.
 
 **Steps:**
-1. Insert your Genesis cartridge into the large bottom slot
-2. Connect the Retrode 2 to your computer via USB
-3. Open the mounted drive on your computer
-4. Copy the `.md` or `.bin` ROM file to your computer
-5. Rename the extension to `.md` if needed for Provenance compatibility
-6. Import into Provenance
 
-</details>
-
----
-
-### Nintendo 64
-
-<details>
-<summary><strong>Using the INLretro Dumper with N64 Adapter</strong></summary>
-
-N64 cartridges use a 64-pin edge connector and require a dedicated adapter.
-
-**What you need:**
-- INLretro Dumper with N64 adapter
-- INLretro software
-
-**Steps:**
-1. Attach the N64 adapter to the INLretro board
-2. Insert your N64 cartridge
-3. Open the INLretro software and select **N64**
-4. Click **Dump ROM** — N64 dumps are larger (8–64 MB) and take several minutes
-5. The output file is a `.z64` (big-endian) ROM, which is the preferred format for Provenance
-6. Import into Provenance
+1. Download the BennVenn software from [bennvenn.myshopify.com](https://bennvenn.myshopify.com) (check the product page for the latest version).
+2. Insert your cartridge and connect the Joey Jr via USB.
+3. Open the companion app and select **Dump ROM**.
+4. Save the resulting file to your computer.
 
 {% hint style="warning" %}
-N64 ROMs come in three byte-order formats: `.z64` (big-endian), `.v64` (byte-swapped), and `.n64` (little-endian). Provenance supports `.z64` and `.n64`; `.z64` is the standard. If your dumper produces `.v64`, convert it to `.z64` or `.n64` with [Tool64](https://github.com/jkbenaim/tool64) or similar utilities before importing into Provenance.
+The BennVenn companion software is **Windows-only**. macOS/Linux users should consider the GB Operator or GBxCart RW instead.
+{% endhint %}
+
+</details>
+
+---
+
+### NES / SNES / N64 / Genesis / SMS / Game Gear
+
+Several hardware options support cartridge-based home consoles. The right choice depends on which systems you need and your budget.
+
+<details>
+<summary><strong>Retrode 2 — No software required</strong></summary>
+
+The Retrode 2 appears as a **USB mass storage device** — your computer mounts it like a flash drive and the ROM is directly readable. No driver or app installation required.
+
+**Supported natively (with included slots):**
+- SNES / Super Famicom
+- Sega Genesis / Mega Drive
+
+**Supported with optional adapters:**
+- N64, Game Boy (GB/GBC/GBA), Sega Master System, Game Gear, and more
+
+**Steps:**
+
+1. Insert the cartridge into the appropriate slot on the Retrode 2.
+2. Connect the Retrode 2 to your computer via USB.
+3. Your computer mounts a virtual drive — open it in Finder (macOS) or Explorer (Windows).
+4. Copy the `.sfc`, `.md`, or other ROM file directly to your computer.
+
+{% hint style="warning" %}
+The Retrode 2 is **discontinued** but available used (eBay, forums). The N64 adapter has known compatibility issues with some cartridges — CIC/lockout chips may cause partial or failed dumps. Use INLretro or OSCR for more reliable N64 dumping.
 {% endhint %}
 
 </details>
 
 <details>
-<summary><strong>Using the Retrode 2 with N64 Adapter</strong></summary>
+<summary><strong>INLretro Dumper-Programmer — Active development, NES native support</strong></summary>
 
-The optional N64 plug-in adapter for Retrode 2 allows cartridge dumping via USB mass storage, similar to SNES.
+The INLretro is actively maintained and supports a wide range of cartridge formats including NES (with native mapper support), SNES, N64, Genesis, and many others.
 
 **Steps:**
-1. Attach the N64 adapter plug-in to the Retrode 2
-2. Insert your N64 cartridge
-3. Connect to your computer — the Retrode mounts as a drive
-4. Copy the ROM file from the drive
-5. Import into Provenance
+
+1. Download the INLretro client software from [inlretro.com](https://inlretro.com).
+2. Connect the INLretro device via USB.
+3. Insert your cartridge into the appropriate adapter/slot.
+4. Open the client software and select your system.
+5. Click **Dump** to read the ROM to your computer.
+
+INLretro is especially recommended for NES — it handles many mappers and PCB variants natively.
+
+</details>
+
+<details>
+<summary><strong>Open Source Cart Reader (OSCR) — Broadest system support</strong></summary>
+
+The OSCR (by sanni) is a DIY Arduino-based cart reader that supports 50+ systems. It dumps directly to an SD card — no computer software required during the dump.
+
+**What you need:**
+- OSCR hardware (build from [GitHub](https://github.com/sanni/cartreader), or buy pre-assembled from community vendors)
+- SD card (FAT32 formatted)
+- Appropriate cart slot/adapter for your system
+
+**Steps:**
+
+1. Insert a FAT32-formatted SD card into the OSCR.
+2. Insert the game cartridge into the correct slot.
+3. Power on the OSCR and navigate the menu to select your system.
+4. Select **Dump ROM** — the file is written directly to the SD card.
+5. Transfer the SD card to your computer and copy the ROM file.
+
+{% hint style="info" %}
+The OSCR has the broadest system support of any cart reader. Community slot adapters are available for Neo Geo MVS/AES, WonderSwan, PC Engine HuCard, Atari 2600/5200/7800, and many more. Check the OSCR GitHub wiki for a full adapter list.
+{% endhint %}
 
 </details>
 
 ---
 
-### Game Boy Advance (Additional Detail)
+### Nintendo DS & 3DS
 
-GBA ROMs dump as `.gba` files. If you have save data on the cartridge you want to preserve:
+Dumping DS and 3DS cartridges requires a hacked 3DS running **GodMode9**, a powerful homebrew tool.
 
-| Action | GB Operator | GBxCart RW |
-|--------|-------------|------------|
-| Dump ROM | Yes | Yes |
-| Dump save | Yes | Yes |
-| Write save back | Yes | Yes |
-| Flash ROM back | No | Yes |
+{% hint style="warning" %}
+**Prerequisites:** Your 3DS must have custom firmware (CFW) installed before using GodMode9. Follow the complete CFW setup guide at [3ds.hacks.guide](https://3ds.hacks.guide) — this installs Luma3DS and enables homebrew. This process is outside the scope of this wiki.
+{% endhint %}
 
-To use an existing GBA save with Provenance, dump the `.sav` file and place it in the same directory as your `.gba` file with the same base filename before importing.
+<details>
+<summary><strong>GodMode9 — Dumping DS & 3DS cartridges</strong></summary>
+
+GodMode9 is a full-access file system browser for the 3DS. It can dump game cartridges to the SD card.
+
+**What you need:**
+- Nintendo 3DS with Luma3DS CFW installed
+- GodMode9 installed (typically already included with a standard CFW setup via 3ds.hacks.guide)
+- SD card with sufficient free space (3DS games can be up to 4 GB)
+
+**Steps:**
+
+1. Power off your 3DS.
+2. Insert the game cartridge you want to dump.
+3. Hold the **Start** button and power on the 3DS to boot into GodMode9.
+4. Navigate to **`[C:] GAMECART`** using the D-pad.
+5. Select the `.trim.3ds` or `.nds` file shown (this is your cartridge).
+6. Press **A** to open the options menu, then select **`Copy to 0:/gm9/out`** (or your preferred output location on the SD card).
+7. Wait for the dump to complete, then power off the 3DS.
+8. Remove the SD card and transfer the dumped ROM file to your computer.
+
+For **DS cartridges** inserted into a 3DS, the same process applies — GodMode9 will show the `.nds` file under `[C:] GAMECART`.
+
+{% hint style="info" %}
+3DS ROM dumps (`.3ds` files) may need to be decrypted before Provenance can use them. See the [Nintendo 3DS Guide](../../info/system-guides/3ds.md) for details on decrypted ROMs and compatible formats.
+{% endhint %}
+
+</details>
 
 ---
 
-### Other Cartridge Systems
+### Other Systems
 
-| System | Recommended Dumper | Notes |
-|--------|--------------------|-------|
-| **Game Gear** | Retrode 2 + SMS/GG adapter | Shares hardware with SMS |
-| **Sega Master System** | Retrode 2 + SMS/GG adapter | |
-| **Atari 2600 / 7800** | INLretro Dumper | Atari adapters available |
-| **TurboGrafx-16 / PC Engine** | INLretro Dumper + HuCard adapter | |
-| **Neo Geo Pocket** | Specialized dumpers (limited availability) | Community-built options exist |
-| **WonderSwan** | Specialized community dumpers | Rare hardware |
+<details>
+<summary><strong>Other systems with OSCR adapter support</strong></summary>
+
+The OSCR ([GitHub](https://github.com/sanni/cartreader)) supports adapters for many additional systems:
+
+| System | Method | Notes |
+|---|---|---|
+| **Neo Geo MVS / AES** | OSCR with Neo Geo adapter | MVS (arcade) and AES (home) cartridges |
+| **Atari 2600 / 5200 / 7800** | INLretro or OSCR with Atari adapter | Check INLretro system support page |
+| **WonderSwan / WonderSwan Color** | OSCR with WonderSwan adapter | Community-built adapter |
+| **PC Engine / TurboGrafx-16 HuCard** | OSCR with PCE adapter | HuCard only (not CD-ROM²) |
+| **Sega Master System / Game Gear** | Retrode 2 adapter or OSCR | Both use similar cartridge pinouts |
+
+For systems not listed here, search the OSCR GitHub issues and wiki — the community frequently adds new adapter designs.
+
+</details>
 
 ---
 

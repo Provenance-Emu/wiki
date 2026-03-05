@@ -265,3 +265,11 @@ insideGadgets
 DreamConn
 Tool64
 64drive
+HuCard
+sanni
+lesserkuma
+myshopify
+FAT32
+Epilogue
+cartreader
+pinouts
