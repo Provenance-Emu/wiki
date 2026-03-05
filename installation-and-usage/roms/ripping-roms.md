@@ -520,29 +520,28 @@ Controller Pak saves require a dedicated tool — search GBAtemp for current N64
 
 ## Format Conversion
 
-After dumping, you may want to convert disc images to more efficient formats, or create playlists for multi-disc games.
-
-### Converting to CHD
-
-**CHD** (Compressed Hunks of Data) is the recommended format for CD/DVD-based games in Provenance. It reduces file size by 40–70% while preserving perfect accuracy.
-
-**Tool:** `chdman` (part of MAME tools, cross-platform)
-
-**Common conversions:**
-
-| Input Format | Command |
-|-------------|---------|
-| `.bin` + `.cue` (CD) → `.chd` | `chdman createcd -i game.cue -o game.chd` |
-| `.iso` (CD-based) → `.chd` | `chdman createcd -i game.iso -o game.chd` |
-| `.iso` (DVD-based, e.g. PS2) → `.chd` | `chdman createdvd -i game.iso -o game.chd` |
-| `.gdi` → `.chd` (Dreamcast) | `chdman createcd -i game.gdi -o game.chd` |
-
-> **Tip:** Use **`createcd`** for CD / GD-ROM images (`.cue`, `.gdi`, or CD-based `.iso`), and **`createdvd`** for DVD images (most PS2 `.iso` dumps).
+When you obtain disc images from your own physical media, they may not always be in a format that Provenance accepts directly. This section covers converting between common formats.
 
 {% hint style="info" %}
-**macOS:** Install MAME tools via Homebrew: `brew install rom-tools`. The `chdman` binary is included.
-**Windows:** Download MAME binaries from mamedev.org — `chdman.exe` is in the archive.
+**Already covered elsewhere:**
+- CHD conversion (BIN/CUE → CHD): [Advanced ROM Management](advanced-management.md#chd-format-recommended)
+- UnECM (.ecm file restoration): [Formatting ROMs](formatting-roms.md#unecm)
+- Multi-file ROM archiving: [Formatting ROMs](formatting-roms.md#multi-file-roms)
 {% endhint %}
+
+### Quick Reference
+
+| Source Format | Target Format | Tool | Platform | Notes |
+|---|---|---|---|---|
+| `.bin + .cue` | `.chd` | chdman | All | See [Advanced ROM Management](advanced-management.md#chd-format-recommended) |
+| `.gdi` (Dreamcast) | `.chd` | chdman | All | `chdman createcd -i game.gdi -o game.chd` |
+| `.iso` (CD / DVD) | `.chd` | chdman | All | CD: `chdman createcd -i game.iso -o game.chd` · DVD: `chdman createdvd -i game.iso -o game.chd` |
+| `.nrg` (Nero) | `.iso` | nrg2iso | All | Free CLI tool |
+| `.mdf + .mds` (Alcohol) | `.bin + .cue` (preferred) / `.iso` (data-only) | IsoBuster / mdf2iso | Win / All | Prefer BIN/CUE for mixed-mode or audio; use ISO only for pure data discs |
+| `.cdi` (DiscJuggler) | `.gdi` | cdirip | All | Mainly for Dreamcast dumps |
+| `.bin.ecm` | `.bin` | unecm | All | See [Formatting ROMs](formatting-roms.md#unecm) |
+| `.pbp` (PSP game EBOOT) | — (no conversion) | — | All | PSP titles in `.pbp` can be used as-is |
+| `.pbp` (PSX-on-PSP EBOOT) | `.bin + .cue` | PSX2PSP | Win | For PS1 games packaged as PSP EBOOTs |
 
 ### Format Reference Table
 
@@ -558,6 +557,155 @@ After dumping, you may want to convert disc images to more efficient formats, or
 | Saturn | `.bin` + `.cue` | `.chd` |
 
 See [Formatting ROMs](formatting-roms.md) for the complete extension list for all systems.
+
+---
+
+### NRG → ISO (Nero Image Format)
+
+Nero Burning ROM creates `.nrg` disc images that are not directly usable with Provenance. Use **nrg2iso** to convert them to standard ISO files.
+
+**Install nrg2iso:**
+
+{% tabs %}
+{% tab title="macOS" %}
+```bash
+brew install nrg2iso
+```
+{% endtab %}
+{% tab title="Linux" %}
+```bash
+sudo apt install nrg2iso
+```
+{% endtab %}
+{% tab title="Windows" %}
+Download from SourceForge: search "nrg2iso" and download the Windows binary.
+{% endtab %}
+{% endtabs %}
+
+**Convert:**
+
+```bash
+nrg2iso game.nrg game.iso
+```
+
+After converting, you can import the `.iso` directly into Provenance, or convert it further to `.chd` for better compression (see [Advanced ROM Management](advanced-management.md#chd-format-recommended)).
+
+---
+
+### MDF/MDS → BIN/CUE (or ISO for data-only discs)
+
+Alcohol 120% creates `.mdf` (image data) + `.mds` (metadata) pairs. For best compatibility, convert to `.bin + .cue` (then optionally to `.chd` for compression). Only convert to `.iso` if you are sure the disc is data-only (no CD audio tracks).
+
+{% hint style="info" %}
+Saturn and other mixed-mode CD dumps often come as `.mdf + .mds`. Keep both files in the same folder and, if you run into issues, convert the dump to a standard format like BIN/CUE or CHD.
+{% endhint %}
+
+**Option 1: IsoBuster (Windows, GUI)**
+
+1. Open IsoBuster and load the `.mds` file
+2. Right-click the disc icon → **Extract CD Image** → **Extract RAW**
+3. Save as `.bin` — a `.cue` file is generated automatically
+
+**Option 2: mdf2iso (Cross-platform CLI)**
+
+```bash
+mdf2iso game.mdf game.iso
+```
+
+mdf2iso converts the MDF/MDS pair to a standard `.iso` image. For CD-based games, use `createcd` to convert the ISO to CHD; for DVD-based games, use `createdvd`:
+
+```bash
+# Install chdman first (brew install rom-tools on macOS)
+
+# CD-based ISO → CHD
+chdman createcd -i game.iso -o game.chd
+
+# DVD-based ISO → CHD
+chdman createdvd -i game.iso -o game.chd
+```
+
+---
+
+### CDI → GDI (DiscJuggler / Dreamcast)
+
+DiscJuggler `.cdi` files are a proprietary Dreamcast disc format. Use **cdirip** to extract them into a GDI layout, which can then be converted to CHD.
+
+**Install and run cdirip:**
+
+```bash
+# Download cdirip from its project page (cross-platform binary)
+cdirip game.cdi
+```
+
+This outputs track files in GDI layout (a `.gdi` file plus `.raw`/`.bin` tracks). Then convert to CHD:
+
+```bash
+chdman createcd -i "game.gdi" -o "game.chd"
+```
+
+See [Advanced ROM Management](advanced-management.md#chd-format-recommended) for full chdman documentation.
+
+---
+
+### PBP (PSP EBOOT.PBP)
+
+`.pbp` files come in two distinct types — handle them differently:
+
+**PSP games (CFW backups)**
+
+PSP games ripped from UMD typically produce `.iso` files. Provenance's PPSSPP core accepts both `.iso` and `.pbp` formats directly — no conversion needed.
+
+**PSX-on-PSP titles**
+
+Some PSP firmware allowed playing PS1 games packaged as `EBOOT.PBP`. These wrap a PS1 game inside a PSP container.
+
+Recommended approach:
+
+1. Import the `EBOOT.PBP` directly into Provenance **as a PlayStation game** (not as PSP/PPSSPP).
+
+If a particular PSX-on-PSP `.pbp` does not work correctly when imported as a PlayStation title, you can extract the underlying PS1 disc image:
+
+1. Use **PSX2PSP** (Windows) in reverse/extract mode
+2. Point it at the `EBOOT.PBP`
+3. Extract to `.bin + .cue`
+4. Import the `.bin + .cue` (or convert to `.chd`) into Provenance as a PS1 game
+
+{% hint style="warning" %}
+Do not import PSX-on-PSP `.pbp` files as PSP games — the PPSSPP core will not run PS1 content correctly. Always treat them as PlayStation titles; only extract to `.bin + .cue` as a fallback if a specific `.pbp` has issues.
+{% endhint %}
+
+---
+
+### GDI → CHD (Dreamcast)
+
+GDI is the standard ripping format for Dreamcast discs. Convert to CHD for better compression and single-file convenience.
+
+**Install chdman:**
+
+{% tabs %}
+{% tab title="macOS" %}
+```bash
+brew install rom-tools
+```
+{% endtab %}
+{% tab title="Windows" %}
+Download `chdman.exe` from the MAME project at mamedev.org.
+{% endtab %}
+{% endtabs %}
+
+**Convert:**
+
+```bash
+chdman createcd -i "game.gdi" -o "game.chd"
+```
+
+For batch conversion of a folder of Dreamcast GDI dumps:
+
+```bash
+find . -type f -name '*.gdi' -print0 | while IFS= read -r -d '' f; do
+  chdman createcd -i "$f" -o "${f%.gdi}.chd"
+done
+```
 
 ### Multi-Disc M3U Playlists
 
