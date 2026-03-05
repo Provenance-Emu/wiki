@@ -18,12 +18,11 @@
 
 * [Importing ROMs](installation-and-usage/roms/importing-roms.md)
 * [ROMs](installation-and-usage/roms/README.md)
-  * [Ripping ROMs](installation-and-usage/roms/ripping-roms.md)
+  * [Ripping ROMs from Physical Media](installation-and-usage/roms/ripping-roms.md)
   * [Formatting ROMs](installation-and-usage/roms/formatting-roms.md)
   * [Customizing ROMs](installation-and-usage/roms/customizing-roms.md)
   * [Advanced ROM Management](installation-and-usage/roms/advanced-management.md)
   * [Applying Mods / Patches](installation-and-usage/roms/mods.md)
-  * [Ripping & Dumping Physical Media](installation-and-usage/roms/ripping-roms.md)
 * [In-Game Menu](info/in-game-menu.md)
 * [Quick Continue](info/quick-continue.md)
 * [Fast Forward](info/fast-forward.md)

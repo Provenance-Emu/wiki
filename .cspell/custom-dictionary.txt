@@ -267,3 +267,11 @@ Tool64
 64drive
 PSX2PSP
 EBOOT
+HuCard
+sanni
+lesserkuma
+myshopify
+FAT32
+Epilogue
+cartreader
+pinouts
