@@ -23,13 +23,13 @@ Disc-based games require reading the raw data from optical media. The method dep
 | Standard CD-ROM drive | PS1, Sega CD, Saturn, 3DO, TG-CD, PC-FX, Neo Geo CD | Any modern optical drive |
 | DVD-ROM drive | PS2 | DVD-capable drive |
 | Specialized GD-ROM drive | Dreamcast | Yamaha CRW2200 or Plextor PX-W4012 (rare) |
-| Network dump | PS2, Dreamcast, Wii, Xbox, PSP | Softmodded console + network |
+| Network dump | PS2, Dreamcast, Wii, PSP | Softmodded console + network |
 
 ---
 
 ### Standard CD Games (PS1, Sega CD, Saturn, 3DO, TG-CD, PC-FX, Neo Geo CD)
 
-Standard CD-based games use 74-minute 700 MB optical discs readable by any modern CD-ROM drive. Use a raw ripping tool rather than a standard audio/data ripper to capture all subchannel data, which is required for copy-protection on PS1 and sector accuracy on other systems.
+Most standard CD-based games use 74–80 minute CDs (roughly 650–700 MB) readable by any modern CD-ROM drive. Use a raw ripping tool rather than a standard audio/data ripper to capture all subchannel data, which is required for copy-protection on PS1 and sector accuracy on other systems.
 
 {% tabs %}
 {% tab title="macOS" %}
@@ -243,7 +243,7 @@ See [Advanced ROM Management — CHD Format](advanced-management.md#chd-format-r
 
 ### GameCube & Wii
 
-GameCube and Wii discs use a proprietary format that standard PC drives cannot read. The recommended method is CleanRip, a homebrew application that reads discs using the console's own drive.
+GameCube and Wii discs use a proprietary format that most standard PC drives cannot read reliably. Only a few specific PC drive models/firmwares can work, and they are generally less reliable and harder to set up than using the console's own drive. The recommended method is CleanRip, a homebrew application that reads discs using the console's own drive.
 
 <details><summary><strong>CleanRip (Wii homebrew — Recommended)</strong></summary>
 
