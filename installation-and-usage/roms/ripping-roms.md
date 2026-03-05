@@ -57,8 +57,8 @@ See [GameCube & Wii Guide](../../info/system-guides/gamecube-wii.md) for folder 
 
 Dreamcast GD-ROM discs require a two-step process:
 
-1. **TOSEC/gdemu method** — use a softmod or GDEmu ODE device to dump via the `GDmenu` or similar
-2. **dcres/dreameye method** — use a broadband adapter and FTP homebrew to dump over network (see [Network / Softmod Ripping](#network--softmod-ripping) below)
+1. **GDEmu ODE method** — use a GDEmu or similar optical drive emulator device to dump via `GDmenu` or similar homebrew
+2. **Broadband Adapter + httpd-ism method** — use a broadband adapter and the `httpd-ism` FTP homebrew to dump over network (see [Network / Softmod Ripping](#network--softmod-ripping) below)
 
 Output: `.gdi` + track files, or `.chd`
 
@@ -137,7 +137,7 @@ See [GameCube & Wii Guide](../../info/system-guides/gamecube-wii.md) for Dolphin
 5. Output: folder of disc contents; use **UMDGen** or **PSP ISO Tools** to repack as `.iso` if needed
 
 {% hint style="info" %}
-PSX-on-PSP games (`.eboot.pbp` format) are a different format. Convert these back to standard PlayStation disc images (e.g. `.iso` or `.bin/.cue`) using tools such as **PSP ISO Tools** on your computer before using them with Provenance.
+PSX-on-PSP games use the `.eboot.pbp` format. Provenance natively supports `.pbp` files for PlayStation, so you may be able to use them directly. If a `.pbp` file does not load correctly, convert it back to a standard disc image (`.iso` or `.bin/.cue`) using tools such as **PSP ISO Tools** on your computer.
 {% endhint %}
 
 ### Original Xbox (Softmod)
@@ -187,7 +187,8 @@ The official Sony Memory Card Adaptor (model CECHMCA) lets a PS3 read PS1/PS2 me
 
 **Method B (Recommended) — FreeMcBoot + uLaunchELF:**
 
-<details><summary><strong>Step-by-step: Dump PS1/PS2 memory card with FreeMcBoot</strong></summary>
+<details>
+<summary><strong>Step-by-step: Dump PS1/PS2 memory card with FreeMcBoot</strong></summary>
 
 1. Boot your PS2 with the FreeMcBoot memory card and launch **uLaunchELF**
 2. Navigate to `mc0:/` for Memory Card 1 or `mc1:/` for Memory Card 2
