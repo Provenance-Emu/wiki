@@ -285,3 +285,10 @@ Epilogue
 cartreader
 pinouts
 Wiimms
+BASLUS
+GAMECART
+SYSNAND
+ciso
+createcd
+createdvd
+wbfs
