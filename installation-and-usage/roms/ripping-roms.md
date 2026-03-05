@@ -32,15 +32,15 @@ Cartridge-based games require dedicated hardware — a "cart dumper" — to read
 
 ### Hardware Overview
 
-| Hardware | Systems Supported | Approx. Price | Open Source |
-|---|---|---|---|
-| **GB Operator** (Epilogue) | GB, GBC, GBA | ~$50 | No |
-| **GBxCart RW** (insideGadgets) | GB, GBC, GBA | ~$35 | Yes |
-| **Joey Jr** (BennVenn) | GB, GBC, GBA | ~$45 | No |
-| **Retrode 2** | SNES, Genesis, N64/GB/GBA (adapters) | ~$80 used | Yes |
-| **INLretro Dumper-Programmer** | NES, SNES, N64, Genesis, GB, GBA+ | ~$80 | Yes |
-| **Open Source Cart Reader (OSCR)** | 50+ systems (NES, SNES, N64, Genesis, GB, GBA, etc.) | ~$50 DIY | Yes |
-| **GodMode9** (3DS CFW) | DS, 3DS | Free (software) | Yes |
+| Hardware | Systems Supported | Approx. Price | Open Source | URL |
+|---|---|---|---|---|
+| **GB Operator** (Epilogue) | GB, GBC, GBA | ~$50 | No | [epilogue.co](https://epilogue.co) |
+| **GBxCart RW** (insideGadgets) | GB, GBC, GBA | ~$35 | Yes | [insidegadgets.com](https://insidegadgets.com) |
+| **Joey Jr** (BennVenn) | GB, GBC, GBA | ~$45 | No | [bennvenn.myshopify.com](https://bennvenn.myshopify.com) |
+| **Retrode 2** | SNES, Genesis, N64/GB/GBA (adapters) | ~$80 used | Yes | [retrode.org](https://retrode.org) |
+| **INLretro Dumper-Programmer** | NES, SNES, N64, Genesis, GB, GBA+ | ~$80 | Yes | [inlretro.com](https://inlretro.com) |
+| **Open Source Cart Reader (OSCR)** | 50+ systems (NES, SNES, N64, Genesis, GB, GBA, etc.) | ~$50 DIY | Yes | [github.com/sanni/cartreader](https://github.com/sanni/cartreader) |
+| **GodMode9** (3DS CFW) | DS, 3DS | Free (software) | Yes | [github.com/d0k3/GodMode9](https://github.com/d0k3/GodMode9) |
 
 ---
 
