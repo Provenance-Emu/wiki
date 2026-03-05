@@ -19,6 +19,7 @@
 * [Importing ROMs](installation-and-usage/roms/importing-roms.md)
 * [ROMs](installation-and-usage/roms/README.md)
   * [Formatting ROMs](installation-and-usage/roms/formatting-roms.md)
+  * [Ripping ROMs](installation-and-usage/roms/ripping-roms.md)
   * [Customizing ROMs](installation-and-usage/roms/customizing-roms.md)
   * [Advanced ROM Management](installation-and-usage/roms/advanced-management.md)
   * [Applying Mods / Patches](installation-and-usage/roms/mods.md)
