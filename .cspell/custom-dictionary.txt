@@ -265,3 +265,5 @@ insideGadgets
 DreamConn
 Tool64
 64drive
+PSX2PSP
+EBOOT
