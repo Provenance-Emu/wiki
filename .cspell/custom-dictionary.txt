@@ -274,6 +274,8 @@ Friidump
 Rawdump
 httpd
 exFAT
+PSX2PSP
+EBOOT
 HuCard
 sanni
 lesserkuma
