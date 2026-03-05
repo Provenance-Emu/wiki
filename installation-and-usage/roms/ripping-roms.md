@@ -254,6 +254,7 @@ Use the table below to find the right method for your system, then follow the in
 | Standard CD-ROM drive | PS1, Sega CD, Saturn, 3DO, TG-CD, PC-FX, Neo Geo CD | Any modern optical drive |
 | DVD-ROM drive | PS2 | DVD-capable drive |
 | Specialized GD-ROM drive | Dreamcast | Yamaha CRW2200 or Plextor PX-W4012 (rare) |
+| Console-side dump (CleanRip) | GameCube, Wii | Wii with Homebrew Channel + SD card or USB drive |
 | Network dump | PS2, Dreamcast, PSP | Softmodded console + network |
 
 ---
