@@ -2,12 +2,12 @@
 description: How to legally dump your own cartridges and discs for use in Provenance
 ---
 
-# ROM Ripping Guide
+# Ripping & Dumping Physical Media
 
 This guide covers how to create digital backups of game cartridges and discs you **legally own**, for use in Provenance. "Ripping" or "dumping" a ROM means copying the game data from physical media onto your computer or device.
 
 {% hint style="danger" %}
-**Legal Notice:** Dumping ROMs is legal only for games you physically own, for personal use. Downloading ROMs for games you do not own is a copyright violation. Always verify the laws in your region before dumping or distributing game files. This guide covers personal backups only.
+**Legal Notice:** In some regions, creating ROM backups of games you legally own for your own personal use may be permitted, but laws and anti-circumvention rules vary by country and may change over time. Downloading or sharing ROMs for games you do not own, or distributing copyrighted game files, may infringe copyright or other rights. Always research and follow the laws in your jurisdiction before dumping, using, or distributing game files. This guide is for informational purposes and focuses on personal backups only.
 {% endhint %}
 
 ## Quick Navigation
@@ -36,7 +36,6 @@ Different hardware covers different systems. Below is a quick-reference table of
 | **INLretro Dumper** | NES, SNES, N64, Game Boy, Genesis, and more | ~$60–$90 | Widest system support, open-source |
 | **64drive** | Nintendo 64 | ~$100+ | Also a flash cart; dumping via PC software |
 | **Krikzz Dumper** | Various | Varies | From the maker of Everdrive flash carts |
-| **DreamConn / GD-ROM** | Sega Dreamcast (GD-ROM) | Varies | For dumping Dreamcast discs via the console |
 
 \*N64 support on Retrode 2 requires the optional N64 adapter.
 
@@ -194,7 +193,7 @@ N64 cartridges use a 64-pin edge connector and require a dedicated adapter.
 6. Import into Provenance
 
 {% hint style="warning" %}
-N64 ROMs come in three byte-order formats: `.z64` (big-endian), `.v64` (byte-swapped), and `.n64` (little-endian). Provenance accepts all three, but `.z64` is the standard. If your dumper produces `.v64` or `.n64`, you can convert with [Tool64](https://github.com/jkbenaim/tool64) or similar utilities.
+N64 ROMs come in three byte-order formats: `.z64` (big-endian), `.v64` (byte-swapped), and `.n64` (little-endian). Provenance supports `.z64` and `.n64`; `.z64` is the standard. If your dumper produces `.v64`, convert it to `.z64` or `.n64` with [Tool64](https://github.com/jkbenaim/tool64) or similar utilities before importing into Provenance.
 {% endhint %}
 
 </details>
@@ -258,10 +257,103 @@ See [Formatting ROMs](formatting-roms.md) for the correct file formats to use wi
 | PlayStation (PS1) | PC optical drive + ImgBurn | `.bin` + `.cue` or `.chd` |
 | PlayStation 2 | PC optical drive + ImgBurn | `.iso` or `.chd` |
 | PSP | PC optical drive or console dump | `.iso` or `.cso` |
-| GameCube | Wii console + CleanRip, or PC + Dolphin | `.iso` or `.rvz` |
-| Wii | Wii console + CleanRip | `.iso` or `.rvz` |
+| GameCube | Wii console + CleanRip, or PC + Dolphin | `.iso` |
+| Wii | Wii console + CleanRip | `.iso` or `.wbfs` |
 | Dreamcast | GD-ROM Loader on console, or specialized drive | `.gdi` or `.chd` |
 | Sega CD | PC optical drive + ImgBurn | `.bin` + `.cue` or `.chd` |
+
+### PlayStation 1 / PlayStation 2 / Sega CD / Saturn
+
+<details>
+<summary><strong>Using ImgBurn (Windows) — Recommended</strong></summary>
+
+**ImgBurn** is a free Windows disc imaging tool that produces `.bin`+`.cue` files compatible with Provenance.
+
+**What you need:**
+- A computer with a DVD/CD optical drive
+- [ImgBurn](https://www.imgburn.com/) (free, Windows)
+
+**Steps:**
+1. Insert your game disc into your optical drive
+2. Open ImgBurn and select **Create image file from disc**
+3. Set the destination folder and filename
+4. Click the **Read** button — ImgBurn reads the disc and creates the image
+5. For PS1/Sega CD: ImgBurn produces a `.bin` + `.cue` pair — keep both files together
+6. For PS2: ImgBurn produces an `.iso` file
+7. Import into Provenance (or convert to `.chd` — see [Format Conversion](#format-conversion))
+
+</details>
+
+<details>
+<summary><strong>Using cdrdao (macOS / Linux)</strong></summary>
+
+**cdrdao** is a command-line tool for ripping CD-based games. It produces accurate `.bin`+`.cue` pairs.
+
+**Install:** `brew install cdrdao` (macOS) or `sudo apt install cdrdao` (Linux)
+
+**Steps:**
+1. Insert your game disc
+2. Find your drive device: `cdrdao scanbus`
+3. Rip the disc: `cdrdao read-cd --read-raw --datafile game.bin --device /dev/cdrom game.cue`
+4. The output `.bin` + `.cue` pair is ready to import into Provenance
+
+</details>
+
+<details>
+<summary><strong>Using ddrescue for damaged discs (macOS / Linux)</strong></summary>
+
+**ddrescue** is useful when a disc has scratches and a standard rip fails. It retries bad sectors and logs progress.
+
+**Install:** `brew install ddrescue` (macOS) or `sudo apt install gddrescue` (Linux)
+
+**Steps:**
+1. Insert the disc
+2. Run: `ddrescue -d -r3 /dev/cdrom game.iso game.log`
+3. ddrescue will retry damaged sectors up to 3 times
+4. The resulting `.iso` can be imported into Provenance (PS2) or converted to `.chd`
+
+</details>
+
+### GameCube / Wii
+
+<details>
+<summary><strong>Using CleanRip on a Wii</strong></summary>
+
+**CleanRip** is a homebrew tool for the Wii that dumps GameCube and Wii discs directly to an SD card or USB drive.
+
+**What you need:**
+- A Wii with the Homebrew Channel installed
+- [CleanRip](https://github.com/emukidid/cleanrip) installed via the Homebrew Channel
+- SD card or USB drive (FAT32 formatted, 8 GB+ for Wii discs)
+
+**Steps:**
+1. Insert the game disc and launch CleanRip from the Homebrew Channel
+2. Select your output device (SD card or USB)
+3. Choose **Yes** to use a database for verification
+4. Select the disc type (GameCube or Wii) and region
+5. CleanRip dumps the disc — GameCube takes ~20 minutes; Wii discs can take 60+ minutes
+6. Transfer the `.iso` from your SD/USB to your computer and import into Provenance
+
+See the [GameCube & Wii Guide](../../info/system-guides/gamecube-wii.md) for Dolphin folder structure.
+
+</details>
+
+### Dreamcast
+
+<details>
+<summary><strong>Using GD-ROM Loader on a Dreamcast</strong></summary>
+
+Dreamcast games use GD-ROM discs, which require a Dreamcast console running a GD-ROM emulator/loader or a specialized PC GD-ROM drive to dump.
+
+**GD-ROM Loader method (via Dreamcast):**
+1. Use a Dreamcast running Dreamshell or similar homebrew
+2. Insert the GD-ROM game disc
+3. Dump the disc to an SD card as a `.gdi` image
+4. Transfer to computer and import (or convert to `.chd`)
+
+**Output format:** `.gdi` (three-file set: `.gdi` + `.raw`/`.iso` tracks) — recommended to convert to `.chd` to keep as a single file.
+
+</details>
 
 ---
 
@@ -310,6 +402,10 @@ DS card dumping via homebrew requires a homebrew-enabled DS/DSi. Refer to [dsi.c
 </details>
 
 ### PlayStation 2 (FreeMcBoot)
+
+{% hint style="warning" %}
+**PS2 support is in development** — PlayStation 2 emulation in Provenance is currently experimental and not fully available in stable releases. These instructions are provided for when PS2 support ships.
+{% endhint %}
 
 <details>
 <summary><strong>Using FreeMcBoot + Open PS2 Loader (OPL)</strong></summary>
@@ -435,12 +531,15 @@ After dumping, you may want to convert disc images to more efficient formats, or
 
 | Input Format | Command |
 |-------------|---------|
-| `.bin` + `.cue` → `.chd` | `chdman createcd -i game.cue -o game.chd` |
-| `.iso` → `.chd` | `chdman createcd -i game.iso -o game.chd` |
+| `.bin` + `.cue` (CD) → `.chd` | `chdman createcd -i game.cue -o game.chd` |
+| `.iso` (CD-based) → `.chd` | `chdman createcd -i game.iso -o game.chd` |
+| `.iso` (DVD-based, e.g. PS2) → `.chd` | `chdman createdvd -i game.iso -o game.chd` |
 | `.gdi` → `.chd` (Dreamcast) | `chdman createcd -i game.gdi -o game.chd` |
 
+> **Tip:** Use **`createcd`** for CD / GD-ROM images (`.cue`, `.gdi`, or CD-based `.iso`), and **`createdvd`** for DVD images (most PS2 `.iso` dumps).
+
 {% hint style="info" %}
-**macOS:** Install MAME tools via Homebrew: `brew install mame`. The `chdman` binary is included.
+**macOS:** Install MAME tools via Homebrew: `brew install rom-tools`. The `chdman` binary is included.
 **Windows:** Download MAME binaries from mamedev.org — `chdman.exe` is in the archive.
 {% endhint %}
 
@@ -451,8 +550,8 @@ After dumping, you may want to convert disc images to more efficient formats, or
 | PS1 | `.bin` + `.cue` | `.chd` |
 | PS2 | `.iso` | `.chd` |
 | PSP | `.iso` | `.iso` or `.cso` |
-| GameCube | `.iso` | `.rvz` or `.chd` |
-| Wii | `.iso` | `.rvz` |
+| GameCube | `.iso` | `.iso`, `.gcm`, `.gcz`, `.ciso` |
+| Wii | `.iso` | `.iso` or `.wbfs` |
 | Dreamcast | `.gdi` or `.cdi` | `.chd` |
 | Sega CD | `.bin` + `.cue` | `.chd` |
 | Saturn | `.bin` + `.cue` | `.chd` |
@@ -543,7 +642,7 @@ Dumped ROMs from your own hardware are the highest quality source — no compres
 - [Formatting ROMs](formatting-roms.md) — Correct file formats for every system
 - [BIOS Requirements](../bios-requirements.md) — BIOS files needed for certain systems
 - [Advanced ROM Management](advanced-management.md) — CHD conversion, organizing large libraries
-- [Applying Mods / Patches](mods.md) — Apply patches to your dumped ROMs
+- [Game Saves](../../info/saves.md) — Managing save files and save states in Provenance
 - [Nintendo 3DS Guide](../../info/system-guides/3ds.md) — 3DS-specific setup in Provenance
 - [GameCube & Wii Guide](../../info/system-guides/gamecube-wii.md) — Dolphin folder structure for GameCube/Wii ROMs
 

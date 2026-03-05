@@ -261,3 +261,7 @@ softmodded
 GD-ROM
 OSCR
 hakchi
+insideGadgets
+DreamConn
+Tool64
+64drive
