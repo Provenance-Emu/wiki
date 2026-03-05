@@ -253,7 +253,7 @@ Use the table below to find the right method for your system, then follow the in
 | Standard CD-ROM drive | PS1, Sega CD, Saturn, 3DO, TG-CD, PC-FX, Neo Geo CD | Any modern optical drive |
 | DVD-ROM drive | PS2 | DVD-capable drive |
 | Specialized GD-ROM drive | Dreamcast | Yamaha CRW2200 or Plextor PX-W4012 (rare) |
-| Network dump | PS2, Dreamcast, Wii, PSP | Softmodded console + network |
+| Network dump | PS2, Dreamcast, PSP | Softmodded console + network |
 
 ---
 
@@ -378,7 +378,7 @@ Typical flow:
 - Connect from your computer (often via a small helper app or web interface) and save the disc image to storage.
 - Import the resulting ISO/CSO (or other supported format) into Provenance as you would any other ROM.
 
-For consoles without a reliable PC-compatible drive (like Dreamcast GD‑ROM or UMD-based systems), network dumping is often the most practical way to get a complete image of your own discs. See [Network / Softmod Ripping](#network--softmod-ripping) below for step-by-step instructions.
+For consoles without a reliable PC-compatible drive (like Dreamcast GD-ROM or UMD-based systems), network dumping is often the most practical way to get a complete image of your own discs. See [Network / Softmod Ripping](#network--softmod-ripping) below for step-by-step instructions.
 
 ---
 

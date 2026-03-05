@@ -274,5 +274,3 @@ Friidump
 Rawdump
 httpd
 exFAT
-GDI
-gdi
