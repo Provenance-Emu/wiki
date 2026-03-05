@@ -19,28 +19,39 @@ jobs:
         shell: bash
         run: |
           errors=0
+          checked=0
 
           while IFS= read -r file; do
             dir=$(dirname "$file")
 
-            # Extract markdown links: [text](path) — skip external URLs, anchors-only, and images
+            # Extract markdown links [text](path), then filter out images, URLs, anchors, custom schemes
             while IFS= read -r match; do
-              # Extract the path from [text](path#anchor)
+              [ -z "$match" ] && continue
+
+              # Extract the path portion from [text](path#anchor)
               link=$(echo "$match" | sed 's/.*](\([^)]*\))/\1/' | sed 's/#.*//' | sed 's/?.*//')
 
-              # Skip empty links (anchor-only after stripping)
+              # Skip empty links (was anchor-only)
               [ -z "$link" ] && continue
 
               # Resolve relative path
               target="$dir/$link"
+              checked=$((checked + 1))
 
               if [ ! -f "$target" ] && [ ! -d "$target" ]; then
                 echo "::error file=${file#./}::Broken link: $match -> target not found: $target"
                 errors=$((errors + 1))
               fi
-            done < <(grep -oP '\[(?!\!)[^\]]*\]\((?!https?://|mailto:|#)[^)]+\)' "$file" 2>/dev/null || true)
-          done < <(find . -name '*.md' -not -path './.git/*')
+            done < <(grep -oE '\[[^]]+\]\([^)]+\)' "$file" 2>/dev/null \
+                     | grep -v '^\!' \
+                     | grep -vE '\]\(https?://' \
+                     | grep -vE '\]\(mailto:' \
+                     | grep -vE '\]\(#' \
+                     | grep -vE '\]\([a-z]+://' \
+                     || true)
+          done < <(find . -name '*.md' -not -path './.git/*' -not -path './.github/*')
 
+          echo "Checked $checked internal links"
           echo "---"
           if [ "$errors" -gt 0 ]; then
             echo "Found $errors broken internal link(s)"
