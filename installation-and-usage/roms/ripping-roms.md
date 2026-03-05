@@ -18,12 +18,6 @@ This guide covers how to create digital backups of game cartridges and discs you
 - [Save Data Dumping](#save-data-dumping) — GB/GBA saves, PS1 memory cards, PS2, N64
 - [Format Conversion](#format-conversion) — CHD, M3U playlists, format table
 
-**Jump to:**
-- [Cart Ripping](#cart-ripping)
-- [Disc Ripping](#disc-ripping)
-- [Network / Softmod Ripping](#network--softmod-ripping)
-- [Save Data Dumping](#save-data-dumping)
-
 ---
 
 ## Cartridge Dumping
