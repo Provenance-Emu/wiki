@@ -101,7 +101,7 @@ The Joey Jr is a compact USB dumper from BennVenn. It uses BennVenn's own compan
 
 **Steps:**
 
-1. Download the BennVenn software from the product page (check for the latest version).
+1. Download the BennVenn software from [bennvenn.myshopify.com](https://bennvenn.myshopify.com) (check the product page for the latest version).
 2. Insert your cartridge and connect the Joey Jr via USB.
 3. Open the companion app and select **Dump ROM**.
 4. Save the resulting file to your computer.
@@ -221,11 +221,30 @@ For **DS cartridges** inserted into a 3DS, the same process applies — GodMode9
 
 ---
 
+## PSP (UMD)
+
+PSP games use Universal Media Disc (UMD), an optical format — not a cartridge. Dumping UMDs requires a PSP with custom firmware (CFW) such as PRO CFW, ME CFW, or ARK.
+
+{% hint style="warning" %}
+CFW installation on PSP is outside the scope of this guide. See the PSP hacking communities for CFW setup instructions. For additional UMD dumping methods (FTP, Recovery Menu), see the [PSP + Custom Firmware](#psp--custom-firmware) section below.
+{% endhint %}
+
+With CFW installed:
+
+1. Insert your UMD into the PSP.
+2. Launch a UMD-dump homebrew such as **ISO Dumper** (available via the Homebrew Browser or PSP homebrew sites).
+3. Dump the UMD — the resulting `.iso` file is saved to the `ISO/` folder on your Memory Stick.
+4. Connect the PSP to your computer via USB (hold **Select** in XMB to enter USB mode) and copy the `.iso` file to your computer.
+
+The resulting `.iso` file is directly compatible with Provenance's PSP emulation (PPSSPP).
+
+---
+
 ### Other Systems
 
 <details><summary><strong>Other systems with OSCR adapter support</strong></summary>
 
-The OSCR (github.com/sanni/cartreader) supports adapters for many additional systems:
+The OSCR ([github.com/sanni/cartreader](https://github.com/sanni/cartreader)) supports adapters for many additional systems:
 
 | System | Method | Notes |
 |---|---|---|
