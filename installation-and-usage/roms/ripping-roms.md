@@ -113,17 +113,17 @@ Some consoles can dump their own media using homebrew software and networking or
 5. From the OPL main menu select **ETH disc dump** and follow the prompts.
 6. The disc image is written directly to your PC's shared folder.
 
-**Method B — USB via uLaunchELF:**
+**Method B — USB via uLaunchELF (files only, not ISO dump):**
 
 1. From FreeMcBoot, launch **uLaunchELF**.
 2. Navigate to `cdfs:/` (the inserted disc).
 3. Copy the contents to `mass:/` (USB storage).
 
-Output: `.iso`
+Output: extracted disc files on USB storage (not a single `.iso` image). For a full disc image, use **Method A — ETH disc dump via OPL** or a PC-based disc ripping method.
 
 ### Dreamcast + Broadband Adapter
 
-For Dreamcast disc ripping using the console's own networking hardware, see the **Dreamcast (GD-ROM)** entry in [Disc Ripping](#2-disc-ripping) above for the recommended PC-based GD-ROM rip workflow. The Broadband Adapter can be used with tools like **dcload-ip** to transfer data over FTP once a GD-ROM rip is complete.
+For Dreamcast disc ripping, use the **Dreamcast (GD-ROM)** workflow described in [Disc Ripping](#2-disc-ripping) above, which is the recommended method for creating GD-ROM images compatible with Provenance.
 
 ### Wii + Homebrew Channel
 
@@ -159,7 +159,7 @@ Output: `.wbfs` (Wii) or `.iso` (GameCube)
 Output: `.iso`
 
 {% hint style="info" %}
-PSX-on-PSP games (PSOne Classics) are in `.pbp` format. These require conversion or can be loaded directly — see [Formatting ROMs](formatting-roms.md) for details.
+PSX-on-PSP games (PSOne Classics) are in `.pbp` format. Provenance can usually load these `.pbp` files directly; if a specific title fails, convert the `.pbp` back to a standard PlayStation disc image (`.bin`/`.cue` or `.iso`) with a PSP/PSX conversion tool before importing.
 {% endhint %}
 
 ### Original Xbox (Softmod)
@@ -250,7 +250,7 @@ Output: `.mpk` files
 ## See Also
 
 - [Formatting ROMs](formatting-roms.md) — file format conversion and naming
-- [Importing ROMs](../importing-roms.md) — how to get files into Provenance
+- [Importing ROMs](importing-roms.md) — how to get files into Provenance
 - [Game Saves](../../info/saves.md) — managing save files in Provenance
 - [GameCube & Wii Guide](../../info/system-guides/gamecube-wii.md)
 - [BIOS Requirements](../bios-requirements.md)
