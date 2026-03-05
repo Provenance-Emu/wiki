@@ -245,116 +245,266 @@ For systems not listed here, search the OSCR GitHub issues and wiki — the comm
 
 ## Disc Ripping
 
-CD and DVD-based systems require different methods. In most cases, you rip directly from the disc using a computer's optical drive or via the game console itself.
+Use the table below to find the right method for your system, then follow the instructions in the relevant section.
+
+### Equipment Overview
+
+| Method | Works For | What You Need |
+|---|---|---|
+| Standard CD-ROM drive | PS1, Sega CD, Saturn, 3DO, TG-CD, PC-FX, Neo Geo CD | Any modern optical drive |
+| DVD-ROM drive | PS2 | DVD-capable drive |
+| Specialized GD-ROM drive | Dreamcast | Yamaha CRW2200 or Plextor PX-W4012 (rare) |
+| Console-side dump (CleanRip) | GameCube, Wii | Wii with Homebrew Channel + SD card or USB drive |
+| Network dump | PS2, Dreamcast, PSP | Softmodded console + network |
 
 {% hint style="info" %}
-See [Formatting ROMs](formatting-roms.md) for the correct file formats to use with Provenance after ripping.
+**Xbox not supported:** Original Xbox backups are out of scope for this guide — Provenance does not support the original Xbox.
 {% endhint %}
 
-**Quick overview by system:**
+---
 
-| System | Method | Output Format |
-|--------|--------|---------------|
-| PlayStation (PS1) | PC optical drive + ImgBurn | `.bin` + `.cue` or `.chd` |
-| PlayStation 2 | PC optical drive + ImgBurn | `.iso` or `.chd` |
-| PSP | PC optical drive or console dump | `.iso` or `.cso` |
-| GameCube | Wii console + CleanRip, or PC + Dolphin | `.iso` |
-| Wii | Wii console + CleanRip | `.iso` or `.wbfs` |
-| Dreamcast | GD-ROM Loader on console, or specialized drive | `.gdi` or `.chd` |
-| Sega CD | PC optical drive + ImgBurn | `.bin` + `.cue` or `.chd` |
+### Standard CD Games (PS1, Sega CD, Saturn, 3DO, TG-CD, PC-FX, Neo Geo CD)
 
-### PlayStation 1 / PlayStation 2 / Sega CD / Saturn
+Most CD-based games can be ripped with any standard optical drive. The output is a `.bin + .cue` pair — see [Formatting ROMs — Multi-file ROMs](formatting-roms.md#multi-file-roms) for how to package them for import.
 
-<details>
-<summary><strong>Using ImgBurn (Windows) — Recommended</strong></summary>
+{% tabs %}
+{% tab title="macOS" %}
+**Tool:** cdrdao (free, command-line)
 
-**ImgBurn** is a free Windows disc imaging tool that produces `.bin`+`.cue` files compatible with Provenance.
+1. Install [Homebrew](https://brew.sh) if you haven't already.
+2. Install cdrdao:
+   ```bash
+   brew install cdrdao
+   ```
+3. Insert the disc and find the device path:
+   ```bash
+   drutil status
+   ```
+   Note the device (typically `/dev/disk2`).
+4. Rip the disc as a raw image:
+   ```bash
+   cdrdao read-cd --read-raw --datafile "game.bin" --device /dev/disk2 --driver generic-mmc-raw game.toc
+   ```
+5. Convert the `.toc` file to `.cue`:
+   ```bash
+   toc2cue game.toc game.cue
+   ```
 
-**What you need:**
-- A computer with a DVD/CD optical drive
-- [ImgBurn](https://www.imgburn.com/) (free, Windows)
+You now have `game.bin` and `game.cue`. Archive both in a single `.zip` or `.7z` before importing.
+{% endtab %}
+
+{% tab title="Windows" %}
+**Tool:** ImgBurn (free GUI)
+
+1. Download and install [ImgBurn](https://www.imgburn.com).
+2. Insert the disc.
+3. Select **Mode → Read Disc**.
+4. Set the **Destination** to a folder on your PC.
+5. For PlayStation 1 discs, click the **Options** tab and set:
+   - **Read Sub Channel Data from Disc:** Yes
+   - **Type:** User Data + Sub-Channel Q
+6. Click the **Read** button (disc-to-folder icon).
+
+ImgBurn outputs a `.bin` and `.cue` file. Archive both before importing into Provenance.
+{% endtab %}
+
+{% tab title="Linux" %}
+**Tool:** cdrdao (same commands as macOS)
+
+1. Install cdrdao via your package manager:
+   ```bash
+   sudo apt install cdrdao      # Debian/Ubuntu
+   sudo dnf install cdrdao      # Fedora
+   ```
+2. Find your disc device:
+   ```bash
+   lsblk
+   ```
+   It's usually `/dev/sr0`.
+3. Rip the disc:
+   ```bash
+   cdrdao read-cd --read-raw --datafile game.bin --device /dev/sr0 --driver generic-mmc-raw game.toc
+   toc2cue game.toc game.cue
+   ```
+
+For scratched or damaged **data-only** discs, `ddrescue` can attempt a more robust read. This produces a single-track `.bin`; for mixed-mode or audio CDs (PS1, Sega CD, Saturn), use `cdrdao` above instead:
+```bash
+sudo apt install gddrescue
+ddrescue -d -r3 /dev/sr0 game.bin game.log
+```
+{% endtab %}
+{% endtabs %}
+
+{% hint style="info" %}
+**Verify your rip with Redump:** Calculate the MD5 hash of your `.bin` file (`md5 game.bin` on macOS, `md5sum game.bin` on Linux, `certutil -hashfile game.bin MD5` on Windows) and search [redump.org](https://redump.org) to confirm it matches the known-good dump. A matching hash means your rip is accurate.
+{% endhint %}
+
+{% hint style="warning" %}
+**TurboGrafx-CD / PC Engine CD:** These systems require a System Card BIOS file to run. See [BIOS Requirements](../bios-requirements.md) for the correct files.
+{% endhint %}
+
+**Saturn multi-disc games:** Saturn titles that span multiple discs need an `.m3u` playlist file. See [Formatting ROMs — Multi-disc Games](formatting-roms.md#multi-disc-games) for instructions.
+
+**Sega CD:** All three regional BIOS files are required (USA, Europe, Japan) depending on the game's region. See [BIOS Requirements](../bios-requirements.md).
+
+---
+
+### PlayStation 2
+
+PS2 discs are standard DVDs and can be ripped with a DVD-ROM drive. Dual-layer discs (larger games) may fail on macOS optical drives — a USB DVD drive or network dump is more reliable.
+
+**Method A: DVD drive on PC**
+
+{% tabs %}
+{% tab title="Windows" %}
+Use ImgBurn in **Mode → Read Disc**. Output format: **ISO**. No special subchannel settings needed.
+{% endtab %}
+{% tab title="Linux" %}
+```bash
+# Install (Debian/Ubuntu): sudo apt install gddrescue
+# Then run:
+ddrescue -d -r3 /dev/sr0 game.iso game.log
+```
+`ddrescue` handles read errors better than a simple `dd`, which is important for dual-layer discs.
+{% endtab %}
+{% endtabs %}
+
+**Method B: Network dump (OPL/FreeMcBoot)**
+
+If you have a softmodded PS2 running FreeMcBoot and Open PS2 Loader (OPL), you can dump discs over the network without a PC DVD drive. See the [Network / Softmod Ripping](#network--softmod-ripping) section below.
+
+Output format for PS2: `.iso`
+
+### Network Dump (PS2, Dreamcast, PSP)
+
+A *network dump* means using a modified console to stream game data over your local network to a computer, instead of reading the disc directly with a PC drive.
+
+Typical flow:
+
+- Softmod or homebrew-enable your console (e.g. FreeMcBoot/OPL on PS2, homebrew loader on Dreamcast/PSP).
+- Run a dumping utility on the console that exposes the disc or UMD over the network.
+- Connect from your computer (often via a small helper app or web interface) and save the disc image to storage.
+- Import the resulting ISO/CSO (or other supported format) into Provenance as you would any other ROM.
+
+For consoles without a reliable PC-compatible drive (like Dreamcast GD-ROM or UMD-based systems), network dumping is often the most practical way to get a complete image of your own discs. See [Network / Softmod Ripping](#network--softmod-ripping) below for step-by-step instructions.
+
+---
+
+### Dreamcast GD-ROM
+
+{% hint style="danger" %}
+**GD-ROM is a proprietary format.** Standard PC optical drives can only read the low-density area (~1 GB) of a GD-ROM disc — the game data lives in the high-density area and is **inaccessible** to ordinary drives. You need a specialized drive or a network dump method.
+{% endhint %}
+
+**Method A: Specialized GD-ROM drive (rare)**
+
+Two drives are known to work with GD-ROM ripping tools:
+- **Yamaha CRW2200** — most common recommended drive
+- **Plextor PX-W4012** — also works
+
+These drives typically cost $100–$300+ and are hard to find. If you have one, use **GD-ROM Explorer** or other compatible GD-ROM ripping software with the appropriate PC tools.
+
+**Method B: Network dump via httpd-ism (recommended)**
+
+<details><summary><strong>httpd-ism network dump method</strong></summary>
+
+This method uses an original Dreamcast equipped with the official Broadband Adapter and the **httpd-ism** boot disc to serve GD-ROM data over HTTP.
+
+**Requirements:**
+- Dreamcast console
+- Dreamcast Broadband Adapter (HIT-0400)
+- httpd-ism boot disc (burned CD-R)
+- PC on the same local network
 
 **Steps:**
-1. Insert your game disc into your optical drive
-2. Open ImgBurn and select **Create image file from disc**
-3. Set the destination folder and filename
-4. Click the **Read** button — ImgBurn reads the disc and creates the image
-5. For PS1/Sega CD: ImgBurn produces a `.bin` + `.cue` pair — keep both files together
-6. For PS2: ImgBurn produces an `.iso` file
-7. Import into Provenance (or convert to `.chd` — see [Format Conversion](#format-conversion))
+1. Boot the httpd-ism disc on the Dreamcast.
+2. Note the IP address displayed on screen.
+3. On your PC, open a browser and navigate to `http://[dreamcast-ip]/` — you'll see a file listing of the GD-ROM tracks.
+4. Download all track files (typically `track01.iso`, `track02.raw`, etc.) to a folder on your PC.
+5. Download the accompanying `.gdi` descriptor file.
+
+**Alternative:** **DreamShell** is a more modern alternative that also supports network dumping via SD card or network adapter. Consult the DreamShell documentation for setup details.
 
 </details>
 
-<details>
-<summary><strong>Using cdrdao (macOS / Linux)</strong></summary>
+**Output format:** `.gdi` (a descriptor file referencing multiple track files)
 
-**cdrdao** is a command-line tool for ripping CD-based games. It produces accurate `.bin`+`.cue` pairs.
+After dumping, convert to a single `.chd` file for easier import:
 
-**Install:** `brew install cdrdao` (macOS) or `sudo apt install cdrdao` (Linux)
+```bash
+chdman createcd -i game.gdi -o game.chd
+```
+
+See [Advanced ROM Management — CHD Format](advanced-management.md#chd-format-recommended) for more on `chdman`.
+
+---
+
+### GameCube & Wii
+
+Nintendo optical discs use a proprietary format that standard PC drives cannot read directly. **CleanRip** is the recommended homebrew tool that runs on the Wii itself.
+
+<details><summary><strong>CleanRip (recommended) — dump from the console</strong></summary>
+
+**Requirements:**
+- Wii console with the **Homebrew Channel** installed
+- SD card or USB drive formatted as **FAT32** with 8+ GB free. FAT32 is required — the Wii cannot read exFAT or NTFS. CleanRip automatically splits Wii ISOs (~4.7 GB) into 4 GB chunks to work around FAT32's file size limit; the split files can be rejoined with a tool like **wit** (Wiimms ISO Tools) after transfer to your PC.
+- CleanRip homebrew app
 
 **Steps:**
-1. Insert your game disc
-2. Find your drive device: `cdrdao scanbus`
-3. Rip the disc: `cdrdao read-cd --read-raw --datafile game.bin --device /dev/cdrom game.cue`
-4. The output `.bin` + `.cue` pair is ready to import into Provenance
+1. Download CleanRip and copy it to your SD card: `SD:/apps/CleanRip/boot.dol`
+2. Boot the Wii and launch the Homebrew Channel.
+3. Launch **CleanRip**.
+4. Select your dump destination (SD or USB).
+5. When prompted, insert the GameCube or Wii disc.
+6. Select the disc type and confirm settings (leave defaults unless you know otherwise).
+7. CleanRip will dump the disc — allow 10–40 minutes depending on disc size.
+8. Copy the resulting `.iso` file to your PC.
 
 </details>
 
-<details>
-<summary><strong>Using ddrescue for damaged discs (macOS / Linux)</strong></summary>
+<details><summary><strong>PC drive alternative (less reliable)</strong></summary>
 
-**ddrescue** is useful when a disc has scratches and a standard rip fails. It retries bad sectors and logs progress.
+Specific LG and Asus drives with certain firmware can read Wii/GameCube discs using raw read commands.
 
-**Install:** `brew install ddrescue` (macOS) or `sudo apt install gddrescue` (Linux)
+**Known compatible drives (partial list):**
+- LG GH22NS30 (with patched firmware)
+- Asus DRW-24B1ST
 
-**Steps:**
-1. Insert the disc
-2. Run: `ddrescue -d -r3 /dev/cdrom game.iso game.log`
-3. ddrescue will retry damaged sectors up to 3 times
-4. The resulting `.iso` can be imported into Provenance (PS2) or converted to `.chd`
+**Tools:**
+- **Friidump** — open-source, reads via raw SCSI commands
+- **Rawdump** — Windows-only alternative
 
-</details>
-
-### GameCube / Wii
-
-<details>
-<summary><strong>Using CleanRip on a Wii</strong></summary>
-
-**CleanRip** is a homebrew tool for the Wii that dumps GameCube and Wii discs directly to an SD card or USB drive.
-
-**What you need:**
-- A Wii with the Homebrew Channel installed
-- [CleanRip](https://github.com/emukidid/cleanrip) installed via the Homebrew Channel
-- SD card or USB drive (FAT32 formatted, 8 GB+ for Wii discs)
-
-**Steps:**
-1. Insert the game disc and launch CleanRip from the Homebrew Channel
-2. Select your output device (SD card or USB)
-3. Choose **Yes** to use a database for verification
-4. Select the disc type (GameCube or Wii) and region
-5. CleanRip dumps the disc — GameCube takes ~20 minutes; Wii discs can take 60+ minutes
-6. Transfer the `.iso` from your SD/USB to your computer and import into Provenance
-
-See the [GameCube & Wii Guide](../../info/system-guides/gamecube-wii.md) for Dolphin folder structure.
+This method is less reliable than CleanRip, requires finding a compatible drive, and may fail on dual-layer Wii discs. CleanRip is strongly preferred.
 
 </details>
 
-### Dreamcast
+Output format: `.iso` (for both GameCube and Wii)
 
-<details>
-<summary><strong>Using GD-ROM Loader on a Dreamcast</strong></summary>
+For folder structures and further configuration, see the [GameCube & Wii system guide](../../info/system-guides/gamecube-wii.md).
 
-Dreamcast games use GD-ROM discs, which require a Dreamcast console running a GD-ROM emulator/loader or a specialized PC GD-ROM drive to dump.
+---
 
-**GD-ROM Loader method (via Dreamcast):**
-1. Use a Dreamcast running Dreamshell or similar homebrew
-2. Insert the GD-ROM game disc
-3. Dump the disc to an SD card as a `.gdi` image
-4. Transfer to computer and import (or convert to `.chd`)
+### PSP UMD
 
-**Output format:** `.gdi` (three-file set: `.gdi` + `.raw`/`.iso` tracks) — recommended to convert to `.chd` to keep as a single file.
+UMD discs cannot be read by a standard PC drive. Dumping requires **Custom Firmware (CFW)** running on the PSP itself. See the [Network / Softmod Ripping](#network--softmod-ripping) section for details.
 
-</details>
+---
+
+### Other Disc Systems
+
+| System | Method | Notes |
+|---|---|---|
+| **3DO** | Standard CD drive | Same as PS1 section above. Output: `.bin + .cue` |
+| **Neo Geo CD** | Standard CD drive | Same as PS1 section above. Output: `.bin + .cue` |
+| **PC Engine CD / TurboGrafx-CD** | Standard CD drive | Same as PS1 section above. Requires System Card BIOS — see [BIOS Requirements](../bios-requirements.md) |
+| **PC-FX** | Standard CD drive | Same as PS1 section above. Requires PC-FX BIOS — see [BIOS Requirements](../bios-requirements.md) |
+| **Sega CD / Mega CD** | Standard CD drive | Same as PS1 section above. All 3 regional BIOS files required — see [BIOS Requirements](../bios-requirements.md) |
+
+---
+
+{% hint style="info" %}
+After ripping, convert disc images to CHD format for smaller files and single-file convenience. See [Advanced ROM Management](advanced-management.md#chd-format-recommended) for chdman commands.
+{% endhint %}
 
 ---
 

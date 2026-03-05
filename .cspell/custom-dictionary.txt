@@ -239,6 +239,7 @@ Epilogue
 Everdrive
 CleanRip
 Dreamshell
+DreamShell
 FreeMcBoot
 uLaunchELF
 MemcardRex
@@ -258,6 +259,7 @@ UMD
 GDROM
 softmod
 softmodded
+Softmodded
 GD-ROM
 OSCR
 hakchi
@@ -265,6 +267,13 @@ insideGadgets
 DreamConn
 Tool64
 64drive
+certutil
+hashfile
+Plextor
+Friidump
+Rawdump
+httpd
+exFAT
 PSX2PSP
 EBOOT
 HuCard
@@ -275,3 +284,4 @@ FAT32
 Epilogue
 cartreader
 pinouts
+Wiimms
