@@ -148,7 +148,7 @@ The INLretro is actively maintained and supports a wide range of cartridge forma
 
 **Steps:**
 
-1. Download the INLretro client software from inlretro.com.
+1. Download the INLretro client software from [inlretro.com](https://inlretro.com).
 2. Connect the INLretro device via USB.
 3. Insert your cartridge into the appropriate adapter/slot.
 4. Open the client software and select your system.
