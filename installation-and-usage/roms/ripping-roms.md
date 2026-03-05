@@ -257,6 +257,10 @@ Use the table below to find the right method for your system, then follow the in
 | Console-side dump (CleanRip) | GameCube, Wii | Wii with Homebrew Channel + SD card or USB drive |
 | Network dump | PS2, Dreamcast, PSP | Softmodded console + network |
 
+{% hint style="info" %}
+**Xbox not supported:** Original Xbox backups are out of scope for this guide — Provenance does not support the original Xbox.
+{% endhint %}
+
 ---
 
 ### Standard CD Games (PS1, Sega CD, Saturn, 3DO, TG-CD, PC-FX, Neo Geo CD)
@@ -441,7 +445,7 @@ Nintendo optical discs use a proprietary format that standard PC drives cannot r
 
 **Requirements:**
 - Wii console with the **Homebrew Channel** installed
-- SD card or USB drive with 4+ GB free. Use **exFAT** formatting for Wii disc dumps — FAT32's 4 GB file size limit will cause single-layer Wii ISOs (~4.7 GB) to be split into parts. CleanRip can reassemble split files, but exFAT avoids the issue entirely.
+- SD card or USB drive formatted as **FAT32** with 8+ GB free. FAT32 is required — the Wii cannot read exFAT or NTFS. CleanRip automatically splits Wii ISOs (~4.7 GB) into 4 GB chunks to work around FAT32's file size limit; the split files can be rejoined with a tool like **wit** (Wiimms ISO Tools) after transfer to your PC.
 - CleanRip homebrew app
 
 **Steps:**
