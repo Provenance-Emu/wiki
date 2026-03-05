@@ -274,3 +274,11 @@ Friidump
 Rawdump
 httpd
 exFAT
+HuCard
+sanni
+lesserkuma
+myshopify
+FAT32
+Epilogue
+cartreader
+pinouts
