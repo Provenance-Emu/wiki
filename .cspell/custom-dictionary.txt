@@ -256,7 +256,5 @@ GDROM
 softmod
 softmodded
 GD-ROM
-unecm
 OSCR
-chdman
 hakchi

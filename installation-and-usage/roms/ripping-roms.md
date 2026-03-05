@@ -6,7 +6,7 @@ description: How to legally dump your own cartridges and discs for use in Proven
 
 This guide covers how to create digital backups of game cartridges and discs you **legally own**, for use in Provenance. "Ripping" or "dumping" a ROM means copying the game data from physical media onto your computer or device.
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 **Legal Notice:** Dumping ROMs is legal only for games you physically own, for personal use. Downloading ROMs for games you do not own is a copyright violation. Always verify the laws in your region before dumping or distributing game files. This guide covers personal backups only.
 {% endhint %}
 
@@ -14,8 +14,9 @@ This guide covers how to create digital backups of game cartridges and discs you
 
 - [Cartridge Dumping](#cartridge-dumping) — Game Boy, GBA, NES, SNES, N64, Genesis, and more
 - [Disc Ripping](#disc-ripping) — PlayStation, PS2, PSP, GameCube, Wii, Dreamcast
-- [Handheld Cards](#handheld-cards) — DS, 3DS game cards
-- [After Dumping](#after-dumping) — What to do with your files
+- [Network / Softmod Ripping](#network--softmod-ripping) — 3DS, NDS, PS2, SNES/NES Classic
+- [Save Data Dumping](#save-data-dumping) — GB/GBA saves, PS1 memory cards, PS2, N64
+- [Format Conversion](#format-conversion) — CHD, M3U playlists, format table
 
 ---
 
@@ -247,7 +248,7 @@ To use an existing GBA save with Provenance, dump the `.sav` file and place it i
 CD and DVD-based systems require different methods. In most cases, you rip directly from the disc using a computer's optical drive or via the game console itself.
 
 {% hint style="info" %}
-Disc ripping is covered in detail in the **[Disc Ripping Guide](disc-ripping.md)** (coming soon). See [Formatting ROMs](formatting-roms.md) for the correct file formats to use with Provenance.
+See [Formatting ROMs](formatting-roms.md) for the correct file formats to use with Provenance after ripping.
 {% endhint %}
 
 **Quick overview by system:**
@@ -264,21 +265,215 @@ Disc ripping is covered in detail in the **[Disc Ripping Guide](disc-ripping.md)
 
 ---
 
-## Handheld Cards
+## Network / Softmod Ripping
 
-### Nintendo DS
-
-DS game cards can be dumped using a DS/DSi console with homebrew, or with dedicated hardware. This is more complex than cartridge dumping and requires a flashcard for console-based methods.
-
-{% hint style="warning" %}
-DS card dumping via homebrew requires a modded or homebrew-enabled DS/DSi console. Refer to [ds-homebrew.com](https://dsi.cfw.guide/) for guides on enabling homebrew on your device.
-{% endhint %}
+Some systems can dump games directly from the console using custom firmware (CFW) or homebrew software — no dedicated hardware dumper required.
 
 ### Nintendo 3DS
 
-3DS ROM dumping requires a modded 3DS console running custom firmware (CFW). Use **GodMode9** on a CFW-enabled 3DS to dump game cards to `.3ds` or decrypted `.cia` format.
+<details>
+<summary><strong>Using GodMode9 on a CFW 3DS (Luma3DS)</strong></summary>
 
-Refer to the [Nintendo 3DS Guide](../../info/system-guides/3ds.md) for compatible file formats in Provenance.
+3DS ROM dumping requires a 3DS running custom firmware. The most common CFW is **Luma3DS**, installed via the [3ds.hacks.guide](https://3ds.hacks.guide/) process.
+
+**What you need:**
+- A 3DS/2DS with Luma3DS CFW installed
+- **GodMode9** (included with most CFW setups)
+
+**Steps:**
+1. Power on your 3DS and hold **Start** to boot into GodMode9
+2. Navigate to `[C:] GAMECART` if you have a physical card inserted, or `[A:] SYSNAND SD` for installed titles
+3. Select your game and choose **Copy to 0:/gm9/out**
+4. The output is a `.3ds` file (encrypted) or use the **Decrypt** option for a decrypted `.cia`
+5. Transfer the file to your computer via the SD card
+6. Import into Provenance — see the [Nintendo 3DS Guide](../../info/system-guides/3ds.md) for compatible formats
+
+</details>
+
+### Nintendo DS
+
+<details>
+<summary><strong>Dumping DS cards via flashcard</strong></summary>
+
+DS game cards require a flashcard (such as an R4) and a homebrew dumping tool on a DS or DSi.
+
+{% hint style="warning" %}
+DS card dumping via homebrew requires a homebrew-enabled DS/DSi. Refer to [dsi.cfw.guide](https://dsi.cfw.guide/) for setup guides.
+{% endhint %}
+
+**Steps:**
+1. Enable homebrew on your DS/DSi using the guide above
+2. Use a DS ROM dumping homebrew app (search GBAtemp for current tools)
+3. Dump the card to your SD card as a `.nds` file
+4. Transfer to your computer and import into Provenance
+
+</details>
+
+### PlayStation 2 (FreeMcBoot)
+
+<details>
+<summary><strong>Using FreeMcBoot + Open PS2 Loader (OPL)</strong></summary>
+
+PS2 can dump disc images to a USB drive or network share using homebrew tools via a modded memory card.
+
+**What you need:**
+- PS2 console with **FreeMcBoot** memory card
+- **Open PS2 Loader (OPL)** installed on the memory card
+- USB drive (FAT32 formatted)
+
+**Steps:**
+1. Boot your PS2 with the FreeMcBoot memory card
+2. Launch OPL from the FreeMcBoot menu
+3. Insert your PS2 disc
+4. Use OPL's **Install Game** feature to rip the disc to a USB drive or network share
+5. The output is an `.iso` file
+6. Transfer to your computer and import into Provenance (or convert to `.chd` — see [Format Conversion](#format-conversion))
+
+</details>
+
+### SNES / NES Classic (hakchi)
+
+<details>
+<summary><strong>Exporting ROMs from a Nintendo Classic Mini</strong></summary>
+
+If you own a SNES Classic or NES Classic, you can export the pre-installed ROMs using **hakchi2 CE** or **hakchi** (a console mod tool).
+
+**What you need:**
+- SNES Classic or NES Classic console
+- **hakchi2 CE** (Windows/macOS via Wine)
+- USB cable (Micro-USB for NES Classic, USB-C for SNES Classic)
+
+**Steps:**
+1. Follow the hakchi2 CE setup guide to install custom firmware on your Classic console
+2. Connect the console to your computer via USB
+3. In hakchi2 CE, go to **Synchronize selected games** to view installed ROMs
+4. Export the ROM files from the hakchi2 CE working directory (found in your Documents folder)
+5. Import the exported ROMs into Provenance
+
+{% hint style="info" %}
+SNES Classic ROMs are standard `.sfc` files; NES Classic ROMs are standard `.nes` files — both work directly in Provenance.
+{% endhint %}
+
+</details>
+
+---
+
+## Save Data Dumping
+
+Backing up save data lets you preserve progress from your original cartridges and memory cards.
+
+### Game Boy / GBA Saves
+
+| Tool | Method | Notes |
+|------|--------|-------|
+| **GB Operator** | Open Epilogue app → **Dump Save** | Easiest; saves as `.sav` |
+| **GBxCart RW** | Open FlashGBX → **Read Save** | Open-source; supports all GB/GBC/GBA |
+
+To use a dumped save in Provenance: place the `.sav` file in the same folder as your ROM with the same base filename (e.g., `Pokemon Red.gb` → `Pokemon Red.sav`).
+
+### PS1 Memory Cards
+
+<details>
+<summary><strong>Using MemcardRex</strong></summary>
+
+**MemcardRex** is a free tool for reading PS1 memory cards via a USB memory card reader.
+
+**What you need:**
+- PS1 memory card reader (e.g., a PS1-to-USB adapter)
+- [MemcardRex](https://github.com/ShendoXT/memcardrex) (Windows/Linux via Wine)
+
+**Steps:**
+1. Connect your PS1 memory card reader to your computer
+2. Open MemcardRex and select **Open Memory Card**
+3. Choose your memory card reader device
+4. MemcardRex reads the card and displays all save slots
+5. Export individual saves as `.mcd` or the full card as a memory card image
+6. Provenance can use these saves for PS1 games (place alongside the ROM)
+
+</details>
+
+### PlayStation 2 Saves
+
+PS2 save data can be exported using **Open PS2 Loader (OPL)** or **uLaunchELF** on a FreeMcBoot-enabled console, then transferred via USB.
+
+<details>
+<summary><strong>Using uLaunchELF to copy saves</strong></summary>
+
+1. Boot your PS2 with the FreeMcBoot memory card
+2. Launch **uLaunchELF** from the FreeMcBoot menu
+3. Navigate to `mc0:/` (Memory Card slot 1) or `mc1:/`
+4. Find your save folder (named by game ID, e.g., `BASLUS-12345`)
+5. Copy it to `mass:/` (USB drive) using the file manager
+6. Transfer to your computer
+
+</details>
+
+### Nintendo 64 Saves
+
+N64 saves are stored on the cartridge itself (SRAM or EEPROM) or on a Controller Pak (memory pak). Most cart dumpers also dump the save:
+
+| Dumper | Save Method |
+|--------|------------|
+| INLretro | **Dump RAM** option dumps SRAM/EEPROM alongside the ROM |
+| Retrode 2 | The mounted drive includes a `.srm` save file alongside the ROM |
+
+Controller Pak saves require a dedicated tool — search GBAtemp for current N64 Controller Pak reader projects.
+
+---
+
+## Format Conversion
+
+After dumping, you may want to convert disc images to more efficient formats, or create playlists for multi-disc games.
+
+### Converting to CHD
+
+**CHD** (Compressed Hunks of Data) is the recommended format for CD/DVD-based games in Provenance. It reduces file size by 40–70% while preserving perfect accuracy.
+
+**Tool:** `chdman` (part of MAME tools, cross-platform)
+
+**Common conversions:**
+
+| Input Format | Command |
+|-------------|---------|
+| `.bin` + `.cue` → `.chd` | `chdman createcd -i game.cue -o game.chd` |
+| `.iso` → `.chd` | `chdman createcd -i game.iso -o game.chd` |
+| `.gdi` → `.chd` (Dreamcast) | `chdman createcd -i game.gdi -o game.chd` |
+
+{% hint style="info" %}
+**macOS:** Install MAME tools via Homebrew: `brew install mame`. The `chdman` binary is included.
+**Windows:** Download MAME binaries from mamedev.org — `chdman.exe` is in the archive.
+{% endhint %}
+
+### Format Reference Table
+
+| System | Raw Dump Format | Recommended Provenance Format |
+|--------|----------------|-------------------------------|
+| PS1 | `.bin` + `.cue` | `.chd` |
+| PS2 | `.iso` | `.chd` |
+| PSP | `.iso` | `.iso` or `.cso` |
+| GameCube | `.iso` | `.rvz` or `.chd` |
+| Wii | `.iso` | `.rvz` |
+| Dreamcast | `.gdi` or `.cdi` | `.chd` |
+| Sega CD | `.bin` + `.cue` | `.chd` |
+| Saturn | `.bin` + `.cue` | `.chd` |
+
+See [Formatting ROMs](formatting-roms.md) for the complete extension list for all systems.
+
+### Multi-Disc M3U Playlists
+
+Games that span multiple discs (e.g., Final Fantasy VII) need an `.m3u` playlist file so Provenance can switch discs mid-game.
+
+**Create an `.m3u` file** in the same folder as your disc images with one line per disc:
+
+```
+Final Fantasy VII (Disc 1).chd
+Final Fantasy VII (Disc 2).chd
+Final Fantasy VII (Disc 3).chd
+```
+
+Name the `.m3u` file after the game: `Final Fantasy VII.m3u`. Import the `.m3u` file into Provenance — it will appear as a single game entry.
+
+See [Formatting ROMs](formatting-roms.md) for more details on multi-disc setup.
 
 ---
 
