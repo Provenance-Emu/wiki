@@ -16,6 +16,26 @@ permissions:
   actions: write
 
 jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete stale action_required workflow runs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Clean up action_required runs from Claude Code Agent workflow
+          # These accumulate when bot actors (Copilot) trigger pull_request_review events
+          stale_runs=$(gh api "repos/${{ github.repository }}/actions/runs?status=action_required&per_page=100" \
+            --jq '.workflow_runs[].id' 2>/dev/null || true)
+
+          [ -z "$stale_runs" ] && echo "No stale action_required runs." && exit 0
+
+          deleted=0
+          for run_id in $stale_runs; do
+            gh api "repos/${{ github.repository }}/actions/runs/$run_id" --method DELETE 2>/dev/null && deleted=$((deleted + 1)) || true
+          done
+          echo "Deleted $deleted stale action_required run(s)."
+
   poll:
     runs-on: ubuntu-latest
     steps:
@@ -36,9 +56,10 @@ jobs:
           for pr_number in $prs; do
             echo "--- Checking PR #$pr_number ---"
 
-            # Get all reviews from copilot[bot], sorted by submission time
+            # Get all reviews from Copilot, sorted by submission time
+            # Check both known Copilot bot logins
             latest_copilot_review=$(gh api "repos/${{ github.repository }}/pulls/$pr_number/reviews" \
-              --jq '[.[] | select(.user.login == "copilot[bot]")] | sort_by(.submitted_at) | last' 2>/dev/null || true)
+              --jq '[.[] | select(.user.login == "copilot-pull-request-reviewer[bot]" or .user.login == "copilot[bot]")] | sort_by(.submitted_at) | last' 2>/dev/null || true)
 
             [ -z "$latest_copilot_review" ] || [ "$latest_copilot_review" = "null" ] && echo "  No Copilot review." && continue
 
@@ -68,11 +89,26 @@ jobs:
             fi
 
             # Determine action based on review state
+            # COMMENTED with review comments = Copilot has suggestions to fix (treat like CHANGES_REQUESTED)
+            # CHANGES_REQUESTED = explicit change requests
+            # APPROVED = ready for human review
             action=""
             case "$review_state" in
               CHANGES_REQUESTED)
                 action="fix_copilot_review"
                 echo "  -> Dispatching Claude to fix Copilot review comments"
+                ;;
+              COMMENTED)
+                # Check if this COMMENTED review has associated inline comments (suggestions)
+                comment_count=$(gh api "repos/${{ github.repository }}/pulls/$pr_number/comments" \
+                  --jq "[.[] | select(.user.login == \"copilot-pull-request-reviewer[bot]\" or .user.login == \"copilot[bot]\")] | length" 2>/dev/null || echo "0")
+                if [ "$comment_count" -gt 0 ]; then
+                  action="fix_copilot_review"
+                  echo "  -> COMMENTED review with $comment_count inline comments. Dispatching Claude to fix."
+                else
+                  echo "  COMMENTED review with no inline comments — no action needed."
+                  continue
+                fi
                 ;;
               APPROVED)
                 action="copilot_approved"
@@ -87,7 +123,7 @@ jobs:
             # Count previous fix cycles to enforce loop protection (max 3)
             if [ "$action" = "fix_copilot_review" ]; then
               cycle_count=$(gh api "repos/${{ github.repository }}/pulls/$pr_number/reviews" \
-                --jq '[.[] | select(.user.login == "copilot[bot]" and .state == "CHANGES_REQUESTED")] | length' 2>/dev/null || echo "0")
+                --jq '[.[] | select((.user.login == "copilot-pull-request-reviewer[bot]" or .user.login == "copilot[bot]") and (.state == "CHANGES_REQUESTED" or .state == "COMMENTED"))] | length' 2>/dev/null || echo "0")
               if [ "$cycle_count" -ge 4 ]; then
                 echo "  Loop protection: $cycle_count Copilot review cycles. Dispatching as copilot_approved to escalate to human."
                 action="copilot_approved"

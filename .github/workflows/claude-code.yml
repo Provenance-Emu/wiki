@@ -109,14 +109,14 @@ jobs:
             ## Review Pipeline (for [Agent] PRs)
 
             After creating a PR:
-            11. Request Copilot code review: `gh pr edit <number> --add-reviewer copilot`
+            11. Request Copilot code review: `gh pr edit <number> --add-reviewer copilot-pull-request-reviewer`
             12. Post a comment noting that Copilot review has been requested
 
             When fixing review comments (changes_requested trigger):
             13. Read ALL review comments using: `gh api repos/${{ github.repository }}/pulls/<number>/reviews` and `gh api repos/${{ github.repository }}/pulls/<number>/comments`
             14. Fix every issue in a single commit
-            15. Push fixes and re-request Copilot review: `gh api -X POST repos/${{ github.repository }}/pulls/<number>/requested_reviewers -f "reviewers[]=copilot"`
-            16. Check iteration count — count reviews from copilot[bot] via `gh api`. If this is the 4th+ fix cycle, skip re-requesting Copilot and assign for human review instead
+            15. Push fixes and re-request Copilot review: `gh pr edit <number> --add-reviewer copilot-pull-request-reviewer`
+            16. Check iteration count — count reviews from copilot-pull-request-reviewer[bot] via `gh api`. If this is the 4th+ fix cycle, skip re-requesting Copilot and assign for human review instead
             17. Post a comment summarizing fixes and noting re-review requested
 
             When Copilot approves (approved trigger from copilot[bot]):
