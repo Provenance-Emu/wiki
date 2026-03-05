@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This is the documentation wiki for **Provenance**, a multi-system emulator for iOS, iPadOS, macOS, tvOS, and visionOS. The wiki is a collection of Markdown files organized with GitBook-style navigation.
+This is the documentation wiki for **Provenance**, a multi-system emulator for iOS, iPadOS, macOS, and tvOS. The wiki is a collection of Markdown files organized with GitBook-style navigation.
 
 ## Repository Structure
 
@@ -36,3 +36,12 @@ When reviewing documentation PRs, check for:
 ## Agent PRs
 
 PRs with `[Agent]` prefix are created by the Claude Code automation. Review them for content accuracy and wiki convention compliance. These PRs target the `master` branch.
+
+**Automated review cycle:** After you submit a review with change requests, Claude will automatically fix the issues and re-request your review. Focus your review on:
+- Factual accuracy of content
+- Broken or incorrect links
+- Formatting issues (broken tables, unclosed GitBook tags)
+- Missing SUMMARY.md updates for new pages
+- Content that contradicts existing wiki pages
+
+If everything looks good, approve the PR. Claude will then rebase and prepare it for human review.

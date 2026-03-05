@@ -74,6 +74,23 @@ This repo has a GitHub Actions workflow (`.github/workflows/claude-code.yml`) th
 - **Label:** Add `agent-work` to an issue to trigger the agent automatically.
 - **`/claude-fix`** in a PR comment triggers the agent to fix all pending review comments.
 
+### Agent PR Review Pipeline
+
+Agent PRs (`[Agent]` prefix) go through an automated review pipeline:
+
+1. Claude creates PR and requests **Copilot** as reviewer
+2. Copilot reviews and may request changes
+3. Claude auto-fixes all Copilot comments and re-requests review
+4. This loops up to 3 fix cycles (then escalates to human review)
+5. When Copilot approves: Claude rebases against master, adds `ready-for-review` label, assigns @JoeMatt
+6. Human does final review on a clean, pre-reviewed, rebased PR
+
+**Labels:**
+- `agent-work` — triggers Claude agent on issue creation
+- `ready-for-review` — added by Claude after Copilot approval; signals human review needed
+
+**Merge conflict resolution:** Claude resolves conflicts during rebase. For markdown content conflicts, the PR branch content takes priority.
+
 ### CI Workflows
 - **Link Checker** (`.github/workflows/link-checker.yml`) — Validates all internal markdown links on push to master and on PRs. Catches broken links before they go live.
 - **Spell Checker** (`.github/workflows/spellcheck.yml`) — Runs cspell on all markdown files. Custom dictionary in `.cspell/custom-dictionary.txt` includes emulation-specific terms.

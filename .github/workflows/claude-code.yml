@@ -29,6 +29,7 @@ jobs:
     # 4. @claude is mentioned in PR review comments
     # 5. PR review requests changes on an [Agent] PR (auto-fix)
     # 6. Comments with /claude-fix trigger fix of all review comments
+    # 7. Copilot approves an [Agent] PR (rebase + assign human reviewer)
     if: |
       (github.event_name == 'issue_comment' &&
        contains(github.event.comment.body, '@claude')) ||
@@ -45,6 +46,10 @@ jobs:
        contains(github.event.comment.body, '@claude')) ||
       (github.event_name == 'pull_request_review' &&
        github.event.review.state == 'changes_requested' &&
+       startsWith(github.event.pull_request.title, '[Agent]')) ||
+      (github.event_name == 'pull_request_review' &&
+       github.event.review.state == 'approved' &&
+       github.event.review.user.login == 'copilot[bot]' &&
        startsWith(github.event.pull_request.title, '[Agent]'))
     runs-on: ubuntu-latest
     timeout-minutes: 30
@@ -52,14 +57,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 1
+          fetch-depth: 0
 
       - name: Run Claude Code
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           github_token: ${{ github.token }}
-          claude_args: "--allowedTools 'Bash(gh issue comment:*),Bash(gh pr comment:*),Bash(gh pr create:*),Bash(gh issue edit:*),Bash(gh label:*),Bash(git:*),Read,Write,Edit,Glob,Grep'"
+          claude_args: "--allowedTools 'Bash(gh issue comment:*),Bash(gh pr comment:*),Bash(gh pr create:*),Bash(gh pr edit:*),Bash(gh pr view:*),Bash(gh issue edit:*),Bash(gh label:*),Bash(gh api:*),Bash(git:*),Read,Write,Edit,Glob,Grep'"
           prompt: |
             You are working on the Provenance wiki documentation repository.
             Read CLAUDE.md for wiki conventions and structure.
@@ -72,7 +77,8 @@ jobs:
             - Issue title: ${{ github.event.issue.title || github.event.pull_request.title }}
 
             ## Trigger Context
-            ${{ github.event_name == 'pull_request_review' && 'A reviewer requested changes on this PR. Read all review comments and fix them.' || '' }}
+            ${{ github.event_name == 'pull_request_review' && github.event.review.state == 'changes_requested' && 'A reviewer requested changes on this PR. Read all review comments and fix them.' || '' }}
+            ${{ github.event_name == 'pull_request_review' && github.event.review.state == 'approved' && github.event.review.user.login == 'copilot[bot]' && 'Copilot has approved this PR. Rebase against master, resolve any conflicts, add ready-for-review label, and assign @JoeMatt for final review.' || '' }}
             ${{ contains(github.event.comment.body || '', '/claude-fix') && 'Fix all pending review comments on this PR. Read the full review, address each comment, commit fixes, and push.' || '' }}
 
             ## User Request
@@ -92,3 +98,24 @@ jobs:
             8. Use App Store-first messaging (sideloading/building from source are "Advanced")
             9. When fixing review comments, address ALL comments in a single commit
             10. After fixing, push the changes and comment with a summary of what was fixed
+
+            ## Review Pipeline (for [Agent] PRs)
+
+            After creating a PR:
+            11. Request Copilot code review: `gh pr edit <number> --add-reviewer copilot`
+            12. Post a comment noting that Copilot review has been requested
+
+            When fixing review comments (changes_requested trigger):
+            13. Read ALL review comments using: `gh api repos/${{ github.repository }}/pulls/<number>/reviews` and `gh api repos/${{ github.repository }}/pulls/<number>/comments`
+            14. Fix every issue in a single commit
+            15. Push fixes and re-request Copilot review: `gh api -X POST repos/${{ github.repository }}/pulls/<number>/requested_reviewers -f "reviewers[]=copilot"`
+            16. Check iteration count — count reviews from copilot[bot] via `gh api`. If this is the 4th+ fix cycle, skip re-requesting Copilot and assign for human review instead
+            17. Post a comment summarizing fixes and noting re-review requested
+
+            When Copilot approves (approved trigger from copilot[bot]):
+            18. Rebase PR branch against master: `git fetch origin master && git rebase origin/master`
+            19. If rebase has conflicts, resolve them (for .md files, prefer the PR branch changes)
+            20. Force push the rebased branch: `git push --force-with-lease`
+            21. Add the `ready-for-review` label: `gh pr edit <number> --add-label ready-for-review`
+            22. Assign the repo owner for final review: `gh pr edit <number> --add-assignee JoeMatt --add-reviewer JoeMatt`
+            23. Post a summary comment: "Copilot approved. Rebased against master. Ready for final human review."
