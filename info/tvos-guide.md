@@ -1,5 +1,6 @@
 ---
-description: Complete guide to using Provenance on Apple TV and tvOS
+description: "Complete guide to Provenance on Apple TV — setup, controllers, iCloud sync, performance tips, and the best tvOS emulator experience"
+keywords: "Apple TV emulator, tvOS emulator, Provenance Apple TV, retro games Apple TV, big screen gaming, Apple TV gaming"
 ---
 
 # Provenance on Apple TV

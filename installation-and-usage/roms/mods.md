@@ -1,5 +1,5 @@
 ---
-description: 'Hacks, Patches, Translations, Mods'
+description: "Apply ROM hacks, patches, translations, and mods to your games — IPS/BPS patching, SBI files for PSX, and high-resolution N64 texture packs"
 tags: ["mod", "modding", "patching", "patches", "n64", "psx", "sbi", "ips"]
 ---
 

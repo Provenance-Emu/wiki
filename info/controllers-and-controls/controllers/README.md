@@ -1,5 +1,5 @@
 ---
-description: 'Supported, Classified and Rated Controllers/Gamepads'
+description: "Supported controllers and gamepads for Provenance — PlayStation, Xbox, MFi, 8BitDo, Steam, and iCade with compatibility ratings and setup guides"
 ---
 
 # Controllers

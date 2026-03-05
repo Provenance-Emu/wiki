@@ -1,5 +1,6 @@
 ---
-description: Complete list of 38+ supported gaming systems with compatibility and feature details
+description: "Complete list of 38+ supported gaming systems in Provenance — compatibility, cores, save support, and feature details for every system"
+keywords: "supported systems, emulator compatibility, NES, SNES, N64, PlayStation, Sega Genesis, Game Boy, GameCube, retro systems, emulation cores"
 ---
 
 # Supported Systems

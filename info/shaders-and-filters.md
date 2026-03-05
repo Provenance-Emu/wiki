@@ -1,5 +1,6 @@
 ---
-description: Visual filters and shader effects for retro games — CRT, LCD, VHS, Game Boy, and more
+description: "Visual filters and shader effects for retro games — CRT scanlines, LCD grids, VHS tape, and Game Boy effects with 7 built-in Metal filters"
+keywords: "CRT filter, shader effects, retro filter, scanlines, LCD filter, VHS effect, Metal shaders, screen filters"
 ---
 
 # Screen Filters & Shaders

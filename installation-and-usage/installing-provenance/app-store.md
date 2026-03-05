@@ -1,5 +1,6 @@
 ---
-description: Install Provenance for free from the App Store — the easiest method
+description: "Install Provenance for free from the App Store on iPhone, iPad, Mac, and Apple TV — the easiest way to play retro games on iOS and tvOS"
+keywords: "Provenance App Store, install emulator, free emulator iOS, download Provenance, Apple TV emulator install"
 ---
 
 # Installing from the App Store (Recommended)

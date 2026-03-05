@@ -1,5 +1,5 @@
 ---
-description: 'Moderate: Install latest in-development build.'
+description: "Build Provenance from source with Xcode — get the latest in-development features on iOS, tvOS, and macOS"
 ---
 
 # Building from Source

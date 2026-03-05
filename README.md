@@ -1,6 +1,11 @@
+---
+description: "Provenance — free multi-system emulator for iOS, iPadOS, macOS, and Apple TV. Play 38+ classic gaming systems with iCloud sync, RetroAchievements, and museum-quality library management."
+keywords: "Provenance emulator, iOS emulator, Apple TV emulator, retro games, multi-system emulator, free emulator, iPhone emulator, tvOS emulator, classic games, game emulation"
+---
+
 # Welcome to Provenance
 
-**The premier multi-system emulator for iOS, tvOS, and visionOS.**
+**The premier multi-system emulator for iOS, iPadOS, macOS, and tvOS.**
 
 Play games from 38+ classic systems with beautiful library management, native Apple TV support, and museum-quality presentation. Available now on the **App Store**.
 

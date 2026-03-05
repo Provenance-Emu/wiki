@@ -1,5 +1,6 @@
 ---
-description: Common questions about Provenance - free multi-system emulator for iOS, iPadOS, macOS, tvOS, and visionOS
+description: "Common questions about Provenance — free multi-system emulator for iOS, iPadOS, macOS, and tvOS with 38+ supported systems"
+keywords: "Provenance FAQ, emulator help, iOS emulator FAQ, Apple TV emulator, free emulator, retro gaming, Provenance Plus, iCloud sync"
 ---
 
 # Frequently Asked Questions
@@ -65,7 +66,7 @@ Welcome to Provenance! Whether you just downloaded from the App Store or are a l
 ### How do I install Provenance?
 
 **From the App Store (recommended):**
-1. Open the **App Store** on your iPhone, iPad, Mac, Apple TV, or Vision Pro
+1. Open the **App Store** on your iPhone, iPad, Mac, or Apple TV
 2. Search for **"Provenance"**
 3. Tap **Get** → **Install**
 4. ✅ Done! Launch the app and start adding games

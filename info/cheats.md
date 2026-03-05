@@ -1,5 +1,6 @@
 ---
-description: Use cheat codes with Game Genie, Action Replay, GameShark, and other formats
+description: "Use cheat codes in Provenance — Game Genie, Action Replay, GameShark, and Pro Action Replay across 12+ native cores and all RetroArch cores"
+keywords: "cheat codes, Game Genie, Action Replay, GameShark, emulator cheats, retro game cheats, Provenance cheats"
 ---
 
 # Cheats

@@ -1,5 +1,6 @@
 ---
-description: Earn achievements in retro games with RetroAchievements integration
+description: "Earn achievements in retro games with RetroAchievements integration — badges, leaderboards, and progress tracking across thousands of classic titles"
+keywords: "RetroAchievements, retro achievements, emulator achievements, gaming badges, retro leaderboards, achievement tracking"
 ---
 
 # RetroAchievements
