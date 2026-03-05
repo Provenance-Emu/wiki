@@ -163,7 +163,7 @@ INLretro is especially recommended for NES — it handles many mappers and PCB v
 The OSCR (by sanni) is a DIY Arduino-based cart reader that supports 50+ systems. It dumps directly to an SD card — no computer software required during the dump.
 
 **What you need:**
-- OSCR hardware (build from GitHub: github.com/sanni/cartreader, or buy pre-assembled from community vendors)
+- OSCR hardware (build from [GitHub](https://github.com/sanni/cartreader), or buy pre-assembled from community vendors)
 - SD card (FAT32 formatted)
 - Appropriate cart slot/adapter for your system
 
