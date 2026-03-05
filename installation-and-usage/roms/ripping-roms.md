@@ -48,7 +48,8 @@ Cartridge-based games require dedicated hardware — a "cart dumper" — to read
 
 Three well-supported options exist for dumping Game Boy family cartridges. All produce standard `.gb`, `.gbc`, or `.gba` ROM files and `.sav` save files compatible with Provenance.
 
-<details><summary><strong>GB Operator (Epilogue) — Recommended for beginners</strong></summary>
+<details>
+<summary><strong>GB Operator (Epilogue) — Recommended for beginners</strong></summary>
 
 The GB Operator is the easiest plug-and-play solution. It connects via USB-C and uses Epilogue's desktop app (macOS/Windows/Linux).
 
@@ -74,7 +75,8 @@ The app saves files to a folder of your choice. ROM files use standard extension
 
 </details>
 
-<details><summary><strong>GBxCart RW (insideGadgets) — Open source option</strong></summary>
+<details>
+<summary><strong>GBxCart RW (insideGadgets) — Open source option</strong></summary>
 
 The GBxCart RW is an open-source, lower-cost alternative. It uses the **FlashGBX** software (community-developed, cross-platform).
 
@@ -95,7 +97,8 @@ FlashGBX also supports writing ROMs and saves back to cartridges (useful for res
 
 </details>
 
-<details><summary><strong>Joey Jr (BennVenn) — Windows-focused</strong></summary>
+<details>
+<summary><strong>Joey Jr (BennVenn) — Windows-focused</strong></summary>
 
 The Joey Jr is a compact USB dumper from BennVenn. It uses BennVenn's own companion software.
 
@@ -118,7 +121,8 @@ The BennVenn companion software is **Windows-only**. macOS/Linux users should co
 
 Several hardware options support cartridge-based home consoles. The right choice depends on which systems you need and your budget.
 
-<details><summary><strong>Retrode 2 — No software required</strong></summary>
+<details>
+<summary><strong>Retrode 2 — No software required</strong></summary>
 
 The Retrode 2 appears as a **USB mass storage device** — your computer mounts it like a flash drive and the ROM is directly readable. No driver or app installation required.
 
@@ -142,7 +146,8 @@ The Retrode 2 is **discontinued** but available used (eBay, forums). The N64 ada
 
 </details>
 
-<details><summary><strong>INLretro Dumper-Programmer — Active development, NES native support</strong></summary>
+<details>
+<summary><strong>INLretro Dumper-Programmer — Active development, NES native support</strong></summary>
 
 The INLretro is actively maintained and supports a wide range of cartridge formats including NES (with native mapper support), SNES, N64, Genesis, and many others.
 
@@ -158,7 +163,8 @@ INLretro is especially recommended for NES — it handles many mappers and PCB v
 
 </details>
 
-<details><summary><strong>Open Source Cart Reader (OSCR) — Broadest system support</strong></summary>
+<details>
+<summary><strong>Open Source Cart Reader (OSCR) — Broadest system support</strong></summary>
 
 The OSCR (by sanni) is a DIY Arduino-based cart reader that supports 50+ systems. It dumps directly to an SD card — no computer software required during the dump.
 
@@ -191,7 +197,8 @@ Dumping DS and 3DS cartridges requires a hacked 3DS running **GodMode9**, a powe
 **Prerequisites:** Your 3DS must have custom firmware (CFW) installed before using GodMode9. Follow the complete CFW setup guide at [3ds.hacks.guide](https://3ds.hacks.guide) — this installs Luma3DS and enables homebrew. This process is outside the scope of this wiki.
 {% endhint %}
 
-<details><summary><strong>GodMode9 — Dumping DS & 3DS cartridges</strong></summary>
+<details>
+<summary><strong>GodMode9 — Dumping DS & 3DS cartridges</strong></summary>
 
 GodMode9 is a full-access file system browser for the 3DS. It can dump game cartridges to the SD card.
 
@@ -233,7 +240,8 @@ Full instructions — including Recovery Menu and FTP methods — are in the [PS
 
 ### Other Systems
 
-<details><summary><strong>Other systems with OSCR adapter support</strong></summary>
+<details>
+<summary><strong>Other systems with OSCR adapter support</strong></summary>
 
 The OSCR ([GitHub](https://github.com/sanni/cartreader)) supports adapters for many additional systems:
 
