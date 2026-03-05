@@ -1,0 +1,108 @@
+name: Copilot Review Poller
+
+# Polls open [Agent] PRs for Copilot reviews and dispatches Claude to handle them.
+# This exists because GitHub blocks event-triggered workflows from bot actors
+# (copilot[bot]) with "action_required" approval gates. Scheduled workflows run
+# as a trusted actor, bypassing this limitation.
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'  # Every 5 minutes
+  workflow_dispatch:        # Manual trigger for testing
+
+permissions:
+  contents: read
+  pull-requests: read
+  actions: write
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Copilot reviews on Agent PRs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          echo "Checking open [Agent] PRs for Copilot reviews..."
+
+          # Get open PRs with [Agent] prefix
+          prs=$(gh api "repos/${{ github.repository }}/pulls?state=open&per_page=100" \
+            --jq '.[] | select(.title | startswith("[Agent]")) | .number' 2>/dev/null || true)
+
+          [ -z "$prs" ] && echo "No open [Agent] PRs found." && exit 0
+
+          dispatched=0
+
+          for pr_number in $prs; do
+            echo "--- Checking PR #$pr_number ---"
+
+            # Get all reviews from copilot[bot], sorted by submission time
+            latest_copilot_review=$(gh api "repos/${{ github.repository }}/pulls/$pr_number/reviews" \
+              --jq '[.[] | select(.user.login == "copilot[bot]")] | sort_by(.submitted_at) | last' 2>/dev/null || true)
+
+            [ -z "$latest_copilot_review" ] || [ "$latest_copilot_review" = "null" ] && echo "  No Copilot review." && continue
+
+            review_state=$(echo "$latest_copilot_review" | jq -r '.state')
+            review_id=$(echo "$latest_copilot_review" | jq -r '.id')
+            review_time=$(echo "$latest_copilot_review" | jq -r '.submitted_at')
+
+            echo "  Latest Copilot review: state=$review_state id=$review_id time=$review_time"
+
+            # Check if we already processed this review (marker comment from Claude)
+            marker="<!-- copilot-review-processed:$review_id -->"
+            already_processed=$(gh api "repos/${{ github.repository }}/issues/$pr_number/comments?per_page=100" \
+              --jq "[.[] | select(.body | contains(\"copilot-review-processed:$review_id\"))] | length" 2>/dev/null || echo "0")
+
+            if [ "$already_processed" -gt 0 ]; then
+              echo "  Already processed (marker comment found). Skipping."
+              continue
+            fi
+
+            # Check if there are commits after the review (Claude may have already pushed fixes)
+            latest_commit_time=$(gh api "repos/${{ github.repository }}/pulls/$pr_number/commits?per_page=100" \
+              --jq '[.[].commit.committer.date] | sort | last' 2>/dev/null || true)
+
+            if [ -n "$latest_commit_time" ] && [ "$latest_commit_time" \> "$review_time" ]; then
+              echo "  Commits exist after review ($latest_commit_time > $review_time). Likely already addressed. Skipping."
+              continue
+            fi
+
+            # Determine action based on review state
+            action=""
+            case "$review_state" in
+              CHANGES_REQUESTED)
+                action="fix_copilot_review"
+                echo "  -> Dispatching Claude to fix Copilot review comments"
+                ;;
+              APPROVED)
+                action="copilot_approved"
+                echo "  -> Dispatching Claude to rebase and assign for human review"
+                ;;
+              *)
+                echo "  Review state '$review_state' — no action needed."
+                continue
+                ;;
+            esac
+
+            # Count previous fix cycles to enforce loop protection (max 3)
+            if [ "$action" = "fix_copilot_review" ]; then
+              cycle_count=$(gh api "repos/${{ github.repository }}/pulls/$pr_number/reviews" \
+                --jq '[.[] | select(.user.login == "copilot[bot]" and .state == "CHANGES_REQUESTED")] | length' 2>/dev/null || echo "0")
+              if [ "$cycle_count" -ge 4 ]; then
+                echo "  Loop protection: $cycle_count Copilot review cycles. Dispatching as copilot_approved to escalate to human."
+                action="copilot_approved"
+              fi
+            fi
+
+            # Dispatch Claude Code Agent workflow
+            gh workflow run claude-code.yml \
+              -f pr_number="$pr_number" \
+              -f action="$action" \
+              --repo "${{ github.repository }}"
+
+            dispatched=$((dispatched + 1))
+            echo "  Dispatched successfully."
+          done
+
+          echo "---"
+          echo "Done. Dispatched $dispatched workflow(s)."

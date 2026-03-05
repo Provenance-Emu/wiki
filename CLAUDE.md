@@ -91,6 +91,8 @@ Agent PRs (`[Agent]` prefix) go through an automated review pipeline:
 
 **Merge conflict resolution:** Claude resolves conflicts during rebase. For markdown content conflicts, the PR branch content takes priority.
 
+**Implementation note:** Copilot reviews are detected by a scheduled poller workflow (`.github/workflows/copilot-review-poller.yml`) that runs every 5 minutes, because GitHub blocks event-triggered workflows from bot actors like `copilot[bot]`. The poller dispatches Claude via `workflow_dispatch` on the Claude Code Agent workflow.
+
 ### CI Workflows
 - **Link Checker** (`.github/workflows/link-checker.yml`) — Validates all internal markdown links on push to master and on PRs. Catches broken links before they go live.
 - **Spell Checker** (`.github/workflows/spellcheck.yml`) — Runs cspell on all markdown files. Custom dictionary in `.cspell/custom-dictionary.txt` includes emulation-specific terms.
