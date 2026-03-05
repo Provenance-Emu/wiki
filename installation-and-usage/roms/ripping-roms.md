@@ -80,7 +80,7 @@ The GBxCart RW is an open-source, lower-cost alternative. It uses the **FlashGBX
 
 **What you need:**
 - GBxCart RW device
-- FlashGBX app
+- FlashGBX app (available at https://github.com/lesserkuma/FlashGBX)
 - USB cable (included with device)
 
 **Steps:**
