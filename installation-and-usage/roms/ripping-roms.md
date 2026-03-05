@@ -51,18 +51,30 @@ Output: `.nes`, `.sfc`, `.md`, `.z64`, etc. depending on system
 
 ### PlayStation 1 & 2 (PC optical drive)
 
-Most PS1/PS2 discs can be ripped with a standard PC DVD drive:
+Most PS1/PS2 discs can be ripped with a standard PC DVD drive. The exact tool and format depends on whether the game is on a CD (PS1 and some early PS2 titles) or a DVD (most PS2 titles).
 
-1. Insert disc into your PC's optical drive.
+#### PS1 (CD-based, and PS2 CD titles)
+
+1. Insert the disc into your PC's optical drive.
 2. Use **ImgBurn** (Windows) or **cdrdao** (macOS/Linux) to create a full disc image.
-3. For PS1, output a **`.bin` + `.cue`** pair (multi-track) rather than a single `.iso`.
-4. For PS2, a single `.iso` is acceptable.
+3. Output a **`.bin` + `.cue`** pair (multi-track) rather than a single `.iso`.
 
-Output: `.bin`/`.cue` (PS1), `.iso` (PS2)
+Output: `.bin`/`.cue` (PS1, PS2 CD-based titles)
 
 {% hint style="info" %}
 PS1 games with multiple tracks (audio CDs) require `.bin`/`.cue`. A single-file `.iso` will be missing the audio tracks.
 {% endhint %}
+
+#### PS2 (DVD-based)
+
+Most PS2 games are on DVD. For those titles:
+
+1. Insert the disc into your PC's DVD drive.
+2. On **Windows**, use **ImgBurn** ("Create image file from disc") to create a full disc image.
+3. On **macOS/Linux**, use a DVD-capable dumper such as **`ddrescue`** (recommended) or `dd` to read the disc to an image file.
+4. Output a single **`.iso`** file.
+
+Output: `.iso` (PS2 DVD-based titles)
 
 ### Dreamcast (GD-ROM)
 
@@ -202,7 +214,7 @@ Back up saves **before** transferring. Old cartridge batteries can fail at any t
 
 1. Insert your PS1 memory card into the official Sony Memory Card Adaptor (model CECHMCA).
 2. Plug the adaptor into a PS3 and copy saves to the PS3's internal storage.
-3. On PC, use **MemcardRex** (Windows) or **mymc** to extract individual saves as `.mcr`.
+3. On PC, use **MemcardRex** (Windows) to export the full memory card image as `.mcr`.
 
 **Method B (recommended) — FreeMcBoot + uLaunchELF:**
 
@@ -214,11 +226,11 @@ Back up saves **before** transferring. Old cartridge batteries can fail at any t
 4. Navigate to **mc0:/** for Memory Card slot 1, or **mc1:/** for slot 2.
 5. Select the save folder(s) you want to back up.
 6. Press **R1** to open the copy menu and copy to **mass:/** (USB drive).
-7. On your PC, open the copied files with **MemcardRex** (Windows) or **mymc** (cross-platform) to convert to `.mcr` format.
+7. On your PC, use **MemcardRex** (Windows) to open the copied files and export the full memory card image as `.mcr`. See [Game Saves](../../info/saves.md) for compatible tools and import instructions.
 
 </details>
 
-Output: `.mcr` (Provenance compatible)
+Output: `.mcr` — a full PlayStation memory card image (Provenance compatible)
 
 See [Game Saves](../../info/saves.md) for how to import `.mcr` files into Provenance.
 
