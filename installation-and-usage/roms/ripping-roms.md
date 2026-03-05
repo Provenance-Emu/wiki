@@ -537,7 +537,7 @@ When you obtain disc images from your own physical media, they may not always be
 | `.gdi` (Dreamcast) | `.chd` | chdman | All | `chdman createcd -i game.gdi -o game.chd` |
 | `.iso` (CD / DVD) | `.chd` | chdman | All | CD: `chdman createcd -i game.iso -o game.chd` · DVD: `chdman createdvd -i game.iso -o game.chd` |
 | `.nrg` (Nero) | `.iso` | nrg2iso | All | Free CLI tool |
-| `.mdf + .mds` (Alcohol) | `.iso` | IsoBuster / mdf2iso | Win / All | mdf2iso outputs `.iso`; IsoBuster can also convert to `.bin + .cue` |
+| `.mdf + .mds` (Alcohol) | `.bin + .cue` (preferred) / `.iso` (data-only) | IsoBuster / mdf2iso | Win / All | Prefer BIN/CUE for mixed-mode or audio; use ISO only for pure data discs |
 | `.cdi` (DiscJuggler) | `.gdi` | cdirip | All | Mainly for Dreamcast dumps |
 | `.bin.ecm` | `.bin` | unecm | All | See [Formatting ROMs](formatting-roms.md#unecm) |
 | `.pbp` (PSP game EBOOT) | — (no conversion) | — | All | PSP titles in `.pbp` can be used as-is |
