@@ -49,13 +49,13 @@ Optical discs require either a standard PC optical drive (for some formats) or c
 3. Launch CleanRip via HBC
 4. Select output destination (SD or USB)
 5. Insert disc and follow on-screen prompts
-6. Output: `.iso` (GameCube), `.iso` (Wii)
+6. Output: `.iso` (for both GameCube and Wii discs)
 
 See [GameCube & Wii Guide](../../info/system-guides/gamecube-wii.md) for folder structure requirements.
 
 ### Dreamcast — GD-ROM Dumping
 
-Dreamcast GD-ROM discs require a two-step process:
+Dreamcast GD-ROM discs can be dumped using specialized methods:
 
 1. **GDEmu ODE method** — use a GDEmu or similar optical drive emulator device to dump via `GDmenu` or similar homebrew
 2. **Broadband Adapter + httpd-ism method** — use a broadband adapter and the `httpd-ism` FTP homebrew to dump over network (see [Network / Softmod Ripping](#network--softmod-ripping) below)
@@ -94,9 +94,9 @@ Some consoles can dump their own media using homebrew software and networking or
 
 1. Boot FreeMcBoot and launch **uLaunchELF**
 2. Navigate to `cdrom0:/` (the disc drive)
-3. Copy the disc contents to `mass:/` (USB storage)
+3. Copy the disc contents to `mass:/` (USB storage) — this copies the disc files, not a single image
 4. Transfer the USB drive to your PC
-5. Output: `.iso`
+5. Output: extracted disc files (use an ISO creation tool on your PC if you need a `.iso` image)
 
 ### Dreamcast + Broadband Adapter
 
