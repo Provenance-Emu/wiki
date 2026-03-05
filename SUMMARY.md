@@ -23,6 +23,7 @@
   * [Customizing ROMs](installation-and-usage/roms/customizing-roms.md)
   * [Advanced ROM Management](installation-and-usage/roms/advanced-management.md)
   * [Applying Mods / Patches](installation-and-usage/roms/mods.md)
+  * [Ripping & Dumping Physical Media](installation-and-usage/roms/ripping-roms.md)
 * [In-Game Menu](info/in-game-menu.md)
 * [Quick Continue](info/quick-continue.md)
 * [Fast Forward](info/fast-forward.md)

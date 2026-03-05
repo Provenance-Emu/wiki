@@ -39,6 +39,10 @@ Provenance makes it easy to build and manage your game library. This section cov
 - Backup and migration between devices
 - Database maintenance
 
+## 💿 Ripping & Dumping Physical Media
+
+**[Ripping ROMs](ripping-roms.md)** — Legally dump games from cartridges and discs you own. Covers cartridge readers (GB Operator, Retrode 2, INLretro), disc ripping tools for macOS/Windows/Linux, network/softmod dumping methods, save data backup, and format conversion.
+
 ## 🩹 Mods & Patches
 
 **[Applying Mods / Patches](mods.md)** — Apply fan translations, ROM hacks, and bug fixes:
