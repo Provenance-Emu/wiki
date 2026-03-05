@@ -1,5 +1,5 @@
 ---
-description: How to legally dump your own cartridges and discs for use in Provenance
+description: How to legally dump ROMs, disc images, and save data from your own physical media for use with Provenance.
 ---
 
 # Ripping & Dumping Physical Media
@@ -225,16 +225,6 @@ For **DS cartridges** inserted into a 3DS, the same process applies — GodMode9
 {% endhint %}
 
 </details>
-
----
-
-## PSP (UMD)
-
-PSP games use Universal Media Disc (UMD), an optical format — not a cartridge. UMD dumping requires a PSP with custom firmware (CFW).
-
-{% hint style="info" %}
-Full instructions — including Recovery Menu and FTP methods — are in the [PSP + Custom Firmware](#psp--custom-firmware) section below.
-{% endhint %}
 
 ---
 
