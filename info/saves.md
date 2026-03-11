@@ -66,7 +66,7 @@ If you have PlayStation memory card files from another emulator, convert them to
 **Save states** are emulator-level snapshots that capture the exact state of the game — every pixel, every register, every byte of memory. They let you save anywhere, even mid-battle or during a cutscene.
 
 {% hint style="danger" %}
-**Save states are NOT guaranteed to survive app updates.** Emulator core changes can break compatibility. Always keep **battery saves** (in-game saves) for your important progress.
+**Save states are NOT guaranteed to survive app updates.** Emulator core changes can break compatibility. Always keep **battery saves** (in-game saves) for your important progress. See [Save State Version Mismatches](save-state-version-mismatches.md) for details.
 {% endhint %}
 
 ### Saving a State
@@ -138,6 +138,7 @@ Full guide: [Restoring Files](../info/miscellaneous/restoring-files.md)
 
 ## See Also
 
+- [Save State Version Mismatches](save-state-version-mismatches.md) — What to do when a save state is incompatible after an update
 - [Quick Continue](quick-continue.md) — Save state previews and core picker on game launch
 - [In-Game Menu](in-game-menu.md) — Create and load save states from the pause menu
 - [Provenance Plus](provenance-plus.md) — iCloud sync for saves across devices

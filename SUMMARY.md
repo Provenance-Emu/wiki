@@ -33,6 +33,7 @@
   * [Control Maps](info/controllers-and-controls/control-maps.md)
 * [Skins](info/skins-guide.md)
 * [Game Saves](info/saves.md)
+  * [Save State Version Mismatches](info/save-state-version-mismatches.md)
 * [Screen Filters & Shaders](info/shaders-and-filters.md)
 * [Cheats](info/cheats.md)
 * [Multiplayer](info/multiplayer.md)
