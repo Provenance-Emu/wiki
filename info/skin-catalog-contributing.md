@@ -210,10 +210,8 @@ Provenance supports skins for all single-screen systems it emulates. The `system
 | `supervision` | Supervision |
 | `zxspectrum` | ZX Spectrum |
 | `retroarch` | RetroArch (any core) |
-| `unofficial` | Multi-system / unknown | *(none)* |
-
 {% hint style="info" %}
-Don't see your system? The catalog schema is designed to be forward-compatible — new codes are added as Provenance gains support for new systems. If your skin targets a system not listed, use `unofficial` and note the system in the `tags` field.
+Don't see your system? The catalog covers all 66 Provenance-supported systems. If you're targeting a system not in this list, open a GitHub issue on the [skins repo](https://github.com/Provenance-Emu/skins) and we'll add it. The `unofficial` system code is deprecated — all systems now have proper identifiers.
 {% endhint %}
 
 ---
