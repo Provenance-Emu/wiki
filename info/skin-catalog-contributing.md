@@ -111,16 +111,110 @@ These URLs never change as long as the file stays in the same place. You can use
 
 ## Supported Systems
 
+Provenance supports skins for all single-screen systems it emulates. The `systems` field in the JSON entry uses the short code below. The `gameTypeIdentifier` is the value inside the skin's `info.json` — both Delta (`com.rileytestut.delta.game.*`) and Manic (`public.aoshuang.game.*`) formats are accepted.
+
+**Nintendo**
+
 | Code | System | `gameTypeIdentifier` |
 |------|--------|----------------------|
+| `gb` | Game Boy | `com.rileytestut.delta.game.gbc` |
+| `gbc` | Game Boy Color | `com.rileytestut.delta.game.gbc` |
 | `gba` | Game Boy Advance | `com.rileytestut.delta.game.gba` |
-| `gbc` | Game Boy Color / Game Boy | `com.rileytestut.delta.game.gbc` |
-| `nes` | Nintendo Entertainment System | `com.rileytestut.delta.game.nes` |
-| `snes` | Super Nintendo | `com.rileytestut.delta.game.snes` |
+| `nes` | NES / Famicom | `com.rileytestut.delta.game.nes` |
+| `snes` | Super Nintendo / Super Famicom | `com.rileytestut.delta.game.snes` |
 | `n64` | Nintendo 64 | `com.rileytestut.delta.game.n64` |
 | `nds` | Nintendo DS | `com.rileytestut.delta.game.ds` |
-| `genesis` | Sega Genesis / Mega Drive | `com.rileytestut.delta.game.genesis` |
-| `unofficial` | Multi-system / other | *(none)* |
+| `virtualBoy` | Virtual Boy | `public.aoshuang.game.vb` |
+| `threeDS` | Nintendo 3DS | `public.aoshuang.game.3ds` |
+| `gamecube` | GameCube | `public.aoshuang.game.gc` |
+| `wii` | Wii | `public.aoshuang.game.wii` |
+| `pokemonMini` | Pokémon Mini | `public.aoshuang.game.pm` |
+
+**Sega**
+
+| Code | System | `gameTypeIdentifier` |
+|------|--------|----------------------|
+| `genesis` | Genesis / Mega Drive | `com.rileytestut.delta.game.genesis` |
+| `gamegear` | Game Gear | `com.rileytestut.delta.game.gg` |
+| `masterSystem` | Master System | `com.rileytestut.delta.game.ms` |
+| `sg1000` | SG-1000 | `public.aoshuang.game.sg1000` |
+| `segaCD` | Sega CD / Mega-CD | `public.aoshuang.game.mcd` |
+| `sega32X` | 32X | `public.aoshuang.game.32x` |
+| `saturn` | Saturn | `public.aoshuang.game.ss` |
+| `dreamcast` | Dreamcast | `public.aoshuang.game.dc` |
+
+**Sony**
+
+| Code | System | `gameTypeIdentifier` |
+|------|--------|----------------------|
+| `psx` | PlayStation (PS1 / PS2 / PS3) | `com.rileytestut.delta.game.psx` |
+| `psp` | PlayStation Portable | `public.aoshuang.game.psp` |
+
+**NEC**
+
+| Code | System | `gameTypeIdentifier` |
+|------|--------|----------------------|
+| `pce` | PC Engine / TurboGrafx-16 | *(Provenance internal)* |
+| `pcecd` | PC Engine CD-ROM | *(Provenance internal)* |
+| `pcfx` | PC-FX | *(Provenance internal)* |
+| `sgfx` | SuperGrafx | *(Provenance internal)* |
+
+**Atari**
+
+| Code | System |
+|------|--------|
+| `atari2600` | Atari 2600 |
+| `atari5200` | Atari 5200 |
+| `atari7800` | Atari 7800 |
+| `jaguar` | Atari Jaguar |
+| `jaguarcd` | Atari Jaguar CD |
+| `lynx` | Atari Lynx |
+| `atari8bit` | Atari 8-bit (400/800/XL/XE) |
+| `atarist` | Atari ST |
+
+**SNK**
+
+| Code | System |
+|------|--------|
+| `neogeo` | Neo Geo |
+| `ngp` | Neo Geo Pocket |
+| `ngpc` | Neo Geo Pocket Color |
+
+**Bandai**
+
+| Code | System |
+|------|--------|
+| `wonderswan` | WonderSwan |
+| `wonderswancolor` | WonderSwan Color |
+
+**Other Classics**
+
+| Code | System |
+|------|--------|
+| `vectrex` | Vectrex |
+| `_3do` | 3DO |
+| `appleII` | Apple II |
+| `c64` | Commodore 64 |
+| `cdi` | Philips CD-i |
+| `colecovision` | ColecoVision |
+| `cps1` | Capcom CPS1 |
+| `cps2` | Capcom CPS2 |
+| `cps3` | Capcom CPS3 |
+| `intellivision` | Intellivision |
+| `macintosh` | Mac Classic |
+| `mame` | MAME arcade |
+| `megaduck` | Mega Duck |
+| `msx` | MSX |
+| `msx2` | MSX2 |
+| `odyssey2` | Odyssey 2 |
+| `supervision` | Supervision |
+| `zxspectrum` | ZX Spectrum |
+| `retroarch` | RetroArch (any core) |
+| `unofficial` | Multi-system / unknown | *(none)* |
+
+{% hint style="info" %}
+Don't see your system? The catalog schema is designed to be forward-compatible — new codes are added as Provenance gains support for new systems. If your skin targets a system not listed, use `unofficial` and note the system in the `tags` field.
+{% endhint %}
 
 ---
 
