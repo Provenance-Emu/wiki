@@ -95,6 +95,9 @@ Odyssey
 GitBook
 DeltaStyles
 deltaskin
+manicskin
+rileytestut
+PVUI
 GameShark
 GameGenie
 GameHacking
