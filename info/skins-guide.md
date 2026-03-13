@@ -415,6 +415,6 @@ Check the [Provenance Discord](https://discord.gg/provenance) or r/EmulationOniO
 
 ---
 
-**Have an amazing skin to share?** Join the [Provenance community on Discord](https://discord.gg/provenance) and show off your creations! 🎨
+**Have an amazing skin to share?** Submit it to the [Skin Catalog](skin-catalog-contributing.md) so it appears in the built-in Skin Browser for everyone — or join the [Provenance community on Discord](https://discord.gg/provenance) and show off your creations!
 
 *Update to the latest version from the App Store for the best skins experience.*

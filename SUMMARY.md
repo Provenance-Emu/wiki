@@ -32,6 +32,7 @@
   * [Smart Keyboard Mapping](info/controllers-and-controls/controllers/smartkeyboard.md)
   * [Control Maps](info/controllers-and-controls/control-maps.md)
 * [Skins](info/skins-guide.md)
+  * [Contributing to the Skin Catalog](info/skin-catalog-contributing.md)
 * [Game Saves](info/saves.md)
   * [Save State Version Mismatches](info/save-state-version-mismatches.md)
 * [Screen Filters & Shaders](info/shaders-and-filters.md)
