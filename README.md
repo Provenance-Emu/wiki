@@ -1,6 +1,6 @@
 ---
-description: "Provenance — free multi-system emulator for iOS, iPadOS, macOS, and Apple TV. Play 38+ classic gaming systems with iCloud sync, RetroAchievements, and museum-quality library management."
-keywords: "Provenance emulator, iOS emulator, Apple TV emulator, retro games, multi-system emulator, free emulator, iPhone emulator, tvOS emulator, classic games, game emulation"
+description: "Provenance — the best free iOS game emulator for iPhone, iPad, and Apple TV. Play 38+ classic gaming systems including SNES, N64, PlayStation, GBA, and Dreamcast. Open source, no jailbreak required."
+keywords: "iOS game emulator, best iOS emulator, free iOS emulator, iPhone game emulator, iPad emulator, retro game emulator, multi-system emulator, SNES emulator iOS, N64 emulator iPhone, PlayStation emulator iOS, Provenance emulator"
 ---
 
 # Welcome to Provenance
@@ -135,5 +135,9 @@ Use the sidebar navigation to explore, or search for specific topics.
 ---
 
 **Last updated:** March 2026
-**Provenance version:** Latest (App Store)  
+**Provenance version:** Latest (App Store)
 **Wiki maintained by:** Provenance community
+
+---
+
+**🌐 Main website:** [provenance-emu.com](https://provenance-emu.com) — Download the best free iOS game emulator for iPhone, iPad, and Apple TV.
