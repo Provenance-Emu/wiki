@@ -295,3 +295,13 @@ ciso
 createcd
 createdvd
 wbfs
+yourname
+aoshuang
+sgfx
+jaguarcd
+atarist
+neogeo
+wonderswancolor
+megaduck
+zxspectrum
+APNG

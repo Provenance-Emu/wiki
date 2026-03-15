@@ -1,0 +1,70 @@
+name: Auto-Fix CI Failures
+
+on:
+  workflow_run:
+    workflows: ["Spell Check", "Link Checker"]
+    types: [completed]
+    branches: [master]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+  id-token: write
+
+jobs:
+  auto-fix:
+    if: github.event.workflow_run.conclusion == 'failure'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get failure details
+        id: failure
+        run: |
+          WORKFLOW="${{ github.event.workflow_run.name }}"
+          RUN_ID="${{ github.event.workflow_run.id }}"
+          echo "workflow=$WORKFLOW" >> "$GITHUB_OUTPUT"
+          echo "run_id=$RUN_ID" >> "$GITHUB_OUTPUT"
+
+      - name: Run Claude Code to fix CI failure
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          github_token: ${{ github.token }}
+          claude_args: "--allowedTools 'Bash(gh run view:*),Bash(gh run list:*),Bash(gh pr create:*),Bash(gh pr edit:*),Bash(gh pr view:*),Bash(gh api:*),Bash(git:*),Bash(npx:*),Read,Write,Edit,Glob,Grep'"
+          prompt: |
+            A CI check failed on the master branch of this wiki repository and needs to be auto-fixed.
+
+            ## Failed workflow: "${{ steps.failure.outputs.workflow }}"
+            ## Run ID: ${{ steps.failure.outputs.run_id }}
+
+            ## Your task
+            1. Get the failure details:
+               gh run view ${{ steps.failure.outputs.run_id }} --log-failed 2>&1 | tail -80
+
+            2. Fix the root cause:
+               - **Spell Check failure**: Add unknown words to `.cspell/custom-dictionary.txt` (one word per line). Only add legitimate technical terms, proper nouns, or intentional non-standard spellings — do NOT just add every flagged word blindly. If a word is actually misspelled in the content, fix it there instead.
+               - **Link Checker failure**: Fix broken internal markdown links. Check whether the target file exists; if not, find the correct target or remove the link.
+
+            3. Create a PR:
+               - Branch name: `auto-fix/ci-${{ steps.failure.outputs.run_id }}`
+               - Create and push the branch with your fix
+               - PR title: `[Agent] Fix ${{ steps.failure.outputs.workflow }} failure`
+               - PR body: describe exactly what was wrong and what you changed
+               - Target branch: master
+               - Command: gh pr create --title "[Agent] Fix ${{ steps.failure.outputs.workflow }} failure" --body "..." --base master
+
+            4. Request Copilot review:
+               gh pr edit <number> --add-reviewer copilot-pull-request-reviewer
+
+            5. Post a comment on the PR summarising the fix.
+
+            ## Constraints
+            - Keep changes minimal — only fix what CI flagged
+            - Do not refactor or improve other content while you're in there
+            - Read CLAUDE.md for repo conventions before making any content edits

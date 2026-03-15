@@ -250,7 +250,7 @@ Delta-compatible skins (`com.rileytestut.delta.game.*`) also work in Provenance.
 Provenance supports advanced skin capabilities that go beyond static button layouts. These features are configured in `info.json` and give skin creators powerful new options.
 
 {% hint style="info" %}
-These features require the latest version of Provenance. Check [TestFlight](../installation-and-usage/installing-provenance/testflight.md) for the most current builds.
+These features require the latest version of Provenance. Check [App Store](../installation-and-usage/installing-provenance/app-store.md) or [advanced installs](../installation-and-usage/installing-provenance/advanced.md) for the most current builds.
 {% endhint %}
 
 ### Multi-Theme Variants
