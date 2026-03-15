@@ -27,6 +27,10 @@ Skins change the visual appearance of your on-screen controller buttons and d-pa
 - 💾 Optimized memory usage
 - 🎮 Full support for all RetroArch cores
 - 📱 Works on iPhone, iPad, and Apple TV
+- 🎨 **Multi-theme variants** — multiple color schemes in one skin file
+- 🌊 **Animated backgrounds** — frame sequences, APNG, or GIF
+- ⌨️ **Keyboard overlays** — for C64, Atari, ZX Spectrum and other keyboard systems
+- 📳 **Per-button haptics** — custom haptic intensity per button
 
 ## Supported Systems
 
@@ -182,7 +186,8 @@ MySkin.deltaskin/
 ├── landscape.png      # Landscape mode controller image
 ├── edgeToEdge.png     # (Optional) Full-screen layout
 └── assets/            # (Optional) Additional graphics
-    └── preview.png    # Thumbnail for skin browser
+    ├── preview.png    # Thumbnail for skin browser
+    └── bg001.png      # (Optional) Animated background frames
 ```
 
 ### `info.json` Structure
@@ -191,7 +196,7 @@ MySkin.deltaskin/
 {
   "name": "My Custom Skin",
   "identifier": "com.yourname.myskin",
-  "gameTypeIdentifier": "com.provenance.gba",
+  "gameTypeIdentifier": "public.aoshuang.game.gba",
   "author": "Your Name",
   "version": "1.0",
   "orientation": "portrait",
@@ -210,22 +215,151 @@ MySkin.deltaskin/
 
 ### System Identifiers
 
-Common system identifiers for `info.json`:
+Common system identifiers for `info.json` — use the Provenance/ManicEmu identifiers (`public.aoshuang.game.*`) for broadest compatibility:
 
 | System | Identifier |
 |--------|------------|
-| NES | `com.provenance.nes` |
-| SNES | `com.provenance.snes` |
-| Game Boy | `com.provenance.gb` |
-| Game Boy Color | `com.provenance.gbc` |
-| Game Boy Advance | `com.provenance.gba` |
-| Nintendo 64 | `com.provenance.n64` |
-| Genesis | `com.provenance.genesis` |
-| PlayStation | `com.provenance.psx` |
-| PSP | `com.provenance.psp` |
-| Dreamcast | `com.provenance.dreamcast` |
+| NES | `public.aoshuang.game.nes` |
+| SNES | `public.aoshuang.game.snes` |
+| Nintendo 64 | `public.aoshuang.game.n64` |
+| Nintendo DS | `public.aoshuang.game.ds` |
+| Game Boy | `public.aoshuang.game.gb` |
+| Game Boy Color | `public.aoshuang.game.gbc` |
+| Game Boy Advance | `public.aoshuang.game.gba` |
+| PlayStation | `public.aoshuang.game.ps1` |
+| PSP | `public.aoshuang.game.psp` |
+| Sega Genesis / MD | `public.aoshuang.game.md` |
+| Sega CD | `public.aoshuang.game.mcd` |
+| Sega 32X | `public.aoshuang.game.32x` |
+| Game Gear | `public.aoshuang.game.gg` |
+| Dreamcast | `public.aoshuang.game.dc` |
+| PC Engine / TG-16 | `public.aoshuang.game.pce` |
+| Atari 2600 | `public.aoshuang.game.2600` |
+| Atari 7800 | `public.aoshuang.game.7800` |
+| Neo Geo | `public.aoshuang.game.neogeo` |
+| Commodore 64 | `public.aoshuang.game.c64` |
 
-**For a complete list**, check the [Provenance GitHub wiki](https://github.com/Provenance-Emu/Provenance/wiki) or Delta's documentation.
+Delta-compatible skins (`com.rileytestut.delta.game.*`) also work in Provenance.
+
+**For a complete list**, check the [Provenance skin catalog](https://provenance-emu.com/skins/) source code.
+
+---
+
+## Advanced ManicSkin Features
+
+Provenance supports advanced skin capabilities that go beyond static button layouts. These features are configured in `info.json` and give skin creators powerful new options.
+
+{% hint style="info" %}
+These features require the latest version of Provenance. Check [TestFlight](../installation-and-usage/installing-provenance/testflight.md) for the most current builds.
+{% endhint %}
+
+### Multi-Theme Variants
+
+A single skin file can contain multiple visual themes (e.g., light mode / dark mode / game-specific palettes). Users select themes via a segmented control in the skin picker.
+
+```json
+{
+  "name": "Lux GBA",
+  "themes": [
+    { "identifier": "dark",  "displayName": "Dark Mode" },
+    { "identifier": "light", "displayName": "Light Mode" },
+    { "identifier": "purple", "displayName": "Purple Haze" }
+  ]
+}
+```
+
+Each theme identifier corresponds to asset variants bundled inside the `.deltaskin` ZIP. The skin validator will catch missing theme assets before import.
+
+### Animated Backgrounds
+
+Skins can include animated backgrounds behind the game screen using frame sequences, APNG, or GIF files.
+
+{% tabs %}
+{% tab title="Frame Sequence" %}
+```json
+"backgroundAnimation": {
+  "type": "frames",
+  "frames": ["bg001.png", "bg002.png", "bg003.png", "bg004.png"],
+  "fps": 12,
+  "loops": 0
+}
+```
+`loops: 0` means loop infinitely. Include the frame images inside your `.deltaskin` ZIP.
+{% endtab %}
+
+{% tab title="APNG / GIF" %}
+```json
+"backgroundAnimation": {
+  "type": "apng",
+  "source": "background.png"
+}
+```
+Or for GIF:
+```json
+"backgroundAnimation": {
+  "type": "gif",
+  "source": "background.gif"
+}
+```
+{% endtab %}
+{% endtabs %}
+
+**Supported `blendMode` values:** `normal`, `multiply`, `screen`, `overlay` (optional field, defaults to `normal`).
+
+### Keyboard Overlay
+
+For systems with keyboard input (Commodore 64, Atari 8-bit, ZX Spectrum, etc.), skins can include an on-screen keyboard overlay.
+
+```json
+"keyboardOverlay": {
+  "layout": "full",
+  "position": "bottom",
+  "opacity": 0.85,
+  "autoShow": true
+}
+```
+
+**Layout variants:**
+
+| `layout` | Description |
+|----------|-------------|
+| `full` | Standard QWERTY keyboard |
+| `compact` | Condensed layout for smaller screens |
+| `functionRow` | Function keys only (F1–F12) |
+| `c64` | Commodore 64 key layout |
+| `zxSpectrum` | ZX Spectrum key layout |
+| `amstradCPC` | Amstrad CPC key layout |
+| `atariST` | Atari ST key layout |
+
+- `position`: `"top"` or `"bottom"` — where the keyboard appears on screen
+- `autoShow`: `true` to show keyboard automatically when a text input is focused
+
+### Per-Button Haptics
+
+Individual buttons can have custom haptic feedback intensity, letting skin creators match haptic feel to button importance or game genre.
+
+Add `hapticStrength` to any button mapping:
+
+```json
+"mappings": {
+  "a": { "x": 280, "y": 380, "width": 60, "height": 60, "hapticStrength": "heavy" },
+  "b": { "x": 340, "y": 320, "width": 60, "height": 60, "hapticStrength": "medium" },
+  "start": { "x": 180, "y": 450, "width": 44, "height": 44, "hapticStrength": "light" }
+}
+```
+
+**Haptic strength values:** `none`, `light`, `medium`, `heavy`, `rigid`, `soft`
+
+### Skin Validator
+
+Provenance automatically validates `.deltaskin` files on import:
+
+- **Errors** (block import): missing `info.json`, invalid `gameTypeIdentifier`, referenced image files not found in ZIP, malformed JSON
+- **Warnings** (shown after import): missing optional fields, deprecated field names, oversized assets
+
+The validator helps skin creators catch issues before distributing their work.
+
+---
 
 ### Tools for Skin Creation
 
@@ -379,7 +513,7 @@ No — each skin is designed for a specific system's button layout (SNES skins w
 <details>
 <summary><strong>Are animated skins supported?</strong></summary>
 
-Not currently — only static PNG images.
+Yes! Animated backgrounds are supported via the `backgroundAnimation` field in `info.json`. Skin creators can use frame sequences (PNG), APNG, or GIF files. See [Animated Backgrounds](#animated-backgrounds) above.
 
 </details>
 
