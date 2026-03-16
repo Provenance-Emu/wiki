@@ -5,7 +5,7 @@ description: Auto-generated system and core reference from Provenance source cod
 # System Reference
 
 {% hint style="info" %}
-**Auto-generated** from [Provenance source code](https://github.com/Provenance-Emu/Provenance) on March 09, 2026. Do not edit manually — changes will be overwritten by the [sync workflow](https://github.com/Provenance-Emu/wiki/actions/workflows/sync-from-source.yml).
+**Auto-generated** from [Provenance source code](https://github.com/Provenance-Emu/Provenance) on March 16, 2026. Do not edit manually — changes will be overwritten by the [sync workflow](https://github.com/Provenance-Emu/wiki/actions/workflows/sync-from-source.yml).
 {% endhint %}
 
 **Quick links:** [Systems](#systems) | [BIOS Requirements](#bios-requirements) | [File Extensions](#supported-file-extensions) | [Core Matrix](#core-to-system-matrix) | [Cheat Support](#cheat-support) | [Skin Identifiers](#skin-identifiers)
