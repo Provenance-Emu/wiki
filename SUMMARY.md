@@ -66,3 +66,7 @@
 * [Contributing](help/contribute.md)
 * [UDID Registration](help/udid.md)
 * [Release Notes](https://github.com/Provenance-Emu/Provenance/releases)
+
+## Legal
+
+* [Open Source Licenses](info/open-source-licenses.md)
