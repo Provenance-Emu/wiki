@@ -16,20 +16,18 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Check if PR is timestamp-only changes
+      - name: Check if PR should be auto-merged
         id: check
         env:
           GH_TOKEN: ${{ github.token }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_TITLE: ${{ github.event.pull_request.title }}
           BASE_SHA: ${{ github.event.pull_request.base.sha }}
           HEAD_SHA: ${{ github.event.pull_request.head.sha }}
         run: |
-          # Get the diff of the PR
           git diff "$BASE_SHA" "$HEAD_SHA" > /tmp/pr.diff
 
-          # Check: are ALL changed lines only date/timestamp frontmatter?
-          # Strip lines that are purely timestamp changes (date: YYYY-MM-DD...)
-          # A timestamp-only PR should have no other +/- content lines
+          # Case 1: All changed lines are YAML frontmatter timestamp fields
           NON_TIMESTAMP=$(grep -E '^[+-]' /tmp/pr.diff \
             | grep -v '^---' \
             | grep -v '^+++' \
@@ -39,24 +37,38 @@ jobs:
             | grep -vE '^[+-]lastmod: ' \
             | wc -l | tr -d ' ')
 
-          echo "Non-timestamp changed lines: $NON_TIMESTAMP"
-          echo "non_timestamp=$NON_TIMESTAMP" >> "$GITHUB_OUTPUT"
+          # Case 2: Auto-generated sync PR (only changes inline date strings)
+          # Matches lines like: "on Month DD, YYYY" or "on YYYY-MM-DD"
+          NON_DATE_CONTENT=$(grep -E '^[+-]' /tmp/pr.diff \
+            | grep -v '^---' \
+            | grep -v '^+++' \
+            | grep -vE '^[+-].*on [A-Z][a-z]+ [0-9]{1,2}, [0-9]{4}' \
+            | grep -vE '^[+-].*on [0-9]{4}-[0-9]{2}-[0-9]{2}' \
+            | wc -l | tr -d ' ')
 
-          if [ "$NON_TIMESTAMP" -eq 0 ]; then
-            echo "timestamp_only=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "timestamp_only=false" >> "$GITHUB_OUTPUT"
+          IS_AUTO_SYNC=false
+          if [[ "$PR_TITLE" == \[Auto\]* ]] && [ "$NON_DATE_CONTENT" -eq 0 ]; then
+            IS_AUTO_SYNC=true
           fi
 
-      - name: Auto-merge if timestamp-only
-        if: steps.check.outputs.timestamp_only == 'true'
+          echo "Non-timestamp lines: $NON_TIMESTAMP"
+          echo "Is auto-sync with only date changes: $IS_AUTO_SYNC"
+
+          if [ "$NON_TIMESTAMP" -eq 0 ] || [ "$IS_AUTO_SYNC" = "true" ]; then
+            echo "should_merge=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "should_merge=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Auto-merge
+        if: steps.check.outputs.should_merge == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
         run: |
-          echo "PR #$PR_NUMBER contains only timestamp changes — auto-merging."
+          echo "PR #$PR_NUMBER is safe to auto-merge."
           gh pr merge "$PR_NUMBER" \
             --repo "$GITHUB_REPOSITORY" \
             --squash \
-            --subject "chore: auto-merge timestamp-only PR #$PR_NUMBER" \
+            --subject "chore: auto-merge PR #$PR_NUMBER" \
             --delete-branch
