@@ -1,0 +1,141 @@
+name: Sync License Data
+
+on:
+  repository_dispatch:
+    types: [licenses-updated]
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: 'Branch/ref to fetch from (default: develop)'
+        required: false
+        default: 'develop'
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    name: Regenerate open-source-licenses.md
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch latest licenses.json
+        run: |
+          REF="${{ github.event.client_payload.ref || github.event.inputs.ref || 'develop' }}"
+          curl -fsSL \
+            "https://raw.githubusercontent.com/Provenance-Emu/Provenance/${REF}/Scripts/licenses.json" \
+            -o /tmp/licenses.json
+          TOTAL=$(python3 -c "import json; print(len(json.load(open('/tmp/licenses.json'))['entries']))")
+          echo "Fetched ${TOTAL} entries from Provenance/${REF}"
+
+      - name: Regenerate wiki page
+        run: |
+          python3 - <<'PYEOF'
+          import json, datetime
+
+          data = json.load(open('/tmp/licenses.json'))
+          entries = data['entries']
+
+          native = [e for e in entries if not e.get('isRetroArch')]
+          retroarch = [e for e in entries if e.get('isRetroArch')]
+
+          SYSTEM_NAMES = {
+              'psx': 'PS1', 'ps2': 'PS2', 'psp': 'PSP',
+              'gba': 'GBA', 'gbc': 'GBC', 'gb': 'Game Boy',
+              'snes': 'SNES', 'nes': 'NES', 'n64': 'N64',
+              'genesis': 'Genesis', 'gamegear': 'Game Gear',
+              'mastersystem': 'Master System', 'segacd': 'Sega CD',
+              '32x': '32X', 'saturn': 'Saturn', 'dreamcast': 'Dreamcast',
+              'gbc': 'GBC', 'nds': 'DS', '3ds': '3DS',
+              'gamecube': 'GameCube', 'wii': 'Wii',
+              'atari2600': 'Atari 2600', 'atari5200': 'Atari 5200',
+              'atari7800': 'Atari 7800', 'atarijaguar': 'Jaguar',
+              'lynx': 'Lynx', 'neogeo': 'Neo Geo', 'neogeopocket': 'NGP',
+              'virtualboy': 'Virtual Boy', 'wonderswan': 'WonderSwan',
+              'pcengine': 'PC Engine', 'pcfx': 'PC-FX',
+              '5200': 'Atari 5200', '8bit': 'Atari 8-bit',
+              'jaguar': 'Jaguar',
+          }
+
+          def fmt_systems(systems):
+              out = []
+              for s in systems or []:
+                  key = s.replace('com.provenance.', '')
+                  out.append(SYSTEM_NAMES.get(key, key))
+              return ', '.join(out) if out else '—'
+
+          def fmt_license(e):
+              lic = e.get('license') or 'TBD'
+              url = e.get('licenseURL')
+              return f'[{lic}]({url})' if url else lic
+
+          def fmt_name(e):
+              url = e.get('projectURL')
+              name = e.get('name', '?')
+              return f'[{name}]({url})' if url else name
+
+          updated = datetime.date.today().isoformat()
+
+          lines = [
+              '---',
+              'description: "Open-source projects and libraries that power Provenance."',
+              '---',
+              '',
+              '# Open Source Licenses',
+              '',
+              'Provenance is built on the work of many open-source projects. This page lists the emulator cores that ship with Provenance and their licenses.',
+              '',
+              f'> Auto-generated from source on {updated}. For the full interactive list (including all {len(retroarch)} RetroArch cores) see the **[Open Source Licenses](https://provenance-emu.com/licenses/)** page on the website.',
+              '',
+              f'## Native Emulator Cores ({len(native)})',
+              '',
+              '| Core | Systems | License |',
+              '|------|---------|---------|',
+          ]
+
+          for e in sorted(native, key=lambda x: x.get('name','').lower()):
+              lines.append(f'| {fmt_name(e)} | {fmt_systems(e.get("supportedSystems"))} | {fmt_license(e)} |')
+
+          lines += [
+              '',
+              f'## RetroArch Cores ({len(retroarch)})',
+              '',
+              f'Provenance includes {len(retroarch)} RetroArch/libretro cores. For the full list with license details see **[provenance-emu.com/licenses/](https://provenance-emu.com/licenses/)**.',
+              '',
+              '## See Also',
+              '',
+              '* [Skins Guide](info/skins-guide.md)',
+              '* [Supported Systems](info/supported-systems.md)',
+              '',
+              '{% hint style="info" %}',
+              'Need help? Ask on [Discord](https://discord.gg/provenance).',
+              '{% endhint %}',
+          ]
+
+          with open('info/open-source-licenses.md', 'w') as f:
+              f.write('\n'.join(lines) + '\n')
+          print(f"Wrote {len(lines)} lines")
+          PYEOF
+
+      - name: Check for changes
+        id: diff
+        run: |
+          if git diff --quiet info/open-source-licenses.md; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No changes"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            git diff --stat info/open-source-licenses.md
+          fi
+
+      - name: Commit and push
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add info/open-source-licenses.md
+          git commit -m "chore: sync open-source-licenses from Provenance/develop
+
+          Co-Authored-By: github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
+          git push
