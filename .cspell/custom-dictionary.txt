@@ -320,3 +320,5 @@ codesigning
 CODESIGNING
 entitlement
 entitlements
+sandboxed
+sandboxing
