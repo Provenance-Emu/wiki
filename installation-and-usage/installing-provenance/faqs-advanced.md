@@ -274,6 +274,22 @@ If you're jailbroken, you can still install Provenance via:
 </details>
 
 <details>
+<summary><strong>App crashes immediately after install (Sideloadly / LiveContainer / ATVLoadly)</strong></summary>
+
+Crashes within 1–2 seconds of launch — before any UI appears — almost always means an **entitlement problem** introduced during re-signing. The tool stripped or failed to re-inject a capability Provenance needs (Metal GPU, game controller access, JIT, background audio, etc.) and iOS/tvOS silently kills the app.
+
+**Quick steps:**
+1. Get the crash log — it tells you exactly what failed ([how to read crash logs](sideloading.md#reading-crash-logs))
+2. In the log, look for `Termination Reason` — a code like `CODESIGNING 0x1` confirms an entitlement issue
+3. Try AltStore instead — it handles Provenance's entitlements more reliably than most tools
+4. If using **LiveContainer**: this is not supported — LiveContainer restricts Metal GPU access and JIT, which Provenance requires. Install normally via AltStore.
+5. If using **ATVLoadly on Raspberry Pi**: update to the latest version and check the [ATVLoadly GitHub issues](https://github.com/ipa-meister/atvloadly) for Provenance-specific notes
+
+**Full troubleshooting guide:** [Sideloading — Crash on Launch](sideloading.md#app-installs-but-crashes-immediately-on-launch)
+
+</details>
+
+<details>
 <summary><strong>"Unable to install Provenance"</strong></summary>
 
 **Fixes:**
