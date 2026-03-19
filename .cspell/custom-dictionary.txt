@@ -320,3 +320,11 @@ codesigning
 CODESIGNING
 entitlement
 entitlements
+Andreas
+Connectix
+Ecco
+janky
+platformers
+sandboxed
+sandboxing
+Tetris
