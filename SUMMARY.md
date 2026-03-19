@@ -5,6 +5,7 @@
 
 ## Getting Started
 
+* [What is an Emulator?](info/what-is-an-emulator.md)
 * [Getting Started](installation-and-usage/getting-started.md)
 * [Installing Provenance](installation-and-usage/installing-provenance/README.md)
   * [App Store (Recommended)](installation-and-usage/installing-provenance/app-store.md)
