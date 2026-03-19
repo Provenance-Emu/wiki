@@ -316,7 +316,15 @@ devicectl
 3uTools
 imobiledevice
 JIT
+Andreas
 codesigning
+Connectix
 CODESIGNING
+Ecco
 entitlement
 entitlements
+janky
+platformers
+sandboxed
+sandboxing
+Tetris
