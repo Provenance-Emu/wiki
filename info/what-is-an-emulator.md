@@ -4,7 +4,7 @@ description: "New to emulation? Here's what it is, why you want it, and what you
 
 # What is an Emulator?
 
-Never heard of emulation before? You're in the right place. This page explains what emulators are, why people love them, and why right now — with Provenance on your iPhone or Apple TV — is the best time in history to discover them.
+Never heard of emulation before? You're in the right place. This page explains what emulators are, why people love them, and why right now — with **Provenance** on your iPhone or Apple TV — is the best time in history to discover them.
 
 ---
 
@@ -48,7 +48,7 @@ Decades of games across 38+ classic systems. If you've ever heard of any of thes
 
 ### 1. Play your collection anywhere
 
-If you have a shelf of old cartridges or a box of discs in a closet, emulation lets you actually use them again — on your phone, on your TV, without digging out aging hardware. You can make a digital backup of a cartridge or disc you own and play that backup in Provenance. Your games, on your terms.
+If you have a shelf of old cartridges or a box of discs in a closet, emulation lets you actually use them again — on your phone, on your TV, without digging out aging hardware. You can make a digital backup of a cartridge or disc you own and play that backup in **Provenance**. Your games, on your terms.
 
 ### 2. The history of gaming, all in one place
 
@@ -67,7 +67,7 @@ This sounds crazy but it's true. Emulators add things the original hardware neve
 
 ### 4. It fits in your pocket
 
-Before smartphones, emulation required a computer, janky software, and some technical know-how. That kept it niche. Now you tap **Get** on the App Store and you're done. Provenance changed what's possible.
+Before smartphones, emulation required a computer, janky software, and some technical know-how. That kept it niche. Now you tap **Get** on the App Store and you're done. **Provenance** changed what's possible.
 
 ---
 
@@ -79,7 +79,7 @@ You'll hear this word a lot. A **ROM** is a digital backup of a game — the sam
 - A PlayStation disc is 500MB–700MB
 - An N64 cartridge is 8MB–64MB
 
-Think of it like ripping a CD to MP3 for your own use, but for games. Provenance is the player — game files are what you play on it.
+Think of it like ripping a CD to MP3 for your own use, but for games. **Provenance** is the player — game files are what you play on it.
 
 **Making backups from cartridges and discs you own** is the right way to build your library. It's a bit like ripping your DVD collection to a hard drive — you already own the content, you're just making it usable in a modern way. We have a full guide on how to do this for cartridges, CDs, and DVDs:
 
@@ -93,13 +93,13 @@ Think of it like ripping a CD to MP3 for your own use, but for games. Provenance
 
 **Game backups** occupy the same space as ripping CDs or DVDs — making a personal backup of media you own for your own use is widely considered fair use, though copyright law in this area was written before digital media existed and hasn't fully caught up. The consensus: make backups of games you own, keep them for personal use.
 
-Provenance doesn't include games and doesn't help you obtain them. What you do with your own collection is your business.
+**Provenance** doesn't include games and doesn't help you obtain them. What you do with your own collection is your business.
 
 ---
 
 ## What is Provenance, specifically?
 
-Provenance is a **multi-system emulator** — one app that handles 38+ different gaming systems. Most emulators only do one system (one for SNES, one for PlayStation, etc.). Provenance brings them all together with:
+**Provenance** is a **multi-system emulator** — one app that handles 38+ different gaming systems. Most emulators only do one system (one for SNES, one for PlayStation, etc.). **Provenance** brings them all together with:
 
 - A beautiful, unified game library with automatic cover art
 - Native iPhone, iPad, Mac, and **Apple TV** support
@@ -155,7 +155,7 @@ You're here for one reason. Skip the tour:
 ## See Also
 
 - [Getting Started Guide](../installation-and-usage/getting-started.md) — install, import, and play in 10 minutes
-- [Supported Systems](supported-systems.md) — full list of every system Provenance supports
+- [Supported Systems](supported-systems.md) — full list of every system **Provenance** supports
 - [Ripping ROMs from Physical Media](../installation-and-usage/roms/ripping-roms.md) — make ROMs from cartridges you own
 - [Controllers & Controls](controllers-and-controls/README.md) — which controllers work and how to set them up
 
