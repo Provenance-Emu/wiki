@@ -316,8 +316,11 @@ devicectl
 3uTools
 imobiledevice
 JIT
+Andreas
 codesigning
+Connectix
 CODESIGNING
+Ecco
 entitlement
 entitlements
 sandboxed
