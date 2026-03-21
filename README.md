@@ -11,6 +11,10 @@ Play games from 38+ classic systems with beautiful library management, native Ap
 
 ---
 
+{% hint style="success" %}
+**New to emulation?** Not sure what any of this is? → [**What is an Emulator?**](info/what-is-an-emulator.md) — a friendly explainer for everyone, including what you can play and why you'd want to.
+{% endhint %}
+
 ## 🚀 New Here? Start Here
 
 ### Get Provenance
