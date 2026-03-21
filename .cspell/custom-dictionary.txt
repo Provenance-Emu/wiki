@@ -323,8 +323,13 @@ CODESIGNING
 Ecco
 entitlement
 entitlements
+sandboxed
+sandboxing
+Connectix
+Ecco
 janky
 platformers
 sandboxed
 sandboxing
 Tetris
+Andreas
