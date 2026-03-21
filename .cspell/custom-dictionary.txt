@@ -320,6 +320,8 @@ codesigning
 CODESIGNING
 entitlement
 entitlements
+sandboxed
+sandboxing
 Connectix
 Ecco
 janky
