@@ -5,7 +5,7 @@ description: Auto-generated system and core reference from Provenance source cod
 # System Reference
 
 {% hint style="info" %}
-**Auto-generated** from [Provenance source code](https://github.com/Provenance-Emu/Provenance) on March 16, 2026. Do not edit manually — changes will be overwritten by the [sync workflow](https://github.com/Provenance-Emu/wiki/actions/workflows/sync-from-source.yml).
+**Auto-generated** from [Provenance source code](https://github.com/Provenance-Emu/Provenance) on March 30, 2026. Do not edit manually — changes will be overwritten by the [sync workflow](https://github.com/Provenance-Emu/wiki/actions/workflows/sync-from-source.yml).
 {% endhint %}
 
 **Quick links:** [Systems](#systems) | [BIOS Requirements](#bios-requirements) | [File Extensions](#supported-file-extensions) | [Core Matrix](#core-to-system-matrix) | [Cheat Support](#cheat-support) | [Skin Identifiers](#skin-identifiers)
@@ -14,7 +14,7 @@ description: Auto-generated system and core reference from Provenance source cod
 
 ## Systems
 
-Provenance supports **47 systems** (21 additional in development or disabled).
+Provenance supports **48 systems** (22 additional in development or disabled).
 
 | Manufacturer | System | Short | Year | Bits | Screen | Portable | CD | Rumble | BIOS |
 |:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|
@@ -51,6 +51,7 @@ Provenance supports **47 systems** (21 additional in development or disabled).
 | Nintendo | Pokémon mini | Pm | 2001 | 8 | DotMatrix | Yes |  |  | 🔶 Optional |
 | Panasonic | 3DO | 3DO | 1993 | 32 | CRT |  |  |  | ✅ Required |
 | SNK | Neo Geo | NeoGeo | 1990 | 24 | MonoLCD |  |  |  | ✅ Required |
+| SNK | Neo Geo CD | NeoGeoCD | 1994 | 24 | CRT |  | Yes |  | ✅ Required |
 | SNK | Neo Geo Pocket | NGP | 1998 | 8 | MonoLCD | Yes |  |  |  |
 | SNK | Neo Geo Pocket Color | NeoGeoPocketColor | 1999 | 16 | ColorLCD | Yes |  |  |  |
 | Sega | SG-1000 | SG-1000 | 1983 | 8 | CRT |  |  |  |  |
@@ -90,6 +91,7 @@ Provenance supports **47 systems** (21 additional in development or disabled).
 | Sony | PlayStation Portable | 2004 | In development |
 | Id Software | Quake | 1996 | App Store disabled |
 | Id Software | Quake II | 1996 | App Store disabled |
+| Nesbox | TIC-80 | 2017 | In development |
 | Nintendo | Wii | 2006 | App Store disabled |
 | Id Software | Wolfenstein 3D | 1992 | App Store disabled |
 
@@ -132,6 +134,8 @@ Provenance supports **47 systems** (21 additional in development or disabled).
 |  | `rom2.rom` | Japanese Character ROM | `428577250f43edc902ea239c50d2240d` | 1.0 MB | 🔶 Optional |
 | Neo Geo | `neogeo.zip` | NeoGeo BIOS (MAME 0.258 BIOS) | `00dad01abdbf8ea9e79ad2fe11bdb182` | 1.8 MB | 🔶 Optional |
 |  | `aes.zip` | NeoGeo AES BIOS | `ad9585c72130c56f04ae26aae87c289d` | 830 KB | 🔶 Optional |
+| Neo Geo CD | `neocdz.zip` | Neo Geo CD BIOS | `f39572af7584738b76f87a8e88cc5540` | 512 KB | ✅ Required |
+|  | `neogeo.zip` | NeoGeo BIOS (MAME 0.258 BIOS, for CD titles) | `00dad01abdbf8ea9e79ad2fe11bdb182` | 1.8 MB | 🔶 Optional |
 | Sega CD | `bios_CD_E.bin` | Mega-CD Model 1 (EU 921027) BIOS 1.00 | `e66fa1dc5820d254611fdcdba0662372` | 128 KB | ✅ Required |
 |  | `bios_CD_U.bin` | Sega CD Model 1 (US 921011) BIOS 1.10 | `2efd74e3232ff260e371b99f84024f7f` | 128 KB | ✅ Required |
 |  | `bios_CD_J.bin` | Mega-CD Model 1 (JP 911217) BIOS 1.00p | `bdeb4c47da613946d422d97d98b21cda` | 128 KB | ✅ Required |
@@ -181,6 +185,7 @@ Provenance supports **47 systems** (21 additional in development or disabled).
 | Pokémon mini | `.min` |
 | 3DO | `.chd`, `.cue`, `.iso`, `.m3u`, `.zip` |
 | Neo Geo | `.cmd`, `.neo`, `.ng`, `.zip` |
+| Neo Geo CD | `.chd`, `.cue`, `.iso`, `.m3u` |
 | Neo Geo Pocket | `.ngp`, `.zip` |
 | Neo Geo Pocket Color | `.ngc`, `.ngpc`, `.npc`, `.zip` |
 | SG-1000 | `.sg` |
@@ -204,51 +209,52 @@ Shows which emulator cores are available for each system.
 
 | System | Available Cores | Versions |
 |:---|:---|:---|
-| Atari 2600 | [Atari 2600 (RetroArch)](https://docs.libretro.com/library/stella/), [Stella](https://stella-emu.github.io) | 6.6, 3.4.1 |
+| Atari 2600 | [Atari 2600 (RetroArch)](https://docs.libretro.com/library/stella/), [Stella](https://stella-emu.github.io), [Stella (Current) (RetroArch)](https://stella-emu.github.io), [Stella 2023 (RetroArch)](https://stella-emu.github.io) | 6.6, 3.4.1, Nightly, Nightly |
 | Atari 5200 | [Atari 5200 (RetroArch)](https://docs.libretro.com/library/atari800/), [Atari 800](https://atari800.github.io) | 3.1.0, 3.1.0 |
 | Atari 8bit Computer | [Atari 400/800/600XL/800XL/130XE (RetroArch)](https://docs.libretro.com/library/atari800/) | 3.1.0 |
 | Atari 7800 | [Atari 7800 (RetroArch)](https://docs.libretro.com/library/prosystem/), [ProSystem](https://gstanton.github.io/ProSystem1_3/) | 1.3e, 1.3 |
-| Atari Lynx | [Atari Lynx (RetroArch)](https://docs.libretro.com/library/beetle_lynx/), [Mednafen](https://mednafen.github.io) | 1.24.0, 1.32.1 |
+| Atari Lynx | [Atari Lynx (RetroArch)](https://docs.libretro.com/library/beetle_lynx/), [Handy (Atari Lynx) (RetroArch)](https://github.com/libretro/libretro-handy), [Mednafen](https://mednafen.github.io) | 1.24.0, Nightly, 1.32.1 |
 | Atari Jaguar | [Atari Jaguar (Virtual Jaguar) (RetroArch)](https://docs.libretro.com/library/virtual_jaguar/) | 2.1.0 |
-| WonderSwan | [Mednafen](https://mednafen.github.io) | 1.32.1 |
-| WonderSwan | [Mednafen](https://mednafen.github.io) | 1.32.1 |
-| CBS ColecoVision | FBNeo, [Final Burn Neo](https://neo-source.com), [Gearcoleco](https://github.com/drhelius/Gearcoleco), [MSX/SVI/ColecoVision/SG-1000 (blueMSX) (RetroArch)](https://github.com/libretro/blueMSX) | 1.0.0.2, 1.0.1, Nightly |
+| WonderSwan | [Beetle WonderSwan (RetroArch)](https://github.com/libretro/beetle-wswan-libretro), [Mednafen](https://mednafen.github.io) | Nightly, 1.32.1 |
+| WonderSwan | [Beetle WonderSwan (RetroArch)](https://github.com/libretro/beetle-wswan-libretro), [Mednafen](https://mednafen.github.io) | Nightly, 1.32.1 |
+| CBS ColecoVision | FBNeo, [Final Burn Neo](https://neo-source.com), [Gearcoleco](https://github.com/drhelius/Gearcoleco), [Gearcoleco (RetroArch)](https://github.com/drhelius/Gearcoleco), [MSX/SVI/ColecoVision/SG-1000 (blueMSX) (RetroArch)](https://github.com/libretro/blueMSX) | 1.0.0.2, 1.0.1, Nightly, Nightly |
 | CPS-1 | [FBAlpha CPS1 (RetroArch)](https://github.com/libretro/fbalpha) | Nightly |
 | CPS-2 | [FBAlpha CPS2 (RetroArch)](https://github.com/libretro/fbalpha) | Nightly |
 | CPS-3 | [FBAlpha CPS3 (RetroArch)](https://github.com/libretro/fbalpha) | Nightly |
 | Enterprise 128 | [EP128Emu](http://ep128emu.sourceforge.net/about.html) | 2.0.11 |
-| RetroArch | [2048 (RetroArch)](https://github.com/libretro/2048), [Amstrad - CPC/GX40000 (RetroArch)](https://github.com/libretro/caprice32), [Atari 400/800/600XL/800XL/130XE (RetroArch)](https://docs.libretro.com/library/atari800/), [Commodore - C128 (RetroArch)](https://github.com/libretro/vice), [Commodore - C64 (RetroArch)](https://github.com/libretro/vice), [Commodore - PET (RetroArch)](https://github.com/libretro/vice), [Commodore - VIC-20 (RetroArch)](https://github.com/libretro/vice), [DosBox-Pure (RetroArch)](https://github.com/schellingb/dosbox-pure), [MAME (Current) (RetroArch)](https://docs.libretro.com/development/cores/core-specific/mame/), [MSX/SVI/ColecoVision/SG-1000 (blueMSX) (RetroArch)](https://github.com/libretro/blueMSX), [MelonDS DS (RetroArch)](https://docs.libretro.com/library/melonds_ds/), [NooDS (RetroArch)](https://github.com/Hydr8gon/NooDS), [Opera (RetroArch)](https://github.com/libretro/opera-libretro), [PalmOS (Mu) (RetroArch)](https://docs.libretro.com/library/mu/), [Philips - P2000T (RetroArch)](https://github.com/libretro/m2000), [Rick Dangerous (RetroArch)](https://github.com/libretro/xrick), [Sharp X1 (RetroArch)](https://github.com/libretro/x1), [Sinclair - ZX Spectrum (RetroArch)](https://github.com/libretro/fuse), [TI-83 (Numero) (RetroArch)](https://github.com/libretro/numero), [Thomson - MO/TO (RetroArch)](https://github.com/libretro/theodore) | Nightly, Nightly, 3.1.0, Nightly, Nightly, Nightly, Nightly, 0.9.2, v0.258, Nightly, git, git, 1.0.0, Nightly, Nightly, Nightly, Nightly, Nightly, Nightly, Nightly |
-| MAME | [FBNeo (RetroArch)](https://github.com/libretro/FBNeo), [MAME (Current) (RetroArch)](https://docs.libretro.com/development/cores/core-specific/mame/), [MAME 2000 (RetroArch)](https://github.com/libretro/mame2000-libretro), [MAME 2003 (RetroArch)](https://github.com/libretro/mame2003-libretro), [MAME 2003 Plus (RetroArch)](https://github.com/libretro/mame2003-libretro), [MAME 2010 (RetroArch)](https://github.com/libretro/mame2010-libretro) | v1.0.0.02, v0.258, v0.139, v0.139, v0.139, v0.139 |
-| Magnavox Odyssey2 | — | — |
-| Mattel Intellivision | [FreeIntv](https://github.com/libretro/FreeIntv) | 2018.1.5 |
+| RetroArch | [2048 (RetroArch)](https://github.com/libretro/2048), [Amstrad - CPC/GX40000 (RetroArch)](https://github.com/libretro/caprice32), [Atari 400/800/600XL/800XL/130XE (RetroArch)](https://docs.libretro.com/library/atari800/), [Commodore - C128 (RetroArch)](https://github.com/libretro/vice), [Commodore - C64 (RetroArch)](https://github.com/libretro/vice), [Commodore - PET (RetroArch)](https://github.com/libretro/vice), [Commodore - VIC-20 (RetroArch)](https://github.com/libretro/vice), [DosBox-Pure (RetroArch)](https://github.com/schellingb/dosbox-pure), [EightyOne (ZX81) (RetroArch)](https://github.com/libretro/81-libretro), [Fairchild ChannelF (FreeChaf) (RetroArch)](https://github.com/libretro/freechaf), [MAME (Current) (RetroArch)](https://docs.libretro.com/development/cores/core-specific/mame/), [MSX/SVI/ColecoVision/SG-1000 (blueMSX) (RetroArch)](https://github.com/libretro/blueMSX), [MelonDS DS (RetroArch)](https://docs.libretro.com/library/melonds_ds/), [NooDS (RetroArch)](https://github.com/Hydr8gon/NooDS), [Opera (RetroArch)](https://github.com/libretro/opera-libretro), [PUAE (Amiga) (RetroArch)](https://github.com/libretro/libretro-uae), [PUAE 2021 (Amiga) (RetroArch)](https://github.com/libretro/libretro-uae), [PalmOS (Mu) (RetroArch)](https://docs.libretro.com/library/mu/), [Philips - P2000T (RetroArch)](https://github.com/libretro/m2000), [Rick Dangerous (RetroArch)](https://github.com/libretro/xrick), [ScummVM (RetroArch)](https://github.com/libretro/scummvm), [Sharp X1 (RetroArch)](https://github.com/libretro/x1), [Sinclair - ZX Spectrum (RetroArch)](https://github.com/libretro/fuse), [TI-83 (Numero) (RetroArch)](https://github.com/libretro/numero), [TIC-80 (RetroArch)](https://github.com/nesbox/TIC-80), [Thomson - MO/TO (RetroArch)](https://github.com/libretro/theodore) | Nightly, Nightly, 3.1.0, Nightly, Nightly, Nightly, Nightly, 0.9.2, Nightly, Nightly, v0.258, Nightly, git, git, 1.0.0, Nightly, Nightly, Nightly, Nightly, Nightly, Nightly, Nightly, Nightly, Nightly, Nightly, Nightly |
+| MAME | [FBNeo (RetroArch)](https://github.com/libretro/FBNeo), [MAME (Current) (RetroArch)](https://docs.libretro.com/development/cores/core-specific/mame/), [MAME 2000 (RetroArch)](https://github.com/libretro/mame2000-libretro), [MAME 2003 (RetroArch)](https://github.com/libretro/mame2003-libretro), [MAME 2003 Plus (RetroArch)](https://github.com/libretro/mame2003-plus-libretro), [MAME 2010 (RetroArch)](https://github.com/libretro/mame2010-libretro) | v1.0.0.02, v0.258, v0.139, v0.139, v0.139, v0.139 |
+| Magnavox Odyssey2 | [O2EM (Odyssey 2) (RetroArch)](https://github.com/libretro/libretro-o2em) | Nightly |
+| Mattel Intellivision | [FreeINTV (RetroArch)](https://github.com/libretro/FreeIntv), [FreeIntv](https://github.com/libretro/FreeIntv) | Nightly, 2018.1.5 |
 | PC98 | [NP2Kai (PC-98) (RetroArch)](https://github.com/AZO234/NP2kai) | rev.22-145 |
-| TurboGrafx-16 | [Beetle Supergrafx (PC Engine) (RetroArch)](https://github.com/libretro/beetle-supergrafx-libretro), [Mednafen](https://mednafen.github.io) | v1.29.0, 1.32.1 |
-| TurboGrafx-CD | [Beetle Supergrafx (PC Engine) (RetroArch)](https://github.com/libretro/beetle-supergrafx-libretro), [Mednafen](https://mednafen.github.io) | v1.29.0, 1.32.1 |
-| SuperGrafx | [Beetle Supergrafx (PC Engine) (RetroArch)](https://github.com/libretro/beetle-supergrafx-libretro), [Mednafen](https://mednafen.github.io) | v1.29.0, 1.32.1 |
-| PCFX | [Mednafen](https://mednafen.github.io) | 1.32.1 |
-| Nintendo | [FCEUX](http://sourceforge.net/projects/fceultra/), [FCEUmm (RetroArch)](https://github.com/libretro/fceumm), [Final Burn Neo](https://neo-source.com), [Mednafen](https://mednafen.github.io), [Nestopia (RetroArch)](https://github.com/libretro/nestopia) | 2.6.2, nightly, 1.0.0.2, 1.32.1, v1.51.1 |
+| TurboGrafx-16 | [Beetle PC Engine (RetroArch)](https://github.com/libretro/beetle-pce-libretro), [Beetle PC Engine Fast (RetroArch)](https://github.com/libretro/beetle-pce-fast-libretro), [Beetle Supergrafx (PC Engine) (RetroArch)](https://github.com/libretro/beetle-supergrafx-libretro), [Mednafen](https://mednafen.github.io) | Nightly, Nightly, v1.29.0, 1.32.1 |
+| TurboGrafx-CD | [Beetle PC Engine (RetroArch)](https://github.com/libretro/beetle-pce-libretro), [Beetle PC Engine Fast (RetroArch)](https://github.com/libretro/beetle-pce-fast-libretro), [Beetle Supergrafx (PC Engine) (RetroArch)](https://github.com/libretro/beetle-supergrafx-libretro), [Mednafen](https://mednafen.github.io) | Nightly, Nightly, v1.29.0, 1.32.1 |
+| SuperGrafx | [Beetle PC Engine (RetroArch)](https://github.com/libretro/beetle-pce-libretro), [Beetle Supergrafx (PC Engine) (RetroArch)](https://github.com/libretro/beetle-supergrafx-libretro), [Mednafen](https://mednafen.github.io) | Nightly, v1.29.0, 1.32.1 |
+| PCFX | [Beetle PC-FX (RetroArch)](https://github.com/libretro/beetle-pcfx-libretro), [Mednafen](https://mednafen.github.io) | Nightly, 1.32.1 |
+| Nintendo | [FCEUX](http://sourceforge.net/projects/fceultra/), [FCEUmm (RetroArch)](https://github.com/libretro/fceumm), [Final Burn Neo](https://neo-source.com), [Mednafen](https://mednafen.github.io), [Nestopia (RetroArch)](https://github.com/libretro/nestopia), [QuickNES (RetroArch)](https://github.com/libretro/QuickNES_Core) | 2.6.2, nightly, 1.0.0.2, 1.32.1, v1.51.1, Nightly |
 | Famicom Disk System | [FCEUX](http://sourceforge.net/projects/fceultra/), [FCEUmm (RetroArch)](https://github.com/libretro/fceumm), [Mednafen](https://mednafen.github.io), [Nestopia (RetroArch)](https://github.com/libretro/nestopia) | 2.6.2, nightly, 1.32.1, v1.51.1 |
-| Game Boy | [Gambatte](https://github.com/sinamas/gambatte), [Mednafen](https://mednafen.github.io), [SameBoy (RetroArch)](https://github.com/libretro/SameBoy), [TGBDual](https://github.com/libretro/tgbdual-libretro), [VBA-M (RetroArch)](https://docs.libretro.com/library/vba_m/), [mGBA (RetroArch)](https://github.com/libretro/mgba) | 0.5.0, 1.32.1, v0.14.7, 0.8.3, nightly, v0.10-dev |
-| Super Nintendo | [BSNES (RetroArch)](https://docs.libretro.com/library/bsnes/), [BSNES HD (RetroArch)](https://docs.libretro.com/library/bsnes/), [BSNES Mercury (Accuracy) (RetroArch)](https://docs.libretro.com/library/bsnes/), [BSNES Mercury (Balanced) (RetroArch)](https://docs.libretro.com/library/bsnes/), [Mednafen](https://mednafen.github.io), [Snes9x](http://www.snes9x.com), [Snes9x (RetroArch)](https://docs.libretro.com/library/snes9x/), [Snesticle](https://github.com/iaddis/SNESticle) | nightly, nightly, nightly, nightly, 1.32.1, 1.60, 1.61, 1.0 |
+| Game Boy | [Gambatte](https://github.com/sinamas/gambatte), [Gambatte (RetroArch)](https://github.com/libretro/gambatte-libretro), [Mednafen](https://mednafen.github.io), [SameBoy (RetroArch)](https://github.com/libretro/SameBoy), [TGBDual](https://github.com/libretro/tgbdual-libretro), [VBA-M (RetroArch)](https://docs.libretro.com/library/vba_m/), [mGBA (RetroArch)](https://github.com/libretro/mgba) | 0.5.0, Nightly, 1.32.1, v0.14.7, v0.8.3, nightly, v0.10-dev |
+| Super Nintendo | [BSNES (RetroArch)](https://docs.libretro.com/library/bsnes/), [BSNES HD (RetroArch)](https://docs.libretro.com/library/bsnes/), [BSNES Mercury (Accuracy) (RetroArch)](https://docs.libretro.com/library/bsnes/), [BSNES Mercury (Balanced) (RetroArch)](https://docs.libretro.com/library/bsnes/), [BSNES Mercury (Performance) (RetroArch)](https://github.com/libretro/bsnes-mercury), [Beetle SNES (RetroArch)](https://github.com/libretro/beetle-bsnes-libretro), [Mednafen](https://mednafen.github.io), [Snes9x](http://www.snes9x.com), [Snes9x (RetroArch)](https://docs.libretro.com/library/snes9x/), [Snes9x 2002 (RetroArch)](https://github.com/libretro/snes9x2002), [Snes9x 2005 (RetroArch)](https://github.com/libretro/snes9x2005), [Snes9x 2005 Plus (RetroArch)](https://github.com/libretro/snes9x2005), [Snes9x 2010 (RetroArch)](https://github.com/libretro/snes9x2010), [Snesticle](https://github.com/iaddis/SNESticle) | nightly, nightly, nightly, nightly, nightly, Nightly, 1.32.1, 1.60, 1.61, Nightly, Nightly, Nightly, Nightly, 1.0 |
 | Virtual Boy | [Beetle VB (RetroArch)](https://github.com/libretro/beetle-vb-libretro), [Mednafen](https://mednafen.github.io) | v0.9.36.1, 1.32.1 |
-| Nintendo 64 | [Mupen64Plus](https://github.com/mupen64plus), [Mupen64Plus-Next](https://github.com/libretro/mupen64plus-libretro-nx), [Mupen64Plus-Next (RetroArch)](https://github.com/libretro/mupen64plus-libretro-nx) | 2.5, 0, 2024.10.29 |
-| Game Boy Color | [Gambatte](https://github.com/sinamas/gambatte), [Mednafen](https://mednafen.github.io), [SameBoy (RetroArch)](https://github.com/libretro/SameBoy), [TGBDual](https://github.com/libretro/tgbdual-libretro), [VBA-M (RetroArch)](https://docs.libretro.com/library/vba_m/), [mGBA (RetroArch)](https://github.com/libretro/mgba) | 0.5.0, 1.32.1, v0.14.7, 0.8.3, nightly, v0.10-dev |
-| Game Boy Advance | [Beetle GBA (RetroArch)](https://github.com/libretro/beetle-gba-libretro), [Mednafen](https://mednafen.github.io), [VBA-M (RetroArch)](https://docs.libretro.com/library/vba_m/), [VisualBoyAdvance](https://sourceforge.net/projects/vba/), [mGBA](https://mgba.io/), [mGBA (RetroArch)](https://github.com/libretro/mgba) | v0.9.36, 1.32.1, nightly, 1.8.0, 0.10.3, v0.10-dev |
-| Pokémon mini | [PokeMini](http://sourceforge.net/projects/pokemini/), [PokeMini (RetroArch)](https://docs.libretro.com/library/pokemini/) | 0.6, Nightly |
-| 3DO | [Opera](https://github.com/libretro/opera-libretro), [Opera (RetroArch)](https://github.com/libretro/opera-libretro) | 0, 1.0.0 |
+| Nintendo 64 | [Mupen64Plus](https://github.com/mupen64plus), [Mupen64Plus-Next](https://github.com/libretro/mupen64plus-libretro-nx), [Mupen64Plus-Next (RetroArch)](https://github.com/libretro/mupen64plus-libretro-nx) | 2.5, 2.4, 2024.10.29 |
+| Game Boy Color | [Gambatte](https://github.com/sinamas/gambatte), [Gambatte (RetroArch)](https://github.com/libretro/gambatte-libretro), [Mednafen](https://mednafen.github.io), [SameBoy (RetroArch)](https://github.com/libretro/SameBoy), [TGBDual](https://github.com/libretro/tgbdual-libretro), [VBA-M (RetroArch)](https://docs.libretro.com/library/vba_m/), [mGBA (RetroArch)](https://github.com/libretro/mgba) | 0.5.0, Nightly, 1.32.1, v0.14.7, v0.8.3, nightly, v0.10-dev |
+| Game Boy Advance | [Beetle GBA (RetroArch)](https://github.com/libretro/beetle-gba-libretro), [Mednafen](https://mednafen.github.io), [VBA Next (RetroArch)](https://github.com/libretro/vba-next), [VBA-M (RetroArch)](https://docs.libretro.com/library/vba_m/), [VisualBoyAdvance](https://sourceforge.net/projects/vba/), [gpSP (RetroArch)](https://github.com/libretro/gpsp), [mGBA](https://mgba.io/), [mGBA (RetroArch)](https://github.com/libretro/mgba) | v0.9.36, 1.32.1, Nightly, nightly, 1.8.0, Nightly, 0.10.3, v0.10-dev |
+| Pokémon mini | [PokeMini](http://sourceforge.net/projects/pokemini/), [PokeMini (RetroArch)](https://docs.libretro.com/library/pokemini/) | v0.60, Nightly |
+| 3DO | [Opera](https://github.com/libretro/opera-libretro), [Opera (RetroArch)](https://github.com/libretro/opera-libretro) | 1.0.0, 1.0.0 |
 | Neo Geo | FBNeo, [FBNeo (RetroArch)](https://github.com/libretro/FBNeo), [Final Burn Neo](https://neo-source.com), [Geolith (RetroArch)](https://github.com/libretro/geolith-libretro), [MAME (Current) (RetroArch)](https://docs.libretro.com/development/cores/core-specific/mame/) | v1.0.0.02, 1.0.0.2, 2015.02.16, v0.258 |
+| Neo Geo CD | [NeoCD (RetroArch)](https://github.com/libretro/neocd_libretro) | Nightly |
 | Neo Geo Pocket | [Beetle Neopop (RetroArch)](https://docs.libretro.com/library/beetle_neopop/), [Mednafen](https://mednafen.github.io), [RACE (RetroArch)](https://docs.libretro.com/library/race/) | v0.9.36.1, 1.32.1, v2.16 |
 | Neo Geo Pocket Color | [Beetle Neopop (RetroArch)](https://docs.libretro.com/library/beetle_neopop/), [Mednafen](https://mednafen.github.io), [RACE (RetroArch)](https://docs.libretro.com/library/race/) | v0.9.36.1, 1.32.1, v2.16 |
-| SG-1000 | [Genesis Plus GX](https://github.com/ekeeke/Genesis-Plus-GX), [Genesis Plus GX](https://github.com/ekeeke/Genesis-Plus-GX), [Genesis Plus GX (RetroArch)](https://github.com/libretro/Genesis-Plus-GX), [Genesis Plus GX (Wide) (RetroArch)](https://github.com/libretro/Genesis-Plus-GX-Wide), [MSX/SVI/ColecoVision/SG-1000 (blueMSX) (RetroArch)](https://github.com/libretro/blueMSX) | 1.7.4 12.13.2020, 1.7.4 12.13.2020, 1.7.4, nightly, Nightly |
-| Master System | [Genesis Plus GX](https://github.com/ekeeke/Genesis-Plus-GX), [Genesis Plus GX](https://github.com/ekeeke/Genesis-Plus-GX), [Genesis Plus GX (RetroArch)](https://github.com/libretro/Genesis-Plus-GX), [Genesis Plus GX (Wide) (RetroArch)](https://github.com/libretro/Genesis-Plus-GX-Wide) | 1.7.4 12.13.2020, 1.7.4 12.13.2020, 1.7.4, nightly |
-| Genesis | [Genesis Plus GX](https://github.com/ekeeke/Genesis-Plus-GX), [Genesis Plus GX](https://github.com/ekeeke/Genesis-Plus-GX), [Genesis Plus GX (RetroArch)](https://github.com/libretro/Genesis-Plus-GX), [Genesis Plus GX (Wide) (RetroArch)](https://github.com/libretro/Genesis-Plus-GX-Wide) | 1.7.4 12.13.2020, 1.7.4 12.13.2020, 1.7.4, nightly |
-| Game Gear | [Genesis Plus GX](https://github.com/ekeeke/Genesis-Plus-GX), [Genesis Plus GX](https://github.com/ekeeke/Genesis-Plus-GX), [Genesis Plus GX (RetroArch)](https://github.com/libretro/Genesis-Plus-GX), [Genesis Plus GX (Wide) (RetroArch)](https://github.com/libretro/Genesis-Plus-GX-Wide) | 1.7.4 12.13.2020, 1.7.4 12.13.2020, 1.7.4, nightly |
-| Sega CD | [Genesis Plus GX](https://github.com/ekeeke/Genesis-Plus-GX), [Genesis Plus GX](https://github.com/ekeeke/Genesis-Plus-GX), [Genesis Plus GX (RetroArch)](https://github.com/libretro/Genesis-Plus-GX), [Genesis Plus GX (Wide) (RetroArch)](https://github.com/libretro/Genesis-Plus-GX-Wide) | 1.7.4 12.13.2020, 1.7.4 12.13.2020, 1.7.4, nightly |
-| 32X | [PicoDrive](https://github.com/notaz/picodrive) | 1.93 |
-| Saturn | [Beetle Saturn (RetroArch)](https://github.com/libretro/beetle-saturn-libretro), [Mednafen](https://mednafen.github.io), [Yabause](https://yabause.org), [Yabause (Saturn) (RetroArch)](https://github.com/libretro/yabause) | v0.9.45.1, 1.32.1, 0, v0.9.15 |
+| SG-1000 | [Genesis Plus GX](https://github.com/ekeeke/Genesis-Plus-GX), [Genesis Plus GX (RetroArch)](https://github.com/libretro/Genesis-Plus-GX), [Genesis Plus GX (Wide) (RetroArch)](https://github.com/libretro/Genesis-Plus-GX-Wide), [MSX/SVI/ColecoVision/SG-1000 (blueMSX) (RetroArch)](https://github.com/libretro/blueMSX) | v1.7.4, 1.7.4, nightly, Nightly |
+| Master System | [Genesis Plus GX](https://github.com/ekeeke/Genesis-Plus-GX), [Genesis Plus GX (RetroArch)](https://github.com/libretro/Genesis-Plus-GX), [Genesis Plus GX (Wide) (RetroArch)](https://github.com/libretro/Genesis-Plus-GX-Wide), [SMS Plus GX (RetroArch)](https://github.com/libretro/smsplus-gx) | v1.7.4, 1.7.4, nightly, Nightly |
+| Genesis | [Genesis Plus GX](https://github.com/ekeeke/Genesis-Plus-GX), [Genesis Plus GX (RetroArch)](https://github.com/libretro/Genesis-Plus-GX), [Genesis Plus GX (Wide) (RetroArch)](https://github.com/libretro/Genesis-Plus-GX-Wide) | v1.7.4, 1.7.4, nightly |
+| Game Gear | [Genesis Plus GX](https://github.com/ekeeke/Genesis-Plus-GX), [Genesis Plus GX (RetroArch)](https://github.com/libretro/Genesis-Plus-GX), [Genesis Plus GX (Wide) (RetroArch)](https://github.com/libretro/Genesis-Plus-GX-Wide), [SMS Plus GX (RetroArch)](https://github.com/libretro/smsplus-gx) | v1.7.4, 1.7.4, nightly, Nightly |
+| Sega CD | [Genesis Plus GX](https://github.com/ekeeke/Genesis-Plus-GX), [Genesis Plus GX (RetroArch)](https://github.com/libretro/Genesis-Plus-GX), [Genesis Plus GX (Wide) (RetroArch)](https://github.com/libretro/Genesis-Plus-GX-Wide) | v1.7.4, 1.7.4, nightly |
+| 32X | [PicoDrive](https://github.com/notaz/picodrive) | 2.03 |
+| Saturn | [Beetle Saturn (RetroArch)](https://github.com/libretro/beetle-saturn-libretro), [Mednafen](https://mednafen.github.io), [Yabause](https://yabause.org), [Yabause (Saturn) (RetroArch)](https://github.com/libretro/yabause) | v0.9.45.1, 1.32.1, v0.9.15, v0.9.15 |
 | Smith Engineering Vectrex | [VecX (RetroArch)](https://docs.libretro.com/library/vecx/) | Nightly |
-| PlayStation | [Beetle PSX (HW Renderer) (RetroArch)](https://github.com/libretro/beetle-psx-libretro), [Beetle PSX (SW Renderer) (RetroArch)](https://github.com/libretro/beetle-psx-libretro), [BeetlePSX](https://github.com/libretro/beetle-psx-libretro), [DuckStation](https://github.com/stenzek/duckstation/), [Mednafen](https://mednafen.github.io), [PCSX (Rearmed)](https://github.com/notaz/pcsx_rearmed), [PCSX ReARMed (RetroArch)](https://docs.libretro.com/library/pcsx_rearmed/) | 0.9.44.1, 0.9.44.1, 0, 2023.01.11, 1.32.1, 1, r21 |
-| Game Music | [GME](https://github.com/libretro/libretro-gme), [Game Music Emu (RetroArch)](https://docs.libretro.com/library/game_music_emu/) | 635b1e9, v0.6.3 |
+| PlayStation | [Beetle PSX (HW Renderer) (RetroArch)](https://github.com/libretro/beetle-psx-libretro), [Beetle PSX (SW Renderer) (RetroArch)](https://github.com/libretro/beetle-psx-libretro), [BeetlePSX](https://github.com/libretro/beetle-psx-libretro), [DuckStation](https://github.com/stenzek/duckstation/), [Mednafen](https://mednafen.github.io), [PCSX (Rearmed)](https://github.com/notaz/pcsx_rearmed), [PCSX ReARMed (RetroArch)](https://docs.libretro.com/library/pcsx_rearmed/) | 0.9.44.1, 0.9.44.1, 0, 2023.01.11, 1.32.1, r23l, r21 |
+| Game Music | [GME](https://github.com/libretro/libretro-gme), [Game Music Emu (RetroArch)](https://docs.libretro.com/library/game_music_emu/) | v0.6.1, v0.6.3 |
 | Supervision | [Potator](https://github.com/alekmaul/potator), [Potator (RetroArch)](https://github.com/libretro/potator) | 1.1, v20200223 |
 | ZX Spectrum | [EP128Emu](http://ep128emu.sourceforge.net/about.html), [Fuse](http://fuse-emulator.sourceforge.net), [Sinclair - ZX Spectrum (RetroArch)](https://github.com/libretro/fuse) | 2.0.11, 0, Nightly |
 
@@ -315,6 +321,7 @@ Use these identifiers when creating `.deltaskin` files. Browse column links dire
 | Pokémon mini | `com.provenance.pokemonmini` | — | — |
 | 3DO | `com.provenance.3DO` | — | — |
 | Neo Geo | `com.provenance.neogeo` | — | — |
+| Neo Geo CD | `com.provenance.neogeocd` | — | — |
 | Neo Geo Pocket | `com.provenance.ngp` | — | — |
 | Neo Geo Pocket Color | `com.provenance.ngpc` | — | — |
 | SG-1000 | `com.provenance.sg1000` | — | — |
