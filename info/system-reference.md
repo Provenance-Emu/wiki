@@ -91,6 +91,7 @@ Provenance supports **48 systems** (21 additional in development or disabled).
 | Sony | PlayStation Portable | 2004 | In development |
 | Id Software | Quake | 1996 | App Store disabled |
 | Id Software | Quake II | 1996 | App Store disabled |
+| Nesbox | TIC-80 | 2017 | In development |
 | Nintendo | Wii | 2006 | App Store disabled |
 | Id Software | Wolfenstein 3D | 1992 | App Store disabled |
 
