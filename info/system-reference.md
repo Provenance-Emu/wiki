@@ -129,9 +129,20 @@ Provenance supports **48 systems** (21 additional in development or disabled).
 | Famicom Disk System | `disksys.rom` | Disk System BIOS | `ca30b50f880eb660a320674ed365ef7a` | 8 KB | ✅ Required |
 | Game Boy Advance | `GBA.BIOS` | Game Boy Advance BIOS | `a860e8c0b6d573d191e4ec7db1b1e4f6` | 16 KB | 🔶 Optional |
 | Pokémon mini | `bios.min` | Pokémon mini BIOS | `1e4fb124a3a886865acb574f388c803d` | 4 KB | 🔶 Optional |
-| 3DO | `panafz10.bin` | 3DO BIOS | `51f2f43ae2f3508a14d9f56597e2d3ce` | 1.0 MB | ✅ Required |
-|  | `panafz10-patched.bin` | 3DO Patches BIOS | `1477bda80dc33731a65468c1f5bcbee9` | 1.0 MB | 🔶 Optional |
-|  | `rom2.rom` | Japanese Character ROM | `428577250f43edc902ea239c50d2240d` | 1.0 MB | 🔶 Optional |
+| 3DO | `panafz1.bin` | Panasonic FZ-1 BIOS | `f47264dd47fe30f73ab3c010015c155b` | 1.0 MB | 🔶 Optional |
+|  | `panafz10.bin` | Panasonic FZ-10 BIOS | `51f2f43ae2f3508a14d9f56597e2d3ce` | 1.0 MB | ✅ Required |
+|  | `panafz10-norsa.bin` | Panasonic FZ-10 BIOS (encryption check disabled) | `1477bda80dc33731a65468c1f5bcbee9` | 1.0 MB | 🔶 Optional |
+|  | `panafz10e-anvil.bin` | Panasonic FZ-10E ANVIL BIOS | `a48e6746bd7edec0f40cff078f0bb19f` | 1.0 MB | 🔶 Optional |
+|  | `panafz10e-anvil-norsa.bin` | Panasonic FZ-10E ANVIL BIOS (encryption check disabled) | `cf11bbb5a16d7af9875cca9de9a15e09` | 1.0 MB | 🔶 Optional |
+|  | `goldstar.bin` | Goldstar GDO-101M BIOS | `8639fd5e549bd6238cfee79e3e749114` | 1.0 MB | 🔶 Optional |
+|  | `sanyotry.bin` | Sanyo Try IMP-21J BIOS | `35fa1a1ebaaeea286dc5cd15487c13ea` | 1.0 MB | 🔶 Optional |
+|  | `3do_arcade_saot.bin` | 3DO Arcade — Shootout at Old Tucson BIOS | `8970fc987ab89a7f64da9f8a8c4333ff` | 512 KB | 🔶 Optional |
+|  | `panafz1-kanji.bin` | Panasonic FZ-1 Kanji font ROM | `b8dc97f778a6245c58e064b0312e8281` | 912 KB | 🔶 Optional |
+|  | `panafz10ja-anvil-kanji.bin` | Panasonic FZ-10JA ANVIL Kanji font ROM | `428577250f43edc902ea239c50d2240d` | 1.0 MB | 🔶 Optional |
+|  | `panafz1j.bin` | Panasonic FZ-1J BIOS | `a496cfdded3da562759be3561317b605` | 1.0 MB | 🔶 Optional |
+|  | `panafz1j-norsa.bin` | Panasonic FZ-1J BIOS (encryption check disabled) | `f6c71de7470d16abe4f71b1444883dc8` | 1.0 MB | 🔶 Optional |
+|  | `panafz1j-kanji.bin` | Panasonic FZ-1J Kanji font ROM | `c23fb5d5e6bb1c240d02cf968972be37` | 1.0 MB | 🔶 Optional |
+|  | `rom2.rom` | Japanese character ROM (FreeDO / legacy filename) | `428577250f43edc902ea239c50d2240d` | 1.0 MB | 🔶 Optional |
 | Neo Geo | `neogeo.zip` | NeoGeo BIOS (MAME 0.258 BIOS) | `00dad01abdbf8ea9e79ad2fe11bdb182` | 1.8 MB | 🔶 Optional |
 |  | `aes.zip` | NeoGeo AES BIOS | `ad9585c72130c56f04ae26aae87c289d` | 830 KB | 🔶 Optional |
 | Neo Geo CD | `neocdz.zip` | Neo Geo CD BIOS | `f39572af7584738b76f87a8e88cc5540` | 512 KB | ✅ Required |
