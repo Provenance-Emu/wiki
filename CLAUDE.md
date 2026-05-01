@@ -2,6 +2,18 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Part of `personal-os`
+
+This repo is a satellite of [`personal-os`](file:///Users/jmattiello/Workspace/personal-os) at `~/Workspace/personal-os`. A fresh agent session here should read `personal-os/AGENTS.md` first for shared conventions:
+
+- **`VOICE.md`** — voice rules for any public-facing prose (wiki copy is publicly visible — voice still applies).
+- **`decisions/`** — cross-repo MADR-numbered ADRs.
+- **`journal/`** — daily orchestration log; touch entries when shipping work in this repo.
+- **`INBOX.md`** — things-to-act-on across all projects.
+- **`wiki/projects-index.md`** — registry of every active repo and how it relates to this one. Note: that index is in `personal-os/wiki/`, not here.
+
+Don't edit `personal-os/raw/` from a satellite — that's the central drop-zone, one-way.
+
 ## Repository Overview
 
 This is the **documentation wiki** for [Provenance](https://github.com/Provenance-Emu/Provenance), a multi-system emulator for iOS, iPadOS, macOS, and tvOS. The repo contains only Markdown files — there is no application code, build system, or test suite here.
