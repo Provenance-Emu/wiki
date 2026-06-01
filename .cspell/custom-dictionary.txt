@@ -120,6 +120,7 @@ GLideN64
 glslang
 glupen
 GodMode9
+Goldstar
 Hackintosh
 hakchi
 hashfile
@@ -186,6 +187,7 @@ NAND
 neogeo
 Neopop
 NES
+Nesbox
 Nestopia
 netplay
 Nextcloud
@@ -217,6 +219,7 @@ ProvenanceTV
 PSP
 PSX
 PSX2PSP
+PUAE
 PVUI
 Rawdump
 ReARMed
@@ -233,6 +236,7 @@ SameDuck
 sandboxed
 sandboxing
 sanni
+Sanyo
 scanline
 scanlines
 SCPH
