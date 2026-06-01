@@ -5,7 +5,7 @@ description: Auto-generated system and core reference from Provenance source cod
 # System Reference
 
 {% hint style="info" %}
-**Auto-generated** from [Provenance source code](https://github.com/Provenance-Emu/Provenance) on May 18, 2026. Do not edit manually — changes will be overwritten by the [sync workflow](https://github.com/Provenance-Emu/wiki/actions/workflows/sync-from-source.yml).
+**Auto-generated** from [Provenance source code](https://github.com/Provenance-Emu/Provenance) on May 25, 2026. Do not edit manually — changes will be overwritten by the [sync workflow](https://github.com/Provenance-Emu/wiki/actions/workflows/sync-from-source.yml).
 {% endhint %}
 
 **Quick links:** [Systems](#systems) | [BIOS Requirements](#bios-requirements) | [File Extensions](#supported-file-extensions) | [Core Matrix](#core-to-system-matrix) | [Cheat Support](#cheat-support) | [Skin Identifiers](#skin-identifiers)
@@ -222,7 +222,7 @@ Shows which emulator cores are available for each system.
 |:---|:---|:---|
 | Atari 2600 | [Atari 2600 (RetroArch)](https://docs.libretro.com/library/stella/), [Stella](https://stella-emu.github.io), [Stella (Current) (RetroArch)](https://stella-emu.github.io), [Stella 2023 (RetroArch)](https://stella-emu.github.io) | 6.6, 3.4.1, Nightly, Nightly |
 | Atari 5200 | [Atari 5200 (RetroArch)](https://docs.libretro.com/library/atari800/), [Atari 800](https://atari800.github.io) | 3.1.0, 3.1.0 |
-| Atari 8bit Computer | [Atari 400/800/600XL/800XL/130XE (RetroArch)](https://docs.libretro.com/library/atari800/) | 3.1.0 |
+| Atari 8bit Computer | [Atari 400/800/600XL/800XL/130XE (RetroArch)](https://docs.libretro.com/library/atari800/), [Atari 800](https://atari800.github.io) | 3.1.0, 3.1.0 |
 | Atari 7800 | [Atari 7800 (RetroArch)](https://docs.libretro.com/library/prosystem/), [ProSystem](https://gstanton.github.io/ProSystem1_3/) | 1.3e, 1.3 |
 | Atari Lynx | [Atari Lynx (RetroArch)](https://docs.libretro.com/library/beetle_lynx/), [Handy (Atari Lynx) (RetroArch)](https://github.com/libretro/libretro-handy), [Mednafen](https://mednafen.github.io) | 1.24.0, Nightly, 1.32.1 |
 | Atari Jaguar | [Atari Jaguar (Virtual Jaguar) (RetroArch)](https://docs.libretro.com/library/virtual_jaguar/) | 2.1.0 |
