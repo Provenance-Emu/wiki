@@ -5,7 +5,7 @@ description: Auto-generated system and core reference from Provenance source cod
 # System Reference
 
 {% hint style="info" %}
-**Auto-generated** from [Provenance source code](https://github.com/Provenance-Emu/Provenance) on May 25, 2026. Do not edit manually — changes will be overwritten by the [sync workflow](https://github.com/Provenance-Emu/wiki/actions/workflows/sync-from-source.yml).
+**Auto-generated** from [Provenance source code](https://github.com/Provenance-Emu/Provenance) on June 22, 2026. Do not edit manually — changes will be overwritten by the [sync workflow](https://github.com/Provenance-Emu/wiki/actions/workflows/sync-from-source.yml).
 {% endhint %}
 
 **Quick links:** [Systems](#systems) | [BIOS Requirements](#bios-requirements) | [File Extensions](#supported-file-extensions) | [Core Matrix](#core-to-system-matrix) | [Cheat Support](#cheat-support) | [Skin Identifiers](#skin-identifiers)
@@ -14,7 +14,7 @@ description: Auto-generated system and core reference from Provenance source cod
 
 ## Systems
 
-Provenance supports **48 systems** (22 additional in development or disabled).
+Provenance supports **48 systems** (25 additional in development or disabled).
 
 | Manufacturer | System | Short | Year | Bits | Screen | Portable | CD | Rumble | BIOS |
 |:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|
@@ -76,6 +76,7 @@ Provenance supports **48 systems** (22 additional in development or disabled).
 | Apple | Apple II | 1977 | App Store disabled |
 | Atari | Atari Jaguar CD | 1993 | In development |
 | Atari | Atari ST | 1985 | In development |
+| Sammy | Atomiswave | 2003 | In development |
 | Philips | CD-i | 2010 | App Store disabled |
 | Commodore International | Commodore 64 | 1982 | In development |
 | Nintendo | DS | 2004 | In development |
@@ -86,6 +87,8 @@ Provenance supports **48 systems** (22 additional in development or disabled).
 | Microsoft | MSX | 1983 | In development |
 | Microsoft | MSX2 | 1983 | In development |
 | Apple | Macintosh | 1984 | App Store disabled |
+| Sega | NAOMI | 1998 | In development |
+| Sega | NAOMI 2 | 2000 | In development |
 | Palm | PalmOS | 2010 | App Store disabled |
 | Sony | PlayStation 2 | 2000 | In development |
 | Sony | PlayStation Portable | 2004 | In development |
@@ -228,7 +231,7 @@ Shows which emulator cores are available for each system.
 | Atari Jaguar | [Atari Jaguar (Virtual Jaguar) (RetroArch)](https://docs.libretro.com/library/virtual_jaguar/) | 2.1.0 |
 | WonderSwan | [Beetle WonderSwan (RetroArch)](https://github.com/libretro/beetle-wswan-libretro), [Mednafen](https://mednafen.github.io) | Nightly, 1.32.1 |
 | WonderSwan | [Beetle WonderSwan (RetroArch)](https://github.com/libretro/beetle-wswan-libretro), [Mednafen](https://mednafen.github.io) | Nightly, 1.32.1 |
-| CBS ColecoVision | FBNeo, [Final Burn Neo](https://neo-source.com), [Gearcoleco](https://github.com/drhelius/Gearcoleco), [Gearcoleco (RetroArch)](https://github.com/drhelius/Gearcoleco), [MSX/SVI/ColecoVision/SG-1000 (blueMSX) (RetroArch)](https://github.com/libretro/blueMSX) | 1.0.0.2, 1.0.1, Nightly, Nightly |
+| CBS ColecoVision | [Gearcoleco](https://github.com/drhelius/Gearcoleco), [Gearcoleco (RetroArch)](https://github.com/drhelius/Gearcoleco), [MSX/SVI/ColecoVision/SG-1000 (blueMSX) (RetroArch)](https://github.com/libretro/blueMSX) | 1.0.1, Nightly, Nightly |
 | CPS-1 | [FBAlpha CPS1 (RetroArch)](https://github.com/libretro/fbalpha) | Nightly |
 | CPS-2 | [FBAlpha CPS2 (RetroArch)](https://github.com/libretro/fbalpha) | Nightly |
 | CPS-3 | [FBAlpha CPS3 (RetroArch)](https://github.com/libretro/fbalpha) | Nightly |
@@ -242,7 +245,7 @@ Shows which emulator cores are available for each system.
 | TurboGrafx-CD | [Beetle PC Engine (RetroArch)](https://github.com/libretro/beetle-pce-libretro), [Beetle PC Engine Fast (RetroArch)](https://github.com/libretro/beetle-pce-fast-libretro), [Beetle Supergrafx (PC Engine) (RetroArch)](https://github.com/libretro/beetle-supergrafx-libretro), [Mednafen](https://mednafen.github.io) | Nightly, Nightly, v1.29.0, 1.32.1 |
 | SuperGrafx | [Beetle PC Engine (RetroArch)](https://github.com/libretro/beetle-pce-libretro), [Beetle Supergrafx (PC Engine) (RetroArch)](https://github.com/libretro/beetle-supergrafx-libretro), [Mednafen](https://mednafen.github.io) | Nightly, v1.29.0, 1.32.1 |
 | PCFX | [Beetle PC-FX (RetroArch)](https://github.com/libretro/beetle-pcfx-libretro), [Mednafen](https://mednafen.github.io) | Nightly, 1.32.1 |
-| Nintendo | [FCEUX](http://sourceforge.net/projects/fceultra/), [FCEUmm (RetroArch)](https://github.com/libretro/fceumm), [Final Burn Neo](https://neo-source.com), [Mednafen](https://mednafen.github.io), [Nestopia (RetroArch)](https://github.com/libretro/nestopia), [QuickNES (RetroArch)](https://github.com/libretro/QuickNES_Core) | 2.6.2, nightly, 1.0.0.2, 1.32.1, v1.51.1, Nightly |
+| Nintendo | [FCEUX](http://sourceforge.net/projects/fceultra/), [FCEUmm (RetroArch)](https://github.com/libretro/fceumm), [Mednafen](https://mednafen.github.io), [Nestopia (RetroArch)](https://github.com/libretro/nestopia), [QuickNES (RetroArch)](https://github.com/libretro/QuickNES_Core) | 2.6.2, nightly, 1.32.1, v1.51.1, Nightly |
 | Famicom Disk System | [FCEUX](http://sourceforge.net/projects/fceultra/), [FCEUmm (RetroArch)](https://github.com/libretro/fceumm), [Mednafen](https://mednafen.github.io), [Nestopia (RetroArch)](https://github.com/libretro/nestopia) | 2.6.2, nightly, 1.32.1, v1.51.1 |
 | Game Boy | [Gambatte](https://github.com/sinamas/gambatte), [Gambatte (RetroArch)](https://github.com/libretro/gambatte-libretro), [Mednafen](https://mednafen.github.io), [SameBoy (RetroArch)](https://github.com/libretro/SameBoy), [TGBDual](https://github.com/libretro/tgbdual-libretro), [VBA-M (RetroArch)](https://docs.libretro.com/library/vba_m/), [mGBA (RetroArch)](https://github.com/libretro/mgba) | 0.5.0, Nightly, 1.32.1, v0.14.7, v0.8.3, nightly, v0.10-dev |
 | Super Nintendo | [BSNES (RetroArch)](https://docs.libretro.com/library/bsnes/), [BSNES HD (RetroArch)](https://docs.libretro.com/library/bsnes/), [BSNES Mercury (Accuracy) (RetroArch)](https://docs.libretro.com/library/bsnes/), [BSNES Mercury (Balanced) (RetroArch)](https://docs.libretro.com/library/bsnes/), [BSNES Mercury (Performance) (RetroArch)](https://github.com/libretro/bsnes-mercury), [Beetle SNES (RetroArch)](https://github.com/libretro/beetle-bsnes-libretro), [Mednafen](https://mednafen.github.io), [Snes9x](http://www.snes9x.com), [Snes9x (RetroArch)](https://docs.libretro.com/library/snes9x/), [Snes9x 2002 (RetroArch)](https://github.com/libretro/snes9x2002), [Snes9x 2005 (RetroArch)](https://github.com/libretro/snes9x2005), [Snes9x 2005 Plus (RetroArch)](https://github.com/libretro/snes9x2005), [Snes9x 2010 (RetroArch)](https://github.com/libretro/snes9x2010), [Snesticle](https://github.com/iaddis/SNESticle) | nightly, nightly, nightly, nightly, nightly, Nightly, 1.32.1, 1.60, 1.61, Nightly, Nightly, Nightly, Nightly, 1.0 |
@@ -252,7 +255,7 @@ Shows which emulator cores are available for each system.
 | Game Boy Advance | [Beetle GBA (RetroArch)](https://github.com/libretro/beetle-gba-libretro), [Mednafen](https://mednafen.github.io), [VBA Next (RetroArch)](https://github.com/libretro/vba-next), [VBA-M (RetroArch)](https://docs.libretro.com/library/vba_m/), [VisualBoyAdvance](https://sourceforge.net/projects/vba/), [gpSP (RetroArch)](https://github.com/libretro/gpsp), [mGBA](https://mgba.io/), [mGBA (RetroArch)](https://github.com/libretro/mgba) | v0.9.36, 1.32.1, Nightly, nightly, 1.8.0, Nightly, 0.10.3, v0.10-dev |
 | Pokémon mini | [PokeMini](http://sourceforge.net/projects/pokemini/), [PokeMini (RetroArch)](https://docs.libretro.com/library/pokemini/) | v0.60, Nightly |
 | 3DO | [Opera](https://github.com/libretro/opera-libretro), [Opera (RetroArch)](https://github.com/libretro/opera-libretro) | 1.0.0, 1.0.0 |
-| Neo Geo | FBNeo, [FBNeo (RetroArch)](https://github.com/libretro/FBNeo), [Final Burn Neo](https://neo-source.com), [Geolith (RetroArch)](https://github.com/libretro/geolith-libretro), [MAME (Current) (RetroArch)](https://docs.libretro.com/development/cores/core-specific/mame/) | v1.0.0.02, 1.0.0.2, 2015.02.16, v0.258 |
+| Neo Geo | [FBNeo (RetroArch)](https://github.com/libretro/FBNeo), [Geolith (RetroArch)](https://github.com/libretro/geolith-libretro), [MAME (Current) (RetroArch)](https://docs.libretro.com/development/cores/core-specific/mame/) | v1.0.0.02, 2015.02.16, v0.258 |
 | Neo Geo CD | [NeoCD (RetroArch)](https://github.com/libretro/neocd_libretro) | Nightly |
 | Neo Geo Pocket | [Beetle Neopop (RetroArch)](https://docs.libretro.com/library/beetle_neopop/), [Mednafen](https://mednafen.github.io), [RACE (RetroArch)](https://docs.libretro.com/library/race/) | v0.9.36.1, 1.32.1, v2.16 |
 | Neo Geo Pocket Color | [Beetle Neopop (RetroArch)](https://docs.libretro.com/library/beetle_neopop/), [Mednafen](https://mednafen.github.io), [RACE (RetroArch)](https://docs.libretro.com/library/race/) | v0.9.36.1, 1.32.1, v2.16 |
