@@ -5,7 +5,7 @@ description: Auto-generated system and core reference from Provenance source cod
 # System Reference
 
 {% hint style="info" %}
-**Auto-generated** from [Provenance source code](https://github.com/Provenance-Emu/Provenance) on July 27, 2026. Do not edit manually — changes will be overwritten by the [sync workflow](https://github.com/Provenance-Emu/wiki/actions/workflows/sync-from-source.yml).
+**Auto-generated** from [Provenance source code](https://github.com/Provenance-Emu/Provenance) on August 03, 2026. Do not edit manually — changes will be overwritten by the [sync workflow](https://github.com/Provenance-Emu/wiki/actions/workflows/sync-from-source.yml).
 {% endhint %}
 
 **Quick links:** [Systems](#systems) | [BIOS Requirements](#bios-requirements) | [File Extensions](#supported-file-extensions) | [Core Matrix](#core-to-system-matrix) | [Cheat Support](#cheat-support) | [Skin Identifiers](#skin-identifiers)
@@ -174,7 +174,7 @@ Provenance supports **49 systems** (24 additional in development or disabled).
 | Atari 7800 | `.a78`, `.bin`, `.cdf`, `.zip` |
 | Atari Lynx | `.lnx`, `.o`, `.zip` |
 | Atari Jaguar | `.abs`, `.bin`, `.cof`, `.j64`, `.jag`, `.prg`, `.rom`, `.zip` |
-| Atari Jaguar CD | `.cdi`, `.cue`, `.iso` |
+| Atari Jaguar CD | `.cdi`, `.cue` |
 | WonderSwan | `.ws` |
 | WonderSwan | `.wsc` |
 | CBS ColecoVision | `.col`, `.cv`, `.rom` |
