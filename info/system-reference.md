@@ -5,7 +5,7 @@ description: Auto-generated system and core reference from Provenance source cod
 # System Reference
 
 {% hint style="info" %}
-**Auto-generated** from [Provenance source code](https://github.com/Provenance-Emu/Provenance) on July 20, 2026. Do not edit manually — changes will be overwritten by the [sync workflow](https://github.com/Provenance-Emu/wiki/actions/workflows/sync-from-source.yml).
+**Auto-generated** from [Provenance source code](https://github.com/Provenance-Emu/Provenance) on July 27, 2026. Do not edit manually — changes will be overwritten by the [sync workflow](https://github.com/Provenance-Emu/wiki/actions/workflows/sync-from-source.yml).
 {% endhint %}
 
 **Quick links:** [Systems](#systems) | [BIOS Requirements](#bios-requirements) | [File Extensions](#supported-file-extensions) | [Core Matrix](#core-to-system-matrix) | [Cheat Support](#cheat-support) | [Skin Identifiers](#skin-identifiers)
@@ -14,7 +14,7 @@ description: Auto-generated system and core reference from Provenance source cod
 
 ## Systems
 
-Provenance supports **48 systems** (25 additional in development or disabled).
+Provenance supports **49 systems** (24 additional in development or disabled).
 
 | Manufacturer | System | Short | Year | Bits | Screen | Portable | CD | Rumble | BIOS |
 |:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|
@@ -24,6 +24,7 @@ Provenance supports **48 systems** (25 additional in development or disabled).
 | Atari | Atari 7800 | 7800 | 1986 | 8 | CRT |  |  |  |  |
 | Atari | Atari Lynx | LYNX | 1989 | 8 | ColorLCD | Yes |  |  | ✅ Required |
 | Atari | Atari Jaguar | Jaguar | 1993 | 32 | CRT |  |  |  | 🔶 Optional |
+| Atari | Atari Jaguar CD | Jaguar CD | 1993 | 32 | CRT |  | Yes |  | 🔶 Optional |
 | Bandai | WonderSwan | WS | 1999 | 16 | DotMatrix | Yes |  |  |  |
 | Bandai | WonderSwan | WSC | 2000 | 16 | ColorLCD | Yes |  |  |  |
 | CBS | CBS ColecoVision | ColecoVision | 1982 | 8 | CRT |  |  |  | ✅ Required |
@@ -74,7 +75,6 @@ Provenance supports **48 systems** (25 additional in development or disabled).
 |:---|:---|:---|:---|
 | Nintendo | 3DS | 2011 | In development |
 | Apple | Apple II | 1977 | App Store disabled |
-| Atari | Atari Jaguar CD | 1993 | In development |
 | Atari | Atari ST | 1985 | In development |
 | Sammy | Atomiswave | 2003 | In development |
 | Philips | CD-i | 2010 | App Store disabled |
@@ -117,6 +117,8 @@ Provenance supports **48 systems** (25 additional in development or disabled).
 |  | `ATARIOSB.ROM` | BIOS for Atari 400/800 NTSC | `a3e8d617c95d08031fe1b20d541434b2` | 10 KB | ✅ Required |
 | Atari Lynx | `lynxboot.img` | Lynx boot ROM | `fcd403db69f54290b51035d82f835e7b` | 512 B | ✅ Required |
 | Atari Jaguar | `jagboot.rom` | Jaguar BIOS | `bcfe348c565d9dedb173822ee6850dea` | 128 KB | 🔶 Optional |
+| Atari Jaguar CD | `jagboot.rom` | Jaguar BIOS | `bcfe348c565d9dedb173822ee6850dea` | 128 KB | 🔶 Optional |
+|  | `[BIOS] Atari Jaguar CD (World).j64` | Jaguar CD BIOS | `77cd95c7ad06a39f4c59995094aa10f9` | 256 KB | 🔶 Optional |
 | CBS ColecoVision | `coleco.rom` | ColecoVision BIOS | `2c66f5911e5b42b8ebe113403548eee7` | 8 KB | ✅ Required |
 | MAME | `neogeo.zip` | NeoGeo BIOS (MAME 0.258 BIOS) | `00dad01abdbf8ea9e79ad2fe11bdb182` | 1.8 MB | 🔶 Optional |
 | Magnavox Odyssey2 | `o2rom.bin` | Odyssey2 BIOS - G7000 model BIOS | `562d5ebf9e030a40d6fabfc2f33139fd` | 1 KB | ✅ Required |
@@ -172,6 +174,7 @@ Provenance supports **48 systems** (25 additional in development or disabled).
 | Atari 7800 | `.a78`, `.bin`, `.cdf`, `.zip` |
 | Atari Lynx | `.lnx`, `.o`, `.zip` |
 | Atari Jaguar | `.abs`, `.bin`, `.cof`, `.j64`, `.jag`, `.prg`, `.rom`, `.zip` |
+| Atari Jaguar CD | `.cdi`, `.cue`, `.iso` |
 | WonderSwan | `.ws` |
 | WonderSwan | `.wsc` |
 | CBS ColecoVision | `.col`, `.cv`, `.rom` |
@@ -229,6 +232,7 @@ Shows which emulator cores are available for each system.
 | Atari 7800 | [Atari 7800 (RetroArch)](https://docs.libretro.com/library/prosystem/), [ProSystem](https://gstanton.github.io/ProSystem1_3/) | 1.3e, 1.3 |
 | Atari Lynx | [Atari Lynx (RetroArch)](https://docs.libretro.com/library/beetle_lynx/), [Handy (Atari Lynx) (RetroArch)](https://github.com/libretro/libretro-handy), [Mednafen](https://mednafen.github.io) | 1.24.0, Nightly, 1.32.1 |
 | Atari Jaguar | [Atari Jaguar (Virtual Jaguar) (RetroArch)](https://docs.libretro.com/library/virtual_jaguar/) | 2.1.0 |
+| Atari Jaguar CD | [Atari Jaguar (Virtual Jaguar) (RetroArch)](https://docs.libretro.com/library/virtual_jaguar/) | 2.1.0 |
 | WonderSwan | [Beetle WonderSwan (RetroArch)](https://github.com/libretro/beetle-wswan-libretro), [Mednafen](https://mednafen.github.io) | Nightly, 1.32.1 |
 | WonderSwan | [Beetle WonderSwan (RetroArch)](https://github.com/libretro/beetle-wswan-libretro), [Mednafen](https://mednafen.github.io) | Nightly, 1.32.1 |
 | CBS ColecoVision | [Gearcoleco](https://github.com/drhelius/Gearcoleco), [Gearcoleco (RetroArch)](https://github.com/drhelius/Gearcoleco), [MSX/SVI/ColecoVision/SG-1000 (blueMSX) (RetroArch)](https://github.com/libretro/blueMSX) | 1.0.1, Nightly, Nightly |
@@ -308,6 +312,7 @@ Use these identifiers when creating `.deltaskin` files. Browse column links dire
 | Atari 7800 | `com.provenance.7800` | — | — |
 | Atari Lynx | `com.provenance.lynx` | — | — |
 | Atari Jaguar | `com.provenance.jaguar` | — | — |
+| Atari Jaguar CD | `com.provenance.jaguarcd` | — | — |
 | WonderSwan | `com.provenance.ws` | — | — |
 | WonderSwan | `com.provenance.wsc` | — | — |
 | CBS ColecoVision | `com.provenance.colecovision` | — | — |
