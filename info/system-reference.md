@@ -5,7 +5,7 @@ description: Auto-generated system and core reference from Provenance source cod
 # System Reference
 
 {% hint style="info" %}
-**Auto-generated** from [Provenance source code](https://github.com/Provenance-Emu/Provenance) on August 03, 2026. Do not edit manually — changes will be overwritten by the [sync workflow](https://github.com/Provenance-Emu/wiki/actions/workflows/sync-from-source.yml).
+**Auto-generated** from [Provenance source code](https://github.com/Provenance-Emu/Provenance) on August 10, 2026. Do not edit manually — changes will be overwritten by the [sync workflow](https://github.com/Provenance-Emu/wiki/actions/workflows/sync-from-source.yml).
 {% endhint %}
 
 **Quick links:** [Systems](#systems) | [BIOS Requirements](#bios-requirements) | [File Extensions](#supported-file-extensions) | [Core Matrix](#core-to-system-matrix) | [Cheat Support](#cheat-support) | [Skin Identifiers](#skin-identifiers)
@@ -182,11 +182,11 @@ Provenance supports **49 systems** (24 additional in development or disabled).
 | CPS-2 | `.zip` |
 | CPS-3 | `.zip` |
 | Enterprise 128 | `.128`, `.bas`, `.cdt`, `.dsk`, `.dtf`, `.img`, `.tap`, `.trn` |
-| RetroArch | `.CFG`, `.cfg`, `.opt` |
+| RetroArch | `.cfg`, `.opt` |
 | MAME | `.7z`, `.chd`, `.cmd`, `.zip` |
 | Magnavox Odyssey2 | `.od2`, `.ody` |
 | Mattel Intellivision | `.bin`, `.int`, `.rom` |
-| PC98 | `.2HD`, `.2hd`, `.88D`, `.88d`, `.98D`, `.98d`, `.CMD`, `.D88`, `.D98`, `.FDD`, `.FDI`, `.HDD`, `.HDI`, `.HDM`, `.LZH`, `.NHD`, `.RAR`, `.ZIP`, `.cmd`, `.d88`, `.d98`, `.dup`, `.fdd`, `.fdi`, `.hdd`, `.hdi`, `.hdm`, `.hdn`, `.lzh`, `.nhd`, `.rar`, `.tfd`, `.thd`, `.xdf`, `.zip` |
+| PC98 | `.2hd`, `.88d`, `.98d`, `.cmd`, `.d88`, `.d98`, `.dup`, `.fdd`, `.fdi`, `.hdd`, `.hdi`, `.hdm`, `.hdn`, `.lzh`, `.nhd`, `.rar`, `.tfd`, `.thd`, `.xdf`, `.zip` |
 | TurboGrafx-16 | `.pce`, `.zip` |
 | TurboGrafx-CD | `.ccd`, `.chd`, `.cue`, `.m3u`, `.toc`, `.zip` |
 | SuperGrafx | `.sgx`, `.zip` |
@@ -210,7 +210,7 @@ Provenance supports **49 systems** (24 additional in development or disabled).
 | Genesis | `.68k`, `.bin`, `.bms`, `.chd`, `.gen`, `.gg`, `.m3u`, `.md`, `.mdx`, `.sgd`, `.smd`, `.sms`, `.zip` |
 | Game Gear | `.gg`, `.zip` |
 | Sega CD | `.chd`, `.cue`, `.iso`, `.zip` |
-| 32X | `.32X`, `.32x` |
+| 32X | `.32x` |
 | Saturn | `.ccd`, `.chd`, `.cue`, `.iso`, `.m3u`, `.mds`, `.toc`, `.zip` |
 | Smith Engineering Vectrex | `.vec` |
 | PlayStation | `.ccd`, `.chd`, `.cue`, `.m3u`, `.pbp`, `.toc`, `.zip` |
