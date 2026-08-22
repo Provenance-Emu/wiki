@@ -18,6 +18,7 @@ Backbone
 backgrounded
 Bandai
 BASLUS
+BDOS
 BennVenn
 BIN
 BIOS
@@ -91,6 +92,7 @@ FCEUX
 FinalBurn
 FlashGBX
 Flycast
+FMPAC
 frameskip
 FreeDO
 FreeIntv
