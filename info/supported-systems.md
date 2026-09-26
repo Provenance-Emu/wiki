@@ -8,6 +8,10 @@ keywords: "supported systems, emulator compatibility, NES, SNES, N64, PlayStatio
 _📱 Note: Most systems are available in the App Store. Some systems have limitations on certain devices due to performance requirements._
 
 {% hint style="info" %}
+**Authoritative list:** the [System Reference](system-reference.md) page is generated automatically from Provenance's source code, so it is always current. This page is a hand-written overview and may lag behind it.
+{% endhint %}
+
+{% hint style="info" %}
 **Interactive Reference:** [eduo.info/pvl](https://eduo.info/pvl/) — Community-built searchable database of all Provenance systems, cores, BIOS requirements, and supported file extensions (parsed directly from Provenance's source code).
 {% endhint %}
 
@@ -18,11 +22,16 @@ _📱 Note: Most systems are available in the App Store. Some systems have limit
 |  | [7800 / ProSystem](https://en.wikipedia.org/wiki/Atari_7800) | 5/ · 1986 | | ✔️ | ✔️ | N/A | N/A | N/A | N/A |
 |  | [Lynx](https://en.wikipedia.org/wiki/Atari_Lynx) | 9/1 · 1989 | Mednafen | ✔️ | N/A | ✔️ | N/A | N/A | N/A |
 |  | [Jaguar](https://en.wikipedia.org/wiki/Atari_Jaguar)  | 11/23 · 1993 | Some bugs, NO CD | ✔️ |  ❌ | N/A | N/A | N/A | N/A |
+|  | [8-bit family (400 / 800 / XL / XE)](https://en.wikipedia.org/wiki/Atari_8-bit_computers) | 11/ · 1979 | Atari800 | ✔️ | — | N/A | N/A | N/A | N/A |
+|  | [ST](https://en.wikipedia.org/wiki/Atari_ST) | 6/ · 1985 | Hatari | ✔️ (TOS image required) | — | N/A | N/A | N/A | N/A |
+| Apple | [Apple II](https://en.wikipedia.org/wiki/Apple_II) | 6/10 · 1977 | MAME | ⚠️ Experimental — not in the App Store build; sideload only | — | N/A | N/A | N/A | N/A |
 | Bandai | [WonderSwan](https://en.wikipedia.org/wiki/WonderSwan) | 3/4 · 1999 | | ✔️ | ✔️ | N/A | N/A | N/A | N/A |
 |  | [WonderSwan Color](https://en.wikipedia.org/wiki/WonderSwan) | 12/9 · 2000 | | ✔️ | ✔️ | N/A | N/A | N/A | N/A |
 | CBS | [ColecoVision](https://en.wikipedia.org/wiki/ColecoVision) | 8/1 · 1982 | CrabEMU / Retroarch | ✔️ |  ✔️ | ❌ | ❌ | ❌ | N/A |
+| IBM | [PC / MS-DOS](https://en.wikipedia.org/wiki/MS-DOS) | 8/12 · 1981 | DOSBox Pure | ✔️ | — | N/A | N/A | N/A | N/A |
 | Magnavox | [Odyssey2](https://en.wikipedia.org/wiki/Magnavox_Odyssey_2) | 9/1 · 1978 | O2EM | ✔️ |  ✔️ | ❌ | ❌ | ❌ | N/A |
 | Mattel | [Intellivision](https://en.wikipedia.org/wiki/Intellivision) | 1/1 · 1980 | FreeIntv & Bliss | ✔️ |  ✔️ | ❌ | ❌ | ❌ | N/A |
+| Microsoft | [MSX / MSX2](https://en.wikipedia.org/wiki/MSX) | 6/27 · 1983 | blueMSX · fMSX | ✔️ (BIOS required) | — | N/A | N/A | N/A | N/A |
 | NEC | [PC Engine / TurboGrafx-16 Entertainment SuperSystem](https://en.wikipedia.org/wiki/TurboGrafx-16) | 10/30 · 1987 | Mednafen | ✔️ | ✔️ | N/A | N/A | N/A | N/A |
 |  | [PC Engine Super CD-ROM² System / TurboGrafx-CD](https://en.wikipedia.org/wiki/TurboGrafx-16#CD-ROM_add-ons) | 12/4 · 1988 | Mednafen | ✔️ | ✔️ | N/A | N/A | N/A | N/A |
 |  | [PC Engine SuperGrafx](https://en.wikipedia.org/wiki/PC_Engine_SuperGrafx) | 12/8 · 1989 | Mednafen | ✔️ | ✔️ | N/A | N/A | N/A | N/A |
@@ -35,9 +44,10 @@ _📱 Note: Most systems are available in the App Store. Some systems have limit
 |  | [Virtual Boy](https://en.wikipedia.org/wiki/Virtual_Boy) | 7/21 · 1995 | Mednafen | ✔️ | N/A | N/A | N/A | N/A | N/A |
 |  | [Nintendo 64](https://en.wikipedia.org/wiki/Nintendo_64) | 6/23 · 1996 | Mupen64Plus/GLideN64 | ✔️ | ✔️ | N/A | N/A | N/A | N/A |
 |  | [Game Boy Advance](https://en.wikipedia.org/wiki/Game_Boy_Advance) | 3/21 · 2001 | | ✔️ | N/A | N/A | N/A | N/A | N/A |
+|  | [GameCube / Wii](https://en.wikipedia.org/wiki/GameCube) | 9/14 · 2001 | Dolphin (JIT-less) | ⚠️ Demanding · Wii is not in the App Store build | — | — | — | — | — |
 |  | [Pokemon mini](https://en.wikipedia.org/wiki/Pokémon_Mini) | 11/16 · 2001 | PokeMini | ✔️ | N/A | N/A | N/A | N/A | N/A |
-|  | [DS](https://en.wikipedia.org/wiki/Nintendo_DS) | 9/1 · 2004 | threeDS | ✔️ |  ✔️ | ❌ | ❌ | ❌ | N/A |
-|  | [3DS](https://en.wikipedia.org/wiki/Nintendo_3DS) | 2/26 · 2011 | Citra | ✔️ | ✔️ | ❌ | ❌ | ❌ | ❌ |
+|  | [DS](https://en.wikipedia.org/wiki/Nintendo_DS) | 9/1 · 2004 | DeSmuME · melonDS | ✔️ |  ✔️ | ❌ | ❌ | ❌ | N/A |
+|  | [3DS](https://en.wikipedia.org/wiki/Nintendo_3DS) | 2/26 · 2011 | emuThreeDS (Citra/Azahar) | ✔️ | ✔️ | ❌ | ❌ | ❌ | ❌ |
 | Panasonic | [3DO](https://en.wikipedia.org/wiki/3DO_Interactive_Multiplayer) | 3/4 · 1993 | FreeDO/3DO / Retroarch | ✔️ |  ✔️ | ❌ | ❌ | ❌ | N/A |
 | Sega | [SG-1000](https://en.wikipedia.org/wiki/SG-1000) | 7/15 · 1983 | | ✔️ | N/A | N/A | N/A | N/A | N/A |
 |  | [Master System](https://en.wikipedia.org/wiki/Master_System) | 10/20 · 1985 | | ✔️ | N/A | N/A | N/A | N/A | N/A |
@@ -46,16 +56,19 @@ _📱 Note: Most systems are available in the App Store. Some systems have limit
 |  | [Mega-CD / CD](https://en.wikipedia.org/wiki/Sega_CD) | 12/12 · 1991 | | ✔️ | N/A | N/A | N/A | N/A | N/A |
 |  | [32X](https://en.wikipedia.org/wiki/32X) | 11/21 · 1994 | PicoDrive | ✔️ | N/A | N/A | N/A | N/A | N/A |
 |  | [Saturn](https://en.wikipedia.org/wiki/Sega_Saturn) | 11/22 · 1994 | Mednafen | ✔️ | N/A | N/A | N/A | N/A | N/A |
-|  | [Dreamcast](https://en.wikipedia.org/wiki/Sega_Dreamcast) | 11/27 · 1998 | Reicast | ⚠️ Demanding — requires iPhone 11+ or Apple TV 4K | ✔️ | ❌ | ❌ | ❌ | N/A |
+|  | [Dreamcast](https://en.wikipedia.org/wiki/Sega_Dreamcast) | 11/27 · 1998 | Flycast | ⚠️ Demanding — requires iPhone 11+ or Apple TV 4K | ✔️ | ❌ | ❌ | ❌ | N/A |
+| Sinclair | [ZX Spectrum](https://en.wikipedia.org/wiki/ZX_Spectrum) | 4/23 · 1982 | Fuse | ✔️ | — | N/A | N/A | N/A | N/A |
 | Smith Engineering | [Vectrex](https://en.wikipedia.org/wiki/Vectrex) | 11/1 · 1982 | VecX / Retroarch | ✔️ |  ✔️ | ❌ | ❌ | ❌ | ❌ |
 | SNK | [Neo Geo Pocket](https://en.wikipedia.org/wiki/Neo_Geo_Pocket) | 10/28 · 1998 | | ✔️ | N/A | N/A | N/A | N/A | N/A |
 |     | [Neo Geo Pocket Color](https://en.wikipedia.org/wiki/Neo_Geo_Pocket_Color) | 3/16 · 1999 | | ✔️ | N/A | N/A | N/A | N/A | N/A |
 | Sony | [PlayStation](https://en.wikipedia.org/wiki/PlayStation_(console)) | 12/3 · 1994 | Mednafen | ✔️ | ✔️ | ❌ | ❌ | ❌ | N/A |
 |      | [PlayStation Portable (PSP)](https://en.wikipedia.org/wiki/PlayStation_Portable) | 12/12 · 2005 | PPSSPP | ✔️ |  ✔️ | ❌ | ❌ | ❌ | ❌ |
 | Various | [Arcade](https://en.wikipedia.org/wiki/List_of_arcade_emulators) | N/A | MAME, FinalBurn Neo | ✔️ | ✔️ | ❌ | ❌ | ❌ | ❌ |
-| Watara | [SuperVision](https://en.wikipedia.org/wiki/Watara_Supervision) | N/A |  | ✔️ | ✔️ | ❌ | ❌ | ❌ | ❌ |
+| Watara | [SuperVision](https://en.wikipedia.org/wiki/Watara_Supervision) | N/A | Potator | ✔️ | ✔️ | ❌ | ❌ | ❌ | ❌ |
 
 | **Manufacturer** | **System** | **Released** | **Emulator** | **Status** | **Saves** | **Rumble** | **Microphone** | **Camera** | **Gyro** |
+
+"—" means that feature has not been documented yet for that system.
 
 For system requirements, refer to [BIOS Requirements](../installation-and-usage/bios-requirements.md).
 For supported file formats, refer to [Formatting ROMs](../installation-and-usage/roms/formatting-roms.md).
@@ -69,6 +82,7 @@ __⚠️ Please do not ask when these will be ready ⚠️__
 | Various | [TIC-80](https://en.wikipedia.org/wiki/TIC-80) | 4/4 · 2017 | TIC-80 | ⚠️ In Development | ❌ | ❌ | ❌ | ❌ | N/A |
 | Various | [FinalBurn Neo](https://en.wikipedia.org/wiki/FinalBurn_Neo) | N/A | FinalBurn Neo | ⚠️ In Development | ❌ | ❌ | ❌ | ❌ | N/A |
 | Welback Holdings | [Mega Duck / Cougar Boy](https://en.wikipedia.org/wiki/Mega_Duck) | N/A | SameDuck | ⚠️ In Development | ❌ | ❌ | ❌ | ❌ | N/A |
-| Atari | [Atari ST](https://en.wikipedia.org/wiki/Atari_ST) | 6/ · 1985 | Hatari | ⚠️ In Development | ❌ | ❌ | ❌ | ❌ | N/A |
-| Sony | [PlayStation 2](https://en.wikipedia.org/wiki/PlayStation_2) | 3/4 · 2000 | Play! | ⚠️ (Requires JIT, Graphical Glitches) |  ✔️ | ❌ | ❌ | ❌ | ❌ |
+| Sony | [PlayStation 2](https://en.wikipedia.org/wiki/PlayStation_2) | 3/4 · 2000 | Play! | ⚠️ Requires JIT — cannot run on a standard App Store install; graphical glitches | ✔️ | ❌ | ❌ | ❌ | ❌ |
+| Commodore | [Commodore 64](https://en.wikipedia.org/wiki/Commodore_64) | 8/ · 1982 | VICE | ⚠️ In Development | ❌ | ❌ | ❌ | ❌ | N/A |
+| Philips | [CD-i](https://en.wikipedia.org/wiki/Philips_CD-i) | 12/3 · 1991 | SAME CDi | ⚠️ Not in the App Store build | ❌ | ❌ | ❌ | ❌ | N/A |
 | **Manufacturer** | **System** | **Released** | **Emulator** | **Status** | **Saves** | **Rumble** | **Microphone** | **Camera** | **Gyro** |
