@@ -126,7 +126,7 @@ Provenance supports skins for all single-screen systems it emulates. The `system
 | `nds` | Nintendo DS | `com.rileytestut.delta.game.ds` |
 | `virtualBoy` | Virtual Boy | `public.aoshuang.game.vb` |
 | `threeDS` | Nintendo 3DS | `public.aoshuang.game.3ds` |
-| `gamecube` | GameCube | `public.aoshuang.game.gc` |
+| `gamecube` | GameCube | `public.aoshuang.game.ngc` |
 | `wii` | Wii | `public.aoshuang.game.wii` |
 | `pokemonMini` | Pokémon Mini | `public.aoshuang.game.pm` |
 
