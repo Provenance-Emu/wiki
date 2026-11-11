@@ -33,6 +33,15 @@ Please refer to the [Known Issues](importing-roms.md#known-issues) regarding Imp
 
 💢 If you run into any problems, check out [Troubleshooting](importing-roms.md#troubleshooting).
 
+## Import from a self-hosted library (development preview)
+
+These instructions apply to development builds with the relevant settings enabled.
+
+* **[Emulation Server (ECS)](https://github.com/Provenance-Emu/emulator-content-server):** In Settings, open **Nearby Libraries** and select your server to browse and download games. See the [server setup guide](https://github.com/Provenance-Emu/emulator-content-server/blob/main/docs/operations/install.md) if you haven't set up ECS yet.
+* **[RomM](https://romm.app/):** In Settings, find **RomM** under **Library Tools**. Enter your server address and sign in with your RomM credentials or a compatible client API token. Connect, pick a platform, and choose a game to import.
+
+Downloaded games go through the local Provenance importer. The server must already have the files you want to import.
+
 {% tabs %}
 {% tab title="⬆️ Uploading (Web Server)" %}
 **For iOS & tvOS** · Supports mass-uploading
