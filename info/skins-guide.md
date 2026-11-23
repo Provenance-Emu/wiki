@@ -385,6 +385,17 @@ Format 2.0 describes a controller in one `skin.json` that the app lays out for e
 - **[Playground](https://emuskins.com/format/playground.html)** — Edit a source in the browser with a live preview and validator
 - **[Reference](https://emuskins.com/format/reference.html)** — Every node, field and allowed value
 
+{% hint style="warning" %}
+**Format 2.0 is a work in progress.** The format, its tools and these docs are still changing, and app support is rolling out. Classic `.deltaskin` and `.manicskin` skins keep working.
+{% endhint %}
+
+**For developers:**
+
+- **[SkinKit](https://github.com/Provenance-Emu/SkinKit)** — The open-source Swift package Provenance, iCube and iFly use to load, render and bake skins. Start here to add skin support to an app.
+- **[Format 2.0 design](https://github.com/Provenance-Emu/SkinKit/blob/main/docs/specs/2026-11-03-skin-format-2-design.md)** — The full specification
+- **[JSON Schema](https://emuskins.com/format/skin-2.0.schema.json)** — Machine-readable schema that the reference is generated from
+- **[Conversion notes](https://emuskins.com/format/migration.html)** — For emulator developers replacing a controller that code generates
+
 **Other skin creation guides:**
 - **[Manic EMU Homemade Skin Guide](https://manicemu.site/Homemade-Skin-Guide-EN/)** — Extremely detailed guide covering press animations, custom function buttons, and advanced skin features (uses the same `.deltaskin` format)
 - **[DeltaCore Skins Spec](https://github.com/rileytestut/DeltaCore/wiki/Skins)** — Official technical specification for the `.deltaskin` format (JSON schema, coordinate systems, image requirements)

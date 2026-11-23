@@ -61,6 +61,7 @@ ddrescue
 DeltaCore
 deltaskin
 EmuSkins
+SkinKit
 emuskins
 DerivedData
 Desmume
