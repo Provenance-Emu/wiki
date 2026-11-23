@@ -375,7 +375,7 @@ The validator helps skin creators catch issues before distributing their work.
 - **[EmuSkins skin editor](https://emuskins.com/edit.html)** (web-based tool) - Move and resize the parts of an existing skin
 - **Skin Template PSDs** - Pre-made Photoshop templates (search GitHub/Reddit)
 
-**Skin format 2.0 (EmuSkins docs):**
+**Skin format 2.0 (EmuSkins docs):** see also the [Skin Format 2.0](skin-format-2.md) page.
 
 Format 2.0 describes a controller in one `skin.json` that the app lays out for each screen and orientation. It bakes into a `.deltaskin`, so the result still installs like any other skin.
 
