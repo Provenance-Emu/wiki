@@ -15,7 +15,7 @@ Provenance is an open-source project and welcomes contributions from the communi
 | **Submit code fixes** | [Main repo](https://github.com/Provenance-Emu/Provenance) (fork & PR) | Developer |
 | **Add features** | [Main repo](https://github.com/Provenance-Emu/Provenance) (fork & PR) | Developer |
 | **Test beta builds** | [TestFlight](../faqs.md#what-is-provenance-plus) or build from source | Intermediate |
-| **Share controller skins** | [DeltaStyles](https://deltastyles.com) or [Discord](https://discord.gg/provenance) | Designer |
+| **Share controller skins** | [EmuSkins](https://emuskins.com/submit.html) or [Discord](https://discord.gg/provenance) | Designer |
 
 ---
 

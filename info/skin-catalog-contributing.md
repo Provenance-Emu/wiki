@@ -6,7 +6,7 @@ description: How to submit your skin to the Provenance community catalog so it a
 
 Provenance includes a built-in **Skin Browser** (Settings → Skins → Browse Catalog) that lets users discover and install community skins directly from the app. The catalog is maintained at [github.com/Provenance-Emu/skins](https://github.com/Provenance-Emu/skins) — a dedicated open-source repo anyone can contribute to.
 
-**[🎮 Browse the catalog →](https://provenance-emu.com/skins)**
+**[🎮 Browse the catalog at emuskins.com →](https://emuskins.com)**
 
 {% hint style="info" %}
 Skins must be in `.deltaskin` or `.manicskin` format and hosted at a **publicly accessible URL** to be included.
@@ -18,7 +18,7 @@ Skins must be in `.deltaskin` or `.manicskin` format and hosted at a **publicly 
 
 ### Option 1 — Web form (easiest)
 
-Visit **[provenance-emu.com/skins/submit.html](https://provenance-emu.com/skins/submit.html)**, paste your skin URL, and click **Fetch Metadata**. The page will auto-extract the name and system from your skin file, then let you submit with one click. A bot opens the PR for you within ~60 seconds.
+Visit **[emuskins.com/submit.html](https://emuskins.com/submit.html)**, paste your skin URL, and click **Fetch Metadata**. The page will auto-extract the name and system from your skin file, then let you submit with one click. A bot opens the PR for you within ~60 seconds.
 
 ### Option 2 — GitHub Issue
 
@@ -84,7 +84,7 @@ https://raw.githubusercontent.com/yourname/skins/main/MySkin.deltaskin
 These URLs never change as long as the file stays in the same place. You can use GitHub Releases for versioned bundles.
 
 {% hint style="success" %}
-**Advantages over DeltaStyles:** instant updates, version history, no account required on a third-party site, and new systems supported by Provenance are added to the catalog before DeltaStyles updates their system list.
+**Advantages of hosting on GitHub:** instant updates, version history, and no account required on a third-party site.
 {% endhint %}
 
 ---

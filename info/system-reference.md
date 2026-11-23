@@ -369,7 +369,7 @@ Additional cores support cheats through code-level protocol conformance not decl
 
 ## Skin Identifiers
 
-Use these identifiers when creating `.deltaskin` files. Browse column links directly to system-filtered skins on DeltaStyles.
+Use these identifiers when creating `.deltaskin` files. The Browse column links to the skins for each system on EmuSkins.
 
 | System | Provenance ID | Delta Skin ID | Browse Skins |
 |:---|:---|:---|:---|
@@ -378,8 +378,8 @@ Use these identifiers when creating `.deltaskin` files. Browse column links dire
 | Atari 8bit Computer | `com.provenance.atari8bit` | — | — |
 | Atari ST | `com.provenance.atarist` | — | — |
 | Atari 7800 | `com.provenance.7800` | — | — |
-| Atari Lynx | `com.provenance.lynx` | — | — |
-| Atari Jaguar | `com.provenance.jaguar` | — | — |
+| Atari Lynx | `com.provenance.lynx` | — | [EmuSkins](https://emuskins.com/systems/lynx.html) |
+| Atari Jaguar | `com.provenance.jaguar` | — | [EmuSkins](https://emuskins.com/systems/jaguar.html) |
 | Atari Jaguar CD | `com.provenance.jaguarcd` | — | — |
 | WonderSwan | `com.provenance.ws` | — | — |
 | WonderSwan | `com.provenance.wsc` | — | — |
@@ -390,44 +390,44 @@ Use these identifiers when creating `.deltaskin` files. Browse column links dire
 | Enterprise 128 | `com.provenance.ep128` | — | — |
 | IBM PC DOS | `com.provenance.dos` | — | — |
 | RetroArch | `com.provenance.retroarch` | — | — |
-| MAME | `com.provenance.mame` | — | — |
+| MAME | `com.provenance.mame` | — | [EmuSkins](https://emuskins.com/systems/mame.html) |
 | Magnavox Odyssey2 | `com.provenance.odyssey2` | — | — |
 | Mattel Intellivision | `com.provenance.intellivision` | — | — |
 | MSX | `com.provenance.msx` | — | — |
 | MSX2 | `com.provenance.msx2` | — | — |
 | PC98 | `com.provenance.pc98` | — | — |
-| TurboGrafx-16 | `com.provenance.pce` | — | — |
+| TurboGrafx-16 | `com.provenance.pce` | — | [EmuSkins](https://emuskins.com/systems/pce.html) |
 | TurboGrafx-CD | `com.provenance.pcecd` | — | — |
 | SuperGrafx | `com.provenance.sgfx` | — | — |
 | PCFX | `com.provenance.pcfx` | — | — |
-| Nintendo | `com.provenance.nes` | `com.rileytestut.delta.game.nes` | [DeltaStyles](https://deltastyles.com/?search=nes) |
+| Nintendo | `com.provenance.nes` | `com.rileytestut.delta.game.nes` | [EmuSkins](https://emuskins.com/systems/nes.html) |
 | Famicom Disk System | `com.provenance.fds` | — | — |
-| Game Boy | `com.provenance.gb` | `com.rileytestut.delta.game.gbc` | [DeltaStyles](https://deltastyles.com/?search=gameboy) |
-| Super Nintendo | `com.provenance.snes` | `com.rileytestut.delta.game.snes` | [DeltaStyles](https://deltastyles.com/?search=snes) |
+| Game Boy | `com.provenance.gb` | `com.rileytestut.delta.game.gbc` | [EmuSkins](https://emuskins.com/systems/gbc.html) |
+| Super Nintendo | `com.provenance.snes` | `com.rileytestut.delta.game.snes` | [EmuSkins](https://emuskins.com/systems/snes.html) |
 | Virtual Boy | `com.provenance.vb` | — | — |
-| Nintendo 64 | `com.provenance.n64` | `com.rileytestut.delta.game.n64` | [DeltaStyles](https://deltastyles.com/?search=n64) |
-| Game Boy Color | `com.provenance.gbc` | `com.rileytestut.delta.game.gbc` | [DeltaStyles](https://deltastyles.com/?search=gameboy+color) |
+| Nintendo 64 | `com.provenance.n64` | `com.rileytestut.delta.game.n64` | [EmuSkins](https://emuskins.com/systems/n64.html) |
+| Game Boy Color | `com.provenance.gbc` | `com.rileytestut.delta.game.gbc` | [EmuSkins](https://emuskins.com/systems/gbc.html) |
 | GameCube | `com.provenance.gamecube` | — | — |
-| Game Boy Advance | `com.provenance.gba` | `com.rileytestut.delta.game.gba` | [DeltaStyles](https://deltastyles.com/?search=gba) |
+| Game Boy Advance | `com.provenance.gba` | `com.rileytestut.delta.game.gba` | [EmuSkins](https://emuskins.com/systems/gba.html) |
 | Pokémon mini | `com.provenance.pokemonmini` | — | — |
-| DS | `com.provenance.ds` | — | — |
-| 3DS | `com.provenance.3ds` | — | [DeltaStyles](https://deltastyles.com/?search=3ds) |
+| DS | `com.provenance.ds` | — | [EmuSkins](https://emuskins.com/systems/nds.html) |
+| 3DS | `com.provenance.3ds` | — | [EmuSkins](https://emuskins.com/systems/threeDS.html) |
 | 3DO | `com.provenance.3DO` | — | — |
 | Neo Geo | `com.provenance.neogeo` | — | — |
 | Neo Geo CD | `com.provenance.neogeocd` | — | — |
 | Neo Geo Pocket | `com.provenance.ngp` | — | — |
 | Neo Geo Pocket Color | `com.provenance.ngpc` | — | — |
-| SG-1000 | `com.provenance.sg1000` | — | — |
-| Master System | `com.provenance.mastersystem` | `com.rileytestut.delta.game.ms` | [DeltaStyles](https://deltastyles.com/?search=master+system) |
-| Genesis | `com.provenance.genesis` | `com.rileytestut.delta.game.genesis` | [DeltaStyles](https://deltastyles.com/?search=genesis) |
-| Game Gear | `com.provenance.gamegear` | `com.rileytestut.delta.game.gg` | [DeltaStyles](https://deltastyles.com/?search=game+gear) |
-| Sega CD | `com.provenance.segacd` | — | [DeltaStyles](https://deltastyles.com/?search=sega+cd) |
+| SG-1000 | `com.provenance.sg1000` | — | [EmuSkins](https://emuskins.com/systems/sg1000.html) |
+| Master System | `com.provenance.mastersystem` | `com.rileytestut.delta.game.ms` | [EmuSkins](https://emuskins.com/systems/masterSystem.html) |
+| Genesis | `com.provenance.genesis` | `com.rileytestut.delta.game.genesis` | [EmuSkins](https://emuskins.com/systems/genesis.html) |
+| Game Gear | `com.provenance.gamegear` | `com.rileytestut.delta.game.gg` | — |
+| Sega CD | `com.provenance.segacd` | — | — |
 | 32X | `com.provenance.32X` | — | — |
-| Saturn | `com.provenance.saturn` | — | [DeltaStyles](https://deltastyles.com/?search=saturn) |
-| Dreamcast | `com.provenance.dreamcast` | — | [DeltaStyles](https://deltastyles.com/?search=dreamcast) |
+| Saturn | `com.provenance.saturn` | — | [EmuSkins](https://emuskins.com/systems/saturn.html) |
+| Dreamcast | `com.provenance.dreamcast` | — | [EmuSkins](https://emuskins.com/systems/dreamcast.html) |
 | Smith Engineering Vectrex | `com.provenance.vectrex` | — | — |
-| PlayStation | `com.provenance.psx` | `com.rileytestut.delta.game.psx` | [DeltaStyles](https://deltastyles.com/?search=playstation) |
-| PlayStation Portable | `com.provenance.psp` | — | [DeltaStyles](https://deltastyles.com/?search=psp) |
+| PlayStation | `com.provenance.psx` | `com.rileytestut.delta.game.psx` | [EmuSkins](https://emuskins.com/systems/psx.html) |
+| PlayStation Portable | `com.provenance.psp` | — | [EmuSkins](https://emuskins.com/systems/psp.html) |
 | Game Music | `com.provenance.music` | — | — |
 | Supervision | `com.provenance.supervision` | — | — |
 | ZX Spectrum | `com.provenance.zxspectrum` | — | — |

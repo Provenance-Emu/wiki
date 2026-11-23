@@ -60,7 +60,9 @@ Cydia
 ddrescue
 DeltaCore
 deltaskin
-DeltaStyles
+EmuSkins
+SkinKit
+emuskins
 DerivedData
 Desmume
 devicectl
