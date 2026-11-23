@@ -50,17 +50,17 @@ Skins work with **all systems except**:
 
 ## How to Get Skins
 
-### Download from DeltaStyles.com
+### Browse EmuSkins
 
-[**DeltaStyles**](https://deltastyles.com) is the largest community repository for Provenance-compatible skins.
+[**EmuSkins**](https://emuskins.com) ([emuskins.com](https://emuskins.com)) is the community skin catalog run by the Provenance team. It is the same catalog the in-app browser reads (**Settings → Skins → Browse Catalog**), so you can install from inside Provenance or download from the site.
 
 **What's available:**
-- 🎨 Hundreds of free skins
-- 🎮 Organized by system (NES, GBA, PlayStation, etc.)
-- 🌈 Multiple color themes per system
-- 👥 Community uploads and ratings
+- 🎨 Thousands of free skins
+- 🎮 [Organized by system](https://emuskins.com/systems/) (NES, GBA, PlayStation, etc.)
+- 👥 Community submissions, with a page for each creator
+- 🕹️ A [RetroArch overlay converter](https://emuskins.com/retroarch.html) for any skin
 
-**File format:** `.deltaskin`
+**File formats:** `.deltaskin` and `.manicskin`
 
 **Compatibility:** Provenance supports both **Delta skins** and **Manic skins** - they're the same format!
 
@@ -76,7 +76,7 @@ Skins work with **all systems except**:
 
 {% tabs %}
 {% tab title="Safari Download" %}
-1. **Visit DeltaStyles.com** on your iPhone/iPad
+1. **Visit [emuskins.com](https://emuskins.com)** on your iPhone/iPad
 2. **Browse by system** (e.g., Game Boy Advance)
 3. **Tap "Download"** on a skin you like
 4. Safari will download the `.deltaskin` file
@@ -241,7 +241,7 @@ Common system identifiers for `info.json` — use the Provenance/ManicEmu identi
 
 Delta-compatible skins (`com.rileytestut.delta.game.*`) also work in Provenance.
 
-**For a complete list**, check the [Provenance skin catalog](https://provenance-emu.com/skins/) source code.
+**For a complete list**, see the [System Reference](system-reference.md#skin-identifiers), or browse [EmuSkins by system](https://emuskins.com/systems/).
 
 ---
 
@@ -372,10 +372,20 @@ The validator helps skin creators catch issues before distributing their work.
 6. **Import into Provenance** and test
 
 **Advanced tools:**
-- **Delta Skin Editor** (web-based tool) - Simplifies mapping button coordinates
+- **[EmuSkins skin editor](https://emuskins.com/edit.html)** (web-based tool) - Move and resize the parts of an existing skin
 - **Skin Template PSDs** - Pre-made Photoshop templates (search GitHub/Reddit)
 
-**External skin creation guides:**
+**Skin format 2.0 (EmuSkins docs):**
+
+Format 2.0 describes a controller in one `skin.json` that the app lays out for each screen and orientation. It bakes into a `.deltaskin`, so the result still installs like any other skin.
+
+- **[Overview](https://emuskins.com/format/)** — What a 2.0 skin is and how it relates to the classic format
+- **[Tutorial](https://emuskins.com/format/tutorial.html)** — Build a controller step by step
+- **[Examples](https://emuskins.com/format/examples.html)** — Sources to preview and copy from
+- **[Playground](https://emuskins.com/format/playground.html)** — Edit a source in the browser with a live preview and validator
+- **[Reference](https://emuskins.com/format/reference.html)** — Every node, field and allowed value
+
+**Other skin creation guides:**
 - **[Manic EMU Homemade Skin Guide](https://manicemu.site/Homemade-Skin-Guide-EN/)** — Extremely detailed guide covering press animations, custom function buttons, and advanced skin features (uses the same `.deltaskin` format)
 - **[DeltaCore Skins Spec](https://github.com/rileytestut/DeltaCore/wiki/Skins)** — Official technical specification for the `.deltaskin` format (JSON schema, coordinate systems, image requirements)
 
@@ -399,7 +409,7 @@ The validator helps skin creators catch issues before distributing their work.
 
 ### Popular Community Recommendations
 
-**Best all-around skins (per DeltaStyles ratings):**
+**Best all-around skins:**
 - **GBA:** "Atomic Purple" (classic transparent purple)
 - **SNES:** "Classic Gray" (original SNES controller recreation)
 - **PlayStation:** "DualShock" (authentic PS1 button layout)
@@ -431,7 +441,7 @@ The validator helps skin creators catch issues before distributing their work.
 1. ✅ **Re-download skin** - File may have been corrupted during download
 2. ✅ **Check device compatibility** - Some skins are iPhone-only or iPad-only
 3. ✅ **Update Provenance** - Ensure you're on the latest version from the App Store
-4. ✅ **Report to skin creator** - Leave feedback on DeltaStyles or GitHub
+4. ✅ **Report to skin creator** - Use the report link on the skin's [EmuSkins](https://emuskins.com) page, or contact the creator on GitHub
 
 </details>
 
@@ -484,7 +494,7 @@ Skins are stored on your device in Provenance's app container.
 
 **How to share your custom skins:**
 1. Export the `.deltaskin` file from Provenance
-2. Upload to DeltaStyles.com (create free account)
+2. [Submit it to EmuSkins](https://emuskins.com/submit.html) (see [Contributing to the Skin Catalog](skin-catalog-contributing.md))
 3. Or share via AirDrop, Discord, Reddit
 
 **Community etiquette:**
@@ -542,7 +552,8 @@ Check the [Provenance Discord](https://discord.gg/provenance) or r/EmulationOniO
 
 ## Next Steps
 
-- 🎨 **[Browse skins at DeltaStyles →](https://deltastyles.com)**
+- 🎨 **[Browse skins at EmuSkins →](https://emuskins.com)**
+- 📖 **[Skin format 2.0 docs →](https://emuskins.com/format/)**
 - 🎮 **[Controllers & Controls Guide](controllers-and-controls/)** - Optimize your control setup
 - 📱 **[Performance Optimization](performance-optimization.md)** - Get the best gameplay experience
 - ⚙️ **[Troubleshooting Guide](../help/troubleshooting.md)** - Fix common issues

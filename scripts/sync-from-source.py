@@ -31,24 +31,27 @@ DELTA_IDS = {
     'com.provenance.psx': 'com.rileytestut.delta.game.psx',
 }
 
-# DeltaStyles search slugs for direct linking
-DELTASTYLES_SLUGS = {
+# EmuSkins per-system pages (https://emuskins.com/systems/<page>.html)
+EMUSKINS_SYSTEM_PAGES = {
     'com.provenance.nes': 'nes',
     'com.provenance.snes': 'snes',
-    'com.provenance.gb': 'gameboy',
-    'com.provenance.gbc': 'gameboy+color',
+    'com.provenance.gb': 'gbc',
+    'com.provenance.gbc': 'gbc',
     'com.provenance.gba': 'gba',
     'com.provenance.n64': 'n64',
-    'com.provenance.nds': 'ds',
+    'com.provenance.ds': 'nds',
+    'com.provenance.3ds': 'threeDS',
     'com.provenance.genesis': 'genesis',
-    'com.provenance.gamegear': 'game+gear',
-    'com.provenance.mastersystem': 'master+system',
-    'com.provenance.psx': 'playstation',
-    'com.provenance.psp': 'psp',
-    'com.provenance.dreamcast': 'dreamcast',
-    'com.provenance.3ds': '3ds',
-    'com.provenance.segacd': 'sega+cd',
+    'com.provenance.mastersystem': 'masterSystem',
+    'com.provenance.sg1000': 'sg1000',
     'com.provenance.saturn': 'saturn',
+    'com.provenance.dreamcast': 'dreamcast',
+    'com.provenance.psx': 'psx',
+    'com.provenance.psp': 'psp',
+    'com.provenance.pce': 'pce',
+    'com.provenance.lynx': 'lynx',
+    'com.provenance.jaguar': 'jaguar',
+    'com.provenance.mame': 'mame',
 }
 
 
@@ -295,7 +298,7 @@ def generate_system_reference(systems, cores, timestamp):
     # --- Skin Identifiers ---
     lines.append('## Skin Identifiers')
     lines.append('')
-    lines.append('Use these identifiers when creating `.deltaskin` files. Browse column links directly to system-filtered skins on DeltaStyles.')
+    lines.append('Use these identifiers when creating `.deltaskin` files. The Browse column links to the skins for each system on EmuSkins.')
     lines.append('')
     lines.append('| System | Provenance ID | Delta Skin ID | Browse Skins |')
     lines.append('|:---|:---|:---|:---|')
@@ -303,8 +306,8 @@ def generate_system_reference(systems, cores, timestamp):
     for s in sorted_systems:
         prov_id = f"`{s['id']}`"
         delta_id = f"`{DELTA_IDS[s['id']]}`" if s['id'] in DELTA_IDS else '—'
-        slug = DELTASTYLES_SLUGS.get(s['id'], '')
-        browse = f"[DeltaStyles](https://deltastyles.com/?search={slug})" if slug else '—'
+        page = EMUSKINS_SYSTEM_PAGES.get(s['id'], '')
+        browse = f"[EmuSkins](https://emuskins.com/systems/{page}.html)" if page else '—'
         lines.append(f"| {s['name']} | {prov_id} | {delta_id} | {browse} |")
 
     lines.append('')

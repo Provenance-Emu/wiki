@@ -322,7 +322,7 @@ Save states from RetroArch or other emulators generally won't work unless they u
 1. Re-download the skin (may have been corrupted during download)
 2. Check device compatibility (some skins are iPhone-only or iPad-only)
 3. Update Provenance to the latest version
-4. Report to the skin creator via DeltaStyles or GitHub
+4. Report it from the skin's [EmuSkins](https://emuskins.com) page, or to the creator on GitHub
 
 </details>
 

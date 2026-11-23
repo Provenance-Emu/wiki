@@ -99,7 +99,7 @@ The 3DS has two screens. Provenance handles the layout automatically:
 - **Portrait mode** — Screens stacked vertically (top screen above, bottom/touch below)
 - **Landscape mode** — Screens side-by-side or with focus on the primary screen
 
-Custom skins can change the dual-screen layout — check [DeltaStyles](https://deltastyles.com) for 3DS-specific skins.
+Custom skins can change the dual-screen layout — check [EmuSkins](https://emuskins.com/systems/threeDS.html) for 3DS-specific skins.
 
 ---
 

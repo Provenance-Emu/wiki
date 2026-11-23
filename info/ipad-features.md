@@ -24,12 +24,12 @@ Some of the most popular iPad skins simulate playing on a **retro CRT television
 
 ### Where to Find iPad Skins
 
-- **[DeltaStyles.com](https://deltastyles.com)** — Filter by device type to find iPad-optimized skins
+- **[EmuSkins](https://emuskins.com)** — The community skin catalog; each skin lists the devices it supports
 - **[Discord](https://discord.gg/provenance)** — Community-shared iPad skins
 - **Reddit** (r/EmulationOniOS) — User-created designs
 
 {% hint style="info" %}
-When browsing skins on DeltaStyles, look for skins that specify iPad support. Many skins include both iPhone and iPad layouts in a single `.deltaskin` file.
+When browsing skins on EmuSkins, look for skins that specify iPad support. Many skins include both iPhone and iPad layouts in a single `.deltaskin` file.
 {% endhint %}
 
 ### Applying iPad Skins

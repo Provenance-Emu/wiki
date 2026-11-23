@@ -91,7 +91,7 @@ Seamlessly sync your library, saves, and settings across all your devices (Prove
 ## 🆕 What's New
 
 ### Recent Features
-- 🎨 **Skins** — Custom controller overlays from DeltaStyles.com (free for all users)
+- 🎨 **Skins** — Custom controller overlays from [emuskins.com](https://emuskins.com) (free for all users)
 - 🎬 **Metal Shader Filters** — 7 built-in filters: Simple CRT, Complex CRT, Mega Tron, ulTron, LCD, Game Boy, VHS
 - 🏆 **RetroAchievements** — Earn achievements in retro games
 - ⏩ **Fast Forward** — Speed up gameplay with a pause menu toggle or controller shortcut

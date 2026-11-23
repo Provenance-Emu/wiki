@@ -46,7 +46,7 @@ This is the **documentation wiki** for [Provenance](https://github.com/Provenanc
 - The wiki emphasizes **App Store installation** as the primary/recommended path. Sideloading and building from source are documented under "Advanced."
 - Provenance Plus is the optional subscription tier ($3.99/month, $39.99/year, $99.99 lifetime) — adds iCloud sync, TestFlight beta access, priority support. Apple TV gets free CloudKit sync because tvOS can silently delete app data.
 - **Skins DO sync** with Provenance Plus (this was previously documented incorrectly).
-- iPad IS supported with unique skin features (CRT TV bezel skins on DeltaStyles.com).
+- iPad IS supported with unique skin features (CRT TV bezel skins on emuskins.com).
 
 ### Technical Accuracy
 When documenting features, verify against the Provenance source code when possible:
@@ -61,7 +61,7 @@ When documenting features, verify against the Provenance source code when possib
 - Don't reference v1.4 or v1.5 — these are outdated version references. Use current terminology.
 - Don't add features Provenance doesn't have (visionOS, AirPlay, animated skins, rewind).
 - The `supported-systems.md` table has known typos that recur from upstream — watch for: Magnaxov→Magnavox, Intellivison→Intellivision, Vexctrex→Vectrex.
-- The skins catalog website lives in a **separate repo** (`Provenance-Emu/skins`, cloned locally at `../skins`). The wiki links to it via `info/skins-guide.md` but does not contain its source files.
+- The skins catalog website ([emuskins.com](https://emuskins.com), format docs at `/format/`) lives in a **separate repo** (`Provenance-Emu/skins`, cloned locally at `../skins`). The wiki links to it via `info/skins-guide.md` but does not contain its source files.
 
 ## Commit Style
 

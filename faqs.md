@@ -185,13 +185,13 @@ Welcome to Provenance! Whether you just downloaded from the App Store or are a l
 **Skins** are custom controller overlays that change the look of on-screen buttons.
 
 **Features:**
-- 🎨 Hundreds of free designs (DeltaStyles.com)
+- 🎨 Thousands of free designs ([emuskins.com](https://emuskins.com))
 - 🌈 Classic console aesthetics, modern minimalist, game-themed
 - 📱 Compatible with Delta/Manic skins (`.deltaskin` format)
 - ✅ Free for all users (no Plus required)
 
 **How to get skins:**
-1. Visit [DeltaStyles.com](https://deltastyles.com) on your device
+1. Visit [emuskins.com](https://emuskins.com) on your device, or open Settings → Skins → Browse Catalog
 2. Download a `.deltaskin` file
 3. Tap file → Open in Provenance
 4. Apply in Settings → Controller Skins

@@ -176,7 +176,7 @@ Physical controllers make a huge difference. Any MFi or Bluetooth controller wor
 
 Don't like the default buttons? **Skins** are free custom controller overlays:
 
-1. Visit [DeltaStyles.com](https://deltastyles.com) on your device
+1. Visit [emuskins.com](https://emuskins.com) on your device
 2. Download a skin for your system (`.deltaskin` file)
 3. Tap the file → **Open in Provenance**
 4. Apply in Settings → Controller Skins
