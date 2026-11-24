@@ -29,6 +29,8 @@ Play games from 38+ classic systems with beautiful library management, native Ap
 2. **Add games** - See [Importing ROMs](installation-and-usage/roms/importing-roms.md)
 3. **Start playing!**
 
+For a shared game library on your own network, see [Emulation Server](https://provenance-emu.com/emulator-content-server/). Nightly builds are available while the server is in development.
+
 Need help? Check the [FAQ](faqs.md) or visit our [Discord](https://discord.gg/provenance).
 
 ---
