@@ -321,4 +321,8 @@ xcworkspace
 Yabause
 Yoshi's
 yourname
-zxspectrum
+zxspectrumlibretrodb
+VGDB
+Shira
+xdelta
+Syncable
