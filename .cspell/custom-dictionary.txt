@@ -61,6 +61,8 @@ ddrescue
 DeltaCore
 deltaskin
 EmuSkins
+libretrodb
+Shira
 SkinKit
 emuskins
 DerivedData
@@ -271,6 +273,7 @@ SteelSeries
 Stella
 SuperGrafx
 SwiftUI
+Syncable
 sysdata
 SYSNAND
 TestFlight
@@ -301,6 +304,7 @@ upscaling
 Utor
 Vectrex
 VecX
+VGDB
 VHS
 Videopac
 visionOS
@@ -318,6 +322,7 @@ xcodeproj
 xcproj
 xcrun
 xcworkspace
+xdelta
 Yabause
 Yoshi's
 yourname
