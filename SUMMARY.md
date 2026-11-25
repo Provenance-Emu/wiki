@@ -66,6 +66,7 @@
 
 * [Troubleshooting](help/troubleshooting.md)
 * [Contributing](help/contribute.md)
+  * [Shared Frameworks](help/shared-frameworks.md)
 * [UDID Registration](help/udid.md)
 * [Release Notes](https://github.com/Provenance-Emu/Provenance/releases)
 
