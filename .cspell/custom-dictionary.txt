@@ -321,7 +321,8 @@ xcworkspace
 Yabause
 Yoshi's
 yourname
-zxspectrumlibretrodb
+zxspectrum
+libretrodb
 VGDB
 Shira
 xdelta
