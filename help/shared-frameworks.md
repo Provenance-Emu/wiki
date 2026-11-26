@@ -12,8 +12,8 @@ None of these packages knows which app it is in. App group names, CloudKit conta
 
 | Package | What it does | Latest | Used by | Platforms |
 |---|---|---|---|---|
-| [SkinKit](#skinkit) | Controller skins: `.deltaskin` / `.manicskin` parsing, the Format 2 renderer, the skin manager and store browser, RetroArch overlay import, and the TV bezels around the picture (`SkinKitBezels`). | [0.8.1](https://github.com/Provenance-Emu/SkinKit/releases/tag/0.8.1) | Provenance, iFly, iCube | iOS 17, tvOS 17, macOS 14 |
-| [GamepadKit](#gamepadkit) | Controller handling: element-name mapping, positional fallback for plain HID pads, pad family detection, pause triggers, and a synthesized extended gamepad for pads iOS exposes without one (Switch Online SNES / N64 / Mega Drive, generic USB and Bluetooth pads). | [0.3.0](https://github.com/Provenance-Emu/GamepadKit/releases/tag/0.3.0) | Provenance, iFly, iCube | iOS 17, tvOS 17, macOS 14 |
+| [SkinKit](#skinkit) | Controller skins: `.deltaskin` / `.manicskin` parsing, the Format 2 renderer, the skin manager and store browser, RetroArch overlay import, and the TV bezels around the picture (`SkinKitBezels`). | [0.9.0](https://github.com/Provenance-Emu/SkinKit/releases/tag/0.9.0) | Provenance, iFly, iCube | iOS 17, tvOS 17, macOS 14 |
+| [GamepadKit](#gamepadkit) | Controller handling: element-name mapping, positional fallback for plain HID pads, pad family detection, pause triggers, and a synthesized extended gamepad for pads iOS exposes without one (Switch Online SNES / N64 / Mega Drive, generic USB and Bluetooth pads). | [0.3.1](https://github.com/Provenance-Emu/GamepadKit/releases/tag/0.3.1) | Provenance, iFly, iCube | iOS 17, tvOS 17, macOS 14 |
 | [PVSystems](#pvsystems) | `SystemIdentifier` and per-system metadata: TheGamesDB / libretrodb / OpenVGDB IDs, RetroAchievements console IDs, the per-game BIOS manifest. | [1.0.3](https://github.com/Provenance-Emu/PVSystems/releases/tag/1.0.3) | Provenance, iFly, iCube | iOS 17, tvOS 17, macOS 14, watchOS 9, visionOS 1 |
 | [PVLookup](#pvlookup) | Game metadata, artwork and cheat lookup over libretrodb, OpenVGDB, TheGamesDB, ShiraGame and the libretro cheat database. Ships no database bytes; they are release assets fetched at build time. | [1.1.0](https://github.com/Provenance-Emu/PVLookup/releases/tag/1.1.0) | Provenance, iFly, iCube | iOS 17, tvOS 17, macOS 14, watchOS 9, visionOS 1 |
 | [PVPatchEngine](#pvpatchengine) | Streaming ROM and disc patch engine: IPS, BPS, UPS, PPF and xdelta3, with bounded memory and 64-bit offsets. C core, Swift API. | [1.0.3](https://github.com/Provenance-Emu/PVPatchEngine/releases/tag/1.0.3) | Provenance, iFly, iCube | iOS 17, tvOS 17, macOS 14 |
@@ -21,7 +21,7 @@ None of these packages knows which app it is in. App group names, CloudKit conta
 | [PVWidgets](#pvwidgets) | Home screen game widgets: grid and list drawn from the widget's real size, the Show and Layout options, cover decoding. | [0.1.0](https://github.com/Provenance-Emu/PVWidgets/tree/0.1.0) | Provenance, iFly, iCube | iOS 17, tvOS 17, macOS 14, visionOS 1 |
 | [PVLibrarySnapshot](#pvlibrarysnapshot) | The App Group snapshot and cover JPEGs an app writes for its extensions; the tvOS Top Shelf reads it. | [1.0.2](https://github.com/Provenance-Emu/PVLibrarySnapshot/releases/tag/1.0.2) | Provenance, iFly, iCube | iOS 17, tvOS 17, macOS 14, visionOS 1 |
 | [PVHelp](#pvhelp) | In-app help from a GitBook wiki repo: navigation, page fetch and cache, GitBook preprocessing, offline fallback. | [1.0.2](https://github.com/Provenance-Emu/PVHelp/releases/tag/1.0.2) | Provenance, iFly, iCube | iOS 17, tvOS 17, macOS 14, watchOS 9, visionOS 1 |
-| [PVRemoteLibrary](#pvremotelibrary) | One model of "a game somewhere": on this device, on an emulator content server, on a RomM share or on a nearby peer. Matching, merged library rows, an on-disk catalogue and cover cache. | [0.3.2](https://github.com/Provenance-Emu/PVRemoteLibrary/releases/tag/0.3.2) | Provenance, iFly, iCube | iOS 17, tvOS 17, macOS 14, visionOS 1 |
+| [PVRemoteLibrary](#pvremotelibrary) | One model of "a game somewhere": on this device, on an emulator content server, on a RomM share or on a nearby peer. Matching, merged library rows, an on-disk catalogue and cover cache. | [0.3.3](https://github.com/Provenance-Emu/PVRemoteLibrary/releases/tag/0.3.3) | Provenance, iFly, iCube | iOS 17, tvOS 17, macOS 14, visionOS 1 |
 | [PVSyncRules](#pvsyncrules) | What an emulator app syncs: `SyncClassifier` (save state, battery save, ROM, BIOS), `SyncableFileType`, `SyncPolicy`. Pure value types, no I/O. | [1.0.5](https://github.com/Provenance-Emu/PVSyncRules/releases/tag/1.0.5) | iCube | iOS 17, tvOS 17, macOS 14 |
 | [PVCloudSync](#pvcloudsync) | CloudKit sync of user files: scanning, planning, conflict resolution, tombstones, a local trash, retry policy and a CloudKit provider. | [1.1.2](https://github.com/Provenance-Emu/PVCloudSync/releases/tag/1.1.2) | Provenance, iCube | iOS 17, tvOS 17, macOS 14 |
 | [PVContinuity](#pvcontinuity) | Nearby library discovery, trust, manifests and file transfer between devices on the same network. | [1.0.2](https://github.com/Provenance-Emu/PVContinuity/releases/tag/1.0.2) | iCube | iOS 17, tvOS 17, macOS 14 |
@@ -36,7 +36,7 @@ Every package is a plain SwiftPM package with version tags. In `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/Provenance-Emu/SkinKit.git", from: "0.8.1")
+    .package(url: "https://github.com/Provenance-Emu/SkinKit.git", from: "0.9.0")
 ],
 targets: [
     .target(name: "MyApp", dependencies: [
@@ -58,16 +58,16 @@ Packages at `0.x` (SkinKit, GamepadKit, PVWidgets, PVRemoteLibrary) may break th
 Controller skins: `.deltaskin` / `.manicskin` parsing, the Format 2 renderer, the skin manager and store browser, RetroArch overlay import, and the TV bezels around the picture (`SkinKitBezels`).
 
 * **Repository:** [github.com/Provenance-Emu/SkinKit](https://github.com/Provenance-Emu/SkinKit)
-* **Latest version:** [0.8.1](https://github.com/Provenance-Emu/SkinKit/releases/tag/0.8.1), released 2026-11-25 (prebuilt XCFramework)
+* **Latest version:** [0.9.0](https://github.com/Provenance-Emu/SkinKit/releases/tag/0.9.0), released 2026-11-26 (prebuilt XCFramework)
 * **Releases:** [all versions](https://github.com/Provenance-Emu/SkinKit/releases)
 * **Used by:** Provenance, iFly, iCube
 * **Platforms:** iOS 17, tvOS 17, macOS 14
-* **Languages:** Swift 100%
+* **Languages:** Swift 99%
 * **License:** [see the repository](https://github.com/Provenance-Emu/SkinKit)
 * **Topics:** [controller-skin](https://github.com/topics/controller-skin), [crt-bezel](https://github.com/topics/crt-bezel), [delta-skins](https://github.com/topics/delta-skins), [deltaskin](https://github.com/topics/deltaskin), [emulation](https://github.com/topics/emulation), [emulator](https://github.com/topics/emulator), [emuskin](https://github.com/topics/emuskin), [ios](https://github.com/topics/ios), [manicskin](https://github.com/topics/manicskin), [provenance](https://github.com/topics/provenance), [retroarch-overlay](https://github.com/topics/retroarch-overlay), [retrogaming](https://github.com/topics/retrogaming), [spm](https://github.com/topics/spm), [swift](https://github.com/topics/swift), [swift-package](https://github.com/topics/swift-package), [swiftui](https://github.com/topics/swiftui), [touch-controls](https://github.com/topics/touch-controls), [tvos](https://github.com/topics/tvos), [xcframework](https://github.com/topics/xcframework)
 
 ```swift
-.package(url: "https://github.com/Provenance-Emu/SkinKit.git", .upToNextMinor(from: "0.8.1"))
+.package(url: "https://github.com/Provenance-Emu/SkinKit.git", .upToNextMinor(from: "0.9.0"))
 ```
 
 Skins themselves are in the [skin catalog](https://emuskins.com). See the [Skins guide](../info/skins-guide.md) and [Skin Format 2.0](../info/skin-format-2.md).
@@ -77,7 +77,7 @@ Skins themselves are in the [skin catalog](https://emuskins.com). See the [Skins
 Controller handling: element-name mapping, positional fallback for plain HID pads, pad family detection, pause triggers, and a synthesized extended gamepad for pads iOS exposes without one (Switch Online SNES / N64 / Mega Drive, generic USB and Bluetooth pads).
 
 * **Repository:** [github.com/Provenance-Emu/GamepadKit](https://github.com/Provenance-Emu/GamepadKit)
-* **Latest version:** [0.3.0](https://github.com/Provenance-Emu/GamepadKit/releases/tag/0.3.0), released 2026-11-25 (prebuilt XCFramework)
+* **Latest version:** [0.3.1](https://github.com/Provenance-Emu/GamepadKit/releases/tag/0.3.1), released 2026-11-26 (prebuilt XCFramework)
 * **Releases:** [all versions](https://github.com/Provenance-Emu/GamepadKit/releases)
 * **Used by:** Provenance, iFly, iCube
 * **Platforms:** iOS 17, tvOS 17, macOS 14
@@ -86,7 +86,7 @@ Controller handling: element-name mapping, positional fallback for plain HID pad
 * **Topics:** [bluetooth-controller](https://github.com/topics/bluetooth-controller), [emulation](https://github.com/topics/emulation), [emulator](https://github.com/topics/emulator), [game-controller](https://github.com/topics/game-controller), [gamecontroller](https://github.com/topics/gamecontroller), [gamepad](https://github.com/topics/gamepad), [hid](https://github.com/topics/hid), [ios](https://github.com/topics/ios), [mfi](https://github.com/topics/mfi), [provenance](https://github.com/topics/provenance), [retrogaming](https://github.com/topics/retrogaming), [spm](https://github.com/topics/spm), [swift](https://github.com/topics/swift), [swift-package](https://github.com/topics/swift-package), [tvos](https://github.com/topics/tvos), [xcframework](https://github.com/topics/xcframework)
 
 ```swift
-.package(url: "https://github.com/Provenance-Emu/GamepadKit.git", .upToNextMinor(from: "0.3.0"))
+.package(url: "https://github.com/Provenance-Emu/GamepadKit.git", .upToNextMinor(from: "0.3.1"))
 ```
 
 ## PVSystems
@@ -217,7 +217,7 @@ In-app help from a GitBook wiki repo: navigation, page fetch and cache, GitBook 
 One model of "a game somewhere": on this device, on an emulator content server, on a RomM share or on a nearby peer. Matching, merged library rows, an on-disk catalogue and cover cache.
 
 * **Repository:** [github.com/Provenance-Emu/PVRemoteLibrary](https://github.com/Provenance-Emu/PVRemoteLibrary)
-* **Latest version:** [0.3.2](https://github.com/Provenance-Emu/PVRemoteLibrary/releases/tag/0.3.2), released 2026-11-25 (prebuilt XCFramework)
+* **Latest version:** [0.3.3](https://github.com/Provenance-Emu/PVRemoteLibrary/releases/tag/0.3.3), released 2026-11-26 (prebuilt XCFramework)
 * **Releases:** [all versions](https://github.com/Provenance-Emu/PVRemoteLibrary/releases)
 * **Used by:** Provenance, iFly, iCube
 * **Platforms:** iOS 17, tvOS 17, macOS 14, visionOS 1
@@ -226,7 +226,7 @@ One model of "a game somewhere": on this device, on an emulator content server, 
 * **Topics:** [emulation](https://github.com/topics/emulation), [emulator](https://github.com/topics/emulator), [game-library](https://github.com/topics/game-library), [ios](https://github.com/topics/ios), [library-sync](https://github.com/topics/library-sync), [provenance](https://github.com/topics/provenance), [remote-library](https://github.com/topics/remote-library), [retrogaming](https://github.com/topics/retrogaming), [romm](https://github.com/topics/romm), [spm](https://github.com/topics/spm), [swift](https://github.com/topics/swift), [swift-package](https://github.com/topics/swift-package), [swift-package-manager](https://github.com/topics/swift-package-manager), [swiftui](https://github.com/topics/swiftui), [tvos](https://github.com/topics/tvos), [xcframework](https://github.com/topics/xcframework)
 
 ```swift
-.package(url: "https://github.com/Provenance-Emu/PVRemoteLibrary.git", .upToNextMinor(from: "0.3.2"))
+.package(url: "https://github.com/Provenance-Emu/PVRemoteLibrary.git", .upToNextMinor(from: "0.3.3"))
 ```
 
 ## PVSyncRules
