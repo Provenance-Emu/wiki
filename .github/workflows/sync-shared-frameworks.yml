@@ -1,0 +1,49 @@
+name: Sync Shared Frameworks
+
+# Regenerates help/shared-frameworks.md: versions, release dates, platforms, languages,
+# topics and links are read from each package's GitHub repository. The hand-written part
+# (which packages, what each does, who uses it) is scripts/shared-frameworks.json.
+on:
+  schedule:
+    - cron: '30 7 * * *'   # daily, 07:30 UTC
+  # Sent by a package's release workflow, so the page follows a release within minutes.
+  repository_dispatch:
+    types: [shared-package-released]
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - scripts/shared-frameworks.json
+      - scripts/sync-shared-frameworks.py
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-shared-frameworks
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    name: Regenerate shared-frameworks.md
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Regenerate
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/sync-shared-frameworks.py
+
+      - name: Commit and push
+        run: |
+          if git diff --quiet help/shared-frameworks.md; then
+            echo "No changes"
+            exit 0
+          fi
+          git diff --stat help/shared-frameworks.md
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add help/shared-frameworks.md
+          git commit -m "chore: sync shared-frameworks from the package repositories"
+          git push
