@@ -64,7 +64,7 @@ Controller skins: `.deltaskin` / `.manicskin` parsing, the Format 2 renderer, th
 * **Platforms:** iOS 17, tvOS 17, macOS 14
 * **Languages:** Swift 100%
 * **License:** [see the repository](https://github.com/Provenance-Emu/SkinKit)
-* **Topics:** [daltaskin](https://github.com/topics/daltaskin), [delta-skins](https://github.com/topics/delta-skins), [emuskin](https://github.com/topics/emuskin), [manicskin](https://github.com/topics/manicskin)
+* **Topics:** [controller-skin](https://github.com/topics/controller-skin), [crt-bezel](https://github.com/topics/crt-bezel), [delta-skins](https://github.com/topics/delta-skins), [deltaskin](https://github.com/topics/deltaskin), [emulation](https://github.com/topics/emulation), [emulator](https://github.com/topics/emulator), [emuskin](https://github.com/topics/emuskin), [ios](https://github.com/topics/ios), [manicskin](https://github.com/topics/manicskin), [provenance](https://github.com/topics/provenance), [retroarch-overlay](https://github.com/topics/retroarch-overlay), [retrogaming](https://github.com/topics/retrogaming), [spm](https://github.com/topics/spm), [swift](https://github.com/topics/swift), [swift-package](https://github.com/topics/swift-package), [swiftui](https://github.com/topics/swiftui), [touch-controls](https://github.com/topics/touch-controls), [tvos](https://github.com/topics/tvos), [xcframework](https://github.com/topics/xcframework)
 
 ```swift
 .package(url: "https://github.com/Provenance-Emu/SkinKit.git", .upToNextMinor(from: "0.8.1"))
@@ -83,6 +83,7 @@ Controller handling: element-name mapping, positional fallback for plain HID pad
 * **Platforms:** iOS 17, tvOS 17, macOS 14
 * **Languages:** Swift 100%
 * **License:** [MIT](https://github.com/Provenance-Emu/GamepadKit/blob/HEAD/LICENSE.md)
+* **Topics:** [bluetooth-controller](https://github.com/topics/bluetooth-controller), [emulation](https://github.com/topics/emulation), [emulator](https://github.com/topics/emulator), [game-controller](https://github.com/topics/game-controller), [gamecontroller](https://github.com/topics/gamecontroller), [gamepad](https://github.com/topics/gamepad), [hid](https://github.com/topics/hid), [ios](https://github.com/topics/ios), [mfi](https://github.com/topics/mfi), [provenance](https://github.com/topics/provenance), [retrogaming](https://github.com/topics/retrogaming), [spm](https://github.com/topics/spm), [swift](https://github.com/topics/swift), [swift-package](https://github.com/topics/swift-package), [tvos](https://github.com/topics/tvos), [xcframework](https://github.com/topics/xcframework)
 
 ```swift
 .package(url: "https://github.com/Provenance-Emu/GamepadKit.git", .upToNextMinor(from: "0.3.0"))
@@ -99,6 +100,7 @@ Controller handling: element-name mapping, positional fallback for plain HID pad
 * **Platforms:** iOS 17, tvOS 17, macOS 14, watchOS 9, visionOS 1
 * **Languages:** Swift 100%
 * **License:** [see the repository](https://github.com/Provenance-Emu/PVSystems)
+* **Topics:** [emulation](https://github.com/topics/emulation), [emulator](https://github.com/topics/emulator), [game-systems](https://github.com/topics/game-systems), [ios](https://github.com/topics/ios), [libretro](https://github.com/topics/libretro), [metadata](https://github.com/topics/metadata), [provenance](https://github.com/topics/provenance), [retroachievements](https://github.com/topics/retroachievements), [retrogaming](https://github.com/topics/retrogaming), [spm](https://github.com/topics/spm), [swift](https://github.com/topics/swift), [swift-package](https://github.com/topics/swift-package), [tvos](https://github.com/topics/tvos), [xcframework](https://github.com/topics/xcframework)
 
 ```swift
 .package(url: "https://github.com/Provenance-Emu/PVSystems.git", from: "1.0.3")
@@ -115,6 +117,7 @@ Game metadata, artwork and cheat lookup over libretrodb, OpenVGDB, TheGamesDB, S
 * **Platforms:** iOS 17, tvOS 17, macOS 14, watchOS 9, visionOS 1
 * **Languages:** Swift 91%, Python 7%, Shell 2%
 * **License:** [see the repository](https://github.com/Provenance-Emu/PVLookup)
+* **Topics:** [box-art](https://github.com/topics/box-art), [cheats](https://github.com/topics/cheats), [emulation](https://github.com/topics/emulation), [emulator](https://github.com/topics/emulator), [game-metadata](https://github.com/topics/game-metadata), [ios](https://github.com/topics/ios), [libretrodb](https://github.com/topics/libretrodb), [openvgdb](https://github.com/topics/openvgdb), [provenance](https://github.com/topics/provenance), [retrogaming](https://github.com/topics/retrogaming), [spm](https://github.com/topics/spm), [sqlite](https://github.com/topics/sqlite), [swift](https://github.com/topics/swift), [swift-package](https://github.com/topics/swift-package), [thegamesdb](https://github.com/topics/thegamesdb), [tvos](https://github.com/topics/tvos), [xcframework](https://github.com/topics/xcframework)
 
 ```swift
 .package(url: "https://github.com/Provenance-Emu/PVLookup.git", from: "1.1.0")
@@ -133,6 +136,7 @@ Streaming ROM and disc patch engine: IPS, BPS, UPS, PPF and xdelta3, with bounde
 * **Platforms:** iOS 17, tvOS 17, macOS 14
 * **Languages:** C 69%, Swift 31%
 * **License:** [see the repository](https://github.com/Provenance-Emu/PVPatchEngine)
+* **Topics:** [bps](https://github.com/topics/bps), [emulation](https://github.com/topics/emulation), [emulator](https://github.com/topics/emulator), [ios](https://github.com/topics/ios), [ips](https://github.com/topics/ips), [ppf](https://github.com/topics/ppf), [provenance](https://github.com/topics/provenance), [retrogaming](https://github.com/topics/retrogaming), [rom-hacking](https://github.com/topics/rom-hacking), [rom-patcher](https://github.com/topics/rom-patcher), [spm](https://github.com/topics/spm), [swift](https://github.com/topics/swift), [swift-package](https://github.com/topics/swift-package), [tvos](https://github.com/topics/tvos), [ups](https://github.com/topics/ups), [xcframework](https://github.com/topics/xcframework), [xdelta3](https://github.com/topics/xdelta3)
 
 ```swift
 .package(url: "https://github.com/Provenance-Emu/PVPatchEngine.git", from: "1.0.3")
@@ -151,6 +155,7 @@ HTTP and WebDAV server on one port, built on Network.framework, with a route reg
 * **Platforms:** iOS 17, tvOS 17, macOS 11, watchOS 9, visionOS 1
 * **Languages:** Swift 86%, JavaScript 5%, Shell 4%, CSS 3%, HTML 1%
 * **License:** [see the repository](https://github.com/Provenance-Emu/PVWebServer)
+* **Topics:** [emulation](https://github.com/topics/emulation), [emulator](https://github.com/topics/emulator), [file-upload](https://github.com/topics/file-upload), [http-server](https://github.com/topics/http-server), [ios](https://github.com/topics/ios), [network-framework](https://github.com/topics/network-framework), [provenance](https://github.com/topics/provenance), [retrogaming](https://github.com/topics/retrogaming), [spm](https://github.com/topics/spm), [swift](https://github.com/topics/swift), [swift-package](https://github.com/topics/swift-package), [swift-server](https://github.com/topics/swift-server), [tvos](https://github.com/topics/tvos), [webdav](https://github.com/topics/webdav), [xcframework](https://github.com/topics/xcframework)
 
 ```swift
 .package(url: "https://github.com/Provenance-Emu/PVWebServer.git", from: "1.3.5")
@@ -167,7 +172,7 @@ Home screen game widgets: grid and list drawn from the widget's real size, the S
 * **Platforms:** iOS 17, tvOS 17, macOS 14, visionOS 1
 * **Languages:** Swift 100%
 * **License:** [see the repository](https://github.com/Provenance-Emu/PVWidgets)
-* **Topics:** [provenance](https://github.com/topics/provenance)
+* **Topics:** [app-intents](https://github.com/topics/app-intents), [emulation](https://github.com/topics/emulation), [emulator](https://github.com/topics/emulator), [home-screen-widgets](https://github.com/topics/home-screen-widgets), [ios](https://github.com/topics/ios), [provenance](https://github.com/topics/provenance), [retrogaming](https://github.com/topics/retrogaming), [spm](https://github.com/topics/spm), [swift](https://github.com/topics/swift), [swift-package](https://github.com/topics/swift-package), [swiftui](https://github.com/topics/swiftui), [tvos](https://github.com/topics/tvos), [widgetkit](https://github.com/topics/widgetkit), [widgets](https://github.com/topics/widgets)
 
 ```swift
 .package(url: "https://github.com/Provenance-Emu/PVWidgets.git", .upToNextMinor(from: "0.1.0"))
@@ -184,6 +189,7 @@ The App Group snapshot and cover JPEGs an app writes for its extensions; the tvO
 * **Platforms:** iOS 17, tvOS 17, macOS 14, visionOS 1
 * **Languages:** Swift 100%
 * **License:** [see the repository](https://github.com/Provenance-Emu/PVLibrarySnapshot)
+* **Topics:** [app-extensions](https://github.com/topics/app-extensions), [app-groups](https://github.com/topics/app-groups), [emulation](https://github.com/topics/emulation), [emulator](https://github.com/topics/emulator), [ios](https://github.com/topics/ios), [provenance](https://github.com/topics/provenance), [retrogaming](https://github.com/topics/retrogaming), [spm](https://github.com/topics/spm), [swift](https://github.com/topics/swift), [swift-package](https://github.com/topics/swift-package), [top-shelf](https://github.com/topics/top-shelf), [tvos](https://github.com/topics/tvos), [widgetkit](https://github.com/topics/widgetkit), [xcframework](https://github.com/topics/xcframework)
 
 ```swift
 .package(url: "https://github.com/Provenance-Emu/PVLibrarySnapshot.git", from: "1.0.2")
@@ -200,6 +206,7 @@ In-app help from a GitBook wiki repo: navigation, page fetch and cache, GitBook 
 * **Platforms:** iOS 17, tvOS 17, macOS 14, watchOS 9, visionOS 1
 * **Languages:** Swift 100%
 * **License:** [see the repository](https://github.com/Provenance-Emu/PVHelp)
+* **Topics:** [documentation](https://github.com/topics/documentation), [emulation](https://github.com/topics/emulation), [emulator](https://github.com/topics/emulator), [gitbook](https://github.com/topics/gitbook), [in-app-help](https://github.com/topics/in-app-help), [ios](https://github.com/topics/ios), [markdown](https://github.com/topics/markdown), [provenance](https://github.com/topics/provenance), [retrogaming](https://github.com/topics/retrogaming), [spm](https://github.com/topics/spm), [swift](https://github.com/topics/swift), [swift-package](https://github.com/topics/swift-package), [tvos](https://github.com/topics/tvos), [xcframework](https://github.com/topics/xcframework)
 
 ```swift
 .package(url: "https://github.com/Provenance-Emu/PVHelp.git", from: "1.0.2")
@@ -216,7 +223,7 @@ One model of "a game somewhere": on this device, on an emulator content server, 
 * **Platforms:** iOS 17, tvOS 17, macOS 14, visionOS 1
 * **Languages:** Swift 100%
 * **License:** [see the repository](https://github.com/Provenance-Emu/PVRemoteLibrary)
-* **Topics:** [ios](https://github.com/topics/ios), [provenance](https://github.com/topics/provenance), [swift](https://github.com/topics/swift), [swift-package-manager](https://github.com/topics/swift-package-manager), [swiftui](https://github.com/topics/swiftui)
+* **Topics:** [emulation](https://github.com/topics/emulation), [emulator](https://github.com/topics/emulator), [game-library](https://github.com/topics/game-library), [ios](https://github.com/topics/ios), [library-sync](https://github.com/topics/library-sync), [provenance](https://github.com/topics/provenance), [remote-library](https://github.com/topics/remote-library), [retrogaming](https://github.com/topics/retrogaming), [romm](https://github.com/topics/romm), [spm](https://github.com/topics/spm), [swift](https://github.com/topics/swift), [swift-package](https://github.com/topics/swift-package), [swift-package-manager](https://github.com/topics/swift-package-manager), [swiftui](https://github.com/topics/swiftui), [tvos](https://github.com/topics/tvos), [xcframework](https://github.com/topics/xcframework)
 
 ```swift
 .package(url: "https://github.com/Provenance-Emu/PVRemoteLibrary.git", .upToNextMinor(from: "0.3.2"))
@@ -233,6 +240,7 @@ What an emulator app syncs: `SyncClassifier` (save state, battery save, ROM, BIO
 * **Platforms:** iOS 17, tvOS 17, macOS 14
 * **Languages:** Swift 100%
 * **License:** [see the repository](https://github.com/Provenance-Emu/PVSyncRules)
+* **Topics:** [cloudkit](https://github.com/topics/cloudkit), [emulation](https://github.com/topics/emulation), [emulator](https://github.com/topics/emulator), [file-sync](https://github.com/topics/file-sync), [icloud](https://github.com/topics/icloud), [ios](https://github.com/topics/ios), [provenance](https://github.com/topics/provenance), [retrogaming](https://github.com/topics/retrogaming), [save-states](https://github.com/topics/save-states), [spm](https://github.com/topics/spm), [swift](https://github.com/topics/swift), [swift-package](https://github.com/topics/swift-package), [tvos](https://github.com/topics/tvos), [xcframework](https://github.com/topics/xcframework)
 
 ```swift
 .package(url: "https://github.com/Provenance-Emu/PVSyncRules.git", from: "1.0.5")
@@ -251,7 +259,7 @@ CloudKit sync of user files: scanning, planning, conflict resolution, tombstones
 * **Platforms:** iOS 17, tvOS 17, macOS 14
 * **Languages:** Swift 100%
 * **License:** [see the repository](https://github.com/Provenance-Emu/PVCloudSync)
-* **Topics:** [ios](https://github.com/topics/ios), [ios-swift](https://github.com/topics/ios-swift), [provenance](https://github.com/topics/provenance), [swift](https://github.com/topics/swift), [swift-package](https://github.com/topics/swift-package), [swift-package-manager](https://github.com/topics/swift-package-manager)
+* **Topics:** [cloudkit](https://github.com/topics/cloudkit), [conflict-resolution](https://github.com/topics/conflict-resolution), [emulation](https://github.com/topics/emulation), [emulator](https://github.com/topics/emulator), [file-sync](https://github.com/topics/file-sync), [icloud](https://github.com/topics/icloud), [ios](https://github.com/topics/ios), [ios-swift](https://github.com/topics/ios-swift), [provenance](https://github.com/topics/provenance), [retrogaming](https://github.com/topics/retrogaming), [save-states](https://github.com/topics/save-states), [spm](https://github.com/topics/spm), [swift](https://github.com/topics/swift), [swift-package](https://github.com/topics/swift-package), [swift-package-manager](https://github.com/topics/swift-package-manager), [tvos](https://github.com/topics/tvos), [xcframework](https://github.com/topics/xcframework)
 
 ```swift
 .package(url: "https://github.com/Provenance-Emu/PVCloudSync.git", from: "1.1.2")
@@ -268,7 +276,7 @@ Nearby library discovery, trust, manifests and file transfer between devices on 
 * **Platforms:** iOS 17, tvOS 17, macOS 14
 * **Languages:** Swift 100%
 * **License:** [see the repository](https://github.com/Provenance-Emu/PVContinuity)
-* **Topics:** [ios](https://github.com/topics/ios), [provenance](https://github.com/topics/provenance), [swift](https://github.com/topics/swift), [swift-package](https://github.com/topics/swift-package), [swift-package-manager](https://github.com/topics/swift-package-manager), [swiftui](https://github.com/topics/swiftui)
+* **Topics:** [bonjour](https://github.com/topics/bonjour), [emulation](https://github.com/topics/emulation), [emulator](https://github.com/topics/emulator), [file-transfer](https://github.com/topics/file-transfer), [handoff](https://github.com/topics/handoff), [ios](https://github.com/topics/ios), [local-network](https://github.com/topics/local-network), [peer-to-peer](https://github.com/topics/peer-to-peer), [provenance](https://github.com/topics/provenance), [retrogaming](https://github.com/topics/retrogaming), [spm](https://github.com/topics/spm), [swift](https://github.com/topics/swift), [swift-package](https://github.com/topics/swift-package), [swift-package-manager](https://github.com/topics/swift-package-manager), [swiftui](https://github.com/topics/swiftui), [tvos](https://github.com/topics/tvos), [xcframework](https://github.com/topics/xcframework)
 
 ```swift
 .package(url: "https://github.com/Provenance-Emu/PVContinuity.git", from: "1.0.2")
@@ -285,6 +293,7 @@ Cross-device "continue this game" handoff: manifests, transfer, Bonjour discover
 * **Platforms:** iOS 16, tvOS 16, macOS 13, watchOS 9, visionOS 1
 * **Languages:** Swift 100%
 * **License:** [see the repository](https://github.com/Provenance-Emu/ContinuityKit)
+* **Topics:** [bonjour](https://github.com/topics/bonjour), [emulation](https://github.com/topics/emulation), [emulator](https://github.com/topics/emulator), [file-transfer](https://github.com/topics/file-transfer), [handoff](https://github.com/topics/handoff), [ios](https://github.com/topics/ios), [local-network](https://github.com/topics/local-network), [peer-to-peer](https://github.com/topics/peer-to-peer), [provenance](https://github.com/topics/provenance), [retrogaming](https://github.com/topics/retrogaming), [spm](https://github.com/topics/spm), [swift](https://github.com/topics/swift), [swift-package](https://github.com/topics/swift-package), [tvos](https://github.com/topics/tvos), [xcframework](https://github.com/topics/xcframework)
 
 ```swift
 .package(url: "https://github.com/Provenance-Emu/ContinuityKit.git", from: "1.0.2")
@@ -300,6 +309,7 @@ Prebuilt XCFrameworks of the third-party libraries the apps and packages share (
 * **Used by:** Provenance, iFly, iCube
 * **Languages:** Shell 69%, Swift 31%
 * **License:** [see the repository](https://github.com/Provenance-Emu/PVDependencies)
+* **Topics:** [binary-framework](https://github.com/topics/binary-framework), [emulation](https://github.com/topics/emulation), [emulator](https://github.com/topics/emulator), [ios](https://github.com/topics/ios), [prebuilt](https://github.com/topics/prebuilt), [provenance](https://github.com/topics/provenance), [retrogaming](https://github.com/topics/retrogaming), [spm](https://github.com/topics/spm), [sqlite](https://github.com/topics/sqlite), [swift](https://github.com/topics/swift), [swift-package](https://github.com/topics/swift-package), [tvos](https://github.com/topics/tvos), [xcframework](https://github.com/topics/xcframework), [zipfoundation](https://github.com/topics/zipfoundation)
 
 ```swift
 .package(url: "https://github.com/Provenance-Emu/PVDependencies.git", from: "1.0.0")
